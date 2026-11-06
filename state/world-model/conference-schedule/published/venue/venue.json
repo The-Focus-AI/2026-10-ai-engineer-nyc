@@ -1,0 +1,57 @@
+{
+  "name": "Sheraton New York Times Square Hotel",
+  "address": "811 7th Ave, New York, NY 10019",
+  "city": "New York",
+  "maps_url": "https://maps.google.com/?q=Sheraton+New+York+Times+Square+Hotel+811+7th+Ave+New+York+NY+10019",
+  "rooms": [
+    {
+      "room_id": "expo-hall",
+      "name": "Expo Hall",
+      "floor": "Level 2"
+    },
+    {
+      "room_id": "food-and-beverage-breaks",
+      "name": "Food & Beverage Breaks",
+      "floor": null
+    },
+    {
+      "room_id": "lennox-ballroom",
+      "name": "Speaker Lounge/Token Billionaires Lounge (Lennox Ballroom)",
+      "floor": "Level 2"
+    },
+    {
+      "room_id": "level-1-lobby",
+      "name": "Level 1 Lobby",
+      "floor": "Level 1"
+    },
+    {
+      "room_id": "mccarthy-room",
+      "name": "McCarthy Room (Riverside Suite)",
+      "floor": "Level 3"
+    },
+    {
+      "room_id": "shannon-room",
+      "name": "Shannon Room (NY Ballroom E)",
+      "floor": "Level 3"
+    },
+    {
+      "room_id": "simons-room",
+      "name": "Simons Room (Metropolitan East)",
+      "floor": "Level 2"
+    },
+    {
+      "room_id": "sutton-room",
+      "name": "Sutton Room (NY Ballroom W)",
+      "floor": "Level 3"
+    },
+    {
+      "room_id": "turing-room",
+      "name": "Turing Room (Riverside Ballroom)",
+      "floor": "Level 3"
+    }
+  ],
+  "transit": null,
+  "accessibility": null,
+  "confirmed": true,
+  "source_url": "https://ai.engineer/nyc/2026"
+}

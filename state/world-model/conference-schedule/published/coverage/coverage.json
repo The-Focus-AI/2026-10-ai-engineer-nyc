@@ -1,0 +1,31 @@
+{
+  "pages": [
+    {
+      "url": "https://ai.engineer/nyc/2026",
+      "role": "entry",
+      "content_hash": "754fc05150bd73a4e3b43802865824e85e1836a09ad83e8cfd0860a6be3bc91b",
+      "byte_length": 540446,
+      "truncated": false
+    },
+    {
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "role": "schedule",
+      "content_hash": "5221892d661194ba6f4082cc8c343bf3c2a07e99bca181b23dab043a22617318",
+      "byte_length": 598357,
+      "truncated": false
+    }
+  ],
+  "unparsed_regions": [],
+  "gaps": [
+    "Session \"Evals in 5 minutes\" (04078437-7781-4b41-9edc-b24b00ebe5e4) on 2026-10-13 at 2026-10-13T14:05:00-04:00 in Shannon Room (NY Ballroom E) has format \"talk\" (Expo Session (18 mins)) but the official schedule source lists no speakers (speakers: []).",
+    "Session \"Securing the Agentic Universe, One Layer at a Time\" (6e51dbf6-0d55-4bd4-80a9-67dfd5ec559a) on 2026-10-13 at 2026-10-13T15:20:00-04:00 in Sutton Room (NY Ballroom W) has format \"talk\" (Expo Session (18 mins)) but the official schedule source lists no speakers (speakers: []).",
+    "Session \"Evals in 5 minutes\" (0151a0fc-5cb6-4258-977a-65de8288e39b) on 2026-10-14 at 2026-10-14T13:40:00-04:00 in Shannon Room (NY Ballroom E) has format \"talk\" (Expo Session (18 mins)) but the official schedule source lists no speakers (speakers: [])."
+  ],
+  "last_verified_at": "2026-10-26T10:01:43-04:00",
+  "verification_count": 1,
+  "enrichment": {
+    "done": 126,
+    "pending": 35,
+    "failed": 0
+  }
+}

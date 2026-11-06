@@ -1,0 +1,75 @@
+---
+title: "Chasing capabilities while waiting for the frontier"
+speakers:
+  - name: Alexander Shevchenko
+    affiliation: Ramp
+room: "Simons Room (Metropolitan East)"
+starts_at: "2026-10-14T09:00:00-04:00"
+ends_at: "2026-10-14T09:18:00-04:00"
+format: "keynote"
+recording: "2026-10-14_0901_Ramp"
+duration: "13m 33s"
+source: "voice-memos-transcript"
+---
+
+# Chasing capabilities while waiting for the frontier
+
+### 00:00:00 — Token Economics & Capability Growth at Ramp
+
+I use our wax as an increase in 123%. Well, at the same time, a lot of our top features are growing in tokens bad, but on a unit, economic basis, they're actually becoming cheaper, because there are fancier models that are being released all the time now, and these models are cheaper, faster, and better. And so we're able to provide the same level of accuracy, have a much lower cost.
+
+And so this is a really bitter lesson called pattern. And so, given all this, a question that I sometimes get, why not just wait? Why not an apply research function inside of a company, right? And to answer that, I would like to draw a parallel to 2023. Back in 2023, we had access to Crown, GPD 4, and creating an agent was, oh, I work.
+
+You would have to create very, very strict guardrails. Models weren't or else to backtrack. They didn't have thinking tokens. So if it went in the wrong direction, it would just kind of charge ahead and not realize that it made mistakes. You had to swipe over all of the products where, to the point where some synonyms could change the behavior of your agent, because they were the morale properly on generalizing to the user's intent.
+
+you have to reducing cold data context as much as possible because giving too much context to the agent, which is confusing. And even back then, we decided, well, we moved the ship these days. We can't wait for a GP4.5 or 25 to come out. We need to serve our family professionals now, and we should, things like rap tour guided, many other agents, even though it was not an easy thing to do.
+
+And fast forward now in 2026, building an agent is a lot easier. The models have gotten so much better that you can kind of give down STPs and access to any context, and they do a very, very good job of understanding what they need to do given a task. But I still believe that we can big layer down and create an better experiences for our users.
+
+It's just, it requires, it don't happen. So, if present this, some of our work for rap labs, 3 specific cases of how we apply research, into rapid health. Starting with creating a specialist model. So in November of last year, we watched Branchheets, which was one of the really early, expression agents, as was before the 2 friends here last, and watched their versions about, spreadsheet agents.
+
+And we had a very big launch, whatever, a bunch of users from great companies, passing dollars, started using it. And we realized that, well, this is a very general purpose spreadsheet, handling agent, and all of them work that people do want to ramp, both inside of the company, but also all of our customers, accounting, and finance professionals, are spending most of their days inside the spreadsheets.
+
+So we can kind of take the hardness and the brains of the giants, grab sheets, and add it into a bunch of other surfaces within rare. And as we were building this out, we realized, well, we can probably apply some research program class to make this even better. And we sat down and we started looking, where do models pull shorts, condas? And back then, this was, like, Opus 4.6, and the place that had the most friction was when you would drop in a wide spreadsheet into rag sheets and you would ask if the building is CF or models in financial scenario, it would spend a lot of time creating a plan at 1st and then researching all of the sheets that have access to.
+
+Yeah, they're good understanding about and the way of the land. And focus for what 6 is a great model, but it was like pretty slow and thinking, okay, are also pretty expensive. And so we took a step back and decided to train a retrieval model, kind of a financial question answering model that would, oh, he's still keeping these frontier models or organized orchestrators, would then be handed off to be this much faster
+
+### 00:04:24 — Combining Frontier Orchestrators with Specialized Financial Models
+
+model that would do, financial question answering or that buying. And so, we partnered with a company, Pride InfoX, to post-train a Gwen, 3.5, 35000000000 model. And we actually gone. Above all mystics, which was the frontier back then, as accuracy, while also being able to serve it a haiku, global agencies. So much faster, but just a smart model that can then be used in Tango with the really smart frontier orchestra.
+
+And so this was, like, a very successful example of posttrain, but we had actually sent Prague as part of our grandpa's country. The 2nd big thing that we are actually exploring up to this day is Katie Cash tricks. And I think growing cartridges are really interesting, family techniques where you're able to impress a lot of context of the 20s or 30, 30s or context into the KD cash offline and serve it for your agent.
+
+And so if you compare it to the rat sheets example, for example, there's a lot of tasks that you know are gonna happen at some point, right? Like one time close, one finishes, and on the 1st of the next month, a financial professional will go and try to reconcile closer books. You know, kind of, the ledger engagement report and the documents that they will need to be retrieving.
+
+And so if you're prepared that mental context, but the agent will still get a genuinely retrieved it, make sure and understand it about. What the question is, we're able to compress all of that work and build one overnight before they immediately branch a professional, start to work on the personnel. And once they open up the agent, it knows exactly what it needs to do, because it has all of the context already open.
+
+Cartridges are also as lower whipping, posttraining because of the way that they do self-place, a lot more generalizer. And kind of, like, stuff like this is that when you're boost training, this is something that the labs might shift at some point in their APIs, their 4A, continuous learning. And even if they were to do it in the API, we would actually be happy because we are developing a lot of this tribal knowledge inside the company, and just learning how best to apply these techniques.
+
+So even if it doesn't make yard, we can just hit the ground running on day one, knowing how to use the open. And finally, the 3rd example of applied research that we are sending to fraud is our work on agentic math produce and kind of agentic laws. So, more concrequently, we've published an article on the Grand Class, blog on how we use 10,000 parallel agents for 10,000 all around.
+
+So at around, we have a crowd agent called Frankenspect, which helps out with setting up all the infrastructure and funding for something as ambitious as this. And we were able to spin up 10,000 parallel agents, and then kind of map this work out, try to find an angle their abilities. And then also exactly reduce on the tickets that they would create. So did you put kingdom and goal lines, and then try to reproduce them adversarially, would all ask to try to make sure that vulnerabilities are real and important.
+
+At the end of all of this, we have actually found 7 fiber hires, severity vulnerabilities that we all have. Interestingly, one of the vulnerability that we describe to that particle is a Lewis Kirk injection that you can send over via email. And no single component of that stack was unsafe. And, kind of swarm had to attach together multiple components and understanding of multiple components and to have in order to be able to figure this out.
+
+And the other next thing with this is that this is all running automatically. You don't need to spend anyone's time. It's just, you start it, and the only thing that, it'll, it'll doesn't get over loud is the cost of the tokens. The other thing, that's interesting, outside, just building out all of the infrastructure, the supporting swarms is that we do research into how to use model
+
+### 00:08:55 — Lessons from Shipping Production Financial Agents
+
+test part of these swarms. One of the interesting insights from that same article that they published is that you can actually use open wave models that are up to 5 times cheaper compared to the frontier reasoning. And because you're set setting it up as a swarm, the detection rate is not our fans lower. So, you can kind of spend more on these cheaper tokens and have almost a good, reaction rate.
+
+If you fall through all of these examples, you kind of notice a pattern. A lot of them is accounts as saving a lot of time and saving online. So reducing latency, which is time, and then reducing on cocaine cost, which is my, that's actually grant's slogan of saving our customers time and time. And so I'd like to point to products that we actually offer from rare that have been influenced by Grandpa's research.
+
+The 1st one is tokens about marriage, and I asked for a pleasure for your API keys, and is able to give you a really good insure of how LMs are being used inside of your company. Not only, who can spend on an APIP basis or a user basis, but digging deeper, accounting categories, and even things like tax credits that you can get by analyzing this end.
+
+I think it also goes deeper and we create a dextonomy that contextually analyzes and semantically analyzes the LLM use history. You can actually understand how all others are being used outside of just distributing it to a team or a person inside of your company. And then the 2nd one is Frank Prowder, which also means into improving you with the latency of your agent, where we have a bunch of rapping strategies that we work with, right, class to develop, things like a video, pushing our things, life, smart, flex, and offloading of work at both improved latency and, cause for tokens that you've spent.
+
+And there's a bunch of different strategies already available for the routing and even more coming out later. So if you're interested in any of these 2 products, you can take a photo of the URLs or Candid QR code there. Just a second. And then I also invite you to check out our grand class blog, where we publish a bunch of really interesting articles that I haven't had the chance to cover as part of this presentation.
+
+Notably, one of the really interesting ones is Portal, where we figured out the rate of transferring learnings from one post train to another. So you could do something like aurora post train on one model. So like they plan for 25, but I was describing, but then transfer it, and you were versions of plan, or even across different paths, you're post-training this latency that can be protected onto different models.
+
+And I've really advertised with the costs that you have to spend a lot of post training, more block posts on a jacket app produce. So not only does head testing stuff that we did, then say, analyzing and creating the economy to develop our usage, which is stuff that has gone into the cooking spent product, things like self-improving monitoring, where we use, onlaps that automatically, create monitors with data dog on water or some product surfaces, and then, as the words come in, improve those monitors automatically, without a person in the loop, to try to, basically, we create super, super robust and resilient software.
+
+And finally, smacking packing, which is interesting, oriented, creating this, ejective map produced over a bunch of user sessions where we can annotate and create this onenies that are open-ended. So not knowing ahead of time, what are the clusters of OM usage, trying to create a fixonomy that can that be reconciled against the Span inside the companies. So if it refers to this type of restoration, X out, on, on track class, or you can go and check out more of our research.
+
+And, is my clear ID, you have any other questions or, you want to talk about some of these case as part of your applied research? And that's it. Thank you.

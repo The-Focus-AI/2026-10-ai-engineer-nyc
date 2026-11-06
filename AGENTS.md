@@ -16,6 +16,18 @@ If none print, this is a **build**. Work here. A build deletes that block so its
 own `brief/`, `state/`, `talks/`, and artifacts are tracked. A build is never a
 branch: one directory = one repo = one conference.
 
+A build with no `state/world-model/conference-schedule/receipts.jsonl` has not
+started. Follow [README.md](README.md) "Run the pipeline" in order: `mise install`,
+`bun install`, `prose compile`, promote, `prose run src/conference-schedule.prose.md`.
+`prose compile` means this session executes
+[compiler/index.prose.md](.agents/skills/open-prose/compiler/index.prose.md); that
+execution writes `dist/`. `prose run` means this session executes that file's
+`### Execution` block; that execution writes `state/` and the receipt. `mise run
+validate` checks manifest shape. A receipt counts when its `run_id` names a
+`runs/<id>/` directory from that execution. Transcripts enter through `mise run
+sync`, then `prose run src/recording-intake.prose.md`. The schedule page is the
+session grid.
+
 Two pipelines share one reconciler: **schedule** (`schedule-check` →
 `conference-schedule` → `schedule-brief`) and **recordings**
 (`recording-inbox-watch` → `recording-intake` → `talk-photos` / `talk-links`).
@@ -45,8 +57,8 @@ finds the patterns across every talk.
 
 ## Rules the code will not enforce
 
-- Edit `.prose.md` sources, recompile, promote. Hand-editing `dist/` or `state/`
-  produces a receipt that lies.
+- Edit `.prose.md` sources. `prose compile` writes `dist/`. Executing the
+  contract writes `state/` and signs the receipt.
 - A talk is faithful when its body is an **in-order token subsequence** of the
   transcript. ASR garble stays; correcting it changes evidence.
 - Photo filenames are **UTC**; convert with the event timezone before comparing
@@ -60,5 +72,6 @@ finds the patterns across every talk.
 ## Done means
 
 `mise run contracts`, `mise run validate`, and `mise run typecheck` pass,
-`git status` shows no generated or raw-media files, and any state change has a
-receipt in `state/world-model/<node>/receipts.jsonl`.
+`git status` shows no generated or raw-media files, and every state change has a
+receipt whose `run_id` is a `runs/<id>/` directory from executing that node's
+program in this session.

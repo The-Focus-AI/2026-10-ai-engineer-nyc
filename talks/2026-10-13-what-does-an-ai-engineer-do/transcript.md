@@ -1,0 +1,85 @@
+---
+title: "What does an AI engineer do?"
+speakers:
+  - name: Aparna Dhinakaran
+    affiliation: Arize AI
+room: "Simons Room (Metropolitan East)"
+starts_at: "2026-10-13T10:12:00-04:00"
+ends_at: "2026-10-13T10:30:00-04:00"
+format: "keynote"
+recording: "2026-10-13_1015_Arize"
+duration: "14m 59s"
+source: "voice-memos-transcript"
+---
+
+# What does an AI engineer do?
+
+### 00:00:00 — The Evolving Role of the AI Engineer
+
+just tweeted something this weekend where he kind of he kind of talks about this growing gap between basically folks at the frontier who are running 1000s of agents and swarms of always on agents. And he really kind of drops his funnel where 6000000000 plus users have maybe touched their interface with an LLM, one to 2 billion, or maybe like casual, 3 tier users, 20000000 are professionals who have maybe started using it for more and taking some piece of work that would have taken weeks down to days.
+
+But really those at the frontier labs are just super small for sale. It's like 5000 advisers. Are the ones who are running 1000s and 1000s of agents at once? And as I look at this, it really is. I mean, he's kind of dropped a bit of the phone. I mean, the first question anyone looks at this is that, where am I on this?
+
+And, you know, he's kind of drawn out a bit of a roadmap of how does everyone get to in the next couple of years? One of those 5000 users were running 1000s of ages. And this has been happening. It takes for a couple of decades now, where the abstraction layer has gotten higher and higher. I mean, definitely faster in the last couple of years, but we've gone from engineered writing higher level abstraction languages to, I mean, just copy pasting code, using local agents to using cloth agents to really the expectation now is how do all of us start running a team of agents or factors of agents internal and build towards that?
+
+And what this has led to is essentially, what is it then and now what an AI engineer is? And this is this is a bit, I think of a roadmap for some. But I think internally this is what we've already started to kind of push boards. As an AI engineer, your job's no longer than just write the feature, write a feature. It's about how do you build the loop to write that feature?
+
+It's no longer about, you know, just reading the diff and actually doing code review. It's actually, how do you set up systems and allegiance to do the code reviews? And how do you write emails to actually do the non-deterministic, to review those non-determinative tasks. You gotta go. It's actually no longer even about just setting up metrics and software. And I have a leather tree, but it's actually an idea of agents go through and read the observability data and have agents actually consume that kilometry to find habits.
+
+And so this loop that we've had been talking about, which is the build, eval ship, You monitor, you improve it. Well, the air engineer is now actually responsible, not just for doing each of those steps. But how do you build a loop that does the that actually does each of those steps? And it arrives, one of the things we've rolled out in our product, and I'm going to talk about a bit of what we've learned in building this, is we built signal to actually run this loop for AI engineers.
+
+What signal does is that signal actually looks at all of the traces. It reads the telemetry, it identifies patterns in that telemetry, and it can actually put up a fix or a PR if it has access to the refo. And signal signals isn't always on agent. So this is an example of how signals starts, but it actually starts off by just reading the traces.
+
+Super simple a day, but it goes through, reads, you know, all this configurable that a certain volume of traces that came in some cadence, it reads it, and then the goal is to actually identify issues from that filmtry data. It has to keep track of issues that it's previously seen. So we have to consider the memory of, to see something before, that it thought was an issue, did something seem like an issue, but it wasn't actually captured, and now as it collects more data, it actually thinks it's much more of a critical cripple issue.
+
+And so signal actually starts off by reading the traces to identify problems. And so one of the 1st things that we realized was that the future of who's actually consuming telemetry data has really changed. It's no longer about humans consuming timetry data. It's not even about humans consuming it and agents kind of taking on the task. It really is, how do you set up your telemetry data so that agents are the primary consumers of that data?
+
+And what that does is that observability data can become the trigger for actually running and triggering these always on agents. And so the 1st thing that you're building a team of, you know, a factory of really always on agencies, what triggers these agents to wake up or start? And there can be a variety of triggers, for signal for us, it's contributable
+
+### 00:04:59 — The Build-Eval-Ship-Monitor Loop
+
+to run on an ongoing cadence, so every 3 hours, 6 hours, go pull the last, you know, X amount of traces, read them, identify problems. It can also be triggered by events. So slap messages, and some user complains about something, it can be a metric-based trigger, but these are essentially triggers to kick up the agent actually starting. Once the agent actually starts, we have to spend some time figuring out, well, what is what is the agent in front actually a little bit?
+
+For us, we actually pull away all of the contests and the traces. any additional bird party data, so we are now collecting to APM logs, CPM metrics, but all of the 3rd party kilometry data that we want to pull in. access to the reboot, access to the actual, the access to any keys that are needed to actually run, run this agent, but all this information is, put inside of the sandbox.
+
+And this is actually what started up every time the agent wakes up. And so the agent's triggered, we build a sandbox, we put everything that we need inside of that sandbox. There's a proxy. The only way to get information in and out of the sandbox is by this single proxy. And everything that happens inside that tamposs is actually already getting a trace.
+
+And every output. So the issues that are generated and created are all getting saved to some kind of memory. And so this happens every single time the agent actually rocks. Every time the agent finishes running, so it sweeped through all of the traces, it either found something or it didn't. There's what actually stays and what actually gets thrown away. What stays is that if it found any issues, all of the output is actually saved off in some kind of memory so that the next time an agent gets spun up, it doesn't have to start from ground zero.
+
+It has a history of one of the issues that it actually found. The agents are traced. So all of the time is your data, what the agent called, you know, if it actually put up a PR, all of those things are actually traced. And any skills that it may have learned while actually doing a run can also get saved to the actual makeup.
+
+But the things that go away is the sandbox gets worn down, any credentials, you know, obviously get it removed. The repo access is removed. And so all of the stuff that doesn't need to be saved kind of gets torn down after the run on the signal. And we've designed signal in a way to actually keep this agent and figure out durable. So that means that I wear the CF, if the CF box fails, or if the harness fails, then it shouldn't have to start everything from scratch in the middle of the run.
+
+It should actually just be able to pick up from the step that it filled, and all of the steep, so-called, was kind of saved off in kind of a memory outside of the stamp box. And so we've designed this to actually be a very durable agent so that if it fails, you can spin it back up, you can watch a new sandbox, watch a new artist, to kind of pick back up where it started.
+
+So all of this is essentially the underpinnings of how we build signal to run every single run. They think it's tricker, agent gets started, it loaded with all the contacts, the evidence, it sweeps through the telemetry data, it either finds something or it doesn't. All of that could save the memory. If something fails in the middle, the agent from there is set up.
+
+And we built signal to also be, you know, agnostic of the model or the harness. So today a signal supports not just cloud code, which is what we started with, but also supports purser and Kodex. And the goal is to actually support all of the major, even the open source fairness is out there. And signal actually also supports multiple will support kind of multiple models.
+
+So even if you're using fraud code, you can pick any of the novels inside the anthropic family. And this is really important to us because one, it's an awesome way for us to evaluate the quality of the agent. every time we spin it up. It helps us control costs so we can see, you know, as we use more powerful models, the better quality maybe the PRs are, but can we reduce the quality of the, you know, can we reduce the cost and actually still maintain the rigor and maintain the quality of issues that are actually detected by signal.
+
+So this is something we deeply thought about from 1st principles when we were designing signal. And this is actually a pretty good segue into what does an AI engineer need to do? Well, an AI
+
+### 00:09:51 — Continuous Improvement & Agent Observability
+
+engineer really needs to kind of learn how to write emails. And so VIA every time a signal runs, a signal finds an issue, it puts up a PR. Well, there's emails that are run on top of the agent to test that PR. And an email would be as simple as, you know, testing something as part of your development workplow, you have a data set, you can be a simple prompt, with outputs that you're testing to make sure that there's no regressions.
+
+But these emails can also, they need to be kind of aligned with human judgment. And I argue that this is actually probably where an AI engineer should be spending a lot of their time as they're building the system back you on the loop. They should be actually spending time looking at the traces with their agents, identifying what the common errors are. And there's a lot of skills, I think, I was hearing Lance yesterday talk about the plot skill to build evils.
+
+We have a skill with the rise evaluator to actually help you build and write evals as well as align those evals with the human judgment. But this is probably where the shift to defining what is good becomes really, really important for an AI engineer to actually do. And for a lot of teams I think we speak with and we work with, their question becomes, well, how do I trust the evaluator?
+
+And do I, do I really trust that the eval is, you know, is going to capture, you know, how do I trust that it's as good as my judgment? And I think we spend a lot of our own time doing for our own products is that we actually evaluate the evaluators. We spend a decent amount of time on actually building these data sets, folding through data sets, we run evals, verify them, I guess, the human output.
+
+and then try to align to make sure that the judge actually agrees with the human, and they're in agreement before we actually ship out a new evaluator. And these emails can then be used both in an offline testing as well as an online testing manner. And this is probably what I would say as an AI engineer is more and more of what the job is becoming.
+
+and so what I'm going to leave you guys with is, as an engineer, you built this agent, you built this agent that actually run, be always on. You run the flee vows before you actually ship it into production. You can ship it. And then once it goes into production, the goal is to actually trace everything. And tracing everything now means not just tracing the agents, but also tracing the coding agents behind the agent's facilities.
+
+So you can trace plot code, you can trace cursor, you can trace codex, but all these coding agents can be traced, so you can understand what happened in the factory of agents that you all are building. And then these agents, that all the traces can then also be evaluated online. So there's an all flight evaluation when you're actually testing what you're, what a use change is, but as it goes into production, these become your online evals that you're running on top of the telemetry data.
+
+This, for us, ends up becoming the new data that then gets pulled back into the agents to read the telemetry data, the e-bals, and surface up kind of problems inside of the traces. So the system really becomes, how do you go from collect data, email that data, run agents on top of it so that you can find problems and figure out where the gaps are actually through improve your systems.
+
+So if I go back to kind of the question that we started this whole thing with is what does an AI engineer do? I mean, the gap between, either there's a pretty big gap between what's happening in the labs today and what's happening with a lot of businesses. And some of it could just be the data inside of businesses are a lot more messy than what is very constrained and testable inside of a lab.
+
+But engineers are kind of the role to close that out. And I think it really starts with tracing everything, tracing the agent's you're actually building, running emails, being able to learn how to test these, process pesky's products that are really building. And then kind of build a system so that Egypt can actually improve, front as well because that could be collected, so that it no longer just building individual features.
+
+But you're actually building the system to improve, improve your cost. If you want to learn more, come check out a little bit. We can check out signal, learn more, but me, so out for singles. The current program has finished its run. Please collect your belongings and proceed through the main doors for your next schedule.

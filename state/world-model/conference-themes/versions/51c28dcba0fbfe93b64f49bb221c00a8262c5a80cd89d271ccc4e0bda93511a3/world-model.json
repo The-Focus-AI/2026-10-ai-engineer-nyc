@@ -1,0 +1,428 @@
+{
+  "themes": [
+    {
+      "theme_id": "verification-loops-over-human-review",
+      "name": "Verification Loops Over Human Review",
+      "claim_sentence": "As coding and operational agents generate output faster than humans can inspect, reliability requires independent, deterministic verification loops—tests, static analysis, process supervision, and critic agents.",
+      "definition": "Across software factories, hedge funds, and accounting automation, speakers converged on one structural shift: human line-by-line review is now the bottleneck. Teams that trust agents in production pair generator agents with deterministic verifiers, sandboxed execution, policy gates, and step-level process supervision.",
+      "talk_count": 13,
+      "talk_slugs": [
+        "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
+        "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+        "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
+        "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
+        "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+        "2026-10-13-inside-the-fable-war-room",
+        "2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with",
+        "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
+        "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
+        "2026-10-14-the-machine-that-changed-the-world-vai",
+        "2026-10-14-trusting-agents-in-policy-driven-workflows",
+        "2026-10-14-who-verifies-the-software-factory",
+        "2026-10-14-your-job-is-now-agent-manager"
+      ],
+      "claims": [
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:9e24dc",
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:395:770bda",
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:758:71e469",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:52d442",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:421:557769",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:806:68acbc",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:3f9dda",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:395:2bddb4",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:771:84dc48",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:0:8b3c85",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:334:7aeaf7",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:665:c38ae4",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:0:fc9781",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:366:622744",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:730:2fa919",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:acf53e",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:403:ab2322",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:754:0a630b",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:6136ff",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:383:dd0f79",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:761:23ba7c",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:0:1cc367",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:311:ba98a9",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:624:dd596c",
+        "bdab432a-0538-4431-ad5a-62653affd9da:0:3d8c98",
+        "bdab432a-0538-4431-ad5a-62653affd9da:353:1c0488",
+        "bdab432a-0538-4431-ad5a-62653affd9da:712:ae03ad",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:cb4f5a",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:392:5041c2",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:760:052eb5",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:0:04e496",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1050:30f371",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:537:16fca8",
+        "ee927042-2ba1-44c3-b304-d001ae247839:0:07b34d",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:0:594ce0",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:311:62c0d9",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:311:62c0d9"
+      ],
+      "counter_claims": [
+        "29083884-87dc-44f8-b412-b494afca8856:0:c65975"
+      ],
+      "also_called": [
+        "software factory verification",
+        "process supervision",
+        "guardrails and verification harnesses"
+      ],
+      "why_uncontested": null
+    },
+    {
+      "theme_id": "provenance-and-grounding-in-financial-ai",
+      "name": "Provenance and Grounding in Financial AI",
+      "claim_sentence": "In regulated banking, quantitative funds, and private equity, AI agents earn decision authority only when every output is grounded in point-in-time, citation-backed institutional data.",
+      "definition": "Financial institutions from Bridgewater, Two Sigma, and Coatue to Apollo, Coinbase, and Ramp emphasized that hallucination-intolerant workflows require strict provenance, point-in-time retrieval without lookahead bias, and policy-bound execution.",
+      "talk_count": 10,
+      "talk_slugs": [
+        "2026-10-13-a-hedge-fund-as-a-function",
+        "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+        "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
+        "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
+        "2026-10-13-vault-making-unstructured-data-work-for-investing",
+        "2026-10-13-welcome-back-featured-keynotes",
+        "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
+        "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
+        "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
+        "2026-10-14-trusting-agents-in-policy-driven-workflows"
+      ],
+      "claims": [
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:52d442",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:421:557769",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:806:68acbc",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:3f9dda",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:395:2bddb4",
+        "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:771:84dc48",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:0:fc9781",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:366:622744",
+        "68a1e78b-569e-4314-a56f-f20508123cbe:730:2fa919",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:6136ff",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:383:dd0f79",
+        "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:761:23ba7c",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:2c9ed2",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:276:449de7",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:561:2f1bea",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:b25a3a",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:296:02c48b",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:595:e8044c",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:461818",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:362:5b9728",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:746:3b6f42",
+        "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:29da2a",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:0:3c9321",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:264:5740b9",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:535:56b6a0",
+        "ee927042-2ba1-44c3-b304-d001ae247839:0:07b34d"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "institutional grounding",
+        "point-in-time backtesting",
+        "evidence-backed financial agents"
+      ],
+      "why_uncontested": "Every financial services speaker treated auditability, provenance, and regulatory compliance as non-negotiable prerequisites for production deployment."
+    },
+    {
+      "theme_id": "owning-open-foundations-vs-renting-the-frontier",
+      "name": "Owning Open Foundations vs. Renting the Frontier",
+      "claim_sentence": "Organizations face a strategic trade-off between owning fine-tuned open-weight models for cost, privacy, and control versus leveraging rapidly advancing closed frontier models.",
+      "definition": "Nous Research, Featherless, and Runpod argued for owning weights on open foundations, while Ramp, Anthropic, and SpaceX highlighted how fast-moving frontier capabilities reshape orchestration and sub-agent routing.",
+      "talk_count": 8,
+      "talk_slugs": [
+        "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
+        "2026-10-13-closing-remarks",
+        "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
+        "2026-10-13-frontier-models-for-acting-in-space-and-time",
+        "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
+        "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
+        "2026-10-14-the-model-ate-the-coding-harness-now-what",
+        "2026-10-14-welcome-back-featured-keynotes"
+      ],
+      "claims": [
+        "18628ea8-d66a-4d7b-adbd-730d3a43d92e:0:aa5d42",
+        "29083884-87dc-44f8-b412-b494afca8856:0:c65975",
+        "29083884-87dc-44f8-b412-b494afca8856:398:a59584",
+        "29083884-87dc-44f8-b412-b494afca8856:737:09a5bf",
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:d25a6b",
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:316:a5aecd",
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:624:a1e28c",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:0:7200c9",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:1087:310878",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:530:210b36",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:0:228501",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:446:7d96c5",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:e038db",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:0:3c9321",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:264:5740b9",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:535:56b6a0",
+        "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:0:2753f0",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:08251a",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:316:75859a",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:675:7ef1b5"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "owned vs. rented land",
+        "open-weight sovereignty"
+      ],
+      "why_uncontested": null
+    },
+    {
+      "theme_id": "the-sandboxed-computer-and-evolving-harness",
+      "name": "The Sandboxed Computer and Evolving Harness",
+      "claim_sentence": "Agent harnesses are converging on isolated computer sandboxes and structured context graphs while shedding brittle hand-rolled prompt scaffolding as models improve.",
+      "definition": "From Daytona and Greptile to Linear, SpaceX, and Warp, builders showed that giving an agent a real computer sandbox and structured issue context unlocks general problem-solving—even as RL-trained models absorb the brittle orchestration loops of early harnesses.",
+      "talk_count": 8,
+      "talk_slugs": [
+        "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
+        "2026-10-13-agents-can-pay-so-why-don-t-they",
+        "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
+        "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+        "2026-10-14-the-model-ate-the-coding-harness-now-what",
+        "2026-10-14-who-verifies-the-software-factory",
+        "2026-10-14-your-agent-needs-a-skill-to-improve-its-skills",
+        "2026-10-14-your-coding-agent-has-a-context-problem"
+      ],
+      "claims": [
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:5b54e7",
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:398:ab7045",
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:778:d35dc6",
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:9e24dc",
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:395:770bda",
+        "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:758:71e469",
+        "29083884-87dc-44f8-b412-b494afca8856:0:c65975",
+        "29083884-87dc-44f8-b412-b494afca8856:398:a59584",
+        "29083884-87dc-44f8-b412-b494afca8856:737:09a5bf",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:e7b471",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:419:51220e",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:861:cffd83",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:0:1a8ccf",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:451:bd0cd3",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:823:856022",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:0:1cc367",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:311:ba98a9",
+        "8d424512-c7f0-483c-9094-ca899d7bb1fd:624:dd596c",
+        "bdab432a-0538-4431-ad5a-62653affd9da:0:3d8c98",
+        "bdab432a-0538-4431-ad5a-62653affd9da:353:1c0488",
+        "bdab432a-0538-4431-ad5a-62653affd9da:712:ae03ad",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:0:04e496",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1050:30f371",
+        "edb4f982-0cb8-48ee-8bf7-410255a40cb3:537:16fca8"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "give the model a computer",
+        "the model ate the harness",
+        "context engineering"
+      ],
+      "why_uncontested": null
+    },
+    {
+      "theme_id": "self-improving-agents-and-agent-management",
+      "name": "Self-Improving Agents and Agent Management",
+      "claim_sentence": "Engineers are transitioning from writing individual features to managing fleets of agents that mine their own execution traces and update reusable skills over time.",
+      "definition": "Warp, Untangle, Arize AI, Linear, and GEICO showed how 15-minute manager heartbeats, trace-mining meta-skills, and automated war-room agents turn one-off agent runs into compounding organizational memory.",
+      "talk_count": 7,
+      "talk_slugs": [
+        "2026-10-13-a-hedge-fund-as-a-function",
+        "2026-10-13-inside-the-fable-war-room",
+        "2026-10-13-what-does-an-ai-engineer-do",
+        "2026-10-14-the-machine-that-changed-the-world-vai",
+        "2026-10-14-your-agent-needs-a-skill-to-improve-its-skills",
+        "2026-10-14-your-coding-agent-has-a-context-problem",
+        "2026-10-14-your-job-is-now-agent-manager"
+      ],
+      "claims": [
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:5b54e7",
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:398:ab7045",
+        "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:778:d35dc6",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:0:8b3c85",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:334:7aeaf7",
+        "4add802c-6a68-4e9c-93fb-9c1e017193bc:665:c38ae4",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:e7b471",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:419:51220e",
+        "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:861:cffd83",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:acf53e",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:403:ab2322",
+        "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:754:0a630b",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:2c9ed2",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:276:449de7",
+        "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:561:2f1bea",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:939842",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:299:1ada9c",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:591:288d1a",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:0:594ce0",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:311:62c0d9",
+        "f7204e6d-a47c-4535-804e-16b4db579b95:311:62c0d9"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "agent manager",
+        "skill-improving skills",
+        "autonomous software factories"
+      ],
+      "why_uncontested": "Speakers agreed that persisting lessons across sessions is essential, differing only on how much human approval is required before a skill update is promoted."
+    },
+    {
+      "theme_id": "bootstrapping-domain-evals-without-public-benchmarks",
+      "name": "Bootstrapping Domain Evals Without Public Benchmarks",
+      "claim_sentence": "Because public leaderboards fail to measure domain-specific business logic, lookahead leakage, or creative quality, engineering teams must synthesize and maintain custom evaluation suites from production traces.",
+      "definition": "Speakers from Air Canada, Arize AI, Exa, Basis, and Towards AI demonstrated how to build evaluation datasets from scratch—writing reference answers first, snapshotting temporal web state, supervising intermediate steps, and turning production failures into regression tests.",
+      "talk_count": 6,
+      "talk_slugs": [
+        "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
+        "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
+        "2026-10-13-vault-making-unstructured-data-work-for-investing",
+        "2026-10-13-what-does-an-ai-engineer-do",
+        "2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with",
+        "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work"
+      ],
+      "claims": [
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:52d442",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:421:557769",
+        "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:806:68acbc",
+        "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:828ed5",
+        "736edd83-bb08-49f1-90ed-722b7ed07eb2:375:b9d212",
+        "736edd83-bb08-49f1-90ed-722b7ed07eb2:757:b012ce",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:b25a3a",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:296:02c48b",
+        "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:595:e8044c",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:939842",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:299:1ada9c",
+        "b2ed4456-5671-4e8e-83fd-684c012fef8c:591:288d1a",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:461818",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:362:5b9728",
+        "b8bb725d-daf0-4ac0-8095-5737841c89e5:746:3b6f42",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:cb4f5a",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:392:5041c2",
+        "c4ba0138-6f6d-4780-93a1-4d8f0c478339:760:052eb5"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "write the answer first",
+        "build-eval-ship-monitor loop",
+        "anti-slop benchmarks"
+      ],
+      "why_uncontested": "No speaker defended static public leaderboards as sufficient for production readiness."
+    },
+    {
+      "theme_id": "token-economics-and-multi-model-routing",
+      "name": "Token Economics and Multi-Model Routing",
+      "claim_sentence": "Sustaining production AI margins requires routing subtasks across frontier orchestrators and specialized or open-weight models while optimizing GPU serving and KV-cache utilization.",
+      "definition": "Featherless, Ramp, Runpod, Greptile, and Nous Research detailed the unit economics of production inference: memory bandwidth bottlenecks, vLLM benchmarking, and hybrid architectures that pair frontier reasoning with fast domain-tuned models.",
+      "talk_count": 6,
+      "talk_slugs": [
+        "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
+        "2026-10-13-agents-can-pay-so-why-don-t-they",
+        "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
+        "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
+        "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+        "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier"
+      ],
+      "claims": [
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:d25a6b",
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:316:a5aecd",
+        "871cd5c8-13f4-4fe9-ac49-c8b25d970add:624:a1e28c",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:0:1a8ccf",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:451:bd0cd3",
+        "8d348b6c-25cc-45de-8dc4-aaa3d7130918:823:856022",
+        "bdab432a-0538-4431-ad5a-62653affd9da:0:3d8c98",
+        "bdab432a-0538-4431-ad5a-62653affd9da:353:1c0488",
+        "bdab432a-0538-4431-ad5a-62653affd9da:712:ae03ad",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:0:7200c9",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:1087:310878",
+        "c901e963-5be9-4a1d-86a3-d9354374bbcd:530:210b36",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:0:3c9321",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:264:5740b9",
+        "caecd5f6-b352-4868-a995-f0f71679caf0:535:56b6a0",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:08251a",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:316:75859a",
+        "fca86857-d079-46a6-94a7-62b0bb8e5d31:675:7ef1b5"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "tokenomics 101",
+        "frontier orchestrator + fast sub-agent",
+        "live LLM benchmarking"
+      ],
+      "why_uncontested": "Across both model providers and enterprise consumers, routing by task complexity was the consensus strategy for controlling inference spend."
+    },
+    {
+      "theme_id": "spatiotemporal-world-models-and-simulation",
+      "name": "Spatiotemporal World Models and Simulation",
+      "claim_sentence": "Foundation models are expanding beyond text into spatiotemporal world models trained on video and action trajectories to simulate physics, environments, and embodied control.",
+      "definition": "General Intuition and Runway demonstrated how training on gameplay action trajectories and generative video transitions AI from static text prediction to interactive world simulation.",
+      "talk_count": 3,
+      "talk_slugs": [
+        "2026-10-13-closing-remarks",
+        "2026-10-13-frontier-models-for-acting-in-space-and-time",
+        "2026-10-14-everything-will-be-simulated"
+      ],
+      "claims": [
+        "af8422e8-d5f8-4dbd-a918-6360f5bfba80:0:14acc4",
+        "af8422e8-d5f8-4dbd-a918-6360f5bfba80:345:931659",
+        "af8422e8-d5f8-4dbd-a918-6360f5bfba80:683:a1246d",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:0:228501",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:446:7d96c5",
+        "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:e038db",
+        "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:0:2753f0"
+      ],
+      "counter_claims": [],
+      "also_called": [
+        "everything will be simulated",
+        "pixels to actions"
+      ],
+      "why_uncontested": "Both keynote speakers framed world simulation as the next frontier beyond language-only models."
+    }
+  ],
+  "singletons": [
+    "8d348b6c-25cc-45de-8dc4-aaa3d7130918:451:bd0cd3",
+    "736edd83-bb08-49f1-90ed-722b7ed07eb2:375:b9d212"
+  ],
+  "contested": [
+    {
+      "question": "Should agent reliability live in rich external harness scaffolding or be absorbed into end-to-end RL-trained models?",
+      "sides": [
+        {
+          "claim_id": "29083884-87dc-44f8-b412-b494afca8856:398:a59584",
+          "stance": "Models trained with end-to-end RL absorb multi-step planning and orchestration loops, shrinking the external harness to just execution environments and tools."
+        },
+        {
+          "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:537:16fca8",
+          "stance": "Production safety requires explicit, deterministic verification loops and external guardrails outside the model regardless of raw model capability."
+        }
+      ]
+    },
+    {
+      "question": "Should enterprises build on owned open-weight foundations or orchestrate closed frontier models with smaller domain models?",
+      "sides": [
+        {
+          "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:316:a5aecd",
+          "stance": "Enterprises must build on open-weight foundations like Hermes to own their weights, customize behavior, and avoid rented-land lock-in."
+        },
+        {
+          "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:535:56b6a0",
+          "stance": "Pairing closed frontier orchestrators with specialized domain-tuned sub-agents delivers frontier capabilities immediately while keeping unit costs low."
+        }
+      ]
+    }
+  ],
+  "corpus": {
+    "talk_count": 31,
+    "word_count": 96007,
+    "last_touched": "2026-10-26T10:41:07-04:00",
+    "theme_count": 8,
+    "unassigned": [],
+    "thin": [
+      "2026-10-13-closing-remarks",
+      "2026-10-13-welcome-back-featured-keynotes",
+      "2026-10-14-trusting-agents-in-policy-driven-workflows",
+      "2026-10-14-welcome-back-featured-keynotes",
+      "2026-10-14-your-job-is-now-agent-manager"
+    ],
+    "report_path": "analysis/themes.md",
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  }
+}

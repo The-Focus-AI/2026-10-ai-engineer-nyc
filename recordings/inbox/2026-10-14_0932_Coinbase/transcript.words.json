@@ -1,0 +1,2826 @@
+{
+ "words": [
+  {
+   "w": "Hi,",
+   "start": 21.24,
+   "end": 22.86
+  },
+  {
+   "w": "woman.",
+   "start": 22.86,
+   "end": 23.4
+  },
+  {
+   "w": "My",
+   "start": 23.46,
+   "end": 24.12
+  },
+  {
+   "w": "name",
+   "start": 24.12,
+   "end": 24.24
+  },
+  {
+   "w": "is,",
+   "start": 24.24,
+   "end": 24.42
+  },
+  {
+   "w": "uh,",
+   "start": 24.42,
+   "end": 24.66
+  },
+  {
+   "w": "Formos.",
+   "start": 24.66,
+   "end": 25.2
+  },
+  {
+   "w": "I've",
+   "start": 25.26,
+   "end": 25.56
+  },
+  {
+   "w": "been",
+   "start": 25.56,
+   "end": 25.62
+  },
+  {
+   "w": "delivering,",
+   "start": 25.62,
+   "end": 27.12
+  },
+  {
+   "w": "designing,",
+   "start": 27.12,
+   "end": 27.66
+  },
+  {
+   "w": "building",
+   "start": 27.66,
+   "end": 27.96
+  },
+  {
+   "w": "software",
+   "start": 27.96,
+   "end": 28.38
+  },
+  {
+   "w": "for",
+   "start": 28.38,
+   "end": 28.62
+  },
+  {
+   "w": "20",
+   "start": 28.62,
+   "end": 28.92
+  },
+  {
+   "w": "years.",
+   "start": 28.92,
+   "end": 29.1
+  },
+  {
+   "w": "The",
+   "start": 29.16,
+   "end": 29.4
+  },
+  {
+   "w": "last,",
+   "start": 29.4,
+   "end": 29.94
+  },
+  {
+   "w": "uh,",
+   "start": 29.94,
+   "end": 30.12
+  },
+  {
+   "w": "15",
+   "start": 30.12,
+   "end": 30.24
+  },
+  {
+   "w": "in",
+   "start": 30.24,
+   "end": 30.78
+  },
+  {
+   "w": "Enterprise",
+   "start": 30.78,
+   "end": 31.26
+  },
+  {
+   "w": "Financial",
+   "start": 31.26,
+   "end": 31.8
+  },
+  {
+   "w": "Services,",
+   "start": 31.8,
+   "end": 32.22
+  },
+  {
+   "w": "now...",
+   "start": 32.22,
+   "end": 33.54
+  },
+  {
+   "w": "buying",
+   "start": 33.54,
+   "end": 34.14
+  },
+  {
+   "w": "a",
+   "start": 34.14,
+   "end": 34.38
+  },
+  {
+   "w": "player",
+   "start": 34.38,
+   "end": 35.1
+  },
+  {
+   "w": "coach",
+   "start": 35.1,
+   "end": 35.64
+  },
+  {
+   "w": "in",
+   "start": 35.64,
+   "end": 35.76
+  },
+  {
+   "w": "that",
+   "start": 35.76,
+   "end": 35.82
+  },
+  {
+   "w": "point",
+   "start": 35.82,
+   "end": 36
+  },
+  {
+   "w": "case.",
+   "start": 36,
+   "end": 36.6
+  },
+  {
+   "w": "And",
+   "start": 36.66,
+   "end": 37.68
+  },
+  {
+   "w": "we're",
+   "start": 37.68,
+   "end": 37.92
+  },
+  {
+   "w": "here",
+   "start": 37.92,
+   "end": 37.98
+  },
+  {
+   "w": "today",
+   "start": 37.98,
+   "end": 38.16
+  },
+  {
+   "w": "to",
+   "start": 38.16,
+   "end": 38.58
+  },
+  {
+   "w": "talk",
+   "start": 38.58,
+   "end": 38.7
+  },
+  {
+   "w": "about",
+   "start": 38.7,
+   "end": 38.88
+  },
+  {
+   "w": "trusting",
+   "start": 38.88,
+   "end": 39.24
+  },
+  {
+   "w": "agents",
+   "start": 39.24,
+   "end": 39.6
+  },
+  {
+   "w": "and",
+   "start": 39.6,
+   "end": 39.84
+  },
+  {
+   "w": "policy",
+   "start": 39.84,
+   "end": 40.2
+  },
+  {
+   "w": "during",
+   "start": 40.2,
+   "end": 40.5
+  },
+  {
+   "w": "the",
+   "start": 40.5,
+   "end": 40.74
+  },
+  {
+   "w": "workplace.",
+   "start": 40.74,
+   "end": 41.34
+  },
+  {
+   "w": "So,",
+   "start": 47.76,
+   "end": 49.14
+  },
+  {
+   "w": "let's",
+   "start": 49.14,
+   "end": 49.38
+  },
+  {
+   "w": "start",
+   "start": 49.38,
+   "end": 49.5
+  },
+  {
+   "w": "with",
+   "start": 49.5,
+   "end": 49.68
+  },
+  {
+   "w": "policy,",
+   "start": 49.68,
+   "end": 50.28
+  },
+  {
+   "w": "and",
+   "start": 50.28,
+   "end": 50.46
+  },
+  {
+   "w": "it's",
+   "start": 50.46,
+   "end": 51
+  },
+  {
+   "w": "pretty",
+   "start": 51,
+   "end": 51.06
+  },
+  {
+   "w": "boring.",
+   "start": 51.06,
+   "end": 51.9
+  },
+  {
+   "w": "Um,",
+   "start": 51.96,
+   "end": 52.32
+  },
+  {
+   "w": "I'm",
+   "start": 52.32,
+   "end": 53.22
+  },
+  {
+   "w": "gonna",
+   "start": 53.22,
+   "end": 53.28
+  },
+  {
+   "w": "go",
+   "start": 53.28,
+   "end": 53.52
+  },
+  {
+   "w": "over",
+   "start": 53.52,
+   "end": 53.58
+  },
+  {
+   "w": "here",
+   "start": 53.58,
+   "end": 53.7
+  },
+  {
+   "w": "for",
+   "start": 53.7,
+   "end": 54.06
+  },
+  {
+   "w": "about.",
+   "start": 54.06,
+   "end": 54.78
+  },
+  {
+   "w": "So",
+   "start": 55.08,
+   "end": 56.34
+  },
+  {
+   "w": "our",
+   "start": 56.34,
+   "end": 56.7
+  },
+  {
+   "w": "starting",
+   "start": 56.7,
+   "end": 56.94
+  },
+  {
+   "w": "point",
+   "start": 56.94,
+   "end": 57.24
+  },
+  {
+   "w": "center",
+   "start": 57.24,
+   "end": 57.66
+  },
+  {
+   "w": "out,",
+   "start": 57.66,
+   "end": 57.96
+  },
+  {
+   "w": "centers",
+   "start": 57.96,
+   "end": 58.26
+  },
+  {
+   "w": "around",
+   "start": 58.26,
+   "end": 58.62
+  },
+  {
+   "w": "the",
+   "start": 58.62,
+   "end": 58.8
+  },
+  {
+   "w": "policy,",
+   "start": 58.8,
+   "end": 59.58
+  },
+  {
+   "w": "and",
+   "start": 59.58,
+   "end": 59.76
+  },
+  {
+   "w": "This",
+   "start": 59.76,
+   "end": 61.68
+  },
+  {
+   "w": "sets",
+   "start": 61.68,
+   "end": 62.04
+  },
+  {
+   "w": "the",
+   "start": 62.04,
+   "end": 62.22
+  },
+  {
+   "w": "rules",
+   "start": 62.22,
+   "end": 62.52
+  },
+  {
+   "w": "for",
+   "start": 62.52,
+   "end": 62.7
+  },
+  {
+   "w": "how",
+   "start": 62.7,
+   "end": 62.82
+  },
+  {
+   "w": "work",
+   "start": 62.82,
+   "end": 63.06
+  },
+  {
+   "w": "gets",
+   "start": 63.06,
+   "end": 63.42
+  },
+  {
+   "w": "done",
+   "start": 63.42,
+   "end": 63.6
+  },
+  {
+   "w": "within",
+   "start": 63.6,
+   "end": 64.44
+  },
+  {
+   "w": "the",
+   "start": 64.44,
+   "end": 64.56
+  },
+  {
+   "w": "organization.",
+   "start": 64.56,
+   "end": 65.34
+  },
+  {
+   "w": "including",
+   "start": 65.46,
+   "end": 66.9
+  },
+  {
+   "w": "especially",
+   "start": 66.9,
+   "end": 67.38
+  },
+  {
+   "w": "risking",
+   "start": 67.38,
+   "end": 67.86
+  },
+  {
+   "w": "compliance.",
+   "start": 67.86,
+   "end": 68.52
+  },
+  {
+   "w": "Make",
+   "start": 69.84,
+   "end": 71.1
+  },
+  {
+   "w": "a",
+   "start": 71.1,
+   "end": 71.28
+  },
+  {
+   "w": "policy",
+   "start": 71.28,
+   "end": 71.52
+  },
+  {
+   "w": "as",
+   "start": 71.52,
+   "end": 71.7
+  },
+  {
+   "w": "the",
+   "start": 71.7,
+   "end": 72.06
+  },
+  {
+   "w": "original",
+   "start": 72.06,
+   "end": 72.12
+  },
+  {
+   "w": "institutional",
+   "start": 72.12,
+   "end": 72.9
+  },
+  {
+   "w": "intent,",
+   "start": 72.9,
+   "end": 73.98
+  },
+  {
+   "w": "or",
+   "start": 73.98,
+   "end": 74.64
+  },
+  {
+   "w": "the",
+   "start": 74.64,
+   "end": 75
+  },
+  {
+   "w": "original",
+   "start": 75,
+   "end": 75.18
+  },
+  {
+   "w": "system",
+   "start": 75.18,
+   "end": 75.54
+  },
+  {
+   "w": "prompt.",
+   "start": 75.54,
+   "end": 76.26
+  },
+  {
+   "w": "So",
+   "start": 76.38,
+   "end": 77.34
+  },
+  {
+   "w": "ideally,",
+   "start": 77.34,
+   "end": 78.18
+  },
+  {
+   "w": "we",
+   "start": 78.18,
+   "end": 78.3
+  },
+  {
+   "w": "have",
+   "start": 78.3,
+   "end": 78.42
+  },
+  {
+   "w": "this",
+   "start": 78.42,
+   "end": 78.78
+  },
+  {
+   "w": "written",
+   "start": 78.78,
+   "end": 78.96
+  },
+  {
+   "w": "down.",
+   "start": 78.96,
+   "end": 79.74
+  },
+  {
+   "w": "So",
+   "start": 79.8,
+   "end": 80.34
+  },
+  {
+   "w": "a",
+   "start": 80.34,
+   "end": 80.7
+  },
+  {
+   "w": "little",
+   "start": 80.7,
+   "end": 80.76
+  },
+  {
+   "w": "bit",
+   "start": 80.76,
+   "end": 80.82
+  },
+  {
+   "w": "boring,",
+   "start": 80.82,
+   "end": 81.12
+  },
+  {
+   "w": "so",
+   "start": 81.12,
+   "end": 81.24
+  },
+  {
+   "w": "stick",
+   "start": 81.24,
+   "end": 81.48
+  },
+  {
+   "w": "with",
+   "start": 81.48,
+   "end": 81.66
+  },
+  {
+   "w": "me.",
+   "start": 81.66,
+   "end": 81.84
+  },
+  {
+   "w": "Using",
+   "start": 82.86,
+   "end": 84.24
+  },
+  {
+   "w": "language",
+   "start": 84.24,
+   "end": 84.6
+  },
+  {
+   "w": "like",
+   "start": 84.6,
+   "end": 84.96
+  },
+  {
+   "w": "Boston",
+   "start": 84.96,
+   "end": 85.5
+  },
+  {
+   "w": "may",
+   "start": 85.5,
+   "end": 85.8
+  },
+  {
+   "w": "and",
+   "start": 85.8,
+   "end": 86.04
+  },
+  {
+   "w": "should.",
+   "start": 86.04,
+   "end": 86.58
+  },
+  {
+   "w": "And",
+   "start": 86.64,
+   "end": 87.54
+  },
+  {
+   "w": "again,",
+   "start": 87.54,
+   "end": 88.08
+  },
+  {
+   "w": "these",
+   "start": 88.08,
+   "end": 88.38
+  },
+  {
+   "w": "helped",
+   "start": 88.38,
+   "end": 88.62
+  },
+  {
+   "w": "to",
+   "start": 88.62,
+   "end": 88.68
+  },
+  {
+   "w": "find",
+   "start": 88.68,
+   "end": 88.8
+  },
+  {
+   "w": "the",
+   "start": 88.8,
+   "end": 88.92
+  },
+  {
+   "w": "rules",
+   "start": 88.92,
+   "end": 89.16
+  },
+  {
+   "w": "and",
+   "start": 89.16,
+   "end": 90.3
+  },
+  {
+   "w": "decisions",
+   "start": 90.3,
+   "end": 90.66
+  },
+  {
+   "w": "about",
+   "start": 90.66,
+   "end": 90.9
+  },
+  {
+   "w": "how",
+   "start": 90.9,
+   "end": 91.26
+  },
+  {
+   "w": "the",
+   "start": 91.26,
+   "end": 91.38
+  },
+  {
+   "w": "system",
+   "start": 91.38,
+   "end": 91.44
+  },
+  {
+   "w": "operates",
+   "start": 91.44,
+   "end": 91.86
+  },
+  {
+   "w": "in",
+   "start": 91.86,
+   "end": 93.18
+  },
+  {
+   "w": "the",
+   "start": 93.18,
+   "end": 93.24
+  },
+  {
+   "w": "organization.",
+   "start": 93.24,
+   "end": 94.14
+  },
+  {
+   "w": "Separate",
+   "start": 94.2,
+   "end": 95.58
+  },
+  {
+   "w": "from",
+   "start": 95.58,
+   "end": 95.76
+  },
+  {
+   "w": "policy,",
+   "start": 95.76,
+   "end": 96.36
+  },
+  {
+   "w": "we",
+   "start": 96.36,
+   "end": 97.08
+  },
+  {
+   "w": "have",
+   "start": 97.08,
+   "end": 97.2
+  },
+  {
+   "w": "the",
+   "start": 97.2,
+   "end": 97.56
+  },
+  {
+   "w": "actual",
+   "start": 97.56,
+   "end": 98.04
+  },
+  {
+   "w": "running",
+   "start": 98.04,
+   "end": 98.16
+  },
+  {
+   "w": "system.",
+   "start": 98.16,
+   "end": 98.94
+  },
+  {
+   "w": "So,",
+   "start": 102,
+   "end": 102.42
+  },
+  {
+   "w": "the",
+   "start": 102.42,
+   "end": 102.78
+  },
+  {
+   "w": "first",
+   "start": 102.78,
+   "end": 102.9
+  },
+  {
+   "w": "thing",
+   "start": 102.9,
+   "end": 103.02
+  },
+  {
+   "w": "we're",
+   "start": 103.02,
+   "end": 103.26
+  },
+  {
+   "w": "gonna",
+   "start": 103.26,
+   "end": 103.32
+  },
+  {
+   "w": "do",
+   "start": 103.32,
+   "end": 103.5
+  },
+  {
+   "w": "is",
+   "start": 103.5,
+   "end": 103.8
+  },
+  {
+   "w": "separate",
+   "start": 103.8,
+   "end": 104.22
+  },
+  {
+   "w": "these",
+   "start": 104.22,
+   "end": 104.94
+  },
+  {
+   "w": "two,",
+   "start": 104.94,
+   "end": 105.72
+  },
+  {
+   "w": "uh...",
+   "start": 105.72,
+   "end": 107.1
+  },
+  {
+   "w": "these",
+   "start": 107.1,
+   "end": 107.58
+  },
+  {
+   "w": "two,",
+   "start": 107.58,
+   "end": 107.94
+  },
+  {
+   "w": "both",
+   "start": 107.94,
+   "end": 108.12
+  },
+  {
+   "w": "the",
+   "start": 108.12,
+   "end": 108.54
+  },
+  {
+   "w": "Bills",
+   "start": 108.54,
+   "end": 108.72
+  },
+  {
+   "w": "State",
+   "start": 108.72,
+   "end": 108.78
+  },
+  {
+   "w": "and",
+   "start": 108.78,
+   "end": 108.96
+  },
+  {
+   "w": "New",
+   "start": 108.96,
+   "end": 109.08
+  },
+  {
+   "w": "York",
+   "start": 109.08,
+   "end": 109.26
+  },
+  {
+   "w": "State",
+   "start": 109.26,
+   "end": 109.56
+  },
+  {
+   "w": "at",
+   "start": 109.56,
+   "end": 109.8
+  },
+  {
+   "w": "two",
+   "start": 109.8,
+   "end": 109.92
+  },
+  {
+   "w": "different",
+   "start": 109.92,
+   "end": 110.04
+  },
+  {
+   "w": "moments",
+   "start": 110.04,
+   "end": 110.46
+  },
+  {
+   "w": "of",
+   "start": 110.46,
+   "end": 110.64
+  },
+  {
+   "w": "time.",
+   "start": 110.64,
+   "end": 110.82
+  },
+  {
+   "w": "So",
+   "start": 110.88,
+   "end": 111.72
+  },
+  {
+   "w": "typically,",
+   "start": 111.72,
+   "end": 112.44
+  },
+  {
+   "w": "we're",
+   "start": 112.44,
+   "end": 112.74
+  },
+  {
+   "w": "either",
+   "start": 112.74,
+   "end": 112.8
+  },
+  {
+   "w": "defining",
+   "start": 112.8,
+   "end": 113.22
+  },
+  {
+   "w": "or",
+   "start": 113.22,
+   "end": 113.46
+  },
+  {
+   "w": "changing",
+   "start": 113.46,
+   "end": 114.18
+  },
+  {
+   "w": "our",
+   "start": 114.18,
+   "end": 114.36
+  },
+  {
+   "w": "policy,",
+   "start": 114.36,
+   "end": 115.26
+  },
+  {
+   "w": "but",
+   "start": 115.26,
+   "end": 115.68
+  },
+  {
+   "w": "the",
+   "start": 115.68,
+   "end": 116.64
+  },
+  {
+   "w": "system",
+   "start": 116.64,
+   "end": 116.88
+  },
+  {
+   "w": "is",
+   "start": 116.88,
+   "end": 117.24
+  },
+  {
+   "w": "constantly",
+   "start": 117.24,
+   "end": 117.54
+  },
+  {
+   "w": "running,",
+   "start": 117.54,
+   "end": 118.14
+  },
+  {
+   "w": "and",
+   "start": 118.14,
+   "end": 118.26
+  },
+  {
+   "w": "it's",
+   "start": 118.26,
+   "end": 118.5
+  },
+  {
+   "w": "constantly",
+   "start": 118.5,
+   "end": 118.8
+  },
+  {
+   "w": "moving.",
+   "start": 118.8,
+   "end": 119.4
+  },
+  {
+   "w": "and",
+   "start": 119.46,
+   "end": 120.06
+  },
+  {
+   "w": "changing.",
+   "start": 120.06,
+   "end": 121.02
+  },
+  {
+   "w": "So,",
+   "start": 122.7,
+   "end": 124.08
+  },
+  {
+   "w": "we",
+   "start": 124.08,
+   "end": 124.38
+  },
+  {
+   "w": "can",
+   "start": 124.38,
+   "end": 124.62
+  },
+  {
+   "w": "then,",
+   "start": 124.62,
+   "end": 125.1
+  },
+  {
+   "w": "sort",
+   "start": 125.1,
+   "end": 125.34
+  },
+  {
+   "w": "of,",
+   "start": 125.34,
+   "end": 125.58
+  },
+  {
+   "w": "imagine",
+   "start": 125.58,
+   "end": 125.88
+  },
+  {
+   "w": "a",
+   "start": 125.88,
+   "end": 126.78
+  },
+  {
+   "w": "compilation",
+   "start": 126.78,
+   "end": 127.26
+  },
+  {
+   "w": "of",
+   "start": 127.26,
+   "end": 127.44
+  },
+  {
+   "w": "that,",
+   "start": 127.44,
+   "end": 128.7
+  },
+  {
+   "w": "oh,",
+   "start": 128.7,
+   "end": 128.94
+  },
+  {
+   "w": "sorry,",
+   "start": 128.94,
+   "end": 129.18
+  },
+  {
+   "w": "I",
+   "start": 129.18,
+   "end": 129.3
+  },
+  {
+   "w": "was",
+   "start": 129.3,
+   "end": 129.36
+  },
+  {
+   "w": "gonna",
+   "start": 129.36,
+   "end": 129.48
+  },
+  {
+   "w": "ahead.",
+   "start": 129.48,
+   "end": 130.2
+  },
+  {
+   "w": "It's",
+   "start": 130.26,
+   "end": 131.64
+  },
+  {
+   "w": "constantly",
+   "start": 131.64,
+   "end": 131.88
+  },
+  {
+   "w": "changing.",
+   "start": 131.88,
+   "end": 132.54
+  },
+  {
+   "w": "So...",
+   "start": 132.6,
+   "end": 135.42
+  },
+  {
+   "w": "It",
+   "start": 135.42,
+   "end": 136.38
+  },
+  {
+   "w": "gets",
+   "start": 136.38,
+   "end": 136.56
+  },
+  {
+   "w": "evolving",
+   "start": 136.56,
+   "end": 136.92
+  },
+  {
+   "w": "quickly,",
+   "start": 136.92,
+   "end": 137.46
+  },
+  {
+   "w": "these",
+   "start": 137.46,
+   "end": 137.58
+  },
+  {
+   "w": "products",
+   "start": 137.58,
+   "end": 137.82
+  },
+  {
+   "w": "are",
+   "start": 137.82,
+   "end": 137.94
+  },
+  {
+   "w": "in",
+   "start": 137.94,
+   "end": 138.3
+  },
+  {
+   "w": "changes,",
+   "start": 138.3,
+   "end": 138.54
+  },
+  {
+   "w": "so",
+   "start": 138.54,
+   "end": 138.72
+  },
+  {
+   "w": "everything",
+   "start": 138.72,
+   "end": 138.9
+  },
+  {
+   "w": "is",
+   "start": 138.9,
+   "end": 139.26
+  },
+  {
+   "w": "expected",
+   "start": 139.26,
+   "end": 139.62
+  },
+  {
+   "w": "to",
+   "start": 139.62,
+   "end": 139.86
+  },
+  {
+   "w": "still",
+   "start": 139.86,
+   "end": 140.22
+  },
+  {
+   "w": "be",
+   "start": 140.22,
+   "end": 140.4
+  },
+  {
+   "w": "roughly",
+   "start": 140.4,
+   "end": 140.76
+  },
+  {
+   "w": "bound",
+   "start": 140.76,
+   "end": 141.24
+  },
+  {
+   "w": "by",
+   "start": 141.24,
+   "end": 141.36
+  },
+  {
+   "w": "the",
+   "start": 141.36,
+   "end": 141.48
+  },
+  {
+   "w": "policy,",
+   "start": 141.48,
+   "end": 141.78
+  },
+  {
+   "w": "but",
+   "start": 141.78,
+   "end": 141.9
+  },
+  {
+   "w": "ultimately,",
+   "start": 141.9,
+   "end": 143.1
+  },
+  {
+   "w": "um,",
+   "start": 143.1,
+   "end": 144.06
+  },
+  {
+   "w": "we",
+   "start": 144.06,
+   "end": 144.24
+  },
+  {
+   "w": "separate",
+   "start": 144.24,
+   "end": 144.66
+  },
+  {
+   "w": "this",
+   "start": 144.66,
+   "end": 144.9
+  },
+  {
+   "w": "from",
+   "start": 144.9,
+   "end": 145.14
+  },
+  {
+   "w": "the",
+   "start": 145.14,
+   "end": 145.26
+  },
+  {
+   "w": "wrong",
+   "start": 145.26,
+   "end": 145.38
+  },
+  {
+   "w": "state",
+   "start": 145.38,
+   "end": 145.68
+  },
+  {
+   "w": "in",
+   "start": 145.68,
+   "end": 145.98
+  },
+  {
+   "w": "the",
+   "start": 145.98,
+   "end": 146.04
+  },
+  {
+   "w": "real",
+   "start": 146.04,
+   "end": 146.16
+  },
+  {
+   "w": "state.",
+   "start": 146.16,
+   "end": 146.46
+  },
+  {
+   "w": "The",
+   "start": 149.52,
+   "end": 150.78
+  },
+  {
+   "w": "inside",
+   "start": 150.78,
+   "end": 150.96
+  },
+  {
+   "w": "of",
+   "start": 150.96,
+   "end": 151.14
+  },
+  {
+   "w": "the",
+   "start": 151.14,
+   "end": 151.2
+  },
+  {
+   "w": "system,",
+   "start": 151.2,
+   "end": 152.7
+  },
+  {
+   "w": "what",
+   "start": 152.7,
+   "end": 152.76
+  },
+  {
+   "w": "does",
+   "start": 152.76,
+   "end": 152.82
+  },
+  {
+   "w": "it",
+   "start": 152.82,
+   "end": 152.94
+  },
+  {
+   "w": "look",
+   "start": 152.94,
+   "end": 153.06
+  },
+  {
+   "w": "like?",
+   "start": 153.06,
+   "end": 153.3
+  },
+  {
+   "w": "We",
+   "start": 153.36,
+   "end": 153.9
+  },
+  {
+   "w": "have",
+   "start": 153.9,
+   "end": 154.02
+  },
+  {
+   "w": "a",
+   "start": 154.02,
+   "end": 154.14
+  },
+  {
+   "w": "familiar",
+   "start": 154.14,
+   "end": 154.8
+  },
+  {
+   "w": "model,",
+   "start": 154.8,
+   "end": 155.1
+  },
+  {
+   "w": "if",
+   "start": 155.1,
+   "end": 155.22
+  },
+  {
+   "w": "you",
+   "start": 155.22,
+   "end": 155.28
+  },
+  {
+   "w": "have",
+   "start": 155.28,
+   "end": 155.58
+  },
+  {
+   "w": "any",
+   "start": 155.58,
+   "end": 155.76
+  },
+  {
+   "w": "enterprise",
+   "start": 155.76,
+   "end": 156.42
+  },
+  {
+   "w": "folks",
+   "start": 156.42,
+   "end": 157.08
+  },
+  {
+   "w": "in",
+   "start": 157.08,
+   "end": 157.26
+  },
+  {
+   "w": "the",
+   "start": 157.26,
+   "end": 157.62
+  },
+  {
+   "w": "room",
+   "start": 157.62,
+   "end": 157.8
+  },
+  {
+   "w": "here.",
+   "start": 157.8,
+   "end": 158.46
+  },
+  {
+   "w": "People",
+   "start": 158.76,
+   "end": 160.02
+  },
+  {
+   "w": "process",
+   "start": 160.02,
+   "end": 160.5
+  },
+  {
+   "w": "the",
+   "start": 160.5,
+   "end": 160.8
+  },
+  {
+   "w": "technology.",
+   "start": 160.8,
+   "end": 161.4
+  },
+  {
+   "w": "But",
+   "start": 161.52,
+   "end": 162.48
+  },
+  {
+   "w": "we're",
+   "start": 162.48,
+   "end": 163.38
+  },
+  {
+   "w": "moving",
+   "start": 163.38,
+   "end": 163.44
+  },
+  {
+   "w": "to",
+   "start": 163.44,
+   "end": 163.68
+  },
+  {
+   "w": "age",
+   "start": 163.68,
+   "end": 163.86
+  },
+  {
+   "w": "filling",
+   "start": 163.86,
+   "end": 164.64
+  },
+  {
+   "w": "small.",
+   "start": 164.64,
+   "end": 165.36
+  },
+  {
+   "w": "So",
+   "start": 166.68,
+   "end": 167.94
+  },
+  {
+   "w": "I",
+   "start": 167.94,
+   "end": 168.18
+  },
+  {
+   "w": "see",
+   "start": 168.18,
+   "end": 168.36
+  },
+  {
+   "w": "them",
+   "start": 168.36,
+   "end": 168.54
+  },
+  {
+   "w": "as",
+   "start": 168.54,
+   "end": 168.72
+  },
+  {
+   "w": "an",
+   "start": 168.72,
+   "end": 169.2
+  },
+  {
+   "w": "operational",
+   "start": 169.2,
+   "end": 169.56
+  },
+  {
+   "w": "model",
+   "start": 169.56,
+   "end": 169.98
+  },
+  {
+   "w": "cutting",
+   "start": 169.98,
+   "end": 170.4
+  },
+  {
+   "w": "across",
+   "start": 170.4,
+   "end": 170.58
+  },
+  {
+   "w": "all",
+   "start": 170.58,
+   "end": 170.94
+  },
+  {
+   "w": "three.",
+   "start": 170.94,
+   "end": 171.3
+  },
+  {
+   "w": "They",
+   "start": 171.84,
+   "end": 173.1
+  },
+  {
+   "w": "work",
+   "start": 173.1,
+   "end": 173.28
+  },
+  {
+   "w": "with",
+   "start": 173.28,
+   "end": 173.46
+  },
+  {
+   "w": "people,",
+   "start": 173.46,
+   "end": 173.94
+  },
+  {
+   "w": "execute",
+   "start": 173.94,
+   "end": 174.78
+  },
+  {
+   "w": "parts",
+   "start": 174.78,
+   "end": 174.96
+  },
+  {
+   "w": "of",
+   "start": 174.96,
+   "end": 175.14
+  },
+  {
+   "w": "the",
+   "start": 175.14,
+   "end": 175.26
+  },
+  {
+   "w": "process.",
+   "start": 175.26,
+   "end": 175.8
+  },
+  {
+   "w": "that",
+   "start": 175.86,
+   "end": 176.76
+  },
+  {
+   "w": "sells.",
+   "start": 176.76,
+   "end": 177.66
+  },
+  {
+   "w": "And",
+   "start": 177.72,
+   "end": 177.96
+  },
+  {
+   "w": "they",
+   "start": 177.96,
+   "end": 178.62
+  },
+  {
+   "w": "use",
+   "start": 178.62,
+   "end": 178.8
+  },
+  {
+   "w": "and",
+   "start": 178.8,
+   "end": 178.92
+  },
+  {
+   "w": "are",
+   "start": 178.92,
+   "end": 179.04
+  },
+  {
+   "w": "made",
+   "start": 179.04,
+   "end": 179.22
+  },
+  {
+   "w": "up",
+   "start": 179.22,
+   "end": 179.46
+  },
+  {
+   "w": "of",
+   "start": 179.46,
+   "end": 179.64
+  },
+  {
+   "w": "technology.",
+   "start": 179.64,
+   "end": 180.18
+  },
+  {
+   "w": "So,",
+   "start": 181.86,
+   "end": 183.42
+  },
+  {
+   "w": "for",
+   "start": 183.42,
+   "end": 183.48
+  },
+  {
+   "w": "our",
+   "start": 183.48,
+   "end": 183.6
+  },
+  {
+   "w": "talk",
+   "start": 183.6,
+   "end": 183.72
+  },
+  {
+   "w": "today,",
+   "start": 183.72,
+   "end": 184.08
+  },
+  {
+   "w": "we're",
+   "start": 184.08,
+   "end": 184.26
+  },
+  {
+   "w": "gonna",
+   "start": 184.26,
+   "end": 184.32
+  },
+  {
+   "w": "be",
+   "start": 184.32,
+   "end": 184.56
+  },
+  {
+   "w": "focusing",
+   "start": 184.56,
+   "end": 184.92
+  },
+  {
+   "w": "here,",
+   "start": 184.92,
+   "end": 185.94
+  },
+  {
+   "w": "we're",
+   "start": 185.94,
+   "end": 186.42
+  },
+  {
+   "w": "agents",
+   "start": 186.42,
+   "end": 186.72
+  },
+  {
+   "w": "need",
+   "start": 186.72,
+   "end": 186.96
+  },
+  {
+   "w": "process.",
+   "start": 186.96,
+   "end": 188.22
+  },
+  {
+   "w": "What",
+   "start": 188.88,
+   "end": 190.14
+  },
+  {
+   "w": "work",
+   "start": 190.14,
+   "end": 190.38
+  },
+  {
+   "w": "would",
+   "start": 190.38,
+   "end": 190.56
+  },
+  {
+   "w": "you",
+   "start": 190.56,
+   "end": 190.68
+  },
+  {
+   "w": "have",
+   "start": 190.68,
+   "end": 190.74
+  },
+  {
+   "w": "done?",
+   "start": 190.74,
+   "end": 191.16
+  },
+  {
+   "w": "what",
+   "start": 191.22,
+   "end": 191.28
+  },
+  {
+   "w": "boundaries",
+   "start": 191.28,
+   "end": 191.7
+  },
+  {
+   "w": "we",
+   "start": 191.7,
+   "end": 192.18
+  },
+  {
+   "w": "said,",
+   "start": 192.18,
+   "end": 193.02
+  },
+  {
+   "w": "and",
+   "start": 193.02,
+   "end": 193.44
+  },
+  {
+   "w": "how",
+   "start": 193.44,
+   "end": 193.68
+  },
+  {
+   "w": "we",
+   "start": 193.68,
+   "end": 193.98
+  },
+  {
+   "w": "build",
+   "start": 193.98,
+   "end": 194.1
+  },
+  {
+   "w": "Charleston",
+   "start": 194.1,
+   "end": 194.58
+  },
+  {
+   "w": "our",
+   "start": 194.58,
+   "end": 194.7
+  },
+  {
+   "w": "apples.",
+   "start": 194.7,
+   "end": 195.24
+  },
+  {
+   "w": "So",
+   "start": 201.3,
+   "end": 202.14
+  },
+  {
+   "w": "let's",
+   "start": 202.14,
+   "end": 202.5
+  },
+  {
+   "w": "dive",
+   "start": 202.5,
+   "end": 202.8
+  },
+  {
+   "w": "into",
+   "start": 202.8,
+   "end": 202.98
+  },
+  {
+   "w": "your",
+   "start": 202.98,
+   "end": 203.16
+  },
+  {
+   "w": "workload.",
+   "start": 203.16,
+   "end": 203.88
+  },
+  {
+   "w": "And",
+   "start": 204.42,
+   "end": 205.68
+  },
+  {
+   "w": "it's",
+   "start": 205.68,
+   "end": 205.98
+  },
+  {
+   "w": "high",
+   "start": 205.98,
+   "end": 206.1
+  },
+  {
+   "w": "level",
+   "start": 206.1,
+   "end": 206.34
+  },
+  {
+   "w": "when",
+   "start": 206.34,
+   "end": 206.64
+  },
+  {
+   "w": "it",
+   "start": 206.64,
+   "end": 206.76
+  },
+  {
+   "w": "seems",
+   "start": 206.76,
+   "end": 206.94
+  },
+  {
+   "w": "basic,",
+   "start": 206.94,
+   "end": 207.6
+  },
+  {
+   "w": "but",
+   "start": 207.6,
+   "end": 208.38
+  },
+  {
+   "w": "if",
+   "start": 208.38,
+   "end": 209.64
+  },
+  {
+   "w": "you",
+   "start": 209.64,
+   "end": 209.82
+  },
+  {
+   "w": "have,",
+   "start": 209.82,
+   "end": 210.36
+  },
+  {
+   "w": "there",
+   "start": 210.36,
+   "end": 210.48
+  },
+  {
+   "w": "are",
+   "start": 210.48,
+   "end": 210.66
+  },
+  {
+   "w": "good",
+   "start": 210.66,
+   "end": 210.78
+  },
+  {
+   "w": "reasons",
+   "start": 210.78,
+   "end": 211.08
+  },
+  {
+   "w": "to",
+   "start": 211.08,
+   "end": 211.38
+  },
+  {
+   "w": "come",
+   "start": 211.38,
+   "end": 211.44
+  },
+  {
+   "w": "out",
+   "start": 211.44,
+   "end": 211.5
+  },
+  {
+   "w": "this",
+   "start": 211.5,
+   "end": 211.68
+  },
+  {
+   "w": "out.",
+   "start": 211.68,
+   "end": 212.22
+  },
+  {
+   "w": "So",
+   "start": 212.64,
+   "end": 213.9
+  },
+  {
+   "w": "maybe",
+   "start": 213.9,
+   "end": 214.32
+  },
+  {
+   "w": "a",
+   "start": 214.32,
+   "end": 214.56
+  },
+  {
+   "w": "change",
+   "start": 214.56,
+   "end": 214.68
+  },
+  {
+   "w": "has",
+   "start": 214.68,
+   "end": 215.34
+  },
+  {
+   "w": "to",
+   "start": 215.34,
+   "end": 215.52
+  },
+  {
+   "w": "be",
+   "start": 215.52,
+   "end": 215.58
+  },
+  {
+   "w": "approved",
+   "start": 215.58,
+   "end": 216.18
+  },
+  {
+   "w": "before",
+   "start": 216.18,
+   "end": 216.36
+  },
+  {
+   "w": "goes",
+   "start": 216.36,
+   "end": 216.66
+  },
+  {
+   "w": "live,",
+   "start": 216.66,
+   "end": 217.14
+  },
+  {
+   "w": "or",
+   "start": 217.14,
+   "end": 217.26
+  },
+  {
+   "w": "a",
+   "start": 217.26,
+   "end": 217.38
+  },
+  {
+   "w": "customer",
+   "start": 217.38,
+   "end": 217.5
+  },
+  {
+   "w": "goes",
+   "start": 217.5,
+   "end": 218.16
+  },
+  {
+   "w": "through,",
+   "start": 218.16,
+   "end": 218.52
+  },
+  {
+   "w": "has",
+   "start": 218.52,
+   "end": 218.94
+  },
+  {
+   "w": "to",
+   "start": 218.94,
+   "end": 219.06
+  },
+  {
+   "w": "go",
+   "start": 219.06,
+   "end": 219.12
+  },
+  {
+   "w": "through",
+   "start": 219.12,
+   "end": 219.3
+  },
+  {
+   "w": "verification",
+   "start": 219.3,
+   "end": 219.9
+  },
+  {
+   "w": "before",
+   "start": 219.9,
+   "end": 220.14
+  },
+  {
+   "w": "your",
+   "start": 220.14,
+   "end": 220.32
+  },
+  {
+   "w": "account",
+   "start": 220.32,
+   "end": 220.62
+  },
+  {
+   "w": "is",
+   "start": 220.62,
+   "end": 220.98
+  },
+  {
+   "w": "open.",
+   "start": 220.98,
+   "end": 221.82
+  },
+  {
+   "w": "We",
+   "start": 221.82,
+   "end": 223.32
+  },
+  {
+   "w": "expect",
+   "start": 223.32,
+   "end": 223.74
+  },
+  {
+   "w": "one",
+   "start": 223.74,
+   "end": 223.98
+  },
+  {
+   "w": "to",
+   "start": 223.98,
+   "end": 224.16
+  },
+  {
+   "w": "flow",
+   "start": 224.16,
+   "end": 224.4
+  },
+  {
+   "w": "in",
+   "start": 224.4,
+   "end": 224.76
+  },
+  {
+   "w": "a",
+   "start": 224.76,
+   "end": 224.82
+  },
+  {
+   "w": "specific",
+   "start": 224.82,
+   "end": 225
+  },
+  {
+   "w": "and",
+   "start": 225,
+   "end": 225.66
+  },
+  {
+   "w": "gated",
+   "start": 225.66,
+   "end": 225.84
+  },
+  {
+   "w": "direction.",
+   "start": 225.84,
+   "end": 226.62
+  },
+  {
+   "w": "So,",
+   "start": 229.68,
+   "end": 230.58
+  },
+  {
+   "w": "I",
+   "start": 230.58,
+   "end": 230.7
+  },
+  {
+   "w": "believe",
+   "start": 230.7,
+   "end": 230.82
+  },
+  {
+   "w": "it",
+   "start": 230.82,
+   "end": 231.66
+  },
+  {
+   "w": "makes,",
+   "start": 231.66,
+   "end": 232.5
+  },
+  {
+   "w": "it",
+   "start": 232.5,
+   "end": 232.62
+  },
+  {
+   "w": "may",
+   "start": 232.62,
+   "end": 232.98
+  },
+  {
+   "w": "just",
+   "start": 232.98,
+   "end": 233.34
+  },
+  {
+   "w": "make",
+   "start": 233.34,
+   "end": 233.52
+  },
+  {
+   "w": "it",
+   "start": 233.52,
+   "end": 233.64
+  },
+  {
+   "w": "worth",
+   "start": 233.64,
+   "end": 233.82
+  },
+  {
+   "w": "reasoning",
+   "start": 233.82,
+   "end": 234.78
+  },
+  {
+   "w": "what",
+   "start": 234.78,
+   "end": 235.26
+  },
+  {
+   "w": "we",
+   "start": 235.26,
+   "end": 235.38
+  },
+  {
+   "w": "can",
+   "start": 235.38,
+   "end": 235.5
+  },
+  {
+   "w": "do",
+   "start": 235.5,
+   "end": 235.62
+  },
+  {
+   "w": "in",
+   "start": 235.62,
+   "end": 235.74
+  },
+  {
+   "w": "parallel.",
+   "start": 235.74,
+   "end": 236.4
+  },
+  {
+   "w": "Previously,",
+   "start": 238.08,
+   "end": 239.82
+  },
+  {
+   "w": "some",
+   "start": 239.82,
+   "end": 240.06
+  },
+  {
+   "w": "were",
+   "start": 240.06,
+   "end": 240.24
+  },
+  {
+   "w": "used",
+   "start": 240.24,
+   "end": 240.36
+  },
+  {
+   "w": "to",
+   "start": 240.36,
+   "end": 240.54
+  },
+  {
+   "w": "cost",
+   "start": 240.54,
+   "end": 240.66
+  },
+  {
+   "w": "too",
+   "start": 240.66,
+   "end": 241.02
+  },
+  {
+   "w": "much",
+   "start": 241.02,
+   "end": 241.14
+  },
+  {
+   "w": "or",
+   "start": 241.14,
+   "end": 241.38
+  },
+  {
+   "w": "be",
+   "start": 241.38,
+   "end": 241.56
+  },
+  {
+   "w": "too",
+   "start": 241.56,
+   "end": 241.74
+  },
+  {
+   "w": "complex",
+   "start": 241.74,
+   "end": 242.16
+  },
+  {
+   "w": "to",
+   "start": 242.16,
+   "end": 242.34
+  },
+  {
+   "w": "coordinate",
+   "start": 242.34,
+   "end": 242.76
+  },
+  {
+   "w": "in",
+   "start": 242.76,
+   "end": 243
+  },
+  {
+   "w": "this",
+   "start": 243,
+   "end": 243.06
+  },
+  {
+   "w": "way.",
+   "start": 243.06,
+   "end": 243.36
+  },
+  {
+   "w": "Now",
+   "start": 243.96,
+   "end": 245.22
+  },
+  {
+   "w": "we",
+   "start": 245.22,
+   "end": 245.46
+  },
+  {
+   "w": "can",
+   "start": 245.46,
+   "end": 245.58
+  },
+  {
+   "w": "run",
+   "start": 245.58,
+   "end": 245.88
+  },
+  {
+   "w": "independent",
+   "start": 245.88,
+   "end": 246.48
+  },
+  {
+   "w": "reviews",
+   "start": 246.48,
+   "end": 246.96
+  },
+  {
+   "w": "alongside",
+   "start": 246.96,
+   "end": 247.32
+  },
+  {
+   "w": "each",
+   "start": 247.32,
+   "end": 247.44
+  },
+  {
+   "w": "other.",
+   "start": 247.44,
+   "end": 247.8
+  },
+  {
+   "w": "Bring",
+   "start": 247.86,
+   "end": 248.7
+  },
+  {
+   "w": "results",
+   "start": 248.7,
+   "end": 248.88
+  },
+  {
+   "w": "together,",
+   "start": 248.88,
+   "end": 249.66
+  },
+  {
+   "w": "but",
+   "start": 249.66,
+   "end": 250.02
+  },
+  {
+   "w": "keep",
+   "start": 250.02,
+   "end": 250.2
+  },
+  {
+   "w": "the",
+   "start": 250.2,
+   "end": 250.62
+  },
+  {
+   "w": "required",
+   "start": 250.62,
+   "end": 250.8
+  },
+  {
+   "w": "checks",
+   "start": 250.8,
+   "end": 251.16
+  },
+  {
+   "w": "in",
+   "start": 251.16,
+   "end": 251.34
+  },
+  {
+   "w": "place.",
+   "start": 251.34,
+   "end": 251.7
+  },
+  {
+   "w": "So,",
+   "start": 254.76,
+   "end": 255.84
+  },
+  {
+   "w": "this",
+   "start": 255.84,
+   "end": 255.96
+  },
+  {
+   "w": "is",
+   "start": 255.96,
+   "end": 256.08
+  },
+  {
+   "w": "a",
+   "start": 256.08,
+   "end": 256.38
+  },
+  {
+   "w": "directed",
+   "start": 256.38,
+   "end": 256.74
+  },
+  {
+   "w": "basic",
+   "start": 256.74,
+   "end": 257.34
+  },
+  {
+   "w": "photograph",
+   "start": 257.34,
+   "end": 257.64
+  },
+  {
+   "w": "for",
+   "start": 257.64,
+   "end": 257.82
+  },
+  {
+   "w": "a",
+   "start": 257.82,
+   "end": 257.94
+  },
+  {
+   "w": "DAG.",
+   "start": 257.94,
+   "end": 258.42
+  },
+  {
+   "w": "is",
+   "start": 258.96,
+   "end": 260.22
+  },
+  {
+   "w": "a",
+   "start": 260.22,
+   "end": 260.4
+  },
+  {
+   "w": "way",
+   "start": 260.4,
+   "end": 260.52
+  },
+  {
+   "w": "to",
+   "start": 260.52,
+   "end": 260.7
+  },
+  {
+   "w": "represent",
+   "start": 260.7,
+   "end": 260.88
+  },
+  {
+   "w": "this",
+   "start": 260.88,
+   "end": 261.36
+  },
+  {
+   "w": "workflow",
+   "start": 261.36,
+   "end": 261.84
+  },
+  {
+   "w": "or",
+   "start": 261.84,
+   "end": 261.96
+  },
+  {
+   "w": "process,",
+   "start": 261.96,
+   "end": 262.56
+  },
+  {
+   "w": "the",
+   "start": 262.56,
+   "end": 263.1
+  },
+  {
+   "w": "steps,",
+   "start": 263.1,
+   "end": 263.34
+  },
+  {
+   "w": "the",
+   "start": 263.34,
+   "end": 263.46
+  },
+  {
+   "w": "dependencies,",
+   "start": 263.46,
+   "end": 265.02
+  },
+  {
+   "w": "for",
+   "start": 265.02,
+   "end": 265.62
+  },
+  {
+   "w": "a",
+   "start": 265.62,
+   "end": 265.98
+  },
+  {
+   "w": "flow",
+   "start": 265.98,
+   "end": 266.16
+  },
+  {
+   "w": "that",
+   "start": 266.16,
+   "end": 266.28
+  },
+  {
+   "w": "moves",
+   "start": 266.28,
+   "end": 266.52
+  },
+  {
+   "w": "forward",
+   "start": 266.52,
+   "end": 266.76
+  },
+  {
+   "w": "without",
+   "start": 266.76,
+   "end": 267.06
+  },
+  {
+   "w": "moving",
+   "start": 267.06,
+   "end": 267.3
+  },
+  {
+   "w": "back",
+   "start": 267.3,
+   "end": 267.48
+  },
+  {
+   "w": "on",
+   "start": 267.48,
+   "end": 267.9
+  },
+  {
+   "w": "itself.",
+   "start": 267.9,
+   "end": 268.14
+  },
+  {
+   "w": "Apache",
+   "start": 269.58,
+   "end": 270.96
+  },
+  {
+   "w": "airflow,",
+   "start": 270.96,
+   "end": 271.56
+  },
+  {
+   "w": "if",
+   "start": 271.56,
+   "end": 271.74
+  },
+  {
+   "w": "you're",
+   "start": 271.74,
+   "end": 271.92
+  },
+  {
+   "w": "familiar,",
+   "start": 271.92,
+   "end": 272.28
+  },
+  {
+   "w": "is",
+   "start": 272.28,
+   "end": 272.52
+  },
+  {
+   "w": "an",
+   "start": 272.52,
+   "end": 272.88
+  },
+  {
+   "w": "example",
+   "start": 272.88,
+   "end": 273.12
+  },
+  {
+   "w": "of",
+   "start": 273.12,
+   "end": 273.42
+  },
+  {
+   "w": "open",
+   "start": 273.42,
+   "end": 273.72
+  },
+  {
+   "w": "source",
+   "start": 273.72,
+   "end": 274.08
+  },
+  {
+   "w": "software.",
+   "start": 274.08,
+   "end": 274.7
+  }
+ ],
+ "sentences": [
+  {
+   "text": "Hi, woman. My name is, uh, Formos.",
+   "start": 21.24,
+   "end": 25.2
+  },
+  {
+   "text": "I've been delivering, designing, building software for 20 years.",
+   "start": 25.26,
+   "end": 29.1
+  },
+  {
+   "text": "The last, uh, 15 in Enterprise Financial Services, now...",
+   "start": 29.16,
+   "end": 33.54
+  },
+  {
+   "text": "buying a player coach in that point case.",
+   "start": 33.54,
+   "end": 36.6
+  },
+  {
+   "text": "And we're here today to talk about trusting agents and policy during the workplace.",
+   "start": 36.66,
+   "end": 41.34
+  },
+  {
+   "text": "So, let's start with policy, and it's pretty boring.",
+   "start": 47.76,
+   "end": 51.9
+  },
+  {
+   "text": "Um, I'm gonna go over here for about.",
+   "start": 51.96,
+   "end": 54.78
+  },
+  {
+   "text": "So our starting point center out, centers around the policy, and This sets the rules for how work gets done within the organization.",
+   "start": 55.08,
+   "end": 65.34
+  },
+  {
+   "text": "including especially risking compliance.",
+   "start": 65.46,
+   "end": 68.52
+  },
+  {
+   "text": "Make a policy as the original institutional intent, or the original system prompt.",
+   "start": 69.84,
+   "end": 76.26
+  },
+  {
+   "text": "So ideally, we have this written down.",
+   "start": 76.38,
+   "end": 79.74
+  },
+  {
+   "text": "So a little bit boring, so stick with me.",
+   "start": 79.8,
+   "end": 81.84
+  },
+  {
+   "text": "Using language like Boston may and should.",
+   "start": 82.86,
+   "end": 86.58
+  },
+  {
+   "text": "And again, these helped to find the rules and decisions about how the system operates in the organization.",
+   "start": 86.64,
+   "end": 94.14
+  },
+  {
+   "text": "Separate from policy, we have the actual running system.",
+   "start": 94.2,
+   "end": 98.94
+  },
+  {
+   "text": "So, the first thing we're gonna do is separate these two, uh...",
+   "start": 102,
+   "end": 107.1
+  },
+  {
+   "text": "these two, both the Bills State and New York State at two different moments of time.",
+   "start": 107.1,
+   "end": 110.82
+  },
+  {
+   "text": "So typically, we're either defining or changing our policy, but the system is constantly running, and it's constantly moving.",
+   "start": 110.88,
+   "end": 119.4
+  },
+  {
+   "text": "and changing. So, we can then, sort of, imagine a compilation of that, oh, sorry, I was gonna ahead.",
+   "start": 119.46,
+   "end": 130.2
+  },
+  {
+   "text": "It's constantly changing.",
+   "start": 130.26,
+   "end": 132.54
+  },
+  {
+   "text": "So... It gets evolving quickly, these products are in changes, so everything is expected to still be roughly bound by the policy, but ultimately, um, we separate this from the wrong state in the real state.",
+   "start": 132.6,
+   "end": 146.46
+  },
+  {
+   "text": "The inside of the system, what does it look like?",
+   "start": 149.52,
+   "end": 153.3
+  },
+  {
+   "text": "We have a familiar model, if you have any enterprise folks in the room here.",
+   "start": 153.36,
+   "end": 158.46
+  },
+  {
+   "text": "People process the technology.",
+   "start": 158.76,
+   "end": 161.4
+  },
+  {
+   "text": "But we're moving to age filling small.",
+   "start": 161.52,
+   "end": 165.36
+  },
+  {
+   "text": "So I see them as an operational model cutting across all three.",
+   "start": 166.68,
+   "end": 171.3
+  },
+  {
+   "text": "They work with people, execute parts of the process.",
+   "start": 171.84,
+   "end": 175.8
+  },
+  {
+   "text": "that sells. And they use and are made up of technology.",
+   "start": 175.86,
+   "end": 180.18
+  },
+  {
+   "text": "So, for our talk today, we're gonna be focusing here, we're agents need process.",
+   "start": 181.86,
+   "end": 188.22
+  },
+  {
+   "text": "What work would you have done?",
+   "start": 188.88,
+   "end": 191.16
+  },
+  {
+   "text": "what boundaries we said, and how we build Charleston our apples.",
+   "start": 191.22,
+   "end": 195.24
+  },
+  {
+   "text": "So let's dive into your workload.",
+   "start": 201.3,
+   "end": 203.88
+  },
+  {
+   "text": "And it's high level when it seems basic, but if you have, there are good reasons to come out this out.",
+   "start": 204.42,
+   "end": 212.22
+  },
+  {
+   "text": "So maybe a change has to be approved before goes live, or a customer goes through, has to go through verification before your account is open.",
+   "start": 212.64,
+   "end": 221.82
+  },
+  {
+   "text": "We expect one to flow in a specific and gated direction.",
+   "start": 221.82,
+   "end": 226.62
+  },
+  {
+   "text": "So, I believe it makes, it may just make it worth reasoning what we can do in parallel.",
+   "start": 229.68,
+   "end": 236.4
+  },
+  {
+   "text": "Previously, some were used to cost too much or be too complex to coordinate in this way.",
+   "start": 238.08,
+   "end": 243.36
+  },
+  {
+   "text": "Now we can run independent reviews alongside each other.",
+   "start": 243.96,
+   "end": 247.8
+  },
+  {
+   "text": "Bring results together, but keep the required checks in place.",
+   "start": 247.86,
+   "end": 251.7
+  },
+  {
+   "text": "So, this is a directed basic photograph for a DAG.",
+   "start": 254.76,
+   "end": 258.42
+  },
+  {
+   "text": "is a way to represent this workflow or process, the steps, the dependencies, for a flow that moves forward without moving back on itself.",
+   "start": 258.96,
+   "end": 268.14
+  },
+  {
+   "text": "Apache airflow, if you're familiar, is an example of open source software.",
+   "start": 269.58,
+   "end": 274.7
+  }
+ ]
+}

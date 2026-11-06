@@ -1,0 +1,81 @@
+---
+title: "Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On"
+speakers:
+  - name: Mislav Ivanda
+    affiliation: Daytona
+room: "Sutton Room (NY Ballroom W)"
+starts_at: "2026-10-13T15:45:00-04:00"
+ends_at: "2026-10-13T16:03:00-04:00"
+format: "talk"
+recording: "2026-10-13_1544_give-the-agent-a-computer"
+duration: "15m 27s"
+source: "voice-memos-transcript"
+---
+
+# Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On
+
+### 00:00:00 — Why Every Agent Framework Converges on Sandboxed Computers
+
+Here, my name is Scott. I'm a little briteria. And for the last year, my main dad, my main test and goal there was going to be Daytona, faced everywhere, where sandbox makes sense because where they don't are Sam's provider. And these are spanning from Asian frameworks, pulling Asian farms, procloth tools, development product, developer products and stuff like that. And during this process, I noticed the pattern that was repeating all the time and it maybe, it made me stop a bit, think about some things that eventually led to this talk.
+
+So yeah, I would need your help on this slide. Does anyone have a guess which AI agent framework is this? If somebody has, I guess, link chain, language, Google A, D, K, Blank Chain. I also guess that's not... Oh, good. Lane 10. Okay, let's say let's see, but the main, thing about this is that whatever you told can basically be correct and depends on.
+
+Why do I say that? It's because during the integration or they turn into these AI and frameworks, I notice that I can barely differentiate the, they turn are related with cold contribution part between these. So in some of these, you integrate as a tool, in others, you integrate as external plug-in, that you can stop, you know, make your radiency some capabilities. In other ones, you extend the sandbox, plant glass, and do some internal framework API stuff.
+
+But under the cruise, all of these ways, 33 same lines. So it's sample creation, running some code or tasking side disabled, and set them of deletions. And this is pretty weird because most of these frames are competitors and they barely agree on some fundamental things or concepts, whether I mean by that. So, for example, they don't even agree on what age, what an agent is.
+
+For example, language, device an agent, there's a traversible, traversable drive. The true way I prefer to define stages as, you know, we're all bunch of role-playing agents that do stuff on their own. Open AI agents as we can, is the planning agent has a loop around the other model. And for example, cloth agent test, DK ships, the whole fully finished product that you just like use and have all low capabilities, no customization.
+
+Also, they differ in with the languages they are implemented in, mostly between 500 and typescript. And they also don't agree on who's in charge of specifying what an agent is, agent behavior, for example, in Mastra, or language, you explicitly define your agent through clothes and trajectories. While, for example, through AI, agents do things on their own end, they decide on their own to achieve the energy.
+
+And yeah, when companies like companies like this, that don't agree on basically anything agree on something that probably isn't just a fashion, it's a necessity. So why they agree? Do they agree on this thing? So, as I like to say, whenever you're doing something with your AI agents, that's useful, you eventually come up to the state where your agent needs to execute some kind of a code or needs to have shell access.
+
+And the next question is where will this happen and which execution environment? So I would say there are basically 3 types of possible isolation in these environments and let's now break forward you around these. So number one is the whole basic one and it's probably the one you're using locally when development with your agent. So you define certain, allow list of commands.
+
+You also get some approved bronze where, you know, Claude SUK, are you sure the ones run this command? Although probably most of us just click yes and don't even read what does he say? And you can also add some interception cooks. But the problem with this approach is, I would say, the obvious. So when you allow your flaw agent to run Python Command, with Python dash C, he cannot literally open any sockets, modifier policy system, execute code, or basically everything.
+
+which you probably don't think about in the background. And you essentially defined what your model should use, but you didn't find what your model can actually use. And if the model is compromised, you can, I guess, sense that you essentially open back doors for it to, let's say, do malicious commands under loads of device. Second most, more advanced
+
+### 00:05:11 — Daytona Runtime Architecture & Isolation Primitives
+
+option is shifting all of these coding execution stuff inside the embedded engine runtime, like V8 or quick jazz. And this approach is better because you have certain network and file system isolation, but the curfew with this approach is probably even more subtle because let's say your Asian has access to certain tools, like query database or send email. And your range will probably generate a python script, which uses these tools, and you will execute this script inside this embedded runtime.
+
+But the problem is that these tools that your agent will call inside that runtime will actually run on your device outside that runtime. So basically your maliciously malicious agent can act through these tools, not directly, but through these tools, which most of people like probably don't think about. And as it says, the UIs will be too cold and your agent generates, but you're not actually isolating the actual to also.
+
+So for example, Asian can use these email sending to a date of experience tools to perform some of its malicious commands. For example, like if you have delete database, how do you get any problems with this information? And the 3rd one and recommended approach is to use a separate computer or BM for these purposes. And yeah, you interact with this VM via HPI, control this life cycle, or do any kind of stuff inside it.
+
+And this VM never touches or interferes with your local infrastructure, network, file system, et cetera. And the best part of this approach and why is it, the best approach is contained in this licentis, you know, compromise that. Compromise step is not to compromise that. What do I mean by that is because in prior to approaches, when you're too close to this behave or you, your agent misbehaved to, let's say, fight and command, you approve, that compromise step is probably literally compromising your full application and can you make real best up?
+
+But in this step, you can run the most diverse school and the planet inside the sandbox and it can't interfere with your applicational logic. You can just throw out the sandbox and spin off another one. And to back up this, that I'm not just talking, you know, some nonsense to hear the proof, like the direction of framers, the direction that AI framers are moving at.
+
+So in April 2026, through AI removed the co-interpreter tool, which essentially did a local execution under device, and they now point to dedicate a sale of services. AG2 also retire their old local poding executors, and now we have this new Samoscope class that exclusively requires from you to define the environment where you want to use this. Well, every K is by the boat using sandbox, but it's specially sandbox.
+
+Whether I mean by that, it's like a process level sandboxing, which you can do, for example, with, like, bubble rep on latest machines, open air agents, SDK has this sandbox agent, which has native, you know, support for some of the sandals, provider integrated inside, and also for doctor, but it also allows you local tourist execution, with, you know, transparently listed flows of this approach, and it's similar to with mushroom.
+
+And you can notice that they are not adding sandboxes, they already had them, but they are deleting all the alternatives. And parallel with this shift in AIA frameworks, the recogn isolation direction, basically, they're also having a shift between how the assembles are actually used. So firstly, when 1st agent started to, you know, evolve and because of the picture, the sentoses are mostly used as short layered machines where your agent would spin it up on demand, run some code or task inside it, and shut it down.
+
+But then when models became more capable, the people realized they could literally shift all the agent and front it inside the sandbox as they have a tusion runtime, and give it access to files, the network poles, and basically everything. And since recently, there's also a shift where people also understood that if they can run 1000s of these execution environments concurrently, they can do really interesting stuff, especially regarding reinforcement learning, fine tuning, post-training, benchmarks, ULs.
+
+We can also spawn different subages for while solving some problems and stuff like that. And yeah, now back to the to the question. So this whole shift from AI frameworks, regarding execution,
+
+### 00:10:24 — Patterns from Integrating Across Agent Harnesses
+
+environments, and boundary, made me also reading a common question, which me and myself and I probably, a lot of URS, like which framework should I pick? And based on this whole story, I think this is essentially the wrong question. Why do I say that? That's because some of most of the items that you compare framework between are solvable and, you know, can be easily done.
+
+And stuff that's not that easily swapable is normally or openly not even considering to the picture between people are choosing, you know, development stuff. So what do you mean by it's poppable? For example, you can essentially swap to the computer, local programmers use the same language, and essentially solve the clean framework. you're really And it's like a refactor and developer, too, all the time.
+
+Second one is, you can also swap between models and bronze. This can be a bit more trickier if you're, you know, fine tuned to find you and your system prompts and stuff to serve a model. But it requires some fine tuning, regression testing, and it's, I mean, completely doable. Same with missing features. So sometimes people decide, I wish regularly to choose based on futures, not rare, yes, not a glass.
+
+But nowadays, yeah, you can essentially fly to the missing feature or just flood it because they sort of plug in for certain framework. I would say this probably doesn't move down towards the future calls during what, like, the future or something is provide. That's kind of not that easy to, you know, replicate and wipe food and have to know with blood because it affects the architecture and stuff, but all of the others like I'm engineering, evil, tracing memory, you can easily implement by yourself, but just plug in internal tool.
+
+And you can also stop the same as provider because all of us speak the same language, so all of us speak, create, run some stuff inside and delete. Although, I mean, some of us get some features and different performances. And the stuff you can't change easily or swap later is the execution portion I would mention here. So that's like deciding, will you run your executing stuff locally or will you use external sandals?
+
+Why you can't swap this easily? Well, the reason is that this defines your whole arc system architecture and how do you develop other parts of your system. For example, when you're developing some kind of a tools, if you're guessing that you use your 1st approach, wherever you run locally, then you write all your tools to use your poster app, process environment, using your file system without separation and stuff like that.
+
+And probably that most of the people start with this approach as a POC phase, but unfortunately continue all up until the production stop, and they don't come back to it, and then when all that stuff happens, it's probably too late, and some of the times to buy best stuff, I mean, something I can literally kill your product. And that's why I would like to say from this now that you should probably consider picking up, there's a huge choosing the execution boundary before deciding which frame of you should pick.
+
+And as I like to say, then the sentence I would maybe like for you, all of you to remember how this dog is, premise our opinions and the boundaries, the commitment. I suggest that when you're starting to work on a product, you define an interface, the execution posture between an interface you control, and everything except that can be easily spotable in the future and reverse.
+
+And once you define this interface, of course, you should use the execution architecture, mentioned as a 3rd method, like giving your age a proper computer. And yeah, when you do this right, the part security part regarding the execution is sold, and you can, I mean, continue developing your speech product features and stuff around this without any, you know, concerns about the potential security vulnerabilities or stuff like that.
+
+And yeah, that's it, from my side, since I mentioned, I was doing some integrations and guys, so we have these visitors over the years, the guys, plug in some packages, and there's also a turkey r who shows the comparison article that's comparing different AIs and framework space, more in-depth, we list here. Yep, it's on my side.

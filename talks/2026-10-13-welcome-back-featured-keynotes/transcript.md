@@ -1,0 +1,39 @@
+---
+title: "Welcome Back - Featured Keynotes"
+speakers:
+  - name: Alex Lieberman
+    affiliation: Tenex
+room: "Simons Room (Metropolitan East)"
+starts_at: "2026-10-13T16:25:00-04:00"
+ends_at: "2026-10-13T16:30:00-04:00"
+format: "break"
+recording: "2026-10-13_1625_tenex"
+duration: "4m 54s"
+source: "voice-memos-transcript"
+---
+
+# Welcome Back - Featured Keynotes
+
+### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections
+
+How it going? Happy, happy. Who is it about to ever drive in the room? Whatever that was. Well, welcome back for the closing Kino block here at AI Engineer New York, 2026, I'm Alex Lieberman. co-founder, homemaking partner at 10 X, applied A partner for 4500 businesses. And we are most of the way through the 1st session today, and hopefully it's been filled with incredible conversation, which I'm going to share a little bit about some of the conversations I've had off stage in a minute.
+
+But hopefully that the mix of the programming, the conversation you've had, Mark, everyone has been really fruitful today. Now, before we hop into the final block of the day, let's just take a moment again to give a round of applause to our partners who make this entire event possible. So, let's start with our presenting sponsor, Arise. Let's give a shout out to your wife.
+
+Yep, guys. Next up, we have our the platinum sponsors, Oracle, Sonar, WorkOS, and EXA. Let's give a shout out to them. And then 2 more, you know, both sponsors. I love them all. They're all my favorite children. Can't read them all off right now, but thank you so much. And still conscious, and to all of our supporting partners, you can make this possible.
+
+Thank everyone. Yeah. I don't know if that was a third person who said the other ever, but that person has a lot of energy. So, before we hop into the next block, one thing that I just wanted to share, and I'm sure a lot of you are already feeling this already, is not only is the energy palpable across the room, in between all the sessions.
+
+But when you realize when you come to AI engineer, is that the content is incredible. The speakers that are curated are incredible. The depth by which they talk about the work they're doing is incredible. But this is also just surface area that acts as a starting point for conversation amongst everyone in the room. And so for me, not only has it been incredible to stand in the back of the room at various points in the day, listen to these incredible speakers who are truly living in edge city, but then to use all of these conversations, all these talks as surface area, to have conversations with folks.
+
+So a few conversations that come to mind that I've had throughout the day because of the content. One was a conversation with Swift, one of the people behind this incredible event. We're talking about just the diffusion gap that exists in Enterprise AI right now and just some one stat for you all. We talked to 100s of big enterprises at 10 acts across financial services, healthcare, industrials, et cetera.
+
+And the way I think about diffusion of AI across these organizations is almost in milestones of a race, so the 1st big milestone at an enterprise is just adopting a general purpose LOL. Out of curiosity, what's called 100 firms we talk to, what percentage of those firms do you think have adopted and rolled down in LLM to all their employees? Someone's bringing that a number.
+
+9%, I think I heard. 17%. It's so specific. 90%. Sorry, 90% of the enterprises we work with have rolled out for general purpose LLN. Under that is people actually getting trained in how to use the technology, how to actually use these surfaces in their work. That's like 60%. Next up is coding maintenance, agents that are actually used within engineering and product workflows.
+
+That's around 50% of all be on the prices we've been in. And then the final one, where we are truly still day one, is ancients actually working, and non engineering or closing an organization, that is around 5% right now. So going back to what I said earlier, this community really is actually... The topics that are being talked about, we are gonna continue to see those play out over the next 12, 24, 36 months.
+
+I've had a variety of conversations like this throughout the day, to fusion gap, open source versus fine tune models. How hard it is to hire great AI engineers at scale. And so as you go out arrested today, but also as you think about the conference in general, use the content as a starting point to have interesting conversations at the edge. With that, I would love to introduce you to our next talk, which is, with Frank Long, the head of a guy, O2, he's gonna be talking about a head fund as a function.
+
+Let's welcome Frank.

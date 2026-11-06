@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talk Polish Workbench — How to build an AI code review agent (Greptile)</title>
+  <style>
+    :root {
+      --ink: #191714;
+      --paper: #fbf8f1;
+      --panel: #f2ecdf;
+      --muted: #6d6458;
+      --rule: #d6cbb8;
+      --accent: #8a2f1d;
+      --accent-soft: rgba(138, 47, 29, 0.09);
+      --ok: #265936;
+      --ok-soft: rgba(38, 89, 54, 0.1);
+      --measure: 48rem;
+      --panel-w: 25rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 1.08rem;
+      line-height: 1.58;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .kicker, .label, .pill, .btn, .preset-btn, .tab-btn, .counter-badge {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.76rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    header.masthead {
+      max-width: calc(var(--measure) + var(--panel-w) + 5rem);
+      margin: 0 auto;
+      padding: 2.8rem 2rem 1.8rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.2vw, 3.1rem);
+      line-height: 1.12;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 44rem;
+      margin: 0 0 1rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.22rem 0.65rem;
+      border-radius: 999px;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+    }
+
+    .pill.theme {
+      color: var(--accent);
+      border-color: rgba(138, 47, 29, 0.3);
+      background: var(--accent-soft);
+    }
+
+    .workspace {
+      max-width: calc(var(--measure) + var(--panel-w) + 5rem);
+      margin: 0 auto;
+      padding: 2.2rem 2rem 4rem;
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) var(--panel-w);
+      gap: 2.75rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1020px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+      aside.decision-rail {
+        position: static !important;
+      }
+    }
+
+    section.step-block {
+      margin-bottom: 2.8rem;
+      padding-bottom: 2.2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      margin: 0;
+      line-height: 1.25;
+    }
+
+    .step-hint {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0 0 1.1rem;
+    }
+
+    .preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .preset-btn {
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      color: var(--ink);
+      padding: 0.38rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .preset-btn:hover {
+      border-color: var(--accent);
+    }
+
+    .preset-btn.active {
+      background: var(--accent);
+      color: var(--paper);
+      border-color: var(--accent);
+    }
+
+    textarea.editorial-input, input.editorial-input {
+      width: 100%;
+      background: #fffdf8;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      padding: 0.85rem 1rem;
+      font-family: inherit;
+      font-size: 1.04rem;
+      line-height: 1.5;
+      color: var(--ink);
+      resize: vertical;
+    }
+
+    textarea.editorial-input:focus, input.editorial-input:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+
+    .counter-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.28rem 0.7rem;
+      border-radius: 999px;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+    }
+
+    .counter-badge.ready {
+      background: var(--ok-soft);
+      color: var(--ok);
+      border-color: rgba(38, 89, 54, 0.35);
+    }
+
+    .counter-badge.warn {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(138, 47, 29, 0.35);
+    }
+
+    .kp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .kp-card {
+      background: #fffdf8;
+      border: 1.5px solid var(--rule);
+      border-radius: 6px;
+      padding: 1.15rem 1.25rem;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      position: relative;
+    }
+
+    .kp-card.selected {
+      border-color: var(--accent);
+      background: #fffaf3;
+      box-shadow: 0 3px 12px rgba(25, 23, 20, 0.06);
+    }
+
+    .kp-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      cursor: pointer;
+    }
+
+    .kp-check-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      flex: 1;
+    }
+
+    .kp-checkbox {
+      width: 1.35rem;
+      height: 1.35rem;
+      border-radius: 4px;
+      border: 1.5px solid var(--muted);
+      background: var(--paper);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--paper);
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .kp-card.selected .kp-checkbox {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .kp-title {
+      font-size: 1.14rem;
+      font-weight: 700;
+      line-height: 1.32;
+      margin: 0 0 0.35rem;
+    }
+
+    .kp-summary {
+      font-size: 0.96rem;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+
+    blockquote.asr-quote {
+      margin: 0.65rem 0;
+      padding: 0.55rem 0.9rem;
+      border-left: 3px solid var(--accent);
+      background: var(--panel);
+      font-style: italic;
+      font-size: 0.96rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    blockquote.asr-quote cite {
+      display: block;
+      margin-top: 0.3rem;
+      font-style: normal;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .kp-controls {
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--rule);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .visual-selector {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    .visual-selector select {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.76rem;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .context-toggle {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .transcript-drawer {
+      display: none;
+      margin-top: 0.75rem;
+      padding: 0.85rem;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      font-size: 0.88rem;
+    }
+
+    .transcript-drawer.open {
+      display: block;
+    }
+
+    .transcript-drawer .drawer-heading {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+    }
+
+    .diagram-preview {
+      margin-top: 0.65rem;
+      padding: 0.75rem;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    /* Sticky Right Decision Rail */
+    aside.decision-rail {
+      position: sticky;
+      top: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 1.35rem;
+    }
+
+    .rail-title {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+    }
+
+    .chapter-preview-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .chapter-preview-item {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.86rem;
+      line-height: 1.35;
+    }
+
+    .chapter-preview-item .ch-num {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 700;
+      display: block;
+    }
+
+    .prompt-output {
+      width: 100%;
+      height: 12.5rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.76rem;
+      line-height: 1.45;
+      padding: 0.65rem;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      color: var(--ink);
+      resize: vertical;
+      margin-bottom: 0.75rem;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: var(--paper);
+      transition: opacity 0.15s ease;
+    }
+
+    .btn.secondary {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--rule);
+    }
+
+    .btn:hover {
+      opacity: 0.92;
+    }
+
+    .status-toast {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.75rem;
+      color: var(--ok);
+      text-align: center;
+      min-height: 1.1rem;
+      margin-top: 0.35rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="kicker">Talk Polish Workbench · Step 1 of 2</div>
+    <h1>How to build an AI code review agent: from the creators of Greptile</h1>
+    <p class="subtitle">
+      Shape the editorial angle for <code>story.md</code> before it is written: adjust the thesis, pick the <strong>three key points</strong> that anchor the narrative, inspect the raw ASR evidence, and choose the target reader.
+    </p>
+    <div class="meta-bar">
+      <span class="pill">Speaker: <strong>Daksh Gupta (Greptile)</strong></span>
+      <span class="pill">Duration: <strong>18m 11s</strong> (3,779 words)</span>
+      <span class="pill">Session: <code>bdab432a-0538-4431-ad5a-62653affd9da</code></span>
+      <span class="pill theme">Theme 1: Verification Loops</span>
+      <span class="pill theme">Theme 4: Sandboxed Computer &amp; Harness</span>
+      <span class="pill theme">Theme 7: Token Economics &amp; Routing</span>
+    </div>
+  </header>
+
+  <div class="workspace">
+    <main>
+      <!-- STEP 1: THESIS -->
+      <section class="step-block">
+        <div class="step-header">
+          <h2>1. One-Sentence Thesis</h2>
+          <span class="label" style="font-size:0.75rem;color:var(--muted);">Click a preset or edit directly</span>
+        </div>
+        <p class="step-hint">
+          What is Daksh Gupta actually arguing across these 18 minutes?
+        </p>
+        <div class="preset-row" id="thesis-presets">
+          <button type="button" class="preset-btn active" data-thesis="Wiring a pull-request webhook to a sandboxed coding agent takes an afternoon, but making an AI code reviewer trustworthy and affordable in production requires five upgrades: outage-backed evals, cross-model review ('model inversion'), a living-wiki context graph instead of raw grep, live sandbox execution with computer use, and routing across ~20 subtasks so frontier models handle only the hardest 20% of the work.">
+            Preset A: The 5-Upgrade Architecture (Recommended)
+          </button>
+          <button type="button" class="preset-btn" data-thesis="Naive AI code reviewers fail not because frontier models cannot read diffs, but because without outage-derived evals, cross-model review, living product context, and sandboxed execution, they drown engineers and coding agents in expensive, defensive nitpicks while missing rare catastrophic bugs.">
+            Preset B: Signal vs. Noise &amp; Defensive Code
+          </button>
+          <button type="button" class="preset-btn" data-thesis="Production AI code review is an inference-allocation and context problem: replacing bash grep with a living wiki and routing 80% of subtasks to smaller or computer-use models turns a $25/PR prototype into a high-recall verification gate.">
+            Preset C: Token Economics &amp; Build-vs-Buy
+          </button>
+        </div>
+        <textarea id="thesis-input" class="editorial-input" rows="3">Wiring a pull-request webhook to a sandboxed coding agent takes an afternoon, but making an AI code reviewer trustworthy and affordable in production requires five upgrades: outage-backed evals, cross-model review ('model inversion'), a living-wiki context graph instead of raw grep, live sandbox execution with computer use, and routing across ~20 subtasks so frontier models handle only the hardest 20% of the work.</textarea>
+      </section>
+
+      <!-- STEP 2: PICK 3 OF 5 KEY POINTS -->
+      <section class="step-block">
+        <div class="step-header">
+          <h2>2. Pick Three Key Points</h2>
+          <span id="kp-counter" class="counter-badge ready">3 of 3 selected</span>
+        </div>
+        <p class="step-hint">
+          Click any card to toggle selection. The three points you choose become the backbone of <code>story.md</code>, while the remaining points are woven into supporting chapters.
+        </p>
+
+        <div class="kp-list" id="kp-list">
+          <!-- KP 1 -->
+          <article class="kp-card selected" data-id="1">
+            <div class="kp-top" onclick="toggleCard(1)">
+              <div class="kp-check-wrap">
+                <span class="kp-checkbox" id="chk-1">1</span>
+                <div>
+                  <h3 class="kp-title">Naive PR reviewers fail via five compounding traps—and push coding agents into writing painfully defensive code</h3>
+                  <p class="kp-summary">
+                    Dropping an agent into a sandbox with a PR diff misses rare bugs, lacks cross-repo context, costs $3–$25/PR, finds different "fractal" bugs on every re-run, and leaves pedantic nitpicks that coding agents blindly turn into bloated defensive code.
+                  </p>
+                </div>
+              </div>
+              <span class="pill">00:00:00</span>
+            </div>
+            <blockquote class="asr-quote">
+              “If you look at review concerts, you address all of them, and you'll end up with extremely, painfully defensive code, as you found in putting games are, particularly as used to writing.”
+              <cite>— Daksh Gupta at 00:00:00 (Code Review at Scale: Signal vs. Noise)</cite>
+            </blockquote>
+            <div class="kp-controls">
+              <div class="visual-selector">
+                <label for="vis-1">Chapter Visual:</label>
+                <select id="vis-1" onchange="updateState()">
+                  <option value="diagram: The 5 Failure Traps of a Naive PR Reviewer (Missed Bugs, Missing Context, $3-$25 Cost, Nitpick Defensive Loop, Fractal Re-runs)">SVG Diagram: 5 Failure Traps &amp; Defensive Code Loop</option>
+                  <option value="quote: 00:00:00 defensive code quote">Pull Quote Card (00:00:00)</option>
+                  <option value="video: 00:00:00">Video Beat (00:00:00)</option>
+                </select>
+              </div>
+              <button type="button" class="context-toggle" onclick="toggleDrawer(1)">Inspect ASR Transcript Context ▾</button>
+            </div>
+            <div class="transcript-drawer" id="drawer-1">
+              <div class="drawer-heading">Verbatim Transcript Excerpt (### 00:00:00 — Code Review at Scale: Signal vs. Noise)</div>
+              <p style="margin:0 0 0.5rem;">
+                “The 1st one, you're going to miss a lot of problems. It turns out that actually bugs are interactively not clear. In fact, I saw a feat not very long ago, that said that bugs are fratly [fractal]... Second thing is going to happen, it's going to miss context... Maybe you're one of those companies that never recovered from the microservices apocalypse of 20 times [2010s]. The 3rd page, it will be very expensive... between 3 and up to $25 per post [PR]... The 1st problem you'll find is nitvicky [nitpicky] comments... typically you leave the new age work, you're going to leave times and get them, you're including these [coding agents] and picks them up and results... and you'll end up with extremely, painfully defensive code.”
+              </p>
+              <div class="diagram-preview">
+                <svg viewBox="0 0 560 95" width="100%" height="95" aria-label="Naive Reviewer Trap Loop">
+                  <rect x="6" y="22" width="115" height="50" rx="4" fill="#f2ecdf" stroke="#d6cbb8"/>
+                  <text x="63" y="44" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#191714" font-weight="600">PR Diff Webhook</text>
+                  <text x="63" y="60" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Generic prompt</text>
+                  <line x1="121" y1="47" x2="148" y2="47" stroke="#8a2f1d" stroke-width="1.5"/>
+                  <rect x="148" y="14" width="130" height="66" rx="4" fill="#fffdf8" stroke="#8a2f1d"/>
+                  <text x="213" y="34" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#8a2f1d" font-weight="700">Naive Review Agent</text>
+                  <text x="213" y="50" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">$3–$25/PR · Fractal bugs</text>
+                  <text x="213" y="64" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Floods stylistic nitpicks</text>
+                  <line x1="278" y1="47" x2="305" y2="47" stroke="#8a2f1d" stroke-width="1.5"/>
+                  <rect x="305" y="22" width="115" height="50" rx="4" fill="#f2ecdf" stroke="#d6cbb8"/>
+                  <text x="362" y="44" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#191714" font-weight="600">Coding Agent</text>
+                  <text x="362" y="60" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Auto-addresses all nits</text>
+                  <line x1="420" y1="47" x2="445" y2="47" stroke="#8a2f1d" stroke-width="1.5"/>
+                  <rect x="445" y="22" width="108" height="50" rx="4" fill="#fbeae6" stroke="#8a2f1d"/>
+                  <text x="499" y="44" text-anchor="middle" font-size="10.5" font-family="sans-serif" fill="#8a2f1d" font-weight="700">Defensive Slop</text>
+                  <text x="499" y="60" text-anchor="middle" font-size="9" fill="#6d6458" font-family="sans-serif">3x nested ifs + outages</text>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- KP 2 -->
+          <article class="kp-card" data-id="2">
+            <div class="kp-top" onclick="toggleCard(2)">
+              <div class="kp-check-wrap">
+                <span class="kp-checkbox" id="chk-2"></span>
+                <div>
+                  <h3 class="kp-title">Prompt tuning without a dataset of historical outage PRs is flying blind because catastrophic bugs are 1-in-100,000 rare</h3>
+                  <p class="kp-summary">
+                    A reviewer can prove the presence of a bug, never its absence. Teams must catalog historical PRs that caused real incidents and evaluate every prompt revision against them while watching for novel AI-authored bug patterns.
+                  </p>
+                </div>
+              </div>
+              <span class="pill">00:05:53</span>
+            </div>
+            <blockquote class="asr-quote">
+              “If you have that, you have a list of polar paths that have caused allergies into this mass. We're going to catalog them, and then essentially have any version of your video agent run through those and see what frequency we have so thoughts.”
+              <cite>— Daksh Gupta at 00:05:53 (Iterative Architecture of Greptile's Review Agent)</cite>
+            </blockquote>
+            <div class="kp-controls">
+              <div class="visual-selector">
+                <label for="vis-2">Chapter Visual:</label>
+                <select id="vis-2" onchange="updateState()">
+                  <option value="diagram: Historical Outage PR Benchmark Loop (Catalog past incident PRs -> Prompt anti-nitpick rules -> Measure recall on rare 1-in-100k bugs)">SVG Diagram: Outage PR Evaluation Loop</option>
+                  <option value="quote: 00:05:53 outage dataset quote">Pull Quote Card (00:05:53)</option>
+                  <option value="video: 00:05:53">Video Beat (00:05:53)</option>
+                </select>
+              </div>
+              <button type="button" class="context-toggle" onclick="toggleDrawer(2)">Inspect ASR Transcript Context ▾</button>
+            </div>
+            <div class="transcript-drawer" id="drawer-2">
+              <div class="drawer-heading">Verbatim Transcript Excerpt (### 00:05:53 — Iterative Architecture of Greptile's Review Agent)</div>
+              <p style="margin:0;">
+                “Now, the thing that will run into you when you change these prompts is when you change a small thing in the prom, you'll have a really big impact on a number of comments... The foundation is a really good reviewer, Astra, and can tell you about the presence and bugs, but unfortunately, you can't tell you about the absence of that... Only about 100,000 water costs [pull requests] and they generally have traffic buggage [catastrophic bugs]... You will want a data set historical yard [PRs]... But at the same time, the interesting thing about bugs is in a change of world, the topology and quality about changes of time.”
+              </p>
+            </div>
+          </article>
+
+          <!-- KP 3 -->
+          <article class="kp-card selected" data-id="3">
+            <div class="kp-top" onclick="toggleCard(3)">
+              <div class="kp-check-wrap">
+                <span class="kp-checkbox" id="chk-3">2</span>
+                <div>
+                  <h3 class="kp-title">Cross-model review ("model inversion") lifts bug catch rates by 10% because model families share post-training blind spots</h3>
+                  <p class="kp-summary">
+                    Claude models are ~3× more likely to introduce off-by-one errors while GPT models are more prone to auth bypasses. Reviewing a PR with the same model that wrote it shares those blind spots; fingerprinting the author agent and inverting the reviewer model catches 10% more bugs.
+                  </p>
+                </div>
+              </div>
+              <span class="pill">00:05:53</span>
+            </div>
+            <blockquote class="asr-quote">
+              “Now, to read this, you find that if you're using the same model, to review the code written by same model, you actually have relatively fewer about talks, because they feel the same way as during review, what they do during program regime. And so much input more, if you do smart code to write code, you want to use the GPT model to review it.”
+              <cite>— Daksh Gupta at 00:05:53 (Iterative Architecture of Greptile's Review Agent)</cite>
+            </blockquote>
+            <div class="kp-controls">
+              <div class="visual-selector">
+                <label for="vis-3">Chapter Visual:</label>
+                <select id="vis-3" onchange="updateState()">
+                  <option value="diagram: Model Inversion Matrix (Claude 3x off-by-one vs GPT auth bypasses -> Fingerprint branch/Co-Authored-By -> Cross-model review +10% catch rate)">SVG Diagram: Model Inversion Matrix (+10% Catch Rate)</option>
+                  <option value="quote: 00:05:53 model inversion quote">Pull Quote Card (00:05:53)</option>
+                  <option value="video: 00:05:53">Video Beat (00:05:53)</option>
+                </select>
+              </div>
+              <button type="button" class="context-toggle" onclick="toggleDrawer(3)">Inspect ASR Transcript Context ▾</button>
+            </div>
+            <div class="transcript-drawer" id="drawer-3">
+              <div class="drawer-heading">Verbatim Transcript Excerpt (### 00:05:53 — Iterative Architecture of Greptile's Review Agent)</div>
+              <p style="margin:0 0 0.5rem;">
+                “An example, cloud [Claude] models are something like 3 times more likely increased one off [off-by-one] errors than GPT models. GT [GPT] models, on the other hand, are significantly more likely to increase all 5 passes [auth bypasses] than problems [Claude]. And these are all the starters asking the post training... For instance, codex, so meeting branches in aquodex stash [codex/...] Or, Claude is good, right, co-authored by a lot of fields... We found this 10% higher cash [catch] rate people.”
+              </p>
+              <div class="diagram-preview">
+                <svg viewBox="0 0 560 95" width="100%" height="95" aria-label="Model Inversion Matrix">
+                  <rect x="10" y="14" width="165" height="66" rx="4" fill="#f2ecdf" stroke="#d6cbb8"/>
+                  <text x="92" y="34" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#191714" font-weight="700">Authoring Fingerprint</text>
+                  <text x="92" y="50" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Branch: codex/* · Co-Authored-By</text>
+                  <text x="92" y="64" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Claude (3x off-by-1) vs GPT (auth)</text>
+                  <line x1="175" y1="47" x2="210" y2="47" stroke="#8a2f1d" stroke-width="1.5"/>
+                  <rect x="210" y="14" width="165" height="66" rx="4" fill="#fffdf8" stroke="#8a2f1d"/>
+                  <text x="292" y="34" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#8a2f1d" font-weight="700">Invert Reviewer Family</text>
+                  <text x="292" y="50" text-anchor="middle" font-size="9.5" fill="#191714" font-family="sans-serif">Claude writes → GPT reviews</text>
+                  <text x="292" y="64" text-anchor="middle" font-size="9.5" fill="#191714" font-family="sans-serif">GPT writes → Claude reviews</text>
+                  <line x1="375" y1="47" x2="410" y2="47" stroke="#265936" stroke-width="1.5"/>
+                  <rect x="410" y="18" width="140" height="58" rx="4" fill="#eaf2ec" stroke="#265936"/>
+                  <text x="480" y="43" text-anchor="middle" font-size="12" font-family="sans-serif" fill="#265936" font-weight="700">+10% Bug Catch</text>
+                  <text x="480" y="60" text-anchor="middle" font-size="9.5" fill="#265936" font-family="sans-serif">Orthogonal blind spots</text>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- KP 4 -->
+          <article class="kp-card" data-id="4">
+            <div class="kp-top" onclick="toggleCard(4)">
+              <div class="kp-check-wrap">
+                <span class="kp-checkbox" id="chk-4"></span>
+                <div>
+                  <h3 class="kp-title">Bash <code>grep</code> burns tokens and misses intent; reviewers need a "living wiki" combining codebase flows, docs, and tickets</h3>
+                  <p class="kp-summary">
+                    Coding agents spend most of their tokens running imprecise bash <code>grep</code> across repos while missing product intent from 1–2 sentence Slack prompts. Greptile maintains a living-wiki world model across code flows, Jira/Linear tickets, and Notion/Confluence docs.
+                  </p>
+                </div>
+              </div>
+              <span class="pill">00:11:52</span>
+            </div>
+            <blockquote class="asr-quote">
+              “Now, the way that Kapala version of this problem is you actually just intrudates all of these context sources with a living wiki. This wiki is essentially sort of world model of how your company is.”
+              <cite>— Daksh Gupta at 00:11:52 (Sandboxed Execution, Context Indexing &amp; Evaluation)</cite>
+            </blockquote>
+            <div class="kp-controls">
+              <div class="visual-selector">
+                <label for="vis-4">Chapter Visual:</label>
+                <select id="vis-4" onchange="updateState()">
+                  <option value="diagram: Living Wiki World Model (Architecture flow maps + Jira/Linear tickets + Notion/Confluence docs vs raw bash grep)">SVG Diagram: Living Wiki World Model vs. Raw Grep</option>
+                  <option value="quote: 00:11:52 living wiki quote">Pull Quote Card (00:11:52)</option>
+                  <option value="video: 00:11:52">Video Beat (00:11:52)</option>
+                </select>
+              </div>
+              <button type="button" class="context-toggle" onclick="toggleDrawer(4)">Inspect ASR Transcript Context ▾</button>
+            </div>
+            <div class="transcript-drawer" id="drawer-4">
+              <div class="drawer-heading">Verbatim Transcript Excerpt (### 00:05:53 &amp; ### 00:11:52)</div>
+              <p style="margin:0;">
+                “One, grab [grep] is extremely imprecise. And second, it's very expensive... if you actually look at a pretty good trace, the vast majority of token of use by coronations [coding agents] are, like, all the same, rap [grep], proudly, hash [bash]... Recently, I saw a post that said that people are increasingly slack in their ID [IDE]... You're only saying maybe symptoms [a sentence] or two... We find the 2 types of contacts that matter most are dogs [docs] and pigs [tickets]... you actually just intrudates [integrate] all of these context sources with a living wiki.”
+              </p>
+            </div>
+          </article>
+
+          <!-- KP 5 -->
+          <article class="kp-card selected" data-id="5">
+            <div class="kp-top" onclick="toggleCard(5)">
+              <div class="kp-check-wrap">
+                <span class="kp-checkbox" id="chk-5">3</span>
+                <div>
+                  <h3 class="kp-title">Live VM sandboxes with computer-use catch UI/runtime bugs, while 20-subtask routing keeps frontier model spend to ~20%</h3>
+                  <p class="kp-summary">
+                    Static diff reading cannot see a button pushed below the mobile fold. Spinning up the app in a VM sandbox with computer-use vision catches runtime bugs, while routing 20 subtasks across small rerankers, computer-use models, and 20% frontier models slashes $15–$30 PR costs.
+                  </p>
+                </div>
+              </div>
+              <span class="pill">00:11:52</span>
+            </div>
+            <blockquote class="asr-quote">
+              “So, our shooter today is about 20% for your models, for the most critical tasks. And then the long deal of token, there is explored for a, violin, and so on, views of varieties on it... In practice, we have actually 20 different subpaths, and each of them has a very specific size models that you used to.”
+              <cite>— Daksh Gupta at 00:11:52 (Sandboxed Execution, Context Indexing &amp; Evaluation)</cite>
+            </blockquote>
+            <div class="kp-controls">
+              <div class="visual-selector">
+                <label for="vis-5">Chapter Visual:</label>
+                <select id="vis-5" onchange="updateState()">
+                  <option value="diagram: 20-Subtask Inference Routing & VM Sandbox Execution (80% Small Rerankers & Computer-Use Vision vs 20% Frontier Bug Reasoning)">SVG Diagram: 20-Subtask Routing &amp; Sandbox Pyramid</option>
+                  <option value="quote: 00:11:52 20% frontier routing quote">Pull Quote Card (00:11:52)</option>
+                  <option value="video: 00:11:52">Video Beat (00:11:52)</option>
+                </select>
+              </div>
+              <button type="button" class="context-toggle" onclick="toggleDrawer(5)">Inspect ASR Transcript Context ▾</button>
+            </div>
+            <div class="transcript-drawer" id="drawer-5">
+              <div class="drawer-heading">Verbatim Transcript Excerpt (### 00:11:52 — Sandboxed Execution, Context Indexing &amp; Evaluation)</div>
+              <p style="margin:0 0 0.5rem;">
+                “With a view process, my time is we essentially build these dependency ridge sign boxes [dependency-rich sandboxes], which are completely complicable virtual machines... and use vision now to say, oh, this button technically appears is actually hidden on iPhones or it's not in the 1st fold... Now, if you all this, you'll find that the costs are still quite high. It can cost you anywhere from 30 bucks to 15 to 20 to do a single overcussion [PR]... So, our shooter today is about 20% for your [frontier] models, for the most critical tasks... In practice, we have actually 20 different subpaths [subtasks], and each of them has a very specific size models.”
+              </p>
+              <div class="diagram-preview">
+                <svg viewBox="0 0 560 95" width="100%" height="95" aria-label="20-Subtask Routing Breakdown">
+                  <rect x="10" y="16" width="170" height="62" rx="4" fill="#f2ecdf" stroke="#d6cbb8"/>
+                  <text x="95" y="36" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#191714" font-weight="700">Context &amp; Reranking</text>
+                  <text x="95" y="52" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Small / Fast Decision Models</text>
+                  <text x="95" y="66" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Filter files before frontier pass</text>
+                  <rect x="195" y="16" width="170" height="62" rx="4" fill="#f2ecdf" stroke="#d6cbb8"/>
+                  <text x="280" y="36" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#191714" font-weight="700">VM Sandbox + Vision</text>
+                  <text x="280" y="52" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Computer-Use Models</text>
+                  <text x="280" y="66" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">Click auth/signup flows &amp; UI</text>
+                  <rect x="380" y="16" width="170" height="62" rx="4" fill="#fbeae6" stroke="#8a2f1d"/>
+                  <text x="465" y="36" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#8a2f1d" font-weight="700">20% Frontier Budget</text>
+                  <text x="465" y="52" text-anchor="middle" font-size="9.5" fill="#191714" font-family="sans-serif">Deep Bug Analysis &amp; Filter</text>
+                  <text x="465" y="66" text-anchor="middle" font-size="9.5" fill="#6d6458" font-family="sans-serif">20 specialized subtasks total</text>
+                </svg>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- STEP 3: READER & TAKEAWAY -->
+      <section class="step-block" style="border-bottom:none;">
+        <div class="step-header">
+          <h2>3. Target Reader &amp; Takeaway</h2>
+          <span class="label" style="font-size:0.75rem;color:var(--muted);">Shapes tone &amp; chapter framing</span>
+        </div>
+        <p class="step-hint">
+          Who is reading <code>story.md</code>, and what should they be able to articulate after finishing it?
+        </p>
+        <div class="preset-row" id="reader-presets">
+          <button type="button" class="preset-btn active" data-reader="Platform and AI engineers at TheFocus.AI deciding whether to build or buy an AI code reviewer, who want to explain the 5 architectural layers required beyond a naive prompt-on-a-diff.">
+            TheFocus.AI Platform / AI Engineer (Recommended)
+          </button>
+          <button type="button" class="preset-btn" data-reader="Staff engineers building an internal PR review bot who need concrete tactics to stop noisy nitpicks, cut $20/PR token bills, and catch real bugs.">
+            Internal PR Bot Builder
+          </button>
+          <button type="button" class="preset-btn" data-reader="Engineering leaders evaluating AI code review vendors who want a technical rubric to test how tools handle context, sandboxes, and model routing.">
+            Engineering Leader / Buyer Rubric
+          </button>
+        </div>
+        <textarea id="reader-input" class="editorial-input" rows="2">Platform and AI engineers at TheFocus.AI deciding whether to build or buy an AI code reviewer, who want to explain the 5 architectural layers required beyond a naive prompt-on-a-diff.</textarea>
+      </section>
+    </main>
+
+    <!-- STICKY RIGHT DECISION RAIL -->
+    <aside class="decision-rail" aria-label="Story Blueprint and Export">
+      <div class="rail-title">Live Story Blueprint (story.md)</div>
+      <p style="font-size:0.84rem;color:var(--muted);margin:0 0 0.75rem;">
+        Resulting 5-chapter flow with your selected key points highlighted:
+      </p>
+      <ul class="chapter-preview-list" id="blueprint-list"></ul>
+
+      <div class="rail-title" style="margin-top:1.1rem;">Ready-to-Send Reply</div>
+      <textarea id="export-box" class="prompt-output" readonly></textarea>
+
+      <div class="btn-row">
+        <button type="button" class="btn" onclick="copyReply()">
+          Copy Decision for Chat
+        </button>
+        <button type="button" class="btn secondary" onclick="downloadJson()">
+          Download polish-decision.json
+        </button>
+      </div>
+      <div class="status-toast" id="toast"></div>
+    </aside>
+  </div>
+
+  <script>
+    const KP_DATA = {
+      1: {
+        short: "KP1: 5 failure traps & defensive-code loop",
+        chapter: "Why Naive Sandbox Reviewers Backfire",
+        ts: "00:00:00",
+        quote: "If you look at review concerts, you address all of them, and you'll end up with extremely, painfully defensive code, as you found in putting games are, particularly as used to writing."
+      },
+      2: {
+        short: "KP2: Historical outage PR benchmark (1-in-100k bugs)",
+        chapter: "Prompting Against Outages, Not Nitpicks",
+        ts: "00:05:53",
+        quote: "If you have that, you have a list of polar paths that have caused allergies into this mass. We're going to catalog them, and then essentially have any version of your video agent run through those and see what frequency we have so thoughts."
+      },
+      3: {
+        short: "KP3: Cross-model review ('model inversion') +10% lift",
+        chapter: "Model Inversion: Never Grade Your Own Homework",
+        ts: "00:05:53",
+        quote: "Now, to read this, you find that if you're using the same model, to review the code written by same model, you actually have relatively fewer about talks, because they feel the same way as during review, what they do during program regime. And so much input more, if you do smart code to write code, you want to use the GPT model to review it."
+      },
+      4: {
+        short: "KP4: Living-wiki world model over raw bash grep",
+        chapter: "Replacing Bash Grep with a Living Wiki",
+        ts: "00:11:52",
+        quote: "Now, the way that Kapala version of this problem is you actually just intrudates all of these context sources with a living wiki. This wiki is essentially sort of world model of how your company is."
+      },
+      5: {
+        short: "KP5: VM sandboxes + 20-subtask model routing (20% frontier)",
+        chapter: "Live Sandboxes and the 20-Subtask Routing Pyramid",
+        ts: "00:11:52",
+        quote: "So, our shooter today is about 20% for your models, for the most critical tasks. And then the long deal of token, there is explored for a, violin, and so on, views of varieties on it... In practice, we have actually 20 different subpaths, and each of them has a very specific size models that you used to."
+      }
+    };
+
+    let selectedIds = [1, 3, 5];
+
+    function toggleCard(id) {
+      const idx = selectedIds.indexOf(id);
+      if (idx !== -1) {
+        selectedIds.splice(idx, 1);
+      } else {
+        if (selectedIds.length >= 3) {
+          // Replace the oldest or let user pick; let's shift the first out so it stays snappy, or allow toggle
+          selectedIds.push(id);
+        } else {
+          selectedIds.push(id);
+        }
+      }
+      updateState();
+    }
+
+    function toggleDrawer(id) {
+      const el = document.getElementById('drawer-' + id);
+      el.classList.toggle('open');
+    }
+
+    function updateState() {
+      // Update cards UI
+      for (let id = 1; id <= 5; id++) {
+        const card = document.querySelector(`.kp-card[data-id="${id}"]`);
+        const chk = document.getElementById('chk-' + id);
+        const orderIndex = selectedIds.indexOf(id);
+        if (orderIndex !== -1) {
+          card.classList.add('selected');
+          chk.textContent = String(orderIndex + 1);
+        } else {
+          card.classList.remove('selected');
+          chk.textContent = '';
+        }
+      }
+
+      // Update counter badge
+      const badge = document.getElementById('kp-counter');
+      badge.textContent = `${selectedIds.length} of 3 selected`;
+      if (selectedIds.length === 3) {
+        badge.className = 'counter-badge ready';
+      } else {
+        badge.className = 'counter-badge warn';
+      }
+
+      // Update blueprint list
+      const bpList = document.getElementById('blueprint-list');
+      bpList.innerHTML = '';
+      for (let id = 1; id <= 5; id++) {
+        const isAnchor = selectedIds.includes(id);
+        const vis = document.getElementById('vis-' + id).value.split(':')[0];
+        const li = document.createElement('li');
+        li.className = 'chapter-preview-item';
+        if (isAnchor) {
+          li.style.borderColor = 'var(--accent)';
+          li.style.background = '#fffaf3';
+        }
+        li.innerHTML = `
+          <span class="ch-num">Chapter 0${id} · ${KP_DATA[id].ts} · Visual: ${vis.toUpperCase()} ${isAnchor ? '★ KEY POINT #' + (selectedIds.indexOf(id) + 1) : ''}</span>
+          <strong>${KP_DATA[id].chapter}</strong>
+        `;
+        bpList.appendChild(li);
+      }
+
+      // Build export prompt
+      const thesis = document.getElementById('thesis-input').value.trim();
+      const reader = document.getElementById('reader-input').value.trim();
+      const chosenLines = selectedIds.map((id, i) => {
+        const vis = document.getElementById('vis-' + id).value;
+        return `${i + 1}. ${KP_DATA[id].short} (${KP_DATA[id].ts}) — Visual: ${vis}`;
+      }).join('\n');
+
+      const replyText = [
+        `Write story.md for 2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti with these choices:`,
+        ``,
+        `Thesis:`,
+        `${thesis}`,
+        ``,
+        `Three Key Points:`,
+        chosenLines || '(none selected)',
+        ``,
+        `Reader & Takeaway:`,
+        `${reader}`
+      ].join('\n');
+
+      document.getElementById('export-box').value = replyText;
+    }
+
+    // Wire preset buttons
+    document.querySelectorAll('#thesis-presets .preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#thesis-presets .preset-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('thesis-input').value = btn.getAttribute('data-thesis');
+        updateState();
+      });
+    });
+
+    document.querySelectorAll('#reader-presets .preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#reader-presets .preset-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('reader-input').value = btn.getAttribute('data-reader');
+        updateState();
+      });
+    });
+
+    document.getElementById('thesis-input').addEventListener('input', updateState);
+    document.getElementById('reader-input').addEventListener('input', updateState);
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      setTimeout(() => { t.textContent = ''; }, 3000);
+    }
+
+    function copyReply() {
+      const box = document.getElementById('export-box');
+      box.select();
+      navigator.clipboard.writeText(box.value).then(() => {
+        showToast('✓ Copied decision to clipboard — paste into chat!');
+      });
+    }
+
+    function downloadJson() {
+      const payload = {
+        slug: "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+        thesis: document.getElementById('thesis-input').value.trim(),
+        selected_key_points: selectedIds.map(id => ({
+          id,
+          ...KP_DATA[id],
+          visual: document.getElementById('vis-' + id).value
+        })),
+        reader: document.getElementById('reader-input').value.trim()
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'polish-decision.json';
+      a.click();
+      showToast('✓ Downloaded polish-decision.json');
+    }
+
+    updateState();
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+---
+title: "Frontier Models for Acting in Space and Time"
+speakers:
+  - name: Pim de Witte
+    affiliation: General Intuition
+room: "Simons Room (Metropolitan East)"
+starts_at: "2026-10-13T16:48:00-04:00"
+ends_at: "2026-10-13T17:06:00-04:00"
+format: "keynote"
+recording: "2026-10-13_1645_general-intuition"
+duration: "19m 36s"
+source: "voice-memos-transcript"
+---
+
+# Frontier Models for Acting in Space and Time
+
+### 00:00:00 — From Internet Text to Spatiotemporal World Models
+
+Or not? 't. Hello? I want you to, zoom out for a second and think about if somebody were to tell you today that we would take all the information on the internet, and then we would train a model on it, and we would use that in order to solve scientific problems that were not on the air. A lot of people would tell you, that's crazy.
+
+And, What we're doing, is a lot of girls have a story. And so if you think about how intelligence works, Imagine for a 2nd that you're in the movie Frozen, and you're all up, the snowman. If Olaf was in Alabama, there's a scene, which is one of my favorites, which is where he rolls down a mountain, and there's a little stone that pops up, and Olaf spreads out, temporarily becomes a disassembled snowman, and then becomes an assembled snowman.
+
+All I'll know is how to do that because Olaf can observe as he is acting. Olaf can, unlike LM, which otheromically predict tokens. Constantly, part of that behavior is that it's constantly observing as it is acting. And so, this is a big difference between, you know, when you see an LMS credit, so, robotics problems, or when you look at native architecture as, like, we're working on, it's very, very easy to think about LMS and the demos and see on Twitter as the thing that will sold everything.
+
+There's fundamental limitations that we see where herb is built models are much better fit now. Today I'm going to talk a little bit about, but the only time that food looks like. And so, for us, it all started with metal. We built the largest video game recorder in the world. And we think of that as the internet. So people use medals or work themselves playing 10s of 1000s of different video games.
+
+And if you think about it, as a human, we can tell upgrade a robot with the exact same frame that we played at video game. And in fact, in many cases, we also can use the same controller. So what this means is that the action is Facebook video games, often because of game tours, and the action is based on collaborations or real well.
+
+In many cases, the same. and so every single robot, below, turning the raising the gaming for. A majority of the supply chains are already this way. And so we thought, what if you just take all of the action data, then we get through the video recorder? which associates the inputs and the actions with the actual friends. We label the accidents, so we understand synaptic meaning and every action, and we use it to give it to a vision-based model.
+
+And so what you see here on the left is just an intuitive way of Padamal works. So you give the model a set of keys to choose from, essentially a various model. It gives range as the input, so you can give it a text prompt as well. And you send it for ABI, and you say, so many ways that you wave back.
+
+In the input space, model understands you have a redaction available, you will not put the action associated with that. One way of interior, coming to the understanding how this works. So, I've obviously simplified here because it was predicting that Phil could not the next word, but they're looking to hear. I'll ask, to large the internet data, then train the industry to the next tech token, and now uses for writing software.
+
+And these are all workloads that are really, really well fit for futures that are not simultaneously unfolding as you are predicting, right? Code is term-based. You can say something, model something, you can fix it again, model this way again. And you can use it for lots of valuable work, but at the end of the day, because it's turn-based, it's very, very difficult for it to generalize to environments, especially that include space and time.
+
+So our models, the way that they work, is there a continuously receiving frames or receiving batches of, essentially, information from the camera, the robotic could be a screen. And it predicts everything as if it were just a video game. So you can think of the way in a tropic, focus on just nailing coding. So, you know, they were never frontier, just based text generation.
+
+they always focused on being the best a generative prot. And then what they did about that they made is that more people would start bringing more problems into coding space. If you think of general intuition, our best is that you can, as humans, we are generally fixed like that. And converts plus census, which in many cases you can convert into pixels as well.
+
+And you can output actions at the same time. There's actions are just case, or keyboard mouse, or game controller. So if you have the tokens of the model, are essentially equivalent to that of enhanced computer model with more, more actually amp-based internalizing. So you send frames and you get actions. This works, again, because every single thing that you see here can control all of these different embodiments, right?
+
+So, As humans, We do not know how to predict motor work. We do not we do not know what value to send to a machine. There's this beautiful device that has been made for many years, which actually does that work for us so we can control them. Most robotics companies today are trying to solve the problem at the end-to-end level to predict exact poses are exact values in the motor, instead of just looking and picking up a thing that everybody's company has built to generalize our very limited abilities to have physics understanding and predicting their values.
+
+and so forth. And so our approach is, let's just use that. And so, Metal, at the moment, sees about a billion videos uploaded per year, this year, on track for 3 billion, which lead to over a 1000000000005 actions upwards per month. So just for comparison, I think about the best. The total amount of data that frontier labs use today to train robotics models.
+
+We collect in at the moment half a day.
+
+### 00:07:26 — Learning Action Policies from Billions of Gameplay Trajectories
+
+And so, the type of bet, and again, think of the fact that humans can use the exact same controllers and their eyes to play video games so they can't all upgrade robots. It is the same thing. We just bet on scaling pixel space, the same way the metropolics still coding space. And vending that people will just, as we scale, data compute into pixel space, so people will bring more problems in the pixel space.
+
+And so what happens? All of a sudden, you get an incredibly general agent that can go and solve problems. on computers, in the real world, and, In addition, similarly time for all the focuses on doing coding environments, we focus on world models, which most of you know is for the near our latest robots, then generate additional environments for you smalls to learning.
+
+One way of internalizing the big advantage of this approach against LMs is if you're in a, if you're in a living company and you have to bet on the ability to generate environments for your models to learn. You have 2 problems. One, you actually need to spend the compute, to simulate environments, and the more realistic you try to simulate, the more expensive that gets.
+
+And so imagine you want to learn a new thing. You want to learn that new thing in the exact input space of the human, right? So if we were learning from pixels, we're learning about looking around. If I'm trying to communicate something, I want my robot partner to observe that exact same thing. And so, what I don't want is for not to have to go through an LM, for a digital twint, you have to be created, where to all have to get the play, where there could be a bunch of verifier checks, whatever, not things are equivalent, and that's where the robot to learn much later, right?
+
+And so what way of thinking about it is when you can learn in native modality of the human, you can all of a sudden start solving a lot more problems, a lot faster. which you'll see when these models come out. Is there significantly faster than NELM activating these things? Because games are so action nets, so what you see, right, is, one thing that's interesting is, you software just model breaking multiple actions at the same time.
+
+We're able to take that action density from gamers and convert them into really complex robotics workloads. So for example, if you are operating a drone and you need to make lots of little adjustments, you really, really want to start with games. You don't want to start with teleoperations because the human will take a lot less actions. So a lot less information. So you want to model a for really high APM.
+
+And so The APM of the data set, which a lot of these problems all of a sudden get reached, so that it can do a lot of these actions simultaneously. And as I mentioned, the model doesn't just understand the key is predicting. It also understands the semantic meaning associated with that PHD, which is really important for things like interpretability. So, we will be releasing the models this year.
+
+We are very happy. I think the correct work would be that we're stunned, but if not, of what these models can do. it is, this is a live stream, so I unfortunately couldn't share the release videos without bringing a surprise, but if you're in Europe, we are also in New York. And so we started doing a few demos. The models, so if you can know somebody on the team, reach out, and you can start showing you some of the, ask someone to give you know his life.
+
+But we have essentially one model, which can play video games at the highest level and control over 10 types of robots using the exact same primitive. So pixels in, action's out, completely real-time. And we'll be rolling out early access to these models over the next few months. We already have some customers that are on them, but it's still private, so you're not hearing so much about it.
+
+But if you scan this, your code, you'll be able to get new models, because we go by Who's signed up on the waitlist at which times? So, this is a great, this is a great moment to get in touch, as I mentioned, we are in New York. I think what you'll find is similar to how Jev and a lot of these decision-making models have kind of opened people's eyes and what you can do when you have a new architectural primitive.
+
+People are ready to kind of do away with unpredictabilities in LOM and put something in, but it's more reliable and faster, and you just understand how it's going to react as opposed to having to work around it. If that resonates, these models are exactly what you're looking for. and all of a sudden, you can start exploring the environments that you generate with elements.
+
+All of a sudden, one of these days that I'm really, really excited about is, well, these models, they can take actions, as I think human was, on the interface. And so if you're doing US work and you're trying to understand, is this an intuitive interface? Well, this is a very interesting way of solving the problem. So all these problems that LN canceled because they can't actually explore like a human.
+
+You can use these problems to start. You start using these models for it. So, the way they're going to be released is we still expect you to use your constrainer models, so you may use something like Gemini or asteride in order to do long-term planning and everything. You'll be able to plug these into your workplus. And we're actually, the models are so general.
+
+It is gentlemen be going to, I think, feel like the early 11 days when you have a new toy and you just want to figure out what it does and all the things you can use it for. My reaction was like that when I 1st started using the checkpoints. And I think thinking about the same reaction. And I think a lot of you will, just
+
+### 00:13:24 — Transferring Spatial Intelligence to Real-World Control
+
+like an LMX, if you're a bit early and you start understanding these primitives, I think you'll understand that you can even build lots of business on top of this, right? You know, think about, for instance, a science lab, right? If you, all of a sudden, if you can reliably orchestrate robots in space and time, and they can take text instructions and do things, all of a sudden, I, it's a reversive problem, right?
+
+Robotics is interesting because one of the big problems was sold in robotics is making more robust. And so there are all these businesses that, because of sort of bottleneck my intelligence, are going to emerge just from solving is one simple problem, which is pixels to actions. And I think if you're really on getting your hands on these, it will have a similar effect on getting your hands on early LX.
+
+I am most excited also, one of the things that we're working on, which is interesting, is if you have any friends or family who are in some way, I need accessibility help for using their computer, because these models can use computers. on a human all of a sudden. For instance, if you're, if you only, you can use one arm, all of a sudden, the model can allow you to play video games because you can, you can use, you can just control the mouse, and the model is predicting the actions for your keyboard.
+
+And because the model also understands which actions you're predicting, because that's the input, right? It's observing as it's acting, it will actually just not predict the things that you're doing and it will just predict peace. And so it has all these downstream effects of things that you can build on top that I'm an engineer, if you're interested in building this space, this is going to be the most interesting toy that comes out this year.
+
+I I'm fairly surfing. And I also think a lot of the initial users will sit in simulation. So if you are into generating environments with Astra or Gemini is perfect, now all of a sudden you can have something that can explore it and you don't have to do it yourself. and I, it's perfect timing because of all the environmentary capability stuff going to these models.
+
+Okay, so really quickly before I wrap up, I want to talk about the team. So we are based in New York City. the metal team and the general impression team is here in New York City, so if you're here, you should reach out to us, and, you can both show any models, especially if you want to join a team. I think we'll prioritize even higher.
+
+But, we really are looking for, people who, A, want to understand these models as much as we do. So people, if you're really, really good at generating travel environments, typically if you have some sort of research background, but I don't have a research background, so that's okay. If you know, if you if you come from an engineering background and you're very happy to learn, this is fine too.
+
+And ideally, what we want is somebody who has experienced shipping end-to-end AI products, but it doesn't have to be on the research side. So we just want to kind of hire people to understand the entire thing. Let's see. We're free teams, so we want to roll my names. The other is the policy, city agent, and the other one is working on essentially the data generation and the environment generations.
+
+And these are the main teams for an engineer. The best ones to join is probably the environment generation team. and then use some sort of growing to getting access to their ones. That meat, I'm very, very excited for November. I really hope that you'll be on the lookout. as I mentioned, it would be either late, I remember, early December, is it current planning?
+
+One more thing. The New York Dogs organized, 3 headphones. So the 1st is known to be in New York City, it would be November. And we will send out, if you sign up for the primary list, we'll send out some emails so that everybody can get access. We hope to see everybody at Macaphons. I think it will be really the 1st time to get your hands on them, the way that we're playing with them internally now.
+
+And there will be one in New York City and one in London. So if you're in eater of the cities or with a travel city or go to these, those are vegan times to be continued. Yeah, we'll see. I have time for one or 2 questions and then I think we can wrap. Too much. How is it different from Japa? yeah, it was different restaurants.
+
+So Jaffa is, it doesn't turn along to the action labels, so they bet on it for action labels for the most part, which I think, like one of the way thinking about it is Jaffa, I think, in the limit is the more correct approach, but it's a lot less practical in the short term, because you need to bet on a separate skilling law on the action inference itself.
+
+And we really like Jet Classic concept. We think it's a, you know, we would use one of the things in the models. And but at the end of the day, it's an approach, not a product. And I think we'll, you know, borrow concepts both ways. Thank you. One way of thinking about it is, because we have so much action data, let's say you're flying a plane, and you're moving the water in the back.
+
+There's no way of being able to tell that from the video frames. It's very, very difficult. So our mode of having the action data really transfers better to action sequences than it does to role models and to generate the pixels. And that's why we just went all in on training these general foundation models for action predictions. and we use all sorts of techniques to do worldole models.
+
+You know, our own, we really like other companies building them as well. Great, move on more and I got it on, I think. Um... Right? Thank you, everyone. .

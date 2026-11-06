@@ -1,0 +1,115 @@
+---
+title: "Your Coding Agent Has a Context Problem"
+speakers:
+  - name: Tom Moor
+    affiliation: Linear
+room: "McCarthy Room (Riverside Suite)"
+starts_at: "2026-10-14T11:05:00-04:00"
+ends_at: "2026-10-14T11:23:00-04:00"
+format: "talk"
+recording: "2026-10-14_1104_Linear"
+duration: "21m 54s"
+source: "voice-memos-transcript"
+---
+
+# Your Coding Agent Has a Context Problem
+
+### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context
+
+Remember devices? We really appreciate it. Good idea. Why not? I was silencing it. Jesus. Do we have anybody standing in the hallway watching? Yep. So the door will stay open. yeah. Ready when you are sir? All right, I can't. Yeah, I was saying, I've got it on the audience interaction. I can't see anything. It's my compliments. Hey, buddy, I'm Tom. I run the engineering team, Lydia.
+
+Thanks for thanks for turning up to a talk about agents and context. I, you know, I didn't think these were keywords. I would really hit today. I'm sure it won't be the last the last time you hear about it. But I'm going to try and kind of get out of the inner loop a little bit, I think more about the outlet because that they just, excuse me, it feels a little off topic at times, but we'll get that.
+
+Okay. So, yeah, I was in a company called Lineage. So I was just a quick intro for those in the room that might not be familiar. When I started life as an issue tracker, he was born out of the frustrations with the existing products in the space, how poor quality they were, kind of slow, hard to use, body, slow. I won't name any specific products, but you may have used other prices in space.
+
+So, you know, the founders very selfishly wanted to work with great tools. The best craftspeople always invest in the highest quality tools they can afford. And we felt that at the time, you know, engineers had a distinct lack of good tools. Now this was around 2019. This is when Linnia was founded. And, you know, you might say that the world has changed a lot since then.
+
+Some things have happened since 2018, from since 2020. But as you know, as a company, we're still striving to build high quality software and build systems that enable that for everybody else. So, you know, what changed? I hope you guys will just humor me for a 2nd here. this is not the automation to you, but I want to just like bask in how fast this stuff moves.
+
+Like, we had a complete reinvention of software engineering in the time that our company exists and it's only half a decade old. It's not that long ago that tab competition came out. At least AI assisted time completion of like given co-pilot in 2021. Coding agents did not exist in any functional sense until 2 years ago. The 1st coding agents came out in 2024.
+
+These were really early. They were not that great. and they definitely had to be kind of cutting edge to things. so coding ages themselves are both like long in the tooth and like super early right now. I'm assuming that if you're in this room, you're probably using a coding agent. There's the primary way to work right now. that is the assumption of this dog.
+
+If not, come to me afterwards. I'm intrigued at what you're doing. You may have moved to a world beyond this and definitely come and talk to me that. So, you know, we hear a lot of talk about software factory now. I don't know if that's the right terminology. You're also going to see our co-founder did a talk a couple of weeks ago about that.
+
+I didn't call it a factory. I'm not going to harp on that particular piece. But I do think that we are, you know, one of the important pieces here is that we're kind of quickly moving from a world where you're hand driving an agent on your local device to orchestrating more agents or having them run in the cloud automatically and things like that.
+
+And so that does change how it does change how you use the context, what context you need. Yeah, if we look forward like this, this is just the beginning, right? Like that's, the next scene that we've seen, it's, we're still at the very, very beginning. There's a lot of focus on Twitter that are like naysayers, saying that all the free rides over.
+
+It's all gonna go up front here. like they were just subsidizing. I don't believe in that at all. The cost is going to keep dropping. Like this graft is just an example of, you know, 3 years ago, what the intelligence that would have cost you a $100 now costs you ¢5. So it's you can extrapolate that into the future and kind of get very interesting results.
+
+In a few years, like Ultra fast will become a you'll snap your fingers and the features worth of code will appear. And then on top of that, like Tash Horizon is exponential too. So, excuse the graph page. Pitch is great software, but it does not let you just not let you do an exponential access. But it makes it look more impressive. So, you know, the important thing here is we are now leaving these coding agents running longer and longer.
+
+So think back to 2024. You had a coding agent, but you would definitely kind of vary in the loop, tight loop there, right? And now these things can run for hours, days, you hit folks leaving, things running over the weekend, having success with it. I' know the truth or is in that, how much of that code actually ships. but no doubt it's increasing, and we'll continue to do something.
+
+So why am I mentioning all this? Like what's this got to do with Asian context? I think one of the main reasons is that the context kind of moves out of that, you know, and largely into the outer loop. If we have like super fast systems completing tasks for sense and running for hours or days, you're not going to have humans manually delegating and starting and stopping them.
+
+So we need to start the link systems to manage this chaos. and manage the context. So, yeah, this sounds great, right? Like, we're gonna have tons of code produced. It gonna be really cheap. We're gonna build software factories. We're gonna pump it out, like features coming out, left, right, and center. I think like to be a little trite, like code is not the bottleneck now, implementation is not the bottleneck now.
+
+The failure mode here isn't an inability to build. The belly mode is like an inability to maintain coherence. to have a product that makes sense as a whole. What makes a product great is something sort of weaker about a lot. that maybe something that we are trying to build a product that helps you build great
+
+### 00:06:59 — Structuring Context Graphs & Specs at Linear
+
+product too. So it's freement. But what makes it pretty great is consistency, like restraint, trade-offs, and like lots of tiny decisions that reinforce one another. This is a codex generated image of a settings page that's gone a bit crazy. I don't want too closely on it. But it's a good example, right? Like, just add another setting. I'm gonna do. So, you know, a coding a coding agent today will read the code, but it can still, and that's great, like there is a lot of value in the code, obviously.
+
+They can still miss a lot of the context behind it. So some examples would be like the intent, the intent, what problem are we solving here? Why does this matter? Why this matters to the end user? Which decisions were made previously? What were the trade-offs that resulted in this design or in this feature? you know, how should this local, like visually outside of the code?
+
+How should this feel like in the product? Maybe things like, is there other work underway in other parts of the organization? And like who is the decision maker on this? Who's leading this project, who's ultimately responsible for the decisions that happen here? And then are there any like additional risks? Like, you can see some things from the code, right? That you can't always see, oh, like a revert happened 2 weeks ago in this area of the code base may not be immediately apparent.
+
+So the idea here is that we carry this, we carry this context through from the initial idea through planning, implementation, and review. So I'll talk a little bit about how system for doing that. Most of this is in production in some form, and most of this in production are way that other people can use too. This isn't a linear ad. You can use linear those, of course, but the principles apply broadly and you can probably build this into any system that you're using.
+
+And it's agents all the way down, I'm afraid. This is one of the reasons I'm bullish on AI as a whole. Like every time you deeply dive into a problem, the solution is more AI. And it's definitely the case here. so the 1st thing we did is automate is automate intake. You have, you know, if you're developing a product, you have ideas coming in from Zen desk, Slack, Teen, Dong, Twitter, your internal product team, just the CEO, all of these ideas kind of need to be collected.
+
+We feed it into this conceptual triage. they doggle it, like there's so many things. This is like one fifth of it. then we have something called triage agent. It labels signs and groups the incoming work into themes. It closes duplicates. It roots things to the correct people and the correct teams, and it services decisions, where more input might be needed. So clarify the problem.
+
+and also investigates the, this is this part of like the investigation it does. And what the investigation is done is left on the issue in our case. issues are kind of the center of our world still. And it's left this detailed context for the next human or the agent to use. So by the end of that investigation, we have, you know, the problem that came in, all the idea that came in, who requested it, it's been enriched with the customer information.
+
+Hey, this is a high value customer. This is the 3rd time they've requested this in a month. And he's like stacked traces maybe if it's a bug, logs from data dog that are associated. sometimes your internal MCPs, so you can have like internal account IDs and things like that. and then also related things that previously touched this area, related issues and decisions that were made on those.
+
+This is all surfaced on the issue itself that kind of forces this space, context, so you can have something very simple that comes in, like, this crashes in this scenario, and then by the time the tree object is done, you have a really, a really filled out contest. A few examples of where this was useful for us recently. probably, this doesn't matter too much, but, you know, this is an example where the video captions kept getting turned.
+
+Oh, yeah, it kept getting turned on. And here, like our triage agent went beyond finding just the setting or something like that. It actually reproduced the bug and discovered that there was an automatic browser action that was being mistaken for user intent. This level of detail left on the issue context, it was Keith in success of like automatically fixing the issue at this point.
+
+Here's another example. whether the research checked the existing home base, it found some similar shit to work, made sure it wasn't a regression. In this case, you know, is this a missing feature? Is this a bug? It found all the customers that are associated with this request and realize it's high value. I also found a likely point in the code base to get started.
+
+So, as you can imagine, this is just like a really great starting point for your coding agent at this point. Italy massively increases the chance of success. So yeah, we have a pretty nice base context. The next step is to build. either automatically from the triage agent deciding to decide that the issue is quick enough. In our case, we have a, if the bug is small enough, we automatically fix it, but you could do this manually.
+
+It could be locally via MCP or it could be remoked in the Clark, or out of cloud. I'm not gonna hop on this slide too much. I'm sorry if this is where you expected most people for me. But in my experience, this is kind of a solve problem today. The most important thing here, apart from the base input context that we just created, is the ability to verify and the ability to see eye failures to feedback into the agent.
+
+So between those 2 pieces, I see a lot of success between the base, the base context, being able to verify and being able to see failures. We see a massive amount of success in our team. Lauren and XAI, you were probably the Teto on Twitter. She has a great set of skills you could use to generate the verification skill for your coding agent, really makes a huge difference.
+
+So the next place where context matters, and I think it's still ill considered, is in review. It's also where it gets quite interesting. Like if you think about your setup today, what
+
+### 00:14:21 — Human-Agent Collaboration in the Issue Tracker
+
+does it look like? Do you just have Codex running on your on your PR, code rabbit, reptile, one of these products? What are they considering when they review your code? It's likely that they're getting all of their context from the co-pace itself. and mostly focusing on logical correctness. That's okay. That's good. The coding agents, the review agents are really, really great. They catch a lot of bugs.
+
+But, at this point, we make internally, we make much more context available than just the co-based. we dispatch another ages and ages. We have a review agent. It starts with that original issue, and that base context that we created with the customers and the original content. And then it goes and looks on product history. So things like previous decisions, reverse, regressions and insolence in the same area.
+
+Now we have codes that compare against two, right? So we know which code has been touched. And we know the intent of the PR, we can we can further enhance the context with this. We also need to refind related issues. Okay, now we now have the code context. This might be weeks later, it might be minutes later, but it might be a little time later too.
+
+We'll all can catch it over that thing and conflicting changes. I was at the full agent session. A lot of the decisions that were made in that. Maybe it was a one shot, maybe somebody went round and round. and made some critical decisions along the way. And finally, ownership tells us who should make the product trade off. And we're reviewing coverage making this thing.
+
+you know, it's not always for the are in the codings. It could be your product lead, it could be, the CEO, from your head of product. that needs to be done too. But now we're thinking, like, less about is this code correct than more about is this the right change for the product? So I have a couple of concrete examples of this.
+
+These are all within the last few weeks of our product. In this case, review Asia found several relevant changes from 6 months ago and 7 months ago. where this was marked as an incident risk, due to holding a DV transaction open. This is actually really great. Like, you know, a review, Asian, a standard review, may be able to find that, potentially. But in this case the ext health takes really helps.
+
+Complex did not find it. This is a pretty visceral example where we service decisions made one year ago where we dropped some UI because it was busy. This is the kind of decision we make a lot in our products, right? Like, ah, this doesn't feel right, this doesn't feel good enough. How do you get that back into the coding agent's context? In this case, like a PR attempted to rehab that same iconography that had been rejected multiple times before.
+
+We were able to surface that and then, of course, these review comments get fed straight back into the coding agent. as additional context. And one more here. We have the concept Teaman works face labels in our product as a hierarchy. And in this case, it looked like the workspace labels were being displayed below the team labels. I don't think a code review tool would generally pick that up.
+
+But in this case, you know, I've had a tedious room hood issue related to this and things service that. So this is where it's able to like maintain that sense of behavior. There's no place in the code that defines it so many places that labels are listed, for example. We also built a UI around this that will guide a human reviewer through the change set, and X has a place to surface those decisions.
+
+and places where the judgment calls are needed. You can use any review product for this, of course, you know, we want to build tools. We're a big fan of like handcrafted tools and we wanted to make the best one we could. So we got this surface. And then the final stage is like distilling that feedback. So along the way, these comments have been stored on issues on PRs, changes have been merged to the co-base.
+
+lot of context has built up. This is like multiplied at the organizational level, not just in the code. This gives like the human corrective influence beyond the current change. Hopefully we spend less time making the same correction twice. And then, on some of those changes that end up back in the code, end up in the issue tracker, end up in the full regress, we also have a specific loop setup.
+
+This is an automation that runs once a day, but it could, it could be less or more depending on your PR volume, that will drawl through all of the code that has been merged in that day. It will find actual lessons, places where these types of comments happened in the PRs and changes were made or reverse happened, extractor learnings, and then it dragged them back into the co-base, either in the agents.md or in the related documentation, just to make sure that those learnings are continuously compounding.
+
+The exact prompt is something you just have to experiment with and obviously these changes are something you want to build up forever. You't want your agent's MTs to end up, but you're on your own. So this is something that you have to, it's very tough. It is on the Google, it's actually handled by... This is this is a linear automation, but you could use any observation product for it.
+
+you know, I think every product has some sort of automation trigger at this point. So what does carrying the context through the whole workflow bias? Hopefully, I kind of described it, right? Like, fewer changes, the solve, the wrong problem to get with. And intake, understanding the intent helps with that. During implementation, the product history and conventions helped us build on decisions that we've made before.
+
+And review seeing the related work helps us catch conflicts. in the product and with ongoing work. I need an example of that, but it is. And decides like whether the change like leads to the product as a whole. The aim here is to is a few avoidable mistakes, less rework, and with that we get faster interration. faster restoration. And then at that final distillation loop, that final automation, you know, human judgment that happened during this whole process becomes context for the next loop around.
+
+You know, our judgment matters more as code yes, cheaper. That's it.

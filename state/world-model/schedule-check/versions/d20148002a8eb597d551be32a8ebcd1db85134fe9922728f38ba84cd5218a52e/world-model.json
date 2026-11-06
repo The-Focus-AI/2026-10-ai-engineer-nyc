@@ -1,0 +1,12 @@
+{
+  "check_requests": {
+    "items": [
+      {
+        "request_id": "schedule-check:0 */6 * * *:2026-10-25T18:00:00-04:00",
+        "reason": "cron-tick",
+        "requested_at": "2026-10-25T18:00:00-04:00"
+      }
+    ],
+    "received_at": "2026-10-26T10:01:43-04:00"
+  }
+}

@@ -1,0 +1,99 @@
+---
+title: "Can Any Model Write Like Me? Building a Benchmark for Creative Writing"
+speakers:
+  - name: Louis-François Bouchard
+    affiliation: Towards AI
+room: "Turing Room (Riverside Ballroom)"
+starts_at: "2026-10-13T10:40:00-04:00"
+ends_at: "2026-10-13T10:58:00-04:00"
+format: "talk"
+recording: "2026-10-13_1039_Writing-Slop"
+duration: "18m 49s"
+source: "voice-memos-transcript"
+---
+
+# Can Any Model Write Like Me? Building a Benchmark for Creative Writing
+
+### 00:00:00 — Defining AI Writing Slop & Why It Happens
+
+and, more importantly, I want to, try to help this thing, what current demon, termed as the slug activist, that he taught to start in 2026 and I think we've seen that on social media. So to try to fix this, it just dumps it up to perfectly to define it. So first, what is up? There are tons of different definitions from the viruses person appeal.
+
+But what I think we can all agree is that it really sucks to read something that feels generated. And it usually looks like this with the words that we will love, the delve, and the generatities and other things like this. And the main problem is that even as models get better, with payable HBD 6 point one and all the better models, love doesn't seem to go away.
+
+it just keeps on scaling. So we need something different than just training the models more busy. And I do want to try to, at least 1st, define what love is, but, you know, is that why they're 10? So to me, stuff is made of 6 main things. First, there are tons of overused words bilingual models that we don't really use, like they'll really know well.
+
+Second is usually too general. It's always talking about most things, most projects, it doesn't share nothing specific. And I myself guilty of using that on LinkedIn as well, which I guess it's learning the weather. So it's normal there. And worse, slub, slubby text usually says nothing. It's just like nice words put together that we don't really want to do. And even worse than that, it says nothing, but it also reveats itself enough.
+
+So it repeats nothing and it's to general. And even worse, it hallucinates. I mean, the models are hallucinate. So thats stuff text also that we can be interrupted. And as the words to me, is that it usually has the wrong tone, or at least it has no tone, and like everyone's tone at the same time. So it just doesn't really help back you.
+
+It doesn't share stuff that you will share. So my goal here, today and with this project I've been working on, is to 1st measure this sloppy writing, not just love words. I don't want to rebuild it to brandish.core. It's just, it's really about measuring how stuffy is. So, in order to do that, we are, well, today, right now, releasing a new benchmark that we called phone bench, which, the whole goal of the of the benchmark is to measure in the new models, our models, are good at creative writing, which, well, perfectly defined as well.
+
+So here's a plan for today. The plan is to justify, we even need another benchmark, then how it works, what we measure, but how we built it. And I want to share, like, the cost of building it, our decisions, what we learned already from - for writing with AI from the benchmark, and share some marked up a little bit. So with that, then tell them.
+
+So, the 1st first thing, do we even need another benchmark again? And just looking at LinkedIn and X replies, my replies on X, I think we do. It's, like, people are spamming more and more, generated gum down. So at least have them be decently good. And more precisely, I also really need it. We are a small team at 4DI, my company, and we have one side of the company that is focused on education.
+
+We deal tons of educational content, mostly for AI engineering. And as a small team, obviously we use AI as well for that. And it's been extremely annoying to redo this love, Constantine, and try to fix it. We, I've published hundreds of videos. we published 1000s of articles. We released a book, we are working on a 2nd one for AI engineering. And so we really need to have the best models, 1st of all, that will help us write better and not be full of stuff.
+
+And another nice addition to that is that I've been sharing about this network on A for quite some time as I've been building it. And it got really nice engagement, and people seem to confirm that we did need some sort of more creative, writing that mark like this one. And I think that we prove that I think we are the right thing to work on this bench card.
+
+We, well, I've been built evaluating AI models since my master's and MDHD and now, and for exactly, we do build evaluation pipelines for our clients. We have 15 AI leaders with us, and we have creative writers, editors, on board. So we already have that for our I think the, well, I wanted to give it enough to build a best market, help the community work.
+
+So what did we do? Exactly. Hopefully I will practice our mother, 1st of all, I have to chat if we can help even filter all, or if I can just share some of our learnings. So what we built is super sedictive. It's a way to measure if a model can write like, and how I define that is that it's just that if I get read it out loud, like right now, without cringing because of the, the work that I wouldn't do myself.
+
+So the process is very simple. The bench the process benchmark, the bedmark process is very simple. We have a crown that is the brief and the reserve that we send to a model, and hopefully it will generate entirely a video script that I could have written. Obviously that doesn't happen
+
+### 00:06:15 — Constructing a Benchmark for Creative Writing
+
+in recently. But that's the whole goal. We made sure that final script, again, our rubrics and just our whole evaluation project. And the problem that we send to every model in the benchmark is much more in-depth than that. It looks more like this, where we have a lot of details on how I thought, IRA, all tons of examples of my greatest content videos.
+
+We have a lot of information on storytelling in general, active sentences, and just how to write well. And we have directions on what to generate and what to do for this current task, which in the end, the model will generate one script. And this is just one about them. In the current benchmark, we have 10 different scripts that we work really hard to make as good as possible, and we build rubrics for them to help, as we will see, LLM judges, rate these generations.
+
+So we have 10 different scripts. Some of them are published, some are not. We don't see which ones are the benchmarks, so that we check for our contamination as well. And then what do we do with these 10 scripts? We take all the models out there and we try to measure their generations. What that means is that for every single model, we will do 10 times this process, generate the article from the prompt.
+
+In fact, we generate 5 of them. I will very soon share away. Then we have 4 different languages, another item. I recently added gym as a desk. Not sure if I look at that, but yeah, I added it just to see if it worked well. And then we calculate in the end a final score for the deliver. I will go through all of these steps from January.
+
+So first, why do we generate within 5 scripts? is to check for intramodal variety, which I highly suggest, if you are building your only elevations, because especially, I guess, on the creative test, sometimes as we see here with drug 4.7, some of the generations are outliers, where it's, as we see it, from the bench party, it's just as good as Opus 5.5.
+
+but on just one generation out of five. So we want to measure for that, and the worst the model is, the widest, the variance. So we have some learnings about that I'll share at the end as well. But yeah, it's just we found that 5 drafts seems to be the good middle drum in terms of trust for us, really do. And, to measure this - this very, So, what do we measure exactly?
+
+And how do you even quantify writing quickly? That's been the challenge, and we worked on it for quite some time. Right now, in all women that they parking there are way more details on the best card page as well. But what we made there is 9 different metrics that we detailed that we really detailed. But I can contact them in 5 main aspects.
+
+The first we measure the tone. Does it sound like me, which means that the tender model adapt to a specific tone? Second, we measure that pure, is it good writing? Does it have, like, good hook, good emotion, or emotional transition, and all the aspects that we're looking in a good story? Then we were very fit photos, instructions, then they follow the link, the expected link, the formality spectrum, they put the right images and right things in the right place.
+
+For, we measure for research accuracy. So, we have a research breed along with each script, and we just measure it, it's hallucinated or used the research correctly. And lastly, we measure forced up using incubance dot score but also our own measurements. And what this looks in terms of what the judges see is more like that. We have around a 1000 words of examples and instructions and directions around each of the major that we have.
+
+along with the script to allies, my own script, as some sort of guidance. and the reading research. So all in now, it's a 14,000 ram that we send to every judge to then get the feedback, the little database. And so the judge just analyzed the writing quality. It doesn't focus on length and doesn't know which model is writing. Just do that after with cold stuff.
+
+On one way, three, by tone and voice, which is our main metric, it looks a bit like this where we have a lot of detailed descriptions of what is my tone and what to expect and how to analyze this. Then the judge will categorize between 6 categories. First, and after having found a gallery, it will give a rating. We found that this is the best way to measure for this more data task from, just binary that we usually suggest to use, or directly category or directly presented.
+
+We found that this actually works really well. And, It has tons of examples of what each score means in terms of writing for each of the tasks. And what the judge sent back is something like this. It has the 9 different metrics scored with justification for the score and an example of like, I wrote discord because of this example is important. But the main thing is that all of this is automated, obviously, because we with 120 models, we generate 5 drafts gauge for 10 tasks, it quickly goes to the 1000s of scripts to review, so we cannot really review this ourselves.
+
+And the problem with A&M judges is that they have references. Some models prefer themselves, most models prefer themselves. And of course, you're really open, EI. And
+
+### 00:12:37 — Evaluating Style, Voice & Model Findings
+
+what I found quite funny when studying this is that it seems like enter a big and open AI are really in a war here where they seem to have plus training on painting each other. But, all just to say that, you really want to check for, when you when you use L&M judges, like using GPD, for instance, if you want to know which model is best for your task, be careful and use different models.
+
+I mean, just to ensure, because we see here that open eye really has a strong preference on its own community of models. Not just one model, but all open-air ones. And for the pick, also, for that, we listen to a few comments that I got on X, they use humans for a period task, which would be ideal, but quite impractical, we still try to do that in a scalable way where right now we compare manually me and few of my inmates.
+
+10 AD pairs of the generator scripts, not the full scripts, but like a good chunk that is comparable between 2 scripts, 2 generations. And hopefully we'll do more and I want to publicize this also for to get help from the community in the future, but that's not right now. So what did it cost us and what the work goes behind us? For me, for us, it was a kickoff crust in terms of hours of around 500 hours to build the transcripts, define all the rubrates, find the examples, try to quantify quality, which is very difficult.
+
+And then I just interacted myself with 4 different 28 subscription for 4 months to build a benchmark and all the other things and experiment and change the matrix, ratio, and all these things. And so we just spent 1000s of dollars there. And if you want to do this, a similar type of benchmark, you need to know that it costs quite a lot.
+
+Right now, if I just change one thing in the rubric, so how the judge rate generation, it will trust us more than $2000? And if I just change one line in an input from other people when it's generating, it cost us more than $4000? So it's very expensive to experiment and change these things in the trunk. So you want to do this very carefully.
+
+Now, what can we get out of this benchmark? All the phone bins? You can get tons of things on the website itself. There's like a lot of details. But importantly, I want to share that what I've learned from the past 4 months is that you don't want to pick or for create a variety, that you don't want to pick the model that will generate one just amazing post.
+
+You just want to find the model that will be the least annoying to you to get to where you want to be. So, like there won't be any perfection anytime soon, I think. And what that means right now on the best part, it means at scale, GLM 5.3 flash is extremely good, extremely cheap. It's 50 times cheaper than the best one, which is open 5.5 extra high, which is 2.5 times cheaper than max thinking, but with same results.
+
+So you don't want to use match for writing. And otherwise, for the best, how to write with models that we got all of this, is to 1st have an extremely long and detailed prompt. It cannot be long enough. And the more the better, you want to add every example you can think of what to do and how to do it. Same thing for negative examples of things you don't like and that doesn't sound right, the words you don't want, everything.
+
+You can share every day, if you write, use that earth, or whatever, you can share it and hold, and it will definitely be better as well. And what we've seen that really, really helps is to use a high thinking, just, just one time, one to 3 times. Otherwise, it will loop into stuff. So just one review of another model with the same instructions, directions, that would give feedback to the writer.
+
+It really, like, I don't have the contactive matrix on that, but it helps a lot. And for a company, if you work with APIs and want to do this, that's have the best results at scale 1st of all. What I suggest is to generate several drafts, like 10 drafts of one specific thing, with a cheaper model, like GLM. And then have a smarter, hiking job, like Opus or whatever you want.
+
+Pick and merge the best parts of each of this group, these interrupts, which I think will still land way, way less expensive than just one generation by August 5.5. And, I think will lead to better results, providing. And last thing you want, I do many, you can definitely go around that. But all of this benchmark measures, obviously, my voice. So it's super subjective, but I, and it's just one that I might don't want to put in stress.
+
+I mean, it doesn't mean it'll affect like five, the death model. So, but ideally, it's a strong signal to find which model is good at writing and which is less slubby. I suggest you to build your only valuation pipelines. If you want, we can help, you can try to reach out. And regarding the benchmark, it's live. We just like right now position this and release this.
+
+So, there are tons of, drafts, tons of insights, tons of comparisons, and details on the implementation, full methodology, just check it out, and hopefully it's useful. Thank you.

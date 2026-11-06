@@ -1,0 +1,11 @@
+{
+  "title": "bench marking llms",
+  "recorded_at": "2026-10-13T15:20:10-04:00",
+  "duration_seconds": 1049.2,
+  "transcript": "transcript.txt",
+  "transcript_word_count": 3112,
+  "transcript_locale": "en_US",
+  "source_file": "20261013 152010.m4a",
+  "audio_sha256": "282e2c713f9366cd7e327691934a778d3371cb384cddbf21fa4e945c2afce560",
+  "exported_at": "2026-10-26T10:01:44-04:00"
+}
