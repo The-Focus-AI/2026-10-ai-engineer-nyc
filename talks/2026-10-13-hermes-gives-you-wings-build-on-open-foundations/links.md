@@ -3,7 +3,7 @@
 - **Session ID**: `871cd5c8-13f4-4fe9-ac49-c8b25d970add`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-13_1704_nous-research`
-- **Freshness**: `settling` (last checked 2026-10-26T10:41:07-04:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
 
 ## Speakers
 
@@ -20,7 +20,10 @@
 - **[Schedule | AI Engineer NYC 2026 — Hermes gives you wings: Build on open foundations.](https://ai.engineer/nyc/2026/schedule#session-871cd5c8-13f4-4fe9-ac49-c8b25d970add)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Hermes gives you wings: Build on open foundations.".
   - Evidence: *"I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."*
+- **[AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research](https://www.youtube.com/watch?v=Sg6vtKOAOQ0)** (`youtube`, first seen 2026-11-14T12:15:30-05:00, post-event publication — added 32 days after the talk)
+  - Why: Official recording of this talk on the AI Engineer YouTube channel, published after the event.
+  - Evidence: page title *"AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research"*
 
 ## Coverage & Gaps
 
-- Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page.
+- Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.

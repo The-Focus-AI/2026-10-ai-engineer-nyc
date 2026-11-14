@@ -1,0 +1,20 @@
+{
+  "streams": [
+    {
+      "day": "2026-10-13",
+      "room_id": "simons-room",
+      "video_id": "akEqiXFo3GM",
+      "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
+      "started_at": "2026-10-13T08:47:52-04:00",
+      "duration_seconds": 27482
+    },
+    {
+      "day": "2026-10-14",
+      "room_id": "simons-room",
+      "video_id": "jiUC6IUMdvc",
+      "title": "AI Engineer NYC: OpenAI, Blackstone, Ramp, Coinbase, Apollo, Citadel, Basis, Runway, Compute Trading",
+      "started_at": "2026-10-14T08:40:36-04:00",
+      "duration_seconds": 31945
+    }
+  ]
+}

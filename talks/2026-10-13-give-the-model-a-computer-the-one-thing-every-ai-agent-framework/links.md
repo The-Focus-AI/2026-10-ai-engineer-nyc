@@ -3,7 +3,7 @@
 - **Session ID**: `8d424512-c7f0-483c-9094-ca899d7bb1fd`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-13_1544_give-the-agent-a-computer`
-- **Freshness**: `settling` (last checked 2026-10-26T10:41:07-04:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
 
 ## Speakers
 
@@ -20,7 +20,10 @@
 - **[Schedule | AI Engineer NYC 2026 — Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On](https://ai.engineer/nyc/2026/schedule#session-8d424512-c7f0-483c-9094-ca899d7bb1fd)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On".
   - Evidence: *"And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"*
+- **[The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona](https://www.youtube.com/watch?v=WWIFiQi9U4w)** (`youtube`, first seen 2026-11-14T12:15:30-05:00, post-event publication — added 32 days after the talk)
+  - Why: Official recording of this talk on the AI Engineer YouTube channel, published after the event.
+  - Evidence: page title *"The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona"*
 
 ## Coverage & Gaps
 
-- Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page.
+- Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.

@@ -980,6 +980,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI",
+        "url": "https://www.youtube.com/watch?v=Ti-BmGU1_mQ",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-17",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "edb4f982-0cb8-48ee-8bf7-410255a40cb3": [
@@ -1008,6 +1020,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How Bridgewater Turned 100 Million Documents Into an Edge - Sam Green & Aaron Linsky, Bridgewater",
+        "url": "https://www.youtube.com/watch?v=CLve4Nx_RwI",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How Bridgewater Turned 100 Million Documents Into an Edge - Sam Green & Aaron Linsky, Bridgewater"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-24",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "68a1e78b-569e-4314-a56f-f20508123cbe": [
@@ -1022,6 +1046,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
+        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1808s",
+        "why": "Main-room livestream at an approximate position (0:30:08, scheduled start minus stream start); no standalone recording of this session was published.",
+        "evidence": [
+          "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-13",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
@@ -1036,6 +1072,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "What a $900M Bank Error Teaches Us About AI Agents - John Feminella, Two Sigma",
+        "url": "https://www.youtube.com/watch?v=iniryju23Sk",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "What a $900M Bank Error Teaches Us About AI Agents - John Feminella, Two Sigma"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-27",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "b2ed4456-5671-4e8e-83fd-684c012fef8c": [
@@ -1050,6 +1098,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "What Does an AI Engineer Do Now? - Aparna Dhinakaran, Arize AI",
+        "url": "https://www.youtube.com/watch?v=ImnZ7s68jw8",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "What Does an AI Engineer Do Now? - Aparna Dhinakaran, Arize AI"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-25",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "736edd83-bb08-49f1-90ed-722b7ed07eb2": [
@@ -1064,6 +1124,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Why AI Writing Still Reads Like Slop — Louis-François Bouchard, Towards AI",
+        "url": "https://www.youtube.com/watch?v=_dTF3NpPzGo",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Why AI Writing Still Reads Like Slop — Louis-François Bouchard, Towards AI"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-22",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "c4ba0138-6f6d-4780-93a1-4d8f0c478339": [
@@ -1078,6 +1150,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada",
+        "url": "https://www.youtube.com/watch?v=c_SPW__jF9w",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-22",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "b8bb725d-daf0-4ac0-8095-5737841c89e5": [
@@ -1092,6 +1176,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Version-Controlled Search: The Web as It Was — Ryan Ahern, Exa",
+        "url": "https://www.youtube.com/watch?v=vS2IA9pq0Q4",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Version-Controlled Search: The Web as It Was — Ryan Ahern, Exa"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-19",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": [
@@ -1106,6 +1202,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO",
+        "url": "https://www.youtube.com/watch?v=DouK81O8R3o",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-21",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "8d348b6c-25cc-45de-8dc4-aaa3d7130918": [
@@ -1120,6 +1228,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Why AI Agents Still Won't Pay for Anything — Jan Curn, Apify",
+        "url": "https://www.youtube.com/watch?v=-AOxpwVeIWw",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Why AI Agents Still Won't Pay for Anything — Jan Curn, Apify"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-18",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "bdab432a-0538-4431-ad5a-62653affd9da": [
@@ -1134,6 +1254,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How to Build an AI Code Review Agent - Daksh Gupta, Greptile",
+        "url": "https://www.youtube.com/watch?v=4UtrRVtUN_g",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How to Build an AI Code Review Agent - Daksh Gupta, Greptile"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-26",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "fca86857-d079-46a6-94a7-62b0bb8e5d31": [
@@ -1148,6 +1280,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod",
+        "url": "https://www.youtube.com/watch?v=P_0_Th_ZzIg",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-28",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "8d424512-c7f0-483c-9094-ca899d7bb1fd": [
@@ -1162,6 +1306,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona",
+        "url": "https://www.youtube.com/watch?v=WWIFiQi9U4w",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-09",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "c34c075b-c695-4227-bf8e-3b4eeb3460d9": [
@@ -1176,6 +1332,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
+        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=27428s",
+        "why": "Main-room livestream at an approximate position (7:37:08, scheduled start minus stream start); no standalone recording of this session was published. The stream ends about 1 min after this position, so the session may be cut short.",
+        "evidence": [
+          "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-13",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
@@ -1204,6 +1372,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Robots Will Be Trained on Video Games - Pim de Witte, General Intuition",
+        "url": "https://www.youtube.com/watch?v=MpkARD5pq-M",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Robots Will Be Trained on Video Games - Pim de Witte, General Intuition"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-04",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "871cd5c8-13f4-4fe9-ac49-c8b25d970add": [
@@ -1218,6 +1398,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research",
+        "url": "https://www.youtube.com/watch?v=Sg6vtKOAOQ0",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-04",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": [
@@ -1246,6 +1438,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp",
+        "url": "https://www.youtube.com/watch?v=T-42NrYjwxM",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-04",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "4add802c-6a68-4e9c-93fb-9c1e017193bc": [
@@ -1260,6 +1464,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar",
+        "url": "https://www.youtube.com/watch?v=LQW_Wvqhp04",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-29",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "ee927042-2ba1-44c3-b304-d001ae247839": [
@@ -1274,6 +1490,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How to Know When an AI Agent Can Work Unsupervised — Evan Kormos, Coinbase",
+        "url": "https://www.youtube.com/watch?v=_4Ph2dhmUFI",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How to Know When an AI Agent Can Work Unsupervised — Evan Kormos, Coinbase"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-19",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "f7204e6d-a47c-4535-804e-16b4db579b95": [
@@ -1288,6 +1516,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How One Founder Manages 20 AI Coding Agents at Once - Ryan Carson, Untangle",
+        "url": "https://www.youtube.com/watch?v=BTtyguoPvBU",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How One Founder Manages 20 AI Coding Agents at Once - Ryan Carson, Untangle"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-09",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": [
@@ -1302,6 +1542,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "What Your Coding Agent Can't See in the Code - Tom Moor, Linear",
+        "url": "https://www.youtube.com/watch?v=Xw9utONfhIY",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "What Your Coding Agent Can't See in the Code - Tom Moor, Linear"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-09",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": [
@@ -1316,6 +1568,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "How Anthropic Merges 30,000 Code Changes a Day - Manish Kapur, Sonar & Addy Osmani, Anthropic",
+        "url": "https://www.youtube.com/watch?v=AnsXWH2_EBU",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "How Anthropic Merges 30,000 Code Changes a Day - Manish Kapur, Sonar & Addy Osmani, Anthropic"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-28",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "29083884-87dc-44f8-b412-b494afca8856": [
@@ -1330,6 +1594,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Is the Agent Harness Dead? — Jediah Katz, SpaceXAI",
+        "url": "https://www.youtube.com/watch?v=7Y4sbZgBdnc",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Is the Agent Harness Dead? — Jediah Katz, SpaceXAI"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-19",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": [
@@ -1344,6 +1620,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp",
+        "url": "https://www.youtube.com/watch?v=pz74r-4dGfQ",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-06",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "18628ea8-d66a-4d7b-adbd-730d3a43d92e": [
@@ -1358,6 +1646,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Engineer NYC: OpenAI, Blackstone, Ramp, Coinbase, Apollo, Citadel, Basis, Runway, Compute Trading",
+        "url": "https://www.youtube.com/watch?v=jiUC6IUMdvc&t=27864s",
+        "why": "Main-room livestream at an approximate position (7:44:24, scheduled start minus stream start); no standalone recording of this session was published.",
+        "evidence": [
+          "AI Engineer NYC: OpenAI, Blackstone, Ramp, Coinbase, Apollo, Citadel, Basis, Runway, Compute Trading"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-14",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": [
@@ -1372,6 +1672,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Agents Cut 3-Day Portfolio Builds to Minutes — Jack McDonald, Apollo & Michael Manapat, Rowspace",
+        "url": "https://www.youtube.com/watch?v=BOWYujhIQuo",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "AI Agents Cut 3-Day Portfolio Builds to Minutes — Jack McDonald, Apollo & Michael Manapat, Rowspace"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-10-16",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": [
@@ -1386,6 +1698,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "Why AI Makes You 100x Faster but Not Your Company - Mitchell Troyanovsky, Basis",
+        "url": "https://www.youtube.com/watch?v=JGtkTjn4120",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "Why AI Makes You 100x Faster but Not Your Company - Mitchell Troyanovsky, Basis"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-04",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "af8422e8-d5f8-4dbd-a918-6360f5bfba80": [
@@ -1400,15 +1724,27 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "You Can't Tell What's Real Anymore. Here's What Comes Next - Cristóbal Valenzuela, Runway",
+        "url": "https://www.youtube.com/watch?v=q4ITwvlFplQ",
+        "why": "Official recording of this talk on the AI Engineer YouTube channel, published after the event.",
+        "evidence": [
+          "You Can't Tell What's Real Anymore. Here's What Comes Next - Cristóbal Valenzuela, Runway"
+        ],
+        "first_seen": "2026-11-14T12:15:30-05:00",
+        "published_at": "2026-11-03",
+        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ]
   },
   "freshness": {
     "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
       "phase": "settling",
@@ -1418,81 +1754,81 @@
     },
     "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "68a1e78b-569e-4314-a56f-f20508123cbe": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "bdab432a-0538-4431-ad5a-62653affd9da": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
       "phase": "settling",
@@ -1502,93 +1838,93 @@
     },
     "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "caecd5f6-b352-4868-a995-f0f71679caf0": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "ee927042-2ba1-44c3-b304-d001ae247839": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "f7204e6d-a47c-4535-804e-16b4db579b95": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "29083884-87dc-44f8-b412-b494afca8856": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     },
     "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T12:15:30-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
-      "checks": 1
+      "checks": 2
     }
   },
   "coverage": {
@@ -1597,9 +1933,9 @@
         "The AI Bill Is Too Damn High – Tokenomics 101 Eugene Cheah AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
       "searched": [
@@ -1615,117 +1951,119 @@
         "Vault: Making Unstructured Data Work for Investing Aaron Linsky Sam Green AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "68a1e78b-569e-4314-a56f-f20508123cbe": {
       "searched": [
         "Anthropic: Accelerating frontier AI in Financial Services. Belinda Neal Keon Shahab AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
+        "No standalone YouTube cut found (2026-11-14); linked the main-room livestream at an approximate position instead."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
       "searched": [
         "Balancing Acceleration and Safety for AI Agents John Feminella AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
       "searched": [
         "What does an AI engineer do? Aparna Dhinakaran AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
       "searched": [
         "Can Any Model Write Like Me? Building a Benchmark for Creative Writing Louis-François Bouchard AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
       "searched": [
         "Write the Answer First: Generating Eval Datasets for Agents With No Benchmark Nathanael Weill AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
       "searched": [
         "Search the Web as It Was: An Introduction to Exa Snapshot Ryan Ahern AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
       "searched": [
         "Inside the Fable War Room Ford Prior AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
       "searched": [
         "Agents can pay. So why don’t they? Jan Curn AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "bdab432a-0538-4431-ad5a-62653affd9da": {
       "searched": [
         "How to build an AI code review agent: from the creators of Greptile Daksh Gupta AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
       "searched": [
         "From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod Chris Vela AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
       "searched": [
         "Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On Mislav Ivanda AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
       "searched": [
         "Welcome Back - Featured Keynotes Alex Lieberman AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
+        "No standalone YouTube cut found (2026-11-14); linked the main-room livestream at an approximate position instead."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
       "searched": [
@@ -1741,135 +2079,137 @@
         "Frontier Models for Acting in Space and Time Pim de Witte AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
       "searched": [
         "Hermes gives you wings: Build on open foundations. Dillon Rolnick AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
       "searched": [
         "Closing Remarks Alex Lieberman AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
+        "No standalone YouTube cut found (2026-11-14), and the scheduled start falls after the end of the main-room livestream for that day, so no livestream position is linked."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "caecd5f6-b352-4868-a995-f0f71679caf0": {
       "searched": [
         "Chasing capabilities while waiting for the frontier Alexander Shevchenko AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
       "searched": [
         "The Machine that Changed the World, vAI Tariq Shaukat AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "ee927042-2ba1-44c3-b304-d001ae247839": {
       "searched": [
         "Trusting Agents in Policy-Driven Workflows Evan Kormos AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "f7204e6d-a47c-4535-804e-16b4db579b95": {
       "searched": [
         "Your job is now \"agent manager\" Ryan Carson AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
       "searched": [
         "Your Coding Agent Has a Context Problem Tom Moor AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
       "searched": [
         "Who verifies the software factory? Addy Osmani Manish Kapur AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "29083884-87dc-44f8-b412-b494afca8856": {
       "searched": [
         "The Model Ate the Coding Harness. Now What? Jediah Katz AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
       "searched": [
         "Your agent needs a skill to improve its skills Ben Holmes AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
       "searched": [
         "Welcome Back - Featured Keynotes Ksenia Se AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
+        "No standalone YouTube cut found (2026-11-14); linked the main-room livestream at an approximate position instead."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
       "searched": [
         "AI in Practice: An Inside Look at Apollo's Approach Jack McDonald Michael Manapat AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
       "searched": [
         "Process Supervision for Agents That Do Long-Horizon Work Mitchell Troyanovsky AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     },
     "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
       "searched": [
         "Everything will be Simulated Cristóbal Valenzuela AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T12:15:30-05:00"
     }
   }
 }

@@ -3,7 +3,7 @@
 - **Session ID**: `dd25c0a8-d64f-4d6e-a597-7dd576eabc16`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-13_1720_811-7th-Ave`
-- **Freshness**: `settling` (last checked 2026-10-26T10:41:07-04:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
 
 ## Speakers
 
@@ -23,4 +23,5 @@
 
 ## Coverage & Gaps
 
-- Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page.
+- Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.
+- No standalone YouTube cut found (2026-11-14), and the scheduled start falls after the end of the main-room livestream for that day, so no livestream position is linked.
