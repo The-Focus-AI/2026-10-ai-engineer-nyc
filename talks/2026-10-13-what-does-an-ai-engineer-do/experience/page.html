@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build the loop · Aparna Dhinakaran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .reading { margin: 1.2rem 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); }
+  .reading b { color: var(--accent); }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>Stop writing the feature. Build the loop that writes it.</h1>
+  <p class="dek">A few thousand people already run swarms of agents; most engineers still ship feature by feature. Aparna Dhinakaran's answer to “what does an AI engineer do?” is that the job has moved up a level: you build the system that does the work, then you define what good means and check the judge that measures it.</p>
+  <div class="talk-meta">Aparna Dhinakaran, Arize AI · 15 min keynote · five chapters · <a href="https://www.youtube.com/watch?v=ImnZ7s68jw8">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="funnel.jpg" alt="Her slide, 1000x Agent Engineer: about 6 billion people have barely touched an LLM, 1 to 2 billion are casual free-tier users, about 20 million professionals have an agent finish weeks of work from a prompt, and about 5 thousand with internal frontier access run swarms of thousands of agents. Beside it, Andrej Karpathy's post about a widening gap in understanding AI capability, and her reply that labs tackle problems with data that are testable, and that there is a big gap between what is possible and what businesses ship.">
+        <figcaption>Her opening slide, 10:15 am (cropped from photos/PXL_20261013_141544817.jpg)</figcaption>
+      </figure>
+
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="then-and-now.jpg" alt="Her slide, The AI engineer, then and now. Unit of work: last year a feature, now a system to run the loop. Who builds: you with autocomplete and chat, now a team of agents. How you check: read the diff, now agents doing code review and evals on nondeterministic tasks. Finding problems: alerts on metrics or complaints, now agents reading traces to surface failure clusters. Your time: writing and reviewing code, now defining good and reviewing verdicts. Abstraction: code, now the factory agents write code in.">
+        <figcaption>Her “then and now” slide, 10:17 am (straightened from photos/PXL_20261013_141729014.jpg)</figcaption>
+      </figure>
+
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="triggers.jpg" alt="Her slide, What triggers the agent: Slack, messages, an ongoing schedule, a metric-based trigger, a meeting or event, or another agent all point to Agent spins up, which works until it is done.">
+        <figcaption>Her triggers slide, 10:20 am (cropped from photos/PXL_20261013_142020914.jpg)</figcaption>
+      </figure>
+
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="after-each-run.jpg" alt="Her slide, What happens after each run. When the run ends, some things are kept on purpose: the output, traces of every turn, memory as files rather than chat history, and new skills saved as needed. Others are thrown away: the sandbox is torn down, short-lived credentials are revoked, the workspace with its repo clone and scratch files is removed, and leftovers are caught by an idle sweep.">
+        <figcaption>Her “after each run” slide, 10:22 am (straightened from photos/PXL_20261013_142240994.jpg)</figcaption>
+      </figure>
+
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="creating-an-eval.jpg" alt="Her slide, Creating an eval: look at traces, reading real runs rather than metrics; find errors, naming the ways the agent fails; build the eval, turning each failure into a dataset and a prompt; align the eval, checking the judge against human labels. Skill: arize-evaluator. Beside it, a trace table with four failing rows marked in red.">
+        <figcaption>Her “creating an eval” slide, 10:26 am (straightened from photos/PXL_20261013_142631564.jpg)</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="the-funnel" data-visual="v1" data-caption="Five thousand people at the top">
+      <div class="chapter">Chapter 1</div>
+      <h2>A few thousand people are already running the factory</h2>
+      <p>She opens on a funnel that went around that weekend: roughly six billion people who have barely touched an LLM, one to two billion casual free-tier users, about twenty million professionals for whom an agent turns weeks of work into days, and around five thousand people at the frontier running thousands of agents at once. Her slide puts Andrej Karpathy's post beside her own reply: labs work on problems that have data and can be tested, and most businesses don't have problems shaped like that.</p>
+      <p>The first thing anyone asks of that funnel is where they are on it, and how to reach the top in the next couple of years. She ends the talk on the same gap: business data is messier than a lab's constrained, testable problems, and someone has to close the distance.</p>
+      <blockquote>“AI engineers are kind of the role to close that gap.”<span class="cite">00:09:45</span></blockquote>
+      <ul class="keypoints">
+        <li>A tiny fraction of users already run thousands of agents; most work still ships one feature at a time.</li>
+        <li>Part of the gap is the problem type: labs pick testable problems with data, businesses rarely have them.</li>
+        <li>Closing that gap inside a business is the AI engineer's job.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:09:45</p>
+    </section>
+
+    <section data-chapter="the-loop" data-visual="v2" data-caption="Last year a feature, now a system">
+      <div class="chapter">Chapter 2</div>
+      <h2>The unit of work is now the loop</h2>
+      <p>The abstraction layer has been rising for decades, and faster in the last few years: from high-level languages, to copying code out of chat, to local agents, to cloud agents, to the expectation that every engineer runs a team, or a factory, of agents.</p>
+      <p>That changes the job row by row. You don't just write the feature; you build the loop that writes it. You don't just read the diff; you set up agents to review code, and evals to judge the non-deterministic paths. You don't just set up metrics; agents read the observability data and find the patterns. Build, eval, ship, monitor, improve is still the cycle. The engineer now owns the system that runs each step.</p>
+      <blockquote>“As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop.”<span class="cite">00:00:00</span></blockquote>
+      <ul class="keypoints">
+        <li>Every step up the abstraction ladder ends in the same place: running agents, not writing code.</li>
+        <li>Code review, testing and monitoring become things an agent does and the engineer sets up.</li>
+        <li>The engineer owns the loop: build, eval, ship, monitor, improve.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00</p>
+    </section>
+
+    <section data-chapter="telemetry-for-agents" data-visual="v3" data-caption="What wakes the agent">
+      <div class="chapter">Chapter 3</div>
+      <h2>Telemetry is now written for agents to read</h2>
+      <p>Arize's own example is Signal, an always-on agent that reads traces, finds patterns in the telemetry and, with access to the repo, opens a PR with a fix. It has to remember what it has already seen: an issue it flagged before, or one that looked minor and becomes critical as more data comes in.</p>
+      <p>Building it taught them that the reader of telemetry has changed. The question is no longer how people read it, or how agents help people read it, but how to shape it so agents are its main readers. Then observability data becomes the trigger: Signal runs every three or six hours over recent traces, wakes when a user complains in Slack, or fires on a metric.</p>
+      <blockquote>“How do you set up your telemetry data so that agents are the primary consumers of that data?”<span class="cite">00:00:00</span></blockquote>
+      <ul class="keypoints">
+        <li>Signal reads traces, tracks issues across runs, and can open a PR with a fix.</li>
+        <li>Design telemetry with agents, not people, as its main reader.</li>
+        <li>Schedules, Slack messages and metrics are all triggers that wake the agent.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:04:53</p>
+    </section>
+
+    <section data-chapter="each-run" data-visual="v4" data-caption="Kept on purpose, thrown away">
+      <div class="chapter">Chapter 4</div>
+      <h2>What a run keeps, and what it throws away</h2>
+      <p>Each run is assembled fresh. When the agent wakes, everything it needs goes into a sandbox: traces and context, third-party APM logs and metrics, the repo, and the keys it needs. A single proxy is the only way in or out, and everything inside is traced.</p>
+      <p>When the run ends, some things stay on purpose: the issues it found, saved to memory so the next run doesn't start from zero; the traces of what it did; and any skills it learned, saved to the repo. The rest goes: the sandbox is torn down, credentials removed, repo access revoked. State lives outside the sandbox, so a failed sandbox or harness can be relaunched and resume from the step that failed.</p>
+      <p>Signal is deliberately agnostic. It started on Claude Code, now runs on Cursor and Codex, aims at the major open-source harnesses, and can switch models. That is how they measure the agent's quality on every run and keep cost down without losing rigor.</p>
+      <blockquote>“The only way to get information in and out of the sandbox is by this single proxy.”<span class="cite">00:04:53</span></blockquote>
+      <ul class="keypoints">
+        <li>Every run gets a fresh sandbox behind one proxy, and everything inside is traced.</li>
+        <li>Findings, traces and learned skills persist; the sandbox, credentials and repo access don't.</li>
+        <li>Running on several harnesses and models lets them trade cost against quality, and measure it.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:53</p>
+    </section>
+
+    <section data-chapter="evaluate-the-evaluators" data-visual="v5" data-caption="Align the judge with people">
+      <div class="chapter">Chapter 5</div>
+      <h2>Defining good: evaluate the evaluators</h2>
+      <p>Every time Signal opens a PR, evals run on top of it. This is where she thinks an AI engineer should spend much of their time: reading traces alongside their agents, finding the common errors, and turning them into evals that match human judgment. Arize ships an evaluator skill for building and aligning them.</p>
+      <p>The question teams ask her is how to trust the evaluator. For Arize's own products the answer is golden datasets: run the evals, compare them with human labels, and only ship a new judge once it agrees with the human. The same evals then run offline on each change and online over production telemetry. And tracing everything now includes the coding agents that build the agents, so you can see what happened inside the factory.</p>
+      <blockquote>“We actually evaluate the evaluators.”<span class="cite">00:09:45</span></blockquote>
+      <ul class="keypoints">
+        <li>Evals run on every PR an agent opens; aligning them with human judgment is the engineer's core work.</li>
+        <li>A judge ships only after it agrees with human labels on a golden dataset.</li>
+        <li>Trace both the agents and the coding agents that build them, then evaluate online.</li>
+      </ul>
+      <div class="reading"><b>A note on the transcript:</b> in this section the speech recognition hears “evals” as “emails” and “e-bells”. The quotes here avoid those passages; the transcript keeps them as heard.</div>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:45</p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a>, which draws on <a href="../transcript.md">the transcript</a> (Qwen3-ASR, recorded in the room) and on photos taken during the talk; no notes were taken on this one. Quotes are verbatim from the transcript. The slides are hers, photographed from the audience. The <a href="https://www.youtube.com/watch?v=ImnZ7s68jw8">official video</a> is a separate cut, so its times do not match the transcript's exactly. More on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>
