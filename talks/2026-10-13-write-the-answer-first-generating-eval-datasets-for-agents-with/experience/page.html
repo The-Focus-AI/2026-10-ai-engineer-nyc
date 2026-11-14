@@ -71,7 +71,7 @@
       <h2>The problem: no benchmark, and the experts are somewhere else</h2>
       <p>Weill's team builds AI for Air Canada's business units. The tasks are specific enough that there is no public benchmark to lean on. The second half of the problem is worse. His team is not the domain expert; the experts sit in other units, work in their own systems, and have little time to give. His slide puts the question behind every one of their agents this way: how do you test an agent when you are not the expert, and the experts have no time?</p>
       <div class="stills"><figure class="still"><img src="no-benchmarks.jpg" alt="Slide: Air Canada has lots of agents and no benchmarks. Four areas: Operations, Corporate, Commercial, Loyalty. The question behind every one of them: How do you test an agent when you&#x27;re not the expert, and the experts have no time?"></figure></div>
-      <blockquote>“We don&#x27;t have any particular benchmark we can rely on”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“we don&#x27;t have any particular benchmark we can rely on”<span class="cite">00:00:00</span></blockquote>
       <ul class="keypoints">
         <li>The tasks are too specific for any existing benchmark.</li>
         <li>The people who could grade the answers are not on the team.</li>
@@ -87,7 +87,7 @@
       <p>What his team did at first also failed. They kept adding to the retrieval pipeline, one technique a week. The slide lists them: better parsing, a re-ranker, a query rewriter, a chunker, HyPE, extra reasoning steps. Each looked good on paper, and each fix broke something that used to work. The slide's quality line stays flat for eight weeks.</p>
       <p>The only way to know whether a change helped was a weekly meeting with the experts. They put five chatbots on a big screen, asked each the same question, and had the experts say which answer was better. The experts did not always agree, and sometimes had to go and look the answer up. That set the pace: one try a week.</p>
       <div class="stills"><figure class="still"><img src="telecom-2024.jpg" alt="Slide: I hit this problem once before, in 2024. The agent: a Q&amp;A assistant. The documents: telecom standards and vendor documents. The task: answer a technical question. A good result: the right answer, from the right page. The hard part: we were data scientists, with limited access to the subject-matter experts who could grade our answers."></figure><figure class="still"><img src="four-teams.jpg" alt="Slide: Four teams, same challenge. Only one made it work. Team A, Team B and Team C didn&#x27;t work; Us worked. Why the difference? I still don&#x27;t know why the other teams didn&#x27;t succeed. I only know what we did."></figure><figure class="still"><img src="one-try-a-week.jpg" alt="Slide: Each change waited a week for an expert. We change the agent in minutes; a telecom expert reads its answers, the only way to know if it helped; in their one review slot a week. Equals 1 try per week."></figure></div>
-      <blockquote>“So our budget was we can try one solution a week.”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“So our budget was we can try one solution a week”<span class="cite">00:01:29</span></blockquote>
       <ul class="keypoints">
         <li>Three of four teams on the same task failed.</li>
         <li>Adding retrieval techniques weekly moved nothing and broke things.</li>
@@ -103,13 +103,13 @@
       <p>They went from one iteration a week to one a business day by his account on stage; the slide says dozens of tries a day. Every change got a score, kept if the score rose and dropped if it fell. The experts' ratings went up, and the pipeline got simpler, because much of the added complexity turned out not to be needed.</p>
       <p>His slide answers the four-teams question with what he calls an axiom: the other three had no test set, and if you can't tell whether a change helped, you can't make the agent better.</p>
       <div class="stills"><figure class="still"><img src="every-day.jpg" alt="Slide: Then we could test every change, every day. From 1 try per week with one expert review to dozens of tries per day, automatic, on generated questions. Every change got a score. Keep it if the score goes up, drop it if it goes down. A chart of answer quality rises week by week."></figure><figure class="still"><img src="axiom.jpg" alt="Slide: Why the difference? I treat it as an axiom. Teams A, B and C had no test set; Us had a test set. My axiom: If you can&#x27;t tell whether a change helped, you can&#x27;t make the agent better."></figure></div>
-      <blockquote>“we went from one iteration week to business day”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“we went from one iteration week to business day”<span class="cite">00:05:31</span></blockquote>
       <ul class="keypoints">
         <li>Choose the answer first; generate the question from it.</li>
         <li>The check becomes code, so it runs in seconds without an expert.</li>
         <li>A score on every change also let them remove complexity.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:06:29 · <a href="https://www.youtube.com/watch?v=c_SPW__jF9w&t=332s">watch him explain the trick</a></p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:05:31 · <a href="https://www.youtube.com/watch?v=c_SPW__jF9w&t=332s">watch him explain the trick</a></p>
     </section>
 
     <section data-chapter="the-fix-that-didn-t-carry-over" data-visual="v4" data-caption="One test for four jobs">
@@ -119,13 +119,13 @@
       <p>The agent has four steps: spot the clause with a problem, find the documents that support a change, write the amendment, and decide whether to flag it. The 2024 test only covers one of them. They already knew how to test finding, from the earlier project. The slide is blunt about the rest: the search test says nothing about spotting, writing or deciding, and re-applying it kept them on the flat line.</p>
       <p>So the idea had to be reapplied step by step: get the answer first, then test the agent from the back.</p>
       <div class="stills"><figure class="still"><img src="contracts-2026.jpg" alt="Slide: Now, in 2026 at Air Canada: a different challenge. Supplier contract, agent checks each section against our rules, suggested changes each with a reason, a reviewer accepts or rejects each one. Same as in 2024: lots of documents, busy experts, no benchmark. What&#x27;s new: it spots problems, not answers; each one needs the rule that proves it; it writes a fix, or leaves it alone."></figure><figure class="still"><img src="rag-again.jpg" alt="Slide: So we tried the RAG fix again. It kept us on the flat line. Two charts: where we were, a flat line, and where we want to be, a rising line. How can we test every change when the agent&#x27;s job is spotting problems, not finding pages?"></figure></div>
-      <blockquote>“So we&#x27;re using the same concept of getting the answer first”<span class="cite">00:06:29</span></blockquote>
+      <blockquote>“so we&#x27;re using the same concept of getting the answer first”<span class="cite">00:07:23</span></blockquote>
       <ul class="keypoints">
         <li>A contract-review agent spots, finds, writes and decides.</li>
         <li>The page-retrieval test covers only "find".</li>
         <li>Each job needs its own way of knowing the answer in advance.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:29</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:31</p>
     </section>
 
     <section data-chapter="five-ways-to-get-an-answer-and-what-each" data-visual="v5" data-caption="Five ways, five findings">
@@ -143,13 +143,13 @@
       <p><b>5. Turn one example into many.</b> The experts already work from templates with blanks. Fill each blank with a range of values, some that break a rule and some that don't, and the expected flags are known. He says an evaluation comes back in five minutes.</p>
       <figure class="still"><img src="way-5-one-into-many.jpg" alt="Slide 5, Turn one example into many. One example, notice 30 days, pay net 60; make blanks; fill them many ways; the check reads the blanks, notice under 60 days means flag. What we found: more varied contracts, checked the way reviewers work."></figure>
       <p>Which of these he considers the strongest is not clear from the recording: he says it of the fifth when he lists them, and of the third when he describes it.</p>
-      <blockquote>“So we could not have any of those pairs of contracts. So this thing doesn&#x27;t work.”<span class="cite">00:06:29</span></blockquote>
+      <blockquote>“so we could not have any of those pairs of contracts. So this thing doesn&#x27;t work.”<span class="cite">00:10:37</span></blockquote>
       <ul class="keypoints">
         <li>One technique produced nothing because the data did not exist.</li>
         <li>Two of them work as tests and expose a weak agent: missed deletions, unstable judgments.</li>
         <li>All five end in a check that code can run.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:29, 00:12:35 · <a href="https://www.youtube.com/watch?v=c_SPW__jF9w&t=661s">watch the five techniques</a></p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:31, 00:10:37 · <a href="https://www.youtube.com/watch?v=c_SPW__jF9w&t=661s">watch the five techniques</a></p>
     </section>
 
     <section data-chapter="keep-the-check-in-code-and-treat-generat" data-visual="v6" data-caption="Four weeks to five minutes">
@@ -159,13 +159,13 @@
       <p>The pattern is not specific to contracts. For any agent: know what answer you are looking for, generate the input, run it. His slide gives two more cases, tool-call trajectories and text-to-SQL. It does not fit everything, and sometimes they changed the design of the solution so that it could be evaluated.</p>
       <p>Generated tests are where you begin. Real feedback then goes into writing better tests. The closing slide says a person still checks every change, and sets homework: pick one agent, write ten answers before you write the tests, and run them tomorrow.</p>
       <div class="stills"><figure class="still"><img src="beyond-contracts.jpg" alt="Slide: The same trick works far beyond contracts. For a trajectory: write the tool calls in order, generate the scenario that needs them, an LLM plays the user and code checks the order. For text to SQL: a slice of data pulled by a query you wrote, generate the question, compare rows. For your agent: pick the answer, generate the input that leads to it, code checks it."></figure><figure class="still"><img src="feedback-loop.jpg" alt="Slide: Real feedback makes the tests better over time. A loop: generated tests, agent, real feedback, new real tests. One loop at a time."></figure><figure class="still"><img src="write-the-answer-first.jpg" alt="Slide: No benchmark? Write the answer first. 1, Write the answer first. Then the check is just code, and you can test every change. 2, Generated tests are a starting point, not a ship decision. A person still checks every change. Real feedback takes over."></figure><figure class="still"><img src="24-hour-chip.jpg" alt="Closing slide: Are you ready to quit delivering agents without evaluation too? The 24-hour chip is the hardest one. Pick one agent. Write ten answers before you write the tests. Run them tomorrow. 720 days. Keep coming back."></figure></div>
-      <blockquote>“The original design we could not evaluate it. We switched to something that we can actually evaluate because of that.”<span class="cite">00:12:35</span></blockquote>
+      <blockquote>“The original design we could not evaluate it. We switched to something that we can actually evaluate because of that.”<span class="cite">00:17:13</span></blockquote>
       <ul class="keypoints">
         <li>An LLM judge added more noise than signal; code checks did not.</li>
         <li>Sometimes the solution was redesigned so it could be tested.</li>
         <li>Generated tests start the loop; real feedback improves the tests.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:35</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:10:37</p>
     </section>
 
   </main>

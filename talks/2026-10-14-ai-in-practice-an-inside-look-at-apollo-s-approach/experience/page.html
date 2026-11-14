@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI in Practice at Apollo · Michael Manapat &amp; Jack McDonald</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Simons Room</div>
+  <h1>In private credit, AI earns trust only after you reconcile twenty conflicting versions of one number</h1>
+  <p class="dek">Jack McDonald helps run Redding Ridge Asset Management, Apollo's structured credit and collateralized loan obligation (CLO) business overseeing roughly $50 billion. Speaking alongside Rowspace co-founder Michael Manapat, he walked through how agents moved from research toys to daily front-office infrastructure: compressing multi-day Excel portfolio builds and manual bank-statement reconciliations into minutes by encoding which internal system actually holds the truth.</p>
+  <div class="talk-meta">Michael Manapat, Rowspace &amp; Jack McDonald, Apollo Global Management · 19 min talk · six chapters · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="same-black-zip-neck.jpg" alt="Jack McDonald of Apollo and Redding Ridge speaking on the Simons Room stage with hands clasped, discussing fragmented private credit data across thousand-name loan pools.">
+        <figcaption>Stage frame from the official recording: Jack McDonald on managing $50B in structured credit and CLOs at Redding Ridge</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="black-zip-neck-presenter.jpg" alt="Jack McDonald gesturing with both hands on stage while explaining how CLO mock portfolio construction dropped from days in Excel to minutes.">
+        <figcaption>Stage frame from the official recording: walking through 200-to-400-name mock CLO portfolio construction</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="black-zip-neck-presenter-04.jpg" alt="Jack McDonald raising one hand during the fireside chat while explaining how engineers sit daily with the desk to reconcile twenty conflicting sources down to one golden source.">
+        <figcaption>Stage frame from the official recording: resolving twenty conflicting internal and vendor feeds into a golden source</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="black-zip-neck-presenter-05.jpg" alt="Jack McDonald on stage discussing Apollo&#x27;s platform-first AI approach and why institutional banking and asset management remain early on the adoption curve.">
+        <figcaption>Stage frame from the official recording: why middle- and back-office complexity keeps institutional finance early</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="two-presenters-standing-wide.jpg" alt="Wide stage view of Michael Manapat of Rowspace at left and Jack McDonald of Apollo at right in front of the skyline backdrop during their discussion of durable competitive advantage.">
+        <figcaption>Stage frame from the official recording: Michael Manapat (left) and Jack McDonald (right) on commodity tools vs. durable edge</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="olive-jacket-presenter-close.jpg" alt="Close stage shot of Rowspace co-founder Michael Manapat speaking into a headset microphone while asking about near-term priorities for AI in finance.">
+        <figcaption>Stage frame from the official recording: Michael Manapat asking what has to hold for AI to pay off in credit operations</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="fifty-billion-dollars-in-active-credit-tra" data-visual="v1" data-caption="$50B in fragmented private credit data">
+      <div class="chapter">Chapter 1</div>
+      <h2>Fifty billion dollars in active credit, trapped in private documents</h2>
+      <p>Manapat opened with the gap his team at Rowspace sees across financial firms: plenty of institutions experiment with AI, far fewer trust it inside mission-critical operations. Rather than building another chat interface, Rowspace uses agents to do continuous data engineering, reconciling records across scattered internal systems so portfolio managers and traders can act on clean numbers.</p>
+      <p>McDonald explained why structured credit makes that data problem acute. Operating as an independent subsidiary captive to Apollo, Redding Ridge manages roughly $50 billion across structured credit and thousand-name broadly syndicated loan pools, taking in thousands of data points every day. Unlike public equities or public bond markets, private and structured credit terms do not sit in a single standardized public feed; they live fragmented across deal agreements and internal files while the desk trades in a fast-moving market.</p>
+      <blockquote>“It&#x27;s very fragmented in various documents, so we&#x27;ve looked to companies like Rowspace to partner with to come in and actually sit with our teams, work with us, and understand the actual calculations and information that we&#x27;re looking to, and what&#x27;s actually the golden source of truth”<span class="cite">00:01:19</span></blockquote>
+      <ul class="key-points">
+        <li>Redding Ridge manages roughly $50 billion across CLOs and thousand-name syndicated loan pools.</li>
+        <li>Structured credit terms and calculations sit scattered across private deal documents rather than uniform public feeds.</li>
+        <li>Agents create value on the desk by doing the data engineering that unifies those records before a trade happens.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:01:19 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=79s">watch the private credit data overview</a></p>
+    </section>
+
+    <section data-chapter="mock-clo-portfolios-in-minutes-instead-of-" data-visual="v2" data-caption="Mock CLO portfolios in minutes, not days">
+      <div class="chapter">Chapter 2</div>
+      <h2>Mock CLO portfolios in minutes instead of three days of manual Excel</h2>
+      <p>When Manapat asked for concrete fire drills that used to consume a week of staff time, McDonald started with CLO portfolio construction. Every CLO vehicle is governed by strict legal tests and cash-flow waterfall rules buried inside lengthy indenture agreements. To construct a mock portfolio of 200 to 400 individual corporate credit names, a portfolio manager historically read through those legal agreements and built bespoke Excel models by hand, a process that took two to three days per build.</p>
+      <p>By pulling indenture rules, document libraries, trade and compliance constraints, and live loan pricing into one reconciled view, Redding Ridge cut that build time to minutes. The software does not replace the portfolio manager's credit call; it carries the mechanical assembly to 80 or 90 percent completion so the manager can spend their time shaping the final 10 percent around risk judgment.</p>
+      <blockquote>“Today, we&#x27;re able to kind of get the latest and greatest information that&#x27;s real time, create a portfolio that would take somebody days to now do it in the matter of minutes, and then that allows these PMS to kind of build something to call it eighty, ninety percent completion, and then kind of use their judgment and their thought to further refine that portfolio, that last 10 percent, to make it theirs.”<span class="cite">00:03:24</span></blockquote>
+      <ul class="key-points">
+        <li>A single mock CLO portfolio spans 200 to 400 credit names bound by legal indenture tests and cash-flow waterfalls.</li>
+        <li>Assembling a compliant mock portfolio previously took a portfolio manager two to three days in manual spreadsheets.</li>
+        <li>Automated data assembly reaches 80 to 90 percent completion in minutes, reserving human judgment for the final allocation choices.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:24 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=204s">watch the CLO portfolio construction walkthrough</a></p>
+    </section>
+
+    <section data-chapter="automated-warehouse-trade-reconciliation-a" data-visual="v3" data-caption="One-minute warehouse recs and 20 data sources">
+      <div class="chapter">Chapter 3</div>
+      <h2>Automated warehouse trade reconciliation and the twenty-source problem</h2>
+      <p>McDonald's second example came from loan warehouse operations, where Redding Ridge uses bank financing lines to buy loans in the market ahead of securitization. Every week, two or three team members spent hours logging directly into bank portals to check settlement statements, matching buys and sells by hand, and writing an email recap for senior management. Dropping that reporting workflow into Rowspace turned a multi-hour weekly reconciliation into an automated job that runs in a minute, shifting the staff's role to a quick daily quality check.</p>
+      <p>That operational reliability answered Manapat's next question: why not just hand raw files to an off-the-shelf frontier chatbot like Claude or ChatGPT? General models work fine for background research on an unfamiliar company, McDonald said, because they draw on public knowledge rather than proprietary positions. Trading and portfolio decisions require owning and validating internal data first. Inside a credit shop, a single metric can appear across 20 different places, including the trade order management system, performance accounting, Bloomberg, and pricing indices, with only one source holding the authoritative figure for a given calculation. Earning desk trust meant Rowspace engineers sitting beside portfolio managers and finance staff every day to codify which source overrides the others.</p>
+      <blockquote>“Michael sits with our team on a daily basis, learning and understanding our information flow, because for one piece of data that might come from 20 different sources, and there&#x27;s only one that&#x27;s actually right.”<span class="cite">00:06:32</span></blockquote>
+      <ul class="key-points">
+        <li>Weekly loan warehouse trade reconciliation dropped from hours of manual bank-statement checks by two to three staffers to a one-minute automated run with daily QA.</li>
+        <li>Off-the-shelf chatbots help with general company research but lack governed access to proprietary positions and settlement records.</li>
+        <li>When one data point appears across 20 systems, engineers must sit with the desk to encode explicit golden-source override rules.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:24, 00:06:32 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=392s">watch the golden-source trust discussion</a></p>
+    </section>
+
+    <section data-chapter="platforms-over-point-tools-in-an-industry-" data-visual="v4" data-caption="Platforms over point tools in finance">
+      <div class="chapter">Chapter 4</div>
+      <h2>Platforms over point tools in an industry still near the starting line</h2>
+      <p>Stepping back to firm-wide strategy, Manapat noted that Apollo committed early to rebuilding around a shared AI data platform rather than buying disconnected point solutions, back when coding tools were still mostly doing tab completion. McDonald credited a flat, nimble operating culture across Apollo that treats new tooling as a way to clear manual bottlenecks so staff can focus on higher-judgment work.</p>
+      <p>Even so, when Manapat compared finance against software engineering, legal work, and customer support, McDonald placed institutional banking and asset management near the beginning of the adoption curve. Large financial institutions carry sprawling middle- and back-office plumbing where nothing is simple. Using models to summarize public research or draft basic company primers is easy to deploy, he argued, yet delivers modest value compared with automating the routine operational machinery that consumes internal capacity.</p>
+      <blockquote>“In finance broadly, especially in call it the asset management, investment banking, the bank institution institutional world, I still think it&#x27;s very early.”<span class="cite">00:11:07</span></blockquote>
+      <ul class="key-points">
+        <li>Apollo favored a unified data platform over isolated point tools from the start of its AI push.</li>
+        <li>Institutional asset management and banking remain early in adoption because of deep middle- and back-office complexity.</li>
+        <li>Summarizing external research offers far less leverage than automating recurring internal operational workflows.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:07, 00:11:07 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=667s">watch the finance adoption curve exchange</a></p>
+    </section>
+
+    <section data-chapter="why-governed-data-turns-ai-into-an-edge-ra" data-visual="v5" data-caption="Real-time liquidity clarity vs. commodity Excel">
+      <div class="chapter">Chapter 5</div>
+      <h2>Why governed data turns AI into an edge rather than the next Excel</h2>
+      <p>Manapat pressed on a strategic question for asset managers: does AI end up like Excel, cutting operating costs across the board without giving any single firm a lasting edge, or does it create durable competitive separation?</p>
+      <p>McDonald argued it creates real separation if tied to proprietary process and live data. In actively traded and private credit markets alike, execution depends on knowing exact available liquidity, live market pricing, and relative value before competitors move. While public markets already run on fast data feeds, private credit is still building that connective tissue across the broader Apollo platform. Acting on misaligned internal figures risks misinformed trades whose consequences ripple straight through the enterprise to end investors.</p>
+      <blockquote>“So knowing that you have a strong process in place to go out and execute, and knowing your available liquidity, or you know where things are pricing and what the value is at any given point is crucial.”<span class="cite">00:13:10</span></blockquote>
+      <ul class="key-points">
+        <li>Productivity tools become commodities like Excel only when every firm applies them to the same generic tasks.</li>
+        <li>Real-time clarity on available liquidity, live pricing, and credit value creates an execution edge in private and structured markets.</li>
+        <li>Preventing misaligned internal numbers protects both trading decisions and downstream investor reporting.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:10 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=790s">watch the competitive edge argument</a></p>
+    </section>
+
+    <section data-chapter="four-hundred-global-investors-and-no-subst" data-visual="v6" data-caption="400 global investors and boots on the desk">
+      <div class="chapter">Chapter 6</div>
+      <h2>Four hundred global investors and no substitute for sitting with the desk</h2>
+      <p>Looking ahead over the next several months, McDonald named two priorities. The first is ironclad confidence in every number leaving the firm to its base of more than 400 global investors, without staff burning hours checking figures by hand. The second is shifting how front- and middle-office teams view technology: instead of treating tooling as a secondary afterthought while grinding through daily routines, freeing capacity lets staff question why an inherited workflow exists and how it should be redesigned as the business scales.</p>
+      <p>Asked what engineers entering financial AI underestimate most, McDonald warned against assuming strange-looking institutional processes are mistakes. Regulatory, legal, or accounting constraints usually explain why a workflow looks unusual from the outside. Getting ahead of Redding Ridge's roadmap took Rowspace engineers sitting physically alongside portfolio managers and operations staff nearly every day until those nuances were part of the system.</p>
+      <div class="stills"><figure class="still"><img src="black-zip-neck-presenter-08.jpg" alt="Jack McDonald gesturing on stage near the end of the session while sharing advice for engineers building software inside complex financial organizations."></figure></div>
+      <blockquote>“typically, things might look a little bit novel or strange and out of place, but it&#x27;s probably actually there for a reason or structured in a specific way.”<span class="cite">00:15:10</span></blockquote>
+      <ul class="key-points">
+        <li>Outbound reporting to more than 400 global investors leaves zero tolerance for unverified numbers.</li>
+        <li>Automating routine checks frees staff to question and redesign legacy workflows rather than merely keeping up with volume.</li>
+        <li>Unusual financial workflows usually reflect real structural constraints, requiring engineers to sit daily with front-office teams.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:15:10 · <a href="https://www.youtube.com/watch?v=BOWYujhIQuo&t=910s">watch the closing lessons for builders</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=BOWYujhIQuo">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

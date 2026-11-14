@@ -2,15 +2,16 @@
   {
     "theme_id": "bootstrapping-domain-evals-without-public-benchmarks",
     "name": "Bootstrapping Domain Evals Without Public Benchmarks",
-    "claim_sentence": "Public benchmarks do not measure a team's own task, so teams must build their own evals, often constructing the answer first or mining historical failures, because an agent you cannot evaluate is an agent you cannot improve.",
-    "definition": "Speakers built evals from what they already knew: a question generated from a known source page, a contract clause that breaks a known rule, a catalog of historical bug-causing changes, a 200-question hand-built search benchmark, SME suites with a baseline, and behavior specs that grade any trajectory without ground truth. Exa's point-in-time search lets prediction features be backtested without leakage. Evaluating many drafts per task and judging with a different model family were used to control variance and self-preference. The counter-position is about the grader: LLM-as-judge verdicts proved too noisy or unstable for some teams to rely on.",
-    "talk_count": 10,
+    "claim_sentence": "Public benchmarks never measure a team's real task, so builders must engineer bespoke evaluation loops—synthesizing inputs from known answers, replaying historical outages, backtesting dated web snapshots, and grading trajectories with behavior rubrics—or redesign the agent until it is evaluable.",
+    "definition": "Across enterprise RAG, legal review, creative writing, code review, accounting, and quantitative investing, speakers converged on the same wall: off-the-shelf benchmarks tell you nothing about whether your agent works, and domain experts cannot hand-grade thousands of runs. Air Canada inverted dataset creation by generating questions from known source pages and populating legal templates with clauses engineered to breach or pass rules, even re-architecting an agent purely to make it deterministically evaluable. Greptile benchmarks prompt changes against historical outage-causing PRs; Bridgewater hand-labeled 200 investment queries in a week to lift precision@10 from 60% to 95%; Exa Snapshot backtests predictive agents against 400 billion dated web pages without lookahead leakage; Towards AI runs five drafts per prompt under a two-stage cross-family rubric; and Basis grades ground-truth-free production runs with behavior specs and trajectory forking. The sharp counter-position centers on the grader itself: Sonar and Air Canada both showed that uncalibrated LLM-as-judge verdicts flip across identical runs and add noise rivaling the agent's own error rate.",
+    "talk_count": 11,
     "talk_slugs": [
       "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
       "2026-10-13-a-hedge-fund-as-a-function",
-      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+      "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
       "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
       "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+      "2026-10-13-inside-the-fable-war-room",
       "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
       "2026-10-13-vault-making-unstructured-data-work-for-investing",
       "2026-10-13-what-does-an-ai-engineer-do",
@@ -18,252 +19,315 @@
       "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work"
     ],
     "claims": [
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:0fd03d",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:729:3f6281",
-      "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:b9883c",
-      "736edd83-bb08-49f1-90ed-722b7ed07eb2:372:304cc5",
-      "736edd83-bb08-49f1-90ed-722b7ed07eb2:372:76c699",
-      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:560:0c4109",
-      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:293:02931c",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:538673",
-      "b8bb725d-daf0-4ac0-8095-5737841c89e5:742:4e5d5c",
-      "b8bb725d-daf0-4ac0-8095-5737841c89e5:742:e896cc",
-      "bdab432a-0538-4431-ad5a-62653affd9da:348:fc4c36",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:1bbd2d",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:79b9f2",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:ab2ce6",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:389:c2f846",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:8fb189",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:1084:ad7897"
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:721:8292e9",
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:820:dbba6f",
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:944:09ac25",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:5fa322",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:334:8d8be6",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:535:145b9c",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:535:230c1e",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:718:26f99b",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:293:23b9da",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:560:8e18f4",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:383:d68509",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:7d5007",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:470:d6c2be",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:678:f91ae8",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:936:988ebe",
+      "bdab432a-0538-4431-ad5a-62653affd9da:341:7c6553",
+      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:1033:780190",
+      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:331:4b3cb7",
+      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:816:29b5f5",
+      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:89:546f57",
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:1226:7391b9"
     ],
     "counter_claims": [
-      "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:c7c382",
-      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:780190"
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:481:a20d93",
+      "c4ba0138-6f6d-4780-93a1-4d8f0c478339:978:66d67f"
     ],
     "also_called": [
       "write the answer first",
-      "golden datasets",
-      "evaluate the evaluators",
-      "backtesting"
+      "point-in-time backtesting",
+      "behavior specs",
+      "evaluating the evaluators",
+      "golden datasets"
     ],
     "why_uncontested": null
   },
   {
-    "theme_id": "self-improving-agents-and-agent-management",
-    "name": "Self-Improving Agents and Agent Management",
-    "claim_sentence": "The engineer's job is shifting from writing features to managing fleets of agents and the loop that improves them: traces are centralized, scored, and turned into skill and context changes that compound.",
-    "definition": "Warp, Arize, Ryan Carson, GEICO, Anthropic and Linear each described the same loop: keep receipts of every agent run, score them against rubrics, have an agent find the common failures and open PRs against the skills, and distill human review corrections back into agents.md. Engineers own the system that builds, evaluates, ships and monitors, and spin up as many agents as the merge queue allows. Business users can correct agents directly while engineering ships the change as a versioned skill. The counter-position is that the outer loop of human decisions has not kept pace, and that pushing skill and process design onto users creates competency gaps.",
-    "talk_count": 7,
+    "theme_id": "token-economics-right-sizing-and-open-foundations",
+    "name": "Token Economics, Right-Sizing, and Open Foundations",
+    "claim_sentence": "As frontier intelligence commoditizes while aggregate token bills surge, durable economics come from attributing spend per workload, routing subtasks to fast specialist or open-weight models, tuning serving concurrency and KV caches, and owning a model-swappable stack rather than renting lock-in from frontier labs.",
+    "definition": "Practitioners attacked runaway inference costs across every layer below default frontier API calls. Featherless showed that splitting API keys by department, reserving superlinear low-latency serving (3x cost per 2x speed) for interactive paths, and leveraging higher tokens-per-second to entice developers onto smaller worker models deliver immediate ROI. Runpod's BenchPod tunes vLLM nightly builds, batch-token concurrency, and 4xH200 DeepSeek deployments live without 30-minute cold starts; Greptile routes 20 review subtasks across small and frontier models; Exa cuts trajectory tokens 95% via dynamic snippet highlights; Towards AI merges ten cheap GLM/Flash drafts with one high-thinking pass; and Ramp pairs frontier orchestrators with post-trained 35B Qwen models, 5x-cheaper open-weight security swarms, and semantic spend taxonomies—even as Apify warned that heavily subsidized flat-rate plans distort build-versus-buy incentives. Strategically, Nous Research argued that shrinking token margins force frontier labs to seek lock-in at the enterprise agent layer and compete vertically, making open, model-agnostic foundations essential. The counter-arguments cut both ways: naive turn-by-turn multi-model routing destroys prefix KV-cache hit rates, while falling frontier unit prices tempt teams to scale on frontier platforms rather than maintain custom post-training.",
+    "talk_count": 10,
     "talk_slugs": [
-      "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
-      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+      "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
+      "2026-10-13-agents-can-pay-so-why-don-t-they",
+      "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
+      "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
+      "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
+      "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
+      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+      "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
+      "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
+      "2026-10-14-the-model-ate-the-coding-harness-now-what"
+    ],
+    "claims": [
+      "29083884-87dc-44f8-b412-b494afca8856:719:8b8f4a",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:836:227ece",
+      "736edd83-bb08-49f1-90ed-722b7ed07eb2:966:7019ce",
+      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:80bae9",
+      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:151:4efad3",
+      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:244:36839a",
+      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:481:4b62a2",
+      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:665:edea3c",
+      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:455:9b846e",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:616:d39737",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:211:0bdb42",
+      "bdab432a-0538-4431-ad5a-62653affd9da:139:10a586",
+      "bdab432a-0538-4431-ad5a-62653affd9da:945:149a8b",
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:1720:dcaa62",
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:174:56c01f",
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:784:c7889c",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:140:63798f",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:423:d158ac",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:562:0c1b36",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:676:7fbb5a",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:208:2ab630",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:586:2647f2",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:74:1095f9",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:845:0ff370",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:970:0e49c1"
+    ],
+    "counter_claims": [
+      "68a1e78b-569e-4314-a56f-f20508123cbe:92:f2fcee",
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:2686:761c96",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:0:f9e36e"
+    ],
+    "also_called": [
+      "tokenomics",
+      "model right-sizing",
+      "owned vs. rented land",
+      "frontier orchestrator + specialist worker",
+      "disaggregated vLLM serving"
+    ],
+    "why_uncontested": null
+  },
+  {
+    "theme_id": "sandboxed-computers-context-architecture-and-the-shrinking-harness",
+    "name": "Sandboxed Computers, Context Architecture, and the Shrinking Harness",
+    "claim_sentence": "As frontier models absorb prompt-level coding tricks through a user-trajectory data flywheel, the durable agent harness converges on two layers models cannot internalize: isolated create-run-delete VM sandboxes and outer-loop context engines that supply institutional intent, living codebase maps, and precomputed KV caches.",
+    "definition": "OpenHands framed the central paradox of 2026 harness design: coding scaffolding makes harder tasks tractable, user trajectories feed model post-training, and models absorb those habits until harness choice barely moves coding benchmark scores—motivating self-cleaning guardrail shims that watcher bots delete once newer models stop triggering them. What models cannot absorb defines the lasting architecture. First is the execution boundary: Daytona showed that every competing framework reduces to create-run-delete VM primitives and is actively deleting local executors because embedded runtimes still expose host tools and a single allowed `python -c` command compromises the host; Arize and Greptile isolate every run in disposable sandboxes while persisting memory externally. Second is outer-loop context: Linear showed that five-cent intelligence shifts failure from coding capacity to product incoherence unless triage agents assemble customer value, logs, and prior decisions upfront; Greptile replaces grep with a living company wiki; Sonar Vortex feeds structural maps in-loop to cut token spend 36%; Ramp compresses 20–30x month-end context into offline KV-cache cartridges; GEICO routes edge-case HTML worksheets to domain owners; and Basis treats every working-window token as runtime training data. Yet as OpenHands noted in counter-point, entering unmastered domains like autonomous multi-agent colleagues immediately forces teams to re-add heavy prompting, coordinator hierarchies, and guardrails.",
+    "talk_count": 9,
+    "talk_slugs": [
+      "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
+      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
       "2026-10-13-inside-the-fable-war-room",
       "2026-10-13-what-does-an-ai-engineer-do",
+      "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
+      "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
+      "2026-10-14-the-machine-that-changed-the-world-vai",
+      "2026-10-14-the-model-ate-the-coding-harness-now-what",
+      "2026-10-14-your-coding-agent-has-a-context-problem"
+    ],
+    "claims": [
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:556:35af22",
+      "29083884-87dc-44f8-b412-b494afca8856:254:dfec29",
+      "29083884-87dc-44f8-b412-b494afca8856:82:490c60",
+      "29083884-87dc-44f8-b412-b494afca8856:841:75c3d5",
+      "29083884-87dc-44f8-b412-b494afca8856:841:fade48",
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:656:5984a6",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:140:55f8cc",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:378:de899b",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:527:8db73b",
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:678:5b1a68",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:208:343caf",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:208:998ee7",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:460:78c912",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:558:1568f9",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:5373a1",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:392:04af3c",
+      "bdab432a-0538-4431-ad5a-62653affd9da:645:9cc1d6",
+      "caecd5f6-b352-4868-a995-f0f71679caf0:309:7af997"
+    ],
+    "counter_claims": [
+      "29083884-87dc-44f8-b412-b494afca8856:415:c24c6b"
+    ],
+    "also_called": [
+      "give the model a computer",
+      "the model ate the harness",
+      "outer-loop context engineering",
+      "living codebase wiki",
+      "KV-cache cartridges"
+    ],
+    "why_uncontested": null
+  },
+  {
+    "theme_id": "bounded-autonomy-runtime-governance-and-the-enterprise-diffusion-gap",
+    "name": "Bounded Autonomy, Runtime Governance, and the Enterprise Diffusion Gap",
+    "claim_sentence": "Outside software engineering, enterprise agents remain near 5% production adoption not for lack of raw model intelligence, but because non-deterministic workers require institutional trust infrastructure—automatic registries, build-time policy DAGs, risk-tiered entitlements, and opinionated workflows—between reckless autonomy and paralyzing lockdown.",
+    "definition": "Tenex quantified the conference's starkest macro reality: across roughly 100 large enterprises, general-purpose LLM access sits near 90% and coding agents near 50%, yet autonomous agents in non-engineering business workflows sit around 5%. Anthropic, Apollo, GEICO, Basis, and Apify all traced that diffusion gap to governance, process, and trust friction rather than model IQ—with Apify showing that even after eighteen months of agent payment standards, 30-day volume sits near $1M on x402 and $1,500 on MPP because static API keys, untrusted endpoints requiring marketplace middlemen, and deferred-settlement double-spend risks dominate the funnel. The architectural remedy across regulated firms was bounded autonomy: Two Sigma replaces months-long manual review queues and rubber-stamp approval fatigue with automatic framework registration, risk-scored scrutiny, registry-compiled runtime entitlements, and conservative classifiers that escalate only ambiguous calls; Coinbase separates build-time normative policy ('the original institutional system prompt') from mutating runtime state inside compliance DAGs; Basis encodes opinionated, auditable tax and accounting workflows rather than 'Move 37' creativity; and Anthropic scopes financial agents with least-privilege identities and deterministic hooks gated on advisor or SME sign-off. Qualifying this optimism, Daytona showed that host-level policy allowlists collapse if an interpreter command is permitted, while GEICO's one-day war rooms proved outer-loop enterprise inertia can be broken when decision-makers sit inside the loop.",
+    "talk_count": 8,
+    "talk_slugs": [
+      "2026-10-13-agents-can-pay-so-why-don-t-they",
+      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+      "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
+      "2026-10-13-inside-the-fable-war-room",
+      "2026-10-13-welcome-back-featured-keynotes",
+      "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
+      "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
+      "2026-10-14-trusting-agents-in-policy-driven-workflows"
+    ],
+    "claims": [
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:1041:0e05d3",
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:222:698c61",
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:370:04ce09",
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:667:6cddac",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:575:174d25",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:92:f2fcee",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:933:8b7669",
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:c7c453",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:313:ea00a6",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:468:49a202",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:600:697aa7",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:718:64c301",
+      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:992:dd249f",
+      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:1022:4c3dc5",
+      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:285:d2487f",
+      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:455:59e975",
+      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:799:c15ff6",
+      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:16f690",
+      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:29e0b6",
+      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:2be645",
+      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:fa3d07",
+      "ee927042-2ba1-44c3-b304-d001ae247839:149:ffcb80",
+      "ee927042-2ba1-44c3-b304-d001ae247839:18:2c5997",
+      "ee927042-2ba1-44c3-b304-d001ae247839:18:afda72"
+    ],
+    "counter_claims": [
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:309:ef0e91",
+      "8d424512-c7f0-483c-9094-ca899d7bb1fd:208:998ee7"
+    ],
+    "also_called": [
+      "the 5% enterprise diffusion gap",
+      "bounded autonomy",
+      "policy as original system prompt",
+      "automatic agent registry",
+      "opinionated workflows"
+    ],
+    "why_uncontested": null
+  },
+  {
+    "theme_id": "deterministic-verification-loops-over-line-by-line-review",
+    "name": "Deterministic Verification Loops Over Line-by-Line Review",
+    "claim_sentence": "Because coding agents generate pull requests far faster than humans can read them—and reviewers accept wrong AI output four times out of five—shipping confidence must come from independent, multi-layered verification harnesses and runnable behavioral proofs rather than manual line-by-line diff inspection.",
+    "definition": "Software delivery talks confronted the review bottleneck head-on: Sonar reported a 2,450% explosion in AI-generated code yielding only 30% more releases because human reviewers succumb to 'cognitive surrender' (agreeing with wrong AI output 80% of the time) while multi-step agent accuracy decays exponentially across long horizons. Teams moving toward lights-on and dark software factories replaced manual line reading with executable proof loops. In the verification workshop, external MCP gates (`Ctx`) refuse agent self-reports until deterministic CLI and Playwright checks verify backend persistence, making verifier suites more durable than the application code itself. At Anthropic, merging 30,000 daily changes relies on automated first-pass reviews, edit hooks, and browser-driven screenshot and video evidence; Sonar pairs CPU static analysis with GPU generative checks and CVE scanning across every loop; Greptile inverts author and reviewer model families (+10% bug catch) and boots full-stack VM sandboxes for vision-model UI QA; Linear wires verification skills and product-history review agents into unattended bug fixes; GEICO enforces deterministic nine-step artifact gates; Untangle caps builder-reviewer loops at three iterations; and Coinbase runs parallel agent reviews inside gated DAGs. Against pure automation, Untangle insisted that a human product owner watching each feature video remains irreducible, and Featherless warned that unowned generation lobs 'slop grenades' onto peers.",
+    "talk_count": 8,
+    "talk_slugs": [
+      "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
+      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+      "2026-10-13-inside-the-fable-war-room",
+      "2026-10-14-the-machine-that-changed-the-world-vai",
+      "2026-10-14-trusting-agents-in-policy-driven-workflows",
+      "2026-10-14-who-verifies-the-software-factory",
+      "2026-10-14-your-coding-agent-has-a-context-problem",
+      "2026-10-14-your-job-is-now-agent-manager"
+    ],
+    "claims": [
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:105:838bae",
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:221:de67d3",
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:326:9780f8",
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:500:0c219f",
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:686:9d20ad",
+      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:869:0ec5c8",
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:315:4ebbb6",
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:481:d445d4",
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:656:bf8435",
+      "4add802c-6a68-4e9c-93fb-9c1e017193bc:809:e6396e",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:767:90c9a7",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:847:546f97",
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:826:5d5434",
+      "bdab432a-0538-4431-ad5a-62653affd9da:522:289745",
+      "bdab432a-0538-4431-ad5a-62653affd9da:844:82cb22",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1192:2a01fb",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:167:9503a8",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1802:573a23",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2020:ef854a",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2287:bcfc25",
+      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:645:9366a8",
+      "ee927042-2ba1-44c3-b304-d001ae247839:199:c8301b",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:7:edfe8b"
+    ],
+    "counter_claims": [
+      "c901e963-5be9-4a1d-86a3-d9354374bbcd:2508:08a8d4",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:100:fa82db"
+    ],
+    "also_called": [
+      "who verifies the software factory",
+      "zero-trust verification",
+      "cognitive surrender",
+      "author-reviewer model inversion",
+      "executable proof commands"
+    ],
+    "why_uncontested": null
+  },
+  {
+    "theme_id": "self-improving-fleets-and-the-agent-manager",
+    "name": "Self-Improving Fleets and the Agent Manager",
+    "claim_sentence": "Software engineering is shifting from writing code locally to managing asynchronous cloud agent fleets and closing the trace-to-skill loop—centralizing transcripts and tool calls, grading runs post-merge, and letting meta-agents distill recurring failures and human corrections into versioned skills.",
+    "definition": "Across Warp, Arize, Linear, Untangle, GEICO, Anthropic, and Runpod, the unit of engineering work moved from crafting individual features to operating and improving the agent factory itself. Warp demonstrated 'factory engineering': shared cloud Docker sandboxes automatically centralize conversation transcripts, MCP/tool calls, and diffs, exposing silent agent workarounds (like brute-force port probing) to post-merge markdown judge rubrics and daily meta-agents (`Skill Doctor`) that open measurable skill PRs. Linear runs a daily post-merge distillation job that turns PR review corrections and reverts into `agents.md` updates; Arize designs agent-first telemetry to wake scheduled sandbox sweeps while tracing both production agents and the coding harnesses behind them; Anthropic treats SME-authored plain-text skills as living, versioned code co-iterated by business teams and engineers; GEICO coordinates legacy transformations through Markdown FleetKit protocols; Runpod exposes GPU benchmark controls as FastAPI endpoints for agents to drive directly; and Untangle replaces local development with communicating builder, reviewer, and merge-manager sessions—extending the paradigm to hiring by stack-ranking candidates on 45-minute recorded agent-operating trials, echoing the Day 2 keynote's call to pair human company curation with career-research agents. In tension with universal 'agent management,' Basis warned that pushing prompt and skill authorship onto non-technical enterprise users creates a severe competency gap, and Day 2's keynote cautioned against letting agents automate personal outreach like resume submissions.",
+    "talk_count": 8,
+    "talk_slugs": [
+      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+      "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
+      "2026-10-13-inside-the-fable-war-room",
+      "2026-10-13-what-does-an-ai-engineer-do",
+      "2026-10-14-welcome-back-featured-keynotes",
       "2026-10-14-your-agent-needs-a-skill-to-improve-its-skills",
       "2026-10-14-your-coding-agent-has-a-context-problem",
       "2026-10-14-your-job-is-now-agent-manager"
     ],
     "claims": [
-      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:19fc85",
-      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:2942bd",
-      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:396:fe5d47",
-      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:772:01b12f",
-      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:772:573747",
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:857:2b7fcf",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:372:5080f2",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:729:336895",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:399:e5acee",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:3d0fab",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:629389",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:f11361",
-      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2155:990a7a",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:306:d26af4",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:7:75ba49",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:7:7a98aa"
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:104:82ee7a",
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:192:7742f5",
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:366:e617e3",
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:535:421462",
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:823:c0bdd0",
+      "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:970:d72eb1",
+      "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:1daa30",
+      "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:4fbd9b",
+      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:1127:97f8ad",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:477:4a57bb",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:745:77fdc6",
+      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:490:40e1e4",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:f8c0f8",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:103:35847d",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:250:21ad16",
+      "b2ed4456-5671-4e8e-83fd-684c012fef8c:730:dab2e2",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:218:546b51",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:218:6f74a7",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:383:f2d6fb",
+      "f7204e6d-a47c-4535-804e-16b4db579b95:519:08edc3",
+      "fca86857-d079-46a6-94a7-62b0bb8e5d31:391:fec874"
     ],
     "counter_claims": [
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:292f75",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:5865c6"
+      "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:f5b8a1",
+      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:222:698c61"
     ],
     "also_called": [
-      "agent manager",
+      "your job is now agent manager",
       "skill-improving skills",
-      "always-on loop",
-      "fleet manager"
+      "factory engineering",
+      "agent-first telemetry",
+      "FleetKit orchestration"
     ],
     "why_uncontested": null
   },
   {
-    "theme_id": "the-diffusion-gap",
-    "name": "The Diffusion Gap",
-    "claim_sentence": "Model capability has outrun adoption: outside coding, agents barely reach real enterprise work, and the bottleneck is process, trust and setup friction rather than intelligence.",
-    "definition": "Tenex reported general-purpose LLMs in about 90 percent of large enterprises but agents in non-engineering work at about 5 percent. Anthropic said capability is no longer the constraint in financial services; Apollo called finance early; Basis said coding-style agent products push process design onto users; GEICO said the outer loop of decisions has not kept pace; Featherless traced rising token spend without productivity to process bottlenecks; and agent payment protocols see negligible volume because friction at every funnel stage suppresses demand. The counter-evidence is concrete production wins: Apollo's automated reconciliation and portfolio construction, and GEICO's one-day war room outcomes.",
-    "talk_count": 7,
-    "talk_slugs": [
-      "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
-      "2026-10-13-agents-can-pay-so-why-don-t-they",
-      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
-      "2026-10-13-inside-the-fable-war-room",
-      "2026-10-13-welcome-back-featured-keynotes",
-      "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
-      "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work"
-    ],
-    "claims": [
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:292f75",
-      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:715deb",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:11:9b6376",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:5865c6",
-      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:0:c70a90",
-      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:450:0a32d9",
-      "8d348b6c-25cc-45de-8dc4-aaa3d7130918:450:e17034",
-      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:f3c18d",
-      "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:fa3d07",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:2170:49e9ef"
-    ],
-    "counter_claims": [
-      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:b100ef",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:399:4c28bd"
-    ],
-    "also_called": [
-      "enterprise agents are at day one",
-      "adoption over capability",
-      "outer-loop bottleneck"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "token-economics-and-multi-model-routing",
-    "name": "Token Economics and Multi-Model Routing",
-    "claim_sentence": "Production AI cost is controlled by measuring spend per use case and matching each task to the cheapest, fastest model and serving configuration that passes its evals, not by defaulting to the frontier model.",
-    "definition": "Featherless, Runpod, Greptile, Ramp, GEICO, Towards AI and Exa each showed a cost lever below the model choice: per-team API keys to see spend, fast cheap models to drive adoption, batching background work, tuning vLLM against measured latency, reserving frontier models for critical steps, cheap open-weight swarms, precomputed KV-cache cartridges, many cheap drafts merged by a stronger model, and returning only relevant snippets to cut downstream tokens. The qualification is that naive turn-by-turn routing across many models destroys cache hit rates.",
-    "talk_count": 7,
-    "talk_slugs": [
-      "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
-      "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
-      "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
-      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
-      "2026-10-13-inside-the-fable-war-room",
-      "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
-      "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier"
-    ],
-    "claims": [
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:753:ce2611",
-      "736edd83-bb08-49f1-90ed-722b7ed07eb2:753:cc5919",
-      "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:3711a1",
-      "bdab432a-0538-4431-ad5a-62653affd9da:710:81e0f2",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:0:a6de48",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:1624:2b9f11",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:2170:49e9ef",
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:528:1a15d5",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:0:e3b1f0",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:263:80421d",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:531:98b36e",
-      "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:3b1667",
-      "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:6a4155",
-      "fca86857-d079-46a6-94a7-62b0bb8e5d31:315:2be108",
-      "fca86857-d079-46a6-94a7-62b0bb8e5d31:672:2f538a",
-      "fca86857-d079-46a6-94a7-62b0bb8e5d31:672:36e4e4"
-    ],
-    "counter_claims": [
-      "c901e963-5be9-4a1d-86a3-d9354374bbcd:2724:e5d24b"
-    ],
-    "also_called": [
-      "tokenomics",
-      "right-sizing",
-      "frontier orchestrator + fast sub-agent",
-      "live benchmarking"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "verification-loops-over-human-review",
-    "name": "Verification Loops Over Human Review",
-    "claim_sentence": "Because agents now produce code and work faster than people can read it, trust has to come from independent, deterministic verification loops that prove each outcome with evidence, not from humans reviewing every line.",
-    "definition": "Speakers from software factories, code review, and agent-fleet management agreed that line-by-line human review no longer scales with agent output. They replaced it with runnable verifiers: app-specific scripts, layered zero-trust checks inside every loop, a reviewer of a different model family, and agents that exercise changes like a user and hand back screenshots, videos and test results. With verifiers in place, the verification harness becomes the durable asset and confidence becomes the product. The counter-position is that some human step stays irreducible: watching the feature video or approving an action before it lands.",
-    "talk_count": 6,
-    "talk_slugs": [
-      "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
-      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
-      "2026-10-14-the-machine-that-changed-the-world-vai",
-      "2026-10-14-trusting-agents-in-policy-driven-workflows",
-      "2026-10-14-who-verifies-the-software-factory",
-      "2026-10-14-your-job-is-now-agent-manager"
-    ],
-    "claims": [
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:58294f",
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:cb990a",
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:392:b97bed",
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:392:c7f31c",
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:757:ae0b24",
-      "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:99cfeb",
-      "4add802c-6a68-4e9c-93fb-9c1e017193bc:662:2fde74",
-      "4add802c-6a68-4e9c-93fb-9c1e017193bc:662:7d03e0",
-      "bdab432a-0538-4431-ad5a-62653affd9da:348:f6dc24",
-      "bdab432a-0538-4431-ad5a-62653affd9da:710:a14518",
-      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:0:ab47cd",
-      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1048:655786",
-      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1048:eec6d4",
-      "edb4f982-0cb8-48ee-8bf7-410255a40cb3:535:07dad8",
-      "ee927042-2ba1-44c3-b304-d001ae247839:18:454c89",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:7:ccd30f"
-    ],
-    "counter_claims": [
-      "68a1e78b-569e-4314-a56f-f20508123cbe:372:36f132",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:7:a854b6"
-    ],
-    "also_called": [
-      "software factory verification",
-      "zero-trust verification",
-      "confidence over volume",
-      "receipts"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "bounded-autonomy",
-    "name": "Bounded Autonomy",
-    "claim_sentence": "Agents become trustworthy the way organizations already trust non-deterministic people: through declared permissions, written policy, risk-tiered review and opinionated process, not by locking them down or approving every action.",
-    "definition": "Two Sigma composes an automatic agent registry, risk-tiered review, declared tool entitlements enforced at runtime and classifiers that escalate only ambiguous calls. Coinbase treats written policy as the institution's original system prompt and places agents inside gated workflow DAGs. Basis encodes opinionated processes as behavior specs because customers value predictability over novelty, and Anthropic scopes agents with identity and least privilege. The counter-position: procedures, warnings and approvers can all be in place and still fail, and command allow-lists do not bound a compromised model.",
-    "talk_count": 5,
-    "talk_slugs": [
-      "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
-      "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
-      "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
-      "2026-10-14-trusting-agents-in-policy-driven-workflows",
-      "2026-10-14-who-verifies-the-software-factory"
-    ],
-    "claims": [
-      "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:757:08de08",
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:fe9e1d",
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:be670f",
-      "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:802:7cd61b",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:372:36f132",
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:a19b6e",
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:381:4af013",
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:381:697aa7",
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:1b1695",
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:edc3e2",
-      "ee927042-2ba1-44c3-b304-d001ae247839:18:30da97",
-      "ee927042-2ba1-44c3-b304-d001ae247839:18:454c89",
-      "ee927042-2ba1-44c3-b304-d001ae247839:18:4be36f"
-    ],
-    "counter_claims": [
-      "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:577a35",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:eae03a"
-    ],
-    "also_called": [
-      "agent registry",
-      "risk-tiered review",
-      "policy as the original system prompt",
-      "behavior specs"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "provenance-and-grounding-in-financial-ai",
-    "name": "Provenance and Grounding in Financial AI",
-    "claim_sentence": "In finance, an agent earns a role in real decisions only when it runs on the firm's own governed, time-scoped data with a validated golden source, because the data and its connectors matter more than the model.",
-    "definition": "Bridgewater, Apollo, Exa, Coatue and Anthropic's financial-services team all located the hard problem below the model: cleaning and aligning unstructured data to the firm's ontology, finding the golden source among many, giving agents direct access to every source a human sees through one connectivity layer, and serving the web as it looked on a past date so a backtest cannot see the future. A generic web-searching agent answering from one stale source was the cautionary example.",
+    "theme_id": "governed-ontologies-provenance-and-financial-workbenches",
+    "name": "Governed Ontologies, Provenance, and Financial Workbenches",
+    "claim_sentence": "In institutional investing and private markets, off-the-shelf web chatbots fail on stale or conflicting inputs; agents earn front-office trust only atop governed firm ontologies, validated golden sources, unified MCP connectors, and hybrid code-ML-LLM-human pipelines that write synthesis back into the vault.",
+    "definition": "Every institutional finance talk located competitive advantage in governed data infrastructure and workflow design rather than raw model selection. Bridgewater contrasted an open-web chatbot answering a Korean won query from a single three-month-old note with Vault—which aligns 100M+ documents to a bitemporal ontology, serves 1,000+ QPS agent storms via turbopuffer cluster-local native filtering, migrates researcher email habits into saved collections, and writes human-agent workbench synthesis back into the corpus so knowledge compounds. At Apollo's Redding Ridge credit platform, engineers sat daily with portfolio managers to codify golden-source precedence across 20 conflicting systems, turning multi-hour weekly loan reconciliations into one-minute automated QA reports and cutting 200–400-name CLO portfolio construction from days in Excel to minutes for the first 80–90%. Coatue modeled the hedge fund as a composite state-machine function `(external_context, internal_context) -> (stock, size, timing)`, insisting that every pixel a human sees must be API-accessible while assigning each step whichever runner—deterministic code, classical ML, LLM, or human—maximizes quality. Exa supplied the external temporal layer with 400 billion dated web snapshots built for dense exploratory agent queries, while Anthropic standardized multi-system enterprise access behind a single MCP connectivity layer.",
     "talk_count": 5,
     "talk_slugs": [
       "2026-10-13-a-hedge-fund-as-a-function",
@@ -273,162 +337,66 @@
       "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach"
     ],
     "claims": [
-      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:551a7b",
-      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:d52172",
-      "68a1e78b-569e-4314-a56f-f20508123cbe:372:67b586",
-      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:0eb6d7",
-      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:919c3d",
-      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:b31643",
-      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:293:b8188f",
-      "b8bb725d-daf0-4ac0-8095-5737841c89e5:360:0aeb1e",
-      "b8bb725d-daf0-4ac0-8095-5737841c89e5:360:fd226e"
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:38b1fc",
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:204:acbf08",
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:204:bc44e0",
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:392:4b9f28",
+      "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:790:d8fd67",
+      "68a1e78b-569e-4314-a56f-f20508123cbe:477:1d68b0",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:fb3d66",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:449:c27308",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:736:6147ee",
+      "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:85:aabcf9",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:6e8237",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:140:b6e527",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:383:b8188f",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:574:35c2cc",
+      "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:732:2a1afb",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:6dcba1",
+      "b8bb725d-daf0-4ac0-8095-5737841c89e5:389:2d5f60"
     ],
     "counter_claims": [],
     "also_called": [
-      "golden source",
-      "point-in-time search",
-      "institutional grounding",
-      "owning your data"
+      "hedge fund as a function",
+      "bitemporal firm ontology",
+      "golden data sources",
+      "compounding investor workbench",
+      "hybrid code-ML-LLM-human runners"
     ],
-    "why_uncontested": "No speaker argued that a general-purpose model without the firm's own governed data could carry a trading or investment decision; Apollo grants general LLMs only a research role, which restates the theme rather than opposing it."
+    "why_uncontested": "No speaker argued that general-purpose models or ungrounded web search could support institutional capital allocation without proprietary governed data; Apollo, Bridgewater, and Coatue unanimously restricted ungrounded chat to low-stakes background research."
   },
   {
-    "theme_id": "the-sandboxed-computer-and-evolving-harness",
-    "name": "The Sandboxed Computer and Evolving Harness",
-    "claim_sentence": "Agent harnesses are converging on a separate, disposable sandboxed computer as the execution boundary, while the prompt scaffolding they once added is being absorbed into the models.",
-    "definition": "Every agent framework, however much they disagree, integrates the same create-run-delete sandbox primitives, because allow-lists and embedded runtimes do not bound a compromised model and a throwaway VM does. Greptile, Arize and Ryan Carson run their agents in cloud sandboxes for the same reason, and that boundary must be chosen before the framework. Meanwhile the harness's intelligence tricks are being learned by the models through a data flywheel, so harnesses should ship and unship features easily. The counter-position, from the same talks, is that the harness keeps infrastructure, trust and efficiency, and must re-add prompting and guardrails in every new domain.",
-    "talk_count": 5,
-    "talk_slugs": [
-      "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
-      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
-      "2026-10-13-what-does-an-ai-engineer-do",
-      "2026-10-14-the-model-ate-the-coding-harness-now-what",
-      "2026-10-14-your-job-is-now-agent-manager"
-    ],
-    "claims": [
-      "29083884-87dc-44f8-b412-b494afca8856:0:167207",
-      "29083884-87dc-44f8-b412-b494afca8856:0:68bd81",
-      "29083884-87dc-44f8-b412-b494afca8856:396:5fdb8c",
-      "29083884-87dc-44f8-b412-b494afca8856:733:8b6ee0",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:308:132808",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:308:62a5a5",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:6a2dc1",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:eae03a",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:620:117bf8",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:293:9e2978",
-      "bdab432a-0538-4431-ad5a-62653affd9da:710:a14518",
-      "f7204e6d-a47c-4535-804e-16b4db579b95:7:75ba49"
-    ],
-    "counter_claims": [
-      "29083884-87dc-44f8-b412-b494afca8856:396:00fd86",
-      "29083884-87dc-44f8-b412-b494afca8856:396:a4774a"
-    ],
-    "also_called": [
-      "give the model a computer",
-      "the model ate the harness",
-      "execution boundary",
-      "cloud agent sessions"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "owning-open-foundations-vs-renting-the-frontier",
-    "name": "Owning Open Foundations vs. Renting the Frontier",
-    "claim_sentence": "Companies should own their agent stack on open, model-swappable foundations rather than rent it from frontier labs, because models are commoditizing and the labs will recoup their spend by locking customers in or competing with them.",
-    "definition": "Nous Research made the case most directly: frontier models are interchangeable, so labs move up to the agent layer and into lucrative domains, and whatever platform a company roots its agentic processes in hardens into its organization. Ramp, Daytona and Arize argued the practical half: go a layer below the frontier APIs, use open-weight models where they keep most of the quality, and keep the harness model-agnostic so models can be swapped. The counter-position is that frontier capability already outpaces adoption and keeps getting cheaper, so building on a lab's foundation, or simply waiting, is the rational move.",
-    "talk_count": 4,
-    "talk_slugs": [
-      "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
-      "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
-      "2026-10-13-what-does-an-ai-engineer-do",
-      "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier"
-    ],
-    "claims": [
-      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:08b17c",
-      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:4cc3fb",
-      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:4efad3",
-      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:313:3f0544",
-      "871cd5c8-13f4-4fe9-ac49-c8b25d970add:621:a02383",
-      "8d424512-c7f0-483c-9094-ca899d7bb1fd:620:3ea2f9",
-      "b2ed4456-5671-4e8e-83fd-684c012fef8c:293:18eac8",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:0:f4a6e2",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:531:98b36e"
-    ],
-    "counter_claims": [
-      "68a1e78b-569e-4314-a56f-f20508123cbe:11:9b6376",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:0:c50a18"
-    ],
-    "also_called": [
-      "owned vs. rented land",
-      "open-weight sovereignty",
-      "model-agnostic harness",
-      "go a layer below the frontier"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "the-context-problem",
-    "name": "The Context Problem",
-    "claim_sentence": "Once code is cheap, agents fail for lack of intent, history and tribal knowledge rather than intelligence, so teams must build systems that assemble that context before and around the agent.",
-    "definition": "At Linear, agents read the code yet miss intent, prior decisions, owners and recent reverts, so a triage agent enriches each issue and a context-aware reviewer catches product-level mistakes. GEICO found that synthesized context and the right decision makers, not coding speed, rate-limited legacy modernization, and that once context was built a cheaper model wrote as well as the frontier. Greptile replaces imprecise RAG with a maintained codebase wiki; Ramp precomputes predictable context into KV-cache cartridges. The counter-position is the data flywheel: what the harness supplies today the model learns natively tomorrow.",
-    "talk_count": 4,
-    "talk_slugs": [
-      "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
-      "2026-10-13-inside-the-fable-war-room",
-      "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
-      "2026-10-14-your-coding-agent-has-a-context-problem"
-    ],
-    "claims": [
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:2d0eb2",
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:8b99d0",
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:417:11b6ad",
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:417:cba17c",
-      "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:857:11ce27",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:352496",
-      "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:753:ce2611",
-      "bdab432a-0538-4431-ad5a-62653affd9da:710:d389e1",
-      "caecd5f6-b352-4868-a995-f0f71679caf0:263:80421d"
-    ],
-    "counter_claims": [
-      "29083884-87dc-44f8-b412-b494afca8856:0:167207"
-    ],
-    "also_called": [
-      "context engineering",
-      "tribal knowledge",
-      "outer loop",
-      "cartridges"
-    ],
-    "why_uncontested": null
-  },
-  {
-    "theme_id": "spatiotemporal-world-models-and-simulation",
-    "name": "Spatiotemporal World Models and Simulation",
-    "claim_sentence": "Models trained to predict video frames and actions at scale will learn physics and real-time control, becoming simulators and agents that act in space and time rather than in turns of text.",
-    "definition": "General Intuition and Runway both bet on scaling laws for video: General Intuition on action-labeled gameplay that maps onto robot teleoperation, Runway on next-frame prediction that learns gravity, occlusion and object permanence and can render an interactive interface with no 3D engine. Both expect the result to unlock robotics and new businesses. They differ on supervision: General Intuition argues explicit action labels transfer better than inferred ones.",
+    "theme_id": "spatiotemporal-world-models-and-real-time-simulation",
+    "name": "Spatiotemporal World Models and Real-Time Simulation",
+    "claim_sentence": "Scaling laws extend beyond turn-based text to continuous video and action streams, turning pixels-to-actions policies and next-frame predictors into real-time world simulators that internalize physics, control robots, and replace static 3D engines with interactive visual interfaces.",
+    "definition": "General Intuition and Runway pushed AI engineering past autoregressive text into continuous space and time. General Intuition argued that real-time agents must observe while acting, leveraging Medal's gameplay pipeline—scaling toward three billion videos a year and 1.5 trillion monthly controller actions—because high-APM game controllers share the exact action space of low-DOF robot teleoperation and plug neatly as reactive control layers beneath frontier LLM planners. Runway bet on compute scaling laws for next-frame video prediction, demonstrating that models trained at scale internalize geometry, gravity, occlusion, and object permanence directly from pixels—unlocking action-conditioned robotics simulators, engine-free World Interface Models with no Unity or Blender mesh underneath, interactive Continuum video portals, and visual scratchpads where coding agents simulate spatial designs alongside code. Their sharpest technical disagreement sits on supervision: General Intuition contended that explicit controller action labels transfer far better to real-time control than passive video-only latent inference because subtle inputs like aircraft rudder adjustments leave almost no trace in raw pixel frames.",
     "talk_count": 2,
     "talk_slugs": [
       "2026-10-13-frontier-models-for-acting-in-space-and-time",
       "2026-10-14-everything-will-be-simulated"
     ],
     "claims": [
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:0:201036",
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:0:c1119d",
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:9a3499",
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:b0bd96",
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:d2dc40",
-      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:682:734bc0",
-      "cada670e-c5ea-4977-b3c2-9a68dda26abb:439:92e4f5",
-      "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:e9beb3",
-      "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:43fbe1",
-      "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:a385db"
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:150:e27c33",
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:150:f3106c",
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:420:7cb7e6",
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:509:9a3499",
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:612:6fc75d",
+      "af8422e8-d5f8-4dbd-a918-6360f5bfba80:829:57e97e",
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:153:ebe8f8",
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:361:462b67",
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:473:d64a73",
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:631:5e50ed",
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:506221"
     ],
     "counter_claims": [
-      "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:cb3a3b"
+      "cada670e-c5ea-4977-b3c2-9a68dda26abb:1062:f5d648"
     ],
     "also_called": [
       "everything will be simulated",
       "pixels to actions",
-      "world interface model"
+      "observing while acting",
+      "world interface models",
+      "Continuum portals"
     ],
     "why_uncontested": null
   }

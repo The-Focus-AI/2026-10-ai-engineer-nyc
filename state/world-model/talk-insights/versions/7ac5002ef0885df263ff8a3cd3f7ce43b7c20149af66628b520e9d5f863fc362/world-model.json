@@ -1,0 +1,2500 @@
+{
+  "theses": {
+    "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
+      "thesis": "Agents can systematically improve their own skills and harness configuration when teams centralize full session traces—transcripts, tool calls, and diffs—grade them post-merge with markdown LLM-as-judge rubrics, and run scheduled meta-agents that turn recurring failures into measurable skill PRs.",
+      "confidence": 0.92
+    },
+    "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
+      "thesis": "Because coding agents generate large pull requests far faster than humans review every line, scaling toward autonomous software factories requires zero-trust, multi-layered verification inside every loop paired with rich agent-generated behavioral evidence.",
+      "confidence": 0.9
+    },
+    "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
+      "thesis": "Because two-sided hiring is one of the strongest incentives driving conference attendance, attendees should pair human judgment—ranking speakers' companies by technical interest—with a research agent that matches open roles and published compensation ranges to inform live conversations rather than auto-submitting resumes.",
+      "confidence": 0.75
+    },
+    "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
+      "thesis": "Enterprise agents achieve production adoption not through open-ended autonomy or outcome-only evals, but by encoding opinionated workflows as behavior specs that grade ground-truth-free trajectories and enable targeted debugging via trajectory forking and subagent simulation.",
+      "confidence": 0.92
+    },
+    "29083884-87dc-44f8-b412-b494afca8856": {
+      "thesis": "As frontier models natively absorb coding-specific context scaffolding through a user-driven data flywheel, the agent harness shifts from adding raw coding intelligence to unlocking unmastered multi-agent domains—like autonomous knowledge workers and software factories—while owning durable cloud runtimes, scoped security, token efficiency, and self-cleaning primitives that models cannot absorb.",
+      "confidence": 0.9
+    },
+    "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
+      "thesis": "In private credit and active CLO management, AI moves from a research toy to a durable competitive edge only when agents reconcile fragmented deal documents and internal systems against human-validated golden data sources embedded in daily front-office workflows.",
+      "confidence": 0.88
+    },
+    "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
+      "thesis": "Because abundant AI-generated code overwhelms human reviewers, compounds multi-step errors, and defeats inconsistent LLM judges, enterprise software factories must engineer shipping confidence multiplicatively through clear intent, in-loop guide rails, hybrid deterministic-generative verification, and auditable evidence.",
+      "confidence": 0.92
+    },
+    "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
+      "thesis": "As inference costs plummet and coding agents run unattended in the outer loop, engineering's primary failure mode shifts from implementation capacity to product incoherence, requiring automated pipelines that thread customer intent, product history, and ownership through triage, implementation, review, and daily feedback distillation.",
+      "confidence": 0.92
+    },
+    "68a1e78b-569e-4314-a56f-f20508123cbe": {
+      "thesis": "Because frontier model capability, cost efficiency, and prompt-injection safety now outpace enterprise diffusion, financial institutions must shift from bespoke one-off agent builds to a reusable five-layer architecture combining MCP data connectivity, SME-authored versioned skills, least-privilege identity, human-approved sandboxed execution, and continuous regression evals.",
+      "confidence": 0.9
+    },
+    "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
+      "thesis": "Because coding agents accelerated inner-loop implementation while leaving enterprise legacy modernization bottlenecked on cross-functional alignment and domain context, GEICO built a multiplayer AI-native war room steered by Markdown FleetKit protocols, human-in-the-loop worksheets, and deterministic nine-step gates to ship legacy claims APIs in a single day.",
+      "confidence": 0.88
+    },
+    "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
+      "thesis": "Because AI writing slop persists as models scale, Towards AI built ToneBench—evaluating 120 models across ten long-prompt tasks, five drafts per prompt, two-stage categorical rubrics, and cross-family LLM judges—showing that multi-draft cheap generation merged by a reasoning model beats expensive one-shot prose.",
+      "confidence": 0.9
+    },
+    "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
+      "thesis": "Rather than locking agents in useless air-gapped sandboxes or relying on fragile prompt policies and rubber-stamp human approvals, Two Sigma enables autonomous enterprise agents safely through five composable runtime controls: automatic framework registration, risk-tiered review, registry-enforced tool entitlements, shared evaluation infrastructure, and classifier-routed approvals.",
+      "confidence": 0.92
+    },
+    "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
+      "thesis": "As interchangeable frontier models commoditize and compress inference margins, frontier labs must recoup trillion-dollar infrastructure bets through enterprise agent lock-in or direct vertical competition, so organizations should build their agentic operating systems on open, model-swappable foundations like Hermes Agent.",
+      "confidence": 0.9
+    },
+    "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
+      "thesis": "Despite an explosion of crypto and fintech agent payment standards, autonomous agent transaction volume remains negligible because pre-provisioned API keys, subsidized flat-rate token plans, wallet setup friction, untrusted service discovery, and deferred-settlement double-spend risks suppress demand across every stage of the payment funnel.",
+      "confidence": 0.9
+    },
+    "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
+      "thesis": "Competing agent frameworks that disagree on nearly every abstraction all converge on isolating code execution inside a separate VM sandbox via create-run-delete primitives, making the execution boundary the primary architectural commitment to lock in before choosing a swappable framework.",
+      "confidence": 0.92
+    },
+    "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
+      "thesis": "An investment firm can be engineered as a composite state-machine function from API-accessible external and internal context to `(stock, size, timing)` decisions, decomposed into compartmentalized sub-steps whose execution runners and pipeline configurations are tuned like hyperparameters against evaluable north-star metrics.",
+      "confidence": 0.92
+    },
+    "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
+      "thesis": "Bridgewater's Vault demonstrates that enterprise investment AI only compounds when internal and external unstructured data is enriched against a bitemporal firm ontology, served through native-filtered search built for both human precision and agent-storm scale, and embedded into existing researcher habits with automatic synthesis write-back.",
+      "confidence": 0.9
+    },
+    "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
+      "thesis": "Scaling next-frame video prediction turns video generators into real-time, action-conditioned world simulators that learn physical laws implicitly from pixels and can power embodied robotics, engine-free software interfaces, and visual reasoning for coding agents.",
+      "confidence": 0.9
+    },
+    "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
+      "thesis": "The AI engineer's role has shifted from manually building and reviewing individual features to architecting closed-loop agent factories — where agent-first telemetry triggers isolated, durable sandbox runs, LLM judges are meta-evaluated against human judgment, and both production and coding agents are traced end-to-end.",
+      "confidence": 0.9
+    },
+    "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
+      "thesis": "Because AI agents execute dense, multi-step exploratory web queries whose token costs compound across trajectories, Exa pairs 95%-token-saving dynamic snippet highlights with Exa Snapshot's 400-billion-page dated web archive so financial and predictive systems can backtest web-derived signals without lookahead leakage or unvalidated overfitting.",
+      "confidence": 0.92
+    },
+    "bdab432a-0538-4431-ad5a-62653affd9da": {
+      "thesis": "Building a production-grade AI code review agent requires moving beyond naive diff prompting to combine historical incident eval datasets, cross-family author-reviewer model inversion, a living codebase wiki instead of raw grep, dependency-rich sandbox UI testing, and per-subtask model routing.",
+      "confidence": 0.9
+    },
+    "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
+      "thesis": "Enterprise AI adoption exhibits a steep four-stage diffusion drop-off across Fortune 500 and large enterprise organizations — falling from ~90% general-purpose LLM rollout to ~60% workforce training, ~50% engineering coding agents, and just ~5% production agents in non-engineering workloads.",
+      "confidence": 0.85
+    },
+    "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
+      "thesis": "When custom enterprise agents lack public benchmarks and continuous domain-expert access, teams should invert evaluation by generating synthetic inputs around known answers—source pages, business rules, or clause templates—and re-engineer agent architectures around deterministic checks rather than noisy LLM judges.",
+      "confidence": 0.82
+    },
+    "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
+      "thesis": "Reducing enterprise AI inference spend at scale requires splitting API keys by department and workload, matching model size and per-request tokens-per-second to human latency sensitivity, sizing dedicated GPU capacity to base load with cloud spillover, and measuring real business outcomes rather than raw token volume.",
+      "confidence": 0.9
+    },
+    "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
+      "thesis": "Scaling action-labeled gameplay video from Medal into real-time, continuous pixels-in/actions-out foundation models overcomes the turn-based limitations of autoregressive LLMs and transfers directly across games, computer interfaces, and over 1,000 controller-driven robot embodiments.",
+      "confidence": 0.9
+    },
+    "caecd5f6-b352-4868-a995-f0f71679caf0": {
+      "thesis": "Even as frontier models rapidly drive down unit token costs, Ramp argues it still pays to invest in applied research below the API layer—combining frontier orchestrators with post-trained specialist models, offline KV-cache cartridges, and cheap open-weight agent swarms to cut latency and cost today.",
+      "confidence": 0.86
+    },
+    "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
+      "thesis": "Day one's closing remarks synthesize the final keynotes—spanning pixels-to-actions world models, owned versus rented agent infrastructure, and applied AI in investing—as shared conversational surface area for attendees to connect directly.",
+      "confidence": 0.75
+    },
+    "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
+      "thesis": "Scaling AI agents safely without line-by-line human code review requires giving each application deterministic, outcome-driven verification harnesses, explicit state-rich error output, centralized completion gates, and persisted run receipts so agents must prove real behavior rather than self-report success.",
+      "confidence": 0.9
+    },
+    "ee927042-2ba1-44c3-b304-d001ae247839": {
+      "thesis": "Deploying agents safely in regulated enterprise workflows requires treating written policy as normative build-time intent separated from the continuously changing runtime system, and embedding agents inside directed acyclic graphs (DAGs) that parallelize independent reviews while preserving mandatory compliance gates.",
+      "confidence": 0.55
+    },
+    "f7204e6d-a47c-4535-804e-16b4db579b95": {
+      "thesis": "Software engineers should abandon local coding to manage communicating fleets of cloud builder, reviewer, child-QA, manager, and merge-manager agents—keeping humans in the loop via mandatory feature-demo videos and hiring strictly through recorded agent-operating trials.",
+      "confidence": 0.85
+    },
+    "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
+      "thesis": "Rather than deploying open-weight LLMs with default vLLM recipes and oversized context windows, Runpod's BenchPod wraps Dockerized vLLM builds with live YAML reconfiguration, self-healing watchdogs, and FastAPI benchmark endpoints so teams and agents can empirically tune throughput and latency before scaling out.",
+      "confidence": 0.85
+    }
+  },
+  "claims": {
+    "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": [
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:104:82ee7a",
+        "section": "### 00:01:44 — Factory Engineering & the Skill Improvement Loop",
+        "at_seconds": 104,
+        "quote": "You can set up some scoring agents to score the quality of how those conversations went, so think of this like an LLM as a judge reviewing against rubrics that you define across metrics like efficiency, or code quality, or test coverage.",
+        "claim": "Factory engineering treats the agent harness itself as an optimization target by using LLM-as-judge scoring agents to evaluate past runs against custom rubrics for efficiency, code quality, and test coverage.",
+        "speaker": "Ben Holmes",
+        "also_at": []
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:192:7742f5",
+        "section": "### 00:03:12 — Centralizing Agent Conversations, Tool Calls & Diffs",
+        "at_seconds": 192,
+        "quote": "you got the transcript of what was said, you've got the tool calls that show what the agent did, and then you have the output, which is something that you may want to grade for quality purposes.",
+        "claim": "Introspecting team-wide agent performance requires centralizing three artifacts per session—dialogue transcripts, external tool/MCP/filesystem calls, and resulting code diffs—which shared cloud Docker sandboxes capture automatically without syncing local laptop folders.",
+        "speaker": "Ben Holmes",
+        "also_at": []
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:366:e617e3",
+        "section": "### 00:06:06 — Scoring Redundant Tests, Verbosity & Tool Efficiency",
+        "at_seconds": 366,
+        "quote": "these AIs are very persistent and will work around whatever roadblock that they run into, and they won't tell you about it.",
+        "claim": "Because unattended agents silently brute-force around broken environment instructions—such as probing local port numbers when test skills are stale—scoring tool-call efficiency over full traces uncovers harness bottlenecks hidden by passing PRs.",
+        "speaker": "Ben Holmes",
+        "also_at": [
+          "### 00:13:43 — Skill Doctor: Batch Audits for Port & Changelog Fixes"
+        ]
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:535:421462",
+        "section": "### 00:08:55 — Markdown Judge Rubrics & Post-Merge Conversation Grading",
+        "at_seconds": 535,
+        "quote": "So automatically, usually the trigger being a PR merged, kick in an agent to review that conversation across your grading criteria.",
+        "claim": "Triggering markdown-defined judge rubrics upon PR merge produces structured pass/fail scores and failure rationales that a daily cron-scheduled self-improvement agent mines to propose targeted skill and codebase updates.",
+        "speaker": "Ben Holmes",
+        "also_at": [
+          "### 00:16:10 — Score Inflection Dashboards & Continuous Improvement PRs"
+        ]
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:823:c0bdd0",
+        "section": "### 00:13:43 — Skill Doctor: Batch Audits for Port & Changelog Fixes",
+        "at_seconds": 823,
+        "quote": "But this is a skill that you can run on your single-player setup, and it'll crawl through all of your agent conversations in Claude, Codex, Py, or whatever else and just do a one-time grading.",
+        "claim": "A single-player batch audit skill (`Skill Doctor`) crawls local Claude, Codex, and Pi logs to produce a rubric report card and concrete skill edits, such as upfront port-discovery instructions and prescriptive changelog formatting.",
+        "speaker": "Ben Holmes",
+        "also_at": []
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:970:d72eb1",
+        "section": "### 00:16:10 — Score Inflection Dashboards & Continuous Improvement PRs",
+        "at_seconds": 970,
+        "quote": "So the agent's constantly scoring setups and it's giving grades of like 50%, 60% on average, and you can attribute changes that you made in your agent setup to inflections in the score.",
+        "claim": "Unlike opaque overnight memory or dreaming loops, continuous rubric dashboards let teams attribute measurable score inflections directly to merged skill and config fixes such as enabling missing subagent permissions.",
+        "speaker": "Ben Holmes",
+        "also_at": []
+      }
+    ],
+    "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": [
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:105:838bae",
+        "section": "### 00:01:45 — CI Merge Failures & Lights-On vs. Dark Factories",
+        "at_seconds": 105,
+        "quote": "A lights on factory is one where you have agents that are helping you with planning, building, checking, and shipping code again and again, but you as a person so apply your judgment and taste inside the picture",
+        "claim": "Software factories operate along an autonomy spectrum from lights-on pipelines—where humans apply taste and judgment across agent loops—to dark factories where agents scope, build, and verify continuously while humans set intent and handle exceptions.",
+        "speaker": "Addy Osmani",
+        "also_at": [
+          "### 00:08:20 — Sonar Survey Insights & Moving Toward Dark Factories"
+        ]
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:221:de67d3",
+        "section": "### 00:03:41 — Shipping Faster with Confidence & Verification Loops",
+        "at_seconds": 221,
+        "quote": "Like if you are hoping to get the best quality output from your agents, you need to give your agents a way to verify that the work is correct.",
+        "claim": "With raw code generation largely solved, the highest-leverage engineering investment is building automated tests and benchmarks that let agents self-verify correctness and completeness for a two-to-threefold outcome gain.",
+        "speaker": "Addy Osmani",
+        "also_at": [
+          "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
+        ]
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:326:9780f8",
+        "section": "### 00:05:26 — Merging 30,000 Daily Changes at Anthropic",
+        "at_seconds": 326,
+        "quote": "If I care about mobile or desktop experience, maybe it generates me screenshots or videos of that, but basically, you want to get to a place where the AI is giving you as much verification evidence as possible.",
+        "claim": "Scaling from roughly 2,500 to 30,000 daily merged code changes at Anthropic relies on automated first-pass Claude reviews, diff-triggered edit hooks, and agents exercising UIs in browsers to produce screenshot and video verification evidence.",
+        "speaker": "Addy Osmani",
+        "also_at": []
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:500:0c219f",
+        "section": "### 00:08:20 — Sonar Survey Insights & Moving Toward Dark Factories",
+        "at_seconds": 500,
+        "quote": "We lean a lot on end-to end tests, property tests, any visual verification tests—things that can help us just get that confidence to merge those changeset automatically.",
+        "claim": "Achieving high-confidence automated merges as unreviewed production code rises requires concrete behavioral checks—specifically end-to-end tests, property-based tests, and visual verification—rather than relying on manual line-by-line diff inspection.",
+        "speaker": "Addy Osmani",
+        "also_at": [
+          "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
+        ]
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:686:9d20ad",
+        "section": "### 00:11:26 — Zero-Trust Multi-Layered Verification & Enterprise Guide Rails",
+        "at_seconds": 686,
+        "quote": "We absolutely 100% believe that each company should adopt a zero trust multi-layered verification approach, and verification should be done in every loop",
+        "claim": "Enterprises should enforce zero-trust, multi-layered verification across the agentic loop, CI, and maintenance by combining deterministic static analysis for bugs and SQL injections, agentic review for logic and intent, and supply-chain scanning for CVEs and malware.",
+        "speaker": "Manish Kapur",
+        "also_at": [
+          "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
+        ]
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:869:0ec5c8",
+        "section": "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges",
+        "at_seconds": 869,
+        "quote": "I personally think it's fine for the code to be written, labeled as being coming from an agent",
+        "claim": "Explicitly labeling agent-authored pull requests preserves regulated auditability and triggers stricter automated verification constraints while keeping a named human engineer accountable for production outcomes.",
+        "speaker": "Addy Osmani",
+        "also_at": []
+      }
+    ],
+    "18628ea8-d66a-4d7b-adbd-730d3a43d92e": [
+      {
+        "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:1daa30",
+        "section": "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+        "at_seconds": 132,
+        "quote": "The next step is to send your agent to those companies' careers pages, right, and find them open positions to match them to your experience, and collect the published compensation ranges.",
+        "claim": "A high-signal job-search pipeline combines human curation—first ranking conference speakers' companies by technical interest—with an agent that scrapes career pages to match open roles and extract published compensation ranges for updating rankings.",
+        "speaker": "Ksenia Se",
+        "also_at": []
+      },
+      {
+        "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:4fbd9b",
+        "section": "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+        "at_seconds": 132,
+        "quote": "I spend the day talking to other speakers and participants, and what I've noticed is that one of the strongest incentives to come to this conference is hiring, to the point that even some speakers are hiring and also looking for work.",
+        "claim": "Hiring serves as a primary two-sided incentive for attending AI Engineer, extending even to conference speakers who are simultaneously recruiting talent and exploring new roles themselves.",
+        "speaker": "Ksenia Se",
+        "also_at": []
+      },
+      {
+        "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:132:f5b8a1",
+        "section": "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+        "at_seconds": 132,
+        "quote": "And please don't make your agents send out your resume automatically.",
+        "claim": "Job-search agents should stop at role and compensation research rather than automating resume submission, leaving candidates to start real in-person conversations grounded in speakers' talks.",
+        "speaker": "Ksenia Se",
+        "also_at": []
+      }
+    ],
+    "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": [
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:222:698c61",
+        "section": "### 00:03:42 — The Competency Gap & the Process Gap",
+        "at_seconds": 222,
+        "quote": "The first problem is that there is a competency gap, because agents, as you think of them as you think of them today, they outsource the complexity to the user.",
+        "claim": "General-purpose coding-style agent products fail to raise enterprise-wide productivity because pushing prompt, memory, and workflow management onto end users creates both a user competency gap and an unstandardized process gap.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": [
+          "### 00:00:00 — Enterprise Productivity & Human Process Supervision"
+        ]
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:370:04ce09",
+        "section": "### 00:06:10 — Why Reliable Agents Require Opinionated Processes",
+        "at_seconds": 370,
+        "quote": "Not because the process it did was bad, but because the process it did was not opinionated.",
+        "claim": "Open-ended agents produce inconsistent outputs unless builders encode explicit domain opinions—such as checking primary tax sources or visually inspecting generated slides—while explicitly trading off accuracy against latency.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:556:35af22",
+        "section": "### 00:09:16 — Why Outcome Evals Fall Short on Long Horizons",
+        "at_seconds": 556,
+        "quote": "really think of the context that agent is going to see as it's working as runtime training data. The word prompt, I think, trivializes it a bit, right?",
+        "claim": "In long-horizon agent harnesses, behavior emerges jointly from system prompts, progressive disclosures, tool descriptions, and model weights, so every token entering the working window must be engineered as runtime training data.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:721:8292e9",
+        "section": "### 00:12:01 — Behavior Specs as Ground-Truth-Free Trajectory Rubrics",
+        "at_seconds": 721,
+        "quote": "And you can say, in this particular trajectory, whether that is in any trajectory that doesn't have a ground truth, did the agent get into a situation in which this behavior was relevant?",
+        "claim": "Distilling core workflow opinions into 'behavior specs' creates a ground-truth-free rubric that grades any production trajectory whenever a relevant trigger arises, scaling supervision signal far faster than static outcome evals.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:820:dbba6f",
+        "section": "### 00:13:40 — Trajectory Forking & Subagent Simulations",
+        "at_seconds": 820,
+        "quote": "when working with coding agents, ask the coding agent to make a subagent that pretends to be your production agent. And you can tell it to not cheat, and give it the system prompt and the skills, and you render everything perfectly.",
+        "claim": "When a multi-hour, thousand-call trajectory violates a behavior spec, builders can iterate on context fixes rapidly either by forking state right before the bad decision or by cheaply simulating the production prompt and skills in a coding subagent.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:1041:0e05d3",
+        "section": "### 00:17:21 — Earning Organizational Trust Over Move-37 Creativity",
+        "at_seconds": 1041,
+        "quote": "Nobody wants their agent to move thirty-seven their tax return. They want it done reliably at scale in a way that they can trust, and in a way that their people know how to work with.",
+        "claim": "Enterprise diffusion depends on predictable, repeatable execution calibrated to blast radius rather than 'Move 37' creative novelty, because organizations scale output through standardized workflows their teams can audit and trust.",
+        "speaker": "Mitchell Troyanovsky",
+        "also_at": []
+      }
+    ],
+    "29083884-87dc-44f8-b412-b494afca8856": [
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:82:490c60",
+        "section": "### 00:01:22 — Runtime, Context Orchestration, and Peak Harness",
+        "at_seconds": 82,
+        "quote": "The runtime is kind of like the foundation of the harness. It controls where the core agent loop runs and how state is stored so that work can resume.",
+        "claim": "An agent harness divides architecturally into a foundational runtime layer—managing core loop execution and durable state persistence—and a context orchestration layer governing model routing, tools, memory, compaction, and behavioral guardrails.",
+        "speaker": "Jediah Katz",
+        "also_at": [
+          "### 00:11:59 — Cloud Runtime, Scoped Security, and Token Efficiency"
+        ]
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:254:dfec29",
+        "section": "### 00:04:14 — Coding Evals and the Model Data Flywheel",
+        "at_seconds": 254,
+        "quote": "It turns out the harness is actually making itself obsolete through what I call the data flywheel. So in this process, the harness brings harder and harder coding tasks within reach.",
+        "claim": "Coding harnesses obsolete their own context-layer scaffolding through a data flywheel in which scaffolding makes harder tasks tractable, user trajectories train frontier models natively, and harness choice stops changing coding benchmark scores.",
+        "speaker": "Jediah Katz",
+        "also_at": [
+          "### 00:06:55 — Unlocking New Frontiers with Grokbot and Software Factories"
+        ]
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:415:c24c6b",
+        "section": "### 00:06:55 — Unlocking New Frontiers with Grokbot and Software Factories",
+        "at_seconds": 415,
+        "quote": "So Rockbot has a new kind of harness that operates not based off of one-off chats, but long-lived coordinator bots that orchestrate a fleet of worker agents.",
+        "claim": "Expanding beyond single-session coding into autonomous knowledge work requires shifting harness architecture to long-lived coordinator agents that own strategy, dispatch worker fleets, and reintroduce domain prompts and action-versus-asking guardrails.",
+        "speaker": "Jediah Katz",
+        "also_at": [
+          "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims"
+        ]
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:719:8b8f4a",
+        "section": "### 00:11:59 — Cloud Runtime, Scoped Security, and Token Efficiency",
+        "at_seconds": 719,
+        "quote": "If you think back to those two slides I showed, where the choice of harness did not make a significant difference in eval scores, both of those studies actually found that there was a significant difference in costs for tasks.",
+        "claim": "Even when benchmark studies show harness choice no longer changes coding accuracy, harnesses drive major differences in task cost and speed, making token efficiency and model-mix routing durable differentiators alongside cloud runtimes and scoped secret permissions.",
+        "speaker": "Jediah Katz",
+        "also_at": []
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:841:75c3d5",
+        "section": "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims",
+        "at_seconds": 841,
+        "quote": "So now we have a bot who watches this dashboard, and whenever a shim stops firing, that model or that agent will put up a PR and say this shim can be cleaned up.",
+        "claim": "Teams can ship deterministic guardrail shims for current model flaws without accumulating permanent codebase debt by logging every shim activation and having an automated watcher agent open a removal PR once newer models stop triggering it.",
+        "speaker": "Jediah Katz",
+        "also_at": []
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:841:fade48",
+        "section": "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims",
+        "at_seconds": 841,
+        "quote": "Now, rather than having one separate integration, or you having separate integrations for each of these things, we have one framework and one tool that the model can use, that the agent can use to subscribe to an event.",
+        "claim": "To iterate rapidly without Hyrum's Law lock-in or integration sprawl across Slack messages, CI status alerts, and timers, harnesses should hide internal mechanics from users and expose composable agent primitives like a unified event-subscription tool.",
+        "speaker": "Jediah Katz",
+        "also_at": []
+      }
+    ],
+    "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": [
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:38b1fc",
+        "section": "### 00:00:00 — Introducing Rowspace and Apollo's Redding Ridge Credit Business",
+        "at_seconds": 0,
+        "quote": "We essentially use agents to do the work of data engineering, right information or reconciled data from across a variety of systems to the portfolio managers, traders, and so forth can make decisions faster and more accurately.",
+        "claim": "Rowspace deploys agents to perform continuous data engineering—reconciling fragmented records across disparate enterprise systems—so portfolio managers and traders act on unified data rather than querying isolated chatbots.",
+        "speaker": "Michael Manapat",
+        "also_at": []
+      },
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:204:acbf08",
+        "section": "### 00:03:24 — Automating CLO Portfolio Construction and Weekly Trade Reconciliation",
+        "at_seconds": 204,
+        "quote": "That report was then created and now repeatable in the span of a minute, and now all of that is automated.",
+        "claim": "Weekly warehouse loan trade reconciliation—previously requiring two to three staff members hours of manual bank-statement checks—now runs automatically in a minute, shifting the team's role to daily QA.",
+        "speaker": "Jack McDonald",
+        "also_at": []
+      },
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:204:bc44e0",
+        "section": "### 00:03:24 — Automating CLO Portfolio Construction and Weekly Trade Reconciliation",
+        "at_seconds": 204,
+        "quote": "that allows these PMS to kind of build something to call it eighty, ninety percent completion, and then kind of use their judgment and their thought to further refine that portfolio, that last 10 percent, to make it theirs.",
+        "claim": "Combining indenture waterfall rules, compliance constraints, and real-time pricing cut 200-to-400-name mock CLO portfolio construction from two-to-three days in manual Excel to minutes for the first 80–90% of the build.",
+        "speaker": "Jack McDonald",
+        "also_at": []
+      },
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:392:4b9f28",
+        "section": "### 00:06:32 — Earning Trust Beyond Chatbots Through Golden Data Sources",
+        "at_seconds": 392,
+        "quote": "Michael sits with our team on a daily basis, learning and understanding our information flow, because for one piece of data that might come from 20 different sources, and there's only one that's actually right.",
+        "claim": "Because a single financial data point can appear across 20 conflicting systems with only one authoritative source, earning trading-desk trust required engineers sitting daily with PMs to encode golden-source precedence rules.",
+        "speaker": "Jack McDonald",
+        "also_at": [
+          "### 00:01:19 — Fragmented Private Credit Data in Active CLO Management",
+          "### 00:15:10 — Near-Term Priorities and Lessons for AI in Finance"
+        ]
+      },
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:667:6cddac",
+        "section": "### 00:11:07 — Where Finance Stands on the AI Adoption Curve",
+        "at_seconds": 667,
+        "quote": "In finance broadly, especially in call it the asset management, investment banking, the bank institution institutional world, I still think it's very early.",
+        "claim": "Institutional banking and asset management remain early on the AI adoption curve because off-the-shelf research summarization delivers low value compared to automating complex middle- and back-office data workflows.",
+        "speaker": "Jack McDonald",
+        "also_at": []
+      },
+      {
+        "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:790:d8fd67",
+        "section": "### 00:13:10 — Commodity Productivity Tool Versus Durable Competitive Edge",
+        "at_seconds": 790,
+        "quote": "So knowing that you have a strong process in place to go out and execute, and knowing your available liquidity, or you know where things are pricing and what the value is at any given point is crucial.",
+        "claim": "AI grounded in validated proprietary data creates a durable competitive advantage in private credit—rather than becoming a commodity like Excel—by giving managers real-time accuracy on available liquidity and pricing.",
+        "speaker": "Jack McDonald",
+        "also_at": []
+      }
+    ],
+    "4add802c-6a68-4e9c-93fb-9c1e017193bc": [
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:315:4ebbb6",
+        "section": "### 00:05:15 — Cognitive Surrender and Large Codebase Bottlenecks",
+        "at_seconds": 315,
+        "quote": "they agree with AI when AI is right, 93 percent of the time, and four out of five times, they agree with it when the AI is wrong.",
+        "claim": "Human-in-the-loop review fails to convert a 2,450% surge in AI-written lines of code into proportional delivery (yielding only 30% more releases) because reviewers exhibit 'cognitive surrender,' accepting wrong AI output 80% of the time.",
+        "speaker": "Tariq Shaukat",
+        "also_at": [
+          "### 00:02:53 — Code Abundance and the Shift to Agentic Factories"
+        ]
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:481:a20d93",
+        "section": "### 00:08:01 — Compounding Errors and Unreliable LLM Judges",
+        "at_seconds": 481,
+        "quote": "depending on the model and the situation, between seven and seventeen percent of verdicts change across what they call identical replications.",
+        "claim": "LLMs are unreliable standalone verification judges because their verdicts flip 7–17% of the time across identical runs and change 7–34% of the time when challenged with a simple 'are you sure?' prompt.",
+        "speaker": "Tariq Shaukat",
+        "also_at": []
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:481:d445d4",
+        "section": "### 00:08:01 — Compounding Errors and Unreliable LLM Judges",
+        "at_seconds": 481,
+        "quote": "If you have ninety-five percent accuracy on each task, by the time you're at 20 steps, you have 30 steps, or 36 percent accuracy, right?",
+        "claim": "Compounding step-level errors flatten long-horizon agent reliability—dropping 95% per-step accuracy to roughly 36% by 20 steps and sharply curtailing METR's 16-hour task horizon when required accuracy rises from 50% to 80%.",
+        "speaker": "Tariq Shaukat",
+        "also_at": []
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:656:5984a6",
+        "section": "### 00:10:56 — Four Pillars of the Code Confidence Framework",
+        "at_seconds": 656,
+        "quote": "And what we see when we provide agents in long-running, large, complex databases with long-running tasks, with this information is a 36 percent reduction in token cost because you're putting it in white claims.",
+        "claim": "Supplying structural codebase maps and verification guide rails inside the agentic loop via Sonar Vortex reduces token spend by 36% and cuts commit-time issues by 92% on large, long-running tasks.",
+        "speaker": "Tariq Shaukat",
+        "also_at": []
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:656:bf8435",
+        "section": "### 00:10:56 — Four Pillars of the Code Confidence Framework",
+        "at_seconds": 656,
+        "quote": "And we multiply these together because we've seen a number of situations where one of these elements is missing, and if it's zero, the confidence goes to zero.",
+        "claim": "Applying Toyota-style quality engineering to agentic software factories requires four multiplicative pillars—explicit intent, in-loop guide rails, independent verification, and auditable evidence—where missing any one pillar collapses overall confidence to zero.",
+        "speaker": "Tariq Shaukat",
+        "also_at": [
+          "### 00:00:06 — Toyota's Quality Principles in Software Manufacturing"
+        ]
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:809:e6396e",
+        "section": "### 00:13:29 — Deterministic Verification, SonarQube Results, and Audit Evidence",
+        "at_seconds": 809,
+        "quote": "So we look at deterministic mixture of methods, and then you add in a generative mixture of methods, and it comes up with what we think is the gold standard of verification.",
+        "claim": "Pairing CPU-based deterministic static analysis with targeted GPU generative checks provides independent verification that left surveyed SonarQube users 81% more likely to see positive security impact and 76% on outage frequency.",
+        "speaker": "Tariq Shaukat",
+        "also_at": []
+      }
+    ],
+    "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": [
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:140:55f8cc",
+        "section": "### 00:02:20 — From Tab Completion to Long-Running Agents",
+        "at_seconds": 140,
+        "quote": "I think one of the main reasons is that the context kind of moves out of that inner loop and largely into the outer loop.",
+        "claim": "As intelligence that cost $100 three years ago drops to five cents and agents run unattended for hours or days, context can no longer be hand-fed interactively and must be orchestrated by outer-loop systems.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:378:de899b",
+        "section": "### 00:06:18 — Why Product Coherence Needs More Than Code",
+        "at_seconds": 378,
+        "quote": "Implementation is not the bottleneck now. The failure mode here isn't an inability to build. The failure mode is like an inability to maintain coherence, to have a product that makes sense as a whole.",
+        "claim": "Cheap, abundant code shifts the core failure mode to product incoherence because agents reading source code alone miss user intent, prior design trade-offs, parallel org work, decision ownership, and recent revert risks.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:527:8db73b",
+        "section": "### 00:08:47 — Automated Intake and the Triage Agent",
+        "at_seconds": 527,
+        "quote": "It's been enriched with the customer information. Hey, this is a high value customer, this is the third time they've requested this in a month. Any stack traces, maybe if it's a bug, logs from DataDog that are associated.",
+        "claim": "Linear's triage agent deduplicates multi-channel intake and enriches issues via internal MCPs with customer value, request frequency, Datadog logs, stack traces, live bug reproductions, and prior related decisions before coding starts.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:767:90c9a7",
+        "section": "### 00:12:47 — Implementation Loops and Agent Verification Skills",
+        "at_seconds": 767,
+        "quote": "Between the base, the base context, being able to verify and being able to see failures, we see a massive amount of success in our team.",
+        "claim": "Combining enriched intake context with agent verification skills and failure feedback loops makes unattended implementation reliable enough to auto-fix small triaged bugs locally or in the cloud.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:847:546f97",
+        "section": "### 00:14:07 — Context-Aware Review Agents and Product History",
+        "at_seconds": 847,
+        "quote": "It starts with that original issue and that base context that we created with the customers, the original intent, and then it goes and looks for product history, so things like previous decisions, reverts, regressions and incidents in the same area.",
+        "claim": "Rather than checking code logic in isolation, a context-aware review agent joins PR diffs with original customer intent, session decisions, ownership, and historical reverts—catching rejected UI patterns, inverted label hierarchies, and DB transaction risks.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:1127:97f8ad",
+        "section": "### 00:18:47 — Compounding Judgment Through Daily Feedback Distillation",
+        "at_seconds": 1127,
+        "quote": "It will find actionable lessons, places where these types of comments happened in the PRs, and changes were made, or reverse happened, extract learnings, and then inject them back into the codebase, either in the agents.md or in the related documentation",
+        "claim": "A daily post-merge automation mines review corrections and reverts across merged PRs and distills actionable lessons into `agents.md` and documentation so human product judgment compounds across subsequent agent runs.",
+        "speaker": "Tom Moor",
+        "also_at": []
+      }
+    ],
+    "68a1e78b-569e-4314-a56f-f20508123cbe": [
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:92:f2fcee",
+        "section": "### 00:01:32 — The Frontier of Intelligence & Model Thresholds",
+        "at_seconds": 92,
+        "quote": "And our opportunity here is scale — is not the model, our opportunity here is scale, is building the foundation for agents that can go one to many.",
+        "claim": "Model intelligence is no longer the primary constraint in financial services, shifting the strategic bottleneck from proving individual agent capabilities to building reusable infrastructure that scales deployments from one-by-one builds to many.",
+        "speaker": "Belinda Neal",
+        "also_at": [
+          "### 00:06:12 — From Experimentation to the Five-Layer Agent Framework"
+        ]
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:477:1d68b0",
+        "section": "### 00:07:57 — Context Layers: MCP Connectors & Living Skills",
+        "at_seconds": 477,
+        "quote": "as you think about scaling up your agents into new specialized, various tasks, you'll want to have those agents work on one secure connectivity layer, which is MCP.",
+        "claim": "Manually wiring individual agents to enterprise data systems creates a brittle integration matrix as use cases multiply, so organizations should standardize source-system access behind a single secure MCP connectivity layer.",
+        "speaker": "Keon Shahab",
+        "also_at": []
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:477:4a57bb",
+        "section": "### 00:07:57 — Context Layers: MCP Connectors & Living Skills",
+        "at_seconds": 477,
+        "quote": "this is the business context that an SME provides, and we think about skills as living, breathing, versioned code, essentially, even though they're just plain text. They're meant to be dynamic. They're meant to be updated frequently.",
+        "claim": "Domain-specific workflows such as trade-break investigations should be captured from subject-matter experts as plain-text skills that are version-controlled, frequently iterated, and governed like living production code.",
+        "speaker": "Keon Shahab",
+        "also_at": []
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:575:174d25",
+        "section": "### 00:09:35 — Trust Layers: Identity, Sandboxed Approvals & Evals",
+        "at_seconds": 575,
+        "quote": "Once they approve, then that amendment will be made, and the change will be applied. Guardrails, deterministic guardrails, called hooks around your agent, so that it's never overreaching beyond what you'd like it to do within its confines.",
+        "claim": "Production financial agents enforce operational safety through least-privilege role identities, deterministic hook guardrails, and sandboxed write boundaries where agents can only propose booking amendments that a human SME must approve before execution.",
+        "speaker": "Keon Shahab",
+        "also_at": []
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:745:77fdc6",
+        "section": "### 00:12:25 — Scaling Across Doors & the Business-Engineering Loop",
+        "at_seconds": 745,
+        "quote": "Some observations that we've seen, especially in financial services, is that the business is now becoming closer to engineering, and the way that we're observing this is that the business will directly work the agent that engineering has built.",
+        "claim": "Agent deployment reshapes the financial-services operating model into a tight loop where business SMEs directly correct live agents and propose changes that engineering validates against baseline evaluation suites before shipping as updated skills.",
+        "speaker": "Keon Shahab",
+        "also_at": [
+          "### 00:09:35 — Trust Layers: Identity, Sandboxed Approvals & Evals"
+        ]
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:933:8b7669",
+        "section": "### 00:15:33 — Industry Coordination: Claude for Financial Advisors",
+        "at_seconds": 933,
+        "quote": "We built a plugin that is available on GitHub that builds eight skills and workflows that an advisor can take out of the box, use today, and implement tomorrow. Layer four approval, the advisor proves everything that comes out of Claude.",
+        "claim": "Anthropic applied this shared-foundation pattern at the industry level for wealth management by combining twenty-five pre-built custody, CRM, and portfolio connectors with eight open-source workflow skills gated on mandatory advisor approval.",
+        "speaker": "Belinda Neal",
+        "also_at": []
+      }
+    ],
+    "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": [
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:c7c453",
+        "section": "### 00:00:00 — Breaking Out of the Outer Loop in Claims Engineering",
+        "at_seconds": 0,
+        "quote": "So while we've seen this interloop speed up to use Jean Kim's concept, we find ourselves seemingly stuck within the bounds of this outer, which is to say, everything that happens other than the current moment.",
+        "claim": "Although coding agents have collapsed inner-loop coding time and offloaded routine patch work, major enterprise architecture changes remain bottlenecked by the outer loop of cross-functional alignment, risk governance, and decision-making.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      },
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:309:ef0e91",
+        "section": "### 00:05:09 — Three Legacy Modernization Missions: Rentals, Damages, and Salvage",
+        "at_seconds": 309,
+        "quote": "the agent used some interesting process to find and distill data to figure out that we can connect a couple dots and save ourselves eight and a half thousand calls per month by giving the customer up-to-date rental information.",
+        "claim": "One-day, thousand-dollar war room sprints over millions of lines of legacy claims code delivered concrete outcomes across three domains, including a rentals API extension saving 8,500 calls monthly and a salvage plan that caught a production bug.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      },
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:490:40e1e4",
+        "section": "### 00:08:10 — Vendor Stack, Enterprise Context, and FleetKit Orchestration",
+        "at_seconds": 490,
+        "quote": "Takes a goal, breaks it down, dispatches leaders to do all the research and decide about the approach, puts everything into this like human loop cube.",
+        "claim": "FleetKit governs expensive multi-agent architecture transformations via structured Markdown rules that decompose goals, dispatch research agents, stage plans in a human approval queue, and only then dispatch builders.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      },
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:678:5b1a68",
+        "section": "### 00:11:18 — Interactive Worksheets and Architecture Diagrams in the Loop",
+        "at_seconds": 678,
+        "quote": "It was like, wow, that's actually a great question that we've never thought about identifying an edge case either in the business with technology.",
+        "claim": "At each milestone, the war room generates interactive HTML worksheets and editable architecture diagrams that route sharp edge-case questions to domain owners and ingest human edits back into agent context.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      },
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:826:5d5434",
+        "section": "### 00:13:46 — Cloud Code Dives, Local MCPs, and Nine-Step Execution",
+        "at_seconds": 826,
+        "quote": "And just an interesting detail, and this is something that the code monetization plugin does: is it does like a deterministic analysis of like, did the previous step create the artifacts that needed to include the file?",
+        "claim": "Executing the nine-step modernization workflow across cloud code-dive agents and laptop-hosted enterprise MCPs relies on deterministic gate checks verifying that each step produced its required artifacts before advancing.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      },
+      {
+        "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:944:09ac25",
+        "section": "### 00:15:44 — Token Burn, Model Benchmarks, and Scaling Organization-Wide",
+        "at_seconds": 944,
+        "quote": "we ran benchmarks against like using our existing code recently written as the golden data and found out that Fable or Sonnet five wrote it just as good as, if not better than Fable.",
+        "claim": "Benchmarking against recent production code as golden data revealed that once rich domain context is synthesized, smaller Sonnet-class models generate legacy code as well as frontier models at much lower cost.",
+        "speaker": "Ford Prior",
+        "also_at": []
+      }
+    ],
+    "736edd83-bb08-49f1-90ed-722b7ed07eb2": [
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:5fa322",
+        "section": "### 00:00:00 — Defining AI Slop & Introducing ToneBench",
+        "at_seconds": 0,
+        "quote": "Endlessly, the worst to me is that it usually has the wrong tone, or at least it has no tone and like everyone's tone at the same time, so it just doesn't really talk back to you.",
+        "claim": "AI writing slop persists as models scale not merely through overused vocabulary, repetition, and hallucination, but fundamentally because generated prose collapses into a generic, voiceless average rather than matching a specific author's tone.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      },
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:334:8d8be6",
+        "section": "### 00:05:34 — Benchmark Architecture: Prompts, Scripts & Draft Variance",
+        "at_seconds": 334,
+        "quote": "But yeah, it's we found that five drafts seems to be the good middle ground in terms of cost for us to execute and to measure this disparity.",
+        "claim": "Generating five drafts per prompt across ten published and held-out scripts captures intra-model variance—which widens as model quality drops and masks lucky one-in-five outlier drafts—without making benchmark runs prohibitively expensive.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      },
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:535:145b9c",
+        "section": "### 00:08:55 — Scoring Rubrics, LLM Judge Bias & Human Ratings",
+        "at_seconds": 535,
+        "quote": "Then, the judge will categorize between six categories first, and after having found the category, it will give a rating. We found that this is the best way to measure for this more qualitative task.",
+        "claim": "Structuring 14,000-word judge prompts as a two-stage rubric—classifying prose into one of six qualitative buckets before scoring across nine metrics—outperforms binary or direct percentage grading on subjective voice matching.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      },
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:535:230c1e",
+        "section": "### 00:08:55 — Scoring Rubrics, LLM Judge Bias & Human Ratings",
+        "at_seconds": 535,
+        "quote": "And the problem with AI judges is that they have references. Some models prefer themselves, all of those for themselves, and particularly open AI.",
+        "claim": "Because LLM judges exhibit strong family-wide self-preference—especially OpenAI models favoring all OpenAI outputs—creative-writing evaluations require cross-family judges spot-checked against over a thousand human pairwise comparisons.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      },
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:836:227ece",
+        "section": "### 00:13:56 — Benchmark Costs, Model Rankings & Price Tradeoffs",
+        "at_seconds": 836,
+        "quote": "It's 50 times cheaper than the best one, which is Opus 5.5 extra high, which is two point five times cheaper than Max Thinking, but with same results.",
+        "claim": "Across 120 evaluated models, GLM 5.3 Flash offers competitive low-friction drafting at 50x lower cost than top-ranked Opus 5.5 extra high, while Opus 5.5 extra high matches Max Thinking quality at 2.5x lower cost.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      },
+      {
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:966:7019ce",
+        "section": "### 00:16:06 — Practical Workflow: Long Prompts & Multi-Draft Merging",
+        "at_seconds": 966,
+        "quote": "ten drafts of one specific thing with a cheaper model like GLM or Flash, and then have a smarter high thinking job like Office, or whatever you want, pick and merge the best parts of each of these drafts",
+        "claim": "For production writing at scale, generating ten drafts with a cheap model like GLM or Flash and merging the strongest passages with a single high-thinking Opus pass beats a single frontier generation on both cost and quality.",
+        "speaker": "Louis-François Bouchard",
+        "also_at": []
+      }
+    ],
+    "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:313:ea00a6",
+        "section": "### 00:05:13 — Why Safety and Agent Autonomy Aren't Opposites",
+        "at_seconds": 313,
+        "quote": "And then, if you just have policy documents that you just look at, or that are part of your specification for the prompts, that's also not very forceful at runtime. You can't guarantee that will be part of the enforcement controls.",
+        "claim": "Neither total sandboxing nor written policy documents and prompt instructions provide workable enterprise safety, because air-gapped sandboxes prevent real work while prompt-level rules cannot guarantee runtime enforcement.",
+        "speaker": "John Feminella",
+        "also_at": [
+          "### 00:16:32 — Preventing Review Fatigue with Runtime Classifiers"
+        ]
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:468:49a202",
+        "section": "### 00:07:48 — Making Agents Legible with an Automatic Registry",
+        "at_seconds": 468,
+        "quote": "It just happens when you use one of the firms approved agent building frameworks. It's automatically registered. All that information is recorded there for you, and if you want to do a manual registration, you can certainly do that.",
+        "claim": "Instead of blocking teams behind an onerous pre-registration gate that drives experimentation into ungoverned shadow IT, approved agent frameworks automatically record each agent's owner, product, declared tools, and endpoints in a central registry.",
+        "speaker": "John Feminella",
+        "also_at": []
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:600:697aa7",
+        "section": "### 00:10:00 — Risk-Scored Review for Purpose-Built Enterprise Agents",
+        "at_seconds": 600,
+        "quote": "Again, that feels safe, but now we've got a trivial summarizer waiting two months for the same sign-offs as an agent-based captioning production system.",
+        "claim": "Applying uniform manual review to every agent stalls low-risk experiments and drowns reviewers in trivial requests, so governance queues must be risk-scored based on each purpose-built agent's declared tools and target systems.",
+        "speaker": "John Feminella",
+        "also_at": []
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:718:26f99b",
+        "section": "### 00:11:58 — Declared Tool Access, Guardrails & Shared Evaluations",
+        "at_seconds": 718,
+        "quote": "we wouldn't ship software without unit tests. So agents need evaluations for the same reason. And we want to provide this stuff at the level of the firm that's going to be the same for everybody.",
+        "claim": "Because model upgrades act like changing runtime dependencies that can silently alter output quality, firms should provide shared self-serve evaluation infrastructure—analogous to unit testing rather than centralized sign-off queues—where teams supply only agent-specific assertions.",
+        "speaker": "John Feminella",
+        "also_at": []
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:718:64c301",
+        "section": "### 00:11:58 — Declared Tool Access, Guardrails & Shared Evaluations",
+        "at_seconds": 718,
+        "quote": "when agents run in our managed environments, they look at the registry we talked about before to look up what policies apply to it at initialization time, and that policy gets translated into enforceable statements.",
+        "claim": "Managed agent runtimes avoid blunt firm-wide allowlists by querying the agent registry at initialization time and compiling each agent's declared tool, host, and resource entitlements into enforceable runtime boundaries.",
+        "speaker": "John Feminella",
+        "also_at": []
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:992:dd249f",
+        "section": "### 00:16:32 — Preventing Review Fatigue with Runtime Classifiers",
+        "at_seconds": 992,
+        "quote": "when explicit rules apply, we want deterministic fast paths. When explicit rules don't apply and there's some ambiguity, you want a classifier to do that work instead.",
+        "claim": "Asking humans to approve every agent action induces rubber-stamp review fatigue, so production runtimes should handle clear rules via deterministic fast paths and filter routine calls with independent conservative classifiers, escalating only genuinely ambiguous actions.",
+        "speaker": "John Feminella",
+        "also_at": []
+      }
+    ],
+    "871cd5c8-13f4-4fe9-ac49-c8b25d970add": [
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:80bae9",
+        "section": "### 00:00:00 — Model Commoditization and Trillion-Dollar Infrastructure Bets",
+        "at_seconds": 0,
+        "quote": "There was some charts going around Twitter this week showing the average cost of a token going down while the total spent on tokens surges, and the infrastructure costs associated with serving those tokens have stayed flat",
+        "claim": "As practitioners switch readily among competing frontier models, falling per-token prices against flat serving infrastructure costs are compressing model inference margins despite surging total token spend.",
+        "speaker": "Dillon Rolnick",
+        "also_at": []
+      },
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:151:4efad3",
+        "section": "### 00:02:31 — Asymmetric Leverage at the Enterprise Agent Layer",
+        "at_seconds": 151,
+        "quote": "If you're in front of the user, you have an opportunity for stickiness. Stickiness means margin. This is why the fight has largely shifted to the agent layer lately.",
+        "claim": "Frontier labs are moving up the stack to embed at the enterprise agent layer because owning workflows—where 70% of business output may soon be agentic—creates switching-cost stickiness and pricing leverage.",
+        "speaker": "Dillon Rolnick",
+        "also_at": []
+      },
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:244:36839a",
+        "section": "### 00:04:04 — Solving Lucrative Markets Directly Instead of Selling Margin",
+        "at_seconds": 244,
+        "quote": "The best shot at earning it back is not to sell it for an ever-decreasing margin of others to solve these hard and lucrative problems — the best shot is to solve them yourselves.",
+        "claim": "Rather than selling commoditized API tokens at shrinking margins, frontier labs are partnering in sectors like finance to acquire domain context before solving lucrative vertical markets directly to recoup trillion-dollar investments.",
+        "speaker": "Dillon Rolnick",
+        "also_at": []
+      },
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:481:4b62a2",
+        "section": "### 00:08:01 — Software Moats Collapse and Distillation Wars",
+        "at_seconds": 481,
+        "quote": "And the advantage in a model is very rarely in the architecture or some novel system that was created proprietary way for that model. In fact, it's usually in the quality of the data and the scale.",
+        "claim": "Frontier model capability advantages come primarily from data quality and scale rather than proprietary model architectures, allowing open builders to close capability gaps rapidly through synthetic model distillation.",
+        "speaker": "Dillon Rolnick",
+        "also_at": []
+      },
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:481:8385b6",
+        "section": "### 00:08:01 — Software Moats Collapse and Distillation Wars",
+        "at_seconds": 481,
+        "quote": "If the closed competitors do manage to make interesting features, open source will have it not long afterwards. The most of yesterday were in proprietary IP. The modes of tomorrow are in network effects, reputation, and reliability.",
+        "claim": "Agentic reverse-engineering has collapsed the marginal cost of cloning proprietary software features—demonstrated by Nous reproducing Grokbot's UI in a weekend—shifting durable moats from closed IP to network effects, reputation, and reliability.",
+        "speaker": "Dillon Rolnick",
+        "also_at": [
+          "### 00:13:30 — The Hermes Agent Standard and Open Autonomy"
+        ]
+      },
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:665:edea3c",
+        "section": "### 00:11:05 — Agents as Operating Systems Combining Code and Judgment",
+        "at_seconds": 665,
+        "quote": "The next thing that you need to know about agents and about the new world is that agents are like operating systems, and they're like frameworks, and they're a lot more like those than they are like chatbots.",
+        "claim": "Agents act as application operating systems combining deterministic code and data sources with non-deterministic model judgment, so enterprises should own an open, model-agnostic harness like Hermes Agent rather than rebuilding AI stacks.",
+        "speaker": "Dillon Rolnick",
+        "also_at": [
+          "### 00:13:30 — The Hermes Agent Standard and Open Autonomy"
+        ]
+      }
+    ],
+    "8d348b6c-25cc-45de-8dc4-aaa3d7130918": [
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:285:6899b1",
+        "section": "### 00:04:45 — Why Crypto Fits Machine Payments & Real-World Volume",
+        "at_seconds": 285,
+        "quote": "Like you just can't like use differential payment methods for small everyday transactions. It just doesn't make economic sense, and also, the traditional payment methods they also chargebacks.",
+        "claim": "Crypto rails fit machine-to-machine commerce better than credit cards or bank debits because traditional payment networks impose prohibitive micro-transaction fees and mandatory chargebacks that unbounded swarms of agents could exploit.",
+        "speaker": "Jan Curn",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:285:d2487f",
+        "section": "### 00:04:45 — Why Crypto Fits Machine Payments & Real-World Volume",
+        "at_seconds": 285,
+        "quote": "in the last 30 days, on this road too, there was just only like one million dollars. Nobody. And on MPP, only like one point five thousand dollars. I mean, it's basically nothing.",
+        "claim": "Despite more than a dozen competing agentic payment protocols launching over eighteen months, actual 30-day on-chain settlement volume is negligible at roughly $1 million on Coinbase's x402 and $1,500 on Stripe's MPP.",
+        "speaker": "Jan Curn",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:455:59e975",
+        "section": "### 00:07:35 — The Agent Payment Funnel & API Key Competition",
+        "at_seconds": 455,
+        "quote": "Like authentication are competing with Visa. It's they are competing with API keys because it's just the more convenient way.",
+        "claim": "Agentic payment protocols lose today not to card rails directly, but to pre-provisioned SaaS accounts and static API keys billed to a developer's credit card, which are far simpler when tool needs are known upfront.",
+        "speaker": "Jan Curn",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:455:9b846e",
+        "section": "### 00:07:35 — The Agent Payment Funnel & API Key Competition",
+        "at_seconds": 455,
+        "quote": "This is crazy because then the agents have no incentives whatsoever to, you know, to look for existing services because they can build anything from scratch because it costs nothing.",
+        "claim": "Subsidized flat-rate LLM subscriptions—such as $100 monthly plans yielding $14,000 worth of tokens—destroy the build-versus-buy incentive for agents to pay external APIs when they can code bespoke tools from scratch at zero marginal cost.",
+        "speaker": "Jan Curn",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:799:c15ff6",
+        "section": "### 00:13:19 — Service Discovery, Trust & Verified Connector Directories",
+        "at_seconds": 799,
+        "quote": "same for ChatGPT, they have apps, and Apify is in marketplace as well, so basically there is just a middleman that tells you, okay, this is the service you can trust to know, and you're going to get results.",
+        "claim": "Because autonomous agents cannot verify whether an arbitrary external endpoint will deliver promised results or honor pricing, paid tool discovery relies on curated connector directories and marketplaces acting as trust intermediaries.",
+        "speaker": "Jan Curn",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:1022:4c3dc5",
+        "section": "### 00:17:02 — Implementing Pay-Per-Use & Batch Settlement on x402",
+        "at_seconds": 1022,
+        "quote": "even though like it allowed you to charge random costs, there was not nothing preventing the buyer, the agent, to spend those money wise, you know, because the transaction was only like settled on blockchain later.",
+        "claim": "Variable pay-per-use compute jobs cannot use naive deferred-settlement 'up-to' payment schemes because buyers can double-spend wallet funds before on-chain settlement, forcing providers toward upfront overcharge-and-refund workarounds or on-chain escrow with batch settlement.",
+        "speaker": "Jan Curn",
+        "also_at": [
+          "### 00:13:19 — Service Discovery, Trust & Verified Connector Directories"
+        ]
+      }
+    ],
+    "8d424512-c7f0-483c-9094-ca899d7bb1fd": [
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:5373a1",
+        "section": "### 00:00:05 — Integrating Daytona Across Competing Agent Frameworks",
+        "at_seconds": 5,
+        "quote": "But under the hood, all of these ways speak the three same lines, so it's sandbox creation, running some code or task inside the sandbox, and sandbox deletion.",
+        "claim": "Whether exposed as a tool, an external plugin, or a subclassed internal API, competing agent frameworks all reduce sandbox integration to the same three lifecycle primitives: create, execute, and delete.",
+        "speaker": "Mislav Ivanda",
+        "also_at": [
+          "### 00:01:58 — Why Frameworks That Agree on Nothing Converge on Sandboxes",
+          "### 00:10:16 — What Is Swappable vs. Execution Posture Lock-In"
+        ]
+      },
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:208:343caf",
+        "section": "### 00:03:28 — Three Isolation Models: Host Allowlists, Embedded Runtimes, and VMs",
+        "at_seconds": 208,
+        "quote": "these tools that your agent will call inside that runtime will actually run on your device outside that runtime.",
+        "claim": "Embedded runtimes like V8 or QuickJS isolate generated glue code but still execute registered tools on the host machine, allowing a compromised agent to act maliciously through privileged database or email tools.",
+        "speaker": "Mislav Ivanda",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:208:998ee7",
+        "section": "### 00:03:28 — Three Isolation Models: Host Allowlists, Embedded Runtimes, and VMs",
+        "at_seconds": 208,
+        "quote": "when you allow your cloud agent to run Python command with Python dash C, he can literally open any sockets, modify a file system, execute code, or do basically everything",
+        "claim": "Host-level command allowlists and approval prompts fail to bound what a compromised model can do because permitting a single interpreter command like `python -c` grants unrestricted socket, filesystem, and code execution access.",
+        "speaker": "Mislav Ivanda",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:460:78c912",
+        "section": "### 00:07:40 — Frameworks Deleting Local Code Executors in 2026",
+        "at_seconds": 460,
+        "quote": "And you can notice that they are not adding sandboxes, they already had them, but they are deleting all the alternatives",
+        "claim": "Across 2026 releases, agent frameworks such as CrewAI and AG2 are actively deleting legacy local code executors and forcing execution into isolated VM or process sandboxes that can be discarded upon compromise.",
+        "speaker": "Mislav Ivanda",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:558:1568f9",
+        "section": "### 00:09:18 — From Ephemeral Sandboxes to Agent Runtimes and RL Fleets",
+        "at_seconds": 558,
+        "quote": "if they can run thousands of these executions environments concurrently, they can do really interesting stuff, especially regarding reinforcement learning, fine-tuning, post-training benchmarks, evals.",
+        "claim": "Sandboxes have evolved from short-lived single-snippet executors into full agent runtimes and massively parallel fleets of thousands of concurrent environments powering reinforcement learning post-training, evaluations, and subagents.",
+        "speaker": "Mislav Ivanda",
+        "also_at": []
+      },
+      {
+        "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:616:d39737",
+        "section": "### 00:10:16 — What Is Swappable vs. Execution Posture Lock-In",
+        "at_seconds": 616,
+        "quote": "if you're guessing that you'll use first approach, where everything runs locally, then you write all your tools to use your host or app process environment, using your file system without separation and stuff like that.",
+        "claim": "While models, prompts, plugins, frameworks, and sandbox providers remain swappable, execution posture locks in system architecture because building a local POC couples every tool directly to the host process and filesystem.",
+        "speaker": "Mislav Ivanda",
+        "also_at": [
+          "### 00:13:41 — Pick the Execution Boundary Before the Framework"
+        ]
+      }
+    ],
+    "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:fb3d66",
+        "section": "### 00:00:00 — High-Conviction Bets & A Hedge Fund as a Function",
+        "at_seconds": 0,
+        "quote": "So at a high level, you can think about a hedge fund as a function that takes in two parameters — context external and context internal, and spits out one, two, volt selection size timing. What stock? How much? When?",
+        "claim": "Modeling a hedge fund as a function compressing external market data and internal firm context into `(stock, size, timing)` decision tuples frames portfolio construction as a composable engineering pipeline.",
+        "speaker": "Frank Long",
+        "also_at": []
+      },
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:85:aabcf9",
+        "section": "### 00:01:25 — API-Accessible Inputs: External & Internal Context",
+        "at_seconds": 85,
+        "quote": "Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API.",
+        "claim": "Agent capability is wasted unless every external market feed and internal firm record—positions, liquidity and risk constraints, and decades of trade decision notes—is exposed directly via API rather than UI copy-paste.",
+        "speaker": "Frank Long",
+        "also_at": []
+      },
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:293:23b9da",
+        "section": "### 00:04:53 — Case Study: Interpreting Korean Semiconductor News",
+        "at_seconds": 293,
+        "quote": "There's actually a lot of knobs here, and I almost think about those knobs — it's like hyperparameters in a traditional machine learning system, right? I think about each of these knobs as something for me to tune and optimize against.",
+        "claim": "Ingestion design choices—such as chunking, raw image versus OCR input, translation versus structured extraction, and cross-referencing internal notes—act as tunable hyperparameters over an evolving search space.",
+        "speaker": "Frank Long",
+        "also_at": [
+          "### 00:09:20 — Branching Control Flow & Tuning Hyperparameters"
+        ]
+      },
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:449:c27308",
+        "section": "### 00:07:29 — Four Function Runners: Code, ML, LLMs & People",
+        "at_seconds": 449,
+        "quote": "There is no glory in automating things for the sake of automating things. The goal is not to take as many things and make them LLMs as possible.",
+        "claim": "Each sub-function should be assigned whichever runner—deterministic code, classical ML regressions, LLMs, or human judgment—maximizes absolute quality for that step rather than automating with LLMs by default.",
+        "speaker": "Frank Long",
+        "also_at": []
+      },
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:560:8e18f4",
+        "section": "### 00:09:20 — Branching Control Flow & Tuning Hyperparameters",
+        "at_seconds": 560,
+        "quote": "So the way to think about breaking down these problems is, what can I actually compartmentalize in a way that we can understand and evaluate?",
+        "claim": "Because real steps combine multiple runners and tune model size, thinking effort, harness, skills, and hooks, workflows must be compartmentalized into evaluable units with a clear north-star metric.",
+        "speaker": "Frank Long",
+        "also_at": [
+          "### 00:03:13 — Decomposing the Function: Gather, Analyze, Decide"
+        ]
+      },
+      {
+        "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:736:6147ee",
+        "section": "### 00:12:16 — The Full Firm Graph & State Machines Beyond Investing",
+        "at_seconds": 736,
+        "quote": "In each of those nodes, we just talked about, at least ten hyperparameters with at least 20 different valid values for them. So the search space is basically infinite.",
+        "claim": "Composing multi-step transformations across every firm data source with 10+ hyperparameters and 20+ values per node yields an effectively infinite graph whose core challenge is technical and organizational legibility.",
+        "speaker": "Frank Long",
+        "also_at": []
+      }
+    ],
+    "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": [
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:6e8237",
+        "section": "### 00:00:00 — From Bitemporal Structured Data to Unstructured Knowledge in the Vault",
+        "at_seconds": 0,
+        "quote": "It is carefully aligned to our internal ontology with enrichments like the countries, concepts, markets, and most importantly, time period discuss in the document.",
+        "claim": "Bridgewater ingests over 100 million documents from 135 external sources plus internal memos and debate transcripts into Vault, enriching each document with ontology tags for countries, concepts, markets, and discussed time periods.",
+        "speaker": "Sam Green",
+        "also_at": []
+      },
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:140:b6e527",
+        "section": "### 00:02:20 — Open-Web Chat vs. Vault-Connected Query on the Korean Won",
+        "at_seconds": 140,
+        "quote": "And so for us, this is the big lesson for building vault to kind of motivate the talk, which is that it takes great data and the right connectors to make AI powerful.",
+        "claim": "On a live Korean won query, an open-web chat agent relied on one stale three-month-old note out of 15 results, whereas connecting the same agent to Vault time-scoped the search, matched 52 candidates, and synthesized seven current sources.",
+        "speaker": "Sam Green",
+        "also_at": []
+      },
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:383:b8188f",
+        "section": "### 00:06:23 — Benchmarking Precision at Ten & Native Vector Filtering",
+        "at_seconds": 383,
+        "quote": "Their approach, which they call native filtering, looks only in the nearest clusters if it can matches, and then scores just those.",
+        "claim": "Because production queries nearly always filter by date, source, or asset and agent storms exceed 100 to 1,000+ queries per second versus 100 per hour for humans, Bridgewater switched to turbopuffer's cluster-local native filtering to pair post-filtering speed with near pre-filtering recall.",
+        "speaker": "Aaron Linsky",
+        "also_at": [
+          "### 00:05:00 — Designing Search for Two Consumers: Humans vs. Agents"
+        ]
+      },
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:383:d68509",
+        "section": "### 00:06:23 — Benchmarking Precision at Ten & Native Vector Filtering",
+        "at_seconds": 383,
+        "quote": "The key metric we were looking at is precision at ten, which is of the top ten results, how many are the right documents, and we were hitting about sixty percent.",
+        "claim": "Hand-labeling roughly 200 representative investment queries in under a week established a baseline of 60% precision at ten and enabled systematic agentic search iterations that pushed precision to roughly 95%.",
+        "speaker": "Aaron Linsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:574:35c2cc",
+        "section": "### 00:09:34 — Migrating Investor Email Habits into Vault Workflows",
+        "at_seconds": 574,
+        "quote": "So that's exactly what we did: everything searchable, the subscriber lists became saved searches, and folders became saved collections. It's the same habits, just a new home.",
+        "claim": "Winning daily investor adoption required replicating familiar broker-email workflows inside Vault — converting distribution lists into saved searches and inbox folders into saved collections — before introducing cross-dataset queries, dynamic topic feeds, and CLI/Slack agent access.",
+        "speaker": "Aaron Linsky",
+        "also_at": []
+      },
+      {
+        "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:732:2a1afb",
+        "section": "### 00:12:12 — Proactive Agents, the Investor Workbench & Compounding Knowledge",
+        "at_seconds": 732,
+        "quote": "And when they dig deeper alongside the agent to look at the dynamic driving this question, the learnings are automatically captured — the results of their collaboration are automatically captured back in the model.",
+        "claim": "The proactive Investor Workbench pairs always-on topic cards and raw source evidence with deep-research agents like Pocket Analyst, automatically writing the resulting human-agent synthesis back into Vault so institutional knowledge compounds across research cycles.",
+        "speaker": "Sam Green",
+        "also_at": [
+          "### 00:11:07 — Pocket Analyst, Researcher, Forecaster & Investment Signals"
+        ]
+      }
+    ],
+    "af8422e8-d5f8-4dbd-a918-6360f5bfba80": [
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:150:e27c33",
+        "section": "### 00:02:30 — Scaling Next-Frame Prediction into Physical Understanding",
+        "at_seconds": 150,
+        "quote": "You're learning about physics. You're learning about object permanence. You're learning about gravity, you're learning about occlusion. You're learning about movements. You're learning about how the objects work in the real world.",
+        "claim": "Predicting sequential frames at scale forces video models to internalize real-world geometry, gravity, occlusion, and object permanence directly from pixel data without hand-coded physics laws.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      },
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:150:f3106c",
+        "section": "### 00:02:30 — Scaling Next-Frame Prediction into Physical Understanding",
+        "at_seconds": 150,
+        "quote": "I think we believe in scaling loss, not only applied for language models, but also for video, and this has been true.",
+        "claim": "Runway bets that compute scaling laws hold for next-frame video prediction just as they do for language models, yielding emergent visual realism that humans can no longer distinguish from real footage.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      },
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:420:7cb7e6",
+        "section": "### 00:07:00 — Real-Time Interactive Worlds & Embodied Robotics",
+        "at_seconds": 420,
+        "quote": "You take a frame, you predict next frame, then X, then X, then X, but then it can act at any point in time, in that prediction, which means I can simulate any possible divergence or action in that world.",
+        "claim": "Conditioning real-time frame prediction on interventions at arbitrary steps turns offline video models into branching counterfactual world simulators capable of serving as reasoning brains for embodied robots.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      },
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:509:9a3499",
+        "section": "### 00:08:29 — World Interface Models Without 3D Engines",
+        "at_seconds": 509,
+        "quote": "Now everything you just saw here has no physical 3D representation. There's no Unity. There's no Unreal. There's no Blender.",
+        "claim": "World interface models trained on UI clicks and user actions can manipulate objects and viewpoints inside a single 2D image in real time without any underlying 3D mesh or game engine.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      },
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:612:6fc75d",
+        "section": "### 00:10:12 — Continuum & Interactive Video Portals as an OS",
+        "at_seconds": 612,
+        "quote": "We call this a portal, and the portal is a real-time video. It's fully interactive and fully based on the content you're experiencing reading through.",
+        "claim": "Runway's Continuum research prototype treats a real-time world model as an operating system layer that turns structured web text into persistent, interactive video portals whose behavior adapts to clicks, queries, and window resizing.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      },
+      {
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:829:57e97e",
+        "section": "### 00:13:49 — Visual Thinking for Coding Agents",
+        "at_seconds": 829,
+        "quote": "So imagine you ask your coding agent to create a 3D model for your bike, and instead of the model trying to just think through that via code, the model can spin a version of Continuum to think through the problem visually.",
+        "claim": "Connecting a coding agent to Continuum gives it an interactive visual scratchpad to simulate spatial designs alongside code, letting humans inspect and steer the agent's imagination directly rather than through text alone.",
+        "speaker": "Cristóbal Valenzuela",
+        "also_at": []
+      }
+    ],
+    "b2ed4456-5671-4e8e-83fd-684c012fef8c": [
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:f8c0f8",
+        "section": "### 00:00:00 — The Agent Adoption Funnel and Rising Abstractions",
+        "at_seconds": 0,
+        "quote": "But really, those at the frontier labs are just super small percentages, like five thousand users are the ones who are running thousands and thousands of agents at once.",
+        "claim": "Out of roughly six billion people who have touched LLMs and 20 million professionals accelerating multi-week tasks into days, only about 5,000 frontier practitioners currently operate swarms of thousands of concurrent always-on agents.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": []
+      },
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:103:35847d",
+        "section": "### 00:01:43 — Building the Engineering Loop Over Individual Features",
+        "at_seconds": 103,
+        "quote": "As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop to write that feature.",
+        "claim": "AI engineering shifts from manually writing code, reviewing diffs, and checking dashboards to constructing automated build-eval-ship-monitor-improve systems where agents review non-deterministic execution paths and analyze telemetry.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": [
+          "### 00:13:42 — Closing the Gap Between Frontier Labs and Enterprise"
+        ]
+      },
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:250:21ad16",
+        "section": "### 00:04:10 — Observability Triggers and Isolated Agent Sandboxes",
+        "at_seconds": 250,
+        "quote": "how do you set up your telemetry data so that agents are the primary consumers of that data? And what that does is that observability data can become the trigger for actually running and triggering these always-on agents",
+        "claim": "Designing telemetry for agents as primary consumers turns scheduled 3-to-6-hour trace sweeps, metric thresholds, and Slack user complaints into automated triggers that wake isolated sandbox runs behind a single traced proxy.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": [
+          "### 00:02:55 — Signal: Always-On Agents Reading Production Traces"
+        ]
+      },
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:392:04af3c",
+        "section": "### 00:06:32 — Durable State, Ephemeral Teardown, and Harness Agnosticism",
+        "at_seconds": 392,
+        "quote": "What stays is that if it found any issues, all of the output is actually saved off in some kind of memory, so that the next time an agent gets spun up, it doesn't have to start from ground zero.",
+        "claim": "Signal decouples ephemeral compute from durable state — tearing down sandboxes, credentials, and repo access after each run while checkpointing step state, detected issues, traces, and learned skills externally across model- and harness-agnostic runners.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": []
+      },
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:7d5007",
+        "section": "### 00:09:45 — Aligning Evals with Human Judgment",
+        "at_seconds": 585,
+        "quote": "We run evals, verify them against the human output, and then try to align to make sure that the judge actually agrees with the human and they're in agreement before we actually ship out a new evaluator.",
+        "claim": "Because automated PR and production gates are only useful if trusted, AI engineers must curate golden datasets and meta-evaluate LLM judges until they align with human judgment before deploying them offline or online.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": []
+      },
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:730:dab2e2",
+        "section": "### 00:12:10 — Tracing the Agent Factory End-to-End",
+        "at_seconds": 730,
+        "quote": "And tracing everything now means not just tracing the agents, but also tracing the coding agents behind the agents that build this.",
+        "claim": "End-to-end observability must cover both production agents and the coding harnesses that build them (Claude Code, Cursor, Codex), using online evaluations over live traces to feed newly detected failures back into the improvement loop.",
+        "speaker": "Aparna Dhinakaran",
+        "also_at": []
+      }
+    ],
+    "b8bb725d-daf0-4ac0-8095-5737841c89e5": [
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:6dcba1",
+        "section": "### 00:00:00 — From Human Keyword Search to Agentic Web Search",
+        "at_seconds": 0,
+        "quote": "They tend to describe what they want to search in great detail, execute many searches, and want to understand the space more fully before they pass, and that means that they do way more searches on a post basis.",
+        "claim": "Unlike humans who enter brief keyword queries and stop early, AI agents issue high volumes of detailed, exploratory searches per task, requiring search infrastructure purpose-built for agentic retrieval.",
+        "speaker": "Ryan Ahern",
+        "also_at": []
+      },
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:211:0bdb42",
+        "section": "### 00:03:31 — Three Core Tenets: Quality, Dynamic Highlights & Low Latency",
+        "at_seconds": 211,
+        "quote": "we now do that across all of the search results, which means that you can actually get higher quality results at ninety-five percent fewer tokens than you would at full-page text.",
+        "claim": "Because search cost compounds across an agent's downstream inference trajectory rather than a single tool call, returning dynamic snippet highlights across results delivers higher accuracy at 95% fewer context tokens than full-page text.",
+        "speaker": "Ryan Ahern",
+        "also_at": []
+      },
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:389:2d5f60",
+        "section": "### 00:06:29 — Introducing Exa Snapshot: 400 Billion Versioned Web Pages",
+        "at_seconds": 389,
+        "quote": "So just recently, we released Exa Snapshot. It's 400 billion plus snapshots of the web, and you can search them by day.",
+        "claim": "By archiving page states during continuous freshness crawls, Exa Snapshot exposes over 400 billion daily-indexed web snapshots for both point-in-time URL lookups and historical semantic search queries.",
+        "speaker": "Ryan Ahern",
+        "also_at": []
+      },
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:470:d6c2be",
+        "section": "### 00:07:50 — Point-in-Time Revenue Signals & Avoiding Leakage in Backtests",
+        "at_seconds": 470,
+        "quote": "So I'm gonna go like one day before the announcement, seven days before the announcement, a month before the announcement, and see whether I could or could not predict it, right?",
+        "claim": "Testing predictive models on live web search leaks post-event outcomes, whereas querying snapshots at fixed horizons before an event evaluates what signals were genuinely discoverable without lookahead bias.",
+        "speaker": "Ryan Ahern",
+        "also_at": [
+          "### 00:11:18 — Three Backtesting Archetypes: Enriched ML, Agentic Features & Full Agents"
+        ]
+      },
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:678:f91ae8",
+        "section": "### 00:11:18 — Three Backtesting Archetypes: Enriched ML, Agentic Features & Full Agents",
+        "at_seconds": 678,
+        "quote": "You can actually go back and back test that against your existing processes and say, hey, it was better.",
+        "claim": "Across traditional ML feature enrichment, hybrid models adding agentic adverse-media or equity scans, and end-to-end prediction agents, point-in-time snapshots let teams empirically prove historical lift over baseline processes.",
+        "speaker": "Ryan Ahern",
+        "also_at": [
+          "### 00:18:04 — Recap: Agentic Web Search & Point-in-Time Backtesting"
+        ]
+      },
+      {
+        "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:936:988ebe",
+        "section": "### 00:15:36 — Workshop Acquisition Signals, Overfitting & Complex Semantic Features",
+        "at_seconds": 936,
+        "quote": "You might be waiting for months to try and see how and why your agent set up actually is predictive or is overfitting in different ways.",
+        "claim": "Without historical web snapshots and holdout sets, iterating on expressive semantic search features requires waiting months in live production to tell whether an agentic signal generalizes or overfits.",
+        "speaker": "Ryan Ahern",
+        "also_at": [
+          "### 00:07:50 — Point-in-Time Revenue Signals & Avoiding Leakage in Backtests"
+        ]
+      }
+    ],
+    "bdab432a-0538-4431-ad5a-62653affd9da": [
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:139:10a586",
+        "section": "### 00:02:19 — Building a Naive Sandbox Reviewer and Five Failure Modes",
+        "at_seconds": 139,
+        "quote": "You just see lots and lots of comments and it's kind of annoying for you to just read through them, figure out which ones are just minor stylistic complaints and which ones are actually catastrophic problems.",
+        "claim": "Naive sandboxed PR review agents burn $3 to $25 per pull request while flooding diffs with banal nitpicks that obscure catastrophic bugs for humans and push coding agents into writing overly defensive code.",
+        "speaker": "Daksh Gupta",
+        "also_at": []
+      },
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:341:7c6553",
+        "section": "### 00:05:41 — Prompt Optimization and Historical Incident Eval Datasets",
+        "at_seconds": 341,
+        "quote": "the validation against really any reviewer can tell you about the presence of bugs, but unfortunately can't tell you about the absence of bugs.",
+        "claim": "Because catastrophic bugs occur in roughly one in a thousand pull requests and live review output cannot prove bug absence, prompt changes must be benchmarked against a catalog of historical outage-causing PRs.",
+        "speaker": "Daksh Gupta",
+        "also_at": []
+      },
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:522:289745",
+        "section": "### 00:08:42 — Inverting Author and Reviewer Models to Catch Blind Spots",
+        "at_seconds": 522,
+        "quote": "And so you want to invert the model. If you use hard code to write the code, you want to use the GPT model to review it.",
+        "claim": "Because model families exhibit distinct post-training blind spots and fail identically during generation and review, pairing an authoring agent with a different model family for review increases bug catch rates by 10%.",
+        "speaker": "Daksh Gupta",
+        "also_at": []
+      },
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:645:9cc1d6",
+        "section": "### 00:10:45 — Replacing Expensive Grep with a Living Company Wiki",
+        "at_seconds": 645,
+        "quote": "Now, the way that Greptile approaches this problem is we actually disintermediate all of these context sources with a living wiki. This wiki is essentially a sort of world model of how your company works.",
+        "claim": "Replacing imprecise, token-heavy grep searches with a continuously maintained wiki that synthesizes codebase architecture, production telemetry, docs, and tickets gives review agents surgical tribal context.",
+        "speaker": "Daksh Gupta",
+        "also_at": []
+      },
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:844:82cb22",
+        "section": "### 00:14:04 — Autonomous End-to-End QA in Dependency-Rich Sandboxes",
+        "at_seconds": 844,
+        "quote": "And using this, you can now test your content and use vision models to say, oh, this button technically appears, but it's actually hidden on iPhones. It's not in the first fold on the iPhone Duo.",
+        "claim": "Booting the full application stack inside configurable dependency-rich VM sandboxes with documented user-flow maps allows computer-use and vision models to catch layout and UI regressions that static diff inspection misses.",
+        "speaker": "Daksh Gupta",
+        "also_at": []
+      },
+      {
+        "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:945:149a8b",
+        "section": "### 00:15:45 — Routing Subtasks Across Frontier and Lightweight Models",
+        "at_seconds": 945,
+        "quote": "In practice, we have actually twenty different subtasks, and each of them has a very specific sense model to be used, and our small research team is constantly iterating exactly what models we need for the task.",
+        "claim": "Decomposing review into twenty specialized subtasks—reserving frontier models for the critical 20% like deep bug analysis while routing context reranking and flow checks to small models—slashes inference cost when guarded by evals.",
+        "speaker": "Daksh Gupta",
+        "also_at": [
+          "### 00:00:00 — Three Pillars of Production AI Code Review"
+        ]
+      }
+    ],
+    "c34c075b-c695-4227-bf8e-3b4eeb3460d9": [
+      {
+        "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:95:1965e6",
+        "section": "### 00:01:35 — Talks as Surface Area for Edge Conversations",
+        "at_seconds": 95,
+        "quote": "The depth by which they talk about the work they're doing is incredible, but this is also just surface area that acts as a starting point for conversation amongst everyone in the room",
+        "claim": "Technical conference presentations serve primarily as shared surface area to spark deeper hallway conversations among practitioners solving frontier AI engineering challenges.",
+        "speaker": "Alex Lieberman",
+        "also_at": [
+          "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones"
+        ]
+      },
+      {
+        "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:16f690",
+        "section": "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones",
+        "at_seconds": 149,
+        "quote": "Under that is people actually getting trained in how to use the technology, how to actually use these surfaces in their work — that's like sixty percent.",
+        "claim": "Enterprise diffusion drops by 30 percentage points between provisioning an LLM (90%) and formally training employees to apply those AI surfaces in daily workflows (~60%).",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      },
+      {
+        "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:29e0b6",
+        "section": "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones",
+        "at_seconds": 149,
+        "quote": "the final one where we are truly still day one is agents actually working in non-engineering workloads in an organization, that is around five percent right now.",
+        "claim": "Autonomous agents running in non-engineering business functions sit at roughly 5% enterprise adoption, defining a 12-to-36-month diffusion frontier alongside open-source versus fine-tuned model selection and scaling AI engineer hiring.",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      },
+      {
+        "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:2be645",
+        "section": "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones",
+        "at_seconds": 149,
+        "quote": "Next up is coding agents, agents that are actually used within engineering and product workflows — that's around 50% of all the enterprises we've been in",
+        "claim": "Roughly 50% of surveyed large enterprises have deployed coding agents inside software engineering and product workflows, making software delivery the leading production agent beachhead.",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      },
+      {
+        "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:149:fa3d07",
+        "section": "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones",
+        "at_seconds": 149,
+        "quote": "So ninety percent of the enterprises we work with have rolled out general-purpose LLM.",
+        "claim": "Across roughly a hundred large enterprises Tenex advises in financial services, healthcare, and industrials, foundational employee access to a general-purpose LLM has reached about 90% penetration.",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      }
+    ],
+    "c4ba0138-6f6d-4780-93a1-4d8f0c478339": [
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:89:546f57",
+        "section": "### 00:01:29 — Telecom Q&A and the Weekly Chatbot Review Bottleneck",
+        "at_seconds": 89,
+        "quote": "And for those that actually tried it, if you found the right page or the right documents, ninety percent of the time, you have actually the right answer.",
+        "claim": "In enterprise Q&A over roughly 10,000 telecom vendor documents, retrieving the right source page produces the right answer 90% of the time, reducing evaluation primarily to deterministic page-retrieval verification.",
+        "speaker": "Nathanael Weill",
+        "also_at": []
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:331:4b3cb7",
+        "section": "### 00:05:31 — Inverting RAG Evaluation by Starting from the Source Page",
+        "at_seconds": 331,
+        "quote": "So the impact of that is we went from one iteration week to business day, and we start to see the accuracy or the rating from the experts going up and up, and actually, removing a lot of complexity.",
+        "claim": "Generating synthetic questions from known source pages and checking retrieval in code accelerated iteration from one experiment per week to one per business day while eliminating brittle pipeline rules.",
+        "speaker": "Nathanael Weill",
+        "also_at": [
+          "### 00:01:29 — Telecom Q&A and the Weekly Chatbot Review Bottleneck"
+        ]
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:637:e5b633",
+        "section": "### 00:10:37 — Historical Contract Diffs and Rule-Driven Synthesis",
+        "at_seconds": 637,
+        "quote": "However, for many reasons, our team doesn't keep all the contract. They don't keep the original one. They just — so we could not have any of those pairs of contracts. So this thing doesn't work.",
+        "claim": "Evaluating supplier contract review via code-style diffs between initial drafts and signed agreements failed because procurement teams do not archive unsigned original contracts alongside final versions.",
+        "speaker": "Nathanael Weill",
+        "also_at": []
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:816:29b5f5",
+        "section": "### 00:13:36 — Clause Removal, Invariance Perturbations, and Blank Templates",
+        "at_seconds": 816,
+        "quote": "instead of trying to fill them, we generate an array for each of those blanks, which — some covers break some wood. Some covers doesn't. We know that. So we know what actually should be tagged as a breach or not.",
+        "claim": "Populating existing legal contract templates with synthetic clause arrays engineered to either violate or satisfy known rules creates ground-truth breach labels by construction and runs evaluations in five minutes.",
+        "speaker": "Nathanael Weill",
+        "also_at": []
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:978:66d67f",
+        "section": "### 00:16:18 — Why Deterministic Checks Beat Noisy LLM Judges",
+        "at_seconds": 978,
+        "quote": "Like we got so much noise compared to the noise with the with the agents that we're doing. Solving this problem is almost as hard as solving the whiteboard.",
+        "claim": "LLM-as-judge scoring introduced variance comparable to the contract agent's own error rate, making calibrating a judge harness nearly as hard as building the underlying agent.",
+        "speaker": "Nathanael Weill",
+        "also_at": []
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:1033:780190",
+        "section": "### 00:17:13 — Reengineering Agents Around Evaluability",
+        "at_seconds": 1033,
+        "quote": "The original design we could not evaluate it. We switched to something that we can actually evaluate because of that.",
+        "claim": "When an agent's original workflow design resists deterministic evaluation, teams should re-architect the system around evaluable intermediate steps rather than shipping an unmeasurable design.",
+        "speaker": "Nathanael Weill",
+        "also_at": []
+      }
+    ],
+    "c901e963-5be9-4a1d-86a3-d9354374bbcd": [
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:174:56c01f",
+        "section": "### 00:02:54 — Move One: Measuring Token Spend by Key",
+        "at_seconds": 174,
+        "quote": "Like you need to start splitting up your keys. Start splitting up by departments. Start splitting up by major use cases so that you know where all your token spends are",
+        "claim": "Issuing separate API keys per department and use case is the highest-ROI first step in cost optimization because 30–40% of organizations share a single key that hides workload economics.",
+        "speaker": "Eugene Cheah",
+        "also_at": [
+          "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives",
+          "### 00:41:48 — Slop Grenades, Ownership & Measuring Real Outcomes"
+        ]
+      },
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:784:c7889c",
+        "section": "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives",
+        "at_seconds": 784,
+        "quote": "People want to get their work done fast. If the model is smart enough to get it done, and it's cheaper, they will just use it because it's faster, not because it's cheaper.",
+        "claim": "Developers rarely switch from frontier planners to cheaper worker models to save company budget, so serving the cheaper model at higher tokens-per-second is the incentive that actually drives adoption.",
+        "speaker": "Eugene Cheah",
+        "also_at": [
+          "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing"
+        ]
+      },
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:1226:7391b9",
+        "section": "### 00:20:26 — Process Track Right-Sizing, Evals & Domain Fine-Tuning",
+        "at_seconds": 1226,
+        "quote": "You just need to make sure you set up your test cases, your e-dos, and your examples, and then subsequently just do the search process from there.",
+        "claim": "Right-sizing high-volume process workloads starts with building task-specific eval suites and searching open-weight models for the cheapest passing baseline before prompt-tuning or distilling down to 7B–27B domain models.",
+        "speaker": "Eugene Cheah",
+        "also_at": [
+          "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing"
+        ]
+      },
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:1720:dcaa62",
+        "section": "### 00:28:40 — Move Three: GPU Throughput vs. Latency Cost",
+        "at_seconds": 1720,
+        "quote": "It's not even close, like a rule of thumb that I sometimes say, right: for every two x of speed, it's three x of cost",
+        "claim": "Per-request token speed scales superlinearly in hardware cost—roughly 3x cost per 2x tokens-per-second—so low-latency serving belongs only on interactive paths while background and CI/CD jobs run batched.",
+        "speaker": "Eugene Cheah",
+        "also_at": [
+          "### 00:02:54 — Move One: Measuring Token Spend by Key",
+          "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives"
+        ]
+      },
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:2508:08a8d4",
+        "section": "### 00:41:48 — Slop Grenades, Ownership & Measuring Real Outcomes",
+        "at_seconds": 2508,
+        "quote": "to prevent the slop grenade from happening, enforce that people should own what they hand over or generate.",
+        "claim": "Unchecked AI generation creates downstream review bottlenecks when unverified code or decks shift verification onto peers, requiring strict human ownership of outputs and outcome-per-dollar metrics rather than token usage.",
+        "speaker": "Eugene Cheah",
+        "also_at": [
+          "### 00:34:14 — Move Four: Review Bottlenecks & Organizational Trust"
+        ]
+      },
+      {
+        "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:2686:761c96",
+        "section": "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing",
+        "at_seconds": 2686,
+        "quote": "but if you put in thirty models and it keeps changing your model every turn, your low cash heat rate will start to wreck your optimization.",
+        "claim": "Turn-by-turn auto-routing across many models invalidates prefix KV caches on multi-turn agentic workloads, so routing should be task-based by department label or restricted to two to three models.",
+        "speaker": "Eugene Cheah",
+        "also_at": []
+      }
+    ],
+    "cada670e-c5ea-4977-b3c2-9a68dda26abb": [
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:506221",
+        "section": "### 00:00:09 — Observing While Acting: Why LLMs Struggle in Space and Time",
+        "at_seconds": 9,
+        "quote": "Olaf can, unlike LLMs, which auto-regressively predict tokens, constantly, part of that behavior is that it's constantly observing as it is acting.",
+        "claim": "Autoregressive, turn-based LLMs struggle with spatial-temporal control because real-time physical and virtual agents must continuously observe incoming sensory frames while simultaneously executing actions.",
+        "speaker": "Pim de Witte",
+        "also_at": [
+          "### 00:04:12 — Turn-Based Coding Models vs. Continuous Pixel-to-Action Streams"
+        ]
+      },
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:153:ebe8f8",
+        "section": "### 00:02:33 — From Medal's Game Clips to Shared Controller Action Spaces",
+        "at_seconds": 153,
+        "quote": "So what this means is that the action space for video games, often because of game controllers, and the action space for operations or the real world many cases are the same.",
+        "claim": "Because low-degree-of-freedom robots ship with standard game controllers that abstract away raw motor torque, gameplay controller action spaces map directly onto real-world robotic teleoperation.",
+        "speaker": "Pim de Witte",
+        "also_at": [
+          "### 00:06:01 — Human Controllers vs. End-to-End Motor Torque & Medal's Scale"
+        ]
+      },
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:361:462b67",
+        "section": "### 00:06:01 — Human Controllers vs. End-to-End Motor Torque & Medal's Scale",
+        "at_seconds": 361,
+        "quote": "Medal at the moment sees about a billion videos uploaded per year. This year, we're on track for three billion, which lead to over a trillion and a half actions taken per month.",
+        "claim": "Medal's gameplay recorder is scaling from one billion to three billion uploaded videos annually, generating over 1.5 trillion action-labeled inputs per month and matching frontier robotics training volume in half a day.",
+        "speaker": "Pim de Witte",
+        "also_at": []
+      },
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:473:d64a73",
+        "section": "### 00:07:53 — World Models, Native Human Modality, and High-APM Action Density",
+        "at_seconds": 473,
+        "quote": "You don't want to start with tell operations because the human moves take a lot less actions. It has a lot less information, so you want a model that can predict really high APM.",
+        "claim": "High-APM gameplay trajectories provide far denser simultaneous multi-key supervision than sparse human teleoperation recordings, bringing high-frequency control tasks like drone micro-adjustment within reach.",
+        "speaker": "Pim de Witte",
+        "also_at": []
+      },
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:631:5e50ed",
+        "section": "### 00:10:31 — Real-Time Capabilities, Orchestrator Integration, and Accessibility",
+        "at_seconds": 631,
+        "quote": "we still expect you to use an orchestrator model, so you may use something like Gemini or Astro in order to do long-term planning and everything, and you'll be able to plug these into your workloads.",
+        "claim": "In production architectures, real-time pixel-to-action models serve as a fast reactive control layer plugged beneath a frontier LLM orchestrator such as Gemini that handles long-horizon planning.",
+        "speaker": "Pim de Witte",
+        "also_at": []
+      },
+      {
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:1062:f5d648",
+        "section": "### 00:17:42 — Q&A: Explicit Action Labels vs. JEPA Inferred Actions",
+        "at_seconds": 1062,
+        "quote": "There's no way of being able to tell that from the video frames. It's very difficult, so our mode of having the action data really transfers better to action sequences than it does to world models and to generate the pixels.",
+        "claim": "Training directly on explicit controller action labels transfers better to action prediction than JEPA-style latent action inference from video alone because subtle inputs like aircraft rudder movements are visually unobservable in pixel frames.",
+        "speaker": "Pim de Witte",
+        "also_at": []
+      }
+    ],
+    "caecd5f6-b352-4868-a995-f0f71679caf0": [
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:f9e36e",
+        "section": "### 00:00:00 — The Bitter Lesson vs. Shipping Agents Today",
+        "at_seconds": 0,
+        "quote": "The use of LLMs has increased 123 percent, while at the same time, a lot of our top features are growing in token spend, but on a unit economic basis, they're actually becoming cheaper",
+        "claim": "Although total LLM usage at Ramp grew 123% and aggregate feature token spend keeps rising, unit economics continue falling as faster, cheaper frontier models ship.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": []
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:140:63798f",
+        "section": "### 00:02:20 — Post-Training a Specialist Model for Ramp Sheets",
+        "at_seconds": 140,
+        "quote": "we partnered with the company Prime Insights to post train a Quan 3.5, 35 billion model, and we actually got above Bitcoin six, which was the frontier back then, exact pass accuracy",
+        "claim": "Pairing a frontier orchestrator with a post-trained 35B Qwen specialist model for financial question-answering surpassed the frontier model on exact-pass accuracy while serving Ramp Sheets at much lower latency.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": []
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:309:7af997",
+        "section": "### 00:05:09 — KV Cache Compression with Offline Cartridges",
+        "at_seconds": 309,
+        "quote": "cartridges are really interesting family of techniques where you're able to compress a lot of context, up to 20 to 30 times more context, into the KB cache offline and serve it for your agent.",
+        "claim": "Offline KV-cache cartridges compress 20x to 30x more predictable context—such as ledgers and aging reports prepared overnight before month-end close—with lower engineering lift and broader generalizability than post-training.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": []
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:423:d158ac",
+        "section": "### 00:07:03 — Agentic MapReduce & 10,000-Agent Security Swarms",
+        "at_seconds": 423,
+        "quote": "you can actually use open weight models that are up to five times cheaper compared to the frontier reasoning, and because you're set, setting it up as a swarm, the detection rate is not five times lower",
+        "claim": "In Ramp's 10,000-agent MapReduce pentesting swarm—which uncovered seven high-severity vulnerabilities including a multi-component email script injection—open-weight models up to 5x cheaper retain most of frontier detection accuracy when scaled across parallel runs.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": []
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:562:0c1b36",
+        "section": "### 00:09:22 — Token Spend Management & Latency Routing Products",
+        "at_seconds": 562,
+        "quote": "we created a taxonomy that contextually analyzes and semantically analyzes the LLM usage, so you can actually understand how LLMs are being used outside of just attributing it to a team or a person inside of your company.",
+        "claim": "Ramp's token spend management product applies semantic taxonomy classification to API traffic so enterprises can attribute LLM spend to accounting categories and R&D tax credits rather than raw per-user or per-key totals.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": [
+          "### 00:11:16 — Cross-Model Transfer, Self-Improving Monitors & Semantic Tagging"
+        ]
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:676:7fbb5a",
+        "section": "### 00:11:16 — Cross-Model Transfer, Self-Improving Monitors & Semantic Tagging",
+        "at_seconds": 676,
+        "quote": "Notably, one of the really interesting ones is Portal, where we figured out a way of transferring learnings from one post trained to another",
+        "claim": "Ramp Labs' Portal projects latent post-training updates from an older specialist model onto newer model versions or families, amortizing post-training investment across base-model upgrades.",
+        "speaker": "Alexander Shevchenko",
+        "also_at": []
+      }
+    ],
+    "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": [
+      {
+        "claim_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:0:ab055f",
+        "section": "### 00:00:00 — Day One Talk Highlights",
+        "at_seconds": 0,
+        "quote": "We had Dillon talking about building agents on owned versus rented land, and then we had Frank talking about how they think about leveraging applied AI as it relates to making decisions around investments.",
+        "claim": "The closing keynote block bridged foundational pixels-to-actions world models, architectural trade-offs between building agents on owned versus rented infrastructure, and applied AI workflows for investment decision-making.",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      },
+      {
+        "claim_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:18:ea86f0",
+        "section": "### 00:00:18 — Speaker Applause & Final Housekeeping",
+        "at_seconds": 18,
+        "quote": "Again, that is surface area for you to be able to connect with others and live in Edge City by having intellectually stimulating conversations.",
+        "claim": "Conference talks function primarily as shared intellectual surface area to spark high-bandwidth, in-person conversations among attendees rather than serving as standalone passive content.",
+        "speaker": "Alex Lieberman",
+        "also_at": []
+      }
+    ],
+    "edb4f982-0cb8-48ee-8bf7-410255a40cb3": [
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:167:9503a8",
+        "section": "### 00:02:47 — Midnight Snack Club & Silent Persistence Failures",
+        "at_seconds": 167,
+        "quote": "And yes, it did do something to the UI, but we didn't check the other half. And so it was never persisted, and we lost that email.",
+        "claim": "Shallow UI-only assertions produce false-positive agent completions when optimistic DOM updates mask missing backend or storage persistence across page reloads.",
+        "speaker": null,
+        "also_at": [
+          "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo",
+          "### 00:33:40 — Outcome-Driven Constraints & Live Persistence Debugging"
+        ]
+      },
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:645:9366a8",
+        "section": "### 00:10:45 — Centralized Verification Harnesses: Ctx & Riker",
+        "at_seconds": 645,
+        "quote": "They go off and do that work. They come back through the MCP connection to Ctx and say, \"This is what I've completed. Am I done? Please verify.\"",
+        "claim": "Centralizing verification authority behind an external MCP web service decouples workflow completion gates from agent self-reporting, marking tasks satisfied only after independent CLI and API checks pass.",
+        "speaker": null,
+        "also_at": []
+      },
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1192:2a01fb",
+        "section": "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo",
+        "at_seconds": 1192,
+        "quote": "So when you want that, if you have all those verifiers in place, then your software doesn't matter as much. You can write it again and prove that it works.",
+        "claim": "Application-specific deterministic verifier CLIs become more durable assets than the application code itself because they allow teams to rewrite or port implementations while proving behavioral equivalence.",
+        "speaker": null,
+        "also_at": [
+          "### 00:16:07 — From Vague Browser Prompts to Deterministic Scripts",
+          "### 00:48:23 — Verifier CLIs, Overnight Receipt Loops & Final Q&A"
+        ]
+      },
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1802:573a23",
+        "section": "### 00:30:02 — Playwright Proof Commands, Self-Healing & Explicit Errors",
+        "at_seconds": 1802,
+        "quote": "So if you make it so that your failure is explicit about why it failed, and give as much detail as possible about how it got into that state, then your AI can just self heal from that",
+        "claim": "Emitting explicit, state-detailed error messages from application and test tooling turns failed verification runs into closed feedback loops that agents can diagnose and self-heal autonomously.",
+        "speaker": null,
+        "also_at": []
+      },
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2020:ef854a",
+        "section": "### 00:33:40 — Outcome-Driven Constraints & Live Persistence Debugging",
+        "at_seconds": 2020,
+        "quote": "It's more about giving it the map, saying you must get here. You'll know you're here when this command returns to us.",
+        "claim": "Defining tasks by an executable proof command rather than step-by-step procedural instructions improves frontier agent performance by constraining the target outcome while leaving exploration paths open.",
+        "speaker": "Zack Proser",
+        "also_at": [
+          "### 00:07:02 — Recursive Self-Improvement & Defining Clear Outcomes"
+        ]
+      },
+      {
+        "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2287:bcfc25",
+        "section": "### 00:38:07 — Saving Run Receipts & System 1 Judge Models",
+        "at_seconds": 2287,
+        "quote": "So how would we fix that without adding a lot of tight coupling to everything that we're doing? The answer is the System One models, which we'll get into here.",
+        "claim": "Pairing deterministic proof scripts with fast System 1 judge models evaluates semantic UI correctness without brittle string-matching contracts breaking whenever confirmation copy changes.",
+        "speaker": null,
+        "also_at": [
+          "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo"
+        ]
+      }
+    ],
+    "ee927042-2ba1-44c3-b304-d001ae247839": [
+      {
+        "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:18:2c5997",
+        "section": "### 00:00:18 — Policy as Institutional Intent vs. the Running System",
+        "at_seconds": 18,
+        "quote": "Everything is expected to still be roughly bound by policy, but ultimately, we separate this from the run state and the build state.",
+        "claim": "Regulated systems must architecturally separate build-time policy definition from the run-time production system, which mutates continuously through product changes while remaining bound by policy constraints.",
+        "speaker": "Evan Kormos",
+        "also_at": []
+      },
+      {
+        "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:18:afda72",
+        "section": "### 00:00:18 — Policy as Institutional Intent vs. the Running System",
+        "at_seconds": 18,
+        "quote": "Think of policy as the original institutional intent, or the original system prompt.",
+        "claim": "Written enterprise and risk-compliance policy—expressed through normative must, may, and should rules—functions as the organization's foundational system prompt governing how operational decisions are made.",
+        "speaker": "Evan Kormos",
+        "also_at": []
+      },
+      {
+        "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:149:ffcb80",
+        "section": "### 00:02:29 — Agents Across People, Process, and Technology",
+        "at_seconds": 149,
+        "quote": "So I see them as an operational model cutting across all three. They work with people, execute parts of the process themselves, and they use and are made up of technology.",
+        "claim": "In enterprise governance, agents act as a cross-cutting operational model spanning people, process, and technology simultaneously—collaborating with human staff, executing workflow steps directly, and operating within explicit process boundaries.",
+        "speaker": "Evan Kormos",
+        "also_at": []
+      },
+      {
+        "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:199:c8301b",
+        "section": "### 00:03:19 — Mapping Gated Workflows and Parallel Reviews as DAGs",
+        "at_seconds": 199,
+        "quote": "Previously, some work used to cost too much or be too complex to coordinate in this way. Now we can run independent reviews alongside each other, bring results together, but keep the required checks in place.",
+        "claim": "Modeling gated approval flows as directed acyclic graphs (DAGs) lets agents execute previously cost-prohibitive independent reviews in parallel and aggregate their results without bypassing required compliance gates.",
+        "speaker": "Evan Kormos",
+        "also_at": []
+      }
+    ],
+    "f7204e6d-a47c-4535-804e-16b4db579b95": [
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:edfe8b",
+        "section": "### 00:00:07 — Builder Agents, Three-Review Loops, and Child QA",
+        "at_seconds": 7,
+        "quote": "We typically stick to a three-review max, where we allow the builders to loop about three times with reviews.",
+        "claim": "Builder agents run automated review loops capped at three iterations alongside child QA processes, escalating unresolved bugs to a manager agent and only then to the human.",
+        "speaker": "Ryan Carson",
+        "also_at": []
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:100:fa82db",
+        "section": "### 00:01:40 — Mandatory Feature Videos for Human-in-the-Loop Review",
+        "at_seconds": 100,
+        "quote": "Every builder records a video of the feature being used and passing tests.",
+        "claim": "Every builder agent records a video of the feature passing automated tests, making human product-owner inspection of that video on a laptop the irreducible quality gate before merge.",
+        "speaker": "Ryan Carson",
+        "also_at": []
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:218:546b51",
+        "section": "### 00:03:38 — Multi-Session Agent Messaging and the Merge Manager",
+        "at_seconds": 218,
+        "quote": "Like if all the agents are trying to grab these things, you constantly collide, right? So the merge manager just helps all that go away, but also is a little more intelligent about how the merge deals happen.",
+        "claim": "A dedicated merge-manager agent session coordinates the wave of concurrent pull requests to prevent shared-state collisions such as conflicting database migration numbers.",
+        "speaker": "Ryan Carson",
+        "also_at": []
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:218:6f74a7",
+        "section": "### 00:03:38 — Multi-Session Agent Messaging and the Merge Manager",
+        "at_seconds": 218,
+        "quote": "I don't care whatever it is, but if you're running local dev, you are screwing up. You're holding yourself back. You're holding your team back. You're holding everything back, because you can't do this.",
+        "claim": "Engineers who still code in local development environments bottleneck their teams because local workflows cannot orchestrate fleets of parallel, inter-communicating cloud agent sessions.",
+        "speaker": "Ryan Carson",
+        "also_at": []
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:383:f2d6fb",
+        "section": "### 00:06:23 — Eliminating Hiring Bias with Agent Screen Recordings",
+        "at_seconds": 383,
+        "quote": "You'll like their hobbies. You'll like the way they talk to you. You'll think they're interesting, and it's all noise. None of it is real, right? All that matters is can they operate an agent?",
+        "claim": "Untangle eliminates resumes, pre-screens, and video interviews to avoid interpersonal bias, evaluating candidates instead by having models stack-rank unguided 45-minute screen recordings of them operating agents to ship a PR.",
+        "speaker": "Ryan Carson",
+        "also_at": [
+          "### 00:08:39 — Sixteen-Hour Paid Trials and Untangle's Mission"
+        ]
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:519:08edc3",
+        "section": "### 00:08:39 — Sixteen-Hour Paid Trials and Untangle's Mission",
+        "at_seconds": 519,
+        "quote": "Then we basically pick the top five, and we invite them to a paid project. So we pay a fixed fee for sixteen hours at a time.",
+        "claim": "The top five stack-ranked candidates complete paid 16-hour recorded trials shipping a real PR under NDA, with AI and human video review selecting finalists before any phone conversation happens.",
+        "speaker": "Ryan Carson",
+        "also_at": []
+      }
+    ],
+    "fca86857-d079-46a6-94a7-62b0bb8e5d31": [
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:74:1095f9",
+        "section": "### 00:01:14 — Context Windows, KV Cache, and vLLM Version Drift",
+        "at_seconds": 74,
+        "quote": "A lot of times, I see people are using the wrong v11 version. They might they're probably not using the nightly version. They have the wrong size for the contacts window.",
+        "claim": "Teams deploying newly released open models frequently trigger serving errors, hallucinations, and KV-cache exhaustion by running stale vLLM releases instead of nightly builds and over-allocating context windows without sizing for concurrency.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      },
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:208:2ab630",
+        "section": "### 00:03:28 — BenchPod Architecture: Dockerized vLLM & Self-Healing Watchdogs",
+        "at_seconds": 208,
+        "quote": "You have to wait for cold starts to happen. It's all this loading, and you're not moving as fast. You're waiting like 30 minutes like for Kimi K3 to like download the weights, loading the GPU.",
+        "claim": "Restarting container images on every vLLM flag change stalls tuning behind 30-minute weight downloads and GPU cold starts, motivating BenchPod's live YAML reload and multi-node self-healing watchdog.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      },
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:391:fec874",
+        "section": "### 00:06:31 — Live Dashboard Walkthrough: GPU Metrics & Cold Starts",
+        "at_seconds": 391,
+        "quote": "It's all based fast API calls, so your agent easily just call all those things. You can actually just serve everything. Like you don't even have to use the UI.",
+        "claim": "Exposing GPU telemetry, error scans, and vLLM configuration reloads over backed-up FastAPI endpoints enables coding agents to run serving benchmarks and optimize flags programmatically without human UI intervention.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      },
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:586:2647f2",
+        "section": "### 00:09:46 — Benchmarking Batch Tokens, Latency, and Serverless Scaling",
+        "at_seconds": 586,
+        "quote": "But an interesting thing that I did notice of increasing that is like the inter-token latency actually decreases quite a bit when you increase that batch tokens",
+        "claim": "Under concurrent Kimi benchmark loads, raising vLLM's max batched tokens leaves time-to-first-token largely unchanged while substantially cutting inter-token latency and end-to-end completion time on long agentic jobs.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      },
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:845:0ff370",
+        "section": "### 00:14:05 — Right-Sizing Frontier Models vs. Smaller Deployments",
+        "at_seconds": 845,
+        "quote": "And just because it's the frontier model, it doesn't make sense. Like I said, like guy runs deepseek on a 48200s and does a really good job. Kimmy's more for like long tasks that I'm trying to solve something like very detailed.",
+        "claim": "Right-sizing self-hosted inference means matching model scale to workload complexity—serving DeepSeek on four H200 GPUs handles routine production traffic cost-effectively, reserving frontier models like Kimi for long-horizon tasks.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      },
+      {
+        "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:970:0e49c1",
+        "section": "### 00:16:10 — Q&A: Disaggregated Serving, Ray Clusters, and Caching",
+        "at_seconds": 970,
+        "quote": "But once you start serving to, you know, millions of users, that's where I think, I mean, desired serving, and also like your caching mechanism is important.",
+        "claim": "While multi-node vLLM pods suffice for roughly 50 internal users, scaling self-hosted inference to millions of users requires disaggregated prefill-decode serving over Ray clusters paired with dedicated KV-caching layers like LMCache.",
+        "speaker": "Chris Vela",
+        "also_at": []
+      }
+    ]
+  },
+  "coverage": {
+    "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
+      "sections_read": [
+        "### 00:00:00 — Warp Factories & Automating the Development Wheel",
+        "### 00:01:44 — Factory Engineering & the Skill Improvement Loop",
+        "### 00:03:12 — Centralizing Agent Conversations, Tool Calls & Diffs",
+        "### 00:06:06 — Scoring Redundant Tests, Verbosity & Tool Efficiency",
+        "### 00:08:55 — Markdown Judge Rubrics & Post-Merge Conversation Grading",
+        "### 00:13:43 — Skill Doctor: Batch Audits for Port & Changelog Fixes",
+        "### 00:16:10 — Score Inflection Dashboards & Continuous Improvement PRs"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'dot clone folders' likely '.claude folders' (00:03:12)",
+        "ASR garble: 'Py' likely 'Pi' (00:03:12, 00:13:43)",
+        "ASR garble: 'OpenCLaw' likely 'OpenClaw' (00:03:12)",
+        "ASR garble: 'Go NatWest' unclear, flagged as possible schedule-prompt artifact (00:08:55)",
+        "ASR garble: 'you great conversations' likely 'you grade conversations' (00:08:55)",
+        "ASR garble: 'work. Dead slash skill doctor' likely 'warp.dev/skill-doctor' (00:13:43)",
+        "ASR garble: 'for Basu' likely 'verbosity' (00:13:43)",
+        "ASR garble: 'stopper factory' likely 'software factory' (00:16:10)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
+      "sections_read": [
+        "### 00:00:00 — The Review Gap & Speaker Introductions",
+        "### 00:01:45 — CI Merge Failures & Lights-On vs. Dark Factories",
+        "### 00:03:41 — Shipping Faster with Confidence & Verification Loops",
+        "### 00:05:26 — Merging 30,000 Daily Changes at Anthropic",
+        "### 00:08:20 — Sonar Survey Insights & Moving Toward Dark Factories",
+        "### 00:11:26 — Zero-Trust Multi-Layered Verification & Enterprise Guide Rails",
+        "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'quoting agent' likely 'coding agent' (00:00:00)",
+        "ASR garble: 'Manish Kapoor' likely 'Manish Kapur' (00:00:00)",
+        "ASR garble: 'Ali' / 'Andy' likely 'Addy' (00:00:00, 00:08:20, 00:11:26)",
+        "ASR garble: 'production arcane' likely 'production are failing' (00:01:45)",
+        "ASR garble: 'Claudio' / 'cloud run' likely 'Claude' / 'Claude run' (00:05:26, 00:14:29)",
+        "ASR garble: 'Zapf factories' likely 'software factories' (00:08:20)",
+        "ASR garble: 'Antopolis' likely 'Anthropic' (00:14:29)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
+      "sections_read": [
+        "### 00:00:07 — Welcome Back & Thanking Conference Sponsors",
+        "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+        "### 00:04:08 — Introducing Apollo Global Management & Rowspace"
+      ],
+      "claims_found": 3,
+      "thin": true,
+      "gaps": [
+        "Short recording (569 words across 3 brief sections): a 5-minute MC welcome, sponsor thank-you, and keynote introduction containing one brief attendee agent-project suggestion rather than a full technical talk.",
+        "ASR garble: 'that carbonell' unclear (00:02:12)",
+        "ASR garble: 'at Apple' likely 'at Apollo' and 'Rating Reach' unclear (00:04:08)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
+      "sections_read": [
+        "### 00:00:00 — Enterprise Productivity & Human Process Supervision",
+        "### 00:03:42 — The Competency Gap & the Process Gap",
+        "### 00:06:10 — Why Reliable Agents Require Opinionated Processes",
+        "### 00:09:16 — Why Outcome Evals Fall Short on Long Horizons",
+        "### 00:12:01 — Behavior Specs as Ground-Truth-Free Trajectory Rubrics",
+        "### 00:13:40 — Trajectory Forking & Subagent Simulations",
+        "### 00:17:21 — Earning Organizational Trust Over Move-37 Creativity"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'coding style Asian products' / 'if I'm an Asian' likely 'coding-style agent products' / 'if I have an agent' (00:03:42, 00:06:10 sections)",
+        "ASR garble: 'alphabet-based evals' / 'alchemy bells' likely 'outcome-based evals' / 'outcome evals' (00:09:16, 00:13:40 sections)",
+        "ASR garble: 'behavior stack' / 'behavior step' and 'board it' / 'forward it' likely 'behavior spec' and 'fork it' (00:12:01, 00:13:40 sections)",
+        "ASR garble: 'move 37 your work' / 'move thirty-seven' references AlphaGo's 'Move 37' (00:17:21 section)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "29083884-87dc-44f8-b412-b494afca8856": {
+      "sections_read": [
+        "### 00:00:00 — From Prompt Engineering to the Agent Harness",
+        "### 00:01:22 — Runtime, Context Orchestration, and Peak Harness",
+        "### 00:04:14 — Coding Evals and the Model Data Flywheel",
+        "### 00:06:55 — Unlocking New Frontiers with Grokbot and Software Factories",
+        "### 00:11:59 — Cloud Runtime, Scoped Security, and Token Efficiency",
+        "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Asian harness' likely 'agent harness' (00:00:00); 'P harness' likely 'peak harness' and 'To read from Anthropic' likely 'Thariq from Anthropic' (00:01:22)",
+        "ASR garble: 'Py Codex and Cloud Code' likely 'Pi, Codex, and Claude Code'; 'SuperIntLight' likely 'SWE-bench Lite' (00:04:14)",
+        "ASR garble: product name rendered inconsistently as 'Rockbot', 'Grokbot', 'Rafa', 'Rockwise', 'robot', 'Rock', 'Chatbot', and 'the blockchain' (00:06:55 onward)",
+        "ASR garble: 'Hayr's law' likely 'Hyrum's Law'; 'chains' likely 'shims' (00:14:01)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
+      "sections_read": [
+        "### 00:00:00 — Introducing Rowspace and Apollo's Redding Ridge Credit Business",
+        "### 00:01:19 — Fragmented Private Credit Data in Active CLO Management",
+        "### 00:03:24 — Automating CLO Portfolio Construction and Weekly Trade Reconciliation",
+        "### 00:06:32 — Earning Trust Beyond Chatbots Through Golden Data Sources",
+        "### 00:09:07 — Apollo's Early Platform Mindset and Openness to Change",
+        "### 00:11:07 — Where Finance Stands on the AI Adoption Curve",
+        "### 00:13:10 — Commodity Productivity Tool Versus Durable Competitive Edge",
+        "### 00:15:10 — Near-Term Priorities and Lessons for AI in Finance"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Running Ridge', 'Redding', 'Runway', 'Reddit', and 'running' all refer to 'Redding Ridge' Asset Management (00:00:00, 00:01:19, 00:06:32, 00:11:07)",
+        "ASR garble: 'rotation', 'growth space', and 'Ros Space' likely 'Rowspace' (00:03:24, 00:11:07)",
+        "ASR garble: 'deep contenter documents' likely 'deep indenture documents' and 'Collet' likely 'call it' (00:03:24)",
+        "ASR garble: 'Krasura' likely 'Cursor' (00:09:07)",
+        "ASR garble: closing Indonesian line 'Nah itu jangan salah sebenarnya kita itu.' is an ASR hallucination on applause/outro (00:15:10)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
+      "sections_read": [
+        "### 00:00:06 — Toyota's Quality Principles in Software Manufacturing",
+        "### 00:02:53 — Code Abundance and the Shift to Agentic Factories",
+        "### 00:05:15 — Cognitive Surrender and Large Codebase Bottlenecks",
+        "### 00:08:01 — Compounding Errors and Unreliable LLM Judges",
+        "### 00:10:56 — Four Pillars of the Code Confidence Framework",
+        "### 00:13:29 — Deterministic Verification, SonarQube Results, and Audit Evidence"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Sachin Adela' likely 'Satya Nadella' and 'identity software factories' likely 'agentic software factories' (00:02:53 section)",
+        "ASR garble: 'white planes' / 'white claims' likely 'White Plains' (NY) and 'databases' likely 'codebases' (00:05:15, 00:10:56 sections)",
+        "ASR garble: 'meter' likely 'METR' and 'Cloud Windows Preview' likely a Claude model preview name (00:08:01 section)",
+        "ASR garble: 'Mister if you're building cars' likely 'MISRA' (00:13:29 section)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
+      "sections_read": [
+        "### 00:00:00 — Opening and Linear's Craftsmanship Roots",
+        "### 00:02:20 — From Tab Completion to Long-Running Agents",
+        "### 00:06:18 — Why Product Coherence Needs More Than Code",
+        "### 00:08:47 — Automated Intake and the Triage Agent",
+        "### 00:12:47 — Implementation Loops and Agent Verification Skills",
+        "### 00:14:07 — Context-Aware Review Agents and Product History",
+        "### 00:18:47 — Compounding Judgment Through Daily Feedback Distillation"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'date dog' likely 'Datadog' (00:08:47)",
+        "ASR garble: 'its services decisions' likely 'it surfaces decisions' (00:08:47)",
+        "ASR garble: 'covering agent' / 'copy agent' likely 'coding agent' (00:08:47, 00:12:47)",
+        "ASR garble: 'codecs' likely 'Codex' (00:14:07)",
+        "ASR garble: 'co-occurrence' / 'co base' likely 'codebase' (00:14:07)",
+        "ASR garble: 'DBT transaction' likely 'DB transaction' (00:14:07)",
+        "ASR garble: 'reverse' likely 'reverts' (00:14:07, 00:18:47)",
+        "ASR garble: 'agents empty' likely 'agents.md' (00:18:47)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "68a1e78b-569e-4314-a56f-f20508123cbe": {
+      "sections_read": [
+        "### 00:00:11 — Speaker Introductions & Three Frontiers in Finance",
+        "### 00:01:32 — The Frontier of Intelligence & Model Thresholds",
+        "### 00:06:12 — From Experimentation to the Five-Layer Agent Framework",
+        "### 00:07:57 — Context Layers: MCP Connectors & Living Skills",
+        "### 00:09:35 — Trust Layers: Identity, Sandboxed Approvals & Evals",
+        "### 00:12:25 — Scaling Across Doors & the Business-Engineering Loop",
+        "### 00:15:33 — Industry Coordination: Claude for Financial Advisors"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'fable' / 'Fable Five Point One' and 'Claude Metals preview' likely 'Mythos' / 'Claude Mythos preview', and 'four per cell' likely 'Claude for Excel' (00:01:32)",
+        "ASR garble: 'tree' likely 'trade' and 'owner's data' likely 'order data' (00:07:57, 00:09:35)",
+        "ASR garble: 'VEL framework' likely 'eval framework', 'post adjustments' likely 'proposed adjustments', and 'Claude Cove' / 'Cloud Code' likely 'Claude Code' (00:12:25)",
+        "ASR garble: 'all the financial advisors' likely 'Claude for Financial Advisors' and 'proves' likely 'approves' (00:15:33)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
+      "sections_read": [
+        "### 00:00:00 — Breaking Out of the Outer Loop in Claims Engineering",
+        "### 00:03:35 — Designing the Multiplayer AI-Native War Room",
+        "### 00:05:09 — Three Legacy Modernization Missions: Rentals, Damages, and Salvage",
+        "### 00:08:10 — Vendor Stack, Enterprise Context, and FleetKit Orchestration",
+        "### 00:11:18 — Interactive Worksheets and Architecture Diagrams in the Loop",
+        "### 00:13:46 — Cloud Code Dives, Local MCPs, and Nine-Step Execution",
+        "### 00:15:44 — Token Burn, Model Benchmarks, and Scaling Organization-Wide"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'interloop' likely 'inner loop' and 'Jean Kim' likely 'Gene Kim' (00:00:00)",
+        "ASR garble: 'entropic code monetization plugin' / 'code minimization' likely 'Anthropic code modernization plugin' (00:05:09, 00:08:10, 00:13:46)",
+        "ASR garble: 'Tora Legacy' likely 'to our legacy'; 'ancient callable APIs' likely 'agent-callable APIs'; 'prad bug' likely 'prod bug' (00:05:09)",
+        "ASR garble: 'claw horn, specifically, table' likely 'Claude harness, specifically Fable'; 'human loop cube' likely 'human-in-the-loop queue' (00:08:10)",
+        "ASR garble: 'Hookins' likely 'tokens'; 'property caching' likely 'prompt caching'; 'Fable or Sonnet five wrote it just as good as, if not better than Fable' transposes model names; 'Adalo loop' likely 'outer loop' (00:15:44)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
+      "sections_read": [
+        "### 00:00:00 — Defining AI Slop & Introducing ToneBench",
+        "### 00:03:21 — Why Educational Content Needs a Creative Writing Benchmark",
+        "### 00:05:34 — Benchmark Architecture: Prompts, Scripts & Draft Variance",
+        "### 00:08:55 — Scoring Rubrics, LLM Judge Bias & Human Ratings",
+        "### 00:13:56 — Benchmark Costs, Model Rankings & Price Tradeoffs",
+        "### 00:16:06 — Practical Workflow: Long Prompts & Multi-Draft Merging"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'love'/'stuff' likely 'slop' throughout (00:00:00, 00:03:21, 00:16:06)",
+        "ASR garble: 'Phone Bench'/'tone bins' likely 'ToneBench' (00:00:00, 00:13:56)",
+        "ASR garble: 'Kerfatin termed as the stuck Achilles' likely 'Karpathy termed as the sloppocalypse' (00:00:00)",
+        "ASR garble: 'Office' likely 'Opus' (00:16:06)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
+      "sections_read": [
+        "### 00:00:00 — Introduction & Regulatory Disclaimers",
+        "### 00:00:58 — When Controls Fail: Citibank's $900 Million Revlon Error",
+        "### 00:05:13 — Why Safety and Agent Autonomy Aren't Opposites",
+        "### 00:07:48 — Making Agents Legible with an Automatic Registry",
+        "### 00:10:00 — Risk-Scored Review for Purpose-Built Enterprise Agents",
+        "### 00:11:58 — Declared Tool Access, Guardrails & Shared Evaluations",
+        "### 00:16:32 — Preventing Review Fatigue with Runtime Classifiers"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Flexview'/'InflexQ'/'Fletchview'/'Flaskier' and 'Redline' likely 'Flexcube' and 'Revlon', and '80 million' vs 'eight million' interest payment (00:00:58, 00:05:13)",
+        "ASR garble: 'NPC servers' likely 'MCP servers' and 'Asian question'/'Asian registry' likely 'agent registry' (00:07:48, 00:11:58)",
+        "ASR garble: 'agent-based captioning production system' likely 'agent that's touching a production system' (00:10:00)",
+        "ASR garble: Cantonese insertion '搞個journal API， run做一個web search，那種嘢。' mid-sentence, 'clear their purpose' likely 'declare their purpose', and 'revals'/'B vowels' likely 'evals' (00:11:58)",
+        "ASR garble: 'Wait for my removal' likely 'Wait for my approval', 'dark rails' likely 'guardrails', and 'Samuel House' likely 'somewhere else' (00:16:32)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
+      "sections_read": [
+        "### 00:00:00 — Model Commoditization and Trillion-Dollar Infrastructure Bets",
+        "### 00:02:31 — Asymmetric Leverage at the Enterprise Agent Layer",
+        "### 00:04:04 — Solving Lucrative Markets Directly Instead of Selling Margin",
+        "### 00:06:36 — Why Nous Research Fights Centralized AI Control",
+        "### 00:08:01 — Software Moats Collapse and Distillation Wars",
+        "### 00:11:05 — Agents as Operating Systems Combining Code and Judgment",
+        "### 00:13:30 — The Hermes Agent Standard and Open Autonomy"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Não tenho nenhum outro provavelmente não há lugar' and 'Não tem tanta' are spurious Portuguese insertions (00:00:00)",
+        "ASR garble: 'Bill Montgomery speaking' and 'Oakland' appear to be spurious insertions (00:04:04, 00:06:36)",
+        "ASR garble: 'mixed research' likely 'Nous Research' (00:06:36)",
+        "ASR garble: 'Hermes 8'/'her musician' likely 'Hermes Agent' (00:08:01) and 'Permissive agent' likely 'Hermes Agent' (00:13:30)",
+        "ASR garble: 'The most of yesterday'/'The modes of tomorrow' likely 'The moats of yesterday'/'The moats of tomorrow' (00:08:01)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
+      "sections_read": [
+        "### 00:00:00 — Apify's Actor Marketplace & Why Agent Payments Matter",
+        "### 00:02:26 — The Explosion of Agentic Payment Standards",
+        "### 00:04:45 — Why Crypto Fits Machine Payments & Real-World Volume",
+        "### 00:07:35 — The Agent Payment Funnel & API Key Competition",
+        "### 00:12:04 — Wallet Setup Friction & Native Platform Integration",
+        "### 00:13:19 — Service Discovery, Trust & Verified Connector Directories",
+        "### 00:17:02 — Implementing Pay-Per-Use & Batch Settlement on x402"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'this road too', 'Expedia too', 'Experian', 'XForward', 'Exa Payments' likely 'x402' / 'exact payment scheme' (00:04:45, 00:13:19, 00:17:02)",
+        "ASR garble: 'paper use' likely 'pay-per-use' (00:13:19, 00:17:02)",
+        "ASR garble: 'Atul Berman's key' likely 'up-to payment scheme', 'spend those money wise' likely 'spend those moneys twice', and 'Bestelman's' / 'Basic Life Insurance Scheme' likely 'batch settlement scheme' (00:17:02)",
+        "ASR garble: 'Keycard' likely 'crypto' (prompt artifact) and 'Asian' likely 'agent' (00:02:26, 00:04:45)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
+      "sections_read": [
+        "### 00:00:05 — Integrating Daytona Across Competing Agent Frameworks",
+        "### 00:01:58 — Why Frameworks That Agree on Nothing Converge on Sandboxes",
+        "### 00:03:28 — Three Isolation Models: Host Allowlists, Embedded Runtimes, and VMs",
+        "### 00:07:40 — Frameworks Deleting Local Code Executors in 2026",
+        "### 00:09:18 — From Ephemeral Sandboxes to Agent Runtimes and RL Fleets",
+        "### 00:10:16 — What Is Swappable vs. Execution Posture Lock-In",
+        "### 00:13:41 — Pick the Execution Boundary Before the Framework"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Langref'/'LandRat' likely 'LangGraph', 'Pro AI'/'true AI' likely 'CrewAI', and 'Mustard' likely 'Mastra' (00:01:58, 00:07:40)",
+        "ASR garble: 'blue code' likely 'glue code' (00:03:28)",
+        "ASR garble: 'framers our opinions and the boundary the commitment' likely 'frameworks are opinions and the boundary is the commitment' (00:13:41)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
+      "sections_read": [
+        "### 00:00:00 — High-Conviction Bets & A Hedge Fund as a Function",
+        "### 00:01:25 — API-Accessible Inputs: External & Internal Context",
+        "### 00:03:13 — Decomposing the Function: Gather, Analyze, Decide",
+        "### 00:04:53 — Case Study: Interpreting Korean Semiconductor News",
+        "### 00:07:29 — Four Function Runners: Code, ML, LLMs & People",
+        "### 00:09:20 — Branching Control Flow & Tuning Hyperparameters",
+        "### 00:12:16 — The Full Firm Graph & State Machines Beyond Investing"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'one, two, volt selection size timing' likely 'one tuple: selection, size, timing' (00:00:00)",
+        "ASR garble: 'dysfunction' likely 'this function' (00:03:13, 00:07:29)",
+        "ASR garble: 'Code L M L M code person' likely slide runner labels 'code, ML, LLM, person' (00:04:53)",
+        "ASR garble: 'Qodo' likely 'code' (deterministic code runner), a schedule-prompt artifact (00:07:29)",
+        "ASR garble: 'General Intuition harness' likely a schedule-prompt artifact (00:09:20)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
+      "sections_read": [
+        "### 00:00:00 — From Bitemporal Structured Data to Unstructured Knowledge in the Vault",
+        "### 00:02:20 — Open-Web Chat vs. Vault-Connected Query on the Korean Won",
+        "### 00:05:00 — Designing Search for Two Consumers: Humans vs. Agents",
+        "### 00:06:23 — Benchmarking Precision at Ten & Native Vector Filtering",
+        "### 00:09:34 — Migrating Investor Email Habits into Vault Workflows",
+        "### 00:11:07 — Pocket Analyst, Researcher, Forecaster & Investment Signals",
+        "### 00:12:12 — Proactive Agents, the Investor Workbench & Compounding Knowledge"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'the bot' and 'Bolt' likely 'the Vault' / 'Vault' (00:02:20)",
+        "ASR garble: 'faults such as that' likely 'Vault search sucks', 'agenda search' likely 'agentic search', and 'TurboBuffer' / 'Turbo Buffer' likely 'turbopuffer' (00:06:23)",
+        "ASR garble: 'autonomous' likely 'entitlements', 'the model' likely 'the Vault', and 'including a CLA' likely 'including a CLI' (00:09:34)",
+        "ASR garble: 'on the ball' / 'from the ball' / 'the balance' / 'the model' / 'the forest' likely 'the Vault' (00:11:07, 00:12:12)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
+      "sections_read": [
+        "### 00:00:00 — From 128-Pixel AI Films to Photorealistic Video",
+        "### 00:02:30 — Scaling Next-Frame Prediction into Physical Understanding",
+        "### 00:07:00 — Real-Time Interactive Worlds & Embodied Robotics",
+        "### 00:08:29 — World Interface Models Without 3D Engines",
+        "### 00:10:12 — Continuum & Interactive Video Portals as an OS",
+        "### 00:13:49 — Visual Thinking for Coding Agents",
+        "### 00:15:10 — Live Reactive Simulations & The Road Ahead"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'scaling loss' likely 'scaling laws' (00:02:30 section)",
+        "ASR garble: 'bigger model' / 'bigger what' / 'wall model' likely 'video model' / 'world model' (00:08:29 section)",
+        "ASR garble: 'Conde' / 'continuing' likely 'Continuum' (00:10:12, 00:15:10 sections)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
+      "sections_read": [
+        "### 00:00:00 — The Agent Adoption Funnel and Rising Abstractions",
+        "### 00:01:43 — Building the Engineering Loop Over Individual Features",
+        "### 00:02:55 — Signal: Always-On Agents Reading Production Traces",
+        "### 00:04:10 — Observability Triggers and Isolated Agent Sandboxes",
+        "### 00:06:32 — Durable State, Ephemeral Teardown, and Harness Agnosticism",
+        "### 00:09:45 — Aligning Evals with Human Judgment",
+        "### 00:12:10 — Tracing the Agent Factory End-to-End",
+        "### 00:13:42 — Closing the Gap Between Frontier Labs and Enterprise"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'write emails' / 'an email' / 'e-bells' / 'evolve that data' likely 'write evals' / 'an eval' / 'evals' / 'eval that data' (00:01:43, 00:09:45, 00:12:10)",
+        "ASR garble: 'it arises' likely 'at Arize' (00:02:55); 'rise, evaluator' likely 'Arize evaluator' and 'golden tree datasets' likely 'golden truth datasets' (00:09:45)",
+        "ASR garble: 'Plot code, you can trace cursors, you can trace codecs' likely 'Claude Code, Cursor, Codex' (00:12:10)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
+      "sections_read": [
+        "### 00:00:00 — From Human Keyword Search to Agentic Web Search",
+        "### 00:03:31 — Three Core Tenets: Quality, Dynamic Highlights & Low Latency",
+        "### 00:06:29 — Introducing Exa Snapshot: 400 Billion Versioned Web Pages",
+        "### 00:07:50 — Point-in-Time Revenue Signals & Avoiding Leakage in Backtests",
+        "### 00:11:18 — Three Backtesting Archetypes: Enriched ML, Agentic Features & Full Agents",
+        "### 00:15:36 — Workshop Acquisition Signals, Overfitting & Complex Semantic Features",
+        "### 00:18:04 — Recap: Agentic Web Search & Point-in-Time Backtesting"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'ExaTrader', 'next step', 'extra snapshot', 'Exasemantic', 'core existential' likely 'Exa' / 'Exa Snapshot' / 'Exa semantic' / 'core Exa search' (00:00:00, 00:11:18, 00:15:36)",
+        "ASR garble: 'Instinct or Muse' unclear product names; 'Logsinger' likely 'LangChain' (00:00:00)",
+        "ASR garble: 'version stuff. So where such API' likely 'versioned search API' (00:06:29)",
+        "ASR garble: 'seventy million' likely 'seventy billion' (speaker says 'seventy billion' later in the same section) (00:07:50)",
+        "ASR garble: 'emails and your agency contacts' likely 'evals and your agentic contexts' (00:15:36)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "bdab432a-0538-4431-ad5a-62653affd9da": {
+      "sections_read": [
+        "### 00:00:00 — Three Pillars of Production AI Code Review",
+        "### 00:02:19 — Building a Naive Sandbox Reviewer and Five Failure Modes",
+        "### 00:05:41 — Prompt Optimization and Historical Incident Eval Datasets",
+        "### 00:08:42 — Inverting Author and Reviewer Models to Catch Blind Spots",
+        "### 00:10:45 — Replacing Expensive Grep with a Living Company Wiki",
+        "### 00:14:04 — Autonomous End-to-End QA in Dependency-Rich Sandboxes",
+        "### 00:15:45 — Routing Subtasks Across Frontier and Lightweight Models"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'cloud hard', 'WebRap', 'Zapod' likely 'Claude Code' / 'Greptile' (00:00:00)",
+        "ASR garble: 'FireCrapper' likely 'Firecracker'; 'OpenCord or Py' likely 'OpenCode or Pi' (00:02:19)",
+        "ASR garble: 'polar class', 'podcast', 'keycards', 'ERs' likely 'pull request(s)' / 'PRs' (00:02:19, 00:05:41)",
+        "ASR garble: 'hard code' likely 'Claude Code'; 'Kudex' likely 'Codex' (00:08:42)",
+        "ASR garble: 'dogs and pigs, and of course the hookers' likely 'docs and tickets, and of course the codebase' (00:10:45)",
+        "ASR garble: 'dashugrapal.com' is a garbled email address likely 'daksh@greptile.com' (00:15:45)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
+      "sections_read": [
+        "### 00:00:00 — Closing Keynote Block Welcome & Partner Shoutouts",
+        "### 00:01:35 — Talks as Surface Area for Edge Conversations",
+        "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones"
+      ],
+      "claims_found": 5,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'co-making partner at Tenex, a Flyte partner' likely 'co-managing partner at Tenex, an AI transformation partner' (00:00:00)",
+        "ASR garble: 'Switz' likely 'swyx' and 'To Fusion Gap' likely 'Diffusion Gap' (00:02:29)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
+      "sections_read": [
+        "### 00:00:00 — Building Custom Enterprise Agents Without Benchmarks or Experts",
+        "### 00:01:29 — Telecom Q&A and the Weekly Chatbot Review Bottleneck",
+        "### 00:05:31 — Inverting RAG Evaluation by Starting from the Source Page",
+        "### 00:07:23 — Supplier Contract Review and the Four-Step Agent",
+        "### 00:10:37 — Historical Contract Diffs and Rule-Driven Synthesis",
+        "### 00:13:36 — Clause Removal, Invariance Perturbations, and Blank Templates",
+        "### 00:16:18 — Why Deterministic Checks Beat Noisy LLM Judges",
+        "### 00:17:13 — Reengineering Agents Around Evaluability"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Rails' likely 'RAG' (00:01:29) and 'region to search' likely 'RAG to search' (00:05:31)",
+        "ASR garble: 'breed the agents' likely 'grade' or 'evaluate the agents' (00:05:31)",
+        "ASR garble: 'start from wood' and 'some covers break some wood' likely 'start from a rule' and 'some clauses break some rule' (00:10:37, 00:13:36)",
+        "ASR garble: 'room as judge' and 'end of the judge' likely 'LLM as judge' (00:16:18)",
+        "Heavily garbled ASR throughout; specific contract-review rules and clause-removal details are partially obscured (00:07:23-00:16:18)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
+      "sections_read": [
+        "### 00:00:00 — Featherless AI, Scale Benchmarks & Workshop Scope",
+        "### 00:02:54 — Move One: Measuring Token Spend by Key",
+        "### 00:04:51 — Agentic Workloads vs. High-Volume Process Automation",
+        "### 00:09:09 — Move Two: Open Models & One-Shot Classifiers",
+        "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives",
+        "### 00:18:09 — Department Model Labels & Traffic Control",
+        "### 00:20:26 — Process Track Right-Sizing, Evals & Domain Fine-Tuning",
+        "### 00:25:11 — Bootstrapping Models With Distillation & Shadow Traffic",
+        "### 00:28:40 — Move Three: GPU Throughput vs. Latency Cost",
+        "### 00:31:57 — Dedicated Capacity, Base Load & Cloud Spillover",
+        "### 00:34:14 — Move Four: Review Bottlenecks & Organizational Trust",
+        "### 00:41:48 — Slop Grenades, Ownership & Measuring Real Outcomes",
+        "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'preview only' likely 'prefill only' for one-shot classifier models (00:09:09)",
+        "ASR garble: 'e-dos' likely 'evals' (00:20:26)",
+        "ASR garble: 'Clockwork' / 'clock code' likely 'Claude Code' and 'Pine' / 'Py' likely 'Pi' harness (00:44:46)",
+        "ASR garble: 'auto rotting' likely 'auto routing' and 'low cash heat rate' likely 'low cache hit rate' (00:44:46)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
+      "sections_read": [
+        "### 00:00:09 — Observing While Acting: Why LLMs Struggle in Space and Time",
+        "### 00:02:33 — From Medal's Game Clips to Shared Controller Action Spaces",
+        "### 00:04:12 — Turn-Based Coding Models vs. Continuous Pixel-to-Action Streams",
+        "### 00:06:01 — Human Controllers vs. End-to-End Motor Torque & Medal's Scale",
+        "### 00:07:53 — World Models, Native Human Modality, and High-APM Action Density",
+        "### 00:10:31 — Real-Time Capabilities, Orchestrator Integration, and Accessibility",
+        "### 00:15:34 — General Intuition Team Structure, Hiring, and Upcoming Hackathons",
+        "### 00:17:42 — Q&A: Explicit Action Labels vs. JEPA Inferred Actions"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "Recording opens mid-sentence with a spurious Portuguese/English ASR fragment (00:00:09)",
+        "ASR garble: 'metal'/'metals'/'medal' likely 'Medal' (00:02:33, 00:15:34)",
+        "ASR garble: 'Truic Connects' and 'Intuitive' likely 'predict next' and 'Anthropic' (00:04:12)",
+        "ASR garble: 'tell operator'/'tell operations' likely 'teleoperate'/'teleoperations' (00:02:33, 00:07:53)",
+        "ASR garble: 'Japa'/'Grepa'/'Jeffa'/'Jeppa'/'Jetbase' likely 'JEPA' (00:17:42)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "caecd5f6-b352-4868-a995-f0f71679caf0": {
+      "sections_read": [
+        "### 00:00:00 — The Bitter Lesson vs. Shipping Agents Today",
+        "### 00:02:20 — Post-Training a Specialist Model for Ramp Sheets",
+        "### 00:05:09 — KV Cache Compression with Offline Cartridges",
+        "### 00:07:03 — Agentic MapReduce & 10,000-Agent Security Swarms",
+        "### 00:09:22 — Token Spend Management & Latency Routing Products",
+        "### 00:11:16 — Cross-Model Transfer, Self-Improving Monitors & Semantic Tagging"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'friendlier models' likely 'frontier models' and '54.5 or 55' likely 'GPT-4.5 or GPT-5' (00:00:00)",
+        "ASR garble: 'Grand Labs' / 'Turing Labs' likely 'Ramp Labs' or frontier labs; 'Opus 4.16' / 'OVS four point six' likely 'Opus 4.6'; 'Prime Insights' likely 'Prime Intellect'; 'Quan 3.5' likely 'Qwen 3.5'; 'Bitcoin six' unclear frontier model name; 'Prague' likely 'prod' (00:02:20)",
+        "ASR garble: 'KB cache' likely 'KV cache' and 'London close' likely 'month-end close' (00:05:09)",
+        "ASR garble: 'agentic macrodeuce' likely 'agentic MapReduce' and 'OMS' likely 'LLMs' (00:07:03)",
+        "ASR garble: 'Ramp Powder' likely 'Ramp Router' (00:09:22); 'Aurora post train' likely 'a LoRA post-train' and 'Bitcoin 3.5' likely 'Qwen 3.5' (00:11:16)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
+      "sections_read": [
+        "### 00:00:00 — Day One Talk Highlights",
+        "### 00:00:18 — Speaker Applause & Final Housekeeping"
+      ],
+      "claims_found": 2,
+      "thin": true,
+      "gaps": [
+        "Short recording (173 words, 1m 12s) capturing brief day-one closing remarks and housekeeping announcements rather than a technical talk."
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
+      "sections_read": [
+        "### 00:00:00 — Preventing Agent Disasters & Workshop Setup",
+        "### 00:02:47 — Midnight Snack Club & Silent Persistence Failures",
+        "### 00:07:02 — Recursive Self-Improvement & Defining Clear Outcomes",
+        "### 00:10:45 — Centralized Verification Harnesses: Ctx & Riker",
+        "### 00:16:07 — From Vague Browser Prompts to Deterministic Scripts",
+        "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo",
+        "### 00:25:36 — Mid-Workshop Q&A & Making State Feedback-Loopable",
+        "### 00:30:02 — Playwright Proof Commands, Self-Healing & Explicit Errors",
+        "### 00:33:40 — Outcome-Driven Constraints & Live Persistence Debugging",
+        "### 00:38:07 — Saving Run Receipts & System 1 Judge Models",
+        "### 00:41:54 — Saboteur vs. Detective: Testing the Verifier Itself",
+        "### 00:48:23 — Verifier CLIs, Overnight Receipt Loops & Final Q&A"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'Larracan' likely 'Laracon' (00:00:00)",
+        "ASR garble: 'Cerebras' given as Zack Proser's employer is a likely prompt artifact; frontmatter lists WorkOS (00:00:00, 00:48:23)",
+        "ASR garble: 'LearnTen' likely 'Lauren Tan' (00:16:07)",
+        "ASR garble: 'Saul 6.1, OpenAI 5.5' model names unclear (00:33:40)",
+        "ASR garble: 'Raytheon' likely 'Riker' (00:38:07)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "ee927042-2ba1-44c3-b304-d001ae247839": {
+      "sections_read": [
+        "### 00:00:18 — Policy as Institutional Intent vs. the Running System",
+        "### 00:02:29 — Agents Across People, Process, and Technology",
+        "### 00:03:19 — Mapping Gated Workflows and Parallel Reviews as DAGs"
+      ],
+      "claims_found": 4,
+      "thin": true,
+      "gaps": [
+        "Short, truncated recording (503 words across 3 brief sections, 4m 35s of an 18m keynote slot); audio cuts off mid-sentence during the DAG and Apache Airflow discussion at 00:03:19 before covering how trust in agent outputs is verified.",
+        "ASR garble: 'people processing technology' likely 'people, process, and technology' (00:02:29)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "f7204e6d-a47c-4535-804e-16b4db579b95": {
+      "sections_read": [
+        "### 00:00:07 — Builder Agents, Three-Review Loops, and Child QA",
+        "### 00:01:40 — Mandatory Feature Videos for Human-in-the-Loop Review",
+        "### 00:03:38 — Multi-Session Agent Messaging and the Merge Manager",
+        "### 00:06:23 — Eliminating Hiring Bias with Agent Screen Recordings",
+        "### 00:08:39 — Sixteen-Hour Paid Trials and Untangle's Mission"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "Recording begins mid-talk at 00:00:07 ('And then the questions go back.'); the opening setup is unrecorded",
+        "ASR garble: 'Dev' (00:01:40) and 'Devon' (00:03:38) likely 'Devin'; 'mantrage' likely 'manager' and 'un facing future' likely 'user-facing feature' (00:01:40)",
+        "ASR garble: 'merge huge slowdown' likely 'merge queue slowdown' (00:00:07) and 'emergent human' likely 'a merge manager' (00:03:38)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    },
+    "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
+      "sections_read": [
+        "### 00:00:00 — Runpod Context & Serving Configuration Guesswork",
+        "### 00:01:14 — Context Windows, KV Cache, and vLLM Version Drift",
+        "### 00:03:28 — BenchPod Architecture: Dockerized vLLM & Self-Healing Watchdogs",
+        "### 00:06:31 — Live Dashboard Walkthrough: GPU Metrics & Cold Starts",
+        "### 00:09:46 — Benchmarking Batch Tokens, Latency, and Serverless Scaling",
+        "### 00:14:05 — Right-Sizing Frontier Models vs. Smaller Deployments",
+        "### 00:16:10 — Q&A: Disaggregated Serving, Ray Clusters, and Caching"
+      ],
+      "claims_found": 6,
+      "thin": false,
+      "gaps": [
+        "ASR garble: 'VLM'/'DLN'/'BLM'/'v11' likely 'vLLM' throughout (00:00:00, 00:01:14, 00:03:28)",
+        "ASR garble: 'Kimmy'/'Kevin K3'/'Kimi G3'/'kidney'/'computer K three' likely 'Kimi K2/K3' throughout",
+        "ASR garble: 'the meal and recipe' likely 'the vLLM recipe' (00:09:46)",
+        "ASR garble: 'cell field' likely 'self-healed' (00:03:28); '48200s' likely '4 H200s' (00:14:05)",
+        "ASR garble: 'desired serving' likely 'disaggregated serving' and 'Llama cache' likely 'LMCache' (00:16:10)"
+      ],
+      "extracted_at": "2026-11-14T15:06:41-05:00"
+    }
+  }
+}

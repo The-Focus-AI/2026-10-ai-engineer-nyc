@@ -66,7 +66,7 @@
       <h2>A few thousand people are already running the factory</h2>
       <p>She opens on a funnel that went around that weekend: roughly six billion people who have barely touched an LLM, one to two billion casual free-tier users, about twenty million professionals for whom an agent turns weeks of work into days, and around five thousand people at the frontier running thousands of agents at once. Her slide puts Andrej Karpathy's post beside her own reply: labs work on problems that have data and can be tested, and most businesses don't have problems shaped like that.</p>
       <p>The first thing anyone asks of that funnel is where they are on it, and how to reach the top in the next couple of years. She ends the talk on the same gap: business data is messier than a lab's constrained, testable problems, and someone has to close the distance.</p>
-      <blockquote>“AI engineers are kind of the role to close that gap.”<span class="cite">00:09:45</span></blockquote>
+      <blockquote>“AI engineers are kind of the role to close that gap.”<span class="cite">00:13:42</span></blockquote>
       <ul class="keypoints">
         <li>A tiny fraction of users already run thousands of agents; most work still ships one feature at a time.</li>
         <li>Part of the gap is the problem type: labs pick testable problems with data, businesses rarely have them.</li>
@@ -80,7 +80,7 @@
       <h2>The unit of work is now the loop</h2>
       <p>The abstraction layer has been rising for decades, and faster in the last few years: from high-level languages, to copying code out of chat, to local agents, to cloud agents, to the expectation that every engineer runs a team, or a factory, of agents.</p>
       <p>That changes the job row by row. You don't just write the feature; you build the loop that writes it. You don't just read the diff; you set up agents to review code, and evals to judge the non-deterministic paths. You don't just set up metrics; agents read the observability data and find the patterns. Build, eval, ship, monitor, improve is still the cycle. The engineer now owns the system that runs each step.</p>
-      <blockquote>“As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop.”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“As an AI engineer, your job is no longer to just write the feature, write a bad feature. It&#x27;s about how do you build the loop”<span class="cite">00:01:43</span></blockquote>
       <ul class="keypoints">
         <li>Every step up the abstraction ladder ends in the same place: running agents, not writing code.</li>
         <li>Code review, testing and monitoring become things an agent does and the engineer sets up.</li>
@@ -94,13 +94,13 @@
       <h2>Telemetry is now written for agents to read</h2>
       <p>Arize's own example is Signal, an always-on agent that reads traces, finds patterns in the telemetry and, with access to the repo, opens a PR with a fix. It has to remember what it has already seen: an issue it flagged before, or one that looked minor and becomes critical as more data comes in.</p>
       <p>Building it taught them that the reader of telemetry has changed. The question is no longer how people read it, or how agents help people read it, but how to shape it so agents are its main readers. Then observability data becomes the trigger: Signal runs every three or six hours over recent traces, wakes when a user complains in Slack, or fires on a metric.</p>
-      <blockquote>“How do you set up your telemetry data so that agents are the primary consumers of that data?”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“how do you set up your telemetry data so that agents are the primary consumers of that data?”<span class="cite">00:04:10</span></blockquote>
       <ul class="keypoints">
         <li>Signal reads traces, tracks issues across runs, and can open a PR with a fix.</li>
         <li>Design telemetry with agents, not people, as its main reader.</li>
         <li>Schedules, Slack messages and metrics are all triggers that wake the agent.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:04:53</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:04:10</p>
     </section>
 
     <section data-chapter="each-run" data-visual="v4" data-caption="Kept on purpose, thrown away">
@@ -109,13 +109,13 @@
       <p>Each run is assembled fresh. When the agent wakes, everything it needs goes into a sandbox: traces and context, third-party APM logs and metrics, the repo, and the keys it needs. A single proxy is the only way in or out, and everything inside is traced.</p>
       <p>When the run ends, some things stay on purpose: the issues it found, saved to memory so the next run doesn't start from zero; the traces of what it did; and any skills it learned, saved to the repo. The rest goes: the sandbox is torn down, credentials removed, repo access revoked. State lives outside the sandbox, so a failed sandbox or harness can be relaunched and resume from the step that failed.</p>
       <p>Signal is deliberately agnostic. It started on Claude Code, now runs on Cursor and Codex, aims at the major open-source harnesses, and can switch models. That is how they measure the agent's quality on every run and keep cost down without losing rigor.</p>
-      <blockquote>“The only way to get information in and out of the sandbox is by this single proxy.”<span class="cite">00:04:53</span></blockquote>
+      <blockquote>“The only way to get information in and out of the sandbox is by this single proxy”<span class="cite">00:04:10</span></blockquote>
       <ul class="keypoints">
         <li>Every run gets a fresh sandbox behind one proxy, and everything inside is traced.</li>
         <li>Findings, traces and learned skills persist; the sandbox, credentials and repo access don't.</li>
         <li>Running on several harnesses and models lets them trade cost against quality, and measure it.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:53</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:10</p>
     </section>
 
     <section data-chapter="evaluate-the-evaluators" data-visual="v5" data-caption="Align the judge with people">
@@ -123,7 +123,7 @@
       <h2>Defining good: evaluate the evaluators</h2>
       <p>Every time Signal opens a PR, evals run on top of it. This is where she thinks an AI engineer should spend much of their time: reading traces alongside their agents, finding the common errors, and turning them into evals that match human judgment. Arize ships an evaluator skill for building and aligning them.</p>
       <p>The question teams ask her is how to trust the evaluator. For Arize's own products the answer is golden datasets: run the evals, compare them with human labels, and only ship a new judge once it agrees with the human. The same evals then run offline on each change and online over production telemetry. And tracing everything now includes the coding agents that build the agents, so you can see what happened inside the factory.</p>
-      <blockquote>“We actually evaluate the evaluators.”<span class="cite">00:09:45</span></blockquote>
+      <blockquote>“we actually evaluate the evaluators.”<span class="cite">00:09:45</span></blockquote>
       <ul class="keypoints">
         <li>Evals run on every PR an agent opens; aligning them with human judgment is the engineer's core work.</li>
         <li>A judge ships only after it agrees with human labels on a golden dataset.</li>

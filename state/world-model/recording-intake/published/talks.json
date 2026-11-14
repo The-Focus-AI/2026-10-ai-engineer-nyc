@@ -13,15 +13,22 @@
     "starts_at": "2026-10-12T11:05:00-04:00",
     "source_recording": "2026-10-12_1105_TokenCosting",
     "sections": [
-      "### 00:00:00 — Workshop Introduction & Featherless Background",
-      "### 00:08:48 — Inference Economics & Hardware Cost Drivers",
-      "### 00:18:04 — Token Pricing, Batching & Memory Bandwidth",
-      "### 00:27:04 — Model Architecture Trade-offs & KV Cache",
-      "### 00:36:10 — Open-Weight Deployment & Cost Optimization",
-      "### 00:45:24 — Workshop Q&A & Practical Takeaways"
+      "### 00:00:00 — Featherless AI, Scale Benchmarks & Workshop Scope",
+      "### 00:02:54 — Move One: Measuring Token Spend by Key",
+      "### 00:04:51 — Agentic Workloads vs. High-Volume Process Automation",
+      "### 00:09:09 — Move Two: Open Models & One-Shot Classifiers",
+      "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives",
+      "### 00:18:09 — Department Model Labels & Traffic Control",
+      "### 00:20:26 — Process Track Right-Sizing, Evals & Domain Fine-Tuning",
+      "### 00:25:11 — Bootstrapping Models With Distillation & Shadow Traffic",
+      "### 00:28:40 — Move Three: GPU Throughput vs. Latency Cost",
+      "### 00:31:57 — Dedicated Capacity, Base Load & Cloud Spillover",
+      "### 00:34:14 — Move Four: Review Bottlenecks & Organizational Trust",
+      "### 00:41:48 — Slop Grenades, Ownership & Measuring Real Outcomes",
+      "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing"
     ],
-    "word_count": 9436,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 9460,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
     "slug": "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
@@ -41,15 +48,21 @@
     "starts_at": "2026-10-12T13:15:00-04:00",
     "source_recording": "2026-10-12_1315_Beyond-Done",
     "sections": [
-      "### 00:00:00 — Why 'Done' Is Not Enough for Production Agents",
-      "### 00:08:55 — Designing Deterministic Verification Loops",
-      "### 00:17:28 — Guardrails, Sandboxes & Failure Recovery",
-      "### 00:27:16 — Hands-On Verification Architecture",
-      "### 00:35:55 — Scaling Agent Verification in CI & Production",
-      "### 00:47:08 — Workshop Q&A & Closing Discussion"
+      "### 00:00:00 — Preventing Agent Disasters & Workshop Setup",
+      "### 00:02:47 — Midnight Snack Club & Silent Persistence Failures",
+      "### 00:07:02 — Recursive Self-Improvement & Defining Clear Outcomes",
+      "### 00:10:45 — Centralized Verification Harnesses: Ctx & Riker",
+      "### 00:16:07 — From Vague Browser Prompts to Deterministic Scripts",
+      "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo",
+      "### 00:25:36 — Mid-Workshop Q&A & Making State Feedback-Loopable",
+      "### 00:30:02 — Playwright Proof Commands, Self-Healing & Explicit Errors",
+      "### 00:33:40 — Outcome-Driven Constraints & Live Persistence Debugging",
+      "### 00:38:07 — Saving Run Receipts & System 1 Judge Models",
+      "### 00:41:54 — Saboteur vs. Detective: Testing the Verifier Itself",
+      "### 00:48:23 — Verifier CLIs, Overnight Receipt Loops & Final Q&A"
     ],
-    "word_count": 9705,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 9735,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
     "slug": "2026-10-13-vault-making-unstructured-data-work-for-investing",
@@ -69,12 +82,16 @@
     "starts_at": "2026-10-13T09:00:00-04:00",
     "source_recording": "2026-10-13_0904_Blackwater",
     "sections": [
-      "### 00:00:00 — From Structured Time Series to Unstructured Data at Bridgewater",
-      "### 00:04:53 — Inside Vault: Architecture for Investment Research",
-      "### 00:09:53 — Grounding, Evaluation & Iterative Deployment"
+      "### 00:00:00 — From Bitemporal Structured Data to Unstructured Knowledge in the Vault",
+      "### 00:02:20 — Open-Web Chat vs. Vault-Connected Query on the Korean Won",
+      "### 00:05:00 — Designing Search for Two Consumers: Humans vs. Agents",
+      "### 00:06:23 — Benchmarking Precision at Ten & Native Vector Filtering",
+      "### 00:09:34 — Migrating Investor Email Habits into Vault Workflows",
+      "### 00:11:07 — Pocket Analyst, Researcher, Forecaster & Investment Signals",
+      "### 00:12:12 — Proactive Agents, the Investor Workbench & Compounding Knowledge"
     ],
-    "word_count": 2448,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2452,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "68a1e78b-569e-4314-a56f-f20508123cbe": {
     "slug": "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
@@ -94,12 +111,16 @@
     "starts_at": "2026-10-13T09:18:00-04:00",
     "source_recording": "2026-10-13_0919_Anthropic",
     "sections": [
-      "### 00:00:11 — Introduction: Frontier AI in Financial Services",
-      "### 00:06:12 — Enterprise Deployment Patterns & Governance",
-      "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook"
+      "### 00:00:11 — Speaker Introductions & Three Frontiers in Finance",
+      "### 00:01:32 — The Frontier of Intelligence & Model Thresholds",
+      "### 00:06:12 — From Experimentation to the Five-Layer Agent Framework",
+      "### 00:07:57 — Context Layers: MCP Connectors & Living Skills",
+      "### 00:09:35 — Trust Layers: Identity, Sandboxed Approvals & Evals",
+      "### 00:12:25 — Scaling Across Doors & the Business-Engineering Loop",
+      "### 00:15:33 — Industry Coordination: Claude for Financial Advisors"
     ],
-    "word_count": 3136,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3139,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
     "slug": "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
@@ -115,12 +136,16 @@
     "starts_at": "2026-10-13T09:36:00-04:00",
     "source_recording": "2026-10-13_0938_Two-Sigma",
     "sections": [
-      "### 00:00:00 — Balancing Innovation Speed and Institutional Trust",
-      "### 00:06:21 — Risk Taxonomies & Guardrails for AI Agents",
-      "### 00:12:38 — Production Architecture at Two Sigma"
+      "### 00:00:00 — Introduction & Regulatory Disclaimers",
+      "### 00:00:58 — When Controls Fail: Citibank's $900 Million Revlon Error",
+      "### 00:05:13 — Why Safety and Agent Autonomy Aren't Opposites",
+      "### 00:07:48 — Making Agents Legible with an Automatic Registry",
+      "### 00:10:00 — Risk-Scored Review for Purpose-Built Enterprise Agents",
+      "### 00:11:58 — Declared Tool Access, Guardrails & Shared Evaluations",
+      "### 00:16:32 — Preventing Review Fatigue with Runtime Classifiers"
     ],
-    "word_count": 3624,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3634,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
     "slug": "2026-10-13-what-does-an-ai-engineer-do",
@@ -136,12 +161,17 @@
     "starts_at": "2026-10-13T10:12:00-04:00",
     "source_recording": "2026-10-13_1015_Arize",
     "sections": [
-      "### 00:00:00 — The Evolving Role of the AI Engineer",
-      "### 00:04:53 — The Build-Eval-Ship-Monitor Loop",
-      "### 00:09:45 — Continuous Improvement & Agent Observability"
+      "### 00:00:00 — The Agent Adoption Funnel and Rising Abstractions",
+      "### 00:01:43 — Building the Engineering Loop Over Individual Features",
+      "### 00:02:55 — Signal: Always-On Agents Reading Production Traces",
+      "### 00:04:10 — Observability Triggers and Isolated Agent Sandboxes",
+      "### 00:06:32 — Durable State, Ephemeral Teardown, and Harness Agnosticism",
+      "### 00:09:45 — Aligning Evals with Human Judgment",
+      "### 00:12:10 — Tracing the Agent Factory End-to-End",
+      "### 00:13:42 — Closing the Gap Between Frontier Labs and Enterprise"
     ],
-    "word_count": 2502,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2508,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
     "slug": "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
@@ -157,12 +187,15 @@
     "starts_at": "2026-10-13T10:40:00-04:00",
     "source_recording": "2026-10-13_1039_Writing-Slop",
     "sections": [
-      "### 00:00:00 — Defining AI Writing Slop & Why It Happens",
-      "### 00:06:12 — Constructing a Benchmark for Creative Writing",
-      "### 00:12:33 — Evaluating Style, Voice & Model Findings"
+      "### 00:00:00 — Defining AI Slop & Introducing ToneBench",
+      "### 00:03:21 — Why Educational Content Needs a Creative Writing Benchmark",
+      "### 00:05:34 — Benchmark Architecture: Prompts, Scripts & Draft Variance",
+      "### 00:08:55 — Scoring Rubrics, LLM Judge Bias & Human Ratings",
+      "### 00:13:56 — Benchmark Costs, Model Rankings & Price Tradeoffs",
+      "### 00:16:06 — Practical Workflow: Long Prompts & Multi-Draft Merging"
     ],
-    "word_count": 2845,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2857,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
     "slug": "2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with",
@@ -178,12 +211,17 @@
     "starts_at": "2026-10-13T11:05:00-04:00",
     "source_recording": "2026-10-13_1104_Air-Canada",
     "sections": [
-      "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
-      "### 00:06:29 — Writing the Answer First: Synthetic Eval Dataset Generation",
-      "### 00:12:35 — Production Rollout & Lessons Learned"
+      "### 00:00:00 — Building Custom Enterprise Agents Without Benchmarks or Experts",
+      "### 00:01:29 — Telecom Q&A and the Weekly Chatbot Review Bottleneck",
+      "### 00:05:31 — Inverting RAG Evaluation by Starting from the Source Page",
+      "### 00:07:23 — Supplier Contract Review and the Four-Step Agent",
+      "### 00:10:37 — Historical Contract Diffs and Rule-Driven Synthesis",
+      "### 00:13:36 — Clause Removal, Invariance Perturbations, and Blank Templates",
+      "### 00:16:18 — Why Deterministic Checks Beat Noisy LLM Judges",
+      "### 00:17:13 — Reengineering Agents Around Evaluability"
     ],
-    "word_count": 2621,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2638,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
     "slug": "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
@@ -199,12 +237,16 @@
     "starts_at": "2026-10-13T11:30:00-04:00",
     "source_recording": "2026-10-13_1130_Exa",
     "sections": [
-      "### 00:00:00 — What Is Exa & Agentic Web Search",
-      "### 00:06:00 — Exa Snapshot & Backtesting Financial Agents Without Lookahead Bias",
-      "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation"
+      "### 00:00:00 — From Human Keyword Search to Agentic Web Search",
+      "### 00:03:31 — Three Core Tenets: Quality, Dynamic Highlights & Low Latency",
+      "### 00:06:29 — Introducing Exa Snapshot: 400 Billion Versioned Web Pages",
+      "### 00:07:50 — Point-in-Time Revenue Signals & Avoiding Leakage in Backtests",
+      "### 00:11:18 — Three Backtesting Archetypes: Enriched ML, Agentic Features & Full Agents",
+      "### 00:15:36 — Workshop Acquisition Signals, Overfitting & Complex Semantic Features",
+      "### 00:18:04 — Recap: Agentic Web Search & Point-in-Time Backtesting"
     ],
-    "word_count": 3828,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3829,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
     "slug": "2026-10-13-inside-the-fable-war-room",
@@ -220,12 +262,16 @@
     "starts_at": "2026-10-13T11:55:00-04:00",
     "source_recording": "2026-10-13_1155_Fable-War-Room",
     "sections": [
-      "### 00:00:00 — SDLC Velocity vs. Incident Operations at GEICO",
-      "### 00:06:39 — Inside the Fable War Room: Multi-Agent Incident Response",
-      "### 00:12:33 — Production Results & Cultural Takeaways"
+      "### 00:00:00 — Breaking Out of the Outer Loop in Claims Engineering",
+      "### 00:03:35 — Designing the Multiplayer AI-Native War Room",
+      "### 00:05:09 — Three Legacy Modernization Missions: Rentals, Damages, and Salvage",
+      "### 00:08:10 — Vendor Stack, Enterprise Context, and FleetKit Orchestration",
+      "### 00:11:18 — Interactive Worksheets and Architecture Diagrams in the Loop",
+      "### 00:13:46 — Cloud Code Dives, Local MCPs, and Nine-Step Execution",
+      "### 00:15:44 — Token Burn, Model Benchmarks, and Scaling Organization-Wide"
     ],
-    "word_count": 3276,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3285,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
     "slug": "2026-10-13-agents-can-pay-so-why-don-t-they",
@@ -241,12 +287,16 @@
     "starts_at": "2026-10-13T12:20:00-04:00",
     "source_recording": "2026-10-13_1220_apify",
     "sections": [
-      "### 00:00:00 — Why Agentic Payments Matter for Tool Marketplaces",
-      "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
-      "### 00:13:38 — Real-World Agent Monetization Lessons at Apify"
+      "### 00:00:00 — Apify's Actor Marketplace & Why Agent Payments Matter",
+      "### 00:02:26 — The Explosion of Agentic Payment Standards",
+      "### 00:04:45 — Why Crypto Fits Machine Payments & Real-World Volume",
+      "### 00:07:35 — The Agent Payment Funnel & API Key Competition",
+      "### 00:12:04 — Wallet Setup Friction & Native Platform Integration",
+      "### 00:13:19 — Service Discovery, Trust & Verified Connector Directories",
+      "### 00:17:02 — Implementing Pay-Per-Use & Batch Settlement on x402"
     ],
-    "word_count": 3400,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3406,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "bdab432a-0538-4431-ad5a-62653affd9da": {
     "slug": "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
@@ -262,12 +312,16 @@
     "starts_at": "2026-10-13T14:55:00-04:00",
     "source_recording": "2026-10-13_1455_greptile",
     "sections": [
-      "### 00:00:00 — Code Review at Scale: Signal vs. Noise",
-      "### 00:05:48 — Iterative Architecture of Greptile's Review Agent",
-      "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation"
+      "### 00:00:00 — Three Pillars of Production AI Code Review",
+      "### 00:02:19 — Building a Naive Sandbox Reviewer and Five Failure Modes",
+      "### 00:05:41 — Prompt Optimization and Historical Incident Eval Datasets",
+      "### 00:08:42 — Inverting Author and Reviewer Models to Catch Blind Spots",
+      "### 00:10:45 — Replacing Expensive Grep with a Living Company Wiki",
+      "### 00:14:04 — Autonomous End-to-End QA in Dependency-Rich Sandboxes",
+      "### 00:15:45 — Routing Subtasks Across Frontier and Lightweight Models"
     ],
-    "word_count": 3739,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3745,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
     "slug": "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
@@ -283,12 +337,16 @@
     "starts_at": "2026-10-13T15:20:00-04:00",
     "source_recording": "2026-10-13_1520_bench-marking-llms",
     "sections": [
-      "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
-      "### 00:05:15 — Serving Open Models with vLLM on Runpod",
-      "### 00:11:12 — Throughput, Latency & Cost Metrics in Practice"
+      "### 00:00:00 — Runpod Context & Serving Configuration Guesswork",
+      "### 00:01:14 — Context Windows, KV Cache, and vLLM Version Drift",
+      "### 00:03:28 — BenchPod Architecture: Dockerized vLLM & Self-Healing Watchdogs",
+      "### 00:06:31 — Live Dashboard Walkthrough: GPU Metrics & Cold Starts",
+      "### 00:09:46 — Benchmarking Batch Tokens, Latency, and Serverless Scaling",
+      "### 00:14:05 — Right-Sizing Frontier Models vs. Smaller Deployments",
+      "### 00:16:10 — Q&A: Disaggregated Serving, Ray Clusters, and Caching"
     ],
-    "word_count": 2865,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2871,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
     "slug": "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
@@ -304,12 +362,16 @@
     "starts_at": "2026-10-13T15:45:00-04:00",
     "source_recording": "2026-10-13_1544_give-the-agent-a-computer",
     "sections": [
-      "### 00:00:05 — Why Every Agent Framework Converges on Sandboxed Computers",
-      "### 00:05:08 — Daytona Runtime Architecture & Isolation Primitives",
-      "### 00:10:20 — Patterns from Integrating Across Agent Harnesses"
+      "### 00:00:05 — Integrating Daytona Across Competing Agent Frameworks",
+      "### 00:01:58 — Why Frameworks That Agree on Nothing Converge on Sandboxes",
+      "### 00:03:28 — Three Isolation Models: Host Allowlists, Embedded Runtimes, and VMs",
+      "### 00:07:40 — Frameworks Deleting Local Code Executors in 2026",
+      "### 00:09:18 — From Ephemeral Sandboxes to Agent Runtimes and RL Fleets",
+      "### 00:10:16 — What Is Swappable vs. Execution Posture Lock-In",
+      "### 00:13:41 — Pick the Execution Boundary Before the Framework"
     ],
-    "word_count": 2156,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2164,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
     "slug": "2026-10-13-welcome-back-featured-keynotes",
@@ -325,10 +387,12 @@
     "starts_at": "2026-10-13T16:25:00-04:00",
     "source_recording": "2026-10-13_1625_tenex",
     "sections": [
-      "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections"
+      "### 00:00:00 — Closing Keynote Block Welcome & Partner Shoutouts",
+      "### 00:01:35 — Talks as Surface Area for Edge Conversations",
+      "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones"
     ],
-    "word_count": 774,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 778,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
     "slug": "2026-10-13-a-hedge-fund-as-a-function",
@@ -344,12 +408,16 @@
     "starts_at": "2026-10-13T16:30:00-04:00",
     "source_recording": "2026-10-13_1630_korean-news",
     "sections": [
-      "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
-      "### 00:04:30 — Deploying Agents Across Public & Private Market Research",
-      "### 00:09:20 — Compounding Institutional Knowledge at Coatue"
+      "### 00:00:00 — High-Conviction Bets & A Hedge Fund as a Function",
+      "### 00:01:25 — API-Accessible Inputs: External & Internal Context",
+      "### 00:03:13 — Decomposing the Function: Gather, Analyze, Decide",
+      "### 00:04:53 — Case Study: Interpreting Korean Semiconductor News",
+      "### 00:07:29 — Four Function Runners: Code, ML, LLMs & People",
+      "### 00:09:20 — Branching Control Flow & Tuning Hyperparameters",
+      "### 00:12:16 — The Full Firm Graph & State Machines Beyond Investing"
     ],
-    "word_count": 2283,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2294,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
     "slug": "2026-10-13-frontier-models-for-acting-in-space-and-time",
@@ -365,12 +433,17 @@
     "starts_at": "2026-10-13T16:48:00-04:00",
     "source_recording": "2026-10-13_1645_general-intuition",
     "sections": [
-      "### 00:00:09 — From Internet Text to Spatiotemporal World Models",
-      "### 00:07:19 — Learning Action Policies from Billions of Gameplay Trajectories",
-      "### 00:13:24 — Transferring Spatial Intelligence to Real-World Control"
+      "### 00:00:09 — Observing While Acting: Why LLMs Struggle in Space and Time",
+      "### 00:02:33 — From Medal's Game Clips to Shared Controller Action Spaces",
+      "### 00:04:12 — Turn-Based Coding Models vs. Continuous Pixel-to-Action Streams",
+      "### 00:06:01 — Human Controllers vs. End-to-End Motor Torque & Medal's Scale",
+      "### 00:07:53 — World Models, Native Human Modality, and High-APM Action Density",
+      "### 00:10:31 — Real-Time Capabilities, Orchestrator Integration, and Accessibility",
+      "### 00:15:34 — General Intuition Team Structure, Hiring, and Upcoming Hackathons",
+      "### 00:17:42 — Q&A: Explicit Action Labels vs. JEPA Inferred Actions"
     ],
-    "word_count": 3209,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3224,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
     "slug": "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
@@ -386,12 +459,16 @@
     "starts_at": "2026-10-13T17:06:00-04:00",
     "source_recording": "2026-10-13_1704_nous-research",
     "sections": [
-      "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
-      "### 00:05:13 — Hermes & Owning Your Intelligence Stack",
-      "### 00:10:21 — Training, Steering & Customizing Open Models"
+      "### 00:00:00 — Model Commoditization and Trillion-Dollar Infrastructure Bets",
+      "### 00:02:31 — Asymmetric Leverage at the Enterprise Agent Layer",
+      "### 00:04:04 — Solving Lucrative Markets Directly Instead of Selling Margin",
+      "### 00:06:36 — Why Nous Research Fights Centralized AI Control",
+      "### 00:08:01 — Software Moats Collapse and Distillation Wars",
+      "### 00:11:05 — Agents as Operating Systems Combining Code and Judgment",
+      "### 00:13:30 — The Hermes Agent Standard and Open Autonomy"
     ],
-    "word_count": 2172,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2180,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
     "slug": "2026-10-13-closing-remarks",
@@ -407,10 +484,11 @@
     "starts_at": "2026-10-13T17:25:00-04:00",
     "source_recording": "2026-10-13_1720_811-7th-Ave",
     "sections": [
-      "### 00:00:00 — Day 1 Closing Remarks & Keynote Recap"
+      "### 00:00:00 — Day One Talk Highlights",
+      "### 00:00:18 — Speaker Applause & Final Housekeeping"
     ],
     "word_count": 173,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "caecd5f6-b352-4868-a995-f0f71679caf0": {
     "slug": "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
@@ -426,12 +504,15 @@
     "starts_at": "2026-10-14T09:00:00-04:00",
     "source_recording": "2026-10-14_0901_Ramp",
     "sections": [
-      "### 00:00:00 — Token Economics & Capability Growth at Ramp",
-      "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models",
-      "### 00:08:51 — Lessons from Shipping Production Financial Agents"
+      "### 00:00:00 — The Bitter Lesson vs. Shipping Agents Today",
+      "### 00:02:20 — Post-Training a Specialist Model for Ramp Sheets",
+      "### 00:05:09 — KV Cache Compression with Offline Cartridges",
+      "### 00:07:03 — Agentic MapReduce & 10,000-Agent Security Swarms",
+      "### 00:09:22 — Token Spend Management & Latency Routing Products",
+      "### 00:11:16 — Cross-Model Transfer, Self-Improving Monitors & Semantic Tagging"
     ],
-    "word_count": 2078,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2081,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
     "slug": "2026-10-14-the-machine-that-changed-the-world-vai",
@@ -447,12 +528,15 @@
     "starts_at": "2026-10-14T09:18:00-04:00",
     "source_recording": "2026-10-14_0915_Sonar",
     "sections": [
-      "### 00:00:06 — From Lean Manufacturing to Enterprise Software Factories",
-      "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
-      "### 00:11:02 — Building Verification and Quality Gates into the Factory"
+      "### 00:00:06 — Toyota's Quality Principles in Software Manufacturing",
+      "### 00:02:53 — Code Abundance and the Shift to Agentic Factories",
+      "### 00:05:15 — Cognitive Surrender and Large Codebase Bottlenecks",
+      "### 00:08:01 — Compounding Errors and Unreliable LLM Judges",
+      "### 00:10:56 — Four Pillars of the Code Confidence Framework",
+      "### 00:13:29 — Deterministic Verification, SonarQube Results, and Audit Evidence"
     ],
-    "word_count": 2756,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2774,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "ee927042-2ba1-44c3-b304-d001ae247839": {
     "slug": "2026-10-14-trusting-agents-in-policy-driven-workflows",
@@ -468,10 +552,12 @@
     "starts_at": "2026-10-14T09:36:00-04:00",
     "source_recording": "2026-10-14_0932_Coinbase",
     "sections": [
-      "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase"
+      "### 00:00:18 — Policy as Institutional Intent vs. the Running System",
+      "### 00:02:29 — Agents Across People, Process, and Technology",
+      "### 00:03:19 — Mapping Gated Workflows and Parallel Reviews as DAGs"
     ],
-    "word_count": 502,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 503,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "f7204e6d-a47c-4535-804e-16b4db579b95": {
     "slug": "2026-10-14-your-job-is-now-agent-manager",
@@ -487,11 +573,14 @@
     "starts_at": "2026-10-14T10:40:00-04:00",
     "source_recording": "2026-10-14_1044_Ryan-Carson",
     "sections": [
-      "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
-      "### 00:05:06 — Continuous 15-Minute Heartbeats & Escalation Loops"
+      "### 00:00:07 — Builder Agents, Three-Review Loops, and Child QA",
+      "### 00:01:40 — Mandatory Feature Videos for Human-in-the-Loop Review",
+      "### 00:03:38 — Multi-Session Agent Messaging and the Merge Manager",
+      "### 00:06:23 — Eliminating Hiring Bias with Agent Screen Recordings",
+      "### 00:08:39 — Sixteen-Hour Paid Trials and Untangle's Mission"
     ],
-    "word_count": 1686,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 1694,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
     "slug": "2026-10-14-your-coding-agent-has-a-context-problem",
@@ -507,12 +596,16 @@
     "starts_at": "2026-10-14T11:05:00-04:00",
     "source_recording": "2026-10-14_1104_Linear",
     "sections": [
-      "### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context",
-      "### 00:06:57 — Structuring Context Graphs & Specs at Linear",
-      "### 00:14:17 — Human-Agent Collaboration in the Issue Tracker"
+      "### 00:00:00 — Opening and Linear's Craftsmanship Roots",
+      "### 00:02:20 — From Tab Completion to Long-Running Agents",
+      "### 00:06:18 — Why Product Coherence Needs More Than Code",
+      "### 00:08:47 — Automated Intake and the Triage Agent",
+      "### 00:12:47 — Implementation Loops and Agent Verification Skills",
+      "### 00:14:07 — Context-Aware Review Agents and Product History",
+      "### 00:18:47 — Compounding Judgment Through Daily Feedback Distillation"
     ],
-    "word_count": 3332,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3352,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
     "slug": "2026-10-14-who-verifies-the-software-factory",
@@ -532,12 +625,16 @@
     "starts_at": "2026-10-14T11:30:00-04:00",
     "source_recording": "2026-10-14_1130_Software-Factories",
     "sections": [
-      "### 00:00:00 — The Code Review Bottleneck in AI Software Factories",
-      "### 00:06:32 — Multi-Layered Verification: Static Analysis, Tests & Agent Critics",
-      "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic"
+      "### 00:00:00 — The Review Gap & Speaker Introductions",
+      "### 00:01:45 — CI Merge Failures & Lights-On vs. Dark Factories",
+      "### 00:03:41 — Shipping Faster with Confidence & Verification Loops",
+      "### 00:05:26 — Merging 30,000 Daily Changes at Anthropic",
+      "### 00:08:20 — Sonar Survey Insights & Moving Toward Dark Factories",
+      "### 00:11:26 — Zero-Trust Multi-Layered Verification & Enterprise Guide Rails",
+      "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
     ],
-    "word_count": 3398,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3401,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "29083884-87dc-44f8-b412-b494afca8856": {
     "slug": "2026-10-14-the-model-ate-the-coding-harness-now-what",
@@ -553,12 +650,15 @@
     "starts_at": "2026-10-14T11:55:00-04:00",
     "source_recording": "2026-10-14_1155_SpaceX",
     "sections": [
-      "### 00:00:00 — Evolution of the Coding Agent Harness",
-      "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
-      "### 00:12:13 — Next-Generation Environment & Tool Interfaces"
+      "### 00:00:00 — From Prompt Engineering to the Agent Harness",
+      "### 00:01:22 — Runtime, Context Orchestration, and Peak Harness",
+      "### 00:04:14 — Coding Evals and the Model Data Flywheel",
+      "### 00:06:55 — Unlocking New Frontiers with Grokbot and Software Factories",
+      "### 00:11:59 — Cloud Runtime, Scoped Security, and Token Efficiency",
+      "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims"
     ],
-    "word_count": 2969,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 2974,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
     "slug": "2026-10-14-your-agent-needs-a-skill-to-improve-its-skills",
@@ -574,12 +674,16 @@
     "starts_at": "2026-10-14T14:30:00-04:00",
     "source_recording": "2026-10-14_1429_Warp",
     "sections": [
-      "### 00:00:00 — Why Agents Repeat Mistakes Across Sessions",
-      "### 00:06:36 — A Meta-Skill for Mining Past Runs & Updating Skills",
-      "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp"
+      "### 00:00:00 — Warp Factories & Automating the Development Wheel",
+      "### 00:01:44 — Factory Engineering & the Skill Improvement Loop",
+      "### 00:03:12 — Centralizing Agent Conversations, Tool Calls & Diffs",
+      "### 00:06:06 — Scoring Redundant Tests, Verbosity & Tool Efficiency",
+      "### 00:08:55 — Markdown Judge Rubrics & Post-Merge Conversation Grading",
+      "### 00:13:43 — Skill Doctor: Batch Audits for Port & Changelog Fixes",
+      "### 00:16:10 — Score Inflection Dashboards & Continuous Improvement PRs"
     ],
-    "word_count": 3864,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3863,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
     "slug": "2026-10-14-welcome-back-featured-keynotes",
@@ -595,10 +699,12 @@
     "starts_at": "2026-10-14T16:25:00-04:00",
     "source_recording": "2026-10-14_1625_Ksenia",
     "sections": [
-      "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome"
+      "### 00:00:07 — Welcome Back & Thanking Conference Sponsors",
+      "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+      "### 00:04:08 — Introducing Apollo Global Management & Rowspace"
     ],
     "word_count": 569,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
     "slug": "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
@@ -618,12 +724,17 @@
     "starts_at": "2026-10-14T16:30:00-04:00",
     "source_recording": "2026-10-14_1630_Apollo",
     "sections": [
-      "### 00:00:00 — Rowspace & Apollo: AI for Institutional Investment Data",
-      "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
-      "### 00:12:48 — Governance, Auditability & Deployment Lessons at Apollo"
+      "### 00:00:00 — Introducing Rowspace and Apollo's Redding Ridge Credit Business",
+      "### 00:01:19 — Fragmented Private Credit Data in Active CLO Management",
+      "### 00:03:24 — Automating CLO Portfolio Construction and Weekly Trade Reconciliation",
+      "### 00:06:32 — Earning Trust Beyond Chatbots Through Golden Data Sources",
+      "### 00:09:07 — Apollo's Early Platform Mindset and Openness to Change",
+      "### 00:11:07 — Where Finance Stands on the AI Adoption Curve",
+      "### 00:13:10 — Commodity Productivity Tool Versus Durable Competitive Edge",
+      "### 00:15:10 — Near-Term Priorities and Lessons for AI in Finance"
     ],
-    "word_count": 3207,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3214,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
     "slug": "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
@@ -639,12 +750,16 @@
     "starts_at": "2026-10-14T16:48:00-04:00",
     "source_recording": "2026-10-14_1649_Basis-Mitchell-Troyanovsky",
     "sections": [
-      "### 00:00:00 — Long-Horizon Accounting Agents at Basis",
-      "### 00:06:54 — Process Supervision vs. Outcome-Only Evaluation",
-      "### 00:13:22 — Scaling Multi-Step Reliability in Production"
+      "### 00:00:00 — Enterprise Productivity & Human Process Supervision",
+      "### 00:03:42 — The Competency Gap & the Process Gap",
+      "### 00:06:10 — Why Reliable Agents Require Opinionated Processes",
+      "### 00:09:16 — Why Outcome Evals Fall Short on Long Horizons",
+      "### 00:12:01 — Behavior Specs as Ground-Truth-Free Trajectory Rubrics",
+      "### 00:13:40 — Trajectory Forking & Subagent Simulations",
+      "### 00:17:21 — Earning Organizational Trust Over Move-37 Creativity"
     ],
-    "word_count": 3305,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3320,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   },
   "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
     "slug": "2026-10-14-everything-will-be-simulated",
@@ -660,11 +775,15 @@
     "starts_at": "2026-10-14T17:06:00-04:00",
     "source_recording": "2026-10-14_1709_Runway",
     "sections": [
-      "### 00:00:00 — Ten Years of Generative Media & World Models at Runway",
-      "### 00:05:41 — From Video Generation to Real-Time World Simulation",
-      "### 00:11:22 — Simulating Environments, Physics & Interactive Worlds"
+      "### 00:00:00 — From 128-Pixel AI Films to Photorealistic Video",
+      "### 00:02:30 — Scaling Next-Frame Prediction into Physical Understanding",
+      "### 00:07:00 — Real-Time Interactive Worlds & Embodied Robotics",
+      "### 00:08:29 — World Interface Models Without 3D Engines",
+      "### 00:10:12 — Continuum & Interactive Video Portals as an OS",
+      "### 00:13:49 — Visual Thinking for Coding Agents",
+      "### 00:15:10 — Live Reactive Simulations & The Road Ahead"
     ],
-    "word_count": 3094,
-    "cleaned_at": "2026-11-14T09:52:38-05:00"
+    "word_count": 3107,
+    "cleaned_at": "2026-11-14T14:57:48-05:00"
   }
 }

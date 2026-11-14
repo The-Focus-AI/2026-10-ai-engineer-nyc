@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Agent Needs a Skill to Improve Its Skills · Ben Holmes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Turing Room</div>
+  <h1>Grade the traces, isolate the failures, and let an agent patch your skills</h1>
+  <p class="dek">Unattended coding agents rarely complain when a skill file goes stale: they brute-force port numbers, write redundant unit tests, and hand back a green pull request two minutes late. Warp DevEx Engineering Lead Ben Holmes showed how to catch that hidden friction by centralizing full session traces, grading post-merge runs against plain-markdown rubrics, and running either a scheduled meta-agent or his single-player <code>Skill Doctor</code> audit to turn recurring failure notes into concrete <code>SKILL.md</code> pull requests.</p>
+  <div class="talk-meta">Ben Holmes, Warp · 19 min talk · six chapters · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual diagram-card" data-visual="v1">
+        <div class="diagram-label">FACTORY ENGINEERING LOOP</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing the Software Factory delivery wheel feeding traces into the four-step Factory Engineering loop: Review Traces, Score Rubrics, Isolate Failures, and Propose Skill PRs."><defs><marker id="arr-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#f4cf72"/></marker><marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#8fb8d8"/></marker></defs><rect width="640" height="360" rx="8" fill="#101712"/><rect x="24" y="28" width="226" height="304" rx="6" fill="#1e2c22" stroke="rgba(242,241,232,0.22)"/><text x="40" y="54" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="600" letter-spacing="1.2">DELIVERY WHEEL</text><rect x="42" y="72" width="190" height="44" rx="4" fill="#24352a" stroke="#8fb8d8" stroke-width="1.2"/><text x="137" y="91" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">1. Triage &amp; Spec</text><text x="137" y="107" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">board / Slack intake</text><line x1="137" y1="116" x2="137" y2="134" stroke="#8fb8d8" stroke-width="1.5" marker-end="url(#arr-blue)"/><rect x="42" y="138" width="190" height="44" rx="4" fill="#24352a" stroke="#8fb8d8" stroke-width="1.2"/><text x="137" y="157" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">2. Implement + Verify</text><text x="137" y="173" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">code + computer use</text><line x1="137" y1="182" x2="137" y2="200" stroke="#8fb8d8" stroke-width="1.5" marker-end="url(#arr-blue)"/><rect x="42" y="204" width="190" height="44" rx="4" fill="#24352a" stroke="#8fb8d8" stroke-width="1.2"/><text x="137" y="223" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">3. Adversarial Review</text><text x="137" y="239" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">PR merged -&gt; emit trace</text><text x="137" y="286" text-anchor="middle" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="10.5">Updated skills govern</text><text x="137" y="302" text-anchor="middle" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="10.5">next agent runs</text><rect x="290" y="28" width="326" height="304" rx="6" fill="#1e2c22" stroke="#f4cf72" stroke-width="1.3"/><text x="308" y="54" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="600" letter-spacing="1.2">META-ENGINEERING LOOP</text><rect x="310" y="72" width="132" height="72" rx="4" fill="#24352a" stroke="rgba(242,241,232,0.32)"/><text x="376" y="98" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Collect Traces</text><text x="376" y="116" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">chat + tools + diff</text><line x1="442" y1="108" x2="462" y2="108" stroke="#f4cf72" stroke-width="1.6" marker-end="url(#arr-gold)"/><rect x="466" y="72" width="130" height="72" rx="4" fill="#24352a" stroke="rgba(242,241,232,0.32)"/><text x="531" y="98" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">LLM Judge</text><text x="531" y="116" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">markdown rubrics</text><line x1="531" y1="144" x2="531" y2="186" stroke="#f4cf72" stroke-width="1.6" marker-end="url(#arr-gold)"/><rect x="466" y="190" width="130" height="72" rx="4" fill="#24352a" stroke="rgba(242,241,232,0.32)"/><text x="531" y="216" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Isolate Failures</text><text x="531" y="234" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">pass/fail + why</text><line x1="466" y1="226" x2="446" y2="226" stroke="#f4cf72" stroke-width="1.6" marker-end="url(#arr-gold)"/><rect x="310" y="190" width="132" height="72" rx="4" fill="#24352a" stroke="#a9d18f" stroke-width="1.4"/><text x="376" y="216" text-anchor="middle" fill="#a9d18f" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Cron Skill PRs</text><text x="376" y="234" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">patch SKILL.md</text><text x="453" y="296" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="10.5">Track score inflections post-merge</text><path d="M 232 226 L 268 226 L 268 108 L 306 108" fill="none" stroke="#f4cf72" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-gold)"/><path d="M 310 242 L 268 242 L 268 286 L 236 286" fill="none" stroke="#a9d18f" stroke-width="1.5" marker-end="url(#arr-blue)"/></svg>
+        <figcaption>Software factory runs emit full traces that judge rubrics and a scheduled meta-agent turn into skill PRs.</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="hand-drawn-flow-boxes.jpg" alt="Whiteboard flow diagram showing Review agent conversations -&gt; Score quality -&gt; Isolate failures alongside a Redundant tests box and notes listing ~/.claude/**.jsonl, ~/.codex/*.jsonl, and Warp conversation storage.">
+        <figcaption>Slide from the official talk recording: centralizing local and Warp traces into quality scorers</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="efficiency-md-label-block.jpg" alt="Markdown viewer showing efficiency.md with description Whether the agent worked directly toward its result, or wasted effort on redundant steps and four scored labels: highly_efficient (1), mostly_efficient (0.8), mostly_inefficient (0.4), highly_inefficient (0.2).">
+        <figcaption>Slide from the official talk recording: the efficiency.md LLM-as-judge rubric</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="rendered-agent-skill-report.jpg" alt="Rendered Agent Skill Report for codex showing overall grade B (83) across 12 conversations scored, 19 skills installed, and 16 skills used, with category bars for efficiency (73), code quality (75), procedure compliance (80), verbosity (100), and skill coverage (100), plus cross-session findings.">
+        <figcaption>Slide from the official talk recording: Skill Doctor report card across 12 Codex sessions</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="changelog-skill-md-diff.jpg" alt="Proposed SKILL.md diff for the changelog skill citing three failed session IDs as evidence and highlighting the added rule: Name the feature once; do not list its sub-features, options, or edge cases, followed by item 4 for test-desktop-app.">
+        <figcaption>Slide from the official talk recording: session-backed diff proposed for changelog/SKILL.md</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="warp-factories-dashboard-dashboard.jpg" alt="Warp Factories Scorers dashboard over the last 7 days showing nine pass-rate tiles with trend lines, including Change Requested (97%), Slack MCP Reply (96%), Computer-Use Ask (98%), Redundant Tests (100%), Unnecessary Test Removal Correction (86%), and Complete Task Compliance (74%).">
+        <figcaption>Slide from the official talk recording: continuous scorer pass rates in Warp Factories</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="factory-engineering-optimizing-the-harness" data-visual="v1" data-caption="Factory engineering &amp; closed-loop tuning">
+      <div class="chapter">Chapter 1</div>
+      <h2>Factory engineering: optimizing the harness around the wheel</h2>
+      <p>Holmes works on Warp Factories, infrastructure for teams building automated software development lifecycles where agents triage tasks from boards or Slack, draft specs with humans, implement changes, capture screenshots via computer use, and run adversarial code review before opening a pull request. Once that delivery wheel turns reliably, the high-leverage work shifts to what he calls factory engineering: the meta-engineering discipline of improving the harness, codebase structure, and skills driving the agents.</p>
+      <p>Rather than relying on vague intuition about where agents struggle, Holmes frames skill tuning as a closed feedback loop. Scoring agents act as LLM judges over completed runs across metrics like efficiency, code quality, and test coverage; a downstream agent filters the failing runs, finds shared root causes, wakes up on a cron schedule to propose skill or codebase fixes, and tracks whether subsequent scores actually climb.</p>
+      <blockquote>“It&#x27;s the idea of actually putting in engineering work to improve the system that is driving the agents themselves.”<span class="cite">00:01:44</span></blockquote>
+      <ul class="key-points">
+        <li>Software factories automate the loop from task triage and spec writing through implementation, computer-use verification, and adversarial review.</li>
+        <li>Factory engineering treats the agent harness, codebase architecture, and skill definitions as explicit optimization targets.</li>
+        <li>Self-improvement runs as a four-step cycle: review past sessions, score against rubrics, isolate recurring failures, and propose changes on a schedule.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:01:44 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=104s">watch the factory-engineering framing</a></p>
+    </section>
+
+    <section data-chapter="centralizing-traces-to-catch-silent-workar" data-visual="v2" data-caption="Centralizing traces &amp; silent workarounds">
+      <div class="chapter">Chapter 2</div>
+      <h2>Centralizing traces to catch silent workarounds</h2>
+      <p>Before any judge can grade agent work across a team, conversations have to live in one place. Local harnesses like Claude Code, Codex, and Pi (transcribed as "Py") scatter JSONL logs across individual laptops, leading some teams Holmes spoke with to zip up <code>.claude</code> folders (heard as "dot clone folders") into shared S3 buckets, whereas cloud runners like Warp's isolated Docker sandboxes capture every team trace in one store automatically. Crucially, a usable trace needs three artifacts together: the dialogue transcript, every external tool, filesystem, and MCP call, and the resulting code diff or pull request.</p>
+      <p>Having full tool calls in the trace matters because unattended agents quietly route around broken setups without reporting them. In Warp's own test harness, outdated skill instructions left agents pinging local port numbers by trial and error until tests ran; from the outside, runs simply took two minutes longer than expected. Alongside tool-call efficiency, Holmes highlights two other high-signal team rubrics: <code>redundant tests</code>, catching agents that pile on extra unit tests, and <code>verbosity</code>, since excessive code comments and wordy PR summaries slow down human code review, the tightest bottleneck in the loop.</p>
+      <blockquote>“these AIs are very persistent and will work around whatever roadblock that they run into, and they won&#x27;t tell you about it.”<span class="cite">00:06:06</span></blockquote>
+      <ul class="key-points">
+        <li>Team-wide introspection requires three artifacts per run: the conversation transcript, tool/MCP/filesystem calls, and the output diff.</li>
+        <li>Cloud Docker sandboxes centralize team traces automatically without syncing local <code>~/.claude</code> or <code>~/.codex</code> directories to S3.</li>
+        <li>Tool-call traces expose silent brute-forcing, such as port probing around stale test instructions, alongside redundant tests and comment bloat.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:12, 00:06:06 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=366s">watch the trace &amp; efficiency discussion</a></p>
+    </section>
+
+    <section data-chapter="markdown-judge-rubrics-and-post-merge-grad" data-visual="v3" data-caption="Markdown rubrics &amp; post-merge judges">
+      <div class="chapter">Chapter 3</div>
+      <h2>Markdown judge rubrics and post-merge grading</h2>
+      <p>A scorer in Warp's setup is a plain markdown file shaped like a high-school essay rubric. On screen, <code>efficiency.md</code> defines four discrete tiers (<code>highly_efficient</code> at <code>1</code>, <code>mostly_efficient</code> at <code>0.8</code>, <code>mostly_inefficient</code> at <code>0.4</code>, and <code>highly_inefficient</code> at <code>0.2</code>), followed by concise assessment bullets covering rework from mistakes, cost to the human, information gathering, and routine-step overhead. Anything at <code>0.4</code> or <code>0.2</code> falls below the pass line and flags the session for deeper review.</p>
+      <p>In production, merging a pull request triggers a grading run across either every merged session or a random sample to save tokens. Walking through a sample full-stack auth-service PR, Holmes shows how one session can pass <code>verbosity</code> because the chosen model skipped noisy inline comments, yet fail <code>redundant tests</code> for writing unit tests where team guidelines prefer end-to-end tests, and fail <code>efficiency</code> for exploring how to boot the test environment from scratch. Every twenty-four hours, a cron job filters the past day's ~200 graded runs down to roughly fifty failures and hands their written rationales, plus repository and skills access, to a self-improvement agent.</p>
+      <div class="stills"><figure class="still"><img src="same-efficiency-md-label.jpg" alt="Markdown viewer showing efficiency.md with the top three label blocks highlighted down to the 0.4 failing cutoff."></figure></div>
+      <blockquote>“So automatically, usually the trigger being a PR merged, kick in an agent to review that conversation across your grading criteria.”<span class="cite">00:08:55</span></blockquote>
+      <ul class="key-points">
+        <li>Scorer files are concise markdown rubrics with numeric score tiers (<code>1</code>, <code>0.8</code>, <code>0.4</code>, <code>0.2</code>) and explicit pass/fail cutoffs.</li>
+        <li>Merging a PR triggers judge agents that record both pass/fail grades and plain-text explanations of why a session failed.</li>
+        <li>A daily cron job filters recent runs down to failing sessions and feeds their notes to a self-improvement agent that proposes skill or repo changes.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:08:55 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=535s">watch the efficiency.md rubric walkthrough</a></p>
+    </section>
+
+    <section data-chapter="skill-doctor-batch-auditing-local-logs-int" data-visual="v4" data-caption="Skill Doctor batch report card">
+      <div class="chapter">Chapter 4</div>
+      <h2>Skill Doctor: batch-auditing local logs into a report card</h2>
+      <p>For developers working locally rather than inside a cloud software factory, Holmes packaged the same grading pipeline into a standalone skill called <code>Skill Doctor</code> (heard in the room transcript as "work. Dead slash skill doctor" for <code>warp.dev/skill-doctor</code>). Pointed at local Claude, Codex, or Pi session logs, it batches condensed transcripts through scorer subagents for token efficiency and compiles a one-shot HTML report card.</p>
+      <p>In his live demo over twelve Codex sessions on a desktop project, the rendered <code>Agent Skill Report</code> gave the setup an overall <code>B</code> (<code>83</code>), with <code>100</code> on verbosity (garbled as "for Basu" in ASR) and skill coverage (<code>16</code> of <code>19</code> installed skills used), <code>80</code> on procedure compliance, <code>75</code> on code quality, and <code>73</code> on efficiency. Beneath the bars, the report surfaced concrete cross-session findings: pushing to <code>origin</code> instead of contributor forks in three of twelve runs, skipping <code>writing-tests</code> and <code>changelog</code> skills when needed, and leaving visual UI bugs unverified.</p>
+      <blockquote>“But this is a skill that you can run on your single-player setup, and it&#x27;ll crawl through all of your agent conversations in Claude, Codex, Py, or whatever else and just do a one-time grading.”<span class="cite">00:13:43</span></blockquote>
+      <ul class="key-points">
+        <li><code>Skill Doctor</code> runs a one-time batch audit across local Claude, Codex, or Pi JSONL transcripts without requiring cloud infrastructure.</li>
+        <li>On twelve sample Codex runs, the report card pinpointed lagging efficiency (<code>73</code>) and code quality (<code>75</code>) despite perfect verbosity (<code>100</code>).</li>
+        <li>Cross-session findings cited exact counts, such as pushing to the wrong git remote in 3 of 12 sessions, rather than generic advice.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:43 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=823s">watch the Skill Doctor live audit</a></p>
+    </section>
+
+    <section data-chapter="turning-failure-notes-into-concrete-skill-" data-visual="v5" data-caption="Evidence-backed SKILL.md diffs">
+      <div class="chapter">Chapter 5</div>
+      <h2>Turning failure notes into concrete <code>SKILL.md</code> diffs</h2>
+      <p>Rather than stopping at grades, <code>Skill Doctor</code> drafts targeted diffs against the project's <code>SKILL.md</code> files, citing the exact failed session IDs as evidence at the top of each recommendation. In Holmes's demo, scoring notes caught the agent repeatedly fighting local port numbers during desktop app testing because it lacked upfront environment setup instructions; the proposed edit to <code>test-desktop-app/SKILL.md</code> documented <code>HUBBLE_DESKTOP_DEBUG_PORT</code> for parallel worktrees so the agent stopped wasting tool calls probing ports.</p>
+      <p>A second proposed diff rewrote <code>changelog/SKILL.md</code> after three sessions required manual human edits or missed the changelog entry altogether. The highlighted addition made the formatting rule unmistakable: name a new feature once in user-facing release notes instead of listing every sub-feature, option, and edge case, eliminating repetitive PR review nits.</p>
+      <blockquote>“So this proposed a change to the end-to-end testing skill, to have the agent get better instructions on finding a port number first, and then going, instead of just banging against the wall until it got running, so that can save a little bit of efficiency in the tool calls.”<span class="cite">00:13:43</span></blockquote>
+      <ul class="key-points">
+        <li>Every proposed <code>SKILL.md</code> diff cites specific failed session IDs and failure categories as evidence.</li>
+        <li>Adding explicit port-discovery instructions (<code>HUBBLE_DESKTOP_DEBUG_PORT</code>) eliminated blind port-probing in desktop end-to-end tests.</li>
+        <li>Tightening <code>changelog/SKILL.md</code> to forbid sub-feature laundry lists removed recurring manual edits during PR wrap-up.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:43 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=921s">watch the proposed SKILL.md diffs</a></p>
+    </section>
+
+    <section data-chapter="score-inflection-dashboards-over-opaque-ov" data-visual="v6" data-caption="Score inflections vs. opaque memory">
+      <div class="chapter">Chapter 6</div>
+      <h2>Score inflection dashboards over opaque overnight memory</h2>
+      <p>Holmes closes by contrasting rubric-backed self-improvement with autonomous agent memory or "overnight dreaming" systems. While background memory lets an agent reflect on past runs, its takeaways remain invisible and unverified; tracking rubric pass rates on a time-series dashboard lets engineers see whether merging a proposed skill PR actually moved an average score from 50–60% upward at a clear inflection point, or changed nothing at all.</p>
+      <p>Inside Warp's own internal DevEx Factory dashboard, nine live scorers track specific operational behaviors, from <code>Redundant Tests</code> (<code>100%</code>) and <code>Change Requested</code> (<code>97%</code>) to <code>Complete Task Compliance</code> (<code>74%</code>), and feed a review inbox of self-improvement PRs. One merged PR he highlighted caught a missing permission in their triage agent's configuration: the agent had been burning tool calls trying to spawn subagents without the config flag enabled, and patching the factory setup removed the wasted loop permanently.</p>
+      <blockquote>“So the agent&#x27;s constantly scoring setups and it&#x27;s giving grades of like 50%, 60% on average, and you can attribute changes that you made in your agent setup to inflections in the score.”<span class="cite">00:16:10</span></blockquote>
+      <ul class="key-points">
+        <li>Overnight memory loops hide what the agent learned; time-series rubric charts verify whether a merged skill PR actually raised pass rates.</li>
+        <li>Warp's internal factory dashboard tracks specialized scorers (<code>Redundant Tests</code>, <code>Slack MCP Reply</code>, <code>Complete Task Compliance</code>) over rolling windows.</li>
+        <li>Continuous trace grading caught a missing subagent permission in Warp's triage config that had been silently wasting tool calls.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:16:10 · <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ&t=970s">watch the score-inflection dashboard</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=pz74r-4dGfQ">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

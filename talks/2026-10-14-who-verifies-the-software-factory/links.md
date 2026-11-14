@@ -3,21 +3,21 @@
 - **Session ID**: `11b98f47-dcc2-4524-8c06-d1f6c3ff044b`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-14_1130_Software-Factories`
-- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00)
 
 ## Speakers
 
 - **Addy Osmani** (Anthropic) · status: `found`
-  - Profile: https://ai.engineer/speakers/addy-osmani
+  - Site: https://ai.engineer/speakers/addy-osmani
   - Evidence: *"I'm very excited to be here and talk about who verifies the software factory."*
 - **Manish Kapur** (Sonar) · status: `found`
-  - Profile: https://dev.to/mksonar
+  - Site: https://dev.to/mksonar
   - Evidence: *"I'm very excited to be here and talk about who verifies the software factory."*
 
 ## Companies
 
-- **Anthropic** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Addy Osmani at AI Engineer New York 2026 (Who verifies the software factory?).
-- **Sonar** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Manish Kapur at AI Engineer New York 2026 (Who verifies the software factory?).
+- **Anthropic** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (Who verifies the software factory?).
+- **Sonar** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (Who verifies the software factory?).
 
 ## Verified Resources
 

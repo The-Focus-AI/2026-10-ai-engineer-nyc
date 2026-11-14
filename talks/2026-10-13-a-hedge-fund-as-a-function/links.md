@@ -3,24 +3,28 @@
 - **Session ID**: `9a9dfcd0-459f-43eb-b3f8-004864b4ad2a`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-13_1630_korean-news`
-- **Freshness**: `settling` (last checked 2026-10-26T10:41:07-04:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T15:00:16-05:00)
 
 ## Speakers
 
 - **Frank Long** (Coatue) · status: `partial`
-  - Profile: https://ai.engineer/nyc/2026/schedule
+  - Site: https://ai.engineer/nyc/2026/schedule
   - Evidence: *"My name is Frank. I work at Coatue, which is a technology investment firm across public and private markets."*
 
 ## Companies
 
-- **Coatue** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Frank Long at AI Engineer New York 2026 (A Hedge Fund as a Function).
+- **Coatue** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (A Hedge Fund as a Function).
 
 ## Verified Resources
 
-- **[Schedule | AI Engineer NYC 2026 — A Hedge Fund as a Function](https://ai.engineer/nyc/2026/schedule#session-9a9dfcd0-459f-43eb-b3f8-004864b4ad2a)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
+- **[Schedule | AI Engineer NYC 2026 — A Hedge Fund as a Function](https://ai.engineer/nyc/2026/schedule#session-9a9dfcd0-459f-43eb-b3f8-004864b4ad2a)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 13 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "A Hedge Fund as a Function".
   - Evidence: *"My name is Frank. I work at Coatue, which is a technology investment firm across public and private markets."*
+- **[AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition](https://www.youtube.com/watch?v=akEqiXFo3GM&t=24464s)** (`youtube`, first seen 2026-11-14T15:00:16-05:00, post-event publication — added 32 days after the talk)
+  - Why: Main-room livestream at chapter 'A Hedge Fund as a Function - Frank Long, Coatue' (6:47:44); no standalone recording of this session was published.
+  - Evidence: page title *"AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"*
 
 ## Coverage & Gaps
 
-- Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page.
+- Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.
+- No standalone YouTube cut found (2026-11-14); linked the exact chapter in the Oct 13 main-room livestream (6:47:44) instead.

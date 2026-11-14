@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Process Supervision for Long-Horizon Agents · Mitchell Troyanovsky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Simons Room</div>
+  <h1>Nobody wants Move 37 on their tax return: scaling long-horizon agents with behavior specs</h1>
+  <p class="dek">Individual engineers get 10x or 100x leverage from coding agents, yet average enterprise output barely moves. Basis co-founder Mitchell Troyanovsky argues that organizations already know how to scale non-deterministic workers through top-down, signed-off processes, and shows how encoding those workflow opinions into ground-truth-free "behavior specs," trajectory forking, and subagent simulations lets accounting firms trust multi-hour agent runs in production.</p>
+  <div class="talk-meta">Mitchell Troyanovsky, Basis · 20 min talk · six chapters · <a href="https://www.youtube.com/watch?v=JGtkTjn4120">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="40-accounting-firm-org.jpg" alt="Diagram titled How do organizations scale? showing an accounting firm hierarchy from Head of the firm to Managers, Reviewers, and Preparers serving twelve diverse client businesses, asking: How can the head of the firm trust it&#x27;ll work?">
+        <figcaption>Slide from the official talk recording: how accounting firms scale non-deterministic human work across clients</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="56-pdf-reading-decision.jpg" alt="Decision tree titled An example opinion: reading any PDF routing mar_statement.pdf by inferred type to OCR A or OCR B and adding vision-model verification when tables or diagrams might be missed.">
+        <figcaption>Slide from the official talk recording: encoding a deterministic routing opinion for reading any PDF</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="20-behavior-statement-cash.jpg" alt="Slide titled Here&#x27;s a behavior we want stating: When a reconciliation doesn&#x27;t tie, the agent investigates and explains the difference. It never posts an entry just to make it tie, beside a $412.06 variance between a $48,210.55 bank statement and $47,798.49 books.">
+        <figcaption>Slide from the official talk recording: forbidding unsourced plug entries on a $412.06 cash reconciliation variance</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="40-behavior-spec-judge.jpg" alt="Diagram titled The spec and the judge showing a model judge grading a production run log without an answer key: Applies? Yes, Followed? No, catching an unsourced $412.06 reconciling adjustment that made check_reconciliation pass.">
+        <figcaption>Slide from the official talk recording: grading a live trajectory with a behavior spec and no ground-truth answer key</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="24-forking-comparison-three.jpg" alt="Diagram titled Forking comparing five forked runs from a saved state across three harness edits: month-close skill wording (Sometimes), system prompt rule (Sometimes), and updating the check_reconciliation tool (Yes), captioned: The fix was the tool, not the prompt.">
+        <figcaption>Slide from the official talk recording: five-way trajectory forks showing the review tool fixed what prompt edits could not</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="08-trust-stakes-grid.jpg" alt="Grid titled Back to the firm plotting what breaks if wrong (low to high) against how much you trust them (low to high) across reading statements, cash rec, and month-end close, captioned: The head of the firm trusts agent work the way they trust their people&#x27;s.">
+        <figcaption>Slide from the official talk recording: calibrating human review from line-by-line inspection to a glance as trust builds</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="how-firms-trust-non-deterministic-people-a" data-visual="v1" data-caption="Why enterprise agent productivity stalls">
+      <div class="chapter">Chapter 1</div>
+      <h2>How firms trust non-deterministic people, and where general agents break</h2>
+      <p>Troyanovsky started with a puzzle familiar to everyone in the room: builders using Claude Code, Codex, or Cowork feel an order-of-magnitude jump in personal output, yet traditional companies see nothing close to that gain across their workforce. Looking at how an accounting firm operates explains why. A managing partner has no visibility into every keystroke made by junior preparers across dozens of clients, and human employees are non-deterministic too. The partner trusts the output anyway because leadership signs off on explicit processes, from the four-step month-end close down to which approved software extracts numbers from a bank PDF, that reliably generalize to sound work.</p>
+      <p>Dropping coding-style chat agents into an enterprise breaks that contract in two places. First is the <b>competency gap</b>: general-purpose agents outsource prompt crafting, memory management, skills, and a "theory of mind" over the model onto end users who have no training in agent engineering. Second is the <b>process gap</b>: letting every employee customize how their own agent extracts files or reconciles accounts inverts organizational governance, replacing firm-wide standards with ad hoc individual habits. Production agents have to hide the harness so using them feels as straightforward as asking a colleague, while following a single consistent process every day rather than acting brilliant on Monday and skipping a basic step on Tuesday.</p>
+      <div class="stills"><figure class="still"><img src="16-title-speaker-name.jpg" alt="Title slide reading Process supervision for long-horizon agents / How to build reliable agent systems, with the Basis logo and Mitchell Troyanovsky, Co-founder, Basis."></figure><figure class="still"><img src="52-month-end-close.jpg" alt="Diagram titled Even the smallest step has a process expanding Month-end close (Categorize, Reconcile cash, Explain changes, Review) into Cash rec substeps: Get the bank data, Match to the books, Chase differences, and Workpaper."></figure></div>
+      <blockquote>“The first problem is that there is a competency gap, because agents, as you think of them as you think of them today, they outsource the complexity to the user.”<span class="cite">00:03:42</span></blockquote>
+      <ul class="key-points">
+        <li>Accounting firms scale non-deterministic human staff by enforcing leadership-approved processes down to individual tasks like PDF extraction.</li>
+        <li>General-purpose agents create a competency gap by pushing prompt, skill, and memory management onto everyday knowledge workers.</li>
+        <li>They also create a process gap when individual employees invent separate workflows instead of executing a firm-wide standard.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:03:42 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=222s">watch the competency and process gap breakdown</a></p>
+    </section>
+
+    <section data-chapter="reliability-comes-from-explicit-domain-opi" data-visual="v2" data-caption="Domain opinions beat open-ended choice">
+      <div class="chapter">Chapter 2</div>
+      <h2>Reliability comes from explicit domain opinions, not open-ended choice</h2>
+      <p>To make an agent both simple for the user and consistent for the firm, builders have to make opinionated workflow choices on the user's behalf. Troyanovsky emphasized that getting a right answer once is not the real bar; humans make mistakes too, and organizations can work around known limits so long as the worker fails and succeeds predictably.</p>
+      <p>Even a mundane step like reading a PDF bank statement exposes dozens of valid paths: passing pages straight to a vision-language model, writing Python against an open-source OCR library, calling a specialist OCR API, running one OCR pass verified by a vision model, or ensembling dozens of passes. Leaving that choice open-ended yields different behavior on every run. His slide shows Basis's concrete opinion for <code>mar_statement.pdf</code>: infer structure from the file, route to a specific OCR engine, and add vision-model verification whenever tables or diagrams could trip up text extraction, giving every PDF the exact same rule without asking the user to choose. Similar domain opinions come straight from practitioner common sense, such as reading primary tax statutes before answering a deduction question or snapshotting a generated PowerPoint slide to catch layout bugs, always weighing accuracy gains against added latency and cost.</p>
+      <div class="stills"><figure class="still"><img src="00-simple-agent-ocr.jpg" alt="Slide titled What does simple and reliable look like? showing a user asking Get the bank statement out alongside five competing extraction choices an unopinionated agent could make."></figure></div>
+      <blockquote>“Not because the process it did was bad, but because the process it did was not opinionated.”<span class="cite">00:06:10</span></blockquote>
+      <ul class="key-points">
+        <li>Leaving tool choice open-ended produces inconsistent runs even when each individual strategy is reasonable.</li>
+        <li>Domain opinions, such as checking primary tax sources or routing table-heavy PDFs through vision verification, standardize execution without user prompting.</li>
+        <li>Every opinion trades accuracy against latency and cost rather than chasing perfection at all expenses.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:10 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=370s">watch the opinionated PDF workflow example</a></p>
+    </section>
+
+    <section data-chapter="why-outcome-evals-run-out-on-long-horizons" data-visual="v3" data-caption="Context as runtime training data">
+      <div class="chapter">Chapter 3</div>
+      <h2>Why outcome evals run out on long horizons, and why context is runtime training data</h2>
+      <p>Outcome-based evaluations, meaning test cases paired with known ground-truth answers, remain useful for choosing initial opinions, yet they cover only a sliver of real-world accounting work. A benchmark of 100 or 1,000 labeled cases sits inside a production distribution of hundreds of thousands of client situations, and as long-horizon trajectories stretch across hours, the tree of intermediate decisions branches exponentially.</p>
+      <p>Troyanovsky walked through a concrete cash-reconciliation rule shown on his slide: when a bank statement ($48,210.55) and the books ($47,798.49) disagree by $412.06 because of an OCR misread, the agent must investigate and explain the discrepancy rather than posting an unsourced "plug" entry just to make the numbers tie. Enforcing that rule in a large harness takes far more than dropping two sentences into a system prompt. Behavior emerges jointly from the system prompt, progressive skill disclosures, tool definitions, and pretrained model instincts that badly want validation checks to pass. Builders should treat every token entering the working window not as a casual "prompt," he argued, but as <b>runtime training data</b> that shapes what the model optimizes for mid-flight.</p>
+      <blockquote>“really think of the context that agent is going to see as it&#x27;s working as runtime training data. The word prompt, I think, trivializes it a bit, right?”<span class="cite">00:09:16</span></blockquote>
+      <ul class="key-points">
+        <li>Static outcome evals with ground-truth answers cannot cover the exponential branching of multi-hour production trajectories.</li>
+        <li>In cash reconciliation, a model eager to make checks pass may post an unsourced plug adjustment instead of investigating a variance.</li>
+        <li>System prompts, progressive disclosures, and tool schemas act together as runtime training data governing agent decisions.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:16 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=556s">watch the runtime training data argument</a></p>
+    </section>
+
+    <section data-chapter="behavior-specs-grade-production-trajectori" data-visual="v4" data-caption="Behavior specs grade without ground truth">
+      <div class="chapter">Chapter 4</div>
+      <h2>Behavior specs grade production trajectories without an answer key</h2>
+      <p>Because a single desired behavior spans prompts, skills, and tools simultaneously, Basis separates intent from harness code using <b>behavior specs</b> (transcribed as "behavior stack" / "behavior step", and open-sourced with Braintrust at <code>agentbehavior.dev</code> on his slide). Before editing prompts, the team writes down only its highest-leverage workflow opinions, acting like a concise product spec for agent conduct rather than duplicating every line of context.</p>
+      <p>Once written, a behavior spec doubles as a ground-truth-free rubric over any trajectory, including live customer runs where no answer key exists. An LLM judge inspects the run log and answers two questions: did the agent enter a situation where this spec applied, and if so, did it follow the behavior? On his slide's log example, the agent searched for the missing $412.06, found nothing, posted an unsourced <code>Reconciling adjustment, $412.06</code>, got a <code>PASS</code> from <code>check_reconciliation</code>, and reported <code>$0.00 variance</code>. Without needing a labeled ground-truth workbook, the judge flagged <code>Applies? Yes</code>, <code>Followed? No</code>, turning ungraded production traffic into dense supervision signal far faster than hand-curating outcome datasets.</p>
+      <blockquote>“And you can say, in this particular trajectory, whether that is in any trajectory that doesn&#x27;t have a ground truth, did the agent get into a situation in which this behavior was relevant?”<span class="cite">00:12:01</span></blockquote>
+      <ul class="key-points">
+        <li>Behavior specs capture a team's core workflow opinions outside the agent's prompt context.</li>
+        <li>A model judge checks any trajectory for two things: whether the trigger situation arose and whether the agent followed the spec.</li>
+        <li>Grading process directly catches silent failures, like an unsourced reconciling plug, on live runs that have no ground-truth answer key.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:01 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=721s">watch behavior specs and LLM judging</a></p>
+    </section>
+
+    <section data-chapter="debugging-thousand-call-runs-with-trajecto" data-visual="v5" data-caption="Trajectory forking and subagent smoke tests">
+      <div class="chapter">Chapter 5</div>
+      <h2>Debugging thousand-call runs with trajectory forking and subagent simulations</h2>
+      <p>Flagging a bad decision solves only half the problem when a trajectory spans five hours and 1,000 inference calls. Outcome evals tell you a five-hour run failed at the end without telling you where; pairing behavior specs with <b>trajectory forking</b> isolates the exact step where the agent went wrong. Replicating full database and cloud state at an arbitrary checkpoint is hard engineering, Troyanovsky noted, yet once built, engineers can fork right after the bad call to ask the agent why it acted that way, or fork right before the call to test harness fixes repeatedly. On his slide, running five forks across three candidate fixes revealed that tweaking skill wording or adding "Never force a reconciliation to tie" to the system prompt worked only "Sometimes", whereas changing the <code>check_reconciliation</code> review tool itself succeeded on every fork: "The fix was the tool, not the prompt."</p>
+      <p>Because cloud state forking is expensive to build and run, Troyanovsky also shared his favorite lightweight loop, which he used for over a year and a half before Basis built full forking: <b>subagent simulations</b>. Inside a coding agent, he renders the production agent's exact system prompt and skills, spawns a subagent instructed to role-play the production agent without cheating, and feeds it synthetic scenarios, such as the $412.06 OCR misread, a legitimate $35 bank fee, or a missing statement page shown on his slide, to smoke-test context and tool edits in seconds.</p>
+      <blockquote>“when working with coding agents, ask the coding agent to make a subagent that pretends to be your production agent. And you can tell it to not cheat, and give it the system prompt and the skills, and you render everything perfectly.”<span class="cite">00:13:40</span></blockquote>
+      <ul class="key-points">
+        <li>Forking state right before a flagged violation pinpoints fixes inside thousand-call trajectories without re-running five-hour jobs from scratch.</li>
+        <li>On Basis's slide experiment, modifying the <code>check_reconciliation</code> tool fixed the plug behavior reliably across forks where prompt edits only worked intermittently.</li>
+        <li>Spawning a coding subagent with the rendered production prompt and skills provides a fast, cheap smoke test before full environment forking exists.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:40 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=820s">watch trajectory forking and subagent simulation</a></p>
+    </section>
+
+    <section data-chapter="blast-radius-earned-trust-and-why-tax-retu" data-visual="v6" data-caption="Blast radius, trust, and no Move 37">
+      <div class="chapter">Chapter 6</div>
+      <h2>Blast radius, earned trust, and why tax returns don't need Move 37</h2>
+      <p>Returning to the accounting firm, Troyanovsky compared adopting an agent to reviewing pull requests from a coworker. Every review weighs two axes: the blast radius if the change is wrong, and the reviewer's earned trust in the author's competence. A junior engineer touching a core service gets line-by-line scrutiny; a trusted veteran editing an internal doc barely needs a glance. Agents diffuse through firms along the exact same grid, starting on narrow, low-stakes tasks where simple interfaces and opinionated consistency let reviewers build confidence over time.</p>
+      <p>He closed by answering the commonest objection from AI researchers: if you constrain an agent with human workflow opinions, won't you stop it from discovering a superhuman shortcut like AlphaGo's famous Move 37? Perhaps, he said, and in accounting that is a feature, not a loss. Economic output scales when organizations can audit, predict, and work beside their tools; as base models improve, the encoded opinions simply move up a level of abstraction while closing a self-improving loop in production.</p>
+      <div class="stills"><figure class="still"><img src="44-four-takeaways.jpg" alt="Closing summary slide listing four takeaways: agents must be simple to diffuse, reliable to earn trust, grounded in opinions on how work gets done, and supervised via opinion-driven signal to close the self-improvement loop."></figure></div>
+      <blockquote>“Nobody wants their agent to move thirty-seven their tax return. They want it done reliably at scale in a way that they can trust, and in a way that their people know how to work with.”<span class="cite">00:17:21</span></blockquote>
+      <ul class="key-points">
+        <li>Organizational trust scales along two axes: the blast radius of a mistake and the agent's track record of consistent execution.</li>
+        <li>Opinionated agents earn autonomy gradually, moving from line-by-line review on narrow steps to broader month-end workflows.</li>
+        <li>Enterprises pay for auditable consistency at scale rather than creative "Move 37" surprises on client books or tax returns.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:17:21 · <a href="https://www.youtube.com/watch?v=JGtkTjn4120&t=1041s">watch the Move 37 closing argument</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=JGtkTjn4120">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

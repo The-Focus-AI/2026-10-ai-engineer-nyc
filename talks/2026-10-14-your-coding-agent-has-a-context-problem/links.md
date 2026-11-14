@@ -3,17 +3,17 @@
 - **Session ID**: `4b33ac12-ed84-4e32-be63-6a4f9f3acb32`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-14_1104_Linear`
-- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00)
 
 ## Speakers
 
 - **Tom Moor** (Linear) · status: `found`
-  - Profile: https://ai.engineer/speakers/tom-moor
+  - Site: https://ai.engineer/speakers/tom-moor
   - Evidence: *"Hey everybody, I'm Tom. I run the engineering team at Linear."*
 
 ## Companies
 
-- **Linear** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Tom Moor at AI Engineer New York 2026 (Your Coding Agent Has a Context Problem).
+- **Linear** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (Your Coding Agent Has a Context Problem).
 
 ## Verified Resources
 

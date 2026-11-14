@@ -31,7 +31,7 @@
           "scholar": null
         },
         "evidence": [
-          "So, what we mean by beyond done, just to like jump. Straight into it."
+          "So, what we mean by beyond done, just to like jump straight into it."
         ],
         "status": "found"
       },
@@ -47,7 +47,7 @@
           "scholar": null
         },
         "evidence": [
-          "So, what we mean by beyond done, just to like jump. Straight into it."
+          "So, what we mean by beyond done, just to like jump straight into it."
         ],
         "status": "found"
       }
@@ -65,7 +65,7 @@
           "scholar": null
         },
         "evidence": [
-          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data"
         ],
         "status": "partial"
       },
@@ -81,7 +81,7 @@
           "scholar": null
         },
         "evidence": [
-          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data"
         ],
         "status": "partial"
       }
@@ -169,7 +169,7 @@
           "scholar": null
         },
         "evidence": [
-          "So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."
+          "So my goal here today, and with this project that I've been working on, is to first measure this sloppy writing — not just love words."
         ],
         "status": "found"
       }
@@ -187,7 +187,7 @@
           "scholar": null
         },
         "evidence": [
-          "Problem when we tackle some great vision for a task. That is so specific. We don't have any particular benchmark we can rely on"
+          "Problem when we tackle some great vision for a task that is so specific, we don't have any particular benchmark we can rely on."
         ],
         "status": "partial"
       }
@@ -205,7 +205,7 @@
           "scholar": null
         },
         "evidence": [
-          "So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
+          "So the first one, I just want to motivate what is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that, understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
         ],
         "status": "partial"
       }
@@ -259,7 +259,7 @@
           "scholar": null
         },
         "evidence": [
-          "by reviewing and testing these codebases, we reveal bugs. Logical errors, code quality concerns, primarily from AI-generated code."
+          "by reviewing and testing these codebases, we reveal bugs, logical errors, code quality concerns, primarily from AI-generated code."
         ],
         "status": "found"
       }
@@ -277,7 +277,7 @@
           "scholar": null
         },
         "evidence": [
-          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"
+          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you to rent GPUs"
         ],
         "status": "partial"
       }
@@ -295,7 +295,7 @@
           "scholar": null
         },
         "evidence": [
-          "And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"
+          "And for the last year, my main task and goal there was to integrate Daytona basically everywhere where sandbox makes sense, because where they don't have SaaS provider"
         ],
         "status": "partial"
       }
@@ -313,7 +313,7 @@
           "scholar": null
         },
         "evidence": [
-          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses."
+          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses"
         ],
         "status": "found"
       }
@@ -367,7 +367,7 @@
           "scholar": null
         },
         "evidence": [
-          "I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."
+          "I'm Dillon Rolnick. I'm the CEO of Nous Research, and today we're going to talk about building on foundations and platforms that you can actually own."
         ],
         "status": "partial"
       }
@@ -385,7 +385,7 @@
           "scholar": null
         },
         "evidence": [
-          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."
+          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank talking about how they think about leveraging applied AI as it relates to making decisions around investments."
         ],
         "status": "found"
       }
@@ -403,7 +403,7 @@
           "scholar": null
         },
         "evidence": [
-          "Well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp. Both inside of the company, but also all of our customers, accounting and finance professionals."
+          "well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp, both inside of the company, but also all of our customers, accounting and finance professionals"
         ],
         "status": "found"
       }
@@ -421,7 +421,7 @@
           "scholar": null
         },
         "evidence": [
-          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."
+          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work"
         ],
         "status": "found"
       }
@@ -439,7 +439,7 @@
           "scholar": null
         },
         "evidence": [
-          "My name is Evan Kormos. I've been. Delivering, designing, building software for 20 years. The last 15 in enterprise financial services. I am a player coach at Coinbase. And we're here today to talk about trusting agents and policy-driven workflows."
+          "my name is Evan Kormos. I've been delivering, designing, building software for 20 years, the last 15 in enterprise financial services. I am a player coach at Coinbase, and we're here today to talk about trusting agents and policy-driven workflows."
         ],
         "status": "found"
       }
@@ -457,7 +457,7 @@
           "scholar": null
         },
         "evidence": [
-          "Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."
+          "Each of these builder agents has a review agent that it calls upon that has built in reviews. Probably every Compound AI you have has built-in reviewers."
         ],
         "status": "partial"
       }
@@ -527,7 +527,7 @@
           "scholar": null
         },
         "evidence": [
-          "Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
+          "recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
         ],
         "status": "found"
       }
@@ -545,7 +545,7 @@
           "scholar": null
         },
         "evidence": [
-          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."
+          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp, and I'm going to be talking about building self-improving agents, agents that look through their past work and figure out how to improve their own setup."
         ],
         "status": "found"
       }
@@ -563,7 +563,7 @@
           "scholar": null
         },
         "evidence": [
-          "Welcome back, everyone. For those who haven't met me yet. My name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research. And what it means for people to implement it in their business."
+          "Welcome back, everyone. For those who haven't met me yet, my name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research and what it means for people to implement it in their business."
         ],
         "status": "partial"
       }
@@ -581,7 +581,7 @@
           "scholar": null
         },
         "evidence": [
-          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses AI to help enterprise service partners like Apollo deal with messy, fragmented data."
         ],
         "status": "partial"
       },
@@ -597,7 +597,7 @@
           "scholar": null
         },
         "evidence": [
-          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses AI to help enterprise service partners like Apollo deal with messy, fragmented data."
         ],
         "status": "found"
       }
@@ -633,7 +633,7 @@
           "scholar": null
         },
         "evidence": [
-          "Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."
+          "Please welcome Cristóbal Valenzuela, co-founder and co-CEO of Runway."
         ],
         "status": "found"
       }
@@ -656,7 +656,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Nick Nisi at AI Engineer New York 2026 (Beyond “Done”: Building Verification Loops for AI Agents).",
         "evidence": [
-          "So, what we mean by beyond done, just to like jump. Straight into it."
+          "So, what we mean by beyond done, just to like jump straight into it."
         ]
       }
     ],
@@ -666,7 +666,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Aaron Linsky at AI Engineer New York 2026 (Vault: Making Unstructured Data Work for Investing).",
         "evidence": [
-          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data"
         ]
       }
     ],
@@ -706,7 +706,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Louis-François Bouchard at AI Engineer New York 2026 (Can Any Model Write Like Me? Building a Benchmark for Creative Writing).",
         "evidence": [
-          "So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."
+          "So my goal here today, and with this project that I've been working on, is to first measure this sloppy writing — not just love words."
         ]
       }
     ],
@@ -716,7 +716,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Nathanael Weill at AI Engineer New York 2026 (Write the Answer First: Generating Eval Datasets for Agents With No Benchmark).",
         "evidence": [
-          "Problem when we tackle some great vision for a task. That is so specific. We don't have any particular benchmark we can rely on"
+          "Problem when we tackle some great vision for a task that is so specific, we don't have any particular benchmark we can rely on."
         ]
       }
     ],
@@ -726,7 +726,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Ryan Ahern at AI Engineer New York 2026 (Search the Web as It Was: An Introduction to Exa Snapshot).",
         "evidence": [
-          "So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
+          "So the first one, I just want to motivate what is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that, understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
         ]
       }
     ],
@@ -756,7 +756,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Daksh Gupta at AI Engineer New York 2026 (How to build an AI code review agent: from the creators of Greptile).",
         "evidence": [
-          "by reviewing and testing these codebases, we reveal bugs. Logical errors, code quality concerns, primarily from AI-generated code."
+          "by reviewing and testing these codebases, we reveal bugs, logical errors, code quality concerns, primarily from AI-generated code."
         ]
       }
     ],
@@ -766,7 +766,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Chris Vela at AI Engineer New York 2026 (From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod).",
         "evidence": [
-          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"
+          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you to rent GPUs"
         ]
       }
     ],
@@ -776,7 +776,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Mislav Ivanda at AI Engineer New York 2026 (Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On).",
         "evidence": [
-          "And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"
+          "And for the last year, my main task and goal there was to integrate Daytona basically everywhere where sandbox makes sense, because where they don't have SaaS provider"
         ]
       }
     ],
@@ -786,7 +786,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Alex Lieberman at AI Engineer New York 2026 (Welcome Back - Featured Keynotes).",
         "evidence": [
-          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses."
+          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses"
         ]
       }
     ],
@@ -816,7 +816,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Dillon Rolnick at AI Engineer New York 2026 (Hermes gives you wings: Build on open foundations.).",
         "evidence": [
-          "I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."
+          "I'm Dillon Rolnick. I'm the CEO of Nous Research, and today we're going to talk about building on foundations and platforms that you can actually own."
         ]
       }
     ],
@@ -826,7 +826,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Alex Lieberman at AI Engineer New York 2026 (Closing Remarks).",
         "evidence": [
-          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."
+          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank talking about how they think about leveraging applied AI as it relates to making decisions around investments."
         ]
       }
     ],
@@ -836,7 +836,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Alexander Shevchenko at AI Engineer New York 2026 (Chasing capabilities while waiting for the frontier).",
         "evidence": [
-          "Well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp. Both inside of the company, but also all of our customers, accounting and finance professionals."
+          "well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp, both inside of the company, but also all of our customers, accounting and finance professionals"
         ]
       }
     ],
@@ -846,7 +846,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Tariq Shaukat at AI Engineer New York 2026 (The Machine that Changed the World, vAI).",
         "evidence": [
-          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."
+          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work"
         ]
       }
     ],
@@ -856,7 +856,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Evan Kormos at AI Engineer New York 2026 (Trusting Agents in Policy-Driven Workflows).",
         "evidence": [
-          "My name is Evan Kormos. I've been. Delivering, designing, building software for 20 years. The last 15 in enterprise financial services. I am a player coach at Coinbase. And we're here today to talk about trusting agents and policy-driven workflows."
+          "my name is Evan Kormos. I've been delivering, designing, building software for 20 years, the last 15 in enterprise financial services. I am a player coach at Coinbase, and we're here today to talk about trusting agents and policy-driven workflows."
         ]
       }
     ],
@@ -866,7 +866,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Ryan Carson at AI Engineer New York 2026 (Your job is now \"agent manager\").",
         "evidence": [
-          "Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."
+          "Each of these builder agents has a review agent that it calls upon that has built in reviews. Probably every Compound AI you have has built-in reviewers."
         ]
       }
     ],
@@ -904,7 +904,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Jediah Katz at AI Engineer New York 2026 (The Model Ate the Coding Harness. Now What?).",
         "evidence": [
-          "Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
+          "recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
         ]
       }
     ],
@@ -914,7 +914,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Ben Holmes at AI Engineer New York 2026 (Your agent needs a skill to improve its skills).",
         "evidence": [
-          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."
+          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp, and I'm going to be talking about building self-improving agents, agents that look through their past work and figure out how to improve their own setup."
         ]
       }
     ],
@@ -924,7 +924,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Ksenia Se at AI Engineer New York 2026 (Welcome Back - Featured Keynotes).",
         "evidence": [
-          "Welcome back, everyone. For those who haven't met me yet. My name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research. And what it means for people to implement it in their business."
+          "Welcome back, everyone. For those who haven't met me yet, my name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research and what it means for people to implement it in their business."
         ]
       }
     ],
@@ -934,7 +934,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Jack McDonald at AI Engineer New York 2026 (AI in Practice: An Inside Look at Apollo's Approach).",
         "evidence": [
-          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses AI to help enterprise service partners like Apollo deal with messy, fragmented data."
         ]
       },
       {
@@ -942,7 +942,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Michael Manapat at AI Engineer New York 2026 (AI in Practice: An Inside Look at Apollo's Approach).",
         "evidence": [
-          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses AI to help enterprise service partners like Apollo deal with messy, fragmented data."
         ]
       }
     ],
@@ -962,7 +962,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule",
         "what": "Organization represented by Cristóbal Valenzuela at AI Engineer New York 2026 (Everything will be Simulated).",
         "evidence": [
-          "Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."
+          "Please welcome Cristóbal Valenzuela, co-founder and co-CEO of Runway."
         ]
       }
     ]
@@ -1001,7 +1001,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-edb4f982-0cb8-48ee-8bf7-410255a40cb3",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Beyond “Done”: Building Verification Loops for AI Agents\".",
         "evidence": [
-          "So, what we mean by beyond done, just to like jump. Straight into it."
+          "So, what we mean by beyond done, just to like jump straight into it."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1015,7 +1015,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-a84ca3a8-cc2f-4b50-a635-fc380f6f04f6",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Vault: Making Unstructured Data Work for Investing\".",
         "evidence": [
-          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+          "For most of Bridgewater's history, that meant building and overseeing time series models on structured data"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1046,18 +1046,6 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
-      },
-      {
-        "type": "youtube",
-        "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
-        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=1808s",
-        "why": "Main-room livestream at an approximate position (0:30:08, scheduled start minus stream start); no standalone recording of this session was published.",
-        "evidence": [
-          "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"
-        ],
-        "first_seen": "2026-11-14T12:15:30-05:00",
-        "published_at": "2026-10-13",
-        "verified_at": "2026-11-14T12:15:30-05:00"
       }
     ],
     "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
@@ -1119,7 +1107,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-736edd83-bb08-49f1-90ed-722b7ed07eb2",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Can Any Model Write Like Me? Building a Benchmark for Creative Writing\".",
         "evidence": [
-          "So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."
+          "So my goal here today, and with this project that I've been working on, is to first measure this sloppy writing — not just love words."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1145,7 +1133,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-c4ba0138-6f6d-4780-93a1-4d8f0c478339",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Write the Answer First: Generating Eval Datasets for Agents With No Benchmark\".",
         "evidence": [
-          "Problem when we tackle some great vision for a task. That is so specific. We don't have any particular benchmark we can rely on"
+          "Problem when we tackle some great vision for a task that is so specific, we don't have any particular benchmark we can rely on."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1171,7 +1159,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-b8bb725d-daf0-4ac0-8095-5737841c89e5",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Search the Web as It Was: An Introduction to Exa Snapshot\".",
         "evidence": [
-          "So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
+          "So the first one, I just want to motivate what is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that, understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1249,7 +1237,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-bdab432a-0538-4431-ad5a-62653affd9da",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"How to build an AI code review agent: from the creators of Greptile\".",
         "evidence": [
-          "by reviewing and testing these codebases, we reveal bugs. Logical errors, code quality concerns, primarily from AI-generated code."
+          "by reviewing and testing these codebases, we reveal bugs, logical errors, code quality concerns, primarily from AI-generated code."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1275,7 +1263,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-fca86857-d079-46a6-94a7-62b0bb8e5d31",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod\".",
         "evidence": [
-          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"
+          "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you to rent GPUs"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1301,7 +1289,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-8d424512-c7f0-483c-9094-ca899d7bb1fd",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On\".",
         "evidence": [
-          "And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"
+          "And for the last year, my main task and goal there was to integrate Daytona basically everywhere where sandbox makes sense, because where they don't have SaaS provider"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1327,7 +1315,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-c34c075b-c695-4227-bf8e-3b4eeb3460d9",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Welcome Back - Featured Keynotes\".",
         "evidence": [
-          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses."
+          "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1336,14 +1324,14 @@
       {
         "type": "youtube",
         "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
-        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=27428s",
-        "why": "Main-room livestream at an approximate position (7:37:08, scheduled start minus stream start); no standalone recording of this session was published. The stream ends about 1 min after this position, so the session may be cut short.",
+        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=24163s",
+        "why": "Main-room livestream at the afternoon keynote block opening (6:42:43, immediately preceding Coatue); no standalone recording of this session was published.",
         "evidence": [
           "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"
         ],
         "first_seen": "2026-11-14T12:15:30-05:00",
         "published_at": "2026-10-13",
-        "verified_at": "2026-11-14T12:15:30-05:00"
+        "verified_at": "2026-11-14T15:00:16-05:00"
       }
     ],
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
@@ -1358,6 +1346,18 @@
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
         "verified_at": "2026-10-26T10:41:07-04:00"
+      },
+      {
+        "type": "youtube",
+        "title": "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition",
+        "url": "https://www.youtube.com/watch?v=akEqiXFo3GM&t=24464s",
+        "why": "Main-room livestream at chapter 'A Hedge Fund as a Function - Frank Long, Coatue' (6:47:44); no standalone recording of this session was published.",
+        "evidence": [
+          "AI Engineer NYC Livestream | Bridgewater, Two Sigma, Arize, Coatue, Nous (Hermes), Gen. Intuition"
+        ],
+        "first_seen": "2026-11-14T15:00:16-05:00",
+        "published_at": "2026-10-13",
+        "verified_at": "2026-11-14T15:00:16-05:00"
       }
     ],
     "cada670e-c5ea-4977-b3c2-9a68dda26abb": [
@@ -1393,7 +1393,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-871cd5c8-13f4-4fe9-ac49-c8b25d970add",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Hermes gives you wings: Build on open foundations.\".",
         "evidence": [
-          "I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."
+          "I'm Dillon Rolnick. I'm the CEO of Nous Research, and today we're going to talk about building on foundations and platforms that you can actually own."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1419,7 +1419,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-dd25c0a8-d64f-4d6e-a597-7dd576eabc16",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Closing Remarks\".",
         "evidence": [
-          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."
+          "We had Dillon talking about building agents on owned versus rented land, and then we had Frank talking about how they think about leveraging applied AI as it relates to making decisions around investments."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1433,7 +1433,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-caecd5f6-b352-4868-a995-f0f71679caf0",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Chasing capabilities while waiting for the frontier\".",
         "evidence": [
-          "Well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp. Both inside of the company, but also all of our customers, accounting and finance professionals."
+          "well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp, both inside of the company, but also all of our customers, accounting and finance professionals"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1459,7 +1459,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-4add802c-6a68-4e9c-93fb-9c1e017193bc",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"The Machine that Changed the World, vAI\".",
         "evidence": [
-          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."
+          "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1485,7 +1485,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-ee927042-2ba1-44c3-b304-d001ae247839",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Trusting Agents in Policy-Driven Workflows\".",
         "evidence": [
-          "My name is Evan Kormos. I've been. Delivering, designing, building software for 20 years. The last 15 in enterprise financial services. I am a player coach at Coinbase. And we're here today to talk about trusting agents and policy-driven workflows."
+          "my name is Evan Kormos. I've been delivering, designing, building software for 20 years, the last 15 in enterprise financial services. I am a player coach at Coinbase, and we're here today to talk about trusting agents and policy-driven workflows."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1511,7 +1511,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-f7204e6d-a47c-4535-804e-16b4db579b95",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Your job is now \"agent manager\"\".",
         "evidence": [
-          "Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."
+          "Each of these builder agents has a review agent that it calls upon that has built in reviews. Probably every Compound AI you have has built-in reviewers."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1589,7 +1589,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-29083884-87dc-44f8-b412-b494afca8856",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"The Model Ate the Coding Harness. Now What?\".",
         "evidence": [
-          "Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
+          "recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1615,7 +1615,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Your agent needs a skill to improve its skills\".",
         "evidence": [
-          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."
+          "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp, and I'm going to be talking about building self-improving agents, agents that look through their past work and figure out how to improve their own setup."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1641,7 +1641,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-18628ea8-d66a-4d7b-adbd-730d3a43d92e",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Welcome Back - Featured Keynotes\".",
         "evidence": [
-          "Welcome back, everyone. For those who haven't met me yet. My name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research. And what it means for people to implement it in their business."
+          "Welcome back, everyone. For those who haven't met me yet, my name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research and what it means for people to implement it in their business."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1667,7 +1667,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-44e9d04a-e8b4-418c-8a85-02fbb9263dd0",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"AI in Practice: An Inside Look at Apollo's Approach\".",
         "evidence": [
-          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+          "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses AI to help enterprise service partners like Apollo deal with messy, fragmented data."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1719,7 +1719,7 @@
         "url": "https://ai.engineer/nyc/2026/schedule#session-af8422e8-d5f8-4dbd-a918-6360f5bfba80",
         "why": "Official AI Engineer NYC 2026 session entry and abstract for \"Everything will be Simulated\".",
         "evidence": [
-          "Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."
+          "Please welcome Cristóbal Valenzuela, co-founder and co-CEO of Runway."
         ],
         "first_seen": "2026-10-26T10:41:07-04:00",
         "published_at": "2026-10-17",
@@ -1760,7 +1760,7 @@
     },
     "68a1e78b-569e-4314-a56f-f20508123cbe": {
       "phase": "settling",
-      "last_checked": "2026-11-14T12:15:30-05:00",
+      "last_checked": "2026-11-14T15:00:16-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
       "checks": 2
     },
@@ -1826,13 +1826,13 @@
     },
     "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
       "phase": "settling",
-      "last_checked": "2026-11-14T12:15:30-05:00",
+      "last_checked": "2026-11-14T15:00:16-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
       "checks": 2
     },
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
       "phase": "settling",
-      "last_checked": "2026-10-26T10:41:07-04:00",
+      "last_checked": "2026-11-14T15:00:16-05:00",
       "next_check": "2026-11-21T09:59:00-05:00",
       "checks": 1
     },
@@ -1961,9 +1961,9 @@
       ],
       "gaps": [
         "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
-        "No standalone YouTube cut found (2026-11-14); linked the main-room livestream at an approximate position instead."
+        "No standalone YouTube cut found (2026-11-14), and Anthropic's session was edited out of the archived Oct 13 main-room livestream (akEqiXFo3GM), so no video link is published."
       ],
-      "generated_at": "2026-11-14T12:15:30-05:00"
+      "generated_at": "2026-11-14T15:00:16-05:00"
     },
     "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
       "searched": [
@@ -2063,16 +2063,17 @@
         "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
         "No standalone YouTube cut found (2026-11-14); linked the main-room livestream at an approximate position instead."
       ],
-      "generated_at": "2026-11-14T12:15:30-05:00"
+      "generated_at": "2026-11-14T15:00:16-05:00"
     },
     "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
       "searched": [
         "A Hedge Fund as a Function Frank Long AI Engineer NYC 2026"
       ],
       "gaps": [
-        "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+        "Post-event settling window (12 days after 2026-10-14): standalone slide deck not yet published on the session page.",
+        "No standalone YouTube cut found (2026-11-14); linked the exact chapter in the Oct 13 main-room livestream (6:47:44) instead."
       ],
-      "generated_at": "2026-10-26T10:41:07-04:00"
+      "generated_at": "2026-11-14T15:00:16-05:00"
     },
     "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
       "searched": [

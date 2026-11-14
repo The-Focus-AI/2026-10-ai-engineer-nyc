@@ -1,0 +1,73 @@
+{
+  "phase": "archive",
+  "brand": "AIE NYC ’26",
+  "badge": "Archive",
+  "title": "Eight shifts from AI Engineer New York 2026",
+  "summary": "Across 31 recorded talks, 95,224 spoken words, and 176 transcript-verified claims, New York’s engineering rooms converged on one reckoning: generating code and prose is now cheap, so the real engineering work has moved into synthetic domain evals, sandboxed computers, deterministic verification gates, runtime risk governance, and self-improving agent fleets.",
+  "dates_label": "Oct 12–14, 2026",
+  "share_text": "Enjoyed your talk at AI Engineer NYC 2026",
+  "stack": {
+    "title": "How the eight shifts fit together",
+    "lede": "Select any layer to inspect its representative stage slide, its sharpest verbatim claim, and the talks that built or contested it.",
+    "axis_top": "Worlds, Fleets & Institutional Workbenches",
+    "axis_bottom": "Evals, Token Economics & Runtime Primitives",
+    "unit": "Theme"
+  },
+  "cards": {
+    "title": "The eight conference themes",
+    "lede": "Each theme opens into an interactive scrollytelling deep dive backed by stage slides, counter-claims, and verbatim transcript evidence."
+  },
+  "hero": null,
+  "contested_visual": null,
+  "theme_visuals": {},
+  "theme_slides": {
+    "bootstrapping-domain-evals-without-public-benchmarks": {
+      "src": "talks/2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with/experience/answer-first.jpg",
+      "alt": "Slide: So we wrote the answer first — reversing evaluation from weekly expert grading to picking a page, generating the question, and checking retrieval in code in seconds.",
+      "speaker": "Nathanael Weill (Air Canada)",
+      "slug": "2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with"
+    },
+    "token-economics-right-sizing-and-open-foundations": {
+      "src": "talks/2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101/experience/cost-per-outcome.jpg",
+      "alt": "Slide: Cost per accepted outcome = tokens × price ÷ outcomes someone actually used — cheap models that fail a third of the time cost more than dear ones that work.",
+      "speaker": "Eugene Cheah (Featherless AI)",
+      "slug": "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101"
+    },
+    "sandboxed-computers-context-architecture-and-the-shrinking-harness": {
+      "src": "talks/2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework/experience/12-frameworks-agree-nothing.jpg",
+      "alt": "Slide: Frameworks agree on nothing. Except this. — across graphs, crews, and loops, every major agent framework ships a sandboxed computer primitive.",
+      "speaker": "Mislav Ivanda (Daytona)",
+      "slug": "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework"
+    },
+    "bounded-autonomy-runtime-governance-and-the-enterprise-diffusion-gap": {
+      "src": "talks/2026-10-13-balancing-acceleration-and-safety-for-ai-agents/experience/08-how-five-controls.jpg",
+      "alt": "Slide: How they fit together — Create a registry, Score differentiated risk, Run guardrails, Share evals and metrics, and Govern strong runtime protections.",
+      "speaker": "John Feminella (Two Sigma)",
+      "slug": "2026-10-13-balancing-acceleration-and-safety-for-ai-agents"
+    },
+    "deterministic-verification-loops-over-line-by-line-review": {
+      "src": "talks/2026-10-14-who-verifies-the-software-factory/experience/coding-is-solved-verification.jpg",
+      "alt": "Slide: Coding is solved. Verification is not. — 85% of organizations use coding agents, 76% generate AI code faster than they can verify it, and 53% spend more time reviewing than writing.",
+      "speaker": "Manish Kapur & Addy Osmani (Sonar / Google Cloud)",
+      "slug": "2026-10-14-who-verifies-the-software-factory"
+    },
+    "self-improving-fleets-and-the-agent-manager": {
+      "src": "talks/2026-10-13-inside-the-fable-war-room/experience/inside-fleetkit.jpg",
+      "alt": "Slide: Taking a deeper look within FleetKit — versioned protocol and domain-context repositories driving a Claude Code session coordinated with SMEs in a mission channel and war room.",
+      "speaker": "Ford Prior (Fable Security)",
+      "slug": "2026-10-13-inside-the-fable-war-room"
+    },
+    "governed-ontologies-provenance-and-financial-workbenches": {
+      "src": "talks/2026-10-13-a-hedge-fund-as-a-function/experience/architecture-dag-gather-korean.jpg",
+      "alt": "Slide: Coatue gather() for the Korean news — directed acyclic graph wiring news, DART filings, and call transcripts through quote extraction, source checks, entity linking, and human review.",
+      "speaker": "Frank Long (Coatue)",
+      "slug": "2026-10-13-a-hedge-fund-as-a-function"
+    },
+    "spatiotemporal-world-models-and-real-time-simulation": {
+      "src": "talks/2026-10-13-frontier-models-for-acting-in-space-and-time/experience/next-action.jpg",
+      "alt": "Slide: LLMs predict the next word, our models predict the next action — pre-training on millions of hours of action-labelled gameplay to operate games and robots in real time.",
+      "speaker": "Pim de Witte (General Intuition)",
+      "slug": "2026-10-13-frontier-models-for-acting-in-space-and-time"
+    }
+  }
+}

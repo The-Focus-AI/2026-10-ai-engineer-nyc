@@ -1,126 +1,126 @@
 {
   "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
-    "thesis": "Agents can improve their own setup if every conversation is centralized with its tool calls and outputs, graded by LLM-as-judge scorers against team rubrics, and the failures are periodically handed to a self-improvement agent that proposes skill changes whose effect shows up in tracked scores.",
-    "confidence": 0.85
+    "thesis": "Agents can systematically improve their own skills and harness configuration when teams centralize full session traces—transcripts, tool calls, and diffs—grade them post-merge with markdown LLM-as-judge rubrics, and run scheduled meta-agents that turn recurring failures into measurable skill PRs.",
+    "confidence": 0.92
   },
   "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
-    "thesis": "Because agents now open most pull requests and few teams review every line, a software factory can only move toward autonomy if every loop carries independent, layered automated verification (deterministic analysis, agentic review, supply-chain checks) plus agent-generated evidence that the work is correct.",
-    "confidence": 0.85
+    "thesis": "Because coding agents generate large pull requests far faster than humans review every line, scaling toward autonomous software factories requires zero-trust, multi-layered verification inside every loop paired with rich agent-generated behavioral evidence.",
+    "confidence": 0.9
   },
   "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
-    "thesis": "In welcoming the final keynote block, Ksenia Se observes that hiring is a main reason people attend and suggests attendees build an agent to rank speakers' companies and match their open roles, then talk to those people in person rather than auto-sending resumes.",
-    "confidence": 0.7
-  },
-  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
-    "thesis": "Troyanovsky argues that agents diffuse into real firms only when they are simple and reliable, which comes from encoding opinionated processes as behavior specs and supervising whether trajectories follow them, not just from outcome-based evals.",
-    "confidence": 0.85
-  },
-  "29083884-87dc-44f8-b412-b494afca8856": {
-    "thesis": "Katz argues that models have absorbed the harness tricks that once added coding intelligence, but the harness is not dead: it opens each new frontier of tasks for the data flywheel and owns infrastructure, trust and efficiency that the model cannot absorb.",
-    "confidence": 0.85
-  },
-  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
-    "thesis": "At Apollo's structured-credit arm, AI becomes mission-critical only when it runs on the firm's own reconciled data with a validated golden source, which requires the vendor to sit with the teams and learn their workflows.",
-    "confidence": 0.85
-  },
-  "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
-    "thesis": "Shaukat argues that agentic software factories, like Toyota's factories, must engineer confidence through clear intent, guide rails, independent verification and evidence, because human review, LLM judges and long agent runs cannot keep up with abundant AI-generated code.",
-    "confidence": 0.85
-  },
-  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
-    "thesis": "As implementation gets cheap and agents run longer unattended, the failure mode becomes product incoherence, so teams must carry intent, prior decisions, and ownership context from intake through implementation and review and distill human judgment back into the agents' context.",
-    "confidence": 0.85
-  },
-  "68a1e78b-569e-4314-a56f-f20508123cbe": {
-    "thesis": "Because frontier models now outpace adoption, financial firms should stop hand-building agents one by one and build a reusable five-layer foundation (MCP connectors, skills, identity and permissions, human approval, evals) that lets them scale agents safely.",
-    "confidence": 0.85
-  },
-  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
-    "thesis": "GEICO's coding agents sped up the inner loop but major legacy modernization stayed bottlenecked on collaboration and context, so it built a multiplayer AI-native war room, steered by a Markdown fleet manager, that maps a legacy domain and ships an agent-callable API in a day.",
-    "confidence": 0.8
-  },
-  "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
-    "thesis": "AI writing slop does not go away as models scale, so Towards AI built a voice-matching creative-writing benchmark with multiple drafts and cross-family LLM judges, and found the practical goal is the model least annoying to edit, not a perfect one-shot.",
-    "confidence": 0.8
-  },
-  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
-    "thesis": "Two Sigma gives agents real autonomy safely by composing lightweight controls — an agent registry, risk-tiered review, declared tool entitlements enforced at runtime, shared evals, and classifier-gated approvals — instead of locking everything down or relying on policy documents.",
-    "confidence": 0.85
-  },
-  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
-    "thesis": "Because frontier models are commoditizing, labs must recoup trillion-dollar bets by locking businesses in at the agent layer or competing with them directly, so companies should build their agentic systems on open foundations like Hermes Agent that they own and control.",
-    "confidence": 0.85
-  },
-  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
-    "thesis": "Despite a flood of agent payment protocols, agents barely pay because friction at every stage of the funnel (need, setup, discovery and trust, pay-per-use billing) suppresses demand, and that friction is only now starting to clear.",
-    "confidence": 0.8
-  },
-  "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
-    "thesis": "Agent frameworks that agree on almost nothing all converge on running code in a separate sandboxed computer, so builders should commit to that execution boundary first and treat the framework as a swappable choice.",
-    "confidence": 0.85
-  },
-  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
-    "thesis": "A hedge fund can be engineered as a function from external and internal context to a stock/size/timing decision, decomposed into steps whose runners (code, statistics, LLMs, people) and settings are tuned like hyperparameters against an evaluable north star.",
-    "confidence": 0.85
-  },
-  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
-    "thesis": "Bridgewater argues that AI only becomes useful for investing when it sits on a governed, ontology-aligned corpus of internal and external unstructured data, served to both humans and agents and wired into investors' existing habits so their work compounds.",
-    "confidence": 0.85
-  },
-  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
-    "thesis": "Valenzuela argues that scaling next-frame video prediction turns video models into real-time, interactive world simulators that learn physics on their own and could eventually render any interface, operating system, or agent's visual reasoning.",
-    "confidence": 0.85
-  },
-  "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
-    "thesis": "The AI engineer's job has moved from writing features to building the always-on loop (traces, evals, agents reading telemetry, fixes) that improves the product, with evaluator alignment to human judgment as the core skill.",
-    "confidence": 0.85
-  },
-  "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
-    "thesis": "Agents are now the main web searchers, and Exa Snapshot's dated versions of the web let teams backtest search-driven financial models and agents without future information leaking in, while checking that features generalize.",
-    "confidence": 0.85
-  },
-  "bdab432a-0538-4431-ad5a-62653affd9da": {
-    "thesis": "A naive prompt-a-model-on-the-diff review agent misses bugs, lacks context, costs too much and nitpicks, so a good one needs historical-bug evals, a different model than the author, a living codebase wiki, sandboxed end-to-end testing and per-subtask model selection.",
-    "confidence": 0.8
-  },
-  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
-    "thesis": "Enterprise AI faces a steep diffusion gap: nearly all large firms have rolled out a general-purpose LLM, but agents in non-engineering work remain at about five percent.",
+    "thesis": "Because two-sided hiring is one of the strongest incentives driving conference attendance, attendees should pair human judgment—ranking speakers' companies by technical interest—with a research agent that matches open roles and published compensation ranges to inform live conversations rather than auto-submitting resumes.",
     "confidence": 0.75
   },
+  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
+    "thesis": "Enterprise agents achieve production adoption not through open-ended autonomy or outcome-only evals, but by encoding opinionated workflows as behavior specs that grade ground-truth-free trajectories and enable targeted debugging via trajectory forking and subagent simulation.",
+    "confidence": 0.92
+  },
+  "29083884-87dc-44f8-b412-b494afca8856": {
+    "thesis": "As frontier models natively absorb coding-specific context scaffolding through a user-driven data flywheel, the agent harness shifts from adding raw coding intelligence to unlocking unmastered multi-agent domains—like autonomous knowledge workers and software factories—while owning durable cloud runtimes, scoped security, token efficiency, and self-cleaning primitives that models cannot absorb.",
+    "confidence": 0.9
+  },
+  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
+    "thesis": "In private credit and active CLO management, AI moves from a research toy to a durable competitive edge only when agents reconcile fragmented deal documents and internal systems against human-validated golden data sources embedded in daily front-office workflows.",
+    "confidence": 0.88
+  },
+  "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
+    "thesis": "Because abundant AI-generated code overwhelms human reviewers, compounds multi-step errors, and defeats inconsistent LLM judges, enterprise software factories must engineer shipping confidence multiplicatively through clear intent, in-loop guide rails, hybrid deterministic-generative verification, and auditable evidence.",
+    "confidence": 0.92
+  },
+  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
+    "thesis": "As inference costs plummet and coding agents run unattended in the outer loop, engineering's primary failure mode shifts from implementation capacity to product incoherence, requiring automated pipelines that thread customer intent, product history, and ownership through triage, implementation, review, and daily feedback distillation.",
+    "confidence": 0.92
+  },
+  "68a1e78b-569e-4314-a56f-f20508123cbe": {
+    "thesis": "Because frontier model capability, cost efficiency, and prompt-injection safety now outpace enterprise diffusion, financial institutions must shift from bespoke one-off agent builds to a reusable five-layer architecture combining MCP data connectivity, SME-authored versioned skills, least-privilege identity, human-approved sandboxed execution, and continuous regression evals.",
+    "confidence": 0.9
+  },
+  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
+    "thesis": "Because coding agents accelerated inner-loop implementation while leaving enterprise legacy modernization bottlenecked on cross-functional alignment and domain context, GEICO built a multiplayer AI-native war room steered by Markdown FleetKit protocols, human-in-the-loop worksheets, and deterministic nine-step gates to ship legacy claims APIs in a single day.",
+    "confidence": 0.88
+  },
+  "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
+    "thesis": "Because AI writing slop persists as models scale, Towards AI built ToneBench—evaluating 120 models across ten long-prompt tasks, five drafts per prompt, two-stage categorical rubrics, and cross-family LLM judges—showing that multi-draft cheap generation merged by a reasoning model beats expensive one-shot prose.",
+    "confidence": 0.9
+  },
+  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
+    "thesis": "Rather than locking agents in useless air-gapped sandboxes or relying on fragile prompt policies and rubber-stamp human approvals, Two Sigma enables autonomous enterprise agents safely through five composable runtime controls: automatic framework registration, risk-tiered review, registry-enforced tool entitlements, shared evaluation infrastructure, and classifier-routed approvals.",
+    "confidence": 0.92
+  },
+  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
+    "thesis": "As interchangeable frontier models commoditize and compress inference margins, frontier labs must recoup trillion-dollar infrastructure bets through enterprise agent lock-in or direct vertical competition, so organizations should build their agentic operating systems on open, model-swappable foundations like Hermes Agent.",
+    "confidence": 0.9
+  },
+  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
+    "thesis": "Despite an explosion of crypto and fintech agent payment standards, autonomous agent transaction volume remains negligible because pre-provisioned API keys, subsidized flat-rate token plans, wallet setup friction, untrusted service discovery, and deferred-settlement double-spend risks suppress demand across every stage of the payment funnel.",
+    "confidence": 0.9
+  },
+  "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
+    "thesis": "Competing agent frameworks that disagree on nearly every abstraction all converge on isolating code execution inside a separate VM sandbox via create-run-delete primitives, making the execution boundary the primary architectural commitment to lock in before choosing a swappable framework.",
+    "confidence": 0.92
+  },
+  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
+    "thesis": "An investment firm can be engineered as a composite state-machine function from API-accessible external and internal context to `(stock, size, timing)` decisions, decomposed into compartmentalized sub-steps whose execution runners and pipeline configurations are tuned like hyperparameters against evaluable north-star metrics.",
+    "confidence": 0.92
+  },
+  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
+    "thesis": "Bridgewater's Vault demonstrates that enterprise investment AI only compounds when internal and external unstructured data is enriched against a bitemporal firm ontology, served through native-filtered search built for both human precision and agent-storm scale, and embedded into existing researcher habits with automatic synthesis write-back.",
+    "confidence": 0.9
+  },
+  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
+    "thesis": "Scaling next-frame video prediction turns video generators into real-time, action-conditioned world simulators that learn physical laws implicitly from pixels and can power embodied robotics, engine-free software interfaces, and visual reasoning for coding agents.",
+    "confidence": 0.9
+  },
+  "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
+    "thesis": "The AI engineer's role has shifted from manually building and reviewing individual features to architecting closed-loop agent factories — where agent-first telemetry triggers isolated, durable sandbox runs, LLM judges are meta-evaluated against human judgment, and both production and coding agents are traced end-to-end.",
+    "confidence": 0.9
+  },
+  "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
+    "thesis": "Because AI agents execute dense, multi-step exploratory web queries whose token costs compound across trajectories, Exa pairs 95%-token-saving dynamic snippet highlights with Exa Snapshot's 400-billion-page dated web archive so financial and predictive systems can backtest web-derived signals without lookahead leakage or unvalidated overfitting.",
+    "confidence": 0.92
+  },
+  "bdab432a-0538-4431-ad5a-62653affd9da": {
+    "thesis": "Building a production-grade AI code review agent requires moving beyond naive diff prompting to combine historical incident eval datasets, cross-family author-reviewer model inversion, a living codebase wiki instead of raw grep, dependency-rich sandbox UI testing, and per-subtask model routing.",
+    "confidence": 0.9
+  },
+  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
+    "thesis": "Enterprise AI adoption exhibits a steep four-stage diffusion drop-off across Fortune 500 and large enterprise organizations — falling from ~90% general-purpose LLM rollout to ~60% workforce training, ~50% engineering coding agents, and just ~5% production agents in non-engineering workloads.",
+    "confidence": 0.85
+  },
   "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
-    "thesis": "When an enterprise agent task has no benchmark and little expert access, start from a known answer (a source page, a rule, a template clause) and generate the input around it, so evaluation becomes automatic and iteration speeds up.",
-    "confidence": 0.7
+    "thesis": "When custom enterprise agents lack public benchmarks and continuous domain-expert access, teams should invert evaluation by generating synthetic inputs around known answers—source pages, business rules, or clause templates—and re-engineer agent architectures around deterministic checks rather than noisy LLM judges.",
+    "confidence": 0.82
   },
   "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
-    "thesis": "Cutting an AI bill starts with measuring token spend per team and use case, then right-sizing models and tokens-per-second to each workload, buying capacity against the base load, and judging tokens by outcomes rather than usage.",
-    "confidence": 0.85
+    "thesis": "Reducing enterprise AI inference spend at scale requires splitting API keys by department and workload, matching model size and per-request tokens-per-second to human latency sensitivity, sizing dedicated GPU capacity to base load with cloud spillover, and measuring real business outcomes rather than raw token volume.",
+    "confidence": 0.9
   },
   "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
-    "thesis": "General Intuition bets that scaling action-labeled gameplay video from Medal into pixels-in, actions-out models will produce general agents that act in real time across games, computers and robots, the way scaling code produced coding agents.",
-    "confidence": 0.8
+    "thesis": "Scaling action-labeled gameplay video from Medal into real-time, continuous pixels-in/actions-out foundation models overcomes the turn-based limitations of autoregressive LLMs and transfers directly across games, computer interfaces, and over 1,000 controller-driven robot embodiments.",
+    "confidence": 0.9
   },
   "caecd5f6-b352-4868-a995-f0f71679caf0": {
-    "thesis": "Even though frontier models keep getting cheaper and better, Ramp argues it pays to do applied research now (specialist post-trained models, KV-cache cartridges, agent swarms) to cut latency and token cost rather than waiting for the labs.",
-    "confidence": 0.8
+    "thesis": "Even as frontier models rapidly drive down unit token costs, Ramp argues it still pays to invest in applied research below the API layer—combining frontier orchestrators with post-trained specialist models, offline KV-cache cartridges, and cheap open-weight agent swarms to cut latency and cost today.",
+    "confidence": 0.86
   },
   "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
-    "thesis": "The day-one close recaps the final keynotes and urges attendees to use the talks as a starting point for conversations with each other.",
-    "confidence": 0.6
+    "thesis": "Day one's closing remarks synthesize the final keynotes—spanning pixels-to-actions world models, owned versus rented agent infrastructure, and applied AI in investing—as shared conversational surface area for attendees to connect directly.",
+    "confidence": 0.75
   },
   "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
-    "thesis": "Agents can only be trusted to finish work without humans reading every line when each task carries a deterministic, app-specific verification loop that proves the outcome with evidence and feeds failures back to the agent.",
-    "confidence": 0.85
+    "thesis": "Scaling AI agents safely without line-by-line human code review requires giving each application deterministic, outcome-driven verification harnesses, explicit state-rich error output, centralized completion gates, and persisted run receipts so agents must prove real behavior rather than self-report success.",
+    "confidence": 0.9
   },
   "ee927042-2ba1-44c3-b304-d001ae247839": {
-    "thesis": "Trusting agents in regulated workflows starts by treating written policy as the institution's original intent, separating it from the constantly changing running system, and placing agents inside gated workflow graphs that keep required checks.",
+    "thesis": "Deploying agents safely in regulated enterprise workflows requires treating written policy as normative build-time intent separated from the continuously changing runtime system, and embedding agents inside directed acyclic graphs (DAGs) that parallelize independent reviews while preserving mandatory compliance gates.",
     "confidence": 0.55
   },
   "f7204e6d-a47c-4535-804e-16b4db579b95": {
-    "thesis": "Carson argues that engineers should stop coding locally and instead manage fleets of cloud agent sessions, with builder, reviewer, QA, manager and merge agents escalating to a human who must personally verify feature videos, and should hire for agent-operating skill.",
-    "confidence": 0.75
+    "thesis": "Software engineers should abandon local coding to manage communicating fleets of cloud builder, reviewer, child-QA, manager, and merge-manager agents—keeping humans in the loop via mandatory feature-demo videos and hiring strictly through recorded agent-operating trials.",
+    "confidence": 0.85
   },
   "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
-    "thesis": "Teams serving open models with vLLM mostly guess at configuration, so a live benchmarking harness (Runpod's Benchpod) that lets them change knobs quickly and measure TTFT, inter-token latency and throughput under realistic concurrency is how to get from R&D to production.",
-    "confidence": 0.75
+    "thesis": "Rather than deploying open-weight LLMs with default vLLM recipes and oversized context windows, Runpod's BenchPod wraps Dockerized vLLM builds with live YAML reconfiguration, self-healing watchdogs, and FastAPI benchmark endpoints so teams and agents can empirically tune throughput and latency before scaling out.",
+    "confidence": 0.85
   }
 }

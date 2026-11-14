@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agents can pay. So why don’t they? · Jan Curn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Shannon Room</div>
+  <h1>A dozen agent payment protocols launched. Almost nobody is using them.</h1>
+  <p class="dek">Apify's Jan Curn runs a marketplace that pays tool creators nearly $2 million a month, so he has every reason to want autonomous agents paying for APIs on their own. Yet eighteen months of fintech and crypto protocol launches have produced barely $1 million in 30-day transaction volume across the two leading standards, blocked at every stage of the funnel by static API keys, subsidized tokens, wallet setup friction, untrusted discovery, and pay-per-use billing traps.</p>
+  <div class="talk-meta">Jan Curn, Apify · 20 min talk · six chapters · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="timeline-list-mid-2020.jpg" alt="Slide listing agentic payment protocol launches: mid 2020 L402 by Lightning Labs; Apr 2025 Mastercard Agent Pay; May 2025 x402 by Coinbase; Jun 2025 KYAPay by Skyfire with Visa; Sep 2025 Agent Payments Protocol (AP2) by Google; Sep 2025 Agentic Commerce Protocol (ACP) by OpenAI and Stripe.">
+        <figcaption>Slide from the official talk recording: the wave of fintech and crypto agent payment standards</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="adoption-is-still-negligible.jpg" alt="Slide titled &#x27;Adoption is still negligible. x402 $1M / MPP $1K (last 30 days)&#x27; showing dashboard screenshots from x402scan.com (2.73M transactions, US$1.07M volume) and mppscan.com (125.6K transactions, US$1.43K volume).">
+        <figcaption>Slide from the official talk recording: 30-day volume across x402 ($1.07M) and Stripe MPP ($1.43K)</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="low-demand-agents-buy.jpg" alt="Breakout session frame from the Shannon Room showing Jan Curn alongside his slide reading &#x27;Low demand by agents to buy services.&#x27;">
+        <figcaption>Stage frame from the official recording: diagnosing why agent demand remains flat</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="header-discover-highlighted-problem.jpg" alt="Slide showing the &#x27;Need -&gt; setup -&gt; discover -&gt; buy&#x27; funnel with &#x27;discover&#x27; highlighted and the problem statement &#x27;Where to find trustworthy services?&#x27;">
+        <figcaption>Slide from the official talk recording: service discovery and trust in the agent payment funnel</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="title-x402-over-four.jpg" alt="Sequence diagram frame titled &#x27;x402&#x27; with four vertical lanes for Client, Server, Facilitator, and Blockchain.">
+        <figcaption>Slide from the official talk recording: the four actors in an x402 payment flow</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="charging-variable-usage-batch.jpg" alt="Slide titled &#x27;Charging for variable usage with batch-settlement scheme (May 26)&#x27; listing six steps: 1. Deposit ERC-20 funds into escrow, 2. Voucher signed cumulative voucher per request, 3. Verify server verifies voucher and responds immediately, 4. Claim channel manager claims latest vouchers in one transaction, 5. Settle swept in separate transaction, 6. Refund idle channels cooperatively refunded.">
+        <figcaption>Slide from the official talk recording: six-step on-chain escrow and voucher batch settlement in x402</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="thirteen-payment-protocols-in-eighteen-mon" data-visual="v1" data-caption="Thirteen protocols in 18 months">
+      <div class="chapter">Chapter 1</div>
+      <h2>Thirteen payment protocols in eighteen months</h2>
+      <p>Apify runs a store of scraping, extraction, and automation tools called Actors. Curn puts the catalog at roughly eight thousand tools on stage, while his live store screenshot shows 45,724 Actors, and notes that Apify paid creators almost $2 million in the prior month alone. Because unattended agents tackling longer jobs eventually need a budget to buy external tools and data, Apify wants agent payments to become a standard distribution channel.</p>
+      <p>Eighteen months earlier in San Francisco, Curn was nearly alone in talking about agent payments. Since then, major card networks, fintechs, and crypto platforms have flooded the space with competing standards, chasing analyst forecasts of a multi-trillion-dollar machine B2B economy by 2028. His timeline slide tracks the wave starting from Lightning Labs' L402 in mid-2020 to an April 2025 surge: Mastercard Agent Pay, Coinbase's x402 in May 2025, Skyfire and Visa's KYAPay in June, Google's AP2 and OpenAI and Stripe's ACP in September, Visa's TAP in October, Google and Shopify's UCP and Alipay's ACTP in January 2026, Stripe and Tempo's Machine Payments Protocol (MPP) in March, and April launches from Alipay, UnionPay, and OKX.</p>
+      <div class="stills"><figure class="still"><img src="screenshot-apify-store-listing.jpg" alt="Screenshot of the Apify Store showing 45,724 Actors including Google Maps Scraper, TikTok Scraper, Instagram Scraper, Google Search Results Scraper, Website Content Crawler, and E-commerce Scraping Tool."></figure></div>
+      <blockquote>“just last month, we paid almost two million dollars to the creators for their actors, right?”<span class="cite">00:00:00</span></blockquote>
+      <ul class="key-points">
+        <li>Apify paid tool creators nearly $2 million in a single month and wants agents buying tools directly.</li>
+        <li>More than a dozen competing agent payment standards launched between April 2025 and April 2026.</li>
+        <li>Card networks, cloud platforms, and crypto exchanges are all vying to own the settlement rail for autonomous agents.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:02:26 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=146s">watch the protocol timeline</a></p>
+    </section>
+
+    <section data-chapter="crypto-fits-machine-micro-payments-yet-rea" data-visual="v2" data-caption="Great unit math, $1M volume">
+      <div class="chapter">Chapter 2</div>
+      <h2>Crypto fits machine micro-payments, yet real volume is $1 million</h2>
+      <p>Curn says he is not a crypto partisan, but argues stablecoin rails solve two economic problems that break card and bank rails for machines. First, traditional per-transaction fees destroy small API calls: his fee comparison slide shows a $0.10 call costs $0.303 on a credit card (<code>2.9% + $0.30</code>) and $0.095 on PayPal Micropayments, compared with roughly $0.002 on Stripe MPP's stablecoin path and $0.001 on Coinbase x402. Second, traditional rails enforce mandatory buyer chargebacks. Human online merchants absorb occasional friendly fraud as a cost of business, whereas an unbounded swarm of agents with chargeback rights could drain a digital service for free. Crypto transfers settle without mandatory cardbacks, leaving refunds optional for the seller.</p>
+      <p>Unsurprisingly, the two leading technical standards, Coinbase's x402 (garbled in the transcript as "this road too" and "explored") and Stripe's MPP, both settle over crypto. Then Curn puts up the live block-explorer dashboards from <code>x402scan.com</code> and <code>mppscan.com</code>. Across the prior 30 days, x402 processed 2.73 million transactions totaling $1.07 million, and MPP processed $1,430. After a year and a half of protocol launches, real-world volume is close to zero.</p>
+      <blockquote>“in the last 30 days, on this road too, there was just only like one million dollars. Nobody. And on MPP, only like one point five thousand dollars. I mean, it&#x27;s basically nothing.”<span class="cite">00:04:45</span></blockquote>
+      <ul class="key-points">
+        <li>Credit card minimums and mandatory chargebacks make traditional rails unworkable for sub-dollar machine calls.</li>
+        <li>Both Coinbase x402 and Stripe MPP use stablecoins to hit ~$0.001–$0.002 fees without chargebacks.</li>
+        <li>Despite strong unit economics, trailing 30-day volume was just $1.07 million on x402 and $1.43 thousand on MPP.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:45 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=285s">watch the fee math and volume data</a></p>
+    </section>
+
+    <section data-chapter="the-competition-isn-t-visa-it-s-an-api-key" data-visual="v3" data-caption="API keys and token subsidies">
+      <div class="chapter">Chapter 3</div>
+      <h2>The competition isn't Visa. It's an API key and subsidized tokens.</h2>
+      <p>Low supply is not to blame. Apify, Exa, Perplexity, and Firecrawl already list endpoints in agent payment directories, and Curn notes those companies already collect far more than $1 million a month from agent workloads through ordinary billing. The bottleneck is demand, which he diagnoses across a four-step funnel: <code>need -&gt; setup -&gt; discover -&gt; buy</code>.</p>
+      <p>At the <code>need</code> step, developers building an agent almost always know upfront which services it requires. Opening an Apify account, saving a credit card once, and dropping an API key or MCP server into the agent's config is simpler than wiring up autonomous per-call payments. Agent payment rails are not losing to Visa; they are losing to static API keys. Worse, subsidized flat-rate LLM subscriptions wreck the build-versus-buy calculus. When a $100 monthly Claude subscription can burn through $14,000 worth of tokens at API list prices, a coding agent has zero incentive to pay pennies for an external tool when it can write bespoke code from scratch at zero marginal cost. Curn expects three shifts to unlock real demand: stronger models trusted with $5 to $500 task budgets, always-on personal agents, and the end of flat-rate token subsidies.</p>
+      <blockquote>“This is crazy because then the agents have no incentives whatsoever to, you know, to look for existing services because they can build anything from scratch because it costs nothing.”<span class="cite">00:07:35</span></blockquote>
+      <ul class="key-points">
+        <li>When tool needs are known upfront, a pre-provisioned account and static API key beat per-call payment protocols.</li>
+        <li>Flat-rate $100 subscriptions yielding ~$14,000 in tokens push agents to code tools from scratch instead of buying APIs.</li>
+        <li>Demand depends on better models, always-on personal agents, and unsubsidized token pricing.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:35 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=455s">watch the API key and subsidy breakdown</a></p>
+    </section>
+
+    <section data-chapter="wallet-friction-and-the-return-of-the-trus" data-visual="v4" data-caption="Wallets and trusted directories">
+      <div class="chapter">Chapter 4</div>
+      <h2>Wallet friction and the return of the trusted middleman</h2>
+      <p>Even when a developer wants an agent to buy tools dynamically, <code>setup</code> and <code>discover</code> add friction. Everybody already has a credit card ready, while configuring a crypto wallet still confronts mainstream users with unfamiliar terminology and custody steps. Tooling improves monthly, and Curn expects the real inflection point to come when major agent hosts such as Claude and ChatGPT build wallets straight into their platforms, letting users link bank credentials once and authorize a few dollars of spending.</p>
+      <p>Once funded, the agent hits <code>discover</code>: how does software verify that an unknown URL promising data will deliver valid output at the advertised price? Human trade solved stranger trust first through personal referrals and later through town squares, marketplaces, reviews, and consumer-protection rules. Agent commerce is recreating those same trust intermediaries through curated directories: verified MCP connector catalogs in Claude, app directories in ChatGPT, and vetted marketplaces like Apify that screen tools before an agent spends money on them.</p>
+      <blockquote>“same for ChatGPT, they have apps, and Apify is in marketplace as well, so basically there is just a middleman that tells you, okay, this is the service you can trust to know, and you&#x27;re going to get results.”<span class="cite">00:13:19</span></blockquote>
+      <ul class="key-points">
+        <li>Crypto wallet setup remains too cryptic compared with entering a credit card, until major agent platforms embed native funding.</li>
+        <li>Autonomous agents cannot tell whether an arbitrary URL will deliver promised results or honor its price.</li>
+        <li>Verified connector catalogs in Claude, ChatGPT apps, and marketplaces like Apify act as the trust layer for agent discovery.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:04, 00:13:19 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=799s">watch the wallet and discovery section</a></p>
+    </section>
+
+    <section data-chapter="why-fixed-price-http-402-breaks-on-variabl" data-visual="v5" data-caption="Why fixed-price HTTP 402 fails">
+      <div class="chapter">Chapter 5</div>
+      <h2>Why fixed-price HTTP 402 breaks on variable compute jobs</h2>
+      <p>At the <code>buy</code> step, early adopters ran into a protocol mismatch: first-generation agent payment schemes only supported a fixed price per API call. Fixed pricing works for static lookups like a weather forecast, but real automation jobs require variable pay-per-use billing, transcribed as "paper use" in the room recording, because launching a scraper or sub-agent consumes unpredictable compute and LLM tokens.</p>
+      <p>In baseline x402, a client sends an HTTP request, receives a <code>402 Payment Required</code> challenge, signs a payment header, and retries; the server verifies and settles the payment on-chain via a facilitator such as Coinbase before returning results. Running an expensive job before settlement risks unpaid compute, while settling upfront requires knowing the exact price before the job starts. When x402 v2 proposed an <code>upto</code> scheme in December 2025, letting the buyer authorize a maximum ceiling while the server settled actual usage later, Apify hit a dealbreaker: because on-chain settlement happened after execution, nothing stopped an agent from double-spending the same wallet funds across multiple calls in the meantime.</p>
+      <blockquote>“even though like it allowed you to charge random costs, there was not nothing preventing the buyer, the agent, to spend those money wise, you know, because the transaction was only like settled on blockchain later.”<span class="cite">00:17:02</span></blockquote>
+      <ul class="key-points">
+        <li>Fixed per-call pricing cannot cover variable compute and LLM workloads whose cost is unknown until completion.</li>
+        <li>Standard x402 settles exact amounts upfront via a facilitator before expensive work runs.</li>
+        <li>Deferred <code>upto</code> authorization left sellers exposed to buyers spending the same wallet balance twice before on-chain settlement.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:19, 00:17:02 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=1022s">watch the x402 pay-per-use walkthrough</a></p>
+    </section>
+
+    <section data-chapter="overcharge-workarounds-vs-on-chain-escrow-" data-visual="v6" data-caption="Escrow and batch settlement">
+      <div class="chapter">Chapter 6</div>
+      <h2>Overcharge workarounds vs. on-chain escrow and batch settlement</h2>
+      <p>To ship variable pricing without getting double-spent, Apify first built an ugly workaround on top of x402's <code>exact</code> scheme: charge the agent an upfront deposit such as $10, run a job that actually costs $2, and refund the remaining $8 afterward. That protected the seller, but required two on-chain transactions, doubled the fees, and complicated routing refunds back to the originating buyer wallet.</p>
+      <p>A week before the talk, Apify adopted x402's newer <code>batch-settlement</code> scheme, garbled in the transcript as "Bestelman's" and "Basic Life Insurance Scheme". As shown on Curn's six-step slide (<code>Deposit</code>, <code>Voucher</code>, <code>Verify</code>, <code>Claim</code>, <code>Settle</code>, <code>Refund</code>), the buyer locks ERC-20 funds into an on-chain escrow contract once, then signs cumulative vouchers on each request so the server can verify solvency and respond immediately without waiting for an on-chain transfer; a channel manager later claims and sweeps settled funds in a batch and refunds idle channels. With x402 batch settlement and Stripe MPP sessions closing the technical gap, Curn urges tool builders to design metered agent pricing now before demand arrives.</p>
+      <blockquote>“So we work around it by using exact refunds, so that you don&#x27;t be charged like I don&#x27;t know, like ten dollars upfront, and then you know, I think it was two dollars. And once the board was done, we were handed the rest.”<span class="cite">00:17:02</span></blockquote>
+      <ul class="key-points">
+        <li>Charging $10 upfront and refunding $8 solved double-spending at the cost of extra transactions, higher fees, and refund friction.</li>
+        <li>x402 <code>batch-settlement</code> locks ERC-20 funds in on-chain escrow and verifies signed cumulative vouchers per request off-chain.</li>
+        <li>With variable billing and curated discovery landing, the remaining barriers to agent commerce are economic rather than protocol-level.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:17:02, 00:13:19 · <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw&t=1150s">watch the batch-settlement walkthrough</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=-AOxpwVeIWw">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

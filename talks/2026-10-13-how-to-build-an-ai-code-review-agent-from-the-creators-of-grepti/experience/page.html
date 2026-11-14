@@ -76,7 +76,7 @@
       <p>Greptile sometimes meets a company whose needs are so specialized that it is better off building its own review agent, and when that happens they help for free. The talk is that advice.</p>
       <p>Start with a sandbox, and put an agent in it. He recommends an open-source, model-independent harness as the base, for a reason that comes up later. Connect GitHub or GitLab so that a webhook sends the contents of each pull request. Give the agent a prompt that says to review it and send back feedback, and wire the comments back through the platform's API. He says many people think that is all it takes. His slide puts it at a day's work.</p>
       <div class="stills"><figure class="still"><img src="build-in-a-day.jpg" alt="His slide: You can build this in a day."></figure><figure class="still"><img src="why-greptile.jpg" alt="His slide, Why Greptile: codebase context, it runs your code, and the right model for each task all feed into review and test the pull request."></figure><figure class="still"><img src="one-percent.jpg" alt="His slide: More than 1% of GitHub PRs go through Greptile each day, with customer logos NVIDIA, Coinbase, Scale, Vanta, Decagon and PostHog."></figure></div>
-      <blockquote>“The first thing that you should do is you should get yourself a sandbox.”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“The first thing that you should do is you should get yourself a sandbox.”<span class="cite">00:02:19</span></blockquote>
       <ul class="keypoints">
         <li>A sandbox, an agent, a webhook in, review comments out.</li>
         <li>Use a harness that is not tied to one model.</li>
@@ -91,7 +91,7 @@
       <p>A pull request opens, and about five minutes later feedback arrives. Then the problems show up. His slide lists five.</p>
       <p>It misses bugs, which is the one thing the system is for. Bugs are hard to find by nature; he quotes a post calling them fractal demons, because you never run out. It lacks context: it misunderstands how part of the codebase or a library works, and a company with thousands of repositories needs context across all of them. It is expensive. People who build this find themselves spending between three and twenty-five dollars a pull request.</p>
       <p>It nitpicks. The comments are technically correct and trivial, which costs twice. A person has to sort the stylistic complaints from the catastrophic ones. And a coding agent that picks up review comments will try to address every one, which ends in painfully defensive code. Last, every time the agent is run again on the same pull request it finds new bugs, so the list never closes.</p>
-      <blockquote>“bugs are fractal demons”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“bugs are fractal demons”<span class="cite">00:02:19</span></blockquote>
       <ul class="keypoints">
         <li>Missed bugs and missing context are the two failures of substance.</li>
         <li>Reviews cost dollars each, and run on every push.</li>
@@ -107,13 +107,13 @@
       <p>The trouble is that a small change to the prompt makes a large change to the number of comments, and you cannot tell whether you have just stopped catching something. Catastrophic bugs are rare. He puts it at about one pull request in a thousand, so a worse version can run for a long time before anyone finds out.</p>
       <p>So build a dataset. Collect the historical pull requests that caused outages and incidents, and run each version of the agent over them to see what it catches. That makes prompt changes something you can measure. It has limits: the kinds of bugs change over time, coverage is thin without a very large corpus, and as coding agents improve they will fail in new ways.</p>
       <div class="stills"><figure class="still"><img src="the-prompt.jpg" alt="His slide, The prompt: Look for specific bug types. Skip the nitpicks."></figure><figure class="still"><img src="bugs-are-rare.jpg" alt="His slide, Bugs are rare: a grid of a thousand grey dots with a single red one. 1,000 dots. One bug."></figure></div>
-      <blockquote>“can tell you about the presence of bugs, but unfortunately can&#x27;t tell you about the absence of bugs”<span class="cite">00:05:48</span></blockquote>
+      <blockquote>“can tell you about the presence of bugs, but unfortunately can&#x27;t tell you about the absence of bugs”<span class="cite">00:05:41</span></blockquote>
       <ul class="keypoints">
         <li>Prompt for the bug types your own history shows, and against nitpicks.</li>
         <li>Serious bugs are about one in a thousand pull requests, so regressions hide.</li>
         <li>Replay past incident-causing pull requests to score each version.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:48</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41</p>
     </section>
 
     <section data-chapter="fix-two-the-reviewer-should-not-be-the-m" data-visual="v4" data-caption="Different author, different reviewer">
@@ -123,13 +123,13 @@
       <p>So invert it. If one model wrote the code, have another review it. This is why the harness needs to be independent of any one model. His slide gives the gain as about ten percent more bugs caught. He says that sounds small and is not, given what a missed bug can cost.</p>
       <p>The hard part is knowing who the author was. Coding agents leave fingerprints, such as a naming pattern for branches or a co-author line in the commit. When those are missing it takes more digging, or internal telemetry on which tools engineers use.</p>
       <div class="stills"><figure class="still"><img src="ten-percent.jpg" alt="His slide: about 10% higher bug catch rate in our research."></figure></div>
-      <blockquote>“And so you want to invert the model.”<span class="cite">00:05:48</span></blockquote>
+      <blockquote>“And so you want to invert the model.”<span class="cite">00:08:42</span></blockquote>
       <ul class="keypoints">
         <li>Model families make different mistakes and share blind spots within a family.</li>
         <li>Review with a different model from the one that wrote the code.</li>
         <li>Detect the author from branch names, commit trailers or telemetry.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:48</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41</p>
     </section>
 
     <section data-chapter="fix-three-give-it-a-map-of-the-codebase-" data-visual="v5" data-caption="A living wiki">
@@ -139,13 +139,13 @@
       <p>Bugs are not the only failure. Code can be correct and still not do what the author wanted, especially when the instruction was a sentence or two typed into a chat. The two sources that help most are the documentation and the tickets, alongside an index of the codebase. People underestimate how much unwritten knowledge helps them write good code, and an agent without it seems not to know what is going on.</p>
       <p>Greptile's answer is a living wiki built from periodic crawls of the codebase, production telemetry, and the roadmap from documents and tickets. It supplies context and also makes search cheaper, because the agent knows which files it needs.</p>
       <div class="stills"><figure class="still"><img src="diff-is-one-part.jpg" alt="His slide, Codebase context: the diff is only one part of the path. Changed code in repo A calls a service, which reaches an auth check in repo B. False positives plus missed bugs."></figure><figure class="still"><img src="docs-and-tickets.jpg" alt="His slide, Two pieces of context: docs and tickets from Jira, Linear and docs through an MCP gateway, and the codebase through a codebase indexer, both feeding the review agent."></figure></div>
-      <blockquote>“This wiki is essentially a sort of world model of how your company works.”<span class="cite">00:11:50</span></blockquote>
+      <blockquote>“This wiki is essentially a sort of world model of how your company works.”<span class="cite">00:10:45</span></blockquote>
       <ul class="keypoints">
         <li>A diff is not enough; the bug may be in how it meets another repository.</li>
         <li>Correct code can still miss the intent, so the agent needs tickets and docs.</li>
         <li>A maintained wiki of the system gives context and cuts wasted file reads.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:48, 00:11:50</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41, 00:10:45</p>
     </section>
 
     <section data-chapter="fix-four-run-the-code" data-visual="v6" data-caption="Click through the flow">
@@ -154,13 +154,13 @@
       <p>Some bugs cannot be read off a diff. A set of React changes can look unimportant and still break something on a phone. So the agent runs the application. Greptile builds configurable sandboxes with the full set of dependencies, works with each customer to bring their stack up inside one, and has a computer-use model click through it. He says computer use has improved enough that, for the first time, he considers end-to-end QA nearly solved.</p>
       <p>Two things have to exist first. One is a build script simple enough for the agent to start the stack, which is easy if you already have good development boxes and one of the harder parts if you do not. The other is a map from areas of code to the user flows that exercise them, so the agent knows what to test when a file changes.</p>
       <div class="stills"><figure class="still"><img src="dev-box-flow-map.jpg" alt="His slide, Two things to build. 1, a dev box: the PR branch and its dependencies as a running app. 2, a flow map: auth code maps to the sign-in flow, checkout code to the purchase flow."></figure></div>
-      <blockquote>“This button technically appears, but it&#x27;s actually hidden on iPhones.”<span class="cite">00:11:50</span></blockquote>
+      <blockquote>“this button technically appears, but it&#x27;s actually hidden on iPhones.”<span class="cite">00:14:04</span></blockquote>
       <ul class="keypoints">
         <li>Some defects only appear when the app is running.</li>
         <li>A browser agent in a full sandbox clicks through the affected flows.</li>
         <li>You need a reproducible dev box and a map from code to user flows.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:50</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:10:45</p>
     </section>
 
     <section data-chapter="fix-five-the-frontier-model-only-where-i" data-visual="v7" data-caption="A model per subtask">
@@ -169,13 +169,13 @@
       <p>After all that the cost is still high; his slide says two to twenty dollars in tokens per review, on every push. The fix is to use cheaper models for most of the work. Greptile uses frontier models for about a fifth of it, the most critical steps. The slide's example gives finding context to a small model, testing user flows to a browser agent, and analyzing bugs to a frontier model. In practice they have about twenty subtasks, each with its own model, and a small research team that keeps revising the choices.</p>
       <p>This depends on the dataset from the first fix. Without it you can swap in smaller models, feel pleased with the saving, and not learn that you are catching fewer bugs until one gets through. The same idea handles excess file reading: a cheap model filters the candidate context, and only what is relevant reaches the expensive one.</p>
       <div class="stills"><figure class="still"><img src="cost-per-review.jpg" alt="His slide: $2 to $20 in tokens per review run. And it runs on every push."></figure><figure class="still"><img src="filter-then-review.jpg" alt="His slide, Fewer irrelevant file reads: candidate files go to a cheap model that filters them, and only the relevant context goes to the frontier model to review and reason."></figure></div>
-      <blockquote>“You only find out when it misses something, then causes an error.”<span class="cite">00:11:50</span></blockquote>
+      <blockquote>“You only find out when it misses something, then causes an error.”<span class="cite">00:15:45</span></blockquote>
       <ul class="keypoints">
         <li>A full review costs dollars per run until models are assigned per subtask.</li>
         <li>Frontier models do about a fifth of the work.</li>
         <li>Without a test set, a cheaper model's misses stay invisible.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:50</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:10:45</p>
     </section>
 
   </main>

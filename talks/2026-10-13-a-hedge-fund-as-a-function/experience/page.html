@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Hedge Fund as a Function · Frank Long</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>Compress the world into three decisions: what stock, how much, and when</h1>
+  <p class="dek">Frank Long joined Coatue on a bet that agents will change investing even more than they changed software engineering. He models an investment firm as a state-machine function from external and internal context to a portfolio time series, then breaks that function down into evaluable steps run by code, classical machine learning, language models, and people.</p>
+  <div class="talk-meta">Frank Long, Coatue · 14 min talk · five chapters · <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=24464s">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="cover-01-cover-investment.jpg" alt="Coatue title slide 01 / COVER reading &#x27;An Investment Fund as a Function&#x27; at AI Engineer New York.">
+        <figcaption>Slide from the official talk recording: framing an investment fund as a compression function</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v2">
+        <div class="diagram-label">PIPELINE DECOMPOSITION</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram from API-accessible external and internal context through gather, analyze, and decide stages to a stock selection, size, and timing tuple"><defs><marker id="arr-hf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#f4cf72"/></marker></defs><rect width="640" height="360" rx="8" fill="#101712"/><rect x="24" y="42" width="156" height="112" rx="6" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.5"/><text x="38" y="68" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="600">CONTEXT_EXTERNAL</text><text x="38" y="92" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">News &amp; Korean media</text><text x="38" y="112" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Prices &amp; DART filings</text><text x="38" y="134" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">100% API-exposed</text><rect x="24" y="178" width="156" height="112" rx="6" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.5"/><text x="38" y="204" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="600">CONTEXT_INTERNAL</text><text x="38" y="228" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Positions &amp; risk limits</text><text x="38" y="248" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Decades of trade notes</text><text x="38" y="270" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="10">100% API-exposed</text><path d="M 180 98 L 218 148" stroke="#f4cf72" stroke-width="1.6" fill="none" marker-end="url(#arr-hf)"/><path d="M 180 234 L 218 184" stroke="#f4cf72" stroke-width="1.6" fill="none" marker-end="url(#arr-hf)"/><rect x="224" y="122" width="96" height="88" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.5"/><text x="272" y="154" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="13" font-weight="700">gather()</text><text x="272" y="175" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">chunk · OCR</text><text x="272" y="192" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">filter · link</text><path d="M 320 166 L 348 166" stroke="#f4cf72" stroke-width="1.6" fill="none" marker-end="url(#arr-hf)"/><rect x="354" y="122" width="96" height="88" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.5"/><text x="402" y="154" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="13" font-weight="700">analyze()</text><text x="402" y="175" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">form view</text><text x="402" y="192" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">public/private</text><path d="M 450 166 L 478 166" stroke="#f4cf72" stroke-width="1.6" fill="none" marker-end="url(#arr-hf)"/><rect x="484" y="104" width="132" height="124" rx="6" fill="#1e2c22" stroke="#f4cf72" stroke-width="2"/><text x="550" y="132" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="13" font-weight="700">decide()</text><line x1="498" y1="144" x2="602" y2="144" stroke="#3a4d3f" stroke-width="1"/><text x="550" y="166" text-anchor="middle" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="11">1. selection</text><text x="550" y="186" text-anchor="middle" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="11">2. size</text><text x="550" y="206" text-anchor="middle" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="11">3. timing</text><text x="320" y="326" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">Typed output of each stage feeds the next · ingestion knobs tuned like ML hyperparameters</text></svg>
+        <figcaption>Rather than stuffing raw feeds into one prompt, the firm function decomposes into typed gather, analyze, and decide stages whose ingestion knobs act as tunable hyperparameters.</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="you-need-runner-four.jpg" alt="Coatue slide titled &#x27;You need a runner&#x27; showing four primitive shapes side by side: black square CODE, green diamond ML, grey rounded shape LLM, and red circle PERSON.">
+        <figcaption>Slide from the official talk recording: the four function runners — CODE, ML, LLM, and PERSON</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="architecture-dag-gather-korean.jpg" alt="Coatue architecture diagram titled &#x27;gather() for the Korean news · one function, many ways to wire it&#x27;, routing korean_news, dart_filings, call_transcripts, and c_internal / our_notes through collect(), dedupe(), rank(), filter(), translate(), extract_quotes(), extract_figures(), entity_link(), check_sources(), compare_to_last_view(), key_stock_drivers(), and compare_to_holdings() into propose() and review(), with dashed red feedback arrows QUOTE DOESN&#x27;T MATCH and REVISE.">
+        <figcaption>Slide from the official talk recording: branching gather() control flow and verification loops for Korean news</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="closing-x-fyxlong-linkedin.jpg" alt="Coatue closing slide with Frank Long&#x27;s handles (@fyxlong and linkedin.com/in/franklong1) over a dense fan-in DAG of hundreds of Code, ML, LLM, and Person nodes converging from left to right into one final decision node.">
+        <figcaption>Slide from the official talk recording: hundreds of multi-runner nodes fanning into one portfolio decision</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="investing-is-a-compression-function-over-t" data-visual="v1" data-caption="Inputs to a portfolio tuple">
+      <div class="chapter">Chapter 1</div>
+      <h2>Investing is a compression function over two kinds of context</h2>
+      <p>Long frames Coatue's work across public and private technology markets as taking high-conviction bets on major themes and watching them play out. As an engineer, he treats the firm as a single compression function. It takes two inputs, external context and internal context, and emits a three-part decision tuple: stock selection, position size, and timing. Emitted repeatedly over time, that stream of tuples constructs the portfolio.</p>
+      <p>That function is only as capable as the inputs wired into it. Long's rule for internal tooling is direct: every pixel a human analyst can read on a screen should be exposed to an agent via API. Hiring the best investors alive and handing them a workstation without logins to three-quarters of the firm's services renders their judgment useless. External context covers news, prices, and filings delivered programmatically without copy-paste. Internal context covers Coatue's live positions, liquidity and risk constraints around specific names, and decades of filed trade notes recording every decision the firm made or passed on and how it turned out.</p>
+      <div class="stills"><figure class="still"><img src="frank-long-introducing-himself.jpg" alt="Frank Long of Coatue speaking on the Simons Room main stage at AI Engineer New York."></figure></div>
+      <blockquote>“Every single thing that a human can see in pixels on the screen, an agent in your building should be able to see via API.”<span class="cite">00:01:25</span></blockquote>
+      <ul class="key-points">
+        <li>A hedge fund compresses market and firm context into a time series of <code>(selection, size, timing)</code> tuples.</li>
+        <li>Agents need direct API access to every data feed and internal tool a human sees on screen.</li>
+        <li>Decades of structured trade and decision notes give agents institutional memory alongside live market feeds.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:01:25</p>
+    </section>
+
+    <section data-chapter="you-cannot-jam-the-world-into-one-context-" data-visual="v2" data-caption="Gather, analyze, and decide">
+      <div class="chapter">Chapter 2</div>
+      <h2>You cannot jam the world into one context window</h2>
+      <p>Clean APIs still do not let you dump every feed and memo into one context window and read off three portfolio numbers. Long decomposes the top-level function into three sequential stages: gather, analyze, and decide. Every stage takes a typed input and hands its output to the next stage. Even basic filtering carries domain nuance: an article about the NBA is noise, while a local permitting story may constrain data center buildouts.</p>
+      <p>Zooming into the gather step on a single slice of market data shows why three functions quickly become dozens. Asian and Korean media coverage of the semiconductor supply chain has been central to AI markets, and AI can read Korean-language outlets far better than Coatue's non-Korean-speaking staff. Building that one ingestion step requires licensing and cleaning feeds over MCP or a CLI, choosing a chunking strategy, deciding whether charts enter the model as raw images or OCR text, filtering out unrelated coverage, choosing among translation, summarization, and structured extraction, and cross-referencing claims against internal notes and meeting recordings. Long treats each of those choices as a hyperparameter to tune against a moving target.</p>
+      <blockquote>“So if you think about it, I probably can&#x27;t just take all of those things, jam them into a context window, and get my magic three numbers and go home, right?”<span class="cite">00:03:13</span></blockquote>
+      <ul class="key-points">
+        <li>The top-level firm function splits into <code>gather</code>, <code>analyze</code>, and <code>decide</code>, with typed inputs and outputs at each boundary.</li>
+        <li>Even one narrow <code>gather</code> workflow over Korean semiconductor news exposes dozens of design choices.</li>
+        <li>Chunking, image handling, translation versus extraction, and internal cross-referencing act as tunable hyperparameters.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:13, 00:04:53</p>
+    </section>
+
+    <section data-chapter="four-runners-and-no-glory-in-automating-fo" data-visual="v3" data-caption="Four runners: code to people">
+      <div class="chapter">Chapter 3</div>
+      <h2>Four runners, and no glory in automating for its own sake</h2>
+      <p>Once a workflow is broken into discrete lines of logic, each step needs an execution runner. Long puts every runner in four buckets: deterministic code, classical machine learning, LLMs, and people. In the transcript, the ASR model twice renders "code" as the prompt artifact <code>Qodo</code> when Long explains his first runner: for checking whether a price-to-earnings ratio sits below 15, deterministic code is fast, cheap, and reliable.</p>
+      <p>When relationships outgrow simple rules, classical statistics and regression models capture patterns that <code>if</code> statements miss. When inputs are unstructured text, such as summarizing Korean filings or earnings calls, LLMs and agents represent the state of the art. And when real-world judgment and interpersonal nuance matter, such as sitting down with a company's management team, a person remains the right runner. Long pushes back against forcing LLMs into every slot: the engineering goal is maximum absolute quality on each sub-function, not automation theater.</p>
+      <blockquote>“There is no glory in automating things for the sake of automating things. The goal is not to take as many things and make them LLMs as possible.”<span class="cite">00:07:29</span></blockquote>
+      <ul class="key-points">
+        <li>Every step in the graph runs on one of four primitives: deterministic code, classical ML, LLMs, or people.</li>
+        <li>Simple thresholds belong in deterministic code; regressions belong in classical ML; meetings with management belong with people.</li>
+        <li>Runner selection optimizes absolute step quality rather than LLM count.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:29</p>
+    </section>
+
+    <section data-chapter="branching-control-flow-turns-one-news-feed" data-visual="v4" data-caption="Branching Korean news DAG">
+      <div class="chapter">Chapter 4</div>
+      <h2>Branching control flow turns one news feed into a hyperparameter search</h2>
+      <p>In practice, even Korean news gathering is a branching graph with feedback loops rather than a straight pipeline. Long's architecture slide wires <code>korean_news</code>, <code>dart_filings</code>, <code>call_transcripts</code>, and internal notes (<code>c_internal / our_notes</code>) through <code>collect()</code>, <code>dedupe()</code>, <code>rank()</code>, <code>filter()</code>, <code>translate()</code>, <code>extract_quotes()</code>, <code>extract_figures()</code>, <code>entity_link()</code>, <code>check_sources()</code>, <code>compare_to_last_view()</code>, <code>key_stock_drivers()</code>, and <code>compare_to_holdings()</code> into <code>propose()</code> and <code>review()</code>, with red loop-back edges when a <code>QUOTE DOESN'T MATCH</code> or a reviewer marks <code>REVISE</code>. Depending on the thesis, an engineer might translate first and verify quotes against primary sources, or start from an analyst note to search for confirming or red-team evidence.</p>
+      <p>Most boxes combine multiple runners, such as deterministic 24-hour feed polling paired with statistical filters, or a human analyst backed by deterministic search when judging portfolio impact. Inside any LLM node, the configuration space expands again across model size, thinking effort, agent harness, loaded skills, and hooks. Because the resulting search space is vast even for news filtering, teams have to compartmentalize workflows into bounded units with an explicit north-star evaluation metric. Without a metric to hill-climb against, swapping an LLM for a trained model or an <code>if</code> statement is just fidgeting.</p>
+      <blockquote>“So the way to think about breaking down these problems is, what can I actually compartmentalize in a way that we can understand and evaluate?”<span class="cite">00:09:20</span></blockquote>
+      <ul class="key-points">
+        <li>Real workflows branch and loop back on source checks and human review rather than running linearly.</li>
+        <li>Individual steps mix runners and expose LLM knobs across model size, thinking effort, harness, skills, and hooks.</li>
+        <li>Compartmentalizing sub-steps around an evaluable north-star metric separates hill-climbing from blind tuning.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:20</p>
+    </section>
+
+    <section data-chapter="the-firm-wide-state-machine-and-the-legibi" data-visual="v5" data-caption="The full-firm decision graph">
+      <div class="chapter">Chapter 5</div>
+      <h2>The firm-wide state machine and the legibility bottleneck</h2>
+      <p>Korean semiconductor news is one tiny corner of a hedge fund's intake. Multiplying multi-step transformations across every external data source and internal note produces the dense fan-in graph on Long's closing slide, which he uses as his screensaver: hundreds of code, ML, LLM, and human nodes converging left to right into one portfolio decision. With at least ten hyperparameters and twenty valid settings at every node, the firm-wide search space is effectively infinite.</p>
+      <p>At that scale, the central engineering problem in AI-driven investing is legibility: laying the graph out so engineers can understand and evaluate it technically, and so investment teams can absorb it culturally and organizationally. Long closes by noting that the underlying pattern, a state machine that ingests messy information from the world to make coherent decisions, extends well beyond finance to public policy, nonprofits, drug discovery, and corporate strategy.</p>
+      <blockquote>“In each of those nodes, we just talked about, at least ten hyperparameters with at least 20 different valid values for them. So the search space is basically infinite.”<span class="cite">00:12:16</span></blockquote>
+      <ul class="key-points">
+        <li>Across every firm data source, ten-plus hyperparameters per node create an effectively infinite graph configuration space.</li>
+        <li>Technical and organizational legibility is the real bottleneck in scaling AI across an investment firm.</li>
+        <li>The same state-machine architecture applies wherever organizations turn noisy world state into high-stakes decisions.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:16</p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=akEqiXFo3GM&amp;t=24464s">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

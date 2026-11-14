@@ -1,471 +1,626 @@
 {
   "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
     "sections_read": [
-      "### 00:00:00 — Why Agents Repeat Mistakes Across Sessions",
-      "### 00:06:36 — A Meta-Skill for Mining Past Runs & Updating Skills",
-      "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp"
+      "### 00:00:00 — Warp Factories & Automating the Development Wheel",
+      "### 00:01:44 — Factory Engineering & the Skill Improvement Loop",
+      "### 00:03:12 — Centralizing Agent Conversations, Tool Calls & Diffs",
+      "### 00:06:06 — Scoring Redundant Tests, Verbosity & Tool Efficiency",
+      "### 00:08:55 — Markdown Judge Rubrics & Post-Merge Conversation Grading",
+      "### 00:13:43 — Skill Doctor: Batch Audits for Port & Changelog Fixes",
+      "### 00:16:10 — Score Inflection Dashboards & Continuous Improvement PRs"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Py' likely 'Pi' (00:00:00, 00:12:52)",
-      "ASR garble: 'OpenCLaw' likely 'OpenClaw' (00:00:00)",
-      "ASR garble: 'Go NatWest' unclear, flagged as possible prompt artifact (00:06:36)",
-      "ASR garble: 'you great conversations' likely 'you grade conversations' (00:12:52)",
-      "ASR garble: 'work. Dead slash skill doctor' likely 'warp.dev/skill-doctor' (00:12:52)"
+      "ASR garble: 'dot clone folders' likely '.claude folders' (00:03:12)",
+      "ASR garble: 'Py' likely 'Pi' (00:03:12, 00:13:43)",
+      "ASR garble: 'OpenCLaw' likely 'OpenClaw' (00:03:12)",
+      "ASR garble: 'Go NatWest' unclear, flagged as possible schedule-prompt artifact (00:08:55)",
+      "ASR garble: 'you great conversations' likely 'you grade conversations' (00:08:55)",
+      "ASR garble: 'work. Dead slash skill doctor' likely 'warp.dev/skill-doctor' (00:13:43)",
+      "ASR garble: 'for Basu' likely 'verbosity' (00:13:43)",
+      "ASR garble: 'stopper factory' likely 'software factory' (00:16:10)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
     "sections_read": [
-      "### 00:00:00 — The Code Review Bottleneck in AI Software Factories",
-      "### 00:06:32 — Multi-Layered Verification: Static Analysis, Tests & Agent Critics",
-      "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic"
+      "### 00:00:00 — The Review Gap & Speaker Introductions",
+      "### 00:01:45 — CI Merge Failures & Lights-On vs. Dark Factories",
+      "### 00:03:41 — Shipping Faster with Confidence & Verification Loops",
+      "### 00:05:26 — Merging 30,000 Daily Changes at Anthropic",
+      "### 00:08:20 — Sonar Survey Insights & Moving Toward Dark Factories",
+      "### 00:11:26 — Zero-Trust Multi-Layered Verification & Enterprise Guide Rails",
+      "### 00:14:29 — Lightning Round: Labeling PRs, Skills & Safe Merges"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Manish Kapoor' likely 'Manish Kapur' (00:00:00)",
       "ASR garble: 'quoting agent' likely 'coding agent' (00:00:00)",
-      "ASR garble: 'Ali' / 'Andy' likely 'Addy' (00:00:00, 00:06:32, 00:12:37)",
-      "ASR garble: 'Claudio' likely 'Claude' (00:06:32)",
-      "ASR garble: 'Zapf factories' likely 'software factories' (00:06:32)",
-      "ASR garble: 'Antopolis' likely 'Anthropic' (00:12:37)"
+      "ASR garble: 'Manish Kapoor' likely 'Manish Kapur' (00:00:00)",
+      "ASR garble: 'Ali' / 'Andy' likely 'Addy' (00:00:00, 00:08:20, 00:11:26)",
+      "ASR garble: 'production arcane' likely 'production are failing' (00:01:45)",
+      "ASR garble: 'Claudio' / 'cloud run' likely 'Claude' / 'Claude run' (00:05:26, 00:14:29)",
+      "ASR garble: 'Zapf factories' likely 'software factories' (00:08:20)",
+      "ASR garble: 'Antopolis' likely 'Anthropic' (00:14:29)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
     "sections_read": [
-      "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome"
+      "### 00:00:07 — Welcome Back & Thanking Conference Sponsors",
+      "### 00:02:12 — A Hiring Agent Project for Conference Attendees",
+      "### 00:04:08 — Introducing Apollo Global Management & Rowspace"
     ],
     "claims_found": 3,
     "thin": true,
     "gaps": [
-      "Short recording (677 words in 1 section): a host welcome and sponsor thanks with a light suggestion, not a technical talk; marked thin.",
-      "ASR garble: 'that carbonell' unclear (00:00:07)",
-      "ASR garble: 'at Apple' likely 'at Apollo' (00:00:07)"
+      "Short recording (569 words across 3 brief sections): a 5-minute MC welcome, sponsor thank-you, and keynote introduction containing one brief attendee agent-project suggestion rather than a full technical talk.",
+      "ASR garble: 'that carbonell' unclear (00:02:12)",
+      "ASR garble: 'at Apple' likely 'at Apollo' and 'Rating Reach' unclear (00:04:08)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
     "sections_read": [
-      "### 00:00:00 — Long-Horizon Accounting Agents at Basis",
-      "### 00:06:54 — Process Supervision vs. Outcome-Only Evaluation",
-      "### 00:13:22 — Scaling Multi-Step Reliability in Production"
+      "### 00:00:00 — Enterprise Productivity & Human Process Supervision",
+      "### 00:03:42 — The Competency Gap & the Process Gap",
+      "### 00:06:10 — Why Reliable Agents Require Opinionated Processes",
+      "### 00:09:16 — Why Outcome Evals Fall Short on Long Horizons",
+      "### 00:12:01 — Behavior Specs as Ground-Truth-Free Trajectory Rubrics",
+      "### 00:13:40 — Trajectory Forking & Subagent Simulations",
+      "### 00:17:21 — Earning Organizational Trust Over Move-37 Creativity"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'alchemy bells' likely 'outcome evals' (00:13:22 section)",
-      "ASR garble: 'behavior step' / 'board it' / 'forward it' likely 'behavior spec' / 'fork it' (00:06:54, 00:13:22)",
-      "ASR garble: 'move 37 your work' / 'move thirty-seven' likely a 'Move 37' (AlphaGo) reference (00:13:22 section)"
+      "ASR garble: 'coding style Asian products' / 'if I'm an Asian' likely 'coding-style agent products' / 'if I have an agent' (00:03:42, 00:06:10 sections)",
+      "ASR garble: 'alphabet-based evals' / 'alchemy bells' likely 'outcome-based evals' / 'outcome evals' (00:09:16, 00:13:40 sections)",
+      "ASR garble: 'behavior stack' / 'behavior step' and 'board it' / 'forward it' likely 'behavior spec' and 'fork it' (00:12:01, 00:13:40 sections)",
+      "ASR garble: 'move 37 your work' / 'move thirty-seven' references AlphaGo's 'Move 37' (00:17:21 section)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "29083884-87dc-44f8-b412-b494afca8856": {
     "sections_read": [
-      "### 00:00:00 — Evolution of the Coding Agent Harness",
-      "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
-      "### 00:12:13 — Next-Generation Environment & Tool Interfaces"
+      "### 00:00:00 — From Prompt Engineering to the Agent Harness",
+      "### 00:01:22 — Runtime, Context Orchestration, and Peak Harness",
+      "### 00:04:14 — Coding Evals and the Model Data Flywheel",
+      "### 00:06:55 — Unlocking New Frontiers with Grokbot and Software Factories",
+      "### 00:11:59 — Cloud Runtime, Scoped Security, and Token Efficiency",
+      "### 00:14:01 — Hyrum's Law, Event Subscriptions, and Self-Cleaning Shims"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: product name rendered inconsistently as 'Rockbot', 'Grokbot', 'Rafa', 'Rock', 'robot', 'Chatbot' (00:06:36 onward), one product",
-      "ASR garble: 'chains' likely 'shims' (00:12:13 section)",
-      "ASR garble: 'Asian harness' likely 'agent harness' (00:00:00); 'SuperIntLight' unclear benchmark name (00:00:00 section)"
+      "ASR garble: 'Asian harness' likely 'agent harness' (00:00:00); 'P harness' likely 'peak harness' and 'To read from Anthropic' likely 'Thariq from Anthropic' (00:01:22)",
+      "ASR garble: 'Py Codex and Cloud Code' likely 'Pi, Codex, and Claude Code'; 'SuperIntLight' likely 'SWE-bench Lite' (00:04:14)",
+      "ASR garble: product name rendered inconsistently as 'Rockbot', 'Grokbot', 'Rafa', 'Rockwise', 'robot', 'Rock', 'Chatbot', and 'the blockchain' (00:06:55 onward)",
+      "ASR garble: 'Hayr's law' likely 'Hyrum's Law'; 'chains' likely 'shims' (00:14:01)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
     "sections_read": [
-      "### 00:00:00 — Rowspace & Apollo: AI for Institutional Investment Data",
-      "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
-      "### 00:12:48 — Governance, Auditability & Deployment Lessons at Apollo"
+      "### 00:00:00 — Introducing Rowspace and Apollo's Redding Ridge Credit Business",
+      "### 00:01:19 — Fragmented Private Credit Data in Active CLO Management",
+      "### 00:03:24 — Automating CLO Portfolio Construction and Weekly Trade Reconciliation",
+      "### 00:06:32 — Earning Trust Beyond Chatbots Through Golden Data Sources",
+      "### 00:09:07 — Apollo's Early Platform Mindset and Openness to Change",
+      "### 00:11:07 — Where Finance Stands on the AI Adoption Curve",
+      "### 00:13:10 — Commodity Productivity Tool Versus Durable Competitive Edge",
+      "### 00:15:10 — Near-Term Priorities and Lessons for AI in Finance"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'growth space', 'rotation', 'Ros Space' likely 'Rowspace' (00:00:00, 00:06:34)",
-      "ASR garble: 'Runway', 'Reddit', 'Running Ridge', 'running' likely 'Redding Ridge' (00:00:00, 00:12:48)",
-      "ASR garble: 'Krasura' likely 'Cursor' (00:06:34)",
-      "ASR garble: closing non-English line 'Nah itu jangan salah sebenarnya kita itu' is a hallucination (00:12:48)"
+      "ASR garble: 'Running Ridge', 'Redding', 'Runway', 'Reddit', and 'running' all refer to 'Redding Ridge' Asset Management (00:00:00, 00:01:19, 00:06:32, 00:11:07)",
+      "ASR garble: 'rotation', 'growth space', and 'Ros Space' likely 'Rowspace' (00:03:24, 00:11:07)",
+      "ASR garble: 'deep contenter documents' likely 'deep indenture documents' and 'Collet' likely 'call it' (00:03:24)",
+      "ASR garble: 'Krasura' likely 'Cursor' (00:09:07)",
+      "ASR garble: closing Indonesian line 'Nah itu jangan salah sebenarnya kita itu.' is an ASR hallucination on applause/outro (00:15:10)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
     "sections_read": [
-      "### 00:00:06 — From Lean Manufacturing to Enterprise Software Factories",
-      "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
-      "### 00:11:02 — Building Verification and Quality Gates into the Factory"
+      "### 00:00:06 — Toyota's Quality Principles in Software Manufacturing",
+      "### 00:02:53 — Code Abundance and the Shift to Agentic Factories",
+      "### 00:05:15 — Cognitive Surrender and Large Codebase Bottlenecks",
+      "### 00:08:01 — Compounding Errors and Unreliable LLM Judges",
+      "### 00:10:56 — Four Pillars of the Code Confidence Framework",
+      "### 00:13:29 — Deterministic Verification, SonarQube Results, and Audit Evidence"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Sachin Adela' likely 'Satya Nadella' (00:00:06 section)",
-      "ASR garble: 'meter' likely 'METR' and 'Cloud Windows. Preview' likely a Claude model preview name (00:05:31 section)",
-      "ASR garble: 'identity software factories' likely 'agentic software factories' (00:00:06 section)"
+      "ASR garble: 'Sachin Adela' likely 'Satya Nadella' and 'identity software factories' likely 'agentic software factories' (00:02:53 section)",
+      "ASR garble: 'white planes' / 'white claims' likely 'White Plains' (NY) and 'databases' likely 'codebases' (00:05:15, 00:10:56 sections)",
+      "ASR garble: 'meter' likely 'METR' and 'Cloud Windows Preview' likely a Claude model preview name (00:08:01 section)",
+      "ASR garble: 'Mister if you're building cars' likely 'MISRA' (00:13:29 section)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
     "sections_read": [
-      "### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context",
-      "### 00:06:57 — Structuring Context Graphs & Specs at Linear",
-      "### 00:14:17 — Human-Agent Collaboration in the Issue Tracker"
+      "### 00:00:00 — Opening and Linear's Craftsmanship Roots",
+      "### 00:02:20 — From Tab Completion to Long-Running Agents",
+      "### 00:06:18 — Why Product Coherence Needs More Than Code",
+      "### 00:08:47 — Automated Intake and the Triage Agent",
+      "### 00:12:47 — Implementation Loops and Agent Verification Skills",
+      "### 00:14:07 — Context-Aware Review Agents and Product History",
+      "### 00:18:47 — Compounding Judgment Through Daily Feedback Distillation"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'date dog' likely 'Datadog' (00:06:57)",
-      "ASR garble: 'covering agent' likely 'coding agent' (00:06:57)",
-      "ASR garble: 'codecs' likely 'Codex' (00:14:17)",
-      "ASR garble: 'co-occurrence' / 'co base' likely 'codebase' (00:14:17)",
-      "ASR garble: 'DBT. Transaction' likely 'DB transaction' (00:14:17)"
+      "ASR garble: 'date dog' likely 'Datadog' (00:08:47)",
+      "ASR garble: 'its services decisions' likely 'it surfaces decisions' (00:08:47)",
+      "ASR garble: 'covering agent' / 'copy agent' likely 'coding agent' (00:08:47, 00:12:47)",
+      "ASR garble: 'codecs' likely 'Codex' (00:14:07)",
+      "ASR garble: 'co-occurrence' / 'co base' likely 'codebase' (00:14:07)",
+      "ASR garble: 'DBT transaction' likely 'DB transaction' (00:14:07)",
+      "ASR garble: 'reverse' likely 'reverts' (00:14:07, 00:18:47)",
+      "ASR garble: 'agents empty' likely 'agents.md' (00:18:47)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "68a1e78b-569e-4314-a56f-f20508123cbe": {
     "sections_read": [
-      "### 00:00:11 — Introduction: Frontier AI in Financial Services",
-      "### 00:06:12 — Enterprise Deployment Patterns & Governance",
-      "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook"
+      "### 00:00:11 — Speaker Introductions & Three Frontiers in Finance",
+      "### 00:01:32 — The Frontier of Intelligence & Model Thresholds",
+      "### 00:06:12 — From Experimentation to the Five-Layer Agent Framework",
+      "### 00:07:57 — Context Layers: MCP Connectors & Living Skills",
+      "### 00:09:35 — Trust Layers: Identity, Sandboxed Approvals & Evals",
+      "### 00:12:25 — Scaling Across Doors & the Business-Engineering Loop",
+      "### 00:15:33 — Industry Coordination: Claude for Financial Advisors"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'owner's data' likely 'order data' (00:06:12)",
-      "ASR garble: 'VEL framework' likely 'eval framework' (00:12:09)"
+      "ASR garble: 'fable' / 'Fable Five Point One' and 'Claude Metals preview' likely 'Mythos' / 'Claude Mythos preview', and 'four per cell' likely 'Claude for Excel' (00:01:32)",
+      "ASR garble: 'tree' likely 'trade' and 'owner's data' likely 'order data' (00:07:57, 00:09:35)",
+      "ASR garble: 'VEL framework' likely 'eval framework', 'post adjustments' likely 'proposed adjustments', and 'Claude Cove' / 'Cloud Code' likely 'Claude Code' (00:12:25)",
+      "ASR garble: 'all the financial advisors' likely 'Claude for Financial Advisors' and 'proves' likely 'approves' (00:15:33)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
     "sections_read": [
-      "### 00:00:00 — SDLC Velocity vs. Incident Operations at GEICO",
-      "### 00:06:39 — Inside the Fable War Room: Multi-Agent Incident Response",
-      "### 00:12:33 — Production Results & Cultural Takeaways"
+      "### 00:00:00 — Breaking Out of the Outer Loop in Claims Engineering",
+      "### 00:03:35 — Designing the Multiplayer AI-Native War Room",
+      "### 00:05:09 — Three Legacy Modernization Missions: Rentals, Damages, and Salvage",
+      "### 00:08:10 — Vendor Stack, Enterprise Context, and FleetKit Orchestration",
+      "### 00:11:18 — Interactive Worksheets and Architecture Diagrams in the Loop",
+      "### 00:13:46 — Cloud Code Dives, Local MCPs, and Nine-Step Execution",
+      "### 00:15:44 — Token Burn, Model Benchmarks, and Scaling Organization-Wide"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
       "ASR garble: 'interloop' likely 'inner loop' and 'Jean Kim' likely 'Gene Kim' (00:00:00)",
-      "ASR garble: 'Adalo loop' likely 'outer loop' (00:12:33)",
-      "ASR garble: 'entropic. Code monetization plugin' likely 'Anthropic code modernization plugin' (00:00:00, 00:12:33)",
-      "ASR garble: 'Fable or Sonnet five wrote it just as good as, if not better than Fable' — model names likely transposed (00:12:33)",
-      "ASR garble: 'ancient callable APIs' likely 'agent callable APIs'; 'claw horn' likely 'Claude' (00:06:39)"
+      "ASR garble: 'entropic code monetization plugin' / 'code minimization' likely 'Anthropic code modernization plugin' (00:05:09, 00:08:10, 00:13:46)",
+      "ASR garble: 'Tora Legacy' likely 'to our legacy'; 'ancient callable APIs' likely 'agent-callable APIs'; 'prad bug' likely 'prod bug' (00:05:09)",
+      "ASR garble: 'claw horn, specifically, table' likely 'Claude harness, specifically Fable'; 'human loop cube' likely 'human-in-the-loop queue' (00:08:10)",
+      "ASR garble: 'Hookins' likely 'tokens'; 'property caching' likely 'prompt caching'; 'Fable or Sonnet five wrote it just as good as, if not better than Fable' transposes model names; 'Adalo loop' likely 'outer loop' (00:15:44)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
     "sections_read": [
-      "### 00:00:00 — Defining AI Writing Slop & Why It Happens",
-      "### 00:06:12 — Constructing a Benchmark for Creative Writing",
-      "### 00:12:33 — Evaluating Style, Voice & Model Findings"
+      "### 00:00:00 — Defining AI Slop & Introducing ToneBench",
+      "### 00:03:21 — Why Educational Content Needs a Creative Writing Benchmark",
+      "### 00:05:34 — Benchmark Architecture: Prompts, Scripts & Draft Variance",
+      "### 00:08:55 — Scoring Rubrics, LLM Judge Bias & Human Ratings",
+      "### 00:13:56 — Benchmark Costs, Model Rankings & Price Tradeoffs",
+      "### 00:16:06 — Practical Workflow: Long Prompts & Multi-Draft Merging"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Love'/'stuff' likely 'slop' throughout (00:00:00)",
-      "ASR garble: 'Phone Bench' likely 'Tone Bench' (00:00:00)",
-      "Unreadable passage: 'Kerfatin termed as the stuck Achilles' (00:00:00)"
+      "ASR garble: 'love'/'stuff' likely 'slop' throughout (00:00:00, 00:03:21, 00:16:06)",
+      "ASR garble: 'Phone Bench'/'tone bins' likely 'ToneBench' (00:00:00, 00:13:56)",
+      "ASR garble: 'Kerfatin termed as the stuck Achilles' likely 'Karpathy termed as the sloppocalypse' (00:00:00)",
+      "ASR garble: 'Office' likely 'Opus' (00:16:06)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
     "sections_read": [
-      "### 00:00:00 — Balancing Innovation Speed and Institutional Trust",
-      "### 00:06:21 — Risk Taxonomies & Guardrails for AI Agents",
-      "### 00:12:38 — Production Architecture at Two Sigma"
+      "### 00:00:00 — Introduction & Regulatory Disclaimers",
+      "### 00:00:58 — When Controls Fail: Citibank's $900 Million Revlon Error",
+      "### 00:05:13 — Why Safety and Agent Autonomy Aren't Opposites",
+      "### 00:07:48 — Making Agents Legible with an Automatic Registry",
+      "### 00:10:00 — Risk-Scored Review for Purpose-Built Enterprise Agents",
+      "### 00:11:58 — Declared Tool Access, Guardrails & Shared Evaluations",
+      "### 00:16:32 — Preventing Review Fatigue with Runtime Classifiers"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Clear their purpose' likely 'Declare their purpose' (00:12:38)",
-      "ASR garble: 'Flexview'/'Fletchview'/'Flaskier' and 'Redline' likely 'Flexcube' and 'Revlon' (00:00:00)"
+      "ASR garble: 'Flexview'/'InflexQ'/'Fletchview'/'Flaskier' and 'Redline' likely 'Flexcube' and 'Revlon', and '80 million' vs 'eight million' interest payment (00:00:58, 00:05:13)",
+      "ASR garble: 'NPC servers' likely 'MCP servers' and 'Asian question'/'Asian registry' likely 'agent registry' (00:07:48, 00:11:58)",
+      "ASR garble: 'agent-based captioning production system' likely 'agent that's touching a production system' (00:10:00)",
+      "ASR garble: Cantonese insertion '搞個journal API， run做一個web search，那種嘢。' mid-sentence, 'clear their purpose' likely 'declare their purpose', and 'revals'/'B vowels' likely 'evals' (00:11:58)",
+      "ASR garble: 'Wait for my removal' likely 'Wait for my approval', 'dark rails' likely 'guardrails', and 'Samuel House' likely 'somewhere else' (00:16:32)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
     "sections_read": [
-      "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
-      "### 00:05:13 — Hermes & Owning Your Intelligence Stack",
-      "### 00:10:21 — Training, Steering & Customizing Open Models"
+      "### 00:00:00 — Model Commoditization and Trillion-Dollar Infrastructure Bets",
+      "### 00:02:31 — Asymmetric Leverage at the Enterprise Agent Layer",
+      "### 00:04:04 — Solving Lucrative Markets Directly Instead of Selling Margin",
+      "### 00:06:36 — Why Nous Research Fights Centralized AI Control",
+      "### 00:08:01 — Software Moats Collapse and Distillation Wars",
+      "### 00:11:05 — Agents as Operating Systems Combining Code and Judgment",
+      "### 00:13:30 — The Hermes Agent Standard and Open Autonomy"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'mixed research' likely 'Nous Research' (00:05:13)",
-      "ASR garble: 'her musician' likely 'Hermes Agent' (00:05:13)",
-      "ASR garble: 'Permissive agent' likely 'Hermes Agent' (00:10:21)",
-      "ASR garble: 'Bill Montgomery speaking' and 'Oakland' appear to be spurious insertions (00:05:13)",
-      "ASR garble: 'Não tenho nenhum outro provavelmente não há lugar' and 'Não tem tanta' are spurious Portuguese insertions (00:00:00)"
+      "ASR garble: 'Não tenho nenhum outro provavelmente não há lugar' and 'Não tem tanta' are spurious Portuguese insertions (00:00:00)",
+      "ASR garble: 'Bill Montgomery speaking' and 'Oakland' appear to be spurious insertions (00:04:04, 00:06:36)",
+      "ASR garble: 'mixed research' likely 'Nous Research' (00:06:36)",
+      "ASR garble: 'Hermes 8'/'her musician' likely 'Hermes Agent' (00:08:01) and 'Permissive agent' likely 'Hermes Agent' (00:13:30)",
+      "ASR garble: 'The most of yesterday'/'The modes of tomorrow' likely 'The moats of yesterday'/'The moats of tomorrow' (00:08:01)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
     "sections_read": [
-      "### 00:00:00 — Why Agentic Payments Matter for Tool Marketplaces",
-      "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
-      "### 00:13:38 — Real-World Agent Monetization Lessons at Apify"
+      "### 00:00:00 — Apify's Actor Marketplace & Why Agent Payments Matter",
+      "### 00:02:26 — The Explosion of Agentic Payment Standards",
+      "### 00:04:45 — Why Crypto Fits Machine Payments & Real-World Volume",
+      "### 00:07:35 — The Agent Payment Funnel & API Key Competition",
+      "### 00:12:04 — Wallet Setup Friction & Native Platform Integration",
+      "### 00:13:19 — Service Discovery, Trust & Verified Connector Directories",
+      "### 00:17:02 — Implementing Pay-Per-Use & Batch Settlement on x402"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'paper use' likely 'pay-per-use' (00:13:38)",
-      "ASR garble: 'Expedia too', 'Experian', 'XForward', 'Exa Payments' likely 'x402' (00:13:38)",
-      "ASR garble: 'Keycard' likely 'crypto', a prompt artifact (00:00:00)",
-      "ASR garble: 'Asian' likely 'agent' throughout (00:00:00)"
+      "ASR garble: 'this road too', 'Expedia too', 'Experian', 'XForward', 'Exa Payments' likely 'x402' / 'exact payment scheme' (00:04:45, 00:13:19, 00:17:02)",
+      "ASR garble: 'paper use' likely 'pay-per-use' (00:13:19, 00:17:02)",
+      "ASR garble: 'Atul Berman's key' likely 'up-to payment scheme', 'spend those money wise' likely 'spend those moneys twice', and 'Bestelman's' / 'Basic Life Insurance Scheme' likely 'batch settlement scheme' (00:17:02)",
+      "ASR garble: 'Keycard' likely 'crypto' (prompt artifact) and 'Asian' likely 'agent' (00:02:26, 00:04:45)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
     "sections_read": [
-      "### 00:00:05 — Why Every Agent Framework Converges on Sandboxed Computers",
-      "### 00:05:08 — Daytona Runtime Architecture & Isolation Primitives",
-      "### 00:10:20 — Patterns from Integrating Across Agent Harnesses"
+      "### 00:00:05 — Integrating Daytona Across Competing Agent Frameworks",
+      "### 00:01:58 — Why Frameworks That Agree on Nothing Converge on Sandboxes",
+      "### 00:03:28 — Three Isolation Models: Host Allowlists, Embedded Runtimes, and VMs",
+      "### 00:07:40 — Frameworks Deleting Local Code Executors in 2026",
+      "### 00:09:18 — From Ephemeral Sandboxes to Agent Runtimes and RL Fleets",
+      "### 00:10:16 — What Is Swappable vs. Execution Posture Lock-In",
+      "### 00:13:41 — Pick the Execution Boundary Before the Framework"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'framers our opinions and the boundary the commitment' likely 'frameworks are opinions and the boundary is the commitment' (00:10:20)",
-      "ASR garble: 'Langref' likely 'LangGraph' and 'Pro AI' likely 'CrewAI' (00:00:05)"
+      "ASR garble: 'Langref'/'LandRat' likely 'LangGraph', 'Pro AI'/'true AI' likely 'CrewAI', and 'Mustard' likely 'Mastra' (00:01:58, 00:07:40)",
+      "ASR garble: 'blue code' likely 'glue code' (00:03:28)",
+      "ASR garble: 'framers our opinions and the boundary the commitment' likely 'frameworks are opinions and the boundary is the commitment' (00:13:41)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
     "sections_read": [
-      "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
-      "### 00:04:30 — Deploying Agents Across Public & Private Market Research",
-      "### 00:09:20 — Compounding Institutional Knowledge at Coatue"
+      "### 00:00:00 — High-Conviction Bets & A Hedge Fund as a Function",
+      "### 00:01:25 — API-Accessible Inputs: External & Internal Context",
+      "### 00:03:13 — Decomposing the Function: Gather, Analyze, Decide",
+      "### 00:04:53 — Case Study: Interpreting Korean Semiconductor News",
+      "### 00:07:29 — Four Function Runners: Code, ML, LLMs & People",
+      "### 00:09:20 — Branching Control Flow & Tuning Hyperparameters",
+      "### 00:12:16 — The Full Firm Graph & State Machines Beyond Investing"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Qodo' likely 'code' (deterministic code runner), a prompt artifact (00:04:30)",
-      "ASR garble: 'Code L M L M code person' unreadable runner labels (00:04:30)",
-      "ASR garble: 'General Intuition harness' likely a prompt artifact (00:09:20)"
+      "ASR garble: 'one, two, volt selection size timing' likely 'one tuple: selection, size, timing' (00:00:00)",
+      "ASR garble: 'dysfunction' likely 'this function' (00:03:13, 00:07:29)",
+      "ASR garble: 'Code L M L M code person' likely slide runner labels 'code, ML, LLM, person' (00:04:53)",
+      "ASR garble: 'Qodo' likely 'code' (deterministic code runner), a schedule-prompt artifact (00:07:29)",
+      "ASR garble: 'General Intuition harness' likely a schedule-prompt artifact (00:09:20)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
     "sections_read": [
-      "### 00:00:00 — From Structured Time Series to Unstructured Data at Bridgewater",
-      "### 00:04:53 — Inside Vault: Architecture for Investment Research",
-      "### 00:09:53 — Grounding, Evaluation & Iterative Deployment"
+      "### 00:00:00 — From Bitemporal Structured Data to Unstructured Knowledge in the Vault",
+      "### 00:02:20 — Open-Web Chat vs. Vault-Connected Query on the Korean Won",
+      "### 00:05:00 — Designing Search for Two Consumers: Humans vs. Agents",
+      "### 00:06:23 — Benchmarking Precision at Ten & Native Vector Filtering",
+      "### 00:09:34 — Migrating Investor Email Habits into Vault Workflows",
+      "### 00:11:07 — Pocket Analyst, Researcher, Forecaster & Investment Signals",
+      "### 00:12:12 — Proactive Agents, the Investor Workbench & Compounding Knowledge"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Bolt' and 'the ball' likely 'Vault' (00:04:53, 00:09:53)",
-      "ASR garble: 'TurboBuffer' / 'Turbo Buffer' likely 'turbopuffer' (00:04:53)",
-      "ASR garble: 'Including a CLA' likely 'a CLI' (00:09:53)"
+      "ASR garble: 'the bot' and 'Bolt' likely 'the Vault' / 'Vault' (00:02:20)",
+      "ASR garble: 'faults such as that' likely 'Vault search sucks', 'agenda search' likely 'agentic search', and 'TurboBuffer' / 'Turbo Buffer' likely 'turbopuffer' (00:06:23)",
+      "ASR garble: 'autonomous' likely 'entitlements', 'the model' likely 'the Vault', and 'including a CLA' likely 'including a CLI' (00:09:34)",
+      "ASR garble: 'on the ball' / 'from the ball' / 'the balance' / 'the model' / 'the forest' likely 'the Vault' (00:11:07, 00:12:12)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
     "sections_read": [
-      "### 00:00:00 — Ten Years of Generative Media & World Models at Runway",
-      "### 00:05:41 — From Video Generation to Real-Time World Simulation",
-      "### 00:11:22 — Simulating Environments, Physics & Interactive Worlds"
+      "### 00:00:00 — From 128-Pixel AI Films to Photorealistic Video",
+      "### 00:02:30 — Scaling Next-Frame Prediction into Physical Understanding",
+      "### 00:07:00 — Real-Time Interactive Worlds & Embodied Robotics",
+      "### 00:08:29 — World Interface Models Without 3D Engines",
+      "### 00:10:12 — Continuum & Interactive Video Portals as an OS",
+      "### 00:13:49 — Visual Thinking for Coding Agents",
+      "### 00:15:10 — Live Reactive Simulations & The Road Ahead"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'scaling loss' likely 'scaling laws' (00:00:00 section)",
-      "ASR garble: 'Conde' likely 'Continuum' (00:11:22)",
-      "ASR garble: 'wall model' likely 'world model' (00:05:41 section)"
+      "ASR garble: 'scaling loss' likely 'scaling laws' (00:02:30 section)",
+      "ASR garble: 'bigger model' / 'bigger what' / 'wall model' likely 'video model' / 'world model' (00:08:29 section)",
+      "ASR garble: 'Conde' / 'continuing' likely 'Continuum' (00:10:12, 00:15:10 sections)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
     "sections_read": [
-      "### 00:00:00 — The Evolving Role of the AI Engineer",
-      "### 00:04:53 — The Build-Eval-Ship-Monitor Loop",
-      "### 00:09:45 — Continuous Improvement & Agent Observability"
+      "### 00:00:00 — The Agent Adoption Funnel and Rising Abstractions",
+      "### 00:01:43 — Building the Engineering Loop Over Individual Features",
+      "### 00:02:55 — Signal: Always-On Agents Reading Production Traces",
+      "### 00:04:10 — Observability Triggers and Isolated Agent Sandboxes",
+      "### 00:06:32 — Durable State, Ephemeral Teardown, and Harness Agnosticism",
+      "### 00:09:45 — Aligning Evals with Human Judgment",
+      "### 00:12:10 — Tracing the Agent Factory End-to-End",
+      "### 00:13:42 — Closing the Gap Between Frontier Labs and Enterprise"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'write emails' likely 'write evals' (00:00:00, 00:09:45)",
-      "ASR garble: 'e-bells' likely 'evals'; 'Plot code' likely 'Claude Code'; 'rise, evaluator' likely 'Arize evaluator' (00:09:45)",
-      "ASR garble: 'golden tree. Datasets' likely 'golden datasets' (00:09:45)"
+      "ASR garble: 'write emails' / 'an email' / 'e-bells' / 'evolve that data' likely 'write evals' / 'an eval' / 'evals' / 'eval that data' (00:01:43, 00:09:45, 00:12:10)",
+      "ASR garble: 'it arises' likely 'at Arize' (00:02:55); 'rise, evaluator' likely 'Arize evaluator' and 'golden tree datasets' likely 'golden truth datasets' (00:09:45)",
+      "ASR garble: 'Plot code, you can trace cursors, you can trace codecs' likely 'Claude Code, Cursor, Codex' (00:12:10)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
     "sections_read": [
-      "### 00:00:00 — What Is Exa & Agentic Web Search",
-      "### 00:06:00 — Exa Snapshot & Backtesting Financial Agents Without Lookahead Bias",
-      "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation"
+      "### 00:00:00 — From Human Keyword Search to Agentic Web Search",
+      "### 00:03:31 — Three Core Tenets: Quality, Dynamic Highlights & Low Latency",
+      "### 00:06:29 — Introducing Exa Snapshot: 400 Billion Versioned Web Pages",
+      "### 00:07:50 — Point-in-Time Revenue Signals & Avoiding Leakage in Backtests",
+      "### 00:11:18 — Three Backtesting Archetypes: Enriched ML, Agentic Features & Full Agents",
+      "### 00:15:36 — Workshop Acquisition Signals, Overfitting & Complex Semantic Features",
+      "### 00:18:04 — Recap: Agentic Web Search & Point-in-Time Backtesting"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'ExaTrader', 'next step', 'extra snapshot', 'Exasemantic' likely 'Exa' / 'Exa Snapshot' / 'Exa semantic' (00:00:00, 00:12:22)",
-      "ASR garble: 'seventy million' likely 'seventy billion' (00:06:00)",
-      "ASR garble: 'emails and your agency contacts' likely 'evals and your agentic contexts' (00:12:22)",
-      "ASR garble: 'Instinct or Muse' unclear product names (00:00:00)"
+      "ASR garble: 'ExaTrader', 'next step', 'extra snapshot', 'Exasemantic', 'core existential' likely 'Exa' / 'Exa Snapshot' / 'Exa semantic' / 'core Exa search' (00:00:00, 00:11:18, 00:15:36)",
+      "ASR garble: 'Instinct or Muse' unclear product names; 'Logsinger' likely 'LangChain' (00:00:00)",
+      "ASR garble: 'version stuff. So where such API' likely 'versioned search API' (00:06:29)",
+      "ASR garble: 'seventy million' likely 'seventy billion' (speaker says 'seventy billion' later in the same section) (00:07:50)",
+      "ASR garble: 'emails and your agency contacts' likely 'evals and your agentic contexts' (00:15:36)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "bdab432a-0538-4431-ad5a-62653affd9da": {
     "sections_read": [
-      "### 00:00:00 — Code Review at Scale: Signal vs. Noise",
-      "### 00:05:48 — Iterative Architecture of Greptile's Review Agent",
-      "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation"
+      "### 00:00:00 — Three Pillars of Production AI Code Review",
+      "### 00:02:19 — Building a Naive Sandbox Reviewer and Five Failure Modes",
+      "### 00:05:41 — Prompt Optimization and Historical Incident Eval Datasets",
+      "### 00:08:42 — Inverting Author and Reviewer Models to Catch Blind Spots",
+      "### 00:10:45 — Replacing Expensive Grep with a Living Company Wiki",
+      "### 00:14:04 — Autonomous End-to-End QA in Dependency-Rich Sandboxes",
+      "### 00:15:45 — Routing Subtasks Across Frontier and Lightweight Models"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'cloud hard', 'WebRap', 'Zapod' likely 'Greptile' (00:00:00)",
-      "ASR garble: 'polar class', 'keycards', 'podcast', 'ERs' likely 'pull request(s)'/'PRs' (00:00:00, 00:05:48)",
-      "ASR garble: 'FireCrapper' likely 'Firecracker'; 'OpenCord or Py' likely 'OpenCode or Pi' (00:00:00)",
-      "ASR garble: 'hard code' likely 'Claude Code'; 'Kudex' likely 'Codex' (00:05:48)",
-      "ASR garble: 'dogs and pigs, and of course the hookers' likely 'docs and tickets' (00:11:50)",
-      "ASR garble: 'dashugrapal.com' is a garbled email address (00:11:50)"
+      "ASR garble: 'cloud hard', 'WebRap', 'Zapod' likely 'Claude Code' / 'Greptile' (00:00:00)",
+      "ASR garble: 'FireCrapper' likely 'Firecracker'; 'OpenCord or Py' likely 'OpenCode or Pi' (00:02:19)",
+      "ASR garble: 'polar class', 'podcast', 'keycards', 'ERs' likely 'pull request(s)' / 'PRs' (00:02:19, 00:05:41)",
+      "ASR garble: 'hard code' likely 'Claude Code'; 'Kudex' likely 'Codex' (00:08:42)",
+      "ASR garble: 'dogs and pigs, and of course the hookers' likely 'docs and tickets, and of course the codebase' (00:10:45)",
+      "ASR garble: 'dashugrapal.com' is a garbled email address likely 'daksh@greptile.com' (00:15:45)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
     "sections_read": [
-      "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections"
+      "### 00:00:00 — Closing Keynote Block Welcome & Partner Shoutouts",
+      "### 00:01:35 — Talks as Surface Area for Edge Conversations",
+      "### 00:02:29 — The Enterprise AI Diffusion Gap Across Four Milestones"
     ],
-    "claims_found": 3,
+    "claims_found": 5,
     "thin": false,
-    "gaps": [],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "gaps": [
+      "ASR garble: 'co-making partner at Tenex, a Flyte partner' likely 'co-managing partner at Tenex, an AI transformation partner' (00:00:00)",
+      "ASR garble: 'Switz' likely 'swyx' and 'To Fusion Gap' likely 'Diffusion Gap' (00:02:29)"
+    ],
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
     "sections_read": [
-      "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
-      "### 00:06:29 — Writing the Answer First: Synthetic Eval Dataset Generation",
-      "### 00:12:35 — Production Rollout & Lessons Learned"
+      "### 00:00:00 — Building Custom Enterprise Agents Without Benchmarks or Experts",
+      "### 00:01:29 — Telecom Q&A and the Weekly Chatbot Review Bottleneck",
+      "### 00:05:31 — Inverting RAG Evaluation by Starting from the Source Page",
+      "### 00:07:23 — Supplier Contract Review and the Four-Step Agent",
+      "### 00:10:37 — Historical Contract Diffs and Rule-Driven Synthesis",
+      "### 00:13:36 — Clause Removal, Invariance Perturbations, and Blank Templates",
+      "### 00:16:18 — Why Deterministic Checks Beat Noisy LLM Judges",
+      "### 00:17:13 — Reengineering Agents Around Evaluability"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'breed the agents' likely 'evaluate' or 'measure the agents' (00:06:29)",
-      "ASR garble: 'Rails' and 'region to search' likely 'RAG' (00:00:00)",
-      "ASR garble: 'some covers break some wood' likely 'some clauses break some rule' (00:12:35)",
-      "ASR garble: 'room as judge' likely 'LLM as judge' (00:12:35)",
-      "Heavily garbled ASR throughout; the contract-agent steps and five generation techniques are only partly recoverable (00:06:29-00:12:35)"
+      "ASR garble: 'Rails' likely 'RAG' (00:01:29) and 'region to search' likely 'RAG to search' (00:05:31)",
+      "ASR garble: 'breed the agents' likely 'grade' or 'evaluate the agents' (00:05:31)",
+      "ASR garble: 'start from wood' and 'some covers break some wood' likely 'start from a rule' and 'some clauses break some rule' (00:10:37, 00:13:36)",
+      "ASR garble: 'room as judge' and 'end of the judge' likely 'LLM as judge' (00:16:18)",
+      "Heavily garbled ASR throughout; specific contract-review rules and clause-removal details are partially obscured (00:07:23-00:16:18)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
     "sections_read": [
-      "### 00:00:00 — Workshop Introduction & Featherless Background",
-      "### 00:08:48 — Inference Economics & Hardware Cost Drivers",
-      "### 00:18:04 — Token Pricing, Batching & Memory Bandwidth",
-      "### 00:27:04 — Model Architecture Trade-offs & KV Cache",
-      "### 00:36:10 — Open-Weight Deployment & Cost Optimization",
-      "### 00:45:24 — Workshop Q&A & Practical Takeaways"
+      "### 00:00:00 — Featherless AI, Scale Benchmarks & Workshop Scope",
+      "### 00:02:54 — Move One: Measuring Token Spend by Key",
+      "### 00:04:51 — Agentic Workloads vs. High-Volume Process Automation",
+      "### 00:09:09 — Move Two: Open Models & One-Shot Classifiers",
+      "### 00:13:04 — Agentic Economics: Planner-Worker Splits & Speed Incentives",
+      "### 00:18:09 — Department Model Labels & Traffic Control",
+      "### 00:20:26 — Process Track Right-Sizing, Evals & Domain Fine-Tuning",
+      "### 00:25:11 — Bootstrapping Models With Distillation & Shadow Traffic",
+      "### 00:28:40 — Move Three: GPU Throughput vs. Latency Cost",
+      "### 00:31:57 — Dedicated Capacity, Base Load & Cloud Spillover",
+      "### 00:34:14 — Move Four: Review Bottlenecks & Organizational Trust",
+      "### 00:41:48 — Slop Grenades, Ownership & Measuring Real Outcomes",
+      "### 00:44:46 — Q&A: Fine-Tuning, Harnesses, Caching & Auto-Routing"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'e-dos' likely 'evals' (00:18:04)",
-      "ASR garble: 'low cash heat rate' likely 'low cache hit rate' (00:45:24)"
+      "ASR garble: 'preview only' likely 'prefill only' for one-shot classifier models (00:09:09)",
+      "ASR garble: 'e-dos' likely 'evals' (00:20:26)",
+      "ASR garble: 'Clockwork' / 'clock code' likely 'Claude Code' and 'Pine' / 'Py' likely 'Pi' harness (00:44:46)",
+      "ASR garble: 'auto rotting' likely 'auto routing' and 'low cash heat rate' likely 'low cache hit rate' (00:44:46)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
     "sections_read": [
-      "### 00:00:09 — From Internet Text to Spatiotemporal World Models",
-      "### 00:07:19 — Learning Action Policies from Billions of Gameplay Trajectories",
-      "### 00:13:24 — Transferring Spatial Intelligence to Real-World Control"
+      "### 00:00:09 — Observing While Acting: Why LLMs Struggle in Space and Time",
+      "### 00:02:33 — From Medal's Game Clips to Shared Controller Action Spaces",
+      "### 00:04:12 — Turn-Based Coding Models vs. Continuous Pixel-to-Action Streams",
+      "### 00:06:01 — Human Controllers vs. End-to-End Motor Torque & Medal's Scale",
+      "### 00:07:53 — World Models, Native Human Modality, and High-APM Action Density",
+      "### 00:10:31 — Real-Time Capabilities, Orchestrator Integration, and Accessibility",
+      "### 00:15:34 — General Intuition Team Structure, Hiring, and Upcoming Hackathons",
+      "### 00:17:42 — Q&A: Explicit Action Labels vs. JEPA Inferred Actions"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'Japa'/'Grepa'/'Jeffa'/'Jetbase' likely 'JEPA' (00:13:24)",
-      "ASR garble: 'metal' likely 'Medal' (00:00:09)",
-      "Recording opens mid-sentence with a non-English fragment (00:00:09)"
+      "Recording opens mid-sentence with a spurious Portuguese/English ASR fragment (00:00:09)",
+      "ASR garble: 'metal'/'metals'/'medal' likely 'Medal' (00:02:33, 00:15:34)",
+      "ASR garble: 'Truic Connects' and 'Intuitive' likely 'predict next' and 'Anthropic' (00:04:12)",
+      "ASR garble: 'tell operator'/'tell operations' likely 'teleoperate'/'teleoperations' (00:02:33, 00:07:53)",
+      "ASR garble: 'Japa'/'Grepa'/'Jeffa'/'Jeppa'/'Jetbase' likely 'JEPA' (00:17:42)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "caecd5f6-b352-4868-a995-f0f71679caf0": {
     "sections_read": [
-      "### 00:00:00 — Token Economics & Capability Growth at Ramp",
-      "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models",
-      "### 00:08:51 — Lessons from Shipping Production Financial Agents"
+      "### 00:00:00 — The Bitter Lesson vs. Shipping Agents Today",
+      "### 00:02:20 — Post-Training a Specialist Model for Ramp Sheets",
+      "### 00:05:09 — KV Cache Compression with Offline Cartridges",
+      "### 00:07:03 — Agentic MapReduce & 10,000-Agent Security Swarms",
+      "### 00:09:22 — Token Spend Management & Latency Routing Products",
+      "### 00:11:16 — Cross-Model Transfer, Self-Improving Monitors & Semantic Tagging"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'friendlier models' likely 'frontier models' (00:00:00)",
-      "ASR garble: 'OVS four point six' likely 'Opus 4.6'; 'Grand Labs' / 'Turing Labs' likely 'Ramp Labs' (00:00:00)",
-      "ASR garble: 'Quan. 3.5' likely 'Qwen 3.5'; 'Bitcoin six' unclear frontier model name; 'Prime Insights' likely 'Prime Intellect'; 'KB cache' likely 'KV cache'; 'Prague' likely 'prod' (00:04:23)"
+      "ASR garble: 'friendlier models' likely 'frontier models' and '54.5 or 55' likely 'GPT-4.5 or GPT-5' (00:00:00)",
+      "ASR garble: 'Grand Labs' / 'Turing Labs' likely 'Ramp Labs' or frontier labs; 'Opus 4.16' / 'OVS four point six' likely 'Opus 4.6'; 'Prime Insights' likely 'Prime Intellect'; 'Quan 3.5' likely 'Qwen 3.5'; 'Bitcoin six' unclear frontier model name; 'Prague' likely 'prod' (00:02:20)",
+      "ASR garble: 'KB cache' likely 'KV cache' and 'London close' likely 'month-end close' (00:05:09)",
+      "ASR garble: 'agentic macrodeuce' likely 'agentic MapReduce' and 'OMS' likely 'LLMs' (00:07:03)",
+      "ASR garble: 'Ramp Powder' likely 'Ramp Router' (00:09:22); 'Aurora post train' likely 'a LoRA post-train' and 'Bitcoin 3.5' likely 'Qwen 3.5' (00:11:16)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
     "sections_read": [
-      "### 00:00:00 — Day 1 Closing Remarks & Keynote Recap"
+      "### 00:00:00 — Day One Talk Highlights",
+      "### 00:00:18 — Speaker Applause & Final Housekeeping"
     ],
     "claims_found": 2,
     "thin": true,
     "gaps": [
-      "Short recording (216 words, 1m 12s) of housekeeping remarks; no sustained argument."
+      "Short recording (173 words, 1m 12s) capturing brief day-one closing remarks and housekeeping announcements rather than a technical talk."
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
     "sections_read": [
-      "### 00:00:00 — Why 'Done' Is Not Enough for Production Agents",
-      "### 00:08:55 — Designing Deterministic Verification Loops",
-      "### 00:17:28 — Guardrails, Sandboxes & Failure Recovery",
-      "### 00:27:16 — Hands-On Verification Architecture",
-      "### 00:35:55 — Scaling Agent Verification in CI & Production",
-      "### 00:47:08 — Workshop Q&A & Closing Discussion"
+      "### 00:00:00 — Preventing Agent Disasters & Workshop Setup",
+      "### 00:02:47 — Midnight Snack Club & Silent Persistence Failures",
+      "### 00:07:02 — Recursive Self-Improvement & Defining Clear Outcomes",
+      "### 00:10:45 — Centralized Verification Harnesses: Ctx & Riker",
+      "### 00:16:07 — From Vague Browser Prompts to Deterministic Scripts",
+      "### 00:19:52 — Inside the Snack Verifier CLI & Live Demo",
+      "### 00:25:36 — Mid-Workshop Q&A & Making State Feedback-Loopable",
+      "### 00:30:02 — Playwright Proof Commands, Self-Healing & Explicit Errors",
+      "### 00:33:40 — Outcome-Driven Constraints & Live Persistence Debugging",
+      "### 00:38:07 — Saving Run Receipts & System 1 Judge Models",
+      "### 00:41:54 — Saboteur vs. Detective: Testing the Verifier Itself",
+      "### 00:48:23 — Verifier CLIs, Overnight Receipt Loops & Final Q&A"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
       "ASR garble: 'Larracan' likely 'Laracon' (00:00:00)",
-      "ASR garble: 'Cerebras' given as Zack Proser's employer is a likely prompt artifact; frontmatter lists WorkOS (00:00:00)",
-      "ASR garble: 'LearnTen' likely 'Lauren Tan' (00:17:28)",
-      "ASR garble: 'Saul 6.1, OpenAI 5.5' model names unclear (00:27:16)"
+      "ASR garble: 'Cerebras' given as Zack Proser's employer is a likely prompt artifact; frontmatter lists WorkOS (00:00:00, 00:48:23)",
+      "ASR garble: 'LearnTen' likely 'Lauren Tan' (00:16:07)",
+      "ASR garble: 'Saul 6.1, OpenAI 5.5' model names unclear (00:33:40)",
+      "ASR garble: 'Raytheon' likely 'Riker' (00:38:07)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "ee927042-2ba1-44c3-b304-d001ae247839": {
     "sections_read": [
-      "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase"
+      "### 00:00:18 — Policy as Institutional Intent vs. the Running System",
+      "### 00:02:29 — Agents Across People, Process, and Technology",
+      "### 00:03:19 — Mapping Gated Workflows and Parallel Reviews as DAGs"
     ],
-    "claims_found": 3,
+    "claims_found": 4,
     "thin": true,
     "gaps": [
-      "Short recording (594 words, 1 section); it cuts off mid-talk at the DAG/Apache Airflow discussion, so how trust in agent outputs is built is not recorded."
+      "Short, truncated recording (503 words across 3 brief sections, 4m 35s of an 18m keynote slot); audio cuts off mid-sentence during the DAG and Apache Airflow discussion at 00:03:19 before covering how trust in agent outputs is verified.",
+      "ASR garble: 'people processing technology' likely 'people, process, and technology' (00:02:29)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "f7204e6d-a47c-4535-804e-16b4db579b95": {
     "sections_read": [
-      "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
-      "### 00:05:06 — Continuous 15-Minute Heartbeats & Escalation Loops"
+      "### 00:00:07 — Builder Agents, Three-Review Loops, and Child QA",
+      "### 00:01:40 — Mandatory Feature Videos for Human-in-the-Loop Review",
+      "### 00:03:38 — Multi-Session Agent Messaging and the Merge Manager",
+      "### 00:06:23 — Eliminating Hiring Bias with Agent Screen Recordings",
+      "### 00:08:39 — Sixteen-Hour Paid Trials and Untangle's Mission"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "Recording begins mid-talk (00:00:07 opens 'And then the questions go back'); the opening is unrecorded",
-      "ASR garble: 'Dev' / 'Devon' likely 'Devin' (00:00:07, 00:05:06 sections)",
-      "ASR garble: 'merge huge slowdown' likely 'merge queue slowdown' and 'mantrage' likely 'manager' (00:00:07 section)"
+      "Recording begins mid-talk at 00:00:07 ('And then the questions go back.'); the opening setup is unrecorded",
+      "ASR garble: 'Dev' (00:01:40) and 'Devon' (00:03:38) likely 'Devin'; 'mantrage' likely 'manager' and 'un facing future' likely 'user-facing feature' (00:01:40)",
+      "ASR garble: 'merge huge slowdown' likely 'merge queue slowdown' (00:00:07) and 'emergent human' likely 'a merge manager' (00:03:38)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   },
   "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
     "sections_read": [
-      "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
-      "### 00:05:15 — Serving Open Models with vLLM on Runpod",
-      "### 00:11:12 — Throughput, Latency & Cost Metrics in Practice"
+      "### 00:00:00 — Runpod Context & Serving Configuration Guesswork",
+      "### 00:01:14 — Context Windows, KV Cache, and vLLM Version Drift",
+      "### 00:03:28 — BenchPod Architecture: Dockerized vLLM & Self-Healing Watchdogs",
+      "### 00:06:31 — Live Dashboard Walkthrough: GPU Metrics & Cold Starts",
+      "### 00:09:46 — Benchmarking Batch Tokens, Latency, and Serverless Scaling",
+      "### 00:14:05 — Right-Sizing Frontier Models vs. Smaller Deployments",
+      "### 00:16:10 — Q&A: Disaggregated Serving, Ray Clusters, and Caching"
     ],
     "claims_found": 6,
     "thin": false,
     "gaps": [
-      "ASR garble: 'the meal and recipe' likely 'the vLLM recipe' (00:11:12)",
-      "ASR garble: 'VLM'/'DLN'/'BLM' and 'Kimmy'/'Kevin K3' likely 'vLLM' and 'Kimi K3' throughout"
+      "ASR garble: 'VLM'/'DLN'/'BLM'/'v11' likely 'vLLM' throughout (00:00:00, 00:01:14, 00:03:28)",
+      "ASR garble: 'Kimmy'/'Kevin K3'/'Kimi G3'/'kidney'/'computer K three' likely 'Kimi K2/K3' throughout",
+      "ASR garble: 'the meal and recipe' likely 'the vLLM recipe' (00:09:46)",
+      "ASR garble: 'cell field' likely 'self-healed' (00:03:28); '48200s' likely '4 H200s' (00:14:05)",
+      "ASR garble: 'desired serving' likely 'disaggregated serving' and 'Llama cache' likely 'LMCache' (00:16:10)"
     ],
-    "extracted_at": "2026-11-14T10:00:56-05:00"
+    "extracted_at": "2026-11-14T15:06:41-05:00"
   }
 }

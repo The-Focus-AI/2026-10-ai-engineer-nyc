@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Coding Agent Has a Context Problem · Tom Moor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · McCarthy Room</div>
+  <h1>Code is no longer the bottleneck. Keeping the product coherent is.</h1>
+  <p class="dek">Tom Moor runs engineering at Linear. As model costs drop from dollars to cents and coding agents run unattended for hours, teams stop struggling to write code and start struggling to keep their software coherent. Linear's answer is a four-stage agent pipeline across intake, implementation, review, and daily distillation, where each stage leaves product context behind for the next.</p>
+  <div class="talk-meta">Tom Moor, Linear · 22 min talk · six chapters · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="2027-beyond-intelligence-will.jpg" alt="Linear slide titled &#x27;2027 and beyond: Intelligence will continue to become cheaper and more abundant&#x27; with a cost chart dropping from $100 in Year 0 to $7.7 in Year 1, $0.6 in Year 2, and $0.05 in Year 3.">
+        <figcaption>Slide from the official talk recording: intelligence cost dropping from $100 to $0.05 over three years</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="what-s-missing-left.jpg" alt="Linear slide titled &#x27;What&#x27;s missing?&#x27; pairing six left-hand categories—Intent, History, Conventions, Other work, Ownership, Risks—with right-hand definitions: why this matters, why it works this way, how it should fit, what else is changing, who decides tradeoffs, and what this could break.">
+        <figcaption>Slide from the official talk recording: the six classes of product context absent from source code</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="triage-agent-enriches-issue.jpg" alt="Linear slide titled &#x27;Triage agent: Enriches the issue context with customer info, related issues, likely assignee, project and more...&#x27; showing an Incoming box branching to close/duplicate, discussion, code investigation, and clarification icons.">
+        <figcaption>Slide from the official talk recording: Linear&#x27;s Triage Agent routing and enriching incoming reports</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="implement-provide-enriched-context.jpg" alt="Linear slide titled &#x27;Implement&#x27; listing four loop elements: Provide the enriched context, MCP with access to org context, Verification skill, and CI failures with a loop icon.">
+        <figcaption>Slide from the official talk recording: enriched ticket context paired with verification skills and CI feedback</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="review-example-issue-reviews.jpg" alt="Linear slide titled &#x27;Review: Example&#x27; showing a flagged finding &#x27;Reviews rows restore checks icons rejected for clutter&#x27; backed by two cited team comments from one year ago and four weeks ago.">
+        <figcaption>Slide from the official talk recording: a review agent surfacing year-old UI clutter rejections on a new PR</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="distill-rejected-approach-why.jpg" alt="Linear slide titled &#x27;Distill&#x27; with three lines: Rejected approach and why, Decision recorded with the change, and Rationale available to the next agent.">
+        <figcaption>Slide from the official talk recording: distilling rejected approaches and rationale for subsequent agent runs</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="when-agents-move-to-the-outer-loop-context" data-visual="v1" data-caption="Context moves to the outer loop">
+      <div class="chapter">Chapter 1</div>
+      <h2>When agents move to the outer loop, context stops coming from a keyboard</h2>
+      <p>Linear started in 2019 as an issue tracker built out of frustration with slow, buggy developer tools. In the seven years since, software engineering moved from early AI tab completion in 2021 to experimental coding agents in 2024 to cloud-orchestrated agents that run unattended.</p>
+      <p>Moor pushes back against claims that inference prices are about to climb. On his cost slide, model capability that cost 100 dollars three years ago costs five cents today, while task horizons on his METR chart double every four to seven months. In 2024, an engineer drove an agent inside a tight local loop and supplied missing context by hand. When agents run in the cloud for hours or days at a cost of pennies, nobody sits there starting, stopping, and spoon-feeding them. Context has to move out of the inner loop and into outer-loop systems that prepare and route it automatically.</p>
+      <div class="stills"><figure class="still"><img src="dot-cloud-graphic-hand.jpg" alt="Linear title slide reading &#x27;Your coding agent has a context problem&#x27; beneath a monochrome hand reaching toward a cluster of cursor icons."></figure></div>
+      <blockquote>“I think one of the main reasons is that the context kind of moves out of that inner loop and largely into the outer loop.”<span class="cite">00:02:20</span></blockquote>
+      <ul class="key-points">
+        <li>Inference that cost 100 dollars three years ago now costs roughly five cents, while agent task horizons continue to stretch.</li>
+        <li>Moving from hand-driven local agents to unattended cloud runs removes the human who used to supply context interactively.</li>
+        <li>Outer-loop systems have to assemble and pass organizational context before and after an agent writes code.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:02:20 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=108s">watch the shift to outer-loop agents</a></p>
+    </section>
+
+    <section data-chapter="thousands-of-locally-valid-diffs-still-pro" data-visual="v2" data-caption="Six signals missing from source code">
+      <div class="chapter">Chapter 2</div>
+      <h2>Thousands of locally valid diffs still produce an incoherent product</h2>
+      <p>Abundant, cheap code changes how engineering teams fail. Implementation capacity stops being the constraint; the new failure mode is shipping thousands of locally reasonable pull requests that add up to a fragmented product. Moor illustrates the point with a Codex-generated mockup of a settings screen overflowing with toggles, the natural result of telling an agent to "just add another setting" every time a request arrives. Good software comes from restraint, consistency, and small trade-offs that reinforce one another.</p>
+      <p>An agent reading the repository sees types, functions, and tests, yet misses almost everything behind those lines. Moor's slide groups what source code leaves out into six buckets: intent (what user problem is being solved), history (which prior trade-offs shaped the current design), conventions (how the feature should look and feel), parallel work underway elsewhere in the company, ownership (who holds the call on product trade-offs), and operational risk such as a revert in the same module two weeks earlier. Keeping a product coherent means threading those six signals from initial intake all the way through review.</p>
+      <blockquote>“Implementation is not the bottleneck now. The failure mode here isn&#x27;t an inability to build. The failure mode is like an inability to maintain coherence, to have a product that makes sense as a whole.”<span class="cite">00:06:18</span></blockquote>
+      <ul class="key-points">
+        <li>Cheap code shifts the core failure mode from slow delivery to product incoherence.</li>
+        <li>Source code records how a system behaves today, not rejected designs, visual restraint, or recent reverts.</li>
+        <li>Six categories sit outside the repo: user intent, product history, conventions, parallel work, ownership, and risk.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:18 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=344s">watch what breaks without product context</a></p>
+    </section>
+
+    <section data-chapter="triage-agents-turn-raw-support-noise-into-" data-visual="v3" data-caption="Triage agents enrich incoming issues">
+      <div class="chapter">Chapter 3</div>
+      <h2>Triage agents turn raw support noise into investigated issue context</h2>
+      <p>Linear's pipeline runs across four stages on Moor's architecture slide: Intake, Implement, Review, and Distill. Intake collects feature requests, bug reports, and alerts across Zendesk, Slack, Teams, Gong, Twitter, Datadog, internal product channels, and the CEO. Everything lands in triage, where a Triage Agent deduplicates reports, labels themes, assigns likely owners, asks clarifying questions, and investigates the problem through internal MCP servers before anyone starts coding.</p>
+      <p>By the time an issue leaves triage, a one-line crash report has grown into a structured dossier: which customer asked for it, whether they are high-value, how many times they have asked this month, associated Datadog logs and stack traces, internal account IDs, and prior issues or product decisions that touched the same area. Moor highlights two recent production wins. On a bug where video captions kept turning back on despite a saved preference, the triage agent reproduced the issue and proved an automatic browser action was being misread as user intent. On a request to expose team hierarchy data over MCP, it checked a separate codebase to confirm the behavior was not a regression, aggregated the high-value customers requesting it, and identified the starting file for the coding agent.</p>
+      <blockquote>“It actually reproduced the bug and discovered that there was an automatic browser action that was being mistaken for user intent.”<span class="cite">00:08:47</span></blockquote>
+      <ul class="key-points">
+        <li>Multi-channel intake routes support tickets, chat threads, and Datadog alerts through a single Triage Agent.</li>
+        <li>Internal MCP connections enrich issues with customer value, request counts, logs, related history, and starting code paths.</li>
+        <li>Live bug reproduction during triage gives downstream coding agents a verified root cause rather than a symptom.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:08:47 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=537s">watch the triage agent walkthrough</a></p>
+    </section>
+
+    <section data-chapter="implementation-works-when-enriched-issues-" data-visual="v4" data-caption="Enriched context plus verification loops">
+      <div class="chapter">Chapter 4</div>
+      <h2>Implementation works when enriched issues meet verification loops</h2>
+      <p>Moor spends barely a minute on the implementation stage because he treats code generation itself as mostly solved once the input context is thorough. When the triage agent sees that a bug is small and well-scoped, Linear triggers an unattended fix automatically; larger changes run locally or in cloud sandboxes with MCP access back into organizational context.</p>
+      <p>Two additions turn that enriched issue into shippable code: a verification skill that teaches the agent how to exercise its own change, and direct visibility into CI failures so broken checks feed straight back into the loop. Moor points to open verification-skill patterns shared by Lauren at xAI as a practical multiplier for getting coding agents to check their own work before opening a pull request.</p>
+      <blockquote>“Between the base, the base context, being able to verify and being able to see failures, we see a massive amount of success in our team.”<span class="cite">00:12:47</span></blockquote>
+      <ul class="key-points">
+        <li>Small, well-triaged bugs can move directly from automated triage into unattended cloud or local implementation.</li>
+        <li>Agents need three inputs during implementation: the enriched ticket, a verification skill, and raw CI failure output.</li>
+        <li>Self-verification loops prevent coding agents from handing off unverified diffs to human reviewers.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:47 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=737s">watch the implementation loop</a></p>
+    </section>
+
+    <section data-chapter="review-agents-check-product-history-revert" data-visual="v5" data-caption="Reviewing against product history">
+      <div class="chapter">Chapter 5</div>
+      <h2>Review agents check product history, reverts, and rejected designs</h2>
+      <p>Most automated code reviewers read the diff and surrounding files to spot logic bugs. Linear dispatches a separate review agent built around a harder question: even if the code works, does this change belong in the product? The agent joins the pull request against six inputs shown on Moor's slide: the original issue and customer intent, product history (prior decisions, reverts, regressions, and incidents), related issues, other PRs in the stack, the full coding-agent session history, and decision ownership so the right product lead or executive is pulled in when trade-offs arise.</p>
+      <p>Moor walks through three catches from the prior few weeks at Linear. On an attachment-download change, the review agent surfaced incident history from six and seven months earlier showing that holding a database transaction open across slow network I/O risked blocking issue creation. On a pull request that added check-status icons back onto review rows, it quoted two earlier Linear threads — one from a year ago and another from four weeks prior — where the team had stripped those exact icons out for visual clutter and declined to restore them. And on a label-ordering diff, it caught workspace labels rendering below team labels, an inverted hierarchy defined nowhere in a single file and recoverable only from a prior revert. Linear pairs those findings with a custom review UI that guides humans through the diff and highlights the exact judgment calls requiring human sign-off.</p>
+      <blockquote>“It starts with that original issue and that base context that we created with the customers, the original intent, and then it goes and looks for product history, so things like previous decisions, reverts, regressions and incidents in the same area.”<span class="cite">00:14:07</span></blockquote>
+      <ul class="key-points">
+        <li>Context-aware review compares a PR against customer intent, session transcripts, stacked PRs, ownership, and historical reverts.</li>
+        <li>Product history catches mistakes invisible in static code, including re-introduced UI clutter, inverted label hierarchies, and known DB transaction hazards.</li>
+        <li>Review comments route straight back into the coding agent's context while surfacing genuine trade-offs to human owners.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:14:07 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=857s">watch the product-history review examples</a></p>
+    </section>
+
+    <section data-chapter="a-daily-distillation-loop-turns-pr-correct" data-visual="v6" data-caption="Daily PR review distillation">
+      <div class="chapter">Chapter 6</div>
+      <h2>A daily distillation loop turns PR corrections into tomorrow's rules</h2>
+      <p>Every day, human reviewers leave product corrections on pull requests, reject approaches that feel off, or revert changes that miss subtle constraints. Left buried in closed PR threads, that judgment has to be repeated by hand the next time an agent touches the same surface.</p>
+      <p>Linear closes the loop with a scheduled daily automation — shown on Moor's slide as "Learn from merged PR reviews" — that scans every PR merged in the past 24 hours, finds review comments that forced code edits or reverts, extracts the underlying rule, and writes it back into <code>AGENTS.md</code> or adjacent codebase documentation. Moor notes that teams have to tune and prune this step over time so <code>AGENTS.md</code> stays sharp rather than accumulating endless noise. Across intake, implementation, review, and daily distillation, threading context cuts rework from forgotten decisions and makes human product taste compound as code gets cheaper.</p>
+      <blockquote>“It will find actionable lessons, places where these types of comments happened in the PRs, and changes were made, or reverse happened, extract learnings, and then inject them back into the codebase, either in the agents.md or in the related documentation”<span class="cite">00:18:47</span></blockquote>
+      <ul class="key-points">
+        <li>A daily post-merge automation mines the last 24 hours of merged PR reviews and reverts for repeatable lessons.</li>
+        <li>Distilled rules land in <code>AGENTS.md</code> and nearby docs so human corrections apply automatically on future agent runs.</li>
+        <li>Prompt tuning and periodic pruning keep <code>AGENTS.md</code> concise as organizational guidance compounds.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:18:47 · <a href="https://www.youtube.com/watch?v=Xw9utONfhIY&t=1097s">watch the daily distillation loop</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=Xw9utONfhIY">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

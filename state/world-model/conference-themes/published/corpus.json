@@ -1,11 +1,10 @@
 {
   "talk_count": 31,
-  "word_count": 94952,
-  "last_touched": "2026-11-14T10:01:10-05:00",
-  "theme_count": 11,
+  "word_count": 95224,
+  "last_touched": "2026-11-14T15:10:24-05:00",
+  "theme_count": 8,
   "unassigned": [
-    "2026-10-13-closing-remarks",
-    "2026-10-14-welcome-back-featured-keynotes"
+    "2026-10-13-closing-remarks"
   ],
   "thin": [
     "2026-10-13-closing-remarks",
@@ -13,5 +12,5 @@
     "2026-10-14-welcome-back-featured-keynotes"
   ],
   "report_path": "analysis/themes.md",
-  "generated_at": "2026-11-14T10:05:36-05:00"
+  "generated_at": "2026-11-14T15:10:24-05:00"
 }

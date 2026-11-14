@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Job Is Now Agent Manager · Ryan Carson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Shannon Room</div>
+  <h1>Stop running local dev. Manage a fleet of agents instead.</h1>
+  <p class="dek">Ryan Carson builds Untangle, an AI product for divorce, using a hierarchy of cloud agent sessions: manager agents, up to twenty parallel builders per ticket board, automated review and child QA loops, and a merge manager. Humans stay out of local editors, verify pull requests by watching mandatory feature videos on a laptop, and hire engineers strictly from screen recordings of them operating agents.</p>
+  <div class="talk-meta">Ryan Carson, Untangle · 11 min talk · five chapters · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  <div class="reading"><b>A note on sources:</b> The in-room audio transcript begins mid-talk and cuts off early before the close, while the official video slides cover the full fifteen-minute presentation. Details from the opening setup and late-talk slides are attributed explicitly to the slides, while all blockquotes are verbatim from the room transcript.</div>
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="human-audio-chat-manager.jpg" alt="Untangle hand-drawn slide titled &#x27;The org chart&#x27; showing a Human box (&#x27;weekly priorities&#x27;, &#x27;talks to customers&#x27;) connected via audio chat (&#x27;what needs me?&#x27;, &#x27;1 question + recommendation&#x27;) to a Manager agent (&#x27;never writes code&#x27;), flowing down to a Linear Ticket board (&#x27;no ticket, no work&#x27;) and 20 concurrent Builder agents (&#x27;1 per ticket&#x27;).">
+        <figcaption>Slide from the official talk recording: Untangle&#x27;s org chart from human priorities to 20 concurrent builder sessions</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v2">
+        <div class="diagram-label">BUILDER VERIFICATION GATE</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four-stage builder verification pipeline with Reviewer Agent loop and human laptop video gate"><defs><marker id="arrGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#f4cf72"/></marker><marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#8fb8d8"/></marker></defs><rect width="640" height="360" rx="10" fill="#101712"/><rect x="48" y="32" width="300" height="64" rx="8" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.5"/><text x="198" y="57" text-anchor="middle" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="12" font-weight="700">REVIEWER AGENT (MAX 3x LOOP)</text><text x="198" y="78" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Unresolved after 3 passes &#8594; Manager agent</text><rect x="388" y="32" width="224" height="64" rx="8" fill="#1e2c22" stroke="#b9bcae" stroke-width="1" stroke-dasharray="4 3"/><text x="500" y="57" text-anchor="middle" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">MANAGER SESSION</text><text x="500" y="78" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Checks every 10m · pings human</text><line x1="348" y1="64" x2="384" y2="64" stroke="#8fb8d8" stroke-width="1.5" marker-end="url(#arrBlue)"/><line x1="110" y1="154" x2="110" y2="100" stroke="#8fb8d8" stroke-width="1.5" marker-end="url(#arrBlue)"/><line x1="244" y1="96" x2="244" y2="150" stroke="#8fb8d8" stroke-width="1.5" marker-end="url(#arrBlue)"/><text x="177" y="130" text-anchor="middle" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="10">fix bugs &#8804; 3x</text><rect x="24" y="156" width="132" height="92" rx="8" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.5"/><text x="90" y="182" text-anchor="middle" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">1. CODE + TESTS</text><text x="90" y="205" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Builder session</text><text x="90" y="225" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Failing test first</text><line x1="156" y1="202" x2="174" y2="202" stroke="#f4cf72" stroke-width="1.8" marker-end="url(#arrGold)"/><rect x="178" y="156" width="132" height="92" rx="8" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.5"/><text x="244" y="182" text-anchor="middle" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="700">2. CHILD QA</text><text x="244" y="205" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Spawned child</text><text x="244" y="225" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Checks the proof</text><line x1="310" y1="202" x2="328" y2="202" stroke="#f4cf72" stroke-width="1.8" marker-end="url(#arrGold)"/><rect x="332" y="156" width="136" height="92" rx="8" fill="#24352a" stroke="#f4cf72" stroke-width="2"/><text x="400" y="182" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">3. DEMO VIDEO</text><text x="400" y="205" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Devin Test clip</text><text x="400" y="225" text-anchor="middle" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Passing UI captured</text><line x1="468" y1="202" x2="486" y2="202" stroke="#f4cf72" stroke-width="1.8" marker-end="url(#arrGold)"/><rect x="490" y="156" width="126" height="92" rx="8" fill="#24352a" stroke="#f4cf72" stroke-width="2"/><text x="553" y="182" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">4. HUMAN GATE</text><text x="553" y="205" text-anchor="middle" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Watch on laptop</text><text x="553" y="225" text-anchor="middle" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">Types "Ship it"</text><rect x="24" y="280" width="592" height="48" rx="6" fill="#1e2c22" stroke="#24352a" stroke-width="1"/><text x="320" y="309" text-anchor="middle" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">Irreducible product-owner bottleneck: inspect summary + full video on a laptop before merge</text></svg>
+        <figcaption>Reconstructed from Frame 8 (05:40) and Carson&#x27;s walkthrough: automated 3x review and child QA precede mandatory laptop video sign-off.</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="same-ring-coordinate-center.jpg" alt="Untangle slide titled &#x27;The team&#x27; showing a ring of 10 humans paired with 10 manager agents messaging across a central &#x27;coordinate&#x27; mesh, with a &#x27;ready to merge&#x27; arrow leading to a Merge manager agent, a GitHub merge queue of five PRs, and an ordered &#x27;main&#x27; branch.">
+        <figcaption>Slide from the official talk recording: 10 manager agents coordinating into a dedicated Merge Manager and GitHub merge queue</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="single-card-candidates-person.jpg" alt="Untangle slide titled &#x27;How we hire&#x27; showing the first &#x27;Candidates&#x27; card with person icons, a 45-minute whole-screen video requirement, and &#x27;agents ship new feature&#x27;.">
+        <figcaption>Slide from the official talk recording: applicants enter the funnel with an unguided 45-minute agent screen recording</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="same-pipeline-pick-1.jpg" alt="Untangle slide titled &#x27;How we hire&#x27; showing four cards from left to right: Candidates (45-min whole-screen video, agents ship new feature, app they maintain), Ranking agent (watches every video), Top 5 (real PR in our codebase, whole screen recorded, fixed fee, max 16 hours), and Finalist, with a bracket across the first three stages reading &#x27;no interview calls&#x27;.">
+        <figcaption>Slide from the official talk recording: stack-ranked videos and 16-hour paid trials with zero interview calls beforehand</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="an-org-chart-where-the-manager-agent-never" data-visual="v1" data-caption="Manager agent and twenty builders">
+      <div class="chapter">Chapter 1</div>
+      <h2>An org chart where the manager agent never writes code</h2>
+      <p>Carson's opening org-chart slide places a human at the top with two responsibilities: setting weekly priorities and talking to customers. Directly below sits a Manager agent labeled "never writes code," linked to the human by audio chat where the operator asks what needs attention and receives a single question plus a recommendation. Work moves strictly through Linear ("no ticket, no work") into up to twenty concurrent Builder agents, one per ticket, with a later slide build showing the manager agent checking in every ten minutes.</p>
+      <p>Where the room audio picks up, Carson describes how those builder sessions police their own output before escalating to a person. Every builder invokes a built-in reviewer agent in a loop capped at three passes; only if significant bugs remain after three attempts does the builder escalate to the manager agent, which escalates to Carson only when stuck.</p>
+      <p>Alongside the review loop, an Untangle engineer named Dale added a separate child process under each builder dedicated to QA. Because cloud agent runs are cheap, Carson urges teams to spin up as many verification processes per feature as they want, watching out for the one real constraint downstream: slowing down the merge queue by over-packing pull requests.</p>
+      <blockquote>“We typically stick to a three-review max, where we allow the builders to loop about three times with reviews.”<span class="cite">00:00:07</span></blockquote>
+      <ul class="key-points">
+        <li>On Untangle's org-chart slide, humans set weekly priorities and talk to customers while a Manager agent turns decisions into Linear tickets for up to twenty parallel builders.</li>
+        <li>Builder sessions loop with a reviewer agent up to three times before escalating unresolved bugs to the manager agent.</li>
+        <li>Each builder spawns a child QA process, trading cheap compute for higher pre-merge confidence.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:07 · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU&t=132s">watch the manager-and-builders org chart</a></p>
+    </section>
+
+    <section data-chapter="every-pull-request-ships-with-a-feature-vi" data-visual="v2" data-caption="Mandatory PR demo videos">
+      <div class="chapter">Chapter 2</div>
+      <h2>Every pull request ships with a feature video, and a human has to watch it</h2>
+      <p>Carson's verification slide draws a four-step bottom row under the builder loop: write code with a failing test first, pass the QA agent's proof check, record a video of the working feature, and wait for a human to type "Ship it." In production, Untangle relies on Devin's built-in Test capability so every builder session writes test cases and captures a video of the feature running and passing tests.</p>
+      <p>Watching that recording is the one human-in-the-loop gate Carson refuses to shortcut. When his manager session notifies him that a pull request video is ready, he reads a brief summary of what the PR is meant to change and inspects the video to confirm both behavior and visual polish.</p>
+      <p>Trying to clear that gate from a phone does not hold up. Right before walking onstage, Carson's manager session sent over a PR video while he was on his phone; squinting at the small screen, he realized he could not verify the details properly and forced himself to wait until he was back on his laptop. After hundreds of iterations on the workflow, attentive laptop video review remains the product owner's irreducible bottleneck.</p>
+      <blockquote>“Every builder records a video of the feature being used and passing tests.”<span class="cite">00:01:40</span></blockquote>
+      <ul class="key-points">
+        <li>Every builder generates test cases and records a walkthrough video showing the user-facing feature passing them.</li>
+        <li>Human product owners review behavior and UI polish through the video summary and recording rather than line-by-line local testing.</li>
+        <li>Phone-screen spot checks miss subtle regressions; laptop inspection is the final gate before typing "Ship it."</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:01:40 · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU&t=340s">watch the QA and feature-video walkthrough</a></p>
+    </section>
+
+    <section data-chapter="local-dev-cannot-run-a-communicating-fleet" data-visual="v3" data-caption="Communicating fleets and Merge Manager">
+      <div class="chapter">Chapter 3</div>
+      <h2>Local dev cannot run a communicating fleet or a merge manager</h2>
+      <p>Carson tells engineers still writing code in local development environments to stop immediately. Running local dev, he argues, holds back both the individual engineer and the whole company because a single laptop checkout cannot run or coordinate parallel fleets of cloud sessions.</p>
+      <p>To show how the model scales across an engineering org, his team slide depicts a ring of ten humans paired with ten manager agents, all messaging one another across named Devin sessions. When Carson inspects the transcripts, the sessions exchange direct operational updates rather than filler chatter, echoing advice he cites from an OpenAI talk earlier at the conference: define clear roles and unhobble the model.</p>
+      <p>Even communicating sessions collide when dozens of pull requests land at once, especially around sequential shared state like database migration numbers. Untangle dedicates a separate Merge Manager agent session — shown on his slide feeding five PRs into a GitHub merge queue and onto <code>main</code> in order — to sequence ready work and eliminate migration collisions.</p>
+      <blockquote>“I don&#x27;t care whatever it is, but if you&#x27;re running local dev, you are screwing up. You&#x27;re holding yourself back. You&#x27;re holding your team back. You&#x27;re holding everything back, because you can&#x27;t do this.”<span class="cite">00:03:38</span></blockquote>
+      <ul class="key-points">
+        <li>Local development workflows bottleneck teams because they cannot host fleets of concurrent, inter-messaging agent sessions.</li>
+        <li>Named cloud sessions message one another directly to coordinate dependencies across ten human-manager pairs.</li>
+        <li>A dedicated Merge Manager session sequences ready PRs into the GitHub merge queue so database migration numbers do not collide.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:38 · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU&t=541s">watch the multi-session and Merge Manager setup</a></p>
+    </section>
+
+    <section data-chapter="resumes-and-interviews-are-noise-45-minute" data-visual="v4" data-caption="45-minute agent screen recordings">
+      <div class="chapter">Chapter 4</div>
+      <h2>Resumes and interviews are noise; 45-minute agent recordings are signal</h2>
+      <p>Rebuilding engineering around agent fleets led Carson to scrap conventional hiring. Untangle runs no resume pre-screens and no introductory video chats, on the grounds that live conversations bias interviewers toward a candidate's personality, speaking style, or hobbies while revealing nothing about how well they operate agents.</p>
+      <p>Instead, every applicant starts at the same uncompensated gate shown on Carson's "How we hire" slide: submit an unguided, 45-minute whole-screen video of yourself using agents to ship a new feature pull request on an application you already maintain.</p>
+      <p>Untangle feeds every submitted video and transcript into a ranking agent tasked with watching the full session and stack-ranking the candidates. The first time Carson ran the ranker, he disagreed with its number-one pick and distrusted the output — only to realize afterward that his own bias had misled him and the model's ranking was right, even when strong operators worked silently without thinking out loud.</p>
+      <blockquote>“You&#x27;ll like their hobbies. You&#x27;ll like the way they talk to you. You&#x27;ll think they&#x27;re interesting, and it&#x27;s all noise. None of it is real, right? All that matters is can they operate an agent?”<span class="cite">00:06:23</span></blockquote>
+      <ul class="key-points">
+        <li>Pre-screens and introductory calls introduce interpersonal bias without measuring agent-operating skill.</li>
+        <li>Applicants apply by submitting an unguided 45-minute full-screen video shipping a real feature PR with agents.</li>
+        <li>A ranking agent evaluates every video and transcript to stack-rank candidates more objectively than gut instinct.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:23 · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU&t=689s">watch the 45-minute video hiring filter</a></p>
+    </section>
+
+    <section data-chapter="sixteen-hour-paid-codebase-trials-replace-" data-visual="v5" data-caption="16-hour paid trials, zero calls">
+      <div class="chapter">Chapter 5</div>
+      <h2>Sixteen-hour paid codebase trials replace the interview loop</h2>
+      <p>From the ranking agent's stack rank, Untangle invites the top five candidates into a paid trial at a fixed fee for up to sixteen hours. Each candidate signs an NDA, gets a seat in Untangle's agent setup, and records their entire screen across all sixteen hours while driving a real pull request toward production in Untangle's codebase.</p>
+      <p>Untangle feeds those sixteen-hour recordings into its evaluation agent and reviews the footage to pick a finalist. In his most recent hiring cycle, Carson watched all sixteen hours of trial video himself and concluded that recorded agent operation gave him a far truer read on engineers than traditional loops across the hundreds of people he has hired in past companies.</p>
+      <p>On his completed hiring slide, a single red bracket spans Candidates, the Ranking agent, and the Top 5 trial with a crossed-out phone icon labeled "no interview calls" — nobody speaks on the phone until a finalist has already shipped inside the repo. Carson wraps up three minutes ahead of schedule with an invitation to follow his work at Untangle in family law before the room audio cuts off.</p>
+      <blockquote>“Then we basically pick the top five, and we invite them to a paid project. So we pay a fixed fee for sixteen hours at a time.”<span class="cite">00:08:39</span></blockquote>
+      <ul class="key-points">
+        <li>Top-five candidates complete a fixed-fee, 16-hour screen-recorded trial shipping a real PR in Untangle's codebase under NDA.</li>
+        <li>AI and human review of the 16-hour trial footage selects the finalist before a single phone call takes place.</li>
+        <li>Recorded work on real tickets replaces multi-round interviews with direct proof of how an operator manages agents.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:08:39 · <a href="https://www.youtube.com/watch?v=BTtyguoPvBU&t=805s">watch the 16-hour paid trial pipeline</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=BTtyguoPvBU">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

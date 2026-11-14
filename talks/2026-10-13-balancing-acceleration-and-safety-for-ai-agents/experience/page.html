@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balancing Acceleration and Safety for AI Agents · John Feminella</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>Cars have brakes so they can go fast: five runtime controls for enterprise agents</h1>
+  <p class="dek">Two Sigma's John Feminella opens with Citibank's accidental $893.9 million wire to Revlon's lenders, where three separate human approvers signed off on a broken workflow, to show why manual approval gates and prompt policies fail in production. Instead of locking agents inside air-gapped sandboxes, Two Sigma pairs real autonomy with five composable controls: automatic registration, risk-scored review, purpose-bound egress rules, shared evaluation plumbing, and classifier-routed runtime approvals.</p>
+  <div class="talk-meta">John Feminella, Two Sigma · 19 min talk · five chapters · <a href="https://www.youtube.com/watch?v=iniryju23Sk">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="04-citibank-s-893.jpg" alt="Diagram titled &#x27;One of the biggest blunders in banking history&#x27; showing Citibank sending $893.9M of its own money to the Primary lender group and Remaining lenders because the internal wash account was skipped.">
+        <figcaption>Slide from the official talk recording: how skipping the wash account wired $893.9M of Citibank&#x27;s own funds</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="08-four-approaches-that.jpg" alt="Slide titled &#x27;What usually doesn&#x27;t work&#x27; with four boxes: Sandbox everything, Lock everything down, Let agents go wild (noting poor containerization out of the box), and Policy docs alone.">
+        <figcaption>Slide from the official talk recording: four common agent governance approaches that fail in regulated firms</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="00-agent-registry-as.jpg" alt="Diagram titled &#x27;Control: Agent Registry, automatic front door&#x27; showing bound endpoints, declared tools, and metadata flowing automatically into the Agent Registry and Product Catalog.">
+        <figcaption>Slide from the official talk recording: automatic framework registration into the central Agent Registry</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="12-same-tool-different.jpg" alt="Matrix chart titled &#x27;Fix: access depends on resource and agent purpose&#x27; across six resources (agent tool, external web, data store, API endpoint, other agent, role account), comparing a research summarizer against a release-ops deployer with the caption &#x27;Same tool, different answer.&#x27;">
+        <figcaption>Slide from the official talk recording: purpose-bound resource permissions — &#x27;Same tool, different answer&#x27;</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="52-auto-mode-classifier.jpg" alt="Flow diagram titled &#x27;Control: Auto-mode classifier, allow, soft or hard deny&#x27; routing proposed tool calls through a deterministic fast path for explicit rules or a two-stage classifier slow path with prompt-injection probing into Allow, Soft deny, or Hard deny.">
+        <figcaption>Slide from the official talk recording: deterministic fast paths paired with two-stage runtime classifiers</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="three-human-approvers-and-an-893-9-million" data-visual="v1" data-caption="Citibank&#x27;s $893.9M UI blunder">
+      <div class="chapter">Chapter 1</div>
+      <h2>Three human approvers and an $893.9 million checkbox mistake</h2>
+      <p>After joking through Two Sigma's mandatory regulatory disclaimer, Feminella illustrates why controls exist by examining a famous failure. In August 2020, Citibank acted as administrative agent on a 2016 Revlon term loan held by more than 300 lenders. On August 11, Citibank was supposed to wire roughly $8 million in accrued interest while rolling some lenders' principal into a new facility on paper, with zero principal leaving the bank. Inside Citibank's loan software, Flexcube (transcribed variously as "Flexview", "InflexQ", and "Fletchview"), the workaround for triggering the right interest calculation mid-rollover was to mark the loan as paid off while redirecting principal into an internal Citibank wash account (<code>3003000023</code>) so the cash stayed in-house.</p>
+      <p>Keeping the principal inside Citibank required setting that wash account on three fields: <code>FRONT</code>, <code>FUND</code>, and <code>PRINCIPAL</code>. Only <code>PRINCIPAL</code> was set. Even though the software popped up a warning that cash was about to leave the bank, three human approvers expected an outgoing interest wire and signed off. Citibank accidentally wired $893.9 million of its own money to pay off distressed Revlon debt trading near sixty cents on the dollar, and lenders refused to return it under "discharge for value" doctrine, prompting a new erroneous-payment clause across commercial loan contracts nationwide.</p>
+      <div class="stills"><figure class="still"><img src="44-loan-drawdown-screen.jpg" alt="Slide titled &#x27;The screen&#x27; showing Figure 1 of the REVLON TERM LOAN 2016 Flexcube drawdown interface with component rows COLLAT, COMPINTSF, DEFAULT, DFLFTC, FRONT, FUND, INTEREST, and PRINCIPAL, where PRINCIPAL has wash account 3003000023 filled and FRONT, FUND, and PRINCIPAL are highlighted in yellow."></figure></div>
+      <blockquote>“So the three approvers who were supposed to approve that looked at it and said, &quot;Yep, that&#x27;s the right thing that&#x27;s supposed to happen.&quot;”<span class="cite">00:00:58</span></blockquote>
+      <ul class="key-points">
+        <li>Citibank's Flexcube workflow required checking three separate wash-account boxes (<code>FRONT</code>, <code>FUND</code>, <code>PRINCIPAL</code>) to keep principal inside the bank.</li>
+        <li>Three human approvers saw the outgoing-funds warning and approved the $893.9 million wire anyway.</li>
+        <li>Manual sign-off over brittle interfaces fails even with trained human operators in a heavily regulated bank.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:00:58 · <a href="https://www.youtube.com/watch?v=iniryju23Sk&t=58s">watch the Citibank Revlon story</a></p>
+    </section>
+
+    <section data-chapter="why-sandboxes-lockdowns-and-prompt-policie" data-visual="v2" data-caption="Four governance traps that fail">
+      <div class="chapter">Chapter 2</div>
+      <h2>Why sandboxes, lockdowns, and prompt policies all fail</h2>
+      <p>Enterprises are now granting non-deterministic AI agents authority over internal systems every bit as unforgiving as loan-servicing software. Feminella argues that treating safety and innovation as opposite ends of a trade-off is a category mistake. Firms know human employees are complex and error-prone, yet they do not lock employees in isolated rooms and forbid them from speaking without double-checks; they combine autonomy with clear boundaries and visibility.</p>
+      <p>His slide enumerates four common agent-governance patterns that fail in regulated firms: sandboxing everything with no real system access (safe, and completely useless), locking everything down behind permission slips, letting poorly containerized agents run wild, and relying on written policy documents or system-prompt instructions. Prompt text cannot guarantee runtime enforcement. What worked at Two Sigma is composing five narrow controls, each handling one specific job so teams do not stall waiting for a governance bridge to be built.</p>
+      <div class="stills"><figure class="still"><img src="24-safety-vs-innovation.jpg" alt="Diagram showing a balance scale weighing Safety against Innovation with the callout &#x27;Innovate without permission slips&#x27; and caption &#x27;Too little safety: existential risk. Too little innovation: slow death.&#x27;"></figure><figure class="still"><img src="24-five-controls-list.jpg" alt="Slide listing Two Sigma&#x27;s five composable controls: Agent Registry, Risk Factor Scoring, Activity Controls, Evaluations, and Auto Mode Classifiers."></figure></div>
+      <blockquote>“And then, if you just have policy documents that you just look at, or that are part of your specification for the prompts, that&#x27;s also not very forceful at runtime. You can&#x27;t guarantee that will be part of the enforcement controls.”<span class="cite">00:05:13</span></blockquote>
+      <ul class="key-points">
+        <li>Air-gapped sandboxes eliminate risk only by preventing agents from doing real work.</li>
+        <li>Written policies and system-prompt instructions have no enforcement power at runtime.</li>
+        <li>Effective governance composes lightweight runtime boundaries rather than trading speed against safety.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:13 · <a href="https://www.youtube.com/watch?v=iniryju23Sk&t=313s">watch why prompt policies fail</a></p>
+    </section>
+
+    <section data-chapter="automatic-registration-and-risk-scored-scr" data-visual="v3" data-caption="Auto-registry and risk scoring">
+      <div class="chapter">Chapter 3</div>
+      <h2>Automatic registration and risk-scored scrutiny</h2>
+      <p>The first practical failure mode is agent sprawl. Large teams, small teams, and individual engineers spin up chatbots and MCP servers (transcribed as "NPC servers") until nobody knows who owns an agent, what endpoints it calls, or whether another team already solved the same problem. Requiring manual registration and approval before any prototype can run backfires: harmless experiments wait behind risky production tools, so builders give up or escape into ungoverned shadow IT. Two Sigma's first control is an Agent Registry built directly into the firm's approved agent frameworks, automatically recording owner, product, bound endpoints, and declared tools at creation time with zero extra effort.</p>
+      <p>Once agents are visible in the registry, the second control replaces uniform committee review with automated risk scoring on creation and every update. Unlike open-ended coding tools such as Claude Code or Pi, where the next user prompt is unconstrained, most enterprise agents are purpose-built services with narrow jobs. Scoring each agent's declared tools and target systems ensures a low-risk ticket summarizer ships quickly instead of waiting two months in the same review queue as a production deployment agent, preserving human reviewer attention for genuinely high-risk systems.</p>
+      <div class="stills"><figure class="still"><img src="56-risk-scoring-registration.jpg" alt="Diagram titled &#x27;Control: Risk scoring applies differentiated scrutiny&#x27; showing auto-registered agents evaluated by a Risk Assessor on creation and every update before publishing."></figure></div>
+      <blockquote>“Again, that feels safe, but now we&#x27;ve got a trivial summarizer waiting two months for the same sign-offs as an agent-based captioning production system.”<span class="cite">00:10:00</span></blockquote>
+      <ul class="key-points">
+        <li>Upfront manual registration gates push prototypes into shadow IT; framework-level auto-registration makes sprawl legible for free.</li>
+        <li>Most enterprise agents are narrow, service-like tools rather than open-ended coding assistants.</li>
+        <li>Scoring risk at registration and on every update keeps trivial summarizers out of multi-month committee queues.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:48, 00:10:00 · <a href="https://www.youtube.com/watch?v=iniryju23Sk&t=468s">watch the registry and risk-scoring walkthrough</a></p>
+    </section>
+
+    <section data-chapter="purpose-bound-tool-access-and-shared-evalu" data-visual="v4" data-caption="Purpose-bound access and evals">
+      <div class="chapter">Chapter 4</div>
+      <h2>Purpose-bound tool access and shared evaluation plumbing</h2>
+      <p>Even when an agent is registered and scored, uniform firm-wide allowlists fail: blocking outbound calls keeps a ship safe in harbor while preventing the work it was built for, yet granting a role account carries far more risk than reading a public web page. Two Sigma's third control binds access to both the resource and the agent's declared purpose. On Feminella's access-matrix slide ("Same tool, different answer"), a research summarizer gets web and data-store access while being denied production API endpoints and role accounts; a release-ops deployer gets gated production API access and is denied external web access. At container startup, the managed runtime queries the Agent Registry and compiles those entitlements into enforceable host and egress-proxy rules without an IT ticket.</p>
+      <p>The fourth control applies the same self-serve philosophy to evaluations, transcribed in spots as "revals" and "B vowels". Left alone, teams build incompatible gauges, star ratings, or no tests at all, leaving them blind when a model upgrade shifts output behavior like a changing runtime dependency. Rather than creating a central sign-off gate where every one-line prompt tweak waits weeks for review, Two Sigma provides shared firm-wide evaluation infrastructure covering trace ingestion, processing, and harness integration so teams only write the assertions specific to their agent.</p>
+      <blockquote>“when agents run in our managed environments, they look at the registry we talked about before to look up what policies apply to it at initialization time, and that policy gets translated into enforceable statements.”<span class="cite">00:11:58</span></blockquote>
+      <ul class="key-points">
+        <li>Tool access depends on agent purpose: a research summarizer and a release deployer receive opposite web and API permissions.</li>
+        <li>Managed runtimes pull registry policies at initialization and compile them into enforceable container and egress rules.</li>
+        <li>Shared firm-wide evaluation plumbing works like a unit-test runner rather than a central approval bottleneck.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:58 · <a href="https://www.youtube.com/watch?v=iniryju23Sk&t=718s">watch purpose-bound access and shared evals</a></p>
+    </section>
+
+    <section data-chapter="beating-approval-fatigue-with-deterministi" data-visual="v5" data-caption="Classifiers beat review fatigue">
+      <div class="chapter">Chapter 5</div>
+      <h2>Beating approval fatigue with deterministic fast paths and runtime classifiers</h2>
+      <p>The fifth control targets unanticipated runtime actions. Asking a human to approve every tool call works on a toy demo and collapses at production concurrency: flooded with routine prompts, humans click "yes, yes, yes" by reflex until they approve a catastrophe. Relying on prompt instructions to pause is equally brittle. Feminella points to an AI research lab director whose inbox-cleanup agent compacted its context window over a large mailbox, dropped the instruction to wait for approval, and bulk-deleted hundreds of emails while ignoring commands to stop.</p>
+      <p>Instead of routing every call to a person, Two Sigma's runtime separates clear rules from genuine ambiguity. Actions a human would approve 99.9999% of the time, along with actions that are unambiguously dangerous, hit a deterministic fast path that allows or blocks them immediately. Ambiguous calls pass through independent, conservative stage-1 and stage-2 auto-mode classifiers running inside the container runtime, escalating only rare edge cases to a human reviewer. Taken together—Create, Score, Run, Share, and Govern—the five controls work like brakes on a car: they exist not just to stop, but to let teams drive fast and stop safely.</p>
+      <div class="stills"><figure class="still"><img src="08-how-five-controls.jpg" alt="Summary diagram titled &#x27;How they fit together&#x27; showing five sequential blocks: Create (a registry), Score (differentiated risk), Run (guardrails), Share (evals and metrics), and Govern (strong runtime protections)."></figure></div>
+      <blockquote>“when explicit rules apply, we want deterministic fast paths. When explicit rules don&#x27;t apply and there&#x27;s some ambiguity, you want a classifier to do that work instead.”<span class="cite">00:16:32</span></blockquote>
+      <ul class="key-points">
+        <li>Human-in-the-loop prompts on every action induce rubber-stamp fatigue, and context compaction can erase prompt-level approval rules.</li>
+        <li>Deterministic fast paths handle clear allow/deny rules, while conservative runtime classifiers triage ambiguous tool calls.</li>
+        <li>Registry, risk scoring, egress guardrails, shared evals, and runtime classifiers compose so teams ship fast without flying blind.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:16:32 · <a href="https://www.youtube.com/watch?v=iniryju23Sk&t=992s">watch the runtime classifier architecture</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=iniryju23Sk">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

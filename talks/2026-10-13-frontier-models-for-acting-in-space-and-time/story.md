@@ -4,7 +4,7 @@ speakers: "Pim de Witte (General Intuition)"
 duration: "19:36"
 source: transcript.md
 video: "https://www.youtube.com/watch?v=MpkARD5pq-M"
-themes: [spatiotemporal-world-models-and-simulation]
+themes: [spatiotemporal-world-models-and-real-time-simulation]
 kind: talk-story
 status: draft
 ---
@@ -21,7 +21,7 @@ General Intuition grew out of Medal, which de Witte describes as the largest vid
 
 What makes the recordings useful is that each one ties the frames on screen to the inputs the player made. The actions are labelled, so the meaning of each action is known, not just the button (00:00:09).
 
-The scale is the argument. Medal sees about a billion videos uploaded a year and is on track for three billion, which comes to more than a trillion and a half actions a month (00:00:09). His comparison: the total data frontier labs use today to train robotics models, Medal collects in half a day (00:07:19).
+The scale is the argument. Medal sees about a billion videos uploaded a year and is on track for three billion, which comes to more than a trillion and a half actions a month (00:00:09). His comparison: the total data frontier labs use today to train robotics models, Medal collects in half a day (00:06:01).
 
 **Key points**
 
@@ -30,7 +30,7 @@ The scale is the argument. Medal sees about a billion videos uploaded a year and
 - By his numbers it produces a robotics lab's whole dataset every half day.
 
 > “We built the largest video game recorder in the world”
-> — 00:00:09
+> — 00:02:33
 
 **Visual:** slide `experience/medal-growth.jpg` (Medal's clips uploaded per month, with the line marking the total data frontier robotics models are trained on today)
 
@@ -49,7 +49,7 @@ The controller also hides the hard part. People do not know how to predict motor
 - The controller absorbs the low-level control that people, and models, would otherwise have to predict.
 
 > “And so every single robot built below certain degrees of freedom shifts with the game controller.”
-> — 00:00:09
+> — 00:02:33
 
 **Visual:** slide `experience/controller.jpg` (one controller wired to a game screen, a robot dog, a drone and a wheeled robot)
 
@@ -59,7 +59,7 @@ Put the two together and the model is simple to describe. It is given a set of a
 
 He calls people pixels-to-action converters with some extra sensors, many of which can be turned into pixels too (00:00:09). The API reflects that. It is close to a computer-use model with more actions in its output (00:00:09).
 
-The model knows the meaning of the key it predicts, not only the key, which he says matters for interpretability (00:07:19). World models have a supporting role here: they generate further environments for the action model to learn in (00:07:19).
+The model knows the meaning of the key it predicts, not only the key, which he says matters for interpretability (00:06:01). World models have a supporting role here: they generate further environments for the action model to learn in (00:06:01).
 
 **Key points**
 
@@ -68,7 +68,7 @@ The model knows the meaning of the key it predicts, not only the key, which he s
 - World models generate environments; the action model is the product.
 
 > “So you send frames and you get actions.”
-> — 00:00:09
+> — 00:04:12
 
 **Visual:** slide `experience/wave-back.jpg`, `experience/next-action.jpg` ("Someone waves" through the Action API to "Wave back!"; language models beside action models)
 
@@ -78,7 +78,7 @@ De Witte's picture for the difference is Olaf, the snowman in Frozen, rolling do
 
 That suits work like writing code, where the future is not unfolding while the model is predicting. It generalizes poorly to environments with space and time in them (00:00:09). His models receive frames continuously and treat everything as if it were a video game (00:00:09).
 
-He does not expect them to replace language models. The intended setup has an orchestrator model doing long-term planning, with the action model plugged in underneath (00:07:19). He compares the bet to Anthropic's on coding: scale one space, here pixels, and expect people to bring more problems into it (00:07:19).
+He does not expect them to replace language models. The intended setup has an orchestrator model doing long-term planning, with the action model plugged in underneath (00:06:01). He compares the bet to Anthropic's on coding: scale one space, here pixels, and expect people to bring more problems into it (00:06:01).
 
 **Key points**
 
@@ -93,11 +93,11 @@ He does not expect them to replace language models. The intended setup has an or
 
 ## From games to robots
 
-Gameplay is useful for robotics because it is dense with actions. Players press several things at once and make constant small corrections, and that density carries over to hard control problems (00:07:19). His example is a drone that needs many small adjustments. Teleoperation data is the worse starting point, because a human teleoperator takes far fewer actions and so the data holds less information (00:07:19).
+Gameplay is useful for robotics because it is dense with actions. Players press several things at once and make constant small corrections, and that density carries over to hard control problems (00:06:01). His example is a drone that needs many small adjustments. Teleoperation data is the worse starting point, because a human teleoperator takes far fewer actions and so the data holds less information (00:06:01).
 
-The claim he makes for the result: one model that plays video games at the highest level and controls over a thousand robots with the same primitives, pixels in and actions out, in real time (00:07:19). He says some customers are already using it privately (00:07:19).
+The claim he makes for the result: one model that plays video games at the highest level and controls over a thousand robots with the same primitives, pixels in and actions out, in real time (00:06:01). He says some customers are already using it privately (00:06:01).
 
-In the Q&A he is asked how this differs from JEPA. JEPA does not train on action labels and bets on inferring actions from video. He thinks that may be the more correct approach in the limit, but it is less practical now (00:13:24). Some actions cannot be read from frames at all: his example is moving the rudder at the back of a plane (00:13:24).
+In the Q&A he is asked how this differs from JEPA. JEPA does not train on action labels and bets on inferring actions from video. He thinks that may be the more correct approach in the limit, but it is less practical now (00:10:31). Some actions cannot be read from frames at all: his example is moving the rudder at the back of a plane (00:10:31).
 
 **Key points**
 
@@ -105,16 +105,16 @@ In the Q&A he is asked how this differs from JEPA. JEPA does not train on action
 - He claims one model for top-level play and over 1,000 robots; none of it was shown.
 - Recorded action labels, not inferred ones, are what set the approach apart from JEPA.
 
-> “You really, really, really want to start with games.”
-> — 00:07:19
+> “you really, really, really want to start with games.”
+> — 00:07:53
 
 **Visual:** slide `experience/new-class.jpg` (the "new class of foundation model" list, with the video he did not play)
 
 ## What a controller-using model could be used for
 
-The uses he is most interested in are not all robots. Because the model acts on an interface as a person would, it can explore one: point it at a new design to learn whether the interface is intuitive (00:07:19). It can explore generated simulation environments so that a person does not have to (00:13:24). And it can share a controller with someone. For a player who can use only one arm, the person moves the mouse and the model predicts the keyboard, leaving alone the inputs the person is already making (00:13:24).
+The uses he is most interested in are not all robots. Because the model acts on an interface as a person would, it can explore one: point it at a new design to learn whether the interface is intuitive (00:06:01). It can explore generated simulation environments so that a person does not have to (00:10:31). And it can share a controller with someone. For a player who can use only one arm, the person moves the mouse and the model predicts the keyboard, leaving alone the inputs the person is already making (00:10:31).
 
-He expects it to feel like the early days of language models, a new primitive people have to play with to find out what it does (00:07:19). The models were due in late November or early December, with early access through a waitlist and hackathons in New York and London (00:13:24). The opening slide says the company raised over $650 million in the past year.
+He expects it to feel like the early days of language models, a new primitive people have to play with to find out what it does (00:06:01). The models were due in late November or early December, with early access through a waitlist and hackathons in New York and London (00:10:31). The opening slide says the company raised over $650 million in the past year.
 
 **Key points**
 
@@ -122,7 +122,7 @@ He expects it to feel like the early days of language models, a new primitive pe
 - Exploring simulated environments without a person at the controls.
 - Accessibility: the model plays the inputs a person cannot.
 
-> “This is going to be the most interesting toy that comes out this year.”
-> — 00:13:24
+> “this is going to be the most interesting toy that comes out this year”
+> — 00:10:31
 
 **Visual:** slide `experience/frontier-lab.jpg`, `experience/early-access.jpg` (the opening slide with the funding line; "Get Early Access")

@@ -3,23 +3,23 @@
 - **Session ID**: `0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-14_1429_Warp`
-- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00)
 
 ## Speakers
 
 - **Ben Holmes** (Warp) · status: `found`
-  - Profile: https://ai.engineer/speakers/ben-holmes
-  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."*
+  - Site: https://ai.engineer/speakers/ben-holmes
+  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp, and I'm going to be talking about building self-improving agents, agents that look through their past work and figure out how to improve their own setup."*
 
 ## Companies
 
-- **Warp** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Ben Holmes at AI Engineer New York 2026 (Your agent needs a skill to improve its skills).
+- **Warp** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (Your agent needs a skill to improve its skills).
 
 ## Verified Resources
 
 - **[Schedule | AI Engineer NYC 2026 — Your agent needs a skill to improve its skills](https://ai.engineer/nyc/2026/schedule#session-0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Your agent needs a skill to improve its skills".
-  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."*
+  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp, and I'm going to be talking about building self-improving agents, agents that look through their past work and figure out how to improve their own setup."*
 - **[Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp](https://www.youtube.com/watch?v=pz74r-4dGfQ)** (`youtube`, first seen 2026-11-14T12:15:30-05:00, post-event publication — added 31 days after the talk)
   - Why: Official recording of this talk on the AI Engineer YouTube channel, published after the event.
   - Evidence: page title *"Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp"*

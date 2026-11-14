@@ -1,7 +1,7 @@
 {
   "kind": "openprose.photos.manifest",
   "generated_at": "2026-11-14T12:20:40.035Z",
-  "source_dir": "/Users/wschenk/The-Focus-AI/ai-engineer-nyc-2026-oct/photos",
+  "source_dir": "photos",
   "timezone": "America/New_York",
   "time_convention": "filename UTC → event timezone; EXIF DateTime local (cross-check)",
   "photo_count": 57,

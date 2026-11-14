@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Give the Model a Computer · Mislav Ivanda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Sutton Room</div>
+  <h1>Agent frameworks agree on nothing except giving the model a separate computer.</h1>
+  <p class="dek">Mislav Ivanda spent a year integrating Daytona's sandbox across competing AI agent frameworks, workflow tools, and developer products. Frameworks that disagree on what an agent is, what language to write in, and whether humans or models control the flow all reduce sandbox integration to the exact same three operations: create a computer, run code inside it, and delete it. Because your execution boundary dictates how every tool in your stack is built, Ivanda argues you must commit to that boundary before picking a framework.</p>
+  <div class="talk-meta">Mislav Ivanda, Daytona · 15 min talk · six chapters · <a href="https://www.youtube.com/watch?v=WWIFiQi9U4w">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="28-six-framework-logos.jpg" alt="Slide: The reveal — Different logos. Same three lines. Shows six framework cards (LangChain, CrewAI, Google ADK, Pydantic AI, OpenAI Agents SDK, Mastra) above a shared code block calling sandbox create, code_run, and delete.">
+        <figcaption>Slide from the official talk recording: six competing frameworks, identical create-run-delete calls</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="40-separate-computer-isolation.jpg" alt="Slide: Answer No.3 — On a separate computer. Lists container or microVM, reached over an API, can&#x27;t reach your infra, and the takeaway: A compromised step is not a compromised app.">
+        <figcaption>Slide from the official talk recording: isolating code and tools on a separate VM or container</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="56-receipts-table-framework.jpg" alt="Slide: Receipts — The frameworks already voted. Table documenting April 2026 CrewAI removing CodeInterpreterTool, July 2026 AG2 1.0 retiring autogen.coding executors, Claude Agent SDK Bash process sandboxing, OpenAI Agents SDK SandboxAgent, and Mastra requiring deliberate boundary selection.">
+        <figcaption>Slide from the official talk recording: 2026 framework releases retiring local code execution</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="05-one-many-tree.jpg" alt="Slide: Then one computer became a thousand. Tree diagram fanning out from one root to many parallel sandbox nodes for parallel evaluations, RL rollouts, bulk refactors across repos, and agents spawning sub-agents.">
+        <figcaption>Slide from the official talk recording: scaling from one sandbox tool call to thousands of parallel runtimes</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="57-swappable-vs-committed.jpg" alt="Slide: What actually locks you in — Swappable decisions vs. a commitment. Left column You can swap later: framework, model and prompts, missing features, sandbox provider. Right column You live with: execution posture (host, in-process, or separate computer).">
+        <figcaption>Slide from the official talk recording: swappable choices versus execution posture lock-in</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="57-pick-boundary-before.jpg" alt="Closing takeaway slide: Pick the boundary before the framework. Caption: Frameworks are opinions. The boundary is a commitment.">
+        <figcaption>Slide from the official talk recording: commit to the execution boundary first</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="six-competing-frameworks-the-same-three-li" data-visual="v1" data-caption="Same three sandbox lines">
+      <div class="chapter">Chapter 1</div>
+      <h2>Six competing frameworks, the same three lines of code</h2>
+      <p>Ivanda opened with a short quiz: a <code>@tool(name="run_code")</code> snippet that spins up a sandbox, runs generated code, and tears it down, asking the audience which framework it belonged to. Guesses ranged across LangChain, LangGraph, and Google ADK, and his point was that any of them would fit. Across LangChain, CrewAI, Google ADK, Pydantic AI, OpenAI Agents SDK, and Mastra, the Daytona integration code is almost indistinguishable.</p>
+      <p>Surface plumbing varies: one framework registers a <code>@tool</code>, another loads an external plugin, and a third subclasses an internal sandbox base class. Underneath every wrapper sit the same three lifecycle calls: <code>create</code>, <code>code_run</code>, and <code>delete</code>. That convergence stands out because these projects are direct competitors that otherwise share almost no design opinions. LangGraph models an agent as a traversable graph, CrewAI treats agents as autonomous role-players, OpenAI's Agents SDK wraps a loop around a model, and Anthropic's Claude Agent SDK ships a packaged runtime with minimal customization, split across Python and TypeScript and divided over whether developers or models steer control flow. When rivals that agree on nothing else land on the same primitive, Ivanda noted, it is a necessity rather than a passing fashion.</p>
+      <div class="stills"><figure class="still"><img src="16-daytona-title-card.jpg" alt="Daytona title slide: $ Give the model a computer. Subtitle: The one thing every agent framework agrees on, and what it means for how you build."></figure><figure class="still"><img src="12-frameworks-agree-nothing.jpg" alt="Slide: Frameworks agree on nothing. Except this. Compares three axes of disagreement: what an agent is (graph, crew, loop, product), implementation language (Python, TypeScript), and who drives (you write the flow vs the model decides)."></figure></div>
+      <blockquote>“But under the hood, all of these ways speak the three same lines, so it&#x27;s sandbox creation, running some code or task inside the sandbox, and sandbox deletion.”<span class="cite">00:00:05</span></blockquote>
+      <ul class="key-points">
+        <li>Integrating sandboxes across six major agent frameworks comes down to the same three calls: create, run, and delete.</li>
+        <li>Competing frameworks disagree on agent abstractions (graphs, crews, loops, packaged runtimes), languages, and control flow.</li>
+        <li>Universal convergence among competitors signals an unavoidable infrastructure requirement rather than a trend.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:05, 00:01:58 · <a href="https://www.youtube.com/watch?v=WWIFiQi9U4w&t=88s">watch the six-framework reveal</a></p>
+    </section>
+
+    <section data-chapter="why-host-allowlists-and-embedded-runtimes-" data-visual="v2" data-caption="Allowlists vs separate VMs">
+      <div class="chapter">Chapter 2</div>
+      <h2>Why host allowlists and embedded runtimes still expose your machine</h2>
+      <p>Any useful agent eventually needs to run generated scripts, shell commands, package installs, or tests, raising the question of where that execution happens. Ivanda walked through three isolation postures. The first is running on the developer's or server's own machine behind command allowlists, approval prompts, and interception hooks. Most users click "yes" without reading, and allowing <code>python -c</code> quietly hands the model raw socket creation, filesystem mutation, and arbitrary execution. A permission prompt states what the model <b>should</b> run, not what a prompt-injected or misbehaving model <b>can</b> reach.</p>
+      <p>The second posture moves generated scripts into an embedded engine such as V8 or QuickJS. While that restricts direct filesystem and network calls from the script itself, the subtlety lies in tool bindings: when the sandboxed glue code invokes <code>query_database</code> or <code>send_email</code>, those registered tools execute outside the runtime on the host machine, letting a compromised agent act maliciously through privileged host credentials. Only the third posture, a separate container or microVM reached over an API, keeps execution off your infrastructure so a compromised step never becomes a compromised application; you throw away the tainted VM and boot a fresh one.</p>
+      <blockquote>“when you allow your cloud agent to run Python command with Python dash C, he can literally open any sockets, modify a file system, execute code, or do basically everything”<span class="cite">00:03:28</span></blockquote>
+      <ul class="key-points">
+        <li>Approving an interpreter like <code>python -c</code> defeats host command allowlists by unlocking arbitrary sockets and file edits.</li>
+        <li>Embedded V8 or QuickJS runtimes isolate glue scripts while still running database or email tools on the host.</li>
+        <li>A separate microVM or container over an API ensures a compromised step can be discarded without compromising the app.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:03:28 · <a href="https://www.youtube.com/watch?v=WWIFiQi9U4w&t=244s">watch the three isolation models</a></p>
+    </section>
+
+    <section data-chapter="in-2026-agent-frameworks-started-deleting-" data-visual="v3" data-caption="Frameworks deleting local exec">
+      <div class="chapter">Chapter 3</div>
+      <h2>In 2026, agent frameworks started deleting their local executors</h2>
+      <p>To show that the ecosystem has already voted on this boundary, Ivanda put up a receipts table of 2026 framework releases. In April 2026, CrewAI removed its local <code>CodeInterpreterTool</code> and deprecated <code>allow_code_execution</code>, pointing users to dedicated sandbox services instead. In July 2026, AG2 1.0 retired its legacy <code>autogen.coding</code> local executors in favor of a sandbox tool class requiring an explicit execution environment.</p>
+      <p>Other SDKs drew similar lines: the Claude Agent SDK uses OS-level process sandboxing such as Bubblewrap on Linux for Bash commands, OpenAI's Agents SDK introduced <code>SandboxAgent</code> with Docker and hosted sandbox clients while explicitly flagging the risks of local execution, and Mastra's docs tell builders to choose their execution boundary deliberately. Crucially, these frameworks already had optional sandbox integrations; what changed in 2026 is that maintainers started deleting the unsafe local alternatives.</p>
+      <blockquote>“And you can notice that they are not adding sandboxes, they already had them, but they are deleting all the alternatives”<span class="cite">00:07:40</span></blockquote>
+      <ul class="key-points">
+        <li>CrewAI (April 2026) and AG2 1.0 (July 2026) removed built-in local code executors in favor of explicit sandboxes.</li>
+        <li>OpenAI Agents SDK, Claude Agent SDK, and Mastra now surface explicit sandbox boundaries or process isolation.</li>
+        <li>Frameworks are not merely adding sandbox plugins; they are actively removing host-level execution paths.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:40</p>
+    </section>
+
+    <section data-chapter="one-ephemeral-tool-call-grew-into-fleets-o" data-visual="v4" data-caption="One computer to a thousand">
+      <div class="chapter">Chapter 4</div>
+      <h2>One ephemeral tool call grew into fleets of thousands of computers</h2>
+      <p>Alongside stricter isolation, how teams use sandboxes expanded through three distinct stages. Early integrations treated a sandbox as a disposable calculator: spin up a short-lived machine for a single tool call, analyze a CSV or run a snippet, return stdout, and destroy the VM immediately.</p>
+      <p>As models grew more capable, teams moved the entire agent loop inside the sandbox so it could operate as a persistent runtime with full filesystem, shell, and network access. Most recently, one computer became a thousand: teams fan out thousands of concurrent isolated environments for parallel evaluations, reinforcement learning rollouts, post-training benchmarks, bulk multi-repo refactors, and agents spawning subagents.</p>
+      <blockquote>“if they can run thousands of these executions environments concurrently, they can do really interesting stuff, especially regarding reinforcement learning, fine-tuning, post-training benchmarks, evals.”<span class="cite">00:09:18</span></blockquote>
+      <ul class="key-points">
+        <li>Stage one used ephemeral sandboxes for single-shot code snippets and CSV analysis.</li>
+        <li>Stage two moved the whole agent inside the VM as a full-featured workspace runtime.</li>
+        <li>Stage three fans out thousands of parallel sandboxes for RL post-training, evals, and subagent fleets.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:18</p>
+    </section>
+
+    <section data-chapter="most-framework-decisions-are-swappable-exe" data-visual="v5" data-caption="Swappable vs lock-in">
+      <div class="chapter">Chapter 5</div>
+      <h2>Most framework decisions are swappable; execution posture locks you in</h2>
+      <p>Developers routinely start new projects by asking which agent framework to pick, which Ivanda called the wrong first question. Almost every axis people agonize over during framework selection can be changed later at manageable cost: switching between two Python or TypeScript frameworks is a bounded refactor, swapping models and prompts takes regression testing, missing observability or memory features can be added via plugins (with cloud durable execution as the one notable architectural exception), and even sandbox vendors are interchangeable because they all speak <code>create</code>, <code>run</code>, and <code>delete</code>.</p>
+      <p>What you cannot easily swap later is your execution posture: whether code and tools run on the host, in-process, or on a separate computer. Teams that prototype locally write every tool assuming direct access to the application process and local filesystem without separation, then carry that proof-of-concept straight into production until a security incident threatens the product.</p>
+      <blockquote>“if you&#x27;re guessing that you&#x27;ll use first approach, where everything runs locally, then you write all your tools to use your host or app process environment, using your file system without separation and stuff like that.”<span class="cite">00:10:16</span></blockquote>
+      <ul class="key-points">
+        <li>Frameworks, models, prompts, plugins (aside from durable execution), and sandbox providers can all be swapped later.</li>
+        <li>Local POCs silently couple every custom tool to the host process and unseparated filesystem.</li>
+        <li>Retrofitting isolation onto host-coupled tools in production requires rewriting your system architecture.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:10:16 · <a href="https://www.youtube.com/watch?v=WWIFiQi9U4w&t=657s">watch swappable decisions vs execution lock-in</a></p>
+    </section>
+
+    <section data-chapter="pick-the-execution-boundary-before-you-pic" data-visual="v6" data-caption="Boundary before framework">
+      <div class="chapter">Chapter 6</div>
+      <h2>Pick the execution boundary before you pick the framework</h2>
+      <p>Ivanda closed with a concrete rule of thumb, printed on his final takeaway slide as "Frameworks are opinions. The boundary is a commitment" (and transcribed slightly garbled in the room audio as "framers our opinions and the boundary the commitment"). Before choosing an orchestration library, define an execution interface under your own control that targets a separate computer from day one.</p>
+      <p>With that boundary fixed up front, untrusted code and tools stay quarantined behind an API you own, security is addressed structurally rather than bolted on with regex filters, and every layer above or below (framework, model, or sandbox provider) stays straightforward to swap as the ecosystem shifts.</p>
+      <blockquote>“And as I like to say, and the sentence I would maybe like for you all of you to remember out of this talk is, framers our opinions and the boundary the commitment.”<span class="cite">00:13:41</span></blockquote>
+      <ul class="key-points">
+        <li>Define your own execution boundary interface before adopting any agent framework.</li>
+        <li>Target a separate computer from the first prototype so tools never depend on host state.</li>
+        <li>Isolating execution behind a clean interface keeps frameworks, models, and providers swappable.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:41</p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=WWIFiQi9U4w">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

@@ -3,17 +3,17 @@
 - **Session ID**: `1cbc625f-7f07-49bb-9c5c-57c95f07ba77`
 - **Talk Transcript**: [transcript.md](transcript.md)
 - **Recording**: `2026-10-14_1649_Basis-Mitchell-Troyanovsky`
-- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00; added 12 days after the talk)
+- **Freshness**: `settling` (last checked 2026-11-14T12:15:30-05:00)
 
 ## Speakers
 
 - **Mitchell Troyanovsky** (Basis) · status: `found`
-  - Profile: https://www.getbasis.ai/
+  - Site: https://www.getbasis.ai/
   - Evidence: *"Hi Mitch, I'm one of the two co-founders of Basis."*
 
 ## Companies
 
-- **Basis** (https://ai.engineer/nyc/2026/schedule) — Organization represented by Mitchell Troyanovsky at AI Engineer New York 2026 (Process Supervision for Agents That Do Long-Horizon Work).
+- **Basis** (https://ai.engineer/nyc/2026/schedule) — Organization represented at AI Engineer New York 2026 (Process Supervision for Agents That Do Long-Horizon Work).
 
 ## Verified Resources
 

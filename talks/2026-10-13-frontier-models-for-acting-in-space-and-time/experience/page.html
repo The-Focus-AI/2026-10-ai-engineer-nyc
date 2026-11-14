@@ -72,13 +72,13 @@
       <p>General Intuition grew out of Medal, which de Witte describes as the largest video game recorder in the world. People use it to record themselves playing tens of thousands of different games. He asks the audience to think of that the way they think of the internet: a very large body of human activity that a model can be trained on.</p>
       <p>What makes the recordings useful is that each one ties the frames on screen to the inputs the player made. The actions are labelled, so the meaning of each action is known, not just the button.</p>
       <p>The scale is the argument. Medal sees about a billion videos uploaded a year and is on track for three billion, which comes to more than a trillion and a half actions a month. His comparison: the total data frontier labs use today to train robotics models, Medal collects in half a day.</p>
-      <blockquote>“We built the largest video game recorder in the world”<span class="cite">00:00:09</span></blockquote>
+      <blockquote>“We built the largest video game recorder in the world”<span class="cite">00:02:33</span></blockquote>
       <ul class="keypoints">
         <li>Medal records gameplay across tens of thousands of games.</li>
         <li>Each recording pairs what was on screen with what the player pressed.</li>
         <li>By his numbers it produces a robotics lab's whole dataset every half day.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:06:01</p>
     </section>
 
     <section data-chapter="the-controller-is-already-how-people-dri" data-visual="v2" data-caption="One controller, many machines">
@@ -87,7 +87,7 @@
       <p>The step from games to robots rests on one observation. A person can teleoperate a robot with the same brain they use to play a video game, and in many cases with the same controller. So the action space of games and the action space of real-world operation are often the same thing.</p>
       <p>He says this is already how the industry works: robots below a certain number of degrees of freedom ship with a game controller, and most of the supply chain is set up that way.</p>
       <p>The controller also hides the hard part. People do not know how to predict motor torque or what value to set on a machine; the controller does that translation for them. Most robotics companies, he says, try to solve the problem end to end, predicting exact poses or motor values. His company's approach is to use the device every robotics company has already built to make up for how little physics people can compute in their heads.</p>
-      <blockquote>“And so every single robot built below certain degrees of freedom shifts with the game controller.”<span class="cite">00:00:09</span></blockquote>
+      <blockquote>“And so every single robot built below certain degrees of freedom shifts with the game controller.”<span class="cite">00:02:33</span></blockquote>
       <ul class="keypoints">
         <li>Games and teleoperated robots share inputs and outputs: vision in, controller actions out.</li>
         <li>Many robots already ship with a game controller.</li>
@@ -103,13 +103,13 @@
       <p>He calls people pixels-to-action converters with some extra sensors, many of which can be turned into pixels too. The API reflects that. It is close to a computer-use model with more actions in its output.</p>
       <p>The model knows the meaning of the key it predicts, not only the key, which he says matters for interpretability. World models have a supporting role here: they generate further environments for the action model to learn in.</p>
       <div class="stills"><figure class="still"><img src="wave-back.jpg" alt="His slide, Our action models see the world, and predict actions. A camera view of a person waving, labelled Someone waves, goes through the Action API and comes out as a view labelled Wave back."></figure></div>
-      <blockquote>“So you send frames and you get actions.”<span class="cite">00:00:09</span></blockquote>
+      <blockquote>“So you send frames and you get actions.”<span class="cite">00:04:12</span></blockquote>
       <ul class="keypoints">
         <li>Frames in, controller and keyboard actions out, with an optional text instruction.</li>
         <li>The training recipe mirrors a language model's, on action data.</li>
         <li>World models generate environments; the action model is the product.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:06:01</p>
     </section>
 
     <section data-chapter="why-a-language-model-is-the-wrong-tool-f" data-visual="v4" data-caption="Observing while acting">
@@ -124,7 +124,7 @@
         <li>The action model observes continuously as it acts.</li>
         <li>A language model still plans on top; the action model executes.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:06:01</p>
     </section>
 
     <section data-chapter="from-games-to-robots" data-visual="v5" data-caption="Start with games">
@@ -133,13 +133,13 @@
       <p>Gameplay is useful for robotics because it is dense with actions. Players press several things at once and make constant small corrections, and that density carries over to hard control problems. His example is a drone that needs many small adjustments. Teleoperation data is the worse starting point, because a human teleoperator takes far fewer actions and so the data holds less information.</p>
       <p>The claim he makes for the result: one model that plays video games at the highest level and controls over a thousand robots with the same primitives, pixels in and actions out, in real time. He says some customers are already using it privately.</p>
       <p>In the Q&amp;A he is asked how this differs from JEPA. JEPA does not train on action labels and bets on inferring actions from video. He thinks that may be the more correct approach in the limit, but it is less practical now. Some actions cannot be read from frames at all: his example is moving the rudder at the back of a plane.</p>
-      <blockquote>“You really, really, really want to start with games.”<span class="cite">00:07:19</span></blockquote>
+      <blockquote>“you really, really, really want to start with games.”<span class="cite">00:07:53</span></blockquote>
       <ul class="keypoints">
         <li>Action-dense gameplay transfers to control tasks that need many small corrections.</li>
         <li>He claims one model for top-level play and over 1,000 robots; none of it was shown.</li>
         <li>Recorded action labels, not inferred ones, are what set the approach apart from JEPA.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:19, 00:13:24</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:01, 00:10:31</p>
     </section>
 
     <section data-chapter="what-a-controller-using-model-could-be-u" data-visual="v6" data-caption="A new primitive to play with">
@@ -148,13 +148,13 @@
       <p>The uses he is most interested in are not all robots. Because the model acts on an interface as a person would, it can explore one: point it at a new design to learn whether the interface is intuitive. It can explore generated simulation environments so that a person does not have to. And it can share a controller with someone. For a player who can use only one arm, the person moves the mouse and the model predicts the keyboard, leaving alone the inputs the person is already making.</p>
       <p>He expects it to feel like the early days of language models, a new primitive people have to play with to find out what it does. The models were due in late November or early December, with early access through a waitlist and hackathons in New York and London. The opening slide says the company raised over $650 million in the past year.</p>
       <div class="stills"><figure class="still"><img src="early-access.jpg" alt="His slide, Get Early Access, with a QR code and the General Intuition logo on a dark background."></figure></div>
-      <blockquote>“This is going to be the most interesting toy that comes out this year.”<span class="cite">00:13:24</span></blockquote>
+      <blockquote>“this is going to be the most interesting toy that comes out this year”<span class="cite">00:10:31</span></blockquote>
       <ul class="keypoints">
         <li>Testing whether an interface is intuitive, by having the model use it.</li>
         <li>Exploring simulated environments without a person at the controls.</li>
         <li>Accessibility: the model plays the inputs a person cannot.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:19, 00:13:24</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:01, 00:10:31</p>
     </section>
 
   </main>

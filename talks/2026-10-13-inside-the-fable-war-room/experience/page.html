@@ -91,7 +91,7 @@
       <p>The question Prior set himself was how to speed up delivery of agent-callable APIs for legacy core capabilities. The answer starts with scope. His bet was that $1,000 of tokens and one day would be enough to map a single domain end to end, business topology and legacy code included, and have the agents find and propose one serious change.</p>
       <p>Even that one change was cut down further, to a single agent-callable API in the legacy claims systems, deployed and running by 4 p.m., with a dinner for his boss riding on it. The room around the bet was small on purpose: the decision makers and subject matter experts for that one topic, a driver to run the expensive tools, and the comms, design and code tools wired to workflows, skills, MCPs and agent fleets.</p>
       <div class="stills"><figure class="still"><img src="war-room.jpg" alt="His slide, Our multi-player AI-native war room. Three people at a table labelled decision makers, driver and SMEs, under comms, design and code. Underneath: workflows, skills, MCPs, agents."></figure></div>
-      <blockquote>“Find and propose one serious change which in our case we scoped down to an agent callable API”<span class="cite">00:00:00</span></blockquote>
+      <blockquote>“find and propose one serious change, which in our case we scoped down to an agent callable API”<span class="cite">00:05:09</span></blockquote>
       <ul class="keypoints">
         <li>One domain, mapped end to end, rather than the estate.</li>
         <li>One serious change, scoped down to one agent-callable API.</li>
@@ -106,13 +106,13 @@
       <p>They ran the experiment three times, each on a different domain and a different kind of modernization. The taxonomy of uplift, transform and reimagine comes from Anthropic's code-modernization plugin.</p>
       <p>Rentals was the simple one: a newer version of the same technology and an extension to an existing API. Along the way the agent connected a couple of dots in the data and found that giving customers up-to-date rental information would save about eight and a half thousand calls a month. Damages, the domain that puts a dollar figure on a reported loss, got a set of new agent-callable APIs that unlock a larger workflow. Salvage, everything that happens when a car is totaled and the most complex of the three, did not get code at all. It got a fully vetted migration plan, and the work surfaced a production bug Prior could not say more about. The slide he showed put the three at about $1,050, $1,200 and $700.</p>
       <p>The piece that carries over is the context. Prior's aside is that the deep context for a domain gets built once and can be reused.</p>
-      <blockquote>“Okay, so it&#x27;s like a fully vetted project plan that&#x27;s ready to be implemented”<span class="cite">00:06:39</span></blockquote>
+      <blockquote>“Okay, so it&#x27;s like a fully vetted project plan that&#x27;s ready to be implemented”<span class="cite">00:05:09</span></blockquote>
       <ul class="keypoints">
         <li>Rentals: extended an API, found 8.5k avoidable calls a month.</li>
         <li>Damages: new agent-callable APIs for a larger workflow.</li>
         <li>Salvage: a vetted migration plan, and a production bug found on the way.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:06:39</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:05:09</p>
     </section>
 
     <section data-chapter="pull-apart-what-the-vendor-brings-from-w" data-visual="v4" data-caption="Portable tools, your judgment">
@@ -120,13 +120,13 @@
       <h2>Pull apart what the vendor brings from what only you have</h2>
       <p>Prior's "magic mix" slide splits the setup in two. On the left is what a vendor brought: the harness, the model, FleetKit, and the code-modernization plugin. He says any of it can be swapped for another vendor, model or framework.</p>
       <p>On the right is what cannot be replaced, and it comes in four parts. Context is the knowledge base, software standards and the archaeology of past decisions. Tools are what the agent can reach on the driver's machine and how to use them. Methods are the skills and the domain-specific way GEICO builds software. Judgment is who can decide what, and at which gate, for both the subject matter experts and leadership. These live in repos so that agents and people can both add to them and correct them.</p>
-      <blockquote>“who can decide what and at what gate”<span class="cite">00:06:39</span></blockquote>
+      <blockquote>“who can decide what and at what gate”<span class="cite">00:08:10</span></blockquote>
       <ul class="keypoints">
         <li>Harness, model, fleet manager and plugin are replaceable.</li>
         <li>Context, tools, methods and judgment are the company's own.</li>
         <li>The company's half lives in repos that both agents and people edit.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:39</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:09</p>
     </section>
 
     <section data-chapter="a-goal-becomes-pieces-leaders-a-queue-bu" data-visual="v5" data-caption="Leaders, a queue, builders">
@@ -135,13 +135,13 @@
       <p>Running a frontier model at scale is expensive, so the fleet needs a manager. FleetKit, built with Anthropic and not open source at the time of the talk, is a structured collection of rules, protocols and instructions written in Markdown. Prior says it is not rocket science and describes it so others can build their own.</p>
       <p>It takes a goal and breaks it down. Leaders are dispatched to research and decide on an approach. Their plans go into a human-in-the-loop queue, which could be GitHub issues, where people comment and approve and other agents add context. When the plans look tight, builders are dispatched to do the rest, and the output is a material change: a change request or a code change. The mission gets its own channel, and the agent pings the person on the roster who owns whatever detail it is missing.</p>
       <div class="stills"><figure class="still"><img src="inside-fleetkit.jpg" alt="His slide, Taking a deeper look within FleetKit. Three repositories, FleetKit, tools and method, and domain context and judgment, plus the legacy application, feed a Claude Code session. The session asks and answers in a mission channel, mentions people in the war room, and opens worksheets and design diagrams that the team edits. All it needs is a goal."></figure></div>
-      <blockquote>“Takes a goal, breaks it down, dispatches leaders to do all the research and decide about the approach.”<span class="cite">00:06:39</span></blockquote>
+      <blockquote>“Takes a goal, breaks it down, dispatches leaders to do all the research and decide about the approach”<span class="cite">00:08:10</span></blockquote>
       <ul class="keypoints">
         <li>Goal → leaders research → human queue → builders → material change.</li>
         <li>People approve plans in the queue; they do not watch the agents work.</li>
         <li>The agent asks the specific owner for the specific missing piece.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:39 · <a href="https://www.youtube.com/watch?v=DouK81O8R3o&t=585s">watch him explain FleetKit</a></p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:09 · <a href="https://www.youtube.com/watch?v=DouK81O8R3o&t=585s">watch him explain FleetKit</a></p>
     </section>
 
     <section data-chapter="every-step-leaves-a-piece-and-the-pieces" data-visual="v6" data-caption="Nine steps, nine files">
@@ -150,13 +150,13 @@
       <p>The run is nine steps on the driver's laptop, most of them forked from the code-modernization plugin and adapted. Each milestone produces one of two artifacts. Worksheets are HTML pages people fill in to close gaps, and they save automatically. Design documents include architecture diagrams that did not exist before, which the teams kept. People edit the documents, the agent rereads the edits, and everything is pulled back into the session.</p>
       <p>The human input is not spread evenly. The worksheets that need approval cluster at the start of the journey and thin out toward the end. Between steps the plugin runs a deterministic check that the previous step produced the artifacts it was supposed to. Two kinds of agent do the digging: code dives in the cloud that crunch and graph the legacy code, and local agents with access to the MCPs on the driver's laptop, mapped to FleetKit by a bindings file.</p>
       <div class="stills"><figure class="still"><img src="worksheets.jpg" alt="His slide, The room works in shared worksheets and diagrams. On the left a product worksheet for Salvage E-Sign, a Claude artifact the agent watches. On the right a design diagram that was edited, closed, then acknowledged in comms. Every answer is saved as deep context for the next run."></figure><figure class="still"><img src="war-room-tools.jpg" alt="His slide, War Room tools. Claude Code and Fable on the driver&#x27;s laptop run cloud agents, for code deep-dives, mapping and graphing, and local subagents, for research and planning with the laptop&#x27;s access. A bindings file describes the laptop. They reach plugins for comms, design and legacy code, MCP servers for knowledge, code and data, and built-in tools."></figure><figure class="still"><img src="plugin.jpg" alt="His slide, code-modernization plugin. Every step leaves a file: modernize, preflight, assess, map, extract-rules, review, brief, uplift or transform or reimagine, verify, harden. The safeguards: the model doesn&#x27;t grade its own work; old and new, byte for byte; rules with receipts; legacy code is untrusted input."></figure></div>
-      <blockquote>“You can see there&#x27;s a lot of human input in the beginning, less on the on the end.”<span class="cite">00:12:33</span></blockquote>
+      <blockquote>“you can see there&#x27;s a lot of human input in the beginning, less on the on the end.”<span class="cite">00:13:46</span></blockquote>
       <ul class="keypoints">
         <li>Nine steps, each ending in a file a person or the next step can read.</li>
         <li>People's answers and edits are fed back into the session.</li>
         <li>Human approval is heavy early and light late.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:33, 00:06:39</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:18, 00:05:09</p>
     </section>
 
     <section data-chapter="once-the-context-is-built-the-pieces-get" data-visual="v7" data-caption="The last mile needed less">
@@ -165,13 +165,13 @@
       <p>The lessons are about cost and about what is still missing. Do not have the frontier model run scheduled checks on its own work; each check wakes a full session and burns budget. After the context was built, the team benchmarked agents writing legacy code against recently written code as the reference and found a cheaper model did as well as the frontier one, which makes model selection a cost lever. The transcript garbles the model names; his slide is headed "Our last mile only needed Sonnet 5.5" and plots it against Opus 5.5 and Fable 5.1, with the cheapest run at $0.06 a task and the priciest at $2.80.</p>
       <p>The context itself was plain Markdown files, with no graph or search layer, and Prior asked the room for better ideas. His list of what comes next: stronger gate enforcement, harness and model updates, better search over the context, and audio as a data source, because he was taking notes by hand in the meetings and knows he lost some. His closing advice is to find a group that cannot make decisions, deploy this, drive it, control the cost and make it your own.</p>
       <div class="stills"><figure class="still"><img src="whats-next.jpg" alt="His slide, What&#x27;s next with the war room: enhanced gate enforcement, harness and model updates, optimized search and ontology, audio as a data source, FleetKit for marketing, comms, legal and sales. QR codes for the GEICO tech blog and the code-modernization plugin."></figure><figure class="still"><img src="hill-climbing.jpg" alt="His slide, Hill-climbing AI still needs divine intervention. A staircase climbs the hill we measure, better every week; a dashed path dips, worse for a while, before reaching a higher peak, the hill we need. The jump between them is labelled divine intervention."></figure></div>
-      <blockquote>“Our context was just like markdown files, y&#x27;all.”<span class="cite">00:12:33</span></blockquote>
+      <blockquote>“our context was just like markdown files, y&#x27;all.”<span class="cite">00:15:44</span></blockquote>
       <ul class="keypoints">
         <li>A cheaper model matched the frontier one once the context existed.</li>
         <li>The context was Markdown files; search over it is an open problem.</li>
         <li>The next gaps are gate enforcement and capturing what is said in the room.</li>
       </ul>
-      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:12:33</p>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:18</p>
     </section>
 
   </main>

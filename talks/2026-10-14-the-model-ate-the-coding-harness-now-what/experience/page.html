@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Model Ate the Coding Harness. Now What? · Jediah Katz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Shannon Room</div>
+  <h1>Frontier models absorbed coding scaffolding. The harness just moved up a level.</h1>
+  <p class="dek">Jediah Katz spent 2025 as Cursor's longest-tenured agent-harness engineer before joining SpaceX Super Intelligence through the Super acquisition. He agrees with the benchmark papers showing that elaborate coding prompts and edit shims no longer raise coding eval scores, because a user-driven data flywheel trained those habits straight into frontier model weights. What survives, and grows more important, is the harness that opens unmastered multi-agent domains, runs durably in the cloud with scoped permissions and lower token costs, and cleans up its own temporary shims as models catch up.</p>
+  <div class="talk-meta">Jediah Katz, SpaceX Super Intelligence · 18 min talk · six chapters · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="desktop-capture-dark-small.jpg" alt="Dark presentation slide captured on macOS reading &#x27;Prompt Engineer&#x27; in the lower left, opening the timeline from prompt engineering (2023) to context engineering (2025) and agent harnesses (2026).">
+        <figcaption>Slide from the official talk recording: tracing the three-year arc from prompt engineer to harness engineer</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="left-bash-logo-plus.jpg" alt="Split slide showing a BASH logo and plus sign on the left and a dark code editor window titled secrets.env on the right with placeholder API keys and the header comment &#x27;# secrets.env - everything the agent needs (please don&#x27;t commit this)&#x27;.">
+        <figcaption>Slide from the official talk recording: the minimal Bash + secrets.env harness baseline</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="why-care-about-harness.jpg" alt="Slide titled &#x27;Why care about the harness?&#x27; with point 1 highlighted: &#x27;The harness unlocks the next frontier for the model to solve.&#x27;">
+        <figcaption>Slide from the official talk recording: why harnesses still matter after coding commoditizes</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="cycle-diagram-data-flywheel.jpg" alt="Circular diagram labeled &#x27;Data flywheel&#x27; in the center with five clockwise stages: Harness unlocks capabilities, Agents take on new tasks, Tasks become training data, Model absorbs the ability, and Harness deletes the scaffolding.">
+        <figcaption>Slide from the official talk recording: how harness scaffolding trains models to make itself obsolete</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="two-social-posts-jediah.jpg" alt="Slide showing social posts by Jediah Katz and Grok Bot users alongside a chart titled &#x27;Grok Bot is fast now&#x27; reporting Time to reply P50 down 65% and P90 down 72%.">
+        <figcaption>Slide from the official talk recording: cutting Grok Bot reply latency 65% at P50 and 72% at P90 via token and routing efficiency</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="firings-shim-stacked-bar.jpg" alt="Stacked bar chart titled &#x27;Firings by shim&#x27; tracking activations over time for compatibility shims including await_none_task_id, await_task_id_alias, mcp_argument_envelope, mcp_missing_required_arguments, and mcp_schema_key_spelling.">
+        <figcaption>Slide from the official talk recording: monitoring shim activations so a watcher bot can delete dead model workarounds</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="two-layers-of-a-harness-and-the-rise-and-f" data-visual="v1" data-caption="Runtime vs. context &amp; peak harness">
+      <div class="chapter">Chapter 1</div>
+      <h2>Two layers of a harness, and the rise and fall of "peak harness"</h2>
+      <p>Katz traces three job titles across three years: prompt engineer in early 2023, context engineer by mid-2025, and harness engineer at the start of 2026. An agent harness gives a model eyes and hands, connecting user apps on one side to computers and MCP services on the other. Architecturally, he splits it into two layers: a foundational <b>runtime</b> that owns the core agent loop, durable state, transport, and resumability, and a <b>context orchestration</b> layer that governs model routing, prompts, tools, memory, compaction, and behavioral tricks.</p>
+      <p>Early 2026 marked what Katz calls "peak harness" when Cursor unveiled a 3-million-line browser built over a week by <code>Grind Swarm</code>, an expensive multi-model, multi-machine harness that knocked Cursor offline once or twice during the demo push. Within months, builders declared the harness dead: Anthropic's Thariq (transcribed as "To read") wrote about deleting much of Claude Code's system prompt, YC's Garry Tan argued harnesses would thin out to skills, and Katz and his colleague Stefan Heule published how they tore out small file-apply models and codebase-exploration instructions that smarter frontier models no longer needed.</p>
+      <blockquote>“The runtime is kind of like the foundation of the harness. It controls where the core agent loop runs and how state is stored so that work can resume.”<span class="cite">00:01:22</span></blockquote>
+      <ul class="key-points">
+        <li>Every harness divides into a traditional software runtime (loop, resumable state) and a context orchestration layer (prompts, tools, routing, compaction).</li>
+        <li>Cursor's week-long <code>Grind Swarm</code> browser run marked "peak harness" before teams began deleting prompt scaffolding.</li>
+        <li>Small edit-application models and hand-written repo-search instructions disappeared as frontier weights improved.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00, 00:01:22 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=82s">watch the two-layer harness breakdown</a></p>
+    </section>
+
+    <section data-chapter="bash-secrets-env-and-why-coding-harnesses-" data-visual="v2" data-caption="Bash + secrets.env on coding evals">
+      <div class="chapter">Chapter 2</div>
+      <h2>Bash, <code>secrets.env</code>, and why coding harnesses stopped adding intelligence</h2>
+      <p>To test whether sophisticated coding scaffolding still buys accuracy, Katz poses a minimal baseline: give a frontier model nothing except <code>bash</code> and a <code>secrets.env</code> file holding every key it needs. Two independent studies tested nearly that question and came back flat.</p>
+      <p>A UC Berkeley benchmark ran frontier models across multiple coding harnesses, including Pi, Codex, and Claude Code (transcribed as "Py Codex and Cloud Code"), and found harness choice barely moved <code>SWE-bench Lite</code> (transcribed as "SuperIntLight") scores on newer models. A separate Apple and EPFL paper found that dedicated machine-learning harnesses did not beat a minimal harness on <code>MLE-bench</code>. Katz agrees with the verdict: tricks like teaching a model how to search a repo, persist via <code>/goal</code> loops, or run tests to verify edits have become native model muscle memory.</p>
+      <blockquote>“A fancy harness in this day and age no longer adds coding intelligence.”<span class="cite">00:04:14</span></blockquote>
+      <ul class="key-points">
+        <li>UC Berkeley found harness choice barely changed <code>SWE-bench Lite</code> pass rates on newer frontier models.</li>
+        <li>Apple and EPFL found dedicated ML-engineering harnesses failed to outperform a minimal loop on <code>MLE-bench</code>.</li>
+        <li>Repository exploration, persistent loops, and running tests have moved from harness prompts into model weights.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:14 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=254s">watch the coding benchmark comparison</a></p>
+    </section>
+
+    <section data-chapter="grok-bot-and-the-return-of-scaffolding-in-" data-visual="v3" data-caption="Grok Bot &amp; coordinator fleets">
+      <div class="chapter">Chapter 3</div>
+      <h2>Grok Bot and the return of scaffolding in unmastered domains</h2>
+      <p>If coding scaffolding no longer raises accuracy, why keep investing in harnesses? Katz's first answer is that the harness unlocks the next frontier of work that models have not yet mastered. His example is <b>Grok Bot</b> (transcribed variously as "Rockbot", "Grokbot", "Rafa", and "Rockwise"), an autonomous colleague built for general knowledge work rather than single-session coding.</p>
+      <p>Instead of one-off chats, Grok Bot runs long-lived <b>coordinator bots</b> that own strategy with the user and farm tasks out to a fleet of worker agents, like a lead attorney delegating to paralegals. While Cursor spent early 2026 deleting prompts and guardrails, the Grok Bot team found itself adding them right back because models have not yet internalized office workflows: completing brittle web flows like slide decks and travel booking, sending status updates without spamming, judging when to act versus ask before emailing colleagues, and maintaining long-term working memory.</p>
+      <blockquote>“So Rockbot has a new kind of harness that operates not based off of one-off chats, but long-lived coordinator bots that orchestrate a fleet of worker agents.”<span class="cite">00:06:55</span></blockquote>
+      <ul class="key-points">
+        <li>Grok Bot replaces single-turn chats with long-lived coordinator agents managing fleets of worker agents.</li>
+        <li>Entering unmastered knowledge work forced engineers to reintroduce domain prompts and action-versus-asking guardrails.</li>
+        <li>High-risk external actions like emailing colleagues or booking travel still depend on harness policy and memory.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:55 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=415s">watch the Grok Bot coordinator architecture</a></p>
+    </section>
+
+    <section data-chapter="closing-the-data-flywheel-from-single-agen" data-visual="v4" data-caption="The five-step data flywheel">
+      <div class="chapter">Chapter 4</div>
+      <h2>Closing the data flywheel, from single agents to software factories</h2>
+      <p>Stepping back, Katz connects Cursor's deleted scaffolding and Grok Bot's new scaffolding into a single five-stage <b>data flywheel</b>. First, a frontier harness makes previously intractable tasks usable; second, users attempt those tasks with agents; third, real trajectories become training data for model labs; fourth, newer models absorb the skill natively; fifth, the harness deletes its scaffolding and moves to the next unmastered tier.</p>
+      <p>Inside software engineering, that next tier is the multi-agent <b>software factory</b>, which Katz describes as a "meta harness" coordinating specialized agents across the full delivery lifecycle. Internally, a bug posted to a chat channel triggers automated triage, dispatches a cloud agent that builds a fix and records before-and-after UI videos as proof, and then hands off after merge to a <code>Rollouts</code> agent that watches production telemetry during deployment.</p>
+      <blockquote>“when a capability like coding gets commoditized by the model, it&#x27;s actually the harness which unlocks a new frontier for the model to then solve, and kicks off that flywheel again.”<span class="cite">00:06:55</span></blockquote>
+      <ul class="key-points">
+        <li>Harnesses make themselves obsolete on each capability tier by generating the user trajectories that train the next model.</li>
+        <li>Once raw coding commoditizes, the flywheel restarts one abstraction higher on non-coding engineering and office work.</li>
+        <li>Internal software-factory loops chain auto-triage, cloud fix agents with before/after video proof, and production <code>Rollouts</code> watchers.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:04:14, 00:06:55 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=570s">watch the data flywheel &amp; software factory</a></p>
+    </section>
+
+    <section data-chapter="what-models-cannot-absorb-cloud-runtimes-s" data-visual="v5" data-caption="Cloud runtimes, security &amp; P90 speed">
+      <div class="chapter">Chapter 5</div>
+      <h2>What models cannot absorb: cloud runtimes, scoped security, and cost</h2>
+      <p>Katz's second argument is that critical parts of the harness sit outside context orchestration and can never be absorbed into model weights. First is <b>cloud runtime</b>: as agent tasks stretch from minutes to hours and days, they cannot depend on a laptop staying awake; by the end of his talk he predicts 90% of agent work will run off the laptop within six months. Second is <b>scoped security and spend control</b>: <code>bash</code> plus <code>secrets.env</code> passes a benchmark, but real organizations require per-user permissions, explicit tool approvals, and hard caps against catastrophic actions or surprise $10,000 API bills.</p>
+      <p>Third is <b>efficiency</b>. Both the UC Berkeley and Apple/EPFL benchmark studies that showed flat accuracy across harnesses found major differences in task cost. Spending a month tuning Grok Bot's token efficiency and model-routing mix brought down user costs and cut reply latency by 65% at P50 and 72% at P90 on his slide, with zero hit to quality.</p>
+      <blockquote>“If you think back to those two slides I showed, where the choice of harness did not make a significant difference in eval scores, both of those studies actually found that there was a significant difference in costs for tasks.”<span class="cite">00:11:59</span></blockquote>
+      <ul class="key-points">
+        <li>Multi-day autonomous colleagues require always-on cloud runtimes rather than sleeping laptops.</li>
+        <li>Scoped credentials, permission prompts, and spend ceilings live in infrastructure, never inside model weights.</li>
+        <li>Tuning token efficiency and model mix cut Grok Bot reply latency 65% at P50 and 72% at P90 at equal quality.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:59, 00:14:01 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=719s">watch cloud runtime, security &amp; cost tuning</a></p>
+    </section>
+
+    <section data-chapter="designing-to-be-deleted-hyrum-s-law-subscr" data-visual="v6" data-caption="Event primitives &amp; self-cleaning shims">
+      <div class="chapter">Chapter 6</div>
+      <h2>Designing to be deleted: Hyrum's Law, subscriptions, and self-cleaning shims</h2>
+      <p>Because product ambition is temporarily moving faster than model checkpoints again, Katz expects harnesses to get messier before they get cleaner, so teams should engineer every harness feature to be easy to delete. Citing <b>Hyrum's Law</b> (transcribed as "Hayr's law"), he notes that users inevitably depend on any internal knob you expose; hiding inner harness mechanics behind outcome-focused interfaces cuts change-management friction when scaffolding gets ripped out.</p>
+      <p>For agents themselves, Katz favors <b>composable primitives</b> over bespoke integrations. Rather than maintaining separate wake-up plumbing for emails, Slack mentions, red CI checks, PagerDuty alerts, and cron timers, his team built a single <code>subscriptions</code> primitive so an agent subscribes to any trigger through one unified tool. And for the hacky deterministic guardrails that still patch current model quirks, called <b>shims</b> on his slide (transcribed once as "chains"), every firing is logged to a time-series dashboard watched by a cleanup bot. The moment a newer model stops triggering a shim, the bot opens a pull request to delete it.</p>
+      <blockquote>“So now we have a bot who watches this dashboard, and whenever a shim stops firing, that model or that agent will put up a PR and say this shim can be cleaned up.”<span class="cite">00:14:01</span></blockquote>
+      <ul class="key-points">
+        <li>Hide internal harness mechanics from users so Hyrum's Law does not block deleting obsolete scaffolding.</li>
+        <li>Replace one-off webhook integrations with a single event-subscription primitive that filters, dedupes, and wakes agents.</li>
+        <li>Log every deterministic model-patch shim and let a watcher agent open a removal PR as soon as firings drop to zero.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:14:01 · <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc&t=841s">watch event subscriptions &amp; self-cleaning shims</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=7Y4sbZgBdnc">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

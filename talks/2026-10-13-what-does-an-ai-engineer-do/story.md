@@ -4,7 +4,7 @@ speakers: "Aparna Dhinakaran (Arize AI)"
 duration: "14:59"
 source: transcript.md
 video: "https://www.youtube.com/watch?v=ImnZ7s68jw8"
-themes: [bootstrapping-domain-evals-without-public-benchmarks, self-improving-agents-and-agent-management, the-sandboxed-computer-and-evolving-harness, owning-open-foundations-vs-renting-the-frontier]
+themes: [bootstrapping-domain-evals-without-public-benchmarks, sandboxed-computers-context-architecture-and-the-shrinking-harness, self-improving-fleets-and-the-agent-manager]
 kind: talk-story
 status: draft
 ---
@@ -26,7 +26,7 @@ The first question anyone asks of that funnel, she says, is where they sit on it
 - The AI engineer's job is to close that gap inside a business.
 
 > “AI engineers are kind of the role to close that gap.”
-> — 00:09:45
+> — 00:13:42
 
 **Visual:** photo `photos/PXL_20261013_141544817.jpg` (the "1000x Agent Engineer" funnel with Karpathy's post and her reply)
 
@@ -42,8 +42,8 @@ That changes the job row by row. You no longer just write the feature; you build
 - Code review, testing and monitoring each become something an agent does and the engineer sets up.
 - The engineer owns the loop: build, eval, ship, monitor, improve.
 
-> “As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop.”
-> — 00:00:00
+> “As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop”
+> — 00:01:43
 
 **Visual:** photo `photos/PXL_20261013_141729014.jpg` ("The AI engineer, then and now": last year a feature, now a system to run the loop) · photo `photos/PXL_20261013_141707558.jpg` ("How we got here": high-level languages to a factory of agents)
 
@@ -51,7 +51,7 @@ That changes the job row by row. You no longer just write the feature; you build
 
 Arize's own example is Signal, an always-on agent that reads traces, finds patterns in the telemetry and, with access to the repo, puts up a fix as a PR (00:00:00). It has to remember what it has already seen: an issue it flagged before, or one that looked minor and becomes critical as more data arrives.
 
-Building it taught them that the consumer of telemetry has changed. It is not humans, and not humans with agents helping; the question is how to shape telemetry so that agents are its primary readers (00:00:00). Once that is true, observability data becomes the trigger. Signal can run on a cadence, pulling the last few hours of traces every three or six hours; it can wake on an event, such as a user complaining in Slack; or it can fire on a metric (00:04:53).
+Building it taught them that the consumer of telemetry has changed. It is not humans, and not humans with agents helping; the question is how to shape telemetry so that agents are its primary readers (00:00:00). Once that is true, observability data becomes the trigger. Signal can run on a cadence, pulling the last few hours of traces every three or six hours; it can wake on an event, such as a user complaining in Slack; or it can fire on a metric (00:04:10).
 
 **Key points**
 
@@ -59,18 +59,18 @@ Building it taught them that the consumer of telemetry has changed. It is not hu
 - Telemetry should be designed with agents, not people, as its main consumer.
 - Schedules, Slack messages and metrics are all triggers that wake the agent.
 
-> “How do you set up your telemetry data so that agents are the primary consumers of that data?”
-> — 00:00:00
+> “how do you set up your telemetry data so that agents are the primary consumers of that data?”
+> — 00:04:10
 
 **Visual:** photo `photos/PXL_20261013_142020914.jpg` ("What triggers the agent": Slack, messages, a schedule, a metric, a meeting, another agent)
 
 ## What a run keeps, and what it throws away
 
-Each run is assembled fresh. When the agent wakes, everything it needs goes into a sandbox: the traces and context, third-party APM logs and metrics, the repo, and the keys it requires (00:04:53). One proxy is the only way in or out, and everything inside the sandbox is traced.
+Each run is assembled fresh. When the agent wakes, everything it needs goes into a sandbox: the traces and context, third-party APM logs and metrics, the repo, and the keys it requires (00:04:10). One proxy is the only way in or out, and everything inside the sandbox is traced.
 
-When the run ends, some things stay on purpose: the issues it found, saved to memory so the next run does not start from zero; the traces of what the agent did, including any PR; and skills it learned, saved back to the repo. The rest is thrown away: the sandbox is torn down, credentials are removed, repo access is revoked (00:04:53). State lives outside the sandbox, so a failed sandbox or harness can be relaunched and pick up from the step that failed.
+When the run ends, some things stay on purpose: the issues it found, saved to memory so the next run does not start from zero; the traces of what the agent did, including any PR; and skills it learned, saved back to the repo. The rest is thrown away: the sandbox is torn down, credentials are removed, repo access is revoked (00:04:10). State lives outside the sandbox, so a failed sandbox or harness can be relaunched and pick up from the step that failed.
 
-Signal is also deliberately agnostic. It started on Claude Code, now supports Cursor and Codex, aims at the major open-source harnesses, and can run different models. That, she says, is how they measure the agent's quality each time and keep its cost in check without losing rigor (00:04:53).
+Signal is also deliberately agnostic. It started on Claude Code, now supports Cursor and Codex, aims at the major open-source harnesses, and can run different models. That, she says, is how they measure the agent's quality each time and keep its cost in check without losing rigor (00:04:10).
 
 **Key points**
 
@@ -78,8 +78,8 @@ Signal is also deliberately agnostic. It started on Claude Code, now supports Cu
 - Findings, traces and learned skills persist; sandbox, credentials and repo access do not.
 - Supporting several harnesses and models lets them trade cost against quality and measure it.
 
-> “The only way to get information in and out of the sandbox is by this single proxy.”
-> — 00:04:53
+> “The only way to get information in and out of the sandbox is by this single proxy”
+> — 00:04:10
 
 **Visual:** photo `photos/PXL_20261013_142240994.jpg` ("What happens after each run": kept on purpose versus thrown away)
 
@@ -95,7 +95,7 @@ The question teams ask her is how to trust the evaluator. Arize's answer for its
 - A judge is shipped only after it agrees with human labels on a golden dataset.
 - Trace both the agents and the coding agents that build them, then evaluate online.
 
-> “We actually evaluate the evaluators.”
+> “we actually evaluate the evaluators.”
 > — 00:09:45
 
 **Visual:** photo `photos/PXL_20261013_142631564.jpg` ("Creating an eval": look at traces, find errors, build the eval, align the judge)

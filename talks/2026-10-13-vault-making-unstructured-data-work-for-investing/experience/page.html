@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault: Unstructured Data for Investing · Sam Green &amp; Aaron Linsky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>Give unstructured text the same ontology as fifty years of market series</h1>
+  <p class="dek">Bridgewater spent decades aligning structured market series to an internal world model before language models arrived. Sam Green and Aaron Linsky built Vault to apply that same governance to more than 100 million external and internal documents, then rebuilt search, evaluation, and analyst workflows so human investors and agent storms could share one memory.</p>
+  <div class="talk-meta">Aaron Linsky, Bridgewater &amp; Sam Green, Bridgewater · 15 min talk · six chapters · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  <div class="reading"><b>A note on sources:</b> The room recording transcribed with occasional phonetic slips (hearing "Vault" as "Bolt", "the bot", or "the model", "agentic search" as "agenda search", and "turbopuffer" as "TurboBuffer"). Blockquotes preserve the verbatim transcript; slide titles and benchmark details come from the official recording.</div>
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="tabular-data-unstructured-data.jpg" alt="Slide titled &#x27;From tabular data to unstructured data&#x27; showing card &#x27;BEFORE 2023 - TABULAR DATA: Time series models on structured data, Built to align to our ontology and world model&#x27;">
+        <figcaption>Slide from the official talk recording: extending Bridgewater&#x27;s structured world-model discipline to unstructured text</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="same-third-bullet-that.jpg" alt="Slide titled &#x27;Standard tool: out of date, under-sourced&#x27; under tag &#x27;SAME QUESTION, SAME LLM&#x27;, showing an open-web Korean won answer built on a single FX Focus broker note dated July 23, 2026">
+        <figcaption>Slide from the official talk recording: an open-web chat answer relying on a three-month-old July 2026 broker note</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="search-is-hard-subtitle.jpg" alt="Slide reading &#x27;Search is hard. And harder when designing for two very different consumers.&#x27;">
+        <figcaption>Slide from the official talk recording: designing one retrieval engine for 300-wpm humans and 30,000-wpm agents</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v4">
+        <div class="diagram-label">BENCHMARK &amp; NATIVE VECTOR FILTERING</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Precision at 10 jump from 60% to 95% and comparison of post-filtering, pre-filtering, and cluster-local native filtering"><rect width="640" height="360" rx="8" fill="#101712"/><rect x="24" y="22" width="592" height="118" rx="6" fill="#1e2c22" stroke="#f4cf72" stroke-width="1.5"/><text x="42" y="48" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">HUMAN PRECISION BENCHMARK (~200 HAND-LABELED QUERIES, &lt;1 WEEK)</text><rect x="42" y="64" width="230" height="56" rx="5" fill="#24352a" stroke="#b9bcae" stroke-opacity="0.35"/><text x="58" y="86" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">BASELINE PRECISION@10</text><text x="58" y="109" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="20" font-weight="700">60% relevant</text><path d="M286 92 L338 92" stroke="#f4cf72" stroke-width="2"/><polygon points="338,87 348,92 338,97" fill="#f4cf72"/><text x="312" y="82" text-anchor="middle" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="10">5 iters</text><rect x="358" y="64" width="240" height="56" rx="5" fill="#24352a" stroke="#a9d18f" stroke-width="1.5"/><text x="374" y="86" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">AGENTIC SEARCH</text><text x="374" y="109" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="20" font-weight="700">~95% Precision@10</text><text x="24" y="170" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="1">METADATA FILTERING AT AGENT-STORM SCALE (DATE · SOURCE · ASSET)</text><rect x="24" y="184" width="184" height="150" rx="6" fill="#1e2c22" stroke="#b9bcae" stroke-opacity="0.3"/><text x="40" y="210" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="12" font-weight="700">POST-FILTER</text><text x="40" y="234" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">1. Global vector top-K</text><text x="40" y="254" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">2. Drop metadata misses</text><text x="40" y="292" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">Fast latency</text><text x="40" y="312" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11">Low filtered recall</text><rect x="228" y="184" width="184" height="150" rx="6" fill="#1e2c22" stroke="#b9bcae" stroke-opacity="0.3"/><text x="244" y="210" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="12" font-weight="700">PRE-FILTER</text><text x="244" y="234" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">1. Match all metadata</text><text x="244" y="254" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">2. Score every vector</text><text x="244" y="292" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">High recall</text><text x="244" y="312" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11">Too slow at 1k+ QPS</text><rect x="432" y="184" width="184" height="150" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.8"/><text x="448" y="210" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="12" font-weight="700">NATIVE FILTERING</text><text x="448" y="234" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">1. Nearest clusters only</text><text x="448" y="254" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">2. Score cluster matches</text><text x="448" y="292" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">Post-filter speed</text><text x="448" y="312" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">Near pre-filter recall</text></svg>
+        <figcaption>200 hand-labeled queries lifted Precision@10 from 60% to 95%, while turbopuffer cluster-local filtering preserved recall at 1,000+ QPS.</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="same-habits-new-home.jpg" alt="Slide titled &#x27;Same habits, new home -&gt; new habits&#x27; mapping email research to Searchable in the Vault, subscribed lists to Saved searches, and folders to Saved collections, evolving to cross-data questions, dynamic topic feeds, and handing collections to agents">
+        <figcaption>Slide from the official talk recording: porting broker-email lists and folders into Vault before layering on agents</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="vault-enables-compounding-circular.jpg" alt="Slide titled &#x27;The Vault enables compounding&#x27; with a circular Reasoning Engine diagram connecting Perception, Hypothesis, Investigation, Synthesis, and Learning around Unstructured Data (Vault), Structured Data (Market History), and Compound Memory">
+        <figcaption>Slide from the official talk recording: writing human-agent synthesis back into Vault&#x27;s compound memory</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="unstructured-text-needed-the-same-ontology" data-visual="v1" data-caption="100M docs on one ontology">
+      <div class="chapter">Chapter 1</div>
+      <h2>Unstructured text needed the same ontology as time-series data</h2>
+      <p>For most of Bridgewater's history, studying how economies work meant building time-series models over structured tabular data. That data was cleaned and mapped onto the firm's internal ontology so researchers could test ideas across decades of market history. When language models made it practical to work with news, research reports, policy documents, and internal firm debates that had previously vanished into conversation, Green's team concluded that raw text needed the exact same treatment.</p>
+      <p>No external vendor offered the governance and point-in-time control required for both live daily questions and systematic historical study, so Bridgewater built Vault in-house. The platform holds more than 100 million documents, adding thousands more minute by minute from 135 external sources alongside internal memos and meeting transcripts. Rather than dumping raw files onto analysts' desks, ingestion enriches every document against Bridgewater's ontology: countries, concepts, markets, and the specific time period discussed inside the text.</p>
+      <div class="stills"><figure class="still"><img src="same-title-faint-overlaid.jpg" alt="Opening slide by Sam Green and Aaron Linsky at Bridgewater Associates titled &#x27;The Vault turns unstructured data into a first-class asset.&#x27;"></figure></div>
+      <blockquote>“It is carefully aligned to our internal ontology with enrichments like the countries, concepts, markets, and most importantly, time period discuss in the document.”<span class="cite">00:00:00</span></blockquote>
+      <ul class="key-points">
+        <li>Bridgewater built Vault after finding no vendor platform could govern unstructured text for both point-in-time questions and historical research.</li>
+        <li>Vault indexes over 100 million documents from 135 external feeds plus internal memos and debate transcripts.</li>
+        <li>Every document is tagged with countries, concepts, markets, and the time period discussed.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=136s">watch the ontology walkthrough</a></p>
+    </section>
+
+    <section data-chapter="a-three-month-old-broker-note-fails-a-live" data-visual="v2" data-caption="Stale web vs. time-scoped Vault">
+      <div class="chapter">Chapter 2</div>
+      <h2>A three-month-old broker note fails a live currency question</h2>
+      <p>Green illustrates why generic web search falls short with a question he ran in early October 2026: how AI infrastructure investment is affecting the Korean won, and whether market participants expect the trend to continue. On a standard enterprise chat plan connected to the open web, the model scanned 15 pages, leaned on just one or two of them, and admitted at the end of its answer that it lacked enough sources to establish a market consensus. Inspecting the citations exposed a worse flaw: the main broker note behind the answer had been published back on July 23, 2026, nearly three months earlier.</p>
+      <p>Running the exact same prompt and model against Vault changed the retrieval behavior first. The Vault connector nudged the agent to scope its search to a concrete window (October 1 to October 8 on the slide), pulling 52 relevant candidate documents across three targeted queries and grounding its synthesis in seven current sources instead of one stale note. Model capability was identical; data coverage and time-aware connectors decided whether the answer was usable.</p>
+      <blockquote>“One of the notes that it primarily drew on to answer my question was published way back in July 2026, even though I asked this question and captured this answer just at the end of last week in early October.”<span class="cite">00:02:20</span></blockquote>
+      <ul class="key-points">
+        <li>An open-web chat agent answered an October currency question using a July 2026 broker note and admitted it could not establish consensus.</li>
+        <li>Connected to Vault, the same LLM restricted its query to early October, matched 52 candidates, and cited seven current sources.</li>
+        <li>Time-scoped metadata and domain connectors mattered more than swapping models.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:02:20 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=296s">watch the Korean won demo</a></p>
+    </section>
+
+    <section data-chapter="humans-read-300-words-a-minute-agents-read" data-visual="v3" data-caption="300 wpm humans vs. 30k wpm agents">
+      <div class="chapter">Chapter 3</div>
+      <h2>Humans read 300 words a minute; agents read 30,000</h2>
+      <p>Once Vault held the corpus, Aaron Linsky's product engineering team ran into a structural tension: they were building one search engine for two opposite kinds of readers. A fast human investor reads roughly 300 words per minute and tolerates very little noise. Across 300 internal users, human traffic amounts to roughly 100 queries an hour, and analysts spend minutes reading each document they open.</p>
+      <p>Agents sit at the other extreme. They read roughly 30,000 words per minute, a hundred times faster than people, and care far more about recall than top-ten tidiness because they will attend to whatever context they are handed. Their query load also jumps by orders of magnitude, sustaining 100-plus queries per second and spiking into the thousands during multi-agent storms. Serving both audiences from a single system meant solving five dimensions at once: recall, precision, filtering, entitlements, and scale.</p>
+      <blockquote>“They scale super quickly, and they come and they consume about a hundred times faster, thirty thousand words per minute.”<span class="cite">00:05:00</span></blockquote>
+      <ul class="key-points">
+        <li>Human analysts read around 300 words per minute at 100 queries per hour and demand high top-ten precision.</li>
+        <li>Agents consume 30,000 words per minute, prioritize recall, and burst past 1,000 queries per second in agent storms.</li>
+        <li>One platform had to satisfy five dimensions together: recall, precision, filtering, entitlements, and scale.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:00, 00:06:23 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=432s">watch the human vs. agent comparison</a></p>
+    </section>
+
+    <section data-chapter="two-hundred-hand-labeled-queries-and-clust" data-visual="v4" data-caption="Precision@10 and native filtering">
+      <div class="chapter">Chapter 4</div>
+      <h2>Two hundred hand-labeled queries and cluster-local vector filtering</h2>
+      <p>After data and legal teams populated the repository, the top user complaint was blunt: Vault search was bad. Rather than tuning blindly, Linsky's team spent less than a week building a ground-truth benchmark by hand, pairing roughly 200 real investment questions with their best documents, including decoy documents that looked topical on the surface but said little. Baseline precision at ten came back at 60%, confirming the complaints; five iterations culminating in agentic search pushed precision at ten to roughly 95%.</p>
+      <p>Production traces then exposed a performance wall: almost every real query carried a metadata condition such as a date window, source, or asset class. Standard vector post-filtering searched the vector index first and filtered metadata second, which stayed fast at the cost of weak recall whenever globally similar chunks missed the narrow filter. Pre-filtering flipped the order for strong recall, but scoring distances across every matching document bogged down under load. Bridgewater moved to turbopuffer's cluster-local native filtering, which inspects only the nearest vector clusters for filter matches and scores just those candidates, combining post-filter speed with near pre-filter recall at agent-storm scale.</p>
+      <blockquote>“The key metric we were looking at is precision at ten, which is of the top ten results, how many are the right documents, and we were hitting about sixty percent.”<span class="cite">00:06:23</span></blockquote>
+      <ul class="key-points">
+        <li>Hand-labeling ~200 investment queries in under a week exposed a 60% precision-at-ten baseline and guided iterations up to ~95%.</li>
+        <li>Nearly every production query filters by date, source, or asset, breaking naive pre-filter and post-filter vector trade-offs.</li>
+        <li>Cluster-local native filtering in turbopuffer kept post-filter speed and near pre-filter recall across thousand-QPS agent bursts.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:23 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=500s">watch the benchmark and filtering section</a></p>
+    </section>
+
+    <section data-chapter="migrate-broker-email-habits-first-then-han" data-visual="v5" data-caption="Broker email to saved collections">
+      <div class="chapter">Chapter 5</div>
+      <h2>Migrate broker-email habits first, then hand feeds to agents</h2>
+      <p>Even after Vault cleared all five technical bars, researchers still were not opening it every morning. Analysts lived in email, where broker notes arrived on subscribed distribution lists and inbox rules routed messages into folders so nothing got missed. Dropping a standalone search app on their desks could not compete with a workflow they already trusted.</p>
+      <p>Linsky's team rebuilt those exact mechanics inside Vault first: incoming broker research became searchable, distribution lists became saved searches, and email folders became saved collections. Once daily reading moved into that new home, researchers adopted capabilities email could never support: querying across every dataset at once, following dynamic topic feeds, and handing curated collections directly to agents. From there, demand pulled Vault into every surface the firm used: browser, chat, phone app, Slack, IDEs, Python APIs, a coding-agent CLI, and an MCP server.</p>
+      <blockquote>“So that&#x27;s exactly what we did: everything searchable, the subscriber lists became saved searches, and folders became saved collections. It&#x27;s the same habits, just a new home.”<span class="cite">00:09:34</span></blockquote>
+      <ul class="key-points">
+        <li>Strong search metrics alone did not win morning adoption while researchers still relied on broker email rules.</li>
+        <li>Mapping email distribution lists to saved searches and inbox folders to saved collections migrated daily habits intact.</li>
+        <li>Once researchers worked inside Vault, they handed feeds and collections to agents across chat, mobile, Slack, CLI, and MCP.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:34 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=752s">watch the email habit migration</a></p>
+    </section>
+
+    <section data-chapter="proactive-workbenches-write-human-agent-sy" data-visual="v6" data-caption="Workbench and compound memory">
+      <div class="chapter">Chapter 6</div>
+      <h2>Proactive workbenches write human-agent synthesis back into memory</h2>
+      <p>With human and agent access unified, Bridgewater layered specialized analytical systems onto Vault: Pocket Analyst compresses hours of research into minutes and a few dollars, Researcher stretches that investigation loop across days or weeks, and Forecaster plus new signal pipelines turn unstructured text into macro predictions and tradable trajectories. Yet Green argues the larger shift is moving agents from reactive question-answering to proactive attention steering through an always-on Investor Workbench.</p>
+      <p>On the workbench, background agents track the themes an investor cares about and surface topic cards when dynamics shift, such as the AI-and-currencies question from earlier in the talk. Each card pairs a concise synthesis with the exact source passages behind it so an investor can audit the claim immediately, dismiss it, or open deeper Pocket Analyst runs. When investor and agent investigate a question together, their conclusions are automatically written back into Vault, feeding compound institutional memory for the next turn of the research loop.</p>
+      <blockquote>“And when they dig deeper alongside the agent to look at the dynamic driving this question, the learnings are automatically captured — the results of their collaboration are automatically captured back in the model.”<span class="cite">00:12:12</span></blockquote>
+      <ul class="key-points">
+        <li>Pocket Analyst, Researcher, and Forecaster turn Vault's corpus into rapid research runs, multi-week investigations, and macro signals.</li>
+        <li>The always-on Investor Workbench proposes topic cards backed by raw source evidence so analysts can verify before digging in.</li>
+        <li>Human-agent conclusions write back into Vault automatically, compounding what the firm remembers on the next cycle.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:07, 00:12:12 · <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI&t=896s">watch the Investor Workbench walkthrough</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=CLve4Nx_RwI">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

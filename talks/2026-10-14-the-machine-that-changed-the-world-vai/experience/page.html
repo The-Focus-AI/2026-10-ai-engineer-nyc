@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Machine that Changed the World, vAI · Tariq Shaukat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Simons Room</div>
+  <h1>Code creation is up 2,450%. Releases are up 30%. The factory is missing its quality line.</h1>
+  <p class="dek">Tariq Shaukat opens with Toyota and Lexus in the 1980s, when automakers learned that building for raw volume and fixing defects at the end of the line could not compete with engineering quality into every station. Asynchronous coding agents have recreated that old factory problem in software: code is suddenly abundant, human reviewers rubber-stamp errors, standalone LLM judges flip their own verdicts, and shipping confidence collapses unless intent, in-loop guide rails, deterministic verification, and audit evidence all hold at once.</p>
+  <div class="talk-meta">Tariq Shaukat, Sonar · 17 min talk · six chapters · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="modern-software-development-has.jpg" alt="Slide titled &#x27;Modern software development has embraced these principles&#x27;, listing Agile, Kanban, Error budgets, and Continuous Integration alongside Toyota quality manufacturing principles.">
+        <figcaption>Slide from the official talk recording: Toyota production habits inside modern software engineering</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="companies-are-increasingly-building.jpg" alt="Bar chart slide titled &#x27;Companies are increasingly building agentic software factories to automate and scale&#x27;: 5% today, 34% in a year, and 39% in financial services in a year (Sonar State of Code Developer Survey 2027, n=1,026).">
+        <figcaption>Slide from the official talk recording: enterprise plans for agentic software factories (Sonar 2027 survey preview)</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="code-creation-is-abundant.jpg" alt="Funnel chart slide titled &#x27;Code creation is abundant, but confidence is scarce&#x27; from NBER Working Paper 35275: Lines of code +2450%, Files touched +400%, Commits +240%, Pull requests +170%, Repos touched +80%, Releases +30%.">
+        <figcaption>Slide from the official talk recording: +2,450% lines of code narrowing to +30% releases (NBER WP 35275)</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v4">
+        <img src="ask-ai-judge-twice.jpg" alt="Slide titled &#x27;Ask the AI judge twice, get a different answer&#x27; showing two research findings: 7-17% of verdicts change across identical replications (Kumar et al.) and 7-34% of verdicts change when faced with one scripted challenge (Zhao et al., Meta).">
+        <figcaption>Slide from the official talk recording: LLM judge verdict instability across replications and simple challenges</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="building-software-factories-that.jpg" alt="Pipeline diagram titled &#x27;Building software factories that deliver with confidence&#x27; mapping stages from Initiate Coding Agent, Generate, and In-loop Verification through PR Fix Agent, Code Review, Quality Gate, Test, and Build and Deploy across lanes for Intent, Guiderails, Verification, and Evidence.">
+        <figcaption>Slide from the official talk recording: software factory pipeline across Intent, Guiderails, Verification, and Evidence</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="drives-significantly-better-agentic.jpg" alt="Survey results slide reading &#x27;drives significantly better agentic coding outcomes&#x27;: SonarQube users are more likely than non-users to report a very positive AI coding impact on code security (81%), time to market (34%), and outage frequency (76%).">
+        <figcaption>Slide from the official talk recording: security, delivery speed, and outage outcomes with independent verification</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="what-software-already-borrowed-from-toyota" data-visual="v1" data-caption="Toyota&#x27;s rules in software">
+      <div class="chapter">Chapter 1</div>
+      <h2>What software already borrowed from Toyota</h2>
+      <p>In the 1980s, plenty of good cars rolled off assembly lines with uneven body panels and wide seam gaps because factories ran on a build-then-fix volume mindset. Lexus made the opposite case with a simple television commercial: a ball bearing rolling smoothly across hood seams that fit the first time, backed by a factory engineered around zero rework.</p>
+      <p>Shaukat lists five rules from that shift: put quality ahead of volume, fix systems rather than isolated symptoms, design parts so they can actually be manufactured together, solve defects where they happen instead of at the end, and let any worker stop the line. Modern software engineering absorbed all five under familiar names: Agile, Kanban, SRE error budgets, and continuous integration. Those habits worked well as long as humans wrote the code at human speed.</p>
+      <div class="stills"><figure class="still"><img src="sonar-logo-machine-that.jpg" alt="Title slide with the Sonar logo reading &#x27;The Machine That Changed the World, vAI&#x27; by Tariq Shaukat, CEO at Sonar."></figure></div>
+      <blockquote>“First is you prioritize quality instead of volume. The second is that you fix the system, not just individual symptoms that you see.”<span class="cite">00:00:06</span></blockquote>
+      <ul class="key-points">
+        <li>1980s car plants chased volume and patched defects at the end; Toyota engineered quality into the line itself.</li>
+        <li>Stopping the line early and fixing systemic causes became software's Agile, Kanban, error budgets, and CI.</li>
+        <li>Those practices assumed code creation was the scarce, human-paced step.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:06 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=6s">watch the Toyota production opening</a></p>
+    </section>
+
+    <section data-chapter="code-volume-exploded-and-teams-want-agenti" data-visual="v2" data-caption="2,450% more code &amp; factory plans">
+      <div class="chapter">Chapter 2</div>
+      <h2>Code volume exploded, and teams want agentic factories next</h2>
+      <p>Asynchronous coding agents broke that assumption. Citing a recent study on his slide (NBER Working Paper 35275), Shaukat points to a 2,450% surge in lines of code written and a 240% jump in commits after teams introduced async agents into development. With raw code cheap and abundant, enterprises are moving to automate the whole pipeline: in an early preview of Sonar's 2027 State of Code Developer Survey across 1,026 respondents, 5% report running agentic software factories today, rising to 34% within a year and 39% in financial services.</p>
+      <p>Abundance cuts both ways. The same capability that accelerates feature code also accelerates vulnerability discovery and exploit generation while critical CVEs climb. Shaukat cites an October 10, 2026 note by Satya Nadella (transcribed as "Sachin Adela") on model insider risk, arguing that enterprises need containment and governance grounded in deterministic system design, human controls, and reliable operating procedures.</p>
+      <blockquote>“You have an explosion of the number of lines of code written of 2,450 percent.”<span class="cite">00:02:53</span></blockquote>
+      <ul class="key-points">
+        <li>Async coding agents drove +2,450% more lines of code and +240% more commits in the cited NBER study.</li>
+        <li>Surveyed adoption of agentic software factories is projected to jump from 5% today to 34% in a year (39% in finance).</li>
+        <li>Rising exploit speed requires deterministic containment and governance built into the factory.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:02:53 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=173s">watch the code abundance &amp; factory stats</a></p>
+    </section>
+
+    <section data-chapter="human-review-surrenders-and-large-codebase" data-visual="v3" data-caption="Cognitive surrender &amp; 30x token sprawl">
+      <div class="chapter">Chapter 3</div>
+      <h2>Human review surrenders, and large codebases burn 30x tokens</h2>
+      <p>When Shaukat asks enterprises about their AI governance plan, most still answer "human in the loop". The funnel chart on his slide shows where that stalls: +2,450% lines of code and +240% commits narrow to +170% pull requests and just +30% more releases. Worse than the queue is what Shaukat calls cognitive surrender: in a recent study, human reviewers agreed with AI when it was right 93% of the time, and agreed with AI when it was wrong four times out of five. Speeding up human sign-off does not fix a review step that waves 80% of bad output through.</p>
+      <p>Agents hit a second wall as repositories grow. On a code-translation benchmark shown on his slide, pass rates dropped from 91% on codebases under 10,000 lines to 67% between 10,000 and 50,000 lines, then collapsed to 15% past 50,000 lines. A separate study found a 30x variance in token spend across runs of the same task on complex repositories because agents burn context figuring out where to start, like trying to reach New York from White Plains (transcribed as "white planes") on one run and from Albuquerque on the next.</p>
+      <blockquote>“they agree with AI when AI is right, 93 percent of the time, and four out of five times, they agree with it when the AI is wrong.”<span class="cite">00:05:15</span></blockquote>
+      <ul class="key-points">
+        <li>A 2,450% jump in lines of code yielded only 30% more releases because review and confidence bottleneck delivery.</li>
+        <li>Under cognitive surrender, humans accept incorrect AI output 80% of the time.</li>
+        <li>Above 50,000 lines of code, translation pass rates fell to 15% and same-task token consumption varied by 30x.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:15 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=315s">watch cognitive surrender &amp; codebase scaling</a></p>
+    </section>
+
+    <section data-chapter="multi-step-errors-compound-and-llm-judges-" data-visual="v4" data-caption="Compounding errors &amp; flipping judges">
+      <div class="chapter">Chapter 4</div>
+      <h2>Multi-step errors compound, and LLM judges flip their verdicts</h2>
+      <p>Long-running agent workflows add two statistical traps. First, step errors multiply. Shaukat points to METR's task-horizon chart (transcribed as "meter"), where an early Claude Mythos Preview (transcribed as "Cloud Windows Preview") completes tasks that take a human 16 hours, but only at a 50% success bar. Raise required accuracy to 80% and the horizon flattens sharply: even at 95% accuracy per step, compounding across 20 steps drops end-to-end accuracy to roughly 36%.</p>
+      <p>Second, asking another LLM to grade the output does not restore determinism. A PayPal AI Research paper cited on the slide (Kumar et al.) found that 7% to 17% of LLM judge verdicts flip across identical replications of the exact same prompt. A Meta study alongside it (Zhao et al.) showed that challenging the judge with a simple "are you sure?" flips 7% to 34% of verdicts depending on the model. With exploit windows shrinking toward zero, neither rubber-stamping humans nor reward-seeking LLM judges can serve as the sole gate.</p>
+      <blockquote>“depending on the model and the situation, between seven and seventeen percent of verdicts change across what they call identical replications.”<span class="cite">00:08:01</span></blockquote>
+      <ul class="key-points">
+        <li>At 95% per-step accuracy, a 20-step agent workflow succeeds only about 36% of the time.</li>
+        <li>Standalone LLM judges change 7–17% of verdicts across identical runs and 7–34% when asked "are you sure?"</li>
+        <li>Near-zero time to exploit forces defect prevention inside the build loop rather than post-ship response.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:08:01 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=481s">watch compounding errors &amp; LLM judge variance</a></p>
+    </section>
+
+    <section data-chapter="the-multiplicative-formula-intent-guide-ra" data-visual="v5" data-caption="Intent × Guiderails × Verification × Evidence">
+      <div class="chapter">Chapter 5</div>
+      <h2>The multiplicative formula: intent, guide rails, verification, evidence</h2>
+      <p>Sonar frames enterprise factory design as a product of four terms: <code>Code Confidence = Intent × Guiderails × Verification × Evidence</code>. Shaukat multiplies them deliberately: if intent is vague, if in-loop guidance is absent, if verification is skipped, or if audit proof is missing, that single zero wipes out confidence in the whole release.</p>
+      <p>He draws a sharp distinction between hard guardrails and "guide rails". Guardrails only catch a car leaving the highway; guide rails nudge an agent along the right lane inside the coding loop by supplying explicit standards and a structural map of the codebase. Giving agents that structural map and in-loop checking through Sonar Vortex cut token spend by 36% on large, long-running tasks and reduced issues in committed code by 92% before pull-request review even started.</p>
+      <blockquote>“And we multiply these together because we&#x27;ve seen a number of situations where one of these elements is missing, and if it&#x27;s zero, the confidence goes to zero.”<span class="cite">00:10:56</span></blockquote>
+      <ul class="key-points">
+        <li>Confidence multiplies four pillars: clear intent, in-loop guide rails, independent verification, and auditable evidence.</li>
+        <li>Missing any one pillar reduces enterprise shipping confidence to zero.</li>
+        <li>Feeding structural maps and in-loop checks via Sonar Vortex cut token costs 36% and commit-time issues 92%.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:10:56 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=656s">watch the Code Confidence formula</a></p>
+    </section>
+
+    <section data-chapter="deterministic-cpus-plus-generative-gpus-ba" data-visual="v6" data-caption="Hybrid verification &amp; audit proof">
+      <div class="chapter">Chapter 6</div>
+      <h2>Deterministic CPUs plus generative GPUs, backed by audit proof</h2>
+      <p>Once code leaves the inner agent loop, independent verification has to match the check method to the defect class: run deterministic CPU analysis wherever exact rules exist, and reserve GPU generative checks for semantic judgment. On Shaukat's verification diagram, deterministic analysis owns syntax, dependency SCA, control and data flow, taint tracking, architecture, and secrets, while agentic verification checks intent alignment, business logic, emergent anomalies, and performance.</p>
+      <p>In Sonar's survey of more than 1,000 developers, teams pairing AI coding with SonarQube were 81% more likely than non-users to report a very positive impact on code security, 34% more likely on time to market, and 76% more likely on outage frequency. Every quality gate then records timestamped evidence of the intent, standards applied, checks executed, and pass/fail result to satisfy internal IT general controls, SOC 2, DORA, or automotive MISRA (transcribed as "Mister"). Code is abundant now; engineered, auditable confidence is the product a software factory actually has to ship.</p>
+      <blockquote>“So we look at deterministic mixture of methods, and then you add in a generative mixture of methods, and it comes up with what we think is the gold standard of verification.”<span class="cite">00:13:29</span></blockquote>
+      <ul class="key-points">
+        <li>Combine deterministic CPU static analysis (taint, data flow, SCA, secrets) with targeted GPU checks (intent, business logic).</li>
+        <li>Surveyed SonarQube users were 81% more likely to report strong security gains and 76% on outage reduction.</li>
+        <li>Timestamped quality-gate records turn verification runs into compliance evidence for SOC 2, ITGC, DORA, and MISRA.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:13:29 · <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04&t=809s">watch hybrid verification &amp; audit evidence</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with stage slides from the <a href="https://www.youtube.com/watch?v=LQW_Wvqhp04">official recording</a>. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accelerating Frontier AI in Financial Services · Belinda Neal &amp; Keon Shahab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+  .watch { font: .82rem/1.5 var(--mono); color: var(--muted); margin-top: .9rem; }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>The model is no longer the bottleneck in finance. Hand-built agents are.</h1>
+  <p class="dek">Belinda Neal and Keon Shahab from Anthropic argued that frontier model capability, cost efficiency, and prompt-injection defense have outrun how fast financial institutions deploy them. Moving from one-off pilots to firm-wide production takes a reusable five-layer foundation built once and shared across business and engineering teams.</p>
+  <div class="talk-meta">Belinda Neal, Anthropic &amp; Keon Shahab, Anthropic · 19 min talk · five chapters · <a href="../links.md">Links and further reading</a></div>
+  
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="taking-frontier-to-industry.jpg" alt="Slide photographed in the room titled &#x27;Taking the frontier to the industry&#x27; showing three cards: 1. The Frontier of Intelligence — Applying intelligence (What the best model can do today. An alpha opportunity), 2. The Frontier of Adoption — Scaling agents (Building the agent foundation and the operating model. A scale opportunity), and 3. Applied to Financial Services — Compounding impact (The same foundation, built once for all of wealth. An industry opportunity).">
+        <figcaption>Slide photographed in the room, perspective-corrected: three frontiers across intelligence, firm-wide scale, and industry-level wealth infrastructure.</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="five-layers-agent-foundation.jpg" alt="Slide photographed in the room titled &#x27;The agent foundation: five layers, built once&#x27;. At the base is &#x27;The model: Can it do the work? Most teams start here.&#x27; Above it under &#x27;What it can do&#x27; are Layer 1 Connectors (&#x27;Can it reach your systems and data?&#x27;) and Layer 2 Skills (&#x27;Does it know your business and your processes?&#x27;). Above that under &#x27;What lets you trust it&#x27; are Layer 3 Identity and permissions (&#x27;Who is it acting as?&#x27;), Layer 4 Sandbox and approval (&#x27;Who signs off before it acts?&#x27;), and Layer 5 Traces and evals (&#x27;How do you know it still works?&#x27;).">
+        <figcaption>Slide photographed in the room, perspective-corrected: the five-layer agent foundation split into capability layers (1–2) and trust layers (3–5).</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v3">
+        <div class="diagram-label">TRADE-BREAK AGENT (LAYERS 1–3)</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trade-break investigation agent showing MCP connectors, plain-text SME skills, and ops-analyst permission boundaries"><defs><marker id="arrGa3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#f4cf72"/></marker><marker id="arrSa3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#a9d18f"/></marker></defs><rect width="640" height="360" rx="8" fill="#101712"/><rect x="28" y="36" width="176" height="124" rx="6" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.5"/><text x="44" y="62" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 2: SME SKILLS</text><text x="44" y="88" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Trade-Break Playbook</text><text x="44" y="110" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Plain-text rules</text><text x="44" y="128" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Versioned in Git</text><text x="44" y="146" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="10">Updated frequently</text><line x1="204" y1="98" x2="236" y2="98" stroke="#f4cf72" stroke-width="2" marker-end="url(#arrGa3)"/><rect x="242" y="36" width="176" height="254" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.8"/><text x="258" y="62" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 3: IDENTITY</text><text x="258" y="88" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">trade_break_agent</text><text x="258" y="110" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">role: ops_analyst</text><line x1="258" y1="126" x2="402" y2="126" stroke="#1e2c22" stroke-width="1.5"/><text x="258" y="150" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">MCP Gateway Policy:</text><text x="258" y="176" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">ALLOW read orders</text><text x="258" y="198" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11">ALLOW read market</text><text x="258" y="224" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11">DENY  read CRM</text><text x="258" y="246" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11">PROPOSE booking only</text><text x="258" y="270" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">(No direct writes)</text><line x1="418" y1="82" x2="454" y2="82" stroke="#a9d18f" stroke-width="2" marker-end="url(#arrSa3)"/><line x1="418" y1="168" x2="454" y2="168" stroke="#f4cf72" stroke-width="1.8" stroke-dasharray="4 4"/><line x1="418" y1="252" x2="454" y2="252" stroke="#f4cf72" stroke-width="2" marker-end="url(#arrGa3)"/><rect x="460" y="36" width="152" height="78" rx="6" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.5"/><text x="474" y="62" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="700">ORDER &amp; MARKET</text><text x="474" y="84" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Read mismatched</text><text x="474" y="100" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">trade legs via MCP</text><rect x="460" y="130" width="152" height="68" rx="6" fill="#1e2c22" stroke="#b9bcae" stroke-width="1.2" stroke-dasharray="4 4"/><text x="474" y="156" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11" font-weight="700">CRM DATABASE</text><text x="474" y="178" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11">ACCESS DENIED</text><rect x="460" y="214" width="152" height="76" rx="6" fill="#1e2c22" stroke="#f4cf72" stroke-width="1.5"/><text x="474" y="240" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">BOOKING LEDGER</text><text x="474" y="262" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Draft amendment</text><text x="474" y="278" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Awaits Layer 4</text><text x="28" y="328" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">Layer 1 MCP unifies system access; Layer 3 enforces least-privilege read/write scope.</text></svg>
+        <figcaption>A trade-break investigator combines MCP read connectors and plain-text SME skills with an ops-analyst identity that blocks CRM access and direct writes.</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v4">
+        <div class="diagram-label">HOOKS &amp; BUSINESS–ENGINEERING LOOP</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Layer 4 sandboxed approval hook and Layer 5 business-to-engineering regression evaluation loop"><defs><marker id="arrGa4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#f4cf72"/></marker><marker id="arrSa4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#a9d18f"/></marker><marker id="arrBa4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#8fb8d8"/></marker></defs><rect width="640" height="360" rx="8" fill="#101712"/><rect x="28" y="30" width="584" height="46" rx="6" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.4"/><text x="44" y="58" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">4 DOORS:</text><text x="122" y="58" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="11">Coworker UI  ·  Claude Code  ·  Managed Agents  ·  Agent SDK</text><rect x="28" y="98" width="264" height="96" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.8"/><text x="44" y="124" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 4: SANDBOX &amp; HOOKS</text><text x="44" y="148" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">Agent proposes booking change</text><text x="44" y="170" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="12">Deterministic hook blocks write</text><line x1="292" y1="146" x2="342" y2="146" stroke="#f4cf72" stroke-width="2" marker-end="url(#arrGa4)"/><rect x="348" y="98" width="264" height="96" rx="6" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.6"/><text x="364" y="124" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="700">BUSINESS SME IN THE LOOP</text><text x="364" y="148" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">Approves booking amendment</text><text x="364" y="170" fill="#8fb8d8" font-family="system-ui, sans-serif" font-size="12">Or flags process adjustment</text><line x1="480" y1="194" x2="480" y2="222" stroke="#8fb8d8" stroke-width="2" marker-end="url(#arrBa4)"/><rect x="348" y="228" width="264" height="86" rx="6" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.6"/><text x="364" y="254" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 5: TRACES &amp; EVALS</text><text x="364" y="278" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">Engineering tests skill/model diff</text><text x="364" y="296" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">against SME baseline benchmark</text><line x1="348" y1="271" x2="298" y2="271" stroke="#a9d18f" stroke-width="2" marker-end="url(#arrSa4)"/><rect x="28" y="228" width="264" height="86" rx="6" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.6"/><text x="44" y="254" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="700">VERSIONED SKILL RELEASE</text><text x="44" y="278" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="12">No regression → ship updated skill</text><text x="44" y="296" fill="#b9bcae" font-family="system-ui, sans-serif" font-size="11">Live agent improves next cycle</text><line x1="160" y1="228" x2="160" y2="200" stroke="#a9d18f" stroke-width="2" marker-end="url(#arrSa4)"/><text x="28" y="340" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">Operating model: SMEs refine rules in production; engineering gates every change with evals.</text></svg>
+        <figcaption>Deterministic approval hooks gate every booking write, while SME corrections flow through engineering&#x27;s eval suite back into versioned skills.</figcaption>
+      </figure>
+      <figure class="talk-visual diagram-card" data-visual="v5">
+        <div class="diagram-label">INDUSTRY COORDINATION IN WEALTH</div>
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Claude for Financial Advisors architecture combining 25 connectors, 8 open-source GitHub skills, and Layer 4 advisor approval"><defs><marker id="arrGa5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#f4cf72"/></marker></defs><rect width="640" height="360" rx="8" fill="#101712"/><rect x="28" y="34" width="584" height="64" rx="6" fill="#24352a" stroke="#f4cf72" stroke-width="1.8"/><text x="44" y="58" fill="#f4cf72" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 4 APPROVAL GATE (ADVISOR SIGNS OFF ON EVERY OUTPUT)</text><text x="44" y="80" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">Nothing saved to CRM or sent to a client without advisor approval · Reclaims non-client 80% time</text><line x1="320" y1="134" x2="320" y2="104" stroke="#f4cf72" stroke-width="2" marker-end="url(#arrGa5)"/><rect x="28" y="136" width="584" height="78" rx="6" fill="#1e2c22" stroke="#a9d18f" stroke-width="1.6"/><text x="44" y="160" fill="#a9d18f" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 2: OPEN-SOURCE GITHUB PLUGIN (8 ADVISOR WORKFLOW SKILLS)</text><text x="44" y="184" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">• Pre-meeting brief: assembles full family plan across custody, planning &amp; market systems</text><text x="44" y="202" fill="#f2f1e8" font-family="system-ui, sans-serif" font-size="13">• Post-meeting follow-up: structures notes into CRM entries &amp; next-step drafts</text><line x1="320" y1="248" x2="320" y2="220" stroke="#f4cf72" stroke-width="2" marker-end="url(#arrGa5)"/><rect x="28" y="250" width="584" height="68" rx="6" fill="#1e2c22" stroke="#8fb8d8" stroke-width="1.6"/><text x="44" y="274" fill="#8fb8d8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">LAYER 1: 25 PRE-BUILT INDUSTRY CONNECTORS (INTEGRATE ONCE)</text><text x="44" y="298" fill="#f2f1e8" font-family="ui-monospace, monospace" font-size="12">Custody  ·  Portfolio Planning  ·  Market Data  ·  CRM (Schwab, Salesforce &amp; 23 more)</text><text x="28" y="342" fill="#b9bcae" font-family="ui-monospace, monospace" font-size="11">Industry-level compounding: shared connectors + customizable open-source skills.</text></svg>
+        <figcaption>Built once across wealth management: 25 custody and CRM connectors plus 8 open-source GitHub workflow skills, gated on mandatory advisor approval.</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="frontier-models-outpace-enterprise-adoptio" data-visual="v1" data-caption="Capability outpaces adoption">
+      <div class="chapter">Chapter 1</div>
+      <h2>Frontier models outpace enterprise adoption</h2>
+      <p>Belinda Neal, who spent nineteen years at Goldman Sachs before leading Financial Services at Anthropic, opened alongside applied AI architect Keon Shahab by splitting the industry's opportunity into three parts: applying frontier intelligence for alpha, scaling agents inside the firm, and compounding shared foundations across an industry vertical.</p>
+      <p>Model capability, Neal argued, is now ahead of organizational diffusion, doubling roughly every four months. Autonomous task horizons stretched from minutes in 2023 to more than sixteen hours, <code>Opus 5.5</code> lowered cost per task by 40 percent compared with Opus 5, and Anthropic's newest frontier release held successful prompt-injection attacks to 1 percent versus 9 to 53 percent across peer frontier models. Citing the latest Evident AI report, she noted that banks already sit 26 percent ahead on AI maturity scores, pointing to a $120 million auto-loan fraud reduction at one bank and research report drafts cut from 45 minutes to 15. Yet after moving from 2023 chatbots to 2024 knowledge pilots to production agents today, most engineering rooms still wire each agent one by one.</p>
+      <blockquote>“And our opportunity here is scale — is not the model, our opportunity here is scale, is building the foundation for agents that can go one to many.”<span class="cite">00:01:32</span></blockquote>
+      <ul class="key-points">
+        <li>Autonomous run length (16+ hours), 40% lower task cost in <code>Opus 5.5</code>, and 1% prompt-injection success mean the model is no longer the limiting factor.</li>
+        <li>Banks already report concrete returns, including $120M in prevented auto-loan fraud and 3x faster research drafting.</li>
+        <li>Building agents one by one by hand caps how far those gains spread across an institution.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:11, 00:01:32</p>
+    </section>
+
+    <section data-chapter="five-layers-built-once-instead-of-wiring-e" data-visual="v2" data-caption="Five layers, built once">
+      <div class="chapter">Chapter 2</div>
+      <h2>Five layers built once, instead of wiring every agent by hand</h2>
+      <p>Shahab traced three phases across financial firms: proofs of concept last year, hand-crafted production agents this year, and fleet-level scale next year. Manually wiring five agents to five internal systems already leaves a team maintaining twenty-five point-to-point integrations. Standardizing system access behind a single secure Model Context Protocol (MCP) layer replaces that integration matrix with reusable plumbing.</p>
+      <p>Above the base model, Anthropic's architecture slide organizes the reusable stack into five numbered layers split across two questions. <b>What it can do</b> covers Layer 1 (<code>Connectors</code> to reach internal systems and data) and Layer 2 (<code>Skills</code> to encode business rules and workflows). <b>What lets you trust it</b> covers Layer 3 (<code>Identity and permissions</code> defining who the agent acts as), Layer 4 (<code>Sandbox and approval</code> governing who signs off before action), and Layer 5 (<code>Traces and evals</code> proving the agent still works as models or rules change).</p>
+      <blockquote>“as you think about scaling up your agents into new specialized, various tasks, you&#x27;ll want to have those agents work on one secure connectivity layer, which is MCP.”<span class="cite">00:07:57</span></blockquote>
+      <ul class="key-points">
+        <li>Hand-wiring five agents to five systems creates twenty-five bespoke integrations; MCP collapses them into one connectivity layer.</li>
+        <li>Layers 1 and 2 (<code>Connectors</code> and <code>Skills</code>) turn a general model into a domain-capable specialist.</li>
+        <li>Layers 3, 4, and 5 (<code>Identity</code>, <code>Sandbox and approval</code>, and <code>Traces and evals</code>) supply the governance regulated firms require.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:06:12, 00:07:57</p>
+    </section>
+
+    <section data-chapter="plain-text-sme-skills-and-scoped-identity-" data-visual="v3" data-caption="Skills &amp; scoped identity">
+      <div class="chapter">Chapter 3</div>
+      <h2>Plain-text SME skills and scoped identity on a trade break</h2>
+      <p>To show how the layers work together in production, Shahab walked through a trade-break investigation agent tasked with reconciling two mismatched records of the same trade. Rather than hard-coding investigation rules inside software releases, operations subject-matter experts write the step-by-step business rules in plain-text skills that engineering versions, reviews, and updates like living code.</p>
+      <p>At Layer 3, the platform assigns the agent its own explicit identity as <code>trade break investigator</code> under an <code>ops analyst</code> permission role. That role grants read access to order data and market data, intentionally denies queries to the CRM database so the agent cannot overreach into unrelated client records, and withholds direct write privileges on booking records so the agent can only draft proposed amendments.</p>
+      <blockquote>“this is the business context that an SME provides, and we think about skills as living, breathing, versioned code, essentially, even though they&#x27;re just plain text. They&#x27;re meant to be dynamic. They&#x27;re meant to be updated frequently.”<span class="cite">00:07:57</span></blockquote>
+      <ul class="key-points">
+        <li>Domain procedures live in plain-text skills authored with subject-matter experts and versioned like code.</li>
+        <li>Each agent runs under a named role identity (<code>ops analyst</code>) rather than broad service credentials.</li>
+        <li>Least-privilege boundaries deny CRM reads and block direct booking writes at the infrastructure layer.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:57, 00:09:35</p>
+    </section>
+
+    <section data-chapter="approval-hooks-and-the-tight-loop-between-" data-visual="v4" data-caption="Approval hooks &amp; eval loop">
+      <div class="chapter">Chapter 4</div>
+      <h2>Approval hooks and the tight loop between business and engineering</h2>
+      <p>Layer 4 governs execution boundaries. Wrapped in deterministic guardrails called hooks inside a sandboxed workflow, the trade-break agent investigates the discrepancy and proposes a booking amendment, then pauses until a human SME reviews and signs off before any record is modified. Layer 5 closes the reliability loop: SMEs help curate baseline test suites so every model upgrade or skill revision is benchmarked for regressions before deployment.</p>
+      <p>Once built, the same five-layer foundation serves four access points across the firm: coworker interfaces for business staff, coding environments for engineers, and custom internal UIs powered by managed agents or the Agent SDK. In practice, Shahab noted, that shared stack pulls business and engineering into a continuous operating loop: operations specialists work directly with the live agent, flag corrections, and propose adjustments that engineering tests against the eval baseline and ships back as updated skills.</p>
+      <blockquote>“Once they approve, then that amendment will be made, and the change will be applied. Guardrails, deterministic guardrails, called hooks around your agent, so that it&#x27;s never overreaching beyond what you&#x27;d like it to do within its confines.”<span class="cite">00:09:35</span></blockquote>
+      <ul class="key-points">
+        <li>Deterministic hooks hold proposed booking amendments in a sandbox until a human specialist approves execution.</li>
+        <li>SME-defined eval baselines test whether model upgrades or skill edits improve accuracy or cause regressions.</li>
+        <li>Business users propose corrections directly from live usage, and engineering promotes validated changes into versioned skills.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:09:35, 00:12:25</p>
+    </section>
+
+    <section data-chapter="building-once-for-an-industry-claude-for-f" data-visual="v5" data-caption="Industry scale in wealth">
+      <div class="chapter">Chapter 5</div>
+      <h2>Building once for an industry: Claude for Financial Advisors</h2>
+      <p>Neal returned to show how the same five-layer blueprint compounds when built once across an entire sector rather than inside a single firm. Financial advisors spend roughly 20 percent of their working hours directly with clients while administrative prep and follow-up consume the rest.</p>
+      <p>Launched in September, Anthropic's wealth offering assembles Layer 1 connectors across twenty-five custody, portfolio-planning, market-data, and CRM platforms, including Schwab and Salesforce, so advisory firms integrate once rather than rebuilding identical pipes. On top of those connectors, Anthropic published an open-source GitHub plugin containing eight Layer 2 workflow skills that teams can customize, such as pulling a full family plan across systems into a single pre-meeting brief or turning meeting notes into structured CRM updates and follow-ups. Layer 4 holds throughout: nothing is saved to a system of record or sent to a client until the advisor approves it.</p>
+      <blockquote>“We built a plugin that is available on GitHub that builds eight skills and workflows that an advisor can take out of the box, use today, and implement tomorrow. Layer four approval, the advisor proves everything that comes out of Claude.”<span class="cite">00:15:33</span></blockquote>
+      <ul class="key-points">
+        <li>Advisors spend only about 20% of their time with clients; shared connectors and workflow skills target the remaining 80%.</li>
+        <li>Twenty-five pre-built custody, planning, data, and CRM connectors remove duplicated integration work across wealth firms.</li>
+        <li>Eight open-source GitHub skills handle multi-system briefs and CRM follow-ups while keeping mandatory advisor approval on every output.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:15:33</p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a> and <a href="../transcript.md">cleaned Qwen3-ASR transcript</a>, paired with perspective-corrected room photographs of the stage slides. Every quotation is verbatim from the transcript; full dossier on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

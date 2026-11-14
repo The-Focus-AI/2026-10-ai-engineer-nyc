@@ -1,73 +1,102 @@
 [
   {
-    "question": "Can an LLM judge be trusted to grade agent output?",
+    "question": "Can LLM-as-judge rubrics be trusted to grade production agent output?",
     "sides": [
       {
-        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:538673",
-        "stance": "Yes, once the evaluator has been evaluated until it agrees with human judgment on golden datasets."
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:7d5007",
+        "stance": "Yes, once evaluators are meta-evaluated against human-labeled golden datasets until judge and human verdicts align before deployment."
       },
       {
-        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:396:c4efd2",
-        "stance": "Yes, as short markdown rubrics with pass/fail thresholds applied to each conversation."
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:104:82ee7a",
+        "stance": "Yes, for post-merge conversation grading across efficiency, code quality, and test coverage rubrics that surface recurring harness bottlenecks."
       },
       {
-        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:c7c382",
-        "stance": "No: LLM verdicts change across identical replications and when challenged, so they are unreliable verifiers."
+        "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:535:230c1e",
+        "stance": "Only with cross-family judges and two-stage categorical buckets, because model families exhibit strong self-preference bias."
       },
       {
-        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:780190",
-        "stance": "No: LLM-as-judge scoring proved too noisy to rely on; redesign the agent so it can be evaluated by construction."
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:481:a20d93",
+        "stance": "No for standalone verification: LLM verdicts flip 7–17% across identical runs and up to 34% when challenged with 'are you sure?'"
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:978:66d67f",
+        "stance": "No when deterministic checks are achievable: LLM-judge noise rivaled the agent's own error rate, motivating architectural redesign around ground-truth checks."
       }
     ]
   },
   {
-    "question": "Should a human approve agent actions before they take effect?",
+    "question": "Do spatiotemporal world models learn control from passive video prediction alone, or do they require explicit action labels?",
     "sides": [
       {
-        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:372:36f132",
-        "stance": "Yes: agents propose actions with scoped identity and least privilege, and a human approves before anything changes."
+        "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:150:e27c33",
+        "stance": "Next-frame video prediction at scale internalizes geometry, gravity, occlusion, and object permanence directly from pixels to power interactive world simulators."
       },
       {
-        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:edc3e2",
-        "stance": "No: approving every action causes review fatigue; deterministic rules and classifiers handle routine calls and escalate only ambiguous ones."
-      },
-      {
-        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:a854b6",
-        "stance": "Only at one irreducible step: the human watches each feature video and understands the PR."
+        "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:1062:f5d648",
+        "stance": "Explicit controller action labels transfer far better to real-time control because subtle high-frequency inputs like rudder adjustments cannot be inferred from video frames alone."
       }
     ]
   },
   {
-    "question": "Should agent reliability live in the harness or be absorbed into the model?",
+    "question": "Should enterprises own open, model-swappable foundations or scale atop frontier lab platforms?",
     "sides": [
       {
-        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:0:68bd81",
-        "stance": "Newer models score about the same in any harness, so harness scaffolding no longer adds coding intelligence and the model absorbs it."
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:151:4efad3",
+        "stance": "Own open foundations: commoditizing token margins force frontier labs up into the enterprise agent layer and vertical markets to capture switching-cost stickiness."
       },
       {
-        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:be670f",
-        "stance": "Builders must encode opinionated process around the agent, because open-ended agents produce inconsistent results."
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:140:63798f",
+        "stance": "Go a layer below frontier APIs now: pairing a frontier orchestrator with a post-trained 35B open specialist beat the frontier on exact-pass accuracy at lower latency."
       },
       {
-        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:396:a4774a",
-        "stance": "In each new domain the harness has to re-add prompting and guardrails until the model masters those tasks."
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:92:f2fcee",
+        "stance": "Scale a shared foundation on frontier models: raw model capability and unit cost are no longer the bottleneck—organizational deployment from one-to-many is."
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:f9e36e",
+        "stance": "Weigh the Bitter Lesson carefully: unit token economics keep falling automatically as newer, friendlier frontier models ship."
       }
     ]
   },
   {
-    "question": "Should enterprises build on owned open foundations or on the frontier labs' stack?",
+    "question": "Where does human review belong once coding and workflow agents run autonomously?",
     "sides": [
       {
-        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:313:3f0544",
-        "stance": "Whatever platform roots a company's agentic processes hardens into its organization, so it should be an open foundation the company controls."
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:575:174d25",
+        "stance": "At mandatory mutation sign-off: financial agents operate with least-privilege identity and propose amendments that a human SME must approve before execution."
       },
       {
-        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:11:9b6376",
-        "stance": "Model capability is no longer the constraint; the opportunity is a reusable agent foundation built on frontier models."
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:992:dd249f",
+        "stance": "Only on genuinely ambiguous escalations: approving every action induces rubber-stamp fatigue, so deterministic fast paths and classifiers should handle routine calls."
       },
       {
-        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:f4a6e2",
-        "stance": "Going a layer below the frontier APIs pays now rather than waiting for the labs."
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:100:fa82db",
+        "stance": "At the behavioral proof gate: builders loop autonomously with reviewer agents, but a human product owner must watch each recorded feature video before merge."
+      },
+      {
+        "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:500:0c219f",
+        "stance": "Above line-by-line code reading: high-confidence automated merges rely on end-to-end, property-based, and visual verification rather than manual diff inspection."
+      }
+    ]
+  },
+  {
+    "question": "Will frontier models absorb the agent harness, or must builders keep engineering scaffolding and process around them?",
+    "sides": [
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:254:dfec29",
+        "stance": "Models absorb coding scaffolding via the data flywheel: trajectories generated through today's harness train tomorrow's weights until harness choice stops moving coding accuracy."
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:370:04ce09",
+        "stance": "Opinionated process stays outside the weights: open-ended agents produce inconsistent enterprise work unless builders encode explicit domain workflow specs."
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:415:c24c6b",
+        "stance": "Every unmastered frontier re-inflates the harness: autonomous multi-agent knowledge workers immediately require coordinator hierarchies, new prompting, and guardrails."
+      },
+      {
+        "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:378:de899b",
+        "stance": "Outer-loop context remains irreducible: cheap code shifts failure to product incoherence because source code alone never holds customer intent, ownership, or revert history."
       }
     ]
   }
