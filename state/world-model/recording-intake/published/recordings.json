@@ -1,0 +1,312 @@
+{
+  "2026-10-12_1105_TokenCosting": {
+    "folder": "2026-10-12_1105_TokenCosting",
+    "path": "recordings/inbox/2026-10-12_1105_TokenCosting",
+    "title": "TokenCosting",
+    "recorded_at": "2026-10-12T11:05:45-04:00",
+    "duration_seconds": 3304.4,
+    "word_count": 9727,
+    "audio_sha256": "3cdad658e8fc17525f6d0c1a8bb59e073fd726bdc6163827a9e5ca18d61d3f7a",
+    "status": "cleaned"
+  },
+  "2026-10-12_1315_Beyond-Done": {
+    "folder": "2026-10-12_1315_Beyond-Done",
+    "path": "recordings/inbox/2026-10-12_1315_Beyond-Done",
+    "title": "Beyond Done",
+    "recorded_at": "2026-10-12T13:15:29-04:00",
+    "duration_seconds": 3407.3,
+    "word_count": 9768,
+    "audio_sha256": "49995cbff0f5826c3762c39bf9c79e65075e66839bfaed813e13162d8af9cef3",
+    "status": "cleaned"
+  },
+  "2026-10-13_0904_Blackwater": {
+    "folder": "2026-10-13_0904_Blackwater",
+    "path": "recordings/inbox/2026-10-13_0904_Blackwater",
+    "title": "Blackwater",
+    "recorded_at": "2026-10-13T09:04:13-04:00",
+    "duration_seconds": 898,
+    "word_count": 2456,
+    "audio_sha256": "3760d78f8f8b8b90559aa2049522a1417296a4a77ea420d21c88077f3a3f1401",
+    "status": "cleaned"
+  },
+  "2026-10-13_0919_Anthropic": {
+    "folder": "2026-10-13_0919_Anthropic",
+    "path": "recordings/inbox/2026-10-13_0919_Anthropic",
+    "title": "Anthropic",
+    "recorded_at": "2026-10-13T09:19:23-04:00",
+    "duration_seconds": 1125.9,
+    "word_count": 3138,
+    "audio_sha256": "68c9793bfbe07ad3fca54bd5567dea09ec39342efe78993397d3afdc7852677e",
+    "status": "cleaned"
+  },
+  "2026-10-13_0938_Two-Sigma": {
+    "folder": "2026-10-13_0938_Two-Sigma",
+    "path": "recordings/inbox/2026-10-13_0938_Two-Sigma",
+    "title": "Two Sigma",
+    "recorded_at": "2026-10-13T09:38:22-04:00",
+    "duration_seconds": 1155.6,
+    "word_count": 3629,
+    "audio_sha256": "990fc26acc02f643f9c98420479c978cc7f4c8b88911ae20ee88a0792bddcb9f",
+    "status": "cleaned"
+  },
+  "2026-10-13_1015_Arize": {
+    "folder": "2026-10-13_1015_Arize",
+    "path": "recordings/inbox/2026-10-13_1015_Arize",
+    "title": "Arize",
+    "recorded_at": "2026-10-13T10:15:31-04:00",
+    "duration_seconds": 899.1,
+    "word_count": 2521,
+    "audio_sha256": "fac12222a12c4c356e0308e0e8e8d9a10353410a7339878d331c87cb17647e3a",
+    "status": "cleaned"
+  },
+  "2026-10-13_1039_Writing-Slop": {
+    "folder": "2026-10-13_1039_Writing-Slop",
+    "path": "recordings/inbox/2026-10-13_1039_Writing-Slop",
+    "title": "Writing Slop",
+    "recorded_at": "2026-10-13T10:39:40-04:00",
+    "duration_seconds": 1129.3,
+    "word_count": 2877,
+    "audio_sha256": "3137bdb3b7b99ca77869a61d2f0148cd44a7e4b25e9c45a002af20adce0f0f46",
+    "status": "cleaned"
+  },
+  "2026-10-13_1104_Air-Canada": {
+    "folder": "2026-10-13_1104_Air-Canada",
+    "path": "recordings/inbox/2026-10-13_1104_Air-Canada",
+    "title": "Air Canada",
+    "recorded_at": "2026-10-13T11:04:34-04:00",
+    "duration_seconds": 1166.3,
+    "word_count": 2655,
+    "audio_sha256": "2896ddfea70930f230c672be4e4f7fdf1acc34925c5de324041bd09d01d601b6",
+    "status": "cleaned"
+  },
+  "2026-10-13_1130_Exa": {
+    "folder": "2026-10-13_1130_Exa",
+    "path": "recordings/inbox/2026-10-13_1130_Exa",
+    "title": "Exa",
+    "recorded_at": "2026-10-13T11:30:17-04:00",
+    "duration_seconds": 1132.7,
+    "word_count": 3876,
+    "audio_sha256": "2f380a01e4c48f01e954b68e7e0ff55a24f5efb23bea85dbb93ad8e25ba5a7d7",
+    "status": "cleaned"
+  },
+  "2026-10-13_1155_Fable-War-Room": {
+    "folder": "2026-10-13_1155_Fable-War-Room",
+    "path": "recordings/inbox/2026-10-13_1155_Fable-War-Room",
+    "title": "Fable War Room",
+    "recorded_at": "2026-10-13T11:55:07-04:00",
+    "duration_seconds": 1152.5,
+    "word_count": 3297,
+    "audio_sha256": "fba7cdbebfa7a02e7e8bf9daaf6a7c8e59434aea20ce071cb68cbc8a43828f64",
+    "status": "cleaned"
+  },
+  "2026-10-13_1220_apify": {
+    "folder": "2026-10-13_1220_apify",
+    "path": "recordings/inbox/2026-10-13_1220_apify",
+    "title": "apify",
+    "recorded_at": "2026-10-13T12:20:12-04:00",
+    "duration_seconds": 1220.9,
+    "word_count": 3499,
+    "audio_sha256": "bde42819e30606d0733f56551e2f545aac505789afcc44c7b4173e37cf61b0a3",
+    "status": "cleaned"
+  },
+  "2026-10-13_1455_greptile": {
+    "folder": "2026-10-13_1455_greptile",
+    "path": "recordings/inbox/2026-10-13_1455_greptile",
+    "title": "greptile",
+    "recorded_at": "2026-10-13T14:55:44-04:00",
+    "duration_seconds": 1090.5,
+    "word_count": 3745,
+    "audio_sha256": "bd39bb692e8db3015ad62aa5744741bedee42c6f32d954ea539531268cf84ee6",
+    "status": "cleaned"
+  },
+  "2026-10-13_1520_bench-marking-llms": {
+    "folder": "2026-10-13_1520_bench-marking-llms",
+    "path": "recordings/inbox/2026-10-13_1520_bench-marking-llms",
+    "title": "bench marking llms",
+    "recorded_at": "2026-10-13T15:20:10-04:00",
+    "duration_seconds": 1049.2,
+    "word_count": 2906,
+    "audio_sha256": "282e2c713f9366cd7e327691934a778d3371cb384cddbf21fa4e945c2afce560",
+    "status": "cleaned"
+  },
+  "2026-10-13_1544_give-the-agent-a-computer": {
+    "folder": "2026-10-13_1544_give-the-agent-a-computer",
+    "path": "recordings/inbox/2026-10-13_1544_give-the-agent-a-computer",
+    "title": "give the agent a computer",
+    "recorded_at": "2026-10-13T15:44:32-04:00",
+    "duration_seconds": 926.5,
+    "word_count": 2169,
+    "audio_sha256": "81331cd4337f3235183c157bc46dd9095543e6c29b28af1e5a1b2666574d1318",
+    "status": "cleaned"
+  },
+  "2026-10-13_1625_tenex": {
+    "folder": "2026-10-13_1625_tenex",
+    "path": "recordings/inbox/2026-10-13_1625_tenex",
+    "title": "tenex",
+    "recorded_at": "2026-10-13T16:25:46-04:00",
+    "duration_seconds": 293.5,
+    "word_count": 778,
+    "audio_sha256": "502f758c42da9dc1082153664bf3291353f61684d37eed2bbb97185e99c87fb9",
+    "status": "cleaned"
+  },
+  "2026-10-13_1630_korean-news": {
+    "folder": "2026-10-13_1630_korean-news",
+    "path": "recordings/inbox/2026-10-13_1630_korean-news",
+    "title": "korean news",
+    "recorded_at": "2026-10-13T16:30:48-04:00",
+    "duration_seconds": 842.4,
+    "word_count": 2293,
+    "audio_sha256": "2f12780d54e8c488c4c5a7e4a29d9e8651f019f77d02a4a54a00f780a6d5b8e9",
+    "status": "cleaned"
+  },
+  "2026-10-13_1645_general-intuition": {
+    "folder": "2026-10-13_1645_general-intuition",
+    "path": "recordings/inbox/2026-10-13_1645_general-intuition",
+    "title": "general intuition",
+    "recorded_at": "2026-10-13T16:45:11-04:00",
+    "duration_seconds": 1176.2,
+    "word_count": 3240,
+    "audio_sha256": "01904bd3d0d29286b8a726c1d10045f0d9561d014e0dff1f0399e16bd985f0d3",
+    "status": "cleaned"
+  },
+  "2026-10-13_1704_nous-research": {
+    "folder": "2026-10-13_1704_nous-research",
+    "path": "recordings/inbox/2026-10-13_1704_nous-research",
+    "title": "nous research",
+    "recorded_at": "2026-10-13T17:04:59-04:00",
+    "duration_seconds": 918.6,
+    "word_count": 2175,
+    "audio_sha256": "473754e9475c0a34f735f3a6e0300c9c58cb28acb00a515f93b7a2e14bdca1b0",
+    "status": "cleaned"
+  },
+  "2026-10-13_1720_811-7th-Ave": {
+    "folder": "2026-10-13_1720_811-7th-Ave",
+    "path": "recordings/inbox/2026-10-13_1720_811-7th-Ave",
+    "title": "811 7th Ave",
+    "recorded_at": "2026-10-13T17:20:39-04:00",
+    "duration_seconds": 72.3,
+    "word_count": 173,
+    "audio_sha256": "d49cd5c7dc35c68c45281a93a916992970f374e82f8117c55c15a6c3a1e03a36",
+    "status": "cleaned"
+  },
+  "2026-10-14_0901_Ramp": {
+    "folder": "2026-10-14_0901_Ramp",
+    "path": "recordings/inbox/2026-10-14_0901_Ramp",
+    "title": "Ramp",
+    "recorded_at": "2026-10-14T09:01:31-04:00",
+    "duration_seconds": 812.6,
+    "word_count": 2091,
+    "audio_sha256": "752d44a3abd29dae5621a3d9786897e83dec07e37f5b3a1dc952d6c802055a02",
+    "status": "cleaned"
+  },
+  "2026-10-14_0915_Sonar": {
+    "folder": "2026-10-14_0915_Sonar",
+    "path": "recordings/inbox/2026-10-14_0915_Sonar",
+    "title": "Sonar",
+    "recorded_at": "2026-10-14T09:15:21-04:00",
+    "duration_seconds": 1007.3,
+    "word_count": 2758,
+    "audio_sha256": "f57bbbf95a3edda65db0c3e73fd630ad458b8aefd93c0e4bec147b9b3a651a21",
+    "status": "cleaned"
+  },
+  "2026-10-14_0932_Coinbase": {
+    "folder": "2026-10-14_0932_Coinbase",
+    "path": "recordings/inbox/2026-10-14_0932_Coinbase",
+    "title": "Coinbase",
+    "recorded_at": "2026-10-14T09:32:12-04:00",
+    "duration_seconds": 274.7,
+    "word_count": 503,
+    "audio_sha256": "675639470a590197701e880a5c9b170daee280868e68bd62d8c211eeffef47b8",
+    "status": "cleaned"
+  },
+  "2026-10-14_1044_Ryan-Carson": {
+    "folder": "2026-10-14_1044_Ryan-Carson",
+    "path": "recordings/inbox/2026-10-14_1044_Ryan-Carson",
+    "title": "Ryan Carson",
+    "recorded_at": "2026-10-14T10:44:48-04:00",
+    "duration_seconds": 669,
+    "word_count": 1693,
+    "audio_sha256": "cdda247ee01996b6c15e3ecf4691f37a9b985d151230998fb9e9284b634d31ce",
+    "status": "cleaned"
+  },
+  "2026-10-14_1104_Linear": {
+    "folder": "2026-10-14_1104_Linear",
+    "path": "recordings/inbox/2026-10-14_1104_Linear",
+    "title": "Linear",
+    "recorded_at": "2026-10-14T11:04:32-04:00",
+    "duration_seconds": 1313.7,
+    "word_count": 3386,
+    "audio_sha256": "77a49941924965dd78185a10e09cd14c860176c5d3f7525edae90aabf8d71aba",
+    "status": "cleaned"
+  },
+  "2026-10-14_1130_Software-Factories": {
+    "folder": "2026-10-14_1130_Software-Factories",
+    "path": "recordings/inbox/2026-10-14_1130_Software-Factories",
+    "title": "Software Factories",
+    "recorded_at": "2026-10-14T11:30:08-04:00",
+    "duration_seconds": 1116.3,
+    "word_count": 3412,
+    "audio_sha256": "356cb337529bf8e450bb5ec9f4ac692fa6f1f382bb5a5cf2157e897ce85c8374",
+    "status": "cleaned"
+  },
+  "2026-10-14_1155_SpaceX": {
+    "folder": "2026-10-14_1155_SpaceX",
+    "path": "recordings/inbox/2026-10-14_1155_SpaceX",
+    "title": "SpaceX",
+    "recorded_at": "2026-10-14T11:55:32-04:00",
+    "duration_seconds": 1081.6,
+    "word_count": 2977,
+    "audio_sha256": "b7c4bde873d94e2f5e4d24482f161a61a151d5da27ba831128e6647c735b90ce",
+    "status": "cleaned"
+  },
+  "2026-10-14_1429_Warp": {
+    "folder": "2026-10-14_1429_Warp",
+    "path": "recordings/inbox/2026-10-14_1429_Warp",
+    "title": "Warp",
+    "recorded_at": "2026-10-14T14:29:35-04:00",
+    "duration_seconds": 1151,
+    "word_count": 3865,
+    "audio_sha256": "ffa16ead18d7a2adf584739db4d1f42dff1583ee80d1f2a99ada852055a837cd",
+    "status": "cleaned"
+  },
+  "2026-10-14_1625_Ksenia": {
+    "folder": "2026-10-14_1625_Ksenia",
+    "path": "recordings/inbox/2026-10-14_1625_Ksenia",
+    "title": "Ksenia",
+    "recorded_at": "2026-10-14T16:25:47-04:00",
+    "duration_seconds": 283.1,
+    "word_count": 571,
+    "audio_sha256": "8816ba89725ece17e7fabc662ee0e682f09da1ccbd34e8420b0cc3df854d38fa",
+    "status": "cleaned"
+  },
+  "2026-10-14_1630_Apollo": {
+    "folder": "2026-10-14_1630_Apollo",
+    "path": "recordings/inbox/2026-10-14_1630_Apollo",
+    "title": "Apollo",
+    "recorded_at": "2026-10-14T16:30:35-04:00",
+    "duration_seconds": 1127.5,
+    "word_count": 3219,
+    "audio_sha256": "f9813214240fd22028b5ec7339aea8705d4a8b28add818298d8561156e229251",
+    "status": "cleaned"
+  },
+  "2026-10-14_1649_Basis-Mitchell-Troyanovsky": {
+    "folder": "2026-10-14_1649_Basis-Mitchell-Troyanovsky",
+    "path": "recordings/inbox/2026-10-14_1649_Basis-Mitchell-Troyanovsky",
+    "title": "Basis (Mitchell Troyanovsky),",
+    "recorded_at": "2026-10-14T16:49:40-04:00",
+    "duration_seconds": 1173.5,
+    "word_count": 3313,
+    "audio_sha256": "7b827ce3307e7a8b83caad05071bde006a2b54a4128fba1131c568d6bf512b88",
+    "status": "cleaned"
+  },
+  "2026-10-14_1709_Runway": {
+    "folder": "2026-10-14_1709_Runway",
+    "path": "recordings/inbox/2026-10-14_1709_Runway",
+    "title": "Runway",
+    "recorded_at": "2026-10-14T17:09:22-04:00",
+    "duration_seconds": 1024.4,
+    "word_count": 3138,
+    "audio_sha256": "0a3de3c20b0b2a56d85a69d021fd212b10563e17dc0854114033e16fb042ad34",
+    "status": "cleaned"
+  }
+}

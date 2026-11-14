@@ -2,10 +2,22 @@
   "title": "SpaceX",
   "recorded_at": "2026-10-14T11:55:32-04:00",
   "duration_seconds": 1081.6,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 2956,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 2977,
+  "transcript_locale": null,
   "source_file": "20261014 115532.m4a",
   "audio_sha256": "b7c4bde873d94e2f5e4d24482f161a61a151d5da27ba831128e6647c735b90ce",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 2956,
+      "locale": "en_US"
+    }
+  ]
 }

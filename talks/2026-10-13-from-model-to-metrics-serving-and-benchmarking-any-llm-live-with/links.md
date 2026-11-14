@@ -9,7 +9,7 @@
 
 - **Chris Vela** (Runpod) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"So speaking over a little more context, sort of like what run podcast is renew about, um, we make it really, really easy for you to run GPs."*
+  - Evidence: *"Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod](https://ai.engineer/nyc/2026/schedule#session-fca86857-d079-46a6-94a7-62b0bb8e5d31)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod".
-  - Evidence: *"So speaking over a little more context, sort of like what run podcast is renew about, um, we make it really, really easy for you to run GPs."*
+  - Evidence: *"Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"*
 
 ## Coverage & Gaps
 

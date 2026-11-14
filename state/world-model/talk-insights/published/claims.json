@@ -1,0 +1,1669 @@
+{
+  "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": [
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:19fc85",
+      "section": "### 00:00:00 — Why Agents Repeat Mistakes Across Sessions",
+      "at_seconds": 0,
+      "quote": "you got the transcript of what was said, you've got the tool calls that show what the agent did, and then you have the output",
+      "claim": "Self-improvement needs the whole team's agent traces centralized, including transcripts, tool and MCP calls, and resulting diffs, which shared cloud runners provide for free.",
+      "speaker": "Ben Holmes",
+      "also_at": []
+    },
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:0:2942bd",
+      "section": "### 00:00:00 — Why Agents Repeat Mistakes Across Sessions",
+      "at_seconds": 0,
+      "quote": "It's the idea that you can have agents review their past conversations.",
+      "claim": "The improvement loop is to have agents review past conversations, score them, find failures and their causes, and propose fixes to skills and configuration.",
+      "speaker": "Ben Holmes",
+      "also_at": []
+    },
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:396:c4efd2",
+      "section": "### 00:06:36 — A Meta-Skill for Mining Past Runs & Updating Skills",
+      "at_seconds": 396,
+      "quote": "Where you can define what thing you're trying to score with an LLM as a judge.",
+      "claim": "Scorers are short markdown rubrics (redundant tests, verbosity, efficiency) with pass/fail thresholds that an LLM judge applies to each conversation, typically when a PR merges.",
+      "speaker": "Ben Holmes",
+      "also_at": []
+    },
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:396:fe5d47",
+      "section": "### 00:06:36 — A Meta-Skill for Mining Past Runs & Updating Skills",
+      "at_seconds": 396,
+      "quote": "these AIs are very persistent and will work around whatever roadblock that they run into, and they won't tell you about it",
+      "claim": "Agents silently work around stale instructions and failed tool calls, so efficiency scoring over traces surfaces setup problems humans never see.",
+      "speaker": "Ben Holmes",
+      "also_at": [
+        "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp"
+      ]
+    },
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:772:01b12f",
+      "section": "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp",
+      "at_seconds": 772,
+      "quote": "And then maybe on a cron job every 24 hours, go through a sampling of the past 24 hours of conversations.",
+      "claim": "A scheduled self-improvement agent takes the failing reports, finds commonalities, and opens PRs against the skills repository.",
+      "speaker": "Ben Holmes",
+      "also_at": []
+    },
+    {
+      "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:772:573747",
+      "section": "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp",
+      "at_seconds": 772,
+      "quote": "the one part that's kind of missing from that is it's very invisible what the agent actually decided",
+      "claim": "Unlike memory or 'dreaming' approaches, tracking scores over time makes self-improvement visible and lets you attribute score changes to specific merged skill edits.",
+      "speaker": "Ben Holmes",
+      "also_at": []
+    }
+  ],
+  "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": [
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:58294f",
+      "section": "### 00:00:00 — The Code Review Bottleneck in AI Software Factories",
+      "at_seconds": 0,
+      "quote": "If you have merged pull requests and reviewed every line of code that was merged. I do see a few people.",
+      "claim": "Nearly everyone's coding agents now open pull requests, but only a few people review every merged line, and that gap is the problem the talk addresses.",
+      "speaker": "Manish Kapur",
+      "also_at": []
+    },
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:0:cb990a",
+      "section": "### 00:00:00 — The Code Review Bottleneck in AI Software Factories",
+      "at_seconds": 0,
+      "quote": "You need to give your agents a way to verify that the work is correct.",
+      "claim": "With code generation largely solved, the highest-value work is building checks (tests, benchmarks) that let agents verify their own output.",
+      "speaker": "Addy Osmani",
+      "also_at": []
+    },
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:392:b97bed",
+      "section": "### 00:06:32 — Multi-Layered Verification: Static Analysis, Tests & Agent Critics",
+      "at_seconds": 392,
+      "quote": "you want to get to a place where the AI is giving you as much verification evidence as possible",
+      "claim": "Agents should exercise changes like a real user (browser tests, screenshots, videos) and hand humans verification evidence rather than asking them to read diffs.",
+      "speaker": "Addy Osmani",
+      "also_at": []
+    },
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:392:c7f31c",
+      "section": "### 00:06:32 — Multi-Layered Verification: Static Analysis, Tests & Agent Critics",
+      "at_seconds": 392,
+      "quote": "We absolutely 100% believe that each company should adopt a zero trust multi-layered verification approach.",
+      "claim": "Verification should be zero-trust and run inside every loop: the agentic loop, CI, and code maintenance.",
+      "speaker": "Manish Kapur",
+      "also_at": [
+        "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic"
+      ]
+    },
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:757:08de08",
+      "section": "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic",
+      "at_seconds": 757,
+      "quote": "I personally think it's fine for the code to be written, labeled as being coming from an agent.",
+      "claim": "Agent-written code should be labeled in the PR because it signals which extra checks apply and preserves auditability, while a human still owns the outcome.",
+      "speaker": "Addy Osmani",
+      "also_at": []
+    },
+    {
+      "claim_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b:757:ae0b24",
+      "section": "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic",
+      "at_seconds": 757,
+      "quote": "it's a layered approach where each layer is tuned and optimized",
+      "claim": "Each verification layer targets a different risk: deterministic analysis for bugs and security flaws, agentic review for logic and intent, and a supply-chain layer for CVEs and malicious packages.",
+      "speaker": "Manish Kapur",
+      "also_at": []
+    }
+  ],
+  "18628ea8-d66a-4d7b-adbd-730d3a43d92e": [
+    {
+      "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:7:8500f7",
+      "section": "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome",
+      "at_seconds": 7,
+      "quote": "And what I've noticed is that one of the strongest incentives to come to this conference is hiring.",
+      "claim": "Hiring, for both companies and speakers, is one of the strongest reasons people come to the conference.",
+      "speaker": "Ksenia Se",
+      "also_at": []
+    },
+    {
+      "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:7:867bbb",
+      "section": "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome",
+      "at_seconds": 7,
+      "quote": "So I suggest you build an agent. That takes the conference program and makes a list of all the speakers and their companies.",
+      "claim": "Attendees can build an agent that ranks speakers' companies, matches open roles and compensation, and lets them update their preferences on the evidence.",
+      "speaker": "Ksenia Se",
+      "also_at": []
+    },
+    {
+      "claim_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e:7:f5b8a1",
+      "section": "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome",
+      "at_seconds": 7,
+      "quote": "And please don't make your agents send out your resume automatically.",
+      "claim": "The agent should inform in-person conversations with the people whose work you liked, not automate applications.",
+      "speaker": "Ksenia Se",
+      "also_at": []
+    }
+  ],
+  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": [
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:292f75",
+      "section": "### 00:00:00 — Long-Horizon Accounting Agents at Basis",
+      "at_seconds": 0,
+      "quote": "The first problem is that there is a competency gap because agents, as you think of them as you think of them today, they outsource the complexity to the user.",
+      "claim": "Coding-style agent products fail to raise enterprise productivity because they push skill, memory and process design onto users, creating a competency gap and a process gap.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:0:fe9e1d",
+      "section": "### 00:00:00 — Long-Horizon Accounting Agents at Basis",
+      "at_seconds": 0,
+      "quote": "It doesn't happen through deterministic systems, right? People are not deterministic; they're intelligent entities. And instead, there are processes that are put in place",
+      "claim": "Organizations already trust non-deterministic workers at scale by imposing processes, and agents should be made trustworthy the same way.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:0fd03d",
+      "section": "### 00:06:54 — Process Supervision vs. Outcome-Only Evaluation",
+      "at_seconds": 414,
+      "quote": "then you can also use them as a rubric. And you can say, in this particular trajectory, whether that is in any trajectory that doesn't have a ground truth.",
+      "claim": "Behavior specs double as rubrics that can grade any trajectory, even without ground truth, scaling supervision signal far beyond outcome-based evals.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": [
+        "### 00:13:22 — Scaling Multi-Step Reliability in Production"
+      ]
+    },
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:be670f",
+      "section": "### 00:06:54 — Process Supervision vs. Outcome-Only Evaluation",
+      "at_seconds": 414,
+      "quote": "Right not because the process it did was bad, but because the process it did was not opinionated.",
+      "claim": "Agents given open-ended tasks produce inconsistent results because their process is unopinionated; builders must encode opinions about how the work is done.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": [
+        "### 00:13:22 — Scaling Multi-Step Reliability in Production"
+      ]
+    },
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:802:7cd61b",
+      "section": "### 00:13:22 — Scaling Multi-Step Reliability in Production",
+      "at_seconds": 802,
+      "quote": "They want it done reliably at scale in a way that they can trust, and in a way that their people know how to work with",
+      "claim": "Customers value reliable, consistent work over agents finding novel 'better' approaches, so predictability beats creativity for scaling output.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:802:df1461",
+      "section": "### 00:13:22 — Scaling Multi-Step Reliability in Production",
+      "at_seconds": 802,
+      "quote": "Ask the coding agent to make a subagent that pretends to be your production agent.",
+      "claim": "Forking a trajectory at the failing decision, or cheaply simulating the production agent with a subagent, lets builders diagnose and fix behavior failures quickly.",
+      "speaker": "Mitchell Troyanovsky",
+      "also_at": []
+    }
+  ],
+  "29083884-87dc-44f8-b412-b494afca8856": [
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:0:167207",
+      "section": "### 00:00:00 — Evolution of the Coding Agent Harness",
+      "at_seconds": 0,
+      "quote": "It turns out the harness. Is actually making itself obsolete through what I call the data flywheel.",
+      "claim": "The harness makes itself obsolete through a data flywheel: it brings harder tasks within reach, users generate data, and models learn those skills natively.",
+      "speaker": "Jediah Katz",
+      "also_at": []
+    },
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:0:68bd81",
+      "section": "### 00:00:00 — Evolution of the Coding Agent Harness",
+      "at_seconds": 0,
+      "quote": "A fancy harness in this day and age no longer adds coding intelligence.",
+      "claim": "Studies show the choice of harness barely changes coding eval scores for newer models, so harness scaffolding no longer adds coding intelligence.",
+      "speaker": "Jediah Katz",
+      "also_at": []
+    },
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:396:00fd86",
+      "section": "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
+      "at_seconds": 396,
+      "quote": "There are some parts of the harness that the model can't absorb.",
+      "claim": "Infrastructure for long-running cloud agents, trust and security controls, and cost efficiency remain harness responsibilities the model cannot absorb.",
+      "speaker": "Jediah Katz",
+      "also_at": [
+        "### 00:12:13 — Next-Generation Environment & Tool Interfaces"
+      ]
+    },
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:396:5fdb8c",
+      "section": "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
+      "at_seconds": 396,
+      "quote": "It's actually the harness which unlocks. A new frontier for the model to then solve, and kicks off that flywheel again.",
+      "claim": "Once a capability like coding is commoditized, the harness opens the next frontier of tasks (knowledge work, software factories) and restarts the flywheel.",
+      "speaker": "Jediah Katz",
+      "also_at": []
+    },
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:396:a4774a",
+      "section": "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
+      "at_seconds": 396,
+      "quote": "Curiously, in Grokbot, we've actually found ourselves putting back a lot of these things, adding new prompting, adding new guardrails.",
+      "claim": "In new domains like an autonomous colleague product, the team is re-adding prompting and guardrails because models have not yet mastered those tasks.",
+      "speaker": "Jediah Katz",
+      "also_at": []
+    },
+    {
+      "claim_id": "29083884-87dc-44f8-b412-b494afca8856:733:8b6ee0",
+      "section": "### 00:12:13 — Next-Generation Environment & Tool Interfaces",
+      "at_seconds": 733,
+      "quote": "whenever a shim stops firing. That model or that agent will put up a PR and say this shim can be cleaned up.",
+      "claim": "Harnesses should be designed to ship and unship features easily, for example by logging deterministic shims and having an agent remove ones that stop firing.",
+      "speaker": "Jediah Katz",
+      "also_at": []
+    }
+  ],
+  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": [
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:a7d3fb",
+      "section": "### 00:00:00 — Rowspace & Apollo: AI for Institutional Investment Data",
+      "at_seconds": 0,
+      "quote": "now all of that is automated, and then from our team's perspective, we are just QAing that and checking it each day to make sure that looks right.",
+      "claim": "A weekly manual trade reconciliation built from bank statements became a repeatable automated report the team only QAs.",
+      "speaker": "Jack McDonald",
+      "also_at": []
+    },
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:0:b100ef",
+      "section": "### 00:00:00 — Rowspace & Apollo: AI for Institutional Investment Data",
+      "at_seconds": 0,
+      "quote": "that allows these PMS to kind of build something to call it eighty, ninety percent completion, and then kind of use their judgment and their thought to further refine that portfolio",
+      "claim": "Portfolio construction that took a PM two to three days in Excel now takes minutes to reach 80-90%, leaving the last stretch to the manager's judgment.",
+      "speaker": "Jack McDonald",
+      "also_at": []
+    },
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:551a7b",
+      "section": "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
+      "at_seconds": 394,
+      "quote": "it's all general information that that's being worked off of, and none of your own actual data.",
+      "claim": "General-purpose LLMs help with research but cannot carry trading decisions, because trust comes from owning your data with a platform on top of it.",
+      "speaker": "Jack McDonald",
+      "also_at": []
+    },
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:715deb",
+      "section": "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
+      "at_seconds": 394,
+      "quote": "I still think it's very early.",
+      "claim": "Finance, especially asset management and institutional banking, is still early in AI adoption, with today's research and model-building uses being lower value.",
+      "speaker": "Jack McDonald",
+      "also_at": []
+    },
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:394:d52172",
+      "section": "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
+      "at_seconds": 394,
+      "quote": "for one piece of data that might come from. 20 different sources, and there's only one that's actually right.",
+      "claim": "Trust came from the vendor sitting with the teams daily to learn which of many sources is the golden source and to validate calculations.",
+      "speaker": "Jack McDonald",
+      "also_at": [
+        "### 00:12:48 — Governance, Auditability & Deployment Lessons at Apollo"
+      ]
+    },
+    {
+      "claim_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0:768:51cc68",
+      "section": "### 00:12:48 — Governance, Auditability & Deployment Lessons at Apollo",
+      "at_seconds": 768,
+      "quote": "I think if it's adapted and utilized. Properly, it will make you more competitive.",
+      "claim": "AI used well becomes a durable competitive edge in private markets because accurate information at your fingertips drives process and decisions.",
+      "speaker": "Jack McDonald",
+      "also_at": []
+    }
+  ],
+  "4add802c-6a68-4e9c-93fb-9c1e017193bc": [
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:6:d7a2d0",
+      "section": "### 00:00:06 — From Lean Manufacturing to Enterprise Software Factories",
+      "at_seconds": 6,
+      "quote": "First is you prioritize quality instead of volume. The second is that you fix the system. Not just individual symptoms that you see.",
+      "claim": "Lean manufacturing principles of quality over volume and fixing the system already shaped modern software practice and should guide agentic software factories.",
+      "speaker": "Tariq Shaukat",
+      "also_at": []
+    },
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:724e86",
+      "section": "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
+      "at_seconds": 331,
+      "quote": "It the curve flattens potentially because as you do long-running tasks, errors compound.",
+      "claim": "Agent reliability drops on large codebases and long-running tasks because errors compound across steps.",
+      "speaker": "Tariq Shaukat",
+      "also_at": []
+    },
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:99cfeb",
+      "section": "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
+      "at_seconds": 331,
+      "quote": "they agree with AI when AI is right, 93 percent of the time. And four out of five times, they agree with it when the AI is wrong.",
+      "claim": "Human-in-the-loop review does not scale: code volume has exploded while releases barely rose, and reviewers exhibit 'cognitive surrender' by agreeing with wrong AI output.",
+      "speaker": "Tariq Shaukat",
+      "also_at": [
+        "### 00:00:06 — From Lean Manufacturing to Enterprise Software Factories"
+      ]
+    },
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:c7c382",
+      "section": "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
+      "at_seconds": 331,
+      "quote": "Ask the same questions, get a different answer between seven and seventeen percent of the time.",
+      "claim": "LLMs are unreliable judges for verification since their verdicts change across identical replications and when challenged.",
+      "speaker": "Tariq Shaukat",
+      "also_at": []
+    },
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:662:2fde74",
+      "section": "### 00:11:02 — Building Verification and Quality Gates into the Factory",
+      "at_seconds": 662,
+      "quote": "how we think about the challenge of the future that code is abundant, that confidence is scarce.",
+      "claim": "With code now abundant, the scarce thing factories must deliver is confidence, backed by quality gates and evidence.",
+      "speaker": "Tariq Shaukat",
+      "also_at": []
+    },
+    {
+      "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:662:7d03e0",
+      "section": "### 00:11:02 — Building Verification and Quality Gates into the Factory",
+      "at_seconds": 662,
+      "quote": "We've seen a number of situations where one of these elements is missing. And if it's zero, the confidence goes to zero.",
+      "claim": "Intent, guide rails, independent verification and evidence multiply together, so missing any one leaves zero confidence in the factory's output.",
+      "speaker": "Tariq Shaukat",
+      "also_at": []
+    }
+  ],
+  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": [
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:2d0eb2",
+      "section": "### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context",
+      "at_seconds": 0,
+      "quote": "Kind of moves out of that inner loop and largely into the outer loop.",
+      "claim": "Because agents now run for hours or days without humans steering them, context has to be managed by systems in the outer loop rather than supplied interactively.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    },
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:0:8b99d0",
+      "section": "### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context",
+      "at_seconds": 0,
+      "quote": "Code is not the bottleneck now. Implementation is not the bottleneck now. The failure mode here isn't an inability to build.",
+      "claim": "With cheap code, the real risk is losing coherence: shipping features that don't make sense as a whole product.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    },
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:417:11b6ad",
+      "section": "### 00:06:57 — Structuring Context Graphs & Specs at Linear",
+      "at_seconds": 417,
+      "quote": "This is just like a really great starting point for your covering agent at this point. It massively increases the chances of success.",
+      "claim": "A triage agent that enriches each issue with customer data, logs, reproductions, and related past decisions gives the coding agent a base context that sharply raises success rates.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    },
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:417:cba17c",
+      "section": "### 00:06:57 — Structuring Context Graphs & Specs at Linear",
+      "at_seconds": 417,
+      "quote": "They can still miss a lot of the context behind it.",
+      "claim": "Agents that read the code still miss intent, earlier decisions and trade-offs, visual expectations, parallel work, owners, and recent risks such as reverts.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    },
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:857:11ce27",
+      "section": "### 00:14:17 — Human-Agent Collaboration in the Issue Tracker",
+      "at_seconds": 857,
+      "quote": "so now we're thinking like less about is this code correct and more about is this the right change for the product?",
+      "claim": "A context-aware review agent pulls in original intent, product history, conflicting work, and ownership so review catches product-level mistakes a code-only reviewer would miss.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    },
+    {
+      "claim_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32:857:2b7fcf",
+      "section": "### 00:14:17 — Human-Agent Collaboration in the Issue Tracker",
+      "at_seconds": 857,
+      "quote": "Extract learnings, and then inject them back into the codebase.",
+      "claim": "A daily automation distills review corrections and reverts into agents.md and docs so human judgment compounds instead of being repeated.",
+      "speaker": "Tom Moor",
+      "also_at": []
+    }
+  ],
+  "68a1e78b-569e-4314-a56f-f20508123cbe": [
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:11:9b6376",
+      "section": "### 00:00:11 — Introduction: Frontier AI in Financial Services",
+      "at_seconds": 11,
+      "quote": "And our opportunity here is scale. Is not the model. Our opportunity here is scale.",
+      "claim": "Model capability is no longer the constraint in financial services; the opportunity is building a foundation that takes agents from one-by-one builds to many.",
+      "speaker": "Belinda Neal",
+      "also_at": [
+        "### 00:06:12 — Enterprise Deployment Patterns & Governance"
+      ]
+    },
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:372:36f132",
+      "section": "### 00:06:12 — Enterprise Deployment Patterns & Governance",
+      "at_seconds": 372,
+      "quote": "We want it to just propose new amendments to our owner's data. Not actually make those amendments",
+      "claim": "The trust layer scopes agents with an identity and least-privilege permissions and has them propose actions that a human approves before anything changes.",
+      "speaker": "Keon Shahab",
+      "also_at": [
+        "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook"
+      ]
+    },
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:372:5080f2",
+      "section": "### 00:06:12 — Enterprise Deployment Patterns & Governance",
+      "at_seconds": 372,
+      "quote": "we think about skills. As living, breathing, versioned code, essentially, even though they're just plain text.",
+      "claim": "Business rules and processes from subject-matter experts should be encoded as skills and maintained like frequently updated, versioned code.",
+      "speaker": "Keon Shahab",
+      "also_at": []
+    },
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:372:67b586",
+      "section": "### 00:06:12 — Enterprise Deployment Patterns & Governance",
+      "at_seconds": 372,
+      "quote": "You'll want to have those agents work on one secure connectivity layer which is MCP.",
+      "claim": "Hand-wiring each agent to each source system does not scale, so agents should reach business data through a single secure MCP connectivity layer.",
+      "speaker": "Keon Shahab",
+      "also_at": []
+    },
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:729:336895",
+      "section": "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook",
+      "at_seconds": 729,
+      "quote": "Is that the business is now becoming closer to engineering",
+      "claim": "In the new operating model, business users correct and propose changes to agents directly, and engineering reviews, tests, and ships them as skill changes.",
+      "speaker": "Keon Shahab",
+      "also_at": []
+    },
+    {
+      "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:729:3f6281",
+      "section": "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook",
+      "at_seconds": 729,
+      "quote": "To any variable, you'll be able to determine whether that variable change actually improved.",
+      "claim": "SME-defined eval suites with a baseline are what tell you whether a new model or skill change improved the agent or caused a regression.",
+      "speaker": "Keon Shahab",
+      "also_at": []
+    }
+  ],
+  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": [
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:352496",
+      "section": "### 00:00:00 — SDLC Velocity vs. Incident Operations at GEICO",
+      "at_seconds": 0,
+      "quote": "So to solve for this, we create a multiplayer AI native war room.",
+      "claim": "Major changes are rate-limited by getting the right decision makers and the right synthesized context together, so GEICO built a war room of people, a driver, AI tools and agent fleets.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    },
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:0:5865c6",
+      "section": "### 00:00:00 — SDLC Velocity vs. Incident Operations at GEICO",
+      "at_seconds": 0,
+      "quote": "So while we've seen this interloop speed up to use. Jean Kim's concept, we find ourselves seemingly stuck.",
+      "claim": "AI has collapsed the coding phase, but at a risk-managed company the outer loop of decisions and approvals has not kept pace.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    },
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:399:4c28bd",
+      "section": "### 00:06:39 — Inside the Fable War Room: Multi-Agent Incident Response",
+      "at_seconds": 399,
+      "quote": "Connect a couple dots and save ourselves. Eight and a half thousand calls per month by giving the customer up-to-date rental information.",
+      "claim": "Across three legacy claims domains the one-day war room experiments delivered concrete outcomes, from an extended rentals API to a vetted salvage migration plan that also surfaced a production bug.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    },
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:399:e5acee",
+      "section": "### 00:06:39 — Inside the Fable War Room: Multi-Agent Incident Response",
+      "at_seconds": 399,
+      "quote": "So Fleetkit is this tight structured collection of rules, protocols, instructions, all written in Markdown.",
+      "claim": "A Markdown fleet manager that breaks down a goal, dispatches researchers, queues work for human approval and then dispatches builders makes expensive agent fleets steerable.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    },
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:753:c38ef8",
+      "section": "### 00:12:33 — Production Results & Cultural Takeaways",
+      "at_seconds": 753,
+      "quote": "It was like, wow, that's actually a great question that we've never thought about identifying an edge case either in the business.",
+      "claim": "The agent's worksheets and architecture diagrams were high enough quality that teams kept them, and its questions surfaced edge cases nobody had considered.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    },
+    {
+      "claim_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420:753:ce2611",
+      "section": "### 00:12:33 — Production Results & Cultural Takeaways",
+      "at_seconds": 753,
+      "quote": "Data and found out that Fable or Sonnet five wrote it just as good as, if not better than Fable.",
+      "claim": "Once the context was built, a cheaper model wrote legacy code as well as the frontier model, making model selection a major cost lever.",
+      "speaker": "Ford Prior",
+      "also_at": []
+    }
+  ],
+  "736edd83-bb08-49f1-90ed-722b7ed07eb2": [
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:b06de5",
+      "section": "### 00:00:00 — Defining AI Writing Slop & Why It Happens",
+      "at_seconds": 0,
+      "quote": "Endlessly, the worst to me is that it usually has the wrong tone, or at least it has no tone and like everyone's tone at the same time",
+      "claim": "Slop is more than overused words: it is generic, says nothing, repeats, hallucinates, and above all lacks a distinctive voice.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": []
+    },
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:0:b9883c",
+      "section": "### 00:00:00 — Defining AI Writing Slop & Why It Happens",
+      "at_seconds": 0,
+      "quote": "It just Keeps on scaling, so we need something different than just training the models more.",
+      "claim": "Slop persists as models improve, so fixing it requires measurement rather than just more training.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": []
+    },
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:372:304cc5",
+      "section": "### 00:06:12 — Constructing a Benchmark for Creative Writing",
+      "at_seconds": 372,
+      "quote": "why do we generate the five scripts? Is To check for intra-model variability",
+      "claim": "Generating five drafts per task measures intra-model variance, which grows as model quality drops and hides outlier generations.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": []
+    },
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:372:76c699",
+      "section": "### 00:06:12 — Constructing a Benchmark for Creative Writing",
+      "at_seconds": 372,
+      "quote": "the problem with AI judges is that. They have references. Some models prefer themselves.",
+      "claim": "LLM judges favor their own model family, so judging must use a different family and be spot-checked with human pairwise comparisons.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": [
+        "### 00:12:33 — Evaluating Style, Voice & Model Findings"
+      ]
+    },
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:753:9883f1",
+      "section": "### 00:12:33 — Evaluating Style, Voice & Model Findings",
+      "at_seconds": 753,
+      "quote": "You just want to find a model that will be the least annoying to you.",
+      "claim": "For creative writing the right choice is the model that gets you to your target with the least friction, since no model one-shots good prose.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": []
+    },
+    {
+      "claim_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2:753:cc5919",
+      "section": "### 00:12:33 — Evaluating Style, Voice & Model Findings",
+      "at_seconds": 753,
+      "quote": "What I suggest is to generate several drafts.",
+      "claim": "At scale, many cheap drafts merged by a stronger high-thinking model beat a single expensive generation, with a long detailed prompt and human review still required.",
+      "speaker": "Louis-François Bouchard",
+      "also_at": []
+    }
+  ],
+  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:577a35",
+      "section": "### 00:00:00 — Balancing Innovation Speed and Institutional Trust",
+      "at_seconds": 0,
+      "quote": "So the three approvers who were supposed to approve that looked at it and said, \"Yep, that's the right thing that's supposed to happen.\"",
+      "claim": "The Citibank–Revlon payment error shows that procedures, warnings and human approvers can all be in place and still fail, which is the failure mode agent controls must anticipate.",
+      "speaker": "John Feminella",
+      "also_at": []
+    },
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:0:a19b6e",
+      "section": "### 00:00:00 — Balancing Innovation Speed and Institutional Trust",
+      "at_seconds": 0,
+      "quote": "We allow them a certain amount of autonomy, along with a certain amount of control.",
+      "claim": "Agents, like humans, are non-deterministic, so the answer is bounded autonomy with visibility and controls rather than lockdown, making safety and innovation compatible.",
+      "speaker": "John Feminella",
+      "also_at": []
+    },
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:381:4af013",
+      "section": "### 00:06:21 — Risk Taxonomies & Guardrails for AI Agents",
+      "at_seconds": 381,
+      "quote": "So the agent registry makes agents legible, and it registers which reviews and discovers the key facts about agents.",
+      "claim": "An automatic agent registry recording owner, tools and endpoints makes scattered agents legible so the firm can govern and reuse them without an onerous pre-approval gate.",
+      "speaker": "John Feminella",
+      "also_at": []
+    },
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:381:697aa7",
+      "section": "### 00:06:21 — Risk Taxonomies & Guardrails for AI Agents",
+      "at_seconds": 381,
+      "quote": "Again, that feels safe, but now we've got a trivial summarizer waiting two months for the same sign-offs as an agent-based captioning production system.",
+      "claim": "Applying one heavy review process to every agent starves high-risk reviews and stalls low-risk experiments, so review should be tiered by each agent's risk.",
+      "speaker": "John Feminella",
+      "also_at": []
+    },
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:1b1695",
+      "section": "### 00:12:38 — Production Architecture at Two Sigma",
+      "at_seconds": 758,
+      "quote": "Clear their purpose upfront, and say what tools they're going to use, or what tools.",
+      "claim": "Instead of a blanket allow-list, agents declare their purpose and tools up front and the runtime enforces that policy from the registry at initialization.",
+      "speaker": "John Feminella",
+      "also_at": []
+    },
+    {
+      "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:edc3e2",
+      "section": "### 00:12:38 — Production Architecture at Two Sigma",
+      "at_seconds": 758,
+      "quote": "When explicit rules apply, we want deterministic fast paths.",
+      "claim": "Human approval of every agent action causes review fatigue, so deterministic rules and conservative classifiers should handle routine calls and escalate only ambiguous or dangerous ones.",
+      "speaker": "John Feminella",
+      "also_at": []
+    }
+  ],
+  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": [
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:08b17c",
+      "section": "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
+      "at_seconds": 0,
+      "quote": "The problem is, though, that the models have begun to commoditize.",
+      "claim": "Frontier models are becoming interchangeable, so the margin labs need to recoup hundreds of billions in spend is narrowing.",
+      "speaker": "Dillon Rolnick",
+      "also_at": []
+    },
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:4cc3fb",
+      "section": "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
+      "at_seconds": 0,
+      "quote": "And that's exactly how they view the financial industry as a problem to be solved.",
+      "claim": "Rather than sell intelligence at shrinking margins, labs will point their models at lucrative domains like finance and compete with their customers directly.",
+      "speaker": "Dillon Rolnick",
+      "also_at": [
+        "### 00:05:13 — Hermes & Owning Your Intelligence Stack"
+      ]
+    },
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:0:4efad3",
+      "section": "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
+      "at_seconds": 0,
+      "quote": "If you're in front of the user, you have an opportunity for stickiness. Stickiness means margin. This is why the fight has largely shifted to the agent layer lately.",
+      "claim": "Labs are moving up to the agent layer and embedding in businesses because owning the user relationship creates lock-in and margin.",
+      "speaker": "Dillon Rolnick",
+      "also_at": []
+    },
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:313:3f0544",
+      "section": "### 00:05:13 — Hermes & Owning Your Intelligence Stack",
+      "at_seconds": 313,
+      "quote": "I implore you: Do not build on quicksand foundations. Build on open foundations.",
+      "claim": "Whatever platform a company roots its agentic processes in will harden into its organization, so it should choose an open foundation it controls.",
+      "speaker": "Dillon Rolnick",
+      "also_at": [
+        "### 00:10:21 — Training, Steering & Customizing Open Models"
+      ]
+    },
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:313:6987d9",
+      "section": "### 00:05:13 — Hermes & Owning Your Intelligence Stack",
+      "at_seconds": 313,
+      "quote": "The most of yesterday were in proprietary IP. The modes of tomorrow are in network effects, reputation, and reliability.",
+      "claim": "Proprietary software is no longer a moat because agents can reproduce features quickly, so durable advantage moves to network effects, reputation and reliability.",
+      "speaker": "Dillon Rolnick",
+      "also_at": [
+        "### 00:10:21 — Training, Steering & Customizing Open Models"
+      ]
+    },
+    {
+      "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:621:a02383",
+      "section": "### 00:10:21 — Training, Steering & Customizing Open Models",
+      "at_seconds": 621,
+      "quote": "Agents are like operating systems, and they're like frameworks, and they're a lot more like those than they are like chatbots.",
+      "claim": "Agents are systems combining deterministic code, data and model judgment, so companies should own that stack, swap models freely and inherit improvements rather than rebuild them.",
+      "speaker": "Dillon Rolnick",
+      "also_at": []
+    }
+  ],
+  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": [
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:0:c70a90",
+      "section": "### 00:00:00 — Why Agentic Payments Matter for Tool Marketplaces",
+      "at_seconds": 0,
+      "quote": "And on MPP, only like one point five thousand dollars. I mean, it's basically nothing. It's like non-existent.",
+      "claim": "Real transaction volume on the leading agent payment protocols is negligible despite more than a year of availability.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:450:0a32d9",
+      "section": "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
+      "at_seconds": 450,
+      "quote": "It's they are competing with API keys because it's just the more convenient way.",
+      "claim": "Agent payment protocols lose to pre-provisioned accounts and API keys paid by credit card because those are more convenient.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:450:318670",
+      "section": "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
+      "at_seconds": 450,
+      "quote": "This is crazy because then the agents have no incentives whatsoever. To, you know, to look for existing services because they can build anything from scratch because it costs nothing.",
+      "claim": "Subsidized flat-rate model plans remove agents' incentive to buy services instead of building from scratch, and their end would boost demand.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:450:e17034",
+      "section": "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
+      "at_seconds": 450,
+      "quote": "I would say at every step of this funnel, we have some friction points that ultimately, like. Lead to the fact that like agents aren't buying at the end of the funnel.",
+      "claim": "The bottleneck is demand, and friction at each funnel stage from need through setup and discovery keeps agents from buying.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:818:9d2123",
+      "section": "### 00:13:38 — Real-World Agent Monetization Lessons at Apify",
+      "at_seconds": 818,
+      "quote": "Or basically using trusted directories and marketplaces, and we can already see this happening.",
+      "claim": "Agents will discover trustworthy paid services through networks of trust and curated directories and marketplaces.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918:818:a9df9e",
+      "section": "### 00:13:38 — Real-World Agent Monetization Lessons at Apify",
+      "at_seconds": 818,
+      "quote": "But to complete a real job, you actually need like paper use.",
+      "claim": "Fixed price per call is insufficient; agent payments need variable pay-per-use billing, which early protocols handled poorly.",
+      "speaker": "Jan Curn",
+      "also_at": []
+    }
+  ],
+  "8d424512-c7f0-483c-9094-ca899d7bb1fd": [
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:6a2dc1",
+      "section": "### 00:00:05 — Why Every Agent Framework Converges on Sandboxed Computers",
+      "at_seconds": 5,
+      "quote": "But under the hood, all of these ways speak the three same lines, so it's. Sandbox creation, running some code or task inside the sandbox, and sandbox deletion.",
+      "claim": "Competing agent frameworks disagree on what an agent even is, yet all integrate sandboxes through the same create, run, delete primitives, which signals necessity rather than fashion.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:5:eae03a",
+      "section": "### 00:00:05 — Why Every Agent Framework Converges on Sandboxed Computers",
+      "at_seconds": 5,
+      "quote": "you essentially defined what. Your model should use, but you didn't define what your model can actually use",
+      "claim": "Command allow-lists and approval prompts on a local machine do not bound what a compromised model can do, since one allowed interpreter command opens everything.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:308:132808",
+      "section": "### 00:05:08 — Daytona Runtime Architecture & Isolation Primitives",
+      "at_seconds": 308,
+      "quote": "And you can notice that they are not. Adding sandboxes, they already had them, but they are deleting all the alternatives.",
+      "claim": "Frameworks are retiring local code executors in favor of a separate VM sandbox, which contains a compromised step so the sandbox can be thrown away and replaced.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:308:62a5a5",
+      "section": "### 00:05:08 — Daytona Runtime Architecture & Isolation Primitives",
+      "at_seconds": 308,
+      "quote": "These tools that your agent will call inside that runtime will actually run on your device outside that runtime.",
+      "claim": "Embedded runtimes like V8 or QuickJS isolate generated code but not the tools it calls, so a malicious agent can still act through those tools on the host.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:620:117bf8",
+      "section": "### 00:10:20 — Patterns from Integrating Across Agent Harnesses",
+      "at_seconds": 620,
+      "quote": "Out of this talk is, framers our opinions and the boundary the commitment.",
+      "claim": "The execution boundary cannot be swapped later because it shapes how every tool is written, so teams should choose a proper sandboxed computer before choosing a framework rather than carrying a local POC into production.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    },
+    {
+      "claim_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd:620:3ea2f9",
+      "section": "### 00:10:20 — Patterns from Integrating Across Agent Harnesses",
+      "at_seconds": 620,
+      "quote": "And based on this whole story, I think this is essentially the wrong question.",
+      "claim": "Asking which framework to pick is the wrong question because models, prompts, features, and even sandbox providers are swappable.",
+      "speaker": "Mislav Ivanda",
+      "also_at": []
+    }
+  ],
+  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:0eb6d7",
+      "section": "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
+      "at_seconds": 0,
+      "quote": "Every single thing that a human can see in pixels on the screen. An agent in your building should be able to see via API.",
+      "claim": "Agents need direct API access to every data source humans see, or their intelligence is wasted.",
+      "speaker": "Frank Long",
+      "also_at": []
+    },
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:18128b",
+      "section": "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
+      "at_seconds": 0,
+      "quote": "I think that agents will have an even bigger impact in investing than they did at coding.",
+      "claim": "Agents will transform investing even more than they have transformed coding.",
+      "speaker": "Frank Long",
+      "also_at": []
+    },
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:0:8962e7",
+      "section": "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
+      "at_seconds": 0,
+      "quote": "So at a high level, you can think about a hedge fund as a function that takes in two parameters.",
+      "claim": "A hedge fund can be modeled as a function compressing external and internal context into a what/how much/when decision.",
+      "speaker": "Frank Long",
+      "also_at": []
+    },
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:270:080d95",
+      "section": "### 00:04:30 — Deploying Agents Across Public & Private Market Research",
+      "at_seconds": 270,
+      "quote": "There's actually a lot of knobs here, and I almost think about those knobs. It's like hyperparameters in a traditional machine learning system, right?",
+      "claim": "Every design choice in even a simple news-ingestion step is a hyperparameter to tune and optimize.",
+      "speaker": "Frank Long",
+      "also_at": [
+        "### 00:09:20 — Compounding Institutional Knowledge at Coatue"
+      ]
+    },
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:270:c27308",
+      "section": "### 00:04:30 — Deploying Agents Across Public & Private Market Research",
+      "at_seconds": 270,
+      "quote": "There is no glory in automating things for the sake of automating things. The goal is not to take as many things and make them LLMs as possible.",
+      "claim": "Each step should be assigned whichever runner (deterministic code, statistics, LLM, or human) maximizes quality, not automated by default.",
+      "speaker": "Frank Long",
+      "also_at": []
+    },
+    {
+      "claim_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a:560:0c4109",
+      "section": "### 00:09:20 — Compounding Institutional Knowledge at Coatue",
+      "at_seconds": 560,
+      "quote": "And if you don't have a north star to help climb against. You're just kind of you're just fidgeting around.",
+      "claim": "Pipelines must be compartmentalized into evaluable pieces with a clear metric, or tuning becomes aimless.",
+      "speaker": "Frank Long",
+      "also_at": []
+    }
+  ],
+  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": [
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:919c3d",
+      "section": "### 00:00:00 — From Structured Time Series to Unstructured Data at Bridgewater",
+      "at_seconds": 0,
+      "quote": "it takes great data and the right connectors to make AI powerful.",
+      "claim": "A generic web-searching chat agent answered an investment question from one stale source, while the same query against Vault found 52 time-scoped candidates and drew on seven, showing data and connectors matter more than the model.",
+      "speaker": "Sam Green",
+      "also_at": []
+    },
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:0:b31643",
+      "section": "### 00:00:00 — From Structured Time Series to Unstructured Data at Bridgewater",
+      "at_seconds": 0,
+      "quote": "all that data is not just dumped on our investors' desks. It is carefully aligned to our internal ontology.",
+      "claim": "Unstructured data at Bridgewater gets the same cleaning, governance and alignment to the firm's ontology (countries, markets, time period) that its structured time-series data always had.",
+      "speaker": "Sam Green",
+      "also_at": []
+    },
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:293:02931c",
+      "section": "### 00:04:53 — Inside Vault: Architecture for Investment Research",
+      "at_seconds": 293,
+      "quote": "The key metric we were looking at is precision at ten, which is of the top ten results, how many are the right documents.",
+      "claim": "A hand-built benchmark of about 200 questions confirmed users' complaint that search was bad (about 60% precision at ten) and gave the team a way to measure fixes up to about 95%.",
+      "speaker": "Aaron Linsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:293:b8188f",
+      "section": "### 00:04:53 — Inside Vault: Architecture for Investment Research",
+      "at_seconds": 293,
+      "quote": "Their approach, which they call native filtering, looks only in the nearest clusters if it can matches, and then scores just those.",
+      "claim": "Production queries almost always carry date, source or asset filters, so they moved to a vector store with native filtering to get post-filtering speed with near pre-filtering recall at agent scale.",
+      "speaker": "Aaron Linsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:593:983f9b",
+      "section": "### 00:09:53 — Grounding, Evaluation & Iterative Deployment",
+      "at_seconds": 593,
+      "quote": "No matter how amazing the tools are, we can't just drop them on our investors' desks and expect them to be used.",
+      "claim": "Adoption required migrating researchers' email habits into Vault, turning subscriber lists into saved searches and folders into saved collections before opening new workflows.",
+      "speaker": "Aaron Linsky",
+      "also_at": []
+    },
+    {
+      "claim_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6:593:d0b1bb",
+      "section": "### 00:09:53 — Grounding, Evaluation & Iterative Deployment",
+      "at_seconds": 593,
+      "quote": "the vault enables compounding because it provides the right evidence, the right internal and external information at the fingertips of our investors and agents",
+      "claim": "The goal is proactive always-on agents in an investor workbench, with the synthesis from human-agent collaboration captured back into Vault so the research loop compounds.",
+      "speaker": "Sam Green",
+      "also_at": []
+    }
+  ],
+  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": [
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:0:201036",
+      "section": "### 00:00:00 — Ten Years of Generative Media & World Models at Runway",
+      "at_seconds": 0,
+      "quote": "I think we believe in scaling loss. Not only applied for language models, but also for video, and this has been true.",
+      "claim": "Runway bets that scaling laws hold for video models just as they do for language models, and is ramping compute accordingly.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": []
+    },
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:0:c1119d",
+      "section": "### 00:00:00 — Ten Years of Generative Media & World Models at Runway",
+      "at_seconds": 0,
+      "quote": "You're learning about physics. You're learning about object permanence.",
+      "claim": "Predicting the next frame at scale forces a model to learn physics, object permanence, gravity and occlusion rather than just pretty pixels.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": []
+    },
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:9a3499",
+      "section": "### 00:05:41 — From Video Generation to Real-Time World Simulation",
+      "at_seconds": 341,
+      "quote": "Now everything you just saw here has no physical 3D representation. There's no Unity. There's no Unreal. There's no Blender.",
+      "claim": "A 'world interface model' trained on clicks and actions can render a fully interactive interface from an image with no underlying 3D engine, pointing toward an operating system (Continuum) streamed from a model.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": [
+        "### 00:11:22 — Simulating Environments, Physics & Interactive Worlds"
+      ]
+    },
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:b0bd96",
+      "section": "### 00:05:41 — From Video Generation to Real-Time World Simulation",
+      "at_seconds": 341,
+      "quote": "No physics laws we didn't describe. What did he do? The model just knows how to do that by pure force of scale.",
+      "claim": "Applied to 3D-like environments, next-frame prediction approaches a physics engine without any hand-written physics rules, purely through scale.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": []
+    },
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:341:d2dc40",
+      "section": "### 00:05:41 — From Video Generation to Real-Time World Simulation",
+      "at_seconds": 341,
+      "quote": "At any point in time, in that prediction, which means I can simulate any possible divergence or action in that world.",
+      "claim": "Making video models real-time and actionable at every frame turns them into simulators of any possible action or divergence, useful for robotics as well as media.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": []
+    },
+    {
+      "claim_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80:682:734bc0",
+      "section": "### 00:11:22 — Simulating Environments, Physics & Interactive Worlds",
+      "at_seconds": 682,
+      "quote": "Agents have the ability to do visual thinking. Agents can spin up. A sort of imagination that you can tap and interact with",
+      "claim": "Connecting a real-time world model to a coding agent gives it 'visual thinking': a shared imagination the human can see and use to guide the agent better than text alone.",
+      "speaker": "Cristóbal Valenzuela",
+      "also_at": []
+    }
+  ],
+  "b2ed4456-5671-4e8e-83fd-684c012fef8c": [
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:3d0fab",
+      "section": "### 00:00:00 — The Evolving Role of the AI Engineer",
+      "at_seconds": 0,
+      "quote": "How do you set up your telemetry data so that agents are the primary consumers of that data?",
+      "claim": "Telemetry should be designed for agents as its primary readers, so observability data becomes the trigger that wakes always-on agents.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    },
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:0:629389",
+      "section": "### 00:00:00 — The Evolving Role of the AI Engineer",
+      "at_seconds": 0,
+      "quote": "As an AI engineer, your job is no longer to just write the feature, write a bad feature. It's about how do you build the loop.",
+      "claim": "The AI engineer is now responsible for building the system that does build, eval, ship, monitor and improve, not for doing each step by hand.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    },
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:293:18eac8",
+      "section": "### 00:04:53 — The Build-Eval-Ship-Monitor Loop",
+      "at_seconds": 293,
+      "quote": "we built Signal to also be. You know, agnostic of the model or the harness.",
+      "claim": "Making the agent harness- and model-agnostic lets the team compare quality across models and cut cost without losing rigor.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    },
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:293:9e2978",
+      "section": "### 00:04:53 — The Build-Eval-Ship-Monitor Loop",
+      "at_seconds": 293,
+      "quote": "All of the output is actually saved off in some kind of memory, so that the next time an agent gets spun up, it doesn't have to start from ground zero.",
+      "claim": "Each Signal run uses a disposable sandbox behind a single proxy, while issues, traces and learned skills persist outside it so runs are durable and resumable.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    },
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:538673",
+      "section": "### 00:09:45 — Continuous Improvement & Agent Observability",
+      "at_seconds": 585,
+      "quote": "Verify them against the human output, and then try to align to make sure that the judge actually agrees with the human.",
+      "claim": "Engineers should spend their time defining what good is, building golden datasets and evaluating the evaluators until LLM judges agree with human judgment before shipping them.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    },
+    {
+      "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:f11361",
+      "section": "### 00:09:45 — Continuous Improvement & Agent Observability",
+      "at_seconds": 585,
+      "quote": "tracing everything now means not just. Tracing the agents, but also tracing the coding agents behind the agents that build this.",
+      "claim": "Tracing must extend to the coding agents that build the product, and online evals on that telemetry feed back into the agents that find problems.",
+      "speaker": "Aparna Dhinakaran",
+      "also_at": []
+    }
+  ],
+  "b8bb725d-daf0-4ac0-8095-5737841c89e5": [
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:3711a1",
+      "section": "### 00:00:00 — What Is Exa & Agentic Web Search",
+      "at_seconds": 0,
+      "quote": "All of the search results, which means that you can actually get higher quality results. At ninety-five percent fewer tokens than you would at full-page text.",
+      "claim": "Search cost should be measured over the agent's whole trajectory, and returning only the relevant snippets cuts downstream input tokens dramatically.",
+      "speaker": "Ryan Ahern",
+      "also_at": []
+    },
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:0:a3f785",
+      "section": "### 00:00:00 — What Is Exa & Agentic Web Search",
+      "at_seconds": 0,
+      "quote": "They tend to describe what they want to search in great detail, execute many searches, and want to understand the space.",
+      "claim": "Agents search differently from humans, issuing many detailed queries, so search must be built for agent consumption.",
+      "speaker": "Ryan Ahern",
+      "also_at": []
+    },
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:360:0aeb1e",
+      "section": "### 00:06:00 — Exa Snapshot & Backtesting Financial Agents Without Lookahead Bias",
+      "at_seconds": 360,
+      "quote": "It's 400 billion plus snapshots of the web, and you can search them by day.",
+      "claim": "Because Exa's crawler versions every page it checks for freshness, it can serve a URL or run a whole search as it would have looked on a past date.",
+      "speaker": "Ryan Ahern",
+      "also_at": []
+    },
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:360:fd226e",
+      "section": "### 00:06:00 — Exa Snapshot & Backtesting Financial Agents Without Lookahead Bias",
+      "at_seconds": 360,
+      "quote": "In this case, if you do a live search, you're going to find like that the deal was announced, right?",
+      "claim": "Testing a prediction agent on the live web leaks the outcome, so point-in-time search is needed to evaluate what it could have known before the event.",
+      "speaker": "Ryan Ahern",
+      "also_at": [
+        "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation"
+      ]
+    },
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:742:4e5d5c",
+      "section": "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation",
+      "at_seconds": 742,
+      "quote": "Detect these things, but you've also got to check that it generalizes.",
+      "claim": "Snapshot lets teams check that a search feature generalizes rather than overfits, without waiting months for live results.",
+      "speaker": "Ryan Ahern",
+      "also_at": []
+    },
+    {
+      "claim_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5:742:e896cc",
+      "section": "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation",
+      "at_seconds": 742,
+      "quote": "You can actually go back and back test that against your existing processes and say.",
+      "claim": "Teams can backtest whether adding agentic web features such as adverse media scans to existing models actually improves them, instead of taking it on faith.",
+      "speaker": "Ryan Ahern",
+      "also_at": []
+    }
+  ],
+  "bdab432a-0538-4431-ad5a-62653affd9da": [
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:0:07da60",
+      "section": "### 00:00:00 — Code Review at Scale: Signal vs. Noise",
+      "at_seconds": 0,
+      "quote": "Now the first thing that's going to go wrong is you're going to miss bugs.",
+      "claim": "A simple sandboxed agent wired to pull requests will miss bugs, misunderstand the codebase, cost several dollars per review and flood developers with nitpicks.",
+      "speaker": "Daksh Gupta",
+      "also_at": []
+    },
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:348:f6dc24",
+      "section": "### 00:05:48 — Iterative Architecture of Greptile's Review Agent",
+      "at_seconds": 348,
+      "quote": "If you use hard code to write the code, you want to use the GPT model to review it.",
+      "claim": "Models fail the same way when reviewing as when generating, so the reviewer should be a different model family than the one that wrote the code.",
+      "speaker": "Daksh Gupta",
+      "also_at": []
+    },
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:348:fc4c36",
+      "section": "### 00:05:48 — Iterative Architecture of Greptile's Review Agent",
+      "at_seconds": 348,
+      "quote": "The validation against really any reviewer can tell you about the presence of bugs, but unfortunately can't tell you about the absence of bugs.",
+      "claim": "Because catastrophic bugs are rare, prompt changes must be evaluated against a catalog of historical bug-causing changes rather than judged by comment volume.",
+      "speaker": "Daksh Gupta",
+      "also_at": []
+    },
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:710:81e0f2",
+      "section": "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation",
+      "at_seconds": 710,
+      "quote": "In practice, we have actually twenty different subtasks, and each of them has a very specific sense model to be used.",
+      "claim": "Reserving frontier models for critical steps and routing the long tail of subtasks to small models cuts review cost drastically, provided an eval set guards against regressions.",
+      "speaker": "Daksh Gupta",
+      "also_at": [
+        "### 00:00:00 — Code Review at Scale: Signal vs. Noise"
+      ]
+    },
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:710:a14518",
+      "section": "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation",
+      "at_seconds": 710,
+      "quote": "Is we essentially build these dependency-rich sandboxes, which are completely configurable virtual machines.",
+      "claim": "Spinning up the customer's full stack in a sandbox and driving it with computer-use models catches issues, like UI regressions, that reading the diff cannot.",
+      "speaker": "Daksh Gupta",
+      "also_at": [
+        "### 00:00:00 — Code Review at Scale: Signal vs. Noise"
+      ]
+    },
+    {
+      "claim_id": "bdab432a-0538-4431-ad5a-62653affd9da:710:d389e1",
+      "section": "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation",
+      "at_seconds": 710,
+      "quote": "The way that Greptile approaches this problem is we actually disintermediate all of these context sources with a living wiki.",
+      "claim": "Plain RAG is imprecise and token-hungry, so a maintained wiki of how the codebase, telemetry, docs and roadmap fit together gives the agent the tribal knowledge it lacks.",
+      "speaker": "Daksh Gupta",
+      "also_at": [
+        "### 00:05:48 — Iterative Architecture of Greptile's Review Agent"
+      ]
+    }
+  ],
+  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": [
+    {
+      "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:c1d955",
+      "section": "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections",
+      "at_seconds": 0,
+      "quote": "Use the content as a starting point to have interesting conversations at the edge.",
+      "claim": "The conference talks are most valuable as a starting point for conversations about topics like the diffusion gap, open versus fine-tuned models, and hiring AI engineers.",
+      "speaker": "Alex Lieberman",
+      "also_at": []
+    },
+    {
+      "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:f3c18d",
+      "section": "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections",
+      "at_seconds": 0,
+      "quote": "Is agents actually working in non-engineering workloads in an organization that is around? Five percent right now.",
+      "claim": "Diffusion falls off sharply past training (about 60%) and coding agents (about 50%), with agents in non-engineering workloads at roughly 5%, so enterprise agents are still at day one.",
+      "speaker": "Alex Lieberman",
+      "also_at": []
+    },
+    {
+      "claim_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9:0:fa3d07",
+      "section": "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections",
+      "at_seconds": 0,
+      "quote": "So ninety percent of the enterprises we work with have rolled out general-purpose LLM.",
+      "claim": "Among the large enterprises Tenex works with, general-purpose LLM rollout is nearly universal at about 90 percent.",
+      "speaker": "Alex Lieberman",
+      "also_at": []
+    }
+  ],
+  "c4ba0138-6f6d-4780-93a1-4d8f0c478339": [
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:1bbd2d",
+      "section": "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
+      "at_seconds": 0,
+      "quote": "We don't have any particular benchmark we can rely on that's the main problem we I'm trying to address in this presentation.",
+      "claim": "Enterprise agent tasks are too specific for existing benchmarks, and the builders are not the domain experts, who have limited time and data access.",
+      "speaker": "Nathanael Weill",
+      "also_at": []
+    },
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:79b9f2",
+      "section": "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
+      "at_seconds": 0,
+      "quote": "So our budget was we can try one solution a week.",
+      "claim": "Relying on weekly expert review sessions, where experts often disagreed, limited the team to one iteration per week, which was not enough.",
+      "speaker": "Nathanael Weill",
+      "also_at": []
+    },
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:0:ab2ce6",
+      "section": "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
+      "at_seconds": 0,
+      "quote": "So we start with the page. We ask an LLM to write a question about this page",
+      "claim": "Generating a question from a known source page lets retrieval be checked automatically against that page, moving the team from one iteration a week to one a day.",
+      "speaker": "Nathanael Weill",
+      "also_at": [
+        "### 00:06:29 — Writing the Answer First: Synthetic Eval Dataset Generation"
+      ]
+    },
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:389:c2f846",
+      "section": "### 00:06:29 — Writing the Answer First: Synthetic Eval Dataset Generation",
+      "at_seconds": 389,
+      "quote": "if you can't breed the agents, you can't make it better.",
+      "claim": "The lasting lesson is that an agent you cannot evaluate is an agent you cannot improve.",
+      "speaker": "Nathanael Weill",
+      "also_at": []
+    },
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:780190",
+      "section": "### 00:12:35 — Production Rollout & Lessons Learned",
+      "at_seconds": 755,
+      "quote": "The original design we could not evaluate it. We switched to something that we can actually evaluate because of that.",
+      "claim": "Teams should be willing to re-engineer an agent's design so it can be evaluated, and LLM-as-judge scoring proved too noisy to rely on.",
+      "speaker": "Nathanael Weill",
+      "also_at": []
+    },
+    {
+      "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:8fb189",
+      "section": "### 00:12:35 — Production Rollout & Lessons Learned",
+      "at_seconds": 755,
+      "quote": "we generate an array for each of those blanks, which some covers break some wood. Some covers doesn't.",
+      "claim": "For contract review they filled template blanks with clauses that do or do not break known rules (and removed clauses), so the expected flag is known by construction.",
+      "speaker": "Nathanael Weill",
+      "also_at": []
+    }
+  ],
+  "c901e963-5be9-4a1d-86a3-d9354374bbcd": [
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:0:a6de48",
+      "section": "### 00:00:00 — Workshop Introduction & Featherless Background",
+      "at_seconds": 0,
+      "quote": "Like you need to start splitting up your keys. Start splitting up by departments. Start splitting up by major use cases.",
+      "claim": "Most organizations cannot see where their token spend goes, so the first and highest-ROI step is issuing separate API keys per department and use case.",
+      "speaker": "Eugene Cheah",
+      "also_at": []
+    },
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:528:1a15d5",
+      "section": "### 00:08:48 — Inference Economics & Hardware Cost Drivers",
+      "at_seconds": 528,
+      "quote": "If the model is Smart enough to get it done, and it's cheaper. They will just use it because it's faster, not because it's cheaper.",
+      "claim": "Teams switch to cheaper models only when those models are also faster, so serving the cheaper model at higher speed is the incentive that actually drives adoption.",
+      "speaker": "Eugene Cheah",
+      "also_at": []
+    },
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:1084:ad7897",
+      "section": "### 00:18:04 — Token Pricing, Batching & Memory Bandwidth",
+      "at_seconds": 1084,
+      "quote": "Make sure you set up your test cases, your e-dos, and your examples, and then subsequently just do the search.",
+      "claim": "Instead of asking whether a smaller model is good enough, build evals and search for the cheapest model that passes them, then fine-tune from there.",
+      "speaker": "Eugene Cheah",
+      "also_at": [
+        "### 00:45:24 — Workshop Q&A & Practical Takeaways"
+      ]
+    },
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:1624:2b9f11",
+      "section": "### 00:27:04 — Model Architecture Trade-offs & KV Cache",
+      "at_seconds": 1624,
+      "quote": "For every two x of speed, it's three x of cost",
+      "claim": "Per-request speed costs superlinearly, so paying for high tokens-per-second only makes sense when a person is waiting, and background jobs should run batched and slow.",
+      "speaker": "Eugene Cheah",
+      "also_at": []
+    },
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:2170:49e9ef",
+      "section": "### 00:36:10 — Open-Weight Deployment & Cost Optimization",
+      "at_seconds": 2170,
+      "quote": "So, and this goes back into saying like tokens are not work done.",
+      "claim": "Rising token spend without matching productivity comes from process bottlenecks and slop handed downstream, so people must own what they generate and teams should measure outcomes, not usage.",
+      "speaker": "Eugene Cheah",
+      "also_at": []
+    },
+    {
+      "claim_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd:2724:e5d24b",
+      "section": "### 00:45:24 — Workshop Q&A & Practical Takeaways",
+      "at_seconds": 2724,
+      "quote": "Your low cash heat rate will start to wreck your optimization.",
+      "claim": "Turn-based auto-routing across many models destroys cache hit rates, so routing should be task-based or limited to two or three models.",
+      "speaker": "Eugene Cheah",
+      "also_at": []
+    }
+  ],
+  "cada670e-c5ea-4977-b3c2-9a68dda26abb": [
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:43fbe1",
+      "section": "### 00:00:09 — From Internet Text to Spatiotemporal World Models",
+      "at_seconds": 9,
+      "quote": "Constantly, part of that behavior is that it's constantly observing as it is acting.",
+      "claim": "Unlike turn-based LLMs, agents in space and time must continuously observe while acting, which calls for purpose-built pixels-to-actions models.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    },
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:9:a385db",
+      "section": "### 00:00:09 — From Internet Text to Spatiotemporal World Models",
+      "at_seconds": 9,
+      "quote": "So what this means is that the action space for video games, often because of game controllers, and the action space for operations or the real world.",
+      "claim": "Because humans teleoperate robots with the same controllers they use for games, game action data maps directly onto real-world control.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    },
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:439:92e4f5",
+      "section": "### 00:07:19 — Learning Action Policies from Billions of Gameplay Trajectories",
+      "at_seconds": 439,
+      "quote": "The total amount of data that Frontier Labs uses today to train robotics models, we collect in at the moment half a day.",
+      "claim": "Medal's recorder collects in half a day as much action data as frontier labs use to train robotics models, giving a massive scaling advantage.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    },
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:439:9554f0",
+      "section": "### 00:07:19 — Learning Action Policies from Billions of Gameplay Trajectories",
+      "at_seconds": 439,
+      "quote": "so you want a model that can predict really high APM.",
+      "claim": "Gameplay is far more action-dense than teleoperation data, which brings fine-grained control tasks like drone piloting within reach.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    },
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:cb3a3b",
+      "section": "### 00:13:24 — Transferring Spatial Intelligence to Real-World Control",
+      "at_seconds": 804,
+      "quote": "Our mode of having the action data really transfers better to action sequences than it does to world models and to generate the pixels.",
+      "claim": "Training on explicit action labels rather than inferred ones, unlike JEPA, transfers better to action prediction and is more practical in the short term.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    },
+    {
+      "claim_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb:804:e9beb3",
+      "section": "### 00:13:24 — Transferring Spatial Intelligence to Real-World Control",
+      "at_seconds": 804,
+      "quote": "and so there are all these businesses that because it's so bottlenecked by intelligence, are going to emerge just from solving this one simple problem, which is pixels to actions.",
+      "claim": "Reliable pixels-to-actions control will unlock new businesses, from robotic labs to accessibility tools, much as early LLMs did.",
+      "speaker": "Pim de Witte",
+      "also_at": []
+    }
+  ],
+  "caecd5f6-b352-4868-a995-f0f71679caf0": [
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:c50a18",
+      "section": "### 00:00:00 — Token Economics & Capability Growth at Ramp",
+      "at_seconds": 0,
+      "quote": "on a unit economic basis, they're actually becoming cheaper because there are friendlier models that are being released.",
+      "claim": "Total token spend grows but per-unit cost falls as newer, cheaper, faster models ship, which raises the question of why not just wait.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": []
+    },
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:e3b1f0",
+      "section": "### 00:00:00 — Token Economics & Capability Growth at Ramp",
+      "at_seconds": 0,
+      "quote": "we took a step back and decided to try. Train a retrieval model, kind of a financial question answering model that would help.",
+      "claim": "Pairing a frontier orchestrator with a post-trained, much faster financial question-answering model beat the frontier on exact-pass accuracy at lower latency for spreadsheet work.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": [
+        "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models"
+      ]
+    },
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:f4a6e2",
+      "section": "### 00:00:00 — Token Economics & Capability Growth at Ramp",
+      "at_seconds": 0,
+      "quote": "But I still believe that we can dig it layer down. And create even better experiences for our users is just it requires a bit more effort now.",
+      "claim": "As in 2023, when Ramp shipped agents despite weak models, there is still value in going a layer below the frontier APIs instead of waiting.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": []
+    },
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:263:10d34d",
+      "section": "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models",
+      "at_seconds": 263,
+      "quote": "no single component of that stack was unsafe, and the kind of swarm have to patch together multiple components",
+      "claim": "A 10,000-agent pentest swarm found seven high-severity vulnerabilities, including one that only emerged from combining individually safe components.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": []
+    },
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:263:80421d",
+      "section": "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models",
+      "at_seconds": 263,
+      "quote": "you're able to compress a lot of context, up to 20 to 30 times more context. Into the KB cache offline and serve it for your agent.",
+      "claim": "Cartridges precompute predictable context (such as month-end close documents) into the KV cache overnight, and the tribal know-how is worth having even if labs later ship it.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": []
+    },
+    {
+      "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:531:98b36e",
+      "section": "### 00:08:51 — Lessons from Shipping Production Financial Agents",
+      "at_seconds": 531,
+      "quote": "the detection rate is not five times lower, so you can kind of spend more on these cheaper tokens",
+      "claim": "In swarms, open-weight models up to five times cheaper keep most of the detection rate, so spending on more cheap tokens wins; all three examples save time and money.",
+      "speaker": "Alexander Shevchenko",
+      "also_at": []
+    }
+  ],
+  "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": [
+    {
+      "claim_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:0:1c2295",
+      "section": "### 00:00:00 — Day 1 Closing Remarks & Keynote Recap",
+      "at_seconds": 0,
+      "quote": "We had him talking about world models going from pixels to actions.",
+      "claim": "The closing keynotes covered pixels-to-actions world models, owned versus rented foundations for agents, and applied AI in investment decisions.",
+      "speaker": "Alex Lieberman",
+      "also_at": []
+    },
+    {
+      "claim_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16:0:710d26",
+      "section": "### 00:00:00 — Day 1 Closing Remarks & Keynote Recap",
+      "at_seconds": 0,
+      "quote": "Again, that is surface area for you to be able to connect with others.",
+      "claim": "The conference's content matters most as surface area for attendees to connect and talk with one another.",
+      "speaker": "Alex Lieberman",
+      "also_at": []
+    }
+  ],
+  "edb4f982-0cb8-48ee-8bf7-410255a40cb3": [
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:0:ab47cd",
+      "section": "### 00:00:00 — Why 'Done' Is Not Enough for Production Agents",
+      "at_seconds": 0,
+      "quote": "But that takes a long time and these agents can write code a lot faster than us, so we don't want to rely on that.",
+      "claim": "Line-by-line human code review cannot keep pace with how fast agents generate code, so trust has to come from another mechanism.",
+      "speaker": null,
+      "also_at": []
+    },
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:535:07dad8",
+      "section": "### 00:08:55 — Designing Deterministic Verification Loops",
+      "at_seconds": 535,
+      "quote": "Don't just tell me yeah, passes. It looks good because there's nothing to back that up, I need actual screenshots, videos, test results, smoke tests.",
+      "claim": "An agent's claim of being done counts only when backed by tangible evidence such as screenshots, recordings, and test results.",
+      "speaker": null,
+      "also_at": []
+    },
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1048:655786",
+      "section": "### 00:17:28 — Guardrails, Sandboxes & Failure Recovery",
+      "at_seconds": 1048,
+      "quote": "So that you can just run that over and over, and it's doing more of a deterministic check.",
+      "claim": "Encoding verification as runnable scripts rather than vague prompt instructions gives agents a deterministic, repeatable check whose output they can use to self-correct.",
+      "speaker": null,
+      "also_at": [
+        "### 00:47:08 — Workshop Q&A & Closing Discussion"
+      ]
+    },
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1048:eec6d4",
+      "section": "### 00:17:28 — Guardrails, Sandboxes & Failure Recovery",
+      "at_seconds": 1048,
+      "quote": "When you want that, if you have all those verifiers in place, then your software doesn't matter as much.",
+      "claim": "The verification harness becomes more valuable than the application code itself, because with verifiers in place the software can be rewritten and re-proven.",
+      "speaker": null,
+      "also_at": []
+    },
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:1636:ef854a",
+      "section": "### 00:27:16 — Hands-On Verification Architecture",
+      "at_seconds": 1636,
+      "quote": "It's more about giving it the map, saying you must get here. You'll know you're here when this command returns to us.",
+      "claim": "Agents should be given a verifiable outcome rather than a prescribed path, since constraints on the goal leave room for creative solutions.",
+      "speaker": "Zack Proser",
+      "also_at": []
+    },
+    {
+      "claim_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3:2155:990a7a",
+      "section": "### 00:35:55 — Scaling Agent Verification in CI & Production",
+      "at_seconds": 2155,
+      "quote": "It's very valuable data right now because you can feed it into and get fixes, I think it's incredibly valuable data in the future.",
+      "claim": "Keeping receipts of every agent run builds a dataset that drives fixes today and future self-improving loops.",
+      "speaker": null,
+      "also_at": [
+        "### 00:47:08 — Workshop Q&A & Closing Discussion"
+      ]
+    }
+  ],
+  "ee927042-2ba1-44c3-b304-d001ae247839": [
+    {
+      "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:18:30da97",
+      "section": "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase",
+      "at_seconds": 18,
+      "quote": "Ultimately, we separate this from the run state and the build state.",
+      "claim": "Policy is defined at build time while the system changes constantly at run time, so the two must be treated separately even as the system stays bound by policy.",
+      "speaker": "Evan Kormos",
+      "also_at": []
+    },
+    {
+      "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:18:454c89",
+      "section": "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase",
+      "at_seconds": 18,
+      "quote": "Now we can run independent reviews alongside each other. Bring results together, but keep the required checks in place.",
+      "claim": "Agents make parallel independent reviews affordable within a gated workflow modeled as a DAG, without dropping required checks.",
+      "speaker": "Evan Kormos",
+      "also_at": []
+    },
+    {
+      "claim_id": "ee927042-2ba1-44c3-b304-d001ae247839:18:4be36f",
+      "section": "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase",
+      "at_seconds": 18,
+      "quote": "Think of policy as the original institutional intent.",
+      "claim": "Written policy, phrased with must, may and should, is the organization's original system prompt that defines how work gets done.",
+      "speaker": "Evan Kormos",
+      "also_at": []
+    }
+  ],
+  "f7204e6d-a47c-4535-804e-16b4db579b95": [
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:75ba49",
+      "section": "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
+      "at_seconds": 7,
+      "quote": "if you're running local dev, you are screwing up. You're holding yourself back.",
+      "claim": "Engineers still coding or running local dev hold their teams back; work should run as communicating cloud agent sessions.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    },
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:7a98aa",
+      "section": "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
+      "at_seconds": 7,
+      "quote": "Y'all, this is cheap. Like, you should be spinning up as many agents as you can, as long as you're not holding up your merge queue.",
+      "claim": "Extra agents such as QA children of the builder are cheap, so teams should spin up as many as possible, constrained only by the merge queue.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    },
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:a854b6",
+      "section": "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
+      "at_seconds": 7,
+      "quote": "This is the part of the bottleneck you have to engage in as. A product owner gotta watch the video, gotta pay attention.",
+      "claim": "The irreducible human step is watching each builder's recorded feature video and understanding the PR; this is where corners must not be cut.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    },
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:ccd30f",
+      "section": "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
+      "at_seconds": 7,
+      "quote": "We typically stick to a three-review max. Where we allow the builders to loop about three times with reviews.",
+      "claim": "Each builder agent loops with its own reviewer agent up to three times, then escalates unresolved bugs to a manager agent and finally to the human.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    },
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:306:a09b06",
+      "section": "### 00:05:06 — Continuous 15-Minute Heartbeats & Escalation Loops",
+      "at_seconds": 306,
+      "quote": "All that matters is can they operate an agent.",
+      "claim": "Hiring should skip interviews and screens and judge candidates from recorded agent-operating sessions, ranked with model help, because operating agents is what matters.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    },
+    {
+      "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:306:d26af4",
+      "section": "### 00:05:06 — Continuous 15-Minute Heartbeats & Escalation Loops",
+      "at_seconds": 306,
+      "quote": "So the merge manager just helps all that go away, but also is a little more intelligent about how the merge deals happen.",
+      "claim": "A dedicated merge-manager session coordinates the wave of agent PRs, avoiding collisions like database migration numbers.",
+      "speaker": "Ryan Carson",
+      "also_at": []
+    }
+  ],
+  "fca86857-d079-46a6-94a7-62b0bb8e5d31": [
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:3b1667",
+      "section": "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
+      "at_seconds": 0,
+      "quote": "But if you're going to be going to more concurrent users, you need to start thinking about like how Am I going to be utilizing the KV cache?",
+      "claim": "Sizing should start from the use case and expected concurrency, including KV cache use, rather than the cheapest GPU or the maximum context window.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    },
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:6a4155",
+      "section": "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
+      "at_seconds": 0,
+      "quote": "They don't know the knobs. To like touch, they're just using whatever, like the base config",
+      "claim": "Most teams deploying a new open model run vLLM's base config without understanding the tuning knobs, so they are guessing rather than measuring.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    },
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:0:cb8775",
+      "section": "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
+      "at_seconds": 0,
+      "quote": "You set up a config, but then you have to restart the image. You have to wait for cold starts to happen.",
+      "claim": "Restarting images and waiting on cold starts for every config change makes iteration slow, which a live-reconfigurable benchmark harness removes.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    },
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:315:2be108",
+      "section": "### 00:05:15 — Serving Open Models with vLLM on Runpod",
+      "at_seconds": 315,
+      "quote": "But an interesting thing that I did notice of increasing that is like the inter-token latency. Actually decreases quite a bit when you increase that.",
+      "claim": "In the Kimi K3 demo, raising max batched tokens barely moved time to first token but cut inter-token latency substantially, speeding long jobs.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    },
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:672:2f538a",
+      "section": "### 00:11:12 — Throughput, Latency & Cost Metrics in Practice",
+      "at_seconds": 672,
+      "quote": "And just because it's the frontier model, it doesn't make sense.",
+      "claim": "Picking the frontier model is not automatically right; smaller models on cheaper hardware often serve the workload well.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    },
+    {
+      "claim_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31:672:36e4e4",
+      "section": "### 00:11:12 — Throughput, Latency & Cost Metrics in Practice",
+      "at_seconds": 672,
+      "quote": "Don't just start with like the meal and recipe.",
+      "claim": "The default vLLM recipe is proven but not production-ready, so teams should benchmark, optimize on the metric they care about, then scale out.",
+      "speaker": "Chris Vela",
+      "also_at": []
+    }
+  ]
+}

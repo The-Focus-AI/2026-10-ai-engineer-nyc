@@ -9,10 +9,10 @@
 
 - **Nick Nisi** (WorkOS) · status: `found`
   - Profile: https://ai.engineer/speakers/nick-nisi
-  - Evidence: *"So what do we mean by beyond that, just to like jump straight into it?"*
+  - Evidence: *"So, what we mean by beyond done, just to like jump. Straight into it."*
 - **Zack Proser** (WorkOS) · status: `found`
   - Profile: https://ai.engineer/speakers/zack-proser
-  - Evidence: *"So what do we mean by beyond that, just to like jump straight into it?"*
+  - Evidence: *"So, what we mean by beyond done, just to like jump. Straight into it."*
 
 ## Companies
 
@@ -22,7 +22,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Beyond “Done”: Building Verification Loops for AI Agents](https://ai.engineer/nyc/2026/schedule#session-edb4f982-0cb8-48ee-8bf7-410255a40cb3)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Beyond “Done”: Building Verification Loops for AI Agents".
-  - Evidence: *"So what do we mean by beyond that, just to like jump straight into it?"*
+  - Evidence: *"So, what we mean by beyond done, just to like jump. Straight into it."*
 
 ## Coverage & Gaps
 

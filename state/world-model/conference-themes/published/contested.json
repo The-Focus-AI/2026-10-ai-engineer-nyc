@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Can an LLM judge be trusted to grade agent output?",
+    "sides": [
+      {
+        "claim_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c:585:538673",
+        "stance": "Yes, once the evaluator has been evaluated until it agrees with human judgment on golden datasets."
+      },
+      {
+        "claim_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f:396:c4efd2",
+        "stance": "Yes, as short markdown rubrics with pass/fail thresholds applied to each conversation."
+      },
+      {
+        "claim_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc:331:c7c382",
+        "stance": "No: LLM verdicts change across identical replications and when challenged, so they are unreliable verifiers."
+      },
+      {
+        "claim_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339:755:780190",
+        "stance": "No: LLM-as-judge scoring proved too noisy to rely on; redesign the agent so it can be evaluated by construction."
+      }
+    ]
+  },
+  {
+    "question": "Should a human approve agent actions before they take effect?",
+    "sides": [
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:372:36f132",
+        "stance": "Yes: agents propose actions with scoped identity and least privilege, and a human approves before anything changes."
+      },
+      {
+        "claim_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1:758:edc3e2",
+        "stance": "No: approving every action causes review fatigue; deterministic rules and classifiers handle routine calls and escalate only ambiguous ones."
+      },
+      {
+        "claim_id": "f7204e6d-a47c-4535-804e-16b4db579b95:7:a854b6",
+        "stance": "Only at one irreducible step: the human watches each feature video and understands the PR."
+      }
+    ]
+  },
+  {
+    "question": "Should agent reliability live in the harness or be absorbed into the model?",
+    "sides": [
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:0:68bd81",
+        "stance": "Newer models score about the same in any harness, so harness scaffolding no longer adds coding intelligence and the model absorbs it."
+      },
+      {
+        "claim_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77:414:be670f",
+        "stance": "Builders must encode opinionated process around the agent, because open-ended agents produce inconsistent results."
+      },
+      {
+        "claim_id": "29083884-87dc-44f8-b412-b494afca8856:396:a4774a",
+        "stance": "In each new domain the harness has to re-add prompting and guardrails until the model masters those tasks."
+      }
+    ]
+  },
+  {
+    "question": "Should enterprises build on owned open foundations or on the frontier labs' stack?",
+    "sides": [
+      {
+        "claim_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add:313:3f0544",
+        "stance": "Whatever platform roots a company's agentic processes hardens into its organization, so it should be an open foundation the company controls."
+      },
+      {
+        "claim_id": "68a1e78b-569e-4314-a56f-f20508123cbe:11:9b6376",
+        "stance": "Model capability is no longer the constraint; the opportunity is a reusable agent foundation built on frontier models."
+      },
+      {
+        "claim_id": "caecd5f6-b352-4868-a995-f0f71679caf0:0:f4a6e2",
+        "stance": "Going a layer below the frontier APIs pays now rather than waiting for the labs."
+      }
+    ]
+  }
+]

@@ -9,7 +9,7 @@
 
 - **Mitchell Troyanovsky** (Basis) · status: `found`
   - Profile: https://www.getbasis.ai/
-  - Evidence: *"Please welcome Mitchell Trainos, the co-founder of Basses."*
+  - Evidence: *"Hi Mitch, I'm one of the two co-founders of Basis."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Process Supervision for Agents That Do Long-Horizon Work](https://ai.engineer/nyc/2026/schedule#session-1cbc625f-7f07-49bb-9c5c-57c95f07ba77)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Process Supervision for Agents That Do Long-Horizon Work".
-  - Evidence: *"Please welcome Mitchell Trainos, the co-founder of Basses."*
+  - Evidence: *"Hi Mitch, I'm one of the two co-founders of Basis."*
 
 ## Coverage & Gaps
 

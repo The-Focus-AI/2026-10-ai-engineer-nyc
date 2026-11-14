@@ -1,0 +1,1926 @@
+{
+  "recordings": {
+    "2026-10-12_1105_TokenCosting": {
+      "folder": "2026-10-12_1105_TokenCosting",
+      "path": "recordings/inbox/2026-10-12_1105_TokenCosting",
+      "title": "TokenCosting",
+      "recorded_at": "2026-10-12T11:05:45-04:00",
+      "duration_seconds": 3304.4,
+      "word_count": 9727,
+      "audio_sha256": "3cdad658e8fc17525f6d0c1a8bb59e073fd726bdc6163827a9e5ca18d61d3f7a",
+      "status": "cleaned"
+    },
+    "2026-10-12_1315_Beyond-Done": {
+      "folder": "2026-10-12_1315_Beyond-Done",
+      "path": "recordings/inbox/2026-10-12_1315_Beyond-Done",
+      "title": "Beyond Done",
+      "recorded_at": "2026-10-12T13:15:29-04:00",
+      "duration_seconds": 3407.3,
+      "word_count": 9768,
+      "audio_sha256": "49995cbff0f5826c3762c39bf9c79e65075e66839bfaed813e13162d8af9cef3",
+      "status": "cleaned"
+    },
+    "2026-10-13_0904_Blackwater": {
+      "folder": "2026-10-13_0904_Blackwater",
+      "path": "recordings/inbox/2026-10-13_0904_Blackwater",
+      "title": "Blackwater",
+      "recorded_at": "2026-10-13T09:04:13-04:00",
+      "duration_seconds": 898,
+      "word_count": 2456,
+      "audio_sha256": "3760d78f8f8b8b90559aa2049522a1417296a4a77ea420d21c88077f3a3f1401",
+      "status": "cleaned"
+    },
+    "2026-10-13_0919_Anthropic": {
+      "folder": "2026-10-13_0919_Anthropic",
+      "path": "recordings/inbox/2026-10-13_0919_Anthropic",
+      "title": "Anthropic",
+      "recorded_at": "2026-10-13T09:19:23-04:00",
+      "duration_seconds": 1125.9,
+      "word_count": 3138,
+      "audio_sha256": "68c9793bfbe07ad3fca54bd5567dea09ec39342efe78993397d3afdc7852677e",
+      "status": "cleaned"
+    },
+    "2026-10-13_0938_Two-Sigma": {
+      "folder": "2026-10-13_0938_Two-Sigma",
+      "path": "recordings/inbox/2026-10-13_0938_Two-Sigma",
+      "title": "Two Sigma",
+      "recorded_at": "2026-10-13T09:38:22-04:00",
+      "duration_seconds": 1155.6,
+      "word_count": 3629,
+      "audio_sha256": "990fc26acc02f643f9c98420479c978cc7f4c8b88911ae20ee88a0792bddcb9f",
+      "status": "cleaned"
+    },
+    "2026-10-13_1015_Arize": {
+      "folder": "2026-10-13_1015_Arize",
+      "path": "recordings/inbox/2026-10-13_1015_Arize",
+      "title": "Arize",
+      "recorded_at": "2026-10-13T10:15:31-04:00",
+      "duration_seconds": 899.1,
+      "word_count": 2521,
+      "audio_sha256": "fac12222a12c4c356e0308e0e8e8d9a10353410a7339878d331c87cb17647e3a",
+      "status": "cleaned"
+    },
+    "2026-10-13_1039_Writing-Slop": {
+      "folder": "2026-10-13_1039_Writing-Slop",
+      "path": "recordings/inbox/2026-10-13_1039_Writing-Slop",
+      "title": "Writing Slop",
+      "recorded_at": "2026-10-13T10:39:40-04:00",
+      "duration_seconds": 1129.3,
+      "word_count": 2877,
+      "audio_sha256": "3137bdb3b7b99ca77869a61d2f0148cd44a7e4b25e9c45a002af20adce0f0f46",
+      "status": "cleaned"
+    },
+    "2026-10-13_1104_Air-Canada": {
+      "folder": "2026-10-13_1104_Air-Canada",
+      "path": "recordings/inbox/2026-10-13_1104_Air-Canada",
+      "title": "Air Canada",
+      "recorded_at": "2026-10-13T11:04:34-04:00",
+      "duration_seconds": 1166.3,
+      "word_count": 2655,
+      "audio_sha256": "2896ddfea70930f230c672be4e4f7fdf1acc34925c5de324041bd09d01d601b6",
+      "status": "cleaned"
+    },
+    "2026-10-13_1130_Exa": {
+      "folder": "2026-10-13_1130_Exa",
+      "path": "recordings/inbox/2026-10-13_1130_Exa",
+      "title": "Exa",
+      "recorded_at": "2026-10-13T11:30:17-04:00",
+      "duration_seconds": 1132.7,
+      "word_count": 3876,
+      "audio_sha256": "2f380a01e4c48f01e954b68e7e0ff55a24f5efb23bea85dbb93ad8e25ba5a7d7",
+      "status": "cleaned"
+    },
+    "2026-10-13_1155_Fable-War-Room": {
+      "folder": "2026-10-13_1155_Fable-War-Room",
+      "path": "recordings/inbox/2026-10-13_1155_Fable-War-Room",
+      "title": "Fable War Room",
+      "recorded_at": "2026-10-13T11:55:07-04:00",
+      "duration_seconds": 1152.5,
+      "word_count": 3297,
+      "audio_sha256": "fba7cdbebfa7a02e7e8bf9daaf6a7c8e59434aea20ce071cb68cbc8a43828f64",
+      "status": "cleaned"
+    },
+    "2026-10-13_1220_apify": {
+      "folder": "2026-10-13_1220_apify",
+      "path": "recordings/inbox/2026-10-13_1220_apify",
+      "title": "apify",
+      "recorded_at": "2026-10-13T12:20:12-04:00",
+      "duration_seconds": 1220.9,
+      "word_count": 3499,
+      "audio_sha256": "bde42819e30606d0733f56551e2f545aac505789afcc44c7b4173e37cf61b0a3",
+      "status": "cleaned"
+    },
+    "2026-10-13_1455_greptile": {
+      "folder": "2026-10-13_1455_greptile",
+      "path": "recordings/inbox/2026-10-13_1455_greptile",
+      "title": "greptile",
+      "recorded_at": "2026-10-13T14:55:44-04:00",
+      "duration_seconds": 1090.5,
+      "word_count": 3745,
+      "audio_sha256": "bd39bb692e8db3015ad62aa5744741bedee42c6f32d954ea539531268cf84ee6",
+      "status": "cleaned"
+    },
+    "2026-10-13_1520_bench-marking-llms": {
+      "folder": "2026-10-13_1520_bench-marking-llms",
+      "path": "recordings/inbox/2026-10-13_1520_bench-marking-llms",
+      "title": "bench marking llms",
+      "recorded_at": "2026-10-13T15:20:10-04:00",
+      "duration_seconds": 1049.2,
+      "word_count": 2906,
+      "audio_sha256": "282e2c713f9366cd7e327691934a778d3371cb384cddbf21fa4e945c2afce560",
+      "status": "cleaned"
+    },
+    "2026-10-13_1544_give-the-agent-a-computer": {
+      "folder": "2026-10-13_1544_give-the-agent-a-computer",
+      "path": "recordings/inbox/2026-10-13_1544_give-the-agent-a-computer",
+      "title": "give the agent a computer",
+      "recorded_at": "2026-10-13T15:44:32-04:00",
+      "duration_seconds": 926.5,
+      "word_count": 2169,
+      "audio_sha256": "81331cd4337f3235183c157bc46dd9095543e6c29b28af1e5a1b2666574d1318",
+      "status": "cleaned"
+    },
+    "2026-10-13_1625_tenex": {
+      "folder": "2026-10-13_1625_tenex",
+      "path": "recordings/inbox/2026-10-13_1625_tenex",
+      "title": "tenex",
+      "recorded_at": "2026-10-13T16:25:46-04:00",
+      "duration_seconds": 293.5,
+      "word_count": 778,
+      "audio_sha256": "502f758c42da9dc1082153664bf3291353f61684d37eed2bbb97185e99c87fb9",
+      "status": "cleaned"
+    },
+    "2026-10-13_1630_korean-news": {
+      "folder": "2026-10-13_1630_korean-news",
+      "path": "recordings/inbox/2026-10-13_1630_korean-news",
+      "title": "korean news",
+      "recorded_at": "2026-10-13T16:30:48-04:00",
+      "duration_seconds": 842.4,
+      "word_count": 2293,
+      "audio_sha256": "2f12780d54e8c488c4c5a7e4a29d9e8651f019f77d02a4a54a00f780a6d5b8e9",
+      "status": "cleaned"
+    },
+    "2026-10-13_1645_general-intuition": {
+      "folder": "2026-10-13_1645_general-intuition",
+      "path": "recordings/inbox/2026-10-13_1645_general-intuition",
+      "title": "general intuition",
+      "recorded_at": "2026-10-13T16:45:11-04:00",
+      "duration_seconds": 1176.2,
+      "word_count": 3240,
+      "audio_sha256": "01904bd3d0d29286b8a726c1d10045f0d9561d014e0dff1f0399e16bd985f0d3",
+      "status": "cleaned"
+    },
+    "2026-10-13_1704_nous-research": {
+      "folder": "2026-10-13_1704_nous-research",
+      "path": "recordings/inbox/2026-10-13_1704_nous-research",
+      "title": "nous research",
+      "recorded_at": "2026-10-13T17:04:59-04:00",
+      "duration_seconds": 918.6,
+      "word_count": 2175,
+      "audio_sha256": "473754e9475c0a34f735f3a6e0300c9c58cb28acb00a515f93b7a2e14bdca1b0",
+      "status": "cleaned"
+    },
+    "2026-10-13_1720_811-7th-Ave": {
+      "folder": "2026-10-13_1720_811-7th-Ave",
+      "path": "recordings/inbox/2026-10-13_1720_811-7th-Ave",
+      "title": "811 7th Ave",
+      "recorded_at": "2026-10-13T17:20:39-04:00",
+      "duration_seconds": 72.3,
+      "word_count": 173,
+      "audio_sha256": "d49cd5c7dc35c68c45281a93a916992970f374e82f8117c55c15a6c3a1e03a36",
+      "status": "cleaned"
+    },
+    "2026-10-14_0901_Ramp": {
+      "folder": "2026-10-14_0901_Ramp",
+      "path": "recordings/inbox/2026-10-14_0901_Ramp",
+      "title": "Ramp",
+      "recorded_at": "2026-10-14T09:01:31-04:00",
+      "duration_seconds": 812.6,
+      "word_count": 2091,
+      "audio_sha256": "752d44a3abd29dae5621a3d9786897e83dec07e37f5b3a1dc952d6c802055a02",
+      "status": "cleaned"
+    },
+    "2026-10-14_0915_Sonar": {
+      "folder": "2026-10-14_0915_Sonar",
+      "path": "recordings/inbox/2026-10-14_0915_Sonar",
+      "title": "Sonar",
+      "recorded_at": "2026-10-14T09:15:21-04:00",
+      "duration_seconds": 1007.3,
+      "word_count": 2758,
+      "audio_sha256": "f57bbbf95a3edda65db0c3e73fd630ad458b8aefd93c0e4bec147b9b3a651a21",
+      "status": "cleaned"
+    },
+    "2026-10-14_0932_Coinbase": {
+      "folder": "2026-10-14_0932_Coinbase",
+      "path": "recordings/inbox/2026-10-14_0932_Coinbase",
+      "title": "Coinbase",
+      "recorded_at": "2026-10-14T09:32:12-04:00",
+      "duration_seconds": 274.7,
+      "word_count": 503,
+      "audio_sha256": "675639470a590197701e880a5c9b170daee280868e68bd62d8c211eeffef47b8",
+      "status": "cleaned"
+    },
+    "2026-10-14_1044_Ryan-Carson": {
+      "folder": "2026-10-14_1044_Ryan-Carson",
+      "path": "recordings/inbox/2026-10-14_1044_Ryan-Carson",
+      "title": "Ryan Carson",
+      "recorded_at": "2026-10-14T10:44:48-04:00",
+      "duration_seconds": 669,
+      "word_count": 1693,
+      "audio_sha256": "cdda247ee01996b6c15e3ecf4691f37a9b985d151230998fb9e9284b634d31ce",
+      "status": "cleaned"
+    },
+    "2026-10-14_1104_Linear": {
+      "folder": "2026-10-14_1104_Linear",
+      "path": "recordings/inbox/2026-10-14_1104_Linear",
+      "title": "Linear",
+      "recorded_at": "2026-10-14T11:04:32-04:00",
+      "duration_seconds": 1313.7,
+      "word_count": 3386,
+      "audio_sha256": "77a49941924965dd78185a10e09cd14c860176c5d3f7525edae90aabf8d71aba",
+      "status": "cleaned"
+    },
+    "2026-10-14_1130_Software-Factories": {
+      "folder": "2026-10-14_1130_Software-Factories",
+      "path": "recordings/inbox/2026-10-14_1130_Software-Factories",
+      "title": "Software Factories",
+      "recorded_at": "2026-10-14T11:30:08-04:00",
+      "duration_seconds": 1116.3,
+      "word_count": 3412,
+      "audio_sha256": "356cb337529bf8e450bb5ec9f4ac692fa6f1f382bb5a5cf2157e897ce85c8374",
+      "status": "cleaned"
+    },
+    "2026-10-14_1155_SpaceX": {
+      "folder": "2026-10-14_1155_SpaceX",
+      "path": "recordings/inbox/2026-10-14_1155_SpaceX",
+      "title": "SpaceX",
+      "recorded_at": "2026-10-14T11:55:32-04:00",
+      "duration_seconds": 1081.6,
+      "word_count": 2977,
+      "audio_sha256": "b7c4bde873d94e2f5e4d24482f161a61a151d5da27ba831128e6647c735b90ce",
+      "status": "cleaned"
+    },
+    "2026-10-14_1429_Warp": {
+      "folder": "2026-10-14_1429_Warp",
+      "path": "recordings/inbox/2026-10-14_1429_Warp",
+      "title": "Warp",
+      "recorded_at": "2026-10-14T14:29:35-04:00",
+      "duration_seconds": 1151,
+      "word_count": 3865,
+      "audio_sha256": "ffa16ead18d7a2adf584739db4d1f42dff1583ee80d1f2a99ada852055a837cd",
+      "status": "cleaned"
+    },
+    "2026-10-14_1625_Ksenia": {
+      "folder": "2026-10-14_1625_Ksenia",
+      "path": "recordings/inbox/2026-10-14_1625_Ksenia",
+      "title": "Ksenia",
+      "recorded_at": "2026-10-14T16:25:47-04:00",
+      "duration_seconds": 283.1,
+      "word_count": 571,
+      "audio_sha256": "8816ba89725ece17e7fabc662ee0e682f09da1ccbd34e8420b0cc3df854d38fa",
+      "status": "cleaned"
+    },
+    "2026-10-14_1630_Apollo": {
+      "folder": "2026-10-14_1630_Apollo",
+      "path": "recordings/inbox/2026-10-14_1630_Apollo",
+      "title": "Apollo",
+      "recorded_at": "2026-10-14T16:30:35-04:00",
+      "duration_seconds": 1127.5,
+      "word_count": 3219,
+      "audio_sha256": "f9813214240fd22028b5ec7339aea8705d4a8b28add818298d8561156e229251",
+      "status": "cleaned"
+    },
+    "2026-10-14_1649_Basis-Mitchell-Troyanovsky": {
+      "folder": "2026-10-14_1649_Basis-Mitchell-Troyanovsky",
+      "path": "recordings/inbox/2026-10-14_1649_Basis-Mitchell-Troyanovsky",
+      "title": "Basis (Mitchell Troyanovsky),",
+      "recorded_at": "2026-10-14T16:49:40-04:00",
+      "duration_seconds": 1173.5,
+      "word_count": 3313,
+      "audio_sha256": "7b827ce3307e7a8b83caad05071bde006a2b54a4128fba1131c568d6bf512b88",
+      "status": "cleaned"
+    },
+    "2026-10-14_1709_Runway": {
+      "folder": "2026-10-14_1709_Runway",
+      "path": "recordings/inbox/2026-10-14_1709_Runway",
+      "title": "Runway",
+      "recorded_at": "2026-10-14T17:09:22-04:00",
+      "duration_seconds": 1024.4,
+      "word_count": 3138,
+      "audio_sha256": "0a3de3c20b0b2a56d85a69d021fd212b10563e17dc0854114033e16fb042ad34",
+      "status": "cleaned"
+    }
+  },
+  "matches": {
+    "2026-10-12_1105_TokenCosting": {
+      "session_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm Eugene from Feathers, AI, I'm CEO and Fonda\" — names the speaker (Eugene Cheah) and company (Featherless, as transcribed)",
+        "transcript: transcript.txt: \"Nothing very specific to Featherless.\" — names the speaker's company",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"We are going to talk about tokenomics.\" — names the talk (Tokenomics 101); title \"TokenCosting\" corroborates"
+      ],
+      "candidates": [
+        {
+          "session_id": "c901e963-5be9-4a1d-86a3-d9354374bbcd",
+          "starts_at": "2026-10-12T11:05:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm Eugene from Feathers, AI, I'm CEO and Fonda\" — names the speaker (Eugene Cheah) and company (Featherless, as transcribed)"
+        },
+        {
+          "session_id": "4f9d99e5-0694-499d-874f-66c0c258f4de",
+          "starts_at": "2026-10-12T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T11:05:00-04:00 in shannon-room; no transcript evidence for \"AI Evaluation 101\"."
+        },
+        {
+          "session_id": "898cb76b-41f3-47c0-ba31-6a5f8df40117",
+          "starts_at": "2026-10-12T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T11:05:00-04:00 in sutton-room; no transcript evidence for \"Agent = Model + Harness: Build your own Memory-Aware AML AI Agent Harness for Financial Crime Detection\"."
+        },
+        {
+          "session_id": "c4032f39-ca9c-4124-8a90-ad0576788bab",
+          "starts_at": "2026-10-12T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T11:05:00-04:00 in turing-room; no transcript evidence for \"Harbor Intro: Shipping agents on evidence, not vibes\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-12_1315_Beyond-Done": {
+      "session_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3",
+      "confidence": 0.98,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Sorry, the songs that we're going with, SoundCloud, slash beyond done.\" — names the talk (Beyond “Done”); title \"Beyond Done\" corroborates",
+        "transcript: transcript.txt: \"That's why, you know, Nick's project is experimenting with his outcome driven development.\" — names the speaker (Nick Nisi)"
+      ],
+      "candidates": [
+        {
+          "session_id": "edb4f982-0cb8-48ee-8bf7-410255a40cb3",
+          "starts_at": "2026-10-12T13:15:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Sorry, the songs that we're going with, SoundCloud, slash beyond done.\" — names the talk (Beyond “Done”); title \"Beyond Done\" corroborates"
+        },
+        {
+          "session_id": "ca497b4b-20a7-441f-a0dd-adb5b3e972f8",
+          "starts_at": "2026-10-12T13:15:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T13:15:00-04:00 in mccarthy-room; no transcript evidence for \"The Agentic Content System Behind 200M Views\"."
+        },
+        {
+          "session_id": "3140f7f6-ca19-4061-9faf-c478f88eb5de",
+          "starts_at": "2026-10-12T13:15:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T13:15:00-04:00 in shannon-room; no transcript evidence for \"Hands-on Gitar: SonarQube’s AI code verification agent\"."
+        },
+        {
+          "session_id": "9dd08c6a-58ce-406f-8216-877d59eb1a7b",
+          "starts_at": "2026-10-12T13:15:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-12T13:15:00-04:00 in turing-room; no transcript evidence for \"Agents that Self Improve While You Sleep\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_0904_Blackwater": {
+      "session_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6",
+      "confidence": 0.98,
+      "method": "time+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I run product engineering in Bridgewater.\" — names the speaker's company (Bridgewater)",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"And so we built the vault.\" — names the talk (Vault)"
+      ],
+      "candidates": [
+        {
+          "session_id": "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6",
+          "starts_at": "2026-10-13T09:00:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+transcript: transcript: transcript.txt: \"I run product engineering in Bridgewater.\" — names the speaker's company (Bridgewater)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_0919_Anthropic": {
+      "session_id": "68a1e78b-569e-4314-a56f-f20508123cbe",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm Belinda.\" — names the speaker (Belinda Neal)",
+        "transcript: transcript.txt: \"My name is Keon Shahan.\" — names the speaker (Keon Shahab, as transcribed)"
+      ],
+      "candidates": [
+        {
+          "session_id": "68a1e78b-569e-4314-a56f-f20508123cbe",
+          "starts_at": "2026-10-13T09:18:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm Belinda.\" — names the speaker (Belinda Neal)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_0938_Two-Sigma": {
+      "session_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"please welcome John Feminelli, SVP of architecture at 2 sigma.\" — emcee introduction: names the speaker (John Feminella, as transcribed) and company (Two Sigma)"
+      ],
+      "candidates": [
+        {
+          "session_id": "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1",
+          "starts_at": "2026-10-13T09:36:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"please welcome John Feminelli, SVP of architecture at 2 sigma.\" — emcee introduction: names the speaker (John Feminella, as transcribed) and company (Two Sigma)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1015_Arize": {
+      "session_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c",
+      "confidence": 0.85,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"Arize\" — operator's folder title names the speaker's company (Arize AI); neither transcript names it",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"As an AI engineer, your job is no longer to just write the feature, write a bad feature.\" — answers abstract: \"What is an engineer if agents can do all the building?\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"You know, just reading the diff and actually doing code review.\" — answers abstract: \"the current frontier is how to eliminate code review\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"The non-deterministic to review those non-deterministic paths.\" — answers abstract: \"software is going to get steadily less deterministic\""
+      ],
+      "candidates": [
+        {
+          "session_id": "b2ed4456-5671-4e8e-83fd-684c012fef8c",
+          "starts_at": "2026-10-13T10:12:00-04:00",
+          "confidence": 0.85,
+          "why": "Matched by time+attribution+transcript: title: \"Arize\" — operator's folder title names the speaker's company (Arize AI); neither transcript names it"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1039_Writing-Slop": {
+      "session_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2",
+      "confidence": 0.9,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"We are a small team at Towards AI, my company, and.\" — names the speaker's company (Towards AI); schedule-prompted Qwen name: attribution only",
+        "transcript: transcript.txt: \"We are a small team at 4DI, my company\" — the unprompted transcript hears a company at the same point (\"4DI\"), corroborating Towards AI as transcribed",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Is to first measure this sloppy writing.\" — answers abstract: \"out of frustration with slop\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"A weak measure if a model can write like me.\" — answers abstract: \"which model writes a YouTube script that sounds like me\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Releasing a new benchmark that we called Phone Bench.\" — answers abstract: \"I am releasing the benchmark publicly\""
+      ],
+      "candidates": [
+        {
+          "session_id": "736edd83-bb08-49f1-90ed-722b7ed07eb2",
+          "starts_at": "2026-10-13T10:40:00-04:00",
+          "confidence": 0.9,
+          "why": "Matched by time+attribution+transcript: transcript: transcript.qwen3-asr-1.7b.txt: \"We are a small team at Towards AI, my company, and.\" — names the speaker's company (Towards AI); schedule-prompted Qwen name: attribution only"
+        },
+        {
+          "session_id": "71008b4d-f354-4f66-85dc-9052435c2955",
+          "starts_at": "2026-10-13T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T10:40:00-04:00 in mccarthy-room; no transcript evidence for \"Deploying AI Inside 5 Major Banks Without the 12-Month Compliance Bottleneck\"."
+        },
+        {
+          "session_id": "5049757d-8a2e-46fd-9d7b-c8c1f3d7b72a",
+          "starts_at": "2026-10-13T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T10:40:00-04:00 in shannon-room; no transcript evidence for \"Turning AI Into Operating Margin: A Field Report from Private Equity\"."
+        },
+        {
+          "session_id": "1c25f303-f38f-450b-862d-669fdbab5f82",
+          "starts_at": "2026-10-13T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T10:40:00-04:00 in simons-room; no transcript evidence for \"Wells Fargo Foundation Model: Application to Fraud Detection at Scale\"."
+        },
+        {
+          "session_id": "5ea06f9f-c79e-4d33-999c-7397b0165f9c",
+          "starts_at": "2026-10-13T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T10:40:00-04:00 in sutton-room; no transcript evidence for \"The Intelligence Plane: What your agents know, remember and learn\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1104_Air-Canada": {
+      "session_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339",
+      "confidence": 0.9,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"Air Canada\" — operator's folder title names the speaker's company",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"So I'm working at Air Canada.\" — names the speaker's company; schedule-prompted Qwen name: attribution only",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"We don't have any particular benchmark we can rely on.\" — answers abstract: \"There's no benchmark, no labels, and no playbook\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"So we're using the same concept of getting the answer first, and then try the agent from the back.\" — answers abstract: \"Write the Answer First\" technique for generating eval datasets"
+      ],
+      "candidates": [
+        {
+          "session_id": "c4ba0138-6f6d-4780-93a1-4d8f0c478339",
+          "starts_at": "2026-10-13T11:05:00-04:00",
+          "confidence": 0.9,
+          "why": "Matched by time+attribution+transcript: title: \"Air Canada\" — operator's folder title names the speaker's company"
+        },
+        {
+          "session_id": "e5624ee5-c855-46b7-bb72-c25d66fe7d5c",
+          "starts_at": "2026-10-13T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:05:00-04:00 in mccarthy-room; no transcript evidence for \"Can AI Reconstruct a Company?\"."
+        },
+        {
+          "session_id": "0b3ed34f-85a0-4824-b4db-0fb0d618f971",
+          "starts_at": "2026-10-13T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:05:00-04:00 in shannon-room; no transcript evidence for \"The Automated Security Master: keeping your master database clean with agents\"."
+        },
+        {
+          "session_id": "75bd85ed-b49d-41f6-98e1-7a22853c18ab",
+          "starts_at": "2026-10-13T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:05:00-04:00 in simons-room; no transcript evidence for \"Inside Arca’s long-horizon agents that run the business\"."
+        },
+        {
+          "session_id": "1779b934-d67b-45e9-ba11-0b19efac4b7e",
+          "starts_at": "2026-10-13T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:05:00-04:00 in sutton-room; no transcript evidence for \"No Cash Left Behind: Vanguard's Ledger Modernization Journey\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1130_Exa": {
+      "session_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5",
+      "confidence": 0.97,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"So just recently, we released X of Snapshot.\" — names the talk (Exa Snapshot, as transcribed)",
+        "transcript: transcript.txt: \"I just want to motivate what is XA, what is agentic web search\" — names the speaker's company (Exa, as transcribed); title \"Exa\" corroborates"
+      ],
+      "candidates": [
+        {
+          "session_id": "b8bb725d-daf0-4ac0-8095-5737841c89e5",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.97,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"So just recently, we released X of Snapshot.\" — names the talk (Exa Snapshot, as transcribed)"
+        },
+        {
+          "session_id": "4706833e-a199-49b1-bc4d-5a238e3e89fe",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:30:00-04:00 in mccarthy-room; no transcript evidence for \"The best context isn't in your database. It's in the investor's head.\"."
+        },
+        {
+          "session_id": "e65f74f9-2174-406d-bd32-2d7073eb677d",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:30:00-04:00 in simons-room; no transcript evidence for \"Intent Based Auth\"."
+        },
+        {
+          "session_id": "bb2b919e-0992-4b21-b58d-033c780ccd33",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:30:00-04:00 in sutton-room; no transcript evidence for \"Building Agentic PDLC Systems that Scale\"."
+        },
+        {
+          "session_id": "30afe596-abe2-417c-bd5a-313fa4bc54b3",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:30:00-04:00 in turing-room; no transcript evidence for \"Your Financial Agent Passed Every Eval. Can You Defend Its Decision?\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1155_Fable-War-Room": {
+      "session_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"And I'm Ford Pryor.\" — names the speaker (Ford Prior, as transcribed)",
+        "transcript: transcript.txt: \"But I work at Geico and we're not a tech company.\" — names the speaker's company (GEICO)"
+      ],
+      "candidates": [
+        {
+          "session_id": "6b92fb75-064e-4cb5-8aa3-7c7f211e7420",
+          "starts_at": "2026-10-13T11:55:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"And I'm Ford Pryor.\" — names the speaker (Ford Prior, as transcribed)"
+        },
+        {
+          "session_id": "e65f74f9-2174-406d-bd32-2d7073eb677d",
+          "starts_at": "2026-10-13T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:30:00-04:00 in simons-room; no transcript evidence for \"Intent Based Auth\"."
+        },
+        {
+          "session_id": "58fe4b11-571e-4afd-bd89-8ad63e6cfe11",
+          "starts_at": "2026-10-13T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:55:00-04:00 in mccarthy-room; no transcript evidence for \"Compound value from building Monzo’s in-house agent using LLMs*\"."
+        },
+        {
+          "session_id": "88f71c9f-f0a9-4f42-96c0-0e1492bad1c2",
+          "starts_at": "2026-10-13T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:55:00-04:00 in shannon-room; no transcript evidence for \"Can Your AI Analyst Keep a Secret?\"."
+        },
+        {
+          "session_id": "b1fe8396-6fa8-4574-9775-0dc01f56ce57",
+          "starts_at": "2026-10-13T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T11:55:00-04:00 in turing-room; no transcript evidence for \"Lies, Damned Lies, and Evals: How to trust your agents when the stakes are high\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1220_apify": {
+      "session_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918",
+      "confidence": 0.9,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"apify\" — operator's folder title names the speaker's company (Apify)",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Apify, we're running a marketplace of tools for AI.\" — names the speaker's company; schedule-prompted Qwen name: attribution only; answers abstract: \"I run a marketplace of 50,000+ community-built web data and automation tools\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"And stripe MPP on stable pass.\" — answers abstract: MPP payment protocol",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"So only like refunds if you bought these are optional by by by the merchants.\" — answers abstract: \"post-settlement refunds and recourse\""
+      ],
+      "candidates": [
+        {
+          "session_id": "8d348b6c-25cc-45de-8dc4-aaa3d7130918",
+          "starts_at": "2026-10-13T12:20:00-04:00",
+          "confidence": 0.9,
+          "why": "Matched by time+attribution+transcript: title: \"apify\" — operator's folder title names the speaker's company (Apify)"
+        },
+        {
+          "session_id": "c85559ae-c8f6-4d6f-b85e-02c88873f343",
+          "starts_at": "2026-10-13T12:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T12:20:00-04:00 in mccarthy-room; no transcript evidence for \"Buy, Then Deploy: Using M&A to Drive AI Transformation\"."
+        },
+        {
+          "session_id": "7d25e281-0cf7-4f13-849d-aaa5c679d83f",
+          "starts_at": "2026-10-13T12:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T12:20:00-04:00 in sutton-room; no transcript evidence for \"Your Next User Is an Agent\"."
+        },
+        {
+          "session_id": "9d72d7ac-a2a2-42cf-b880-5859316d840c",
+          "starts_at": "2026-10-13T12:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T12:20:00-04:00 in turing-room; no transcript evidence for \"1,368 AI Failures: What They Teach Us About System Evals\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1455_greptile": {
+      "session_id": "bdab432a-0538-4431-ad5a-62653affd9da",
+      "confidence": 0.9,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"greptile\" — operator's folder title names the speaker's company (Greptile)",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Quick side note: This is kind of what we do at Greptile, except.\" — names the speaker's company; schedule-prompted Qwen name: attribution only",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"We pick the right model, the right quantity of inference budget for each subtask in the review and validation process.\" — answers abstract: \"routing each task to the most effective model\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"The first thing that you should do is you should get yourself a sandbox.\" — answers abstract: \"testing changes inside live development environments\""
+      ],
+      "candidates": [
+        {
+          "session_id": "bdab432a-0538-4431-ad5a-62653affd9da",
+          "starts_at": "2026-10-13T14:55:00-04:00",
+          "confidence": 0.9,
+          "why": "Matched by time+attribution+transcript: title: \"greptile\" — operator's folder title names the speaker's company (Greptile)"
+        },
+        {
+          "session_id": "dfae680b-2617-4782-9cbe-85942a9959e7",
+          "starts_at": "2026-10-13T14:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T14:55:00-04:00 in mccarthy-room; no transcript evidence for \"State of the Agent: Reliability, Observability, and the Gap Between Them\"."
+        },
+        {
+          "session_id": "a244839c-239c-4789-b621-32a3568a218e",
+          "starts_at": "2026-10-13T14:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T14:55:00-04:00 in simons-room; no transcript evidence for \"AI and the Future of Fundamental Investing\"."
+        },
+        {
+          "session_id": "272a7ef0-4b78-41a3-813d-a67361fcd2d3",
+          "starts_at": "2026-10-13T14:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T14:55:00-04:00 in sutton-room; no transcript evidence for \"Scaling AI with P&L on the line\"."
+        },
+        {
+          "session_id": "eaa39362-c0ec-4849-a90d-841f4825a5b3",
+          "starts_at": "2026-10-13T14:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T14:55:00-04:00 in turing-room; no transcript evidence for \"Your Agent Just Paid for Nothing (6 Attacks on x402 Payments)\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1520_bench-marking-llms": {
+      "session_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31",
+      "confidence": 0.98,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Yeah, like like I said, like Run Pod, like we like have very much like, you know, we make it very easy.\" — names the speaker's company (Runpod)"
+      ],
+      "candidates": [
+        {
+          "session_id": "fca86857-d079-46a6-94a7-62b0bb8e5d31",
+          "starts_at": "2026-10-13T15:20:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Yeah, like like I said, like Run Pod, like we like have very much like, you know, we make it very easy.\" — names the speaker's company (Runpod)"
+        },
+        {
+          "session_id": "ea2eb55e-fbf3-4d5e-a74b-b0eaac758b98",
+          "starts_at": "2026-10-13T15:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:20:00-04:00 in shannon-room; no transcript evidence for \"How to build financial agents that work across the web\"."
+        },
+        {
+          "session_id": "2a07765d-fe3a-48df-be0f-75c111dbee6a",
+          "starts_at": "2026-10-13T15:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:20:00-04:00 in simons-room; no transcript evidence for \"Shipping like a startup, regulated like a bank\"."
+        },
+        {
+          "session_id": "2a589e49-4ee4-4c53-bfeb-40bc3db16506",
+          "starts_at": "2026-10-13T15:20:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:20:00-04:00 in turing-room; no transcript evidence for \"Your agent fix just broke something else\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1544_give-the-agent-a-computer": {
+      "session_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd",
+      "confidence": 0.98,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"my main test and goal there was going to be Daytona\" — names the speaker's company (Daytona)"
+      ],
+      "candidates": [
+        {
+          "session_id": "8d424512-c7f0-483c-9094-ca899d7bb1fd",
+          "starts_at": "2026-10-13T15:45:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"my main test and goal there was going to be Daytona\" — names the speaker's company (Daytona)"
+        },
+        {
+          "session_id": "56da81eb-2e56-480b-b519-e15bc9ae5e8f",
+          "starts_at": "2026-10-13T15:45:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:45:00-04:00 in mccarthy-room; no transcript evidence for \"AI in Production: Maintaining Quality and Trust as Output Scales\"."
+        },
+        {
+          "session_id": "e710d1bc-660e-402a-92b7-866e1cace263",
+          "starts_at": "2026-10-13T15:45:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:45:00-04:00 in shannon-room; no transcript evidence for \"Building Humanlike Voice Agents for Financial Services\"."
+        },
+        {
+          "session_id": "1872565b-e24d-4da9-99c6-05a8c01d3d06",
+          "starts_at": "2026-10-13T15:45:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:45:00-04:00 in simons-room; no transcript evidence for \"Everyone Has AI. Who Has the Advantage?\"."
+        },
+        {
+          "session_id": "8b0e75e9-7072-4e07-a383-3ffe0a9a62cc",
+          "starts_at": "2026-10-13T15:45:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T15:45:00-04:00 in turing-room; no transcript evidence for \"2 years of shipping a production agent: what we rebuilt and what we kept\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1625_tenex": {
+      "session_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm Alex Lieberman.\" — names the speaker"
+      ],
+      "candidates": [
+        {
+          "session_id": "c34c075b-c695-4227-bf8e-3b4eeb3460d9",
+          "starts_at": "2026-10-13T16:25:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm Alex Lieberman.\" — names the speaker"
+        },
+        {
+          "session_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a",
+          "starts_at": "2026-10-13T16:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T16:30:00-04:00 in simons-room; no transcript evidence for \"A Hedge Fund as a Function\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1630_korean-news": {
+      "session_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a",
+      "confidence": 0.98,
+      "method": "time+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"My name's Frank.\" — names the speaker (Frank Long)"
+      ],
+      "candidates": [
+        {
+          "session_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a",
+          "starts_at": "2026-10-13T16:30:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+transcript: transcript: transcript.txt: \"My name's Frank.\" — names the speaker (Frank Long)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1645_general-intuition": {
+      "session_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb",
+      "confidence": 0.98,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"If you think of general intuition\" — names the speaker's company (General Intuition)",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"We built the largest video game recorder in the world, and we.\" — topic matches \"Frontier Models for Acting in Space and Time\""
+      ],
+      "candidates": [
+        {
+          "session_id": "cada670e-c5ea-4977-b3c2-9a68dda26abb",
+          "starts_at": "2026-10-13T16:48:00-04:00",
+          "confidence": 0.98,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"If you think of general intuition\" — names the speaker's company (General Intuition)"
+        },
+        {
+          "session_id": "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a",
+          "starts_at": "2026-10-13T16:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T16:30:00-04:00 in simons-room; no transcript evidence for \"A Hedge Fund as a Function\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1704_nous-research": {
+      "session_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add",
+      "confidence": 0.97,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm the CEO of news research\" — names the speaker's company (Nous Research, as transcribed)",
+        "transcript: transcript.txt: \"Hermes agent today is the most used and downloaded OpenSource agent in the world.\" — names the talk (Hermes)"
+      ],
+      "candidates": [
+        {
+          "session_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add",
+          "starts_at": "2026-10-13T17:06:00-04:00",
+          "confidence": 0.97,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm the CEO of news research\" — names the speaker's company (Nous Research, as transcribed)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-13_1720_811-7th-Ave": {
+      "session_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16",
+      "confidence": 0.85,
+      "method": "time+transcript",
+      "evidence": [
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Two final housekeeping items before we close out the day.\" — names the talk (Closing Remarks)",
+        "transcript: transcript.txt: \"We had Dylan talking about building agents on owned versus rented land.\" — recaps the 17:06 keynote in the past tense, so the recording is not that keynote"
+      ],
+      "candidates": [
+        {
+          "session_id": "dd25c0a8-d64f-4d6e-a597-7dd576eabc16",
+          "starts_at": "2026-10-13T17:25:00-04:00",
+          "confidence": 0.85,
+          "why": "Matched by time+transcript: transcript: transcript.qwen3-asr-1.7b.txt: \"Two final housekeeping items before we close out the day.\" — names the talk (Closing Remarks)"
+        },
+        {
+          "session_id": "871cd5c8-13f4-4fe9-ac49-c8b25d970add",
+          "starts_at": "2026-10-13T17:06:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-13T17:06:00-04:00 in simons-room; no transcript evidence for \"Hermes gives you wings: Build on open foundations.\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_0901_Ramp": {
+      "session_id": "caecd5f6-b352-4868-a995-f0f71679caf0",
+      "confidence": 0.9,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"Ramp\" — operator's folder title names the speaker's company",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"So, to present this, some of our work from Ramp Labs, three specific cases of how we.\" — names the speaker's company; schedule-prompted Qwen name: attribution only",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"And so this is a really bitter lesson-pilled pattern.\" — answers abstract: \"Ramp bets on the Bitter Lesson\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"And as we were building this out, we realized, well, we can probably apply some research.\" — answers abstract: \"closes them by replicating research quickly\""
+      ],
+      "candidates": [
+        {
+          "session_id": "caecd5f6-b352-4868-a995-f0f71679caf0",
+          "starts_at": "2026-10-14T09:00:00-04:00",
+          "confidence": 0.9,
+          "why": "Matched by time+attribution+transcript: title: \"Ramp\" — operator's folder title names the speaker's company"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_0915_Sonar": {
+      "session_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Uh, my name is Tara Chuck\" — names the speaker (Tariq Shaukat, as transcribed)",
+        "transcript: transcript.txt: \"And what we see is when you apply this, our product is called sonar Q.\" — names the speaker's company (Sonar)"
+      ],
+      "candidates": [
+        {
+          "session_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc",
+          "starts_at": "2026-10-14T09:18:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Uh, my name is Tara Chuck\" — names the speaker (Tariq Shaukat, as transcribed)"
+        },
+        {
+          "session_id": "caecd5f6-b352-4868-a995-f0f71679caf0",
+          "starts_at": "2026-10-14T09:00:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T09:00:00-04:00 in simons-room; no transcript evidence for \"Chasing capabilities while waiting for the frontier\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_0932_Coinbase": {
+      "session_id": "ee927042-2ba1-44c3-b304-d001ae247839",
+      "confidence": 0.95,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"My name is, uh, Formos.\" — names the speaker (Evan Kormos, as transcribed); title \"Coinbase\" names the company",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"I am a player coach at Coinbase.\" — names the speaker's company; schedule-prompted Qwen name: attribution only"
+      ],
+      "candidates": [
+        {
+          "session_id": "ee927042-2ba1-44c3-b304-d001ae247839",
+          "starts_at": "2026-10-14T09:36:00-04:00",
+          "confidence": 0.95,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"My name is, uh, Formos.\" — names the speaker (Evan Kormos, as transcribed); title \"Coinbase\" names the company"
+        },
+        {
+          "session_id": "4add802c-6a68-4e9c-93fb-9c1e017193bc",
+          "starts_at": "2026-10-14T09:18:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T09:18:00-04:00 in simons-room; no transcript evidence for \"The Machine that Changed the World, vAI\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1044_Ryan-Carson": {
+      "session_id": "f7204e6d-a47c-4535-804e-16b4db579b95",
+      "confidence": 0.93,
+      "method": "time+attribution+transcript",
+      "evidence": [
+        "title: \"Ryan Carson\" — operator's folder title is exactly the session speaker's name",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"If you want to know more about Untangle, go to Untangle us.\" — names the speaker's company; schedule-prompted Qwen name: attribution only",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"Every builder records a video of the feature being used and passing tests.\" — answers abstract: \"a review step where an agent records a video before anything ships\"",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"After three, it then bubbles it back up to the manager agent, and if the manager agent needs to, it bubbles it back up to me, right?\" — answers abstract: \"he runs agents like an org chart\""
+      ],
+      "candidates": [
+        {
+          "session_id": "f7204e6d-a47c-4535-804e-16b4db579b95",
+          "starts_at": "2026-10-14T10:40:00-04:00",
+          "confidence": 0.93,
+          "why": "Matched by time+attribution+transcript: title: \"Ryan Carson\" — operator's folder title is exactly the session speaker's name"
+        },
+        {
+          "session_id": "f3445fe7-308b-4e84-8490-fd78a13db4fb",
+          "starts_at": "2026-10-14T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T10:40:00-04:00 in mccarthy-room; no transcript evidence for \"The Hidden Costs of a Faster Model\"."
+        },
+        {
+          "session_id": "d49d49e1-90cb-4b8d-beb6-84d6560aaf04",
+          "starts_at": "2026-10-14T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T10:40:00-04:00 in simons-room; no transcript evidence for \"Towards Autonomous Analysts in Finance\"."
+        },
+        {
+          "session_id": "d3d8c80e-84b7-4106-b8b5-ca63bc508480",
+          "starts_at": "2026-10-14T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T10:40:00-04:00 in sutton-room; no transcript evidence for \"Developer Docs as Knowledge Infrastructure for Fintech\"."
+        },
+        {
+          "session_id": "ece6925c-c979-483f-bd40-51eacdbbe11b",
+          "starts_at": "2026-10-14T10:40:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T10:40:00-04:00 in turing-room; no transcript evidence for \"From Human Review to Self-Healing Agents: How Upstart Evaluates Voice AI at Regulated-Lending Scale\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1104_Linear": {
+      "session_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Hey, buddy, I'm Tom.\" — names the speaker (Tom Moor)",
+        "transcript: transcript.txt: \"This isn't a linear ad.\" — names the speaker's company (Linear)"
+      ],
+      "candidates": [
+        {
+          "session_id": "4b33ac12-ed84-4e32-be63-6a4f9f3acb32",
+          "starts_at": "2026-10-14T11:05:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Hey, buddy, I'm Tom.\" — names the speaker (Tom Moor)"
+        },
+        {
+          "session_id": "4607dbbe-8f94-4b0e-91ce-257d1cfb5448",
+          "starts_at": "2026-10-14T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:05:00-04:00 in shannon-room; no transcript evidence for \"Building Better Agents Through End-to-End Evals\"."
+        },
+        {
+          "session_id": "dcf188f6-95d0-4c22-856b-fccf0374e8e4",
+          "starts_at": "2026-10-14T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:05:00-04:00 in simons-room; no transcript evidence for \"Not All GPU's Are Deployed The Same\"."
+        },
+        {
+          "session_id": "4188711c-a587-423b-86c2-1ff2ad38c15e",
+          "starts_at": "2026-10-14T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:05:00-04:00 in sutton-room; no transcript evidence for \"Claude Code, Financial Analyst: Turning a Coding Agent Loose on Governed Enterprise Data\"."
+        },
+        {
+          "session_id": "3524cdd1-2e7b-4c75-81b1-11b4d28141b8",
+          "starts_at": "2026-10-14T11:05:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:05:00-04:00 in turing-room; no transcript evidence for \"Benchmarking the Full Stack: From Silicon to Harness.\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1130_Software-Factories": {
+      "session_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"So my name is Manish Kapoor\" — names the speaker (Manish Kapur, as transcribed)",
+        "transcript: transcript.txt: \"I'm pretty excited to be here and talk about who verifies the software factory.\" — names the talk"
+      ],
+      "candidates": [
+        {
+          "session_id": "11b98f47-dcc2-4524-8c06-d1f6c3ff044b",
+          "starts_at": "2026-10-14T11:30:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"So my name is Manish Kapoor\" — names the speaker (Manish Kapur, as transcribed)"
+        },
+        {
+          "session_id": "8a453c61-f605-4061-b304-ace80fb21317",
+          "starts_at": "2026-10-14T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:30:00-04:00 in mccarthy-room; no transcript evidence for \"Stop Wasting Tokens on Products People Can’t Use\"."
+        },
+        {
+          "session_id": "bc4b6b4a-cf07-4326-8276-fcf845da0284",
+          "starts_at": "2026-10-14T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:30:00-04:00 in shannon-room; no transcript evidence for \"Building the Financial Account for Agents\"."
+        },
+        {
+          "session_id": "1165abe0-124d-4c1c-aa3b-6a14f5c5fd03",
+          "starts_at": "2026-10-14T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:30:00-04:00 in simons-room; no transcript evidence for \"How Compute Markets Work\"."
+        },
+        {
+          "session_id": "9b002687-09cf-42e2-9282-532ed9d0c184",
+          "starts_at": "2026-10-14T11:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:30:00-04:00 in turing-room; no transcript evidence for \"We Let Our Financial Planners Write the Agents\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1155_SpaceX": {
+      "session_id": "29083884-87dc-44f8-b412-b494afca8856",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"And recently, I came along to SpaceX as part of the acquisition preserve.\" — names the speaker's company (SpaceX Super Intelligence)"
+      ],
+      "candidates": [
+        {
+          "session_id": "29083884-87dc-44f8-b412-b494afca8856",
+          "starts_at": "2026-10-14T11:55:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"And recently, I came along to SpaceX as part of the acquisition preserve.\" — names the speaker's company (SpaceX Super Intelligence)"
+        },
+        {
+          "session_id": "2401b55d-09c7-4159-8297-545dea0b7df2",
+          "starts_at": "2026-10-14T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:55:00-04:00 in mccarthy-room; no transcript evidence for \"The Human Verification Bottleneck: What agents do when a human is the only thing in the way\"."
+        },
+        {
+          "session_id": "70532ab5-f3d2-48a2-aebd-c2018afcd318",
+          "starts_at": "2026-10-14T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:55:00-04:00 in simons-room; no transcript evidence for \"The Dark Pools of Compute\"."
+        },
+        {
+          "session_id": "9f2a38a9-c0e9-461a-97c4-b8cb3fbe3e50",
+          "starts_at": "2026-10-14T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:55:00-04:00 in sutton-room; no transcript evidence for \"It's Not the Model, It's You\"."
+        },
+        {
+          "session_id": "534796a7-0f44-4d59-a1c5-0df28a947c6a",
+          "starts_at": "2026-10-14T11:55:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T11:55:00-04:00 in turing-room; no transcript evidence for \"When AI Fails: Designing Evaluation Systems for High Stakes Applications\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1429_Warp": {
+      "session_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm Ben Holmes.\" — names the speaker",
+        "transcript: transcript.txt: \"I'm a FedEx engineering lead at Warp\" — names the speaker's company"
+      ],
+      "candidates": [
+        {
+          "session_id": "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f",
+          "starts_at": "2026-10-14T14:30:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm Ben Holmes.\" — names the speaker"
+        },
+        {
+          "session_id": "cd44e04a-fc21-4814-9b82-700c1b75799f",
+          "starts_at": "2026-10-14T14:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T14:30:00-04:00 in mccarthy-room; no transcript evidence for \"How Raj Led Datasite’s AI and Data Transformation at Scale with Reducto\"."
+        },
+        {
+          "session_id": "aaea3072-e0d1-480b-9c0e-eddf0fc6e43e",
+          "starts_at": "2026-10-14T14:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T14:30:00-04:00 in shannon-room; no transcript evidence for \"Your Agent Wants Your Data: Securing MCP Database Access from the Ground Up\"."
+        },
+        {
+          "session_id": "bb3856b7-6575-483e-ae26-c4df34fdf3a4",
+          "starts_at": "2026-10-14T14:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T14:30:00-04:00 in simons-room; no transcript evidence for \"Why Wall Street Still Doesn’t Trust AI\"."
+        },
+        {
+          "session_id": "3b17997c-2057-4e60-a311-0f16cd9833ab",
+          "starts_at": "2026-10-14T14:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T14:30:00-04:00 in sutton-room; no transcript evidence for \"Are You Smarter Than a Fruit Fly?\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1625_Ksenia": {
+      "session_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e",
+      "confidence": 0.95,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"for those who haven't met me yet, my name is Seniose.\" — names the speaker (Ksenia Se, as transcribed); title \"Ksenia\" corroborates",
+        "transcript: transcript.qwen3-asr-1.7b.txt: \"My name is Ksenia Se.\" — names the speaker; schedule-prompted Qwen name: attribution only"
+      ],
+      "candidates": [
+        {
+          "session_id": "18628ea8-d66a-4d7b-adbd-730d3a43d92e",
+          "starts_at": "2026-10-14T16:25:00-04:00",
+          "confidence": 0.95,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"for those who haven't met me yet, my name is Seniose.\" — names the speaker (Ksenia Se, as transcribed); title \"Ksenia\" corroborates"
+        },
+        {
+          "session_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0",
+          "starts_at": "2026-10-14T16:30:00-04:00",
+          "confidence": 0.1,
+          "why": "Overlaps the recording at 2026-10-14T16:30:00-04:00 in simons-room; no transcript evidence for \"AI in Practice: An Inside Look at Apollo's Approach\"."
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1630_Apollo": {
+      "session_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"I'm Jack McDonald.\" — names the speaker",
+        "transcript: transcript.txt: \"like Apollo, deal with messy, fragmented data.\" — names the speaker's company (Apollo Global Management)"
+      ],
+      "candidates": [
+        {
+          "session_id": "44e9d04a-e8b4-418c-8a85-02fbb9263dd0",
+          "starts_at": "2026-10-14T16:30:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"I'm Jack McDonald.\" — names the speaker"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1649_Basis-Mitchell-Troyanovsky": {
+      "session_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Please welcome Mitchell Trainos, the co-founder of Basses.\" — emcee introduction: names the speaker (Mitchell Troyanovsky, as transcribed)",
+        "transcript: transcript.txt: \"And one of the things that we developed that basis was this concept of a behavior stack.\" — names the speaker's company (Basis)"
+      ],
+      "candidates": [
+        {
+          "session_id": "1cbc625f-7f07-49bb-9c5c-57c95f07ba77",
+          "starts_at": "2026-10-14T16:48:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Please welcome Mitchell Trainos, the co-founder of Basses.\" — emcee introduction: names the speaker (Mitchell Troyanovsky, as transcribed)"
+        }
+      ],
+      "status": "matched"
+    },
+    "2026-10-14_1709_Runway": {
+      "session_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80",
+      "confidence": 0.99,
+      "method": "time+title+transcript",
+      "evidence": [
+        "transcript: transcript.txt: \"Please welcome Cristobal Valenzuela, co-founder and co-CEO of Runway.\" — emcee introduction: names the speaker and company"
+      ],
+      "candidates": [
+        {
+          "session_id": "af8422e8-d5f8-4dbd-a918-6360f5bfba80",
+          "starts_at": "2026-10-14T17:06:00-04:00",
+          "confidence": 0.99,
+          "why": "Matched by time+title+transcript: transcript: transcript.txt: \"Please welcome Cristobal Valenzuela, co-founder and co-CEO of Runway.\" — emcee introduction: names the speaker and company"
+        }
+      ],
+      "status": "matched"
+    }
+  },
+  "talks": {
+    "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
+      "slug": "2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101",
+      "path": "talks/2026-10-12-the-ai-bill-is-too-damn-high-tokenomics-101/transcript.md",
+      "title": "The AI Bill Is Too Damn High – Tokenomics 101",
+      "speakers": [
+        {
+          "name": "Eugene Cheah",
+          "affiliation": "Featherless"
+        }
+      ],
+      "room_id": "mccarthy-room",
+      "starts_at": "2026-10-12T11:05:00-04:00",
+      "source_recording": "2026-10-12_1105_TokenCosting",
+      "sections": [
+        "### 00:00:00 — Workshop Introduction & Featherless Background",
+        "### 00:08:48 — Inference Economics & Hardware Cost Drivers",
+        "### 00:18:04 — Token Pricing, Batching & Memory Bandwidth",
+        "### 00:27:04 — Model Architecture Trade-offs & KV Cache",
+        "### 00:36:10 — Open-Weight Deployment & Cost Optimization",
+        "### 00:45:24 — Workshop Q&A & Practical Takeaways"
+      ],
+      "word_count": 9436,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
+      "slug": "2026-10-12-beyond-done-building-verification-loops-for-ai-agents",
+      "path": "talks/2026-10-12-beyond-done-building-verification-loops-for-ai-agents/transcript.md",
+      "title": "Beyond “Done”: Building Verification Loops for AI Agents",
+      "speakers": [
+        {
+          "name": "Nick Nisi",
+          "affiliation": "WorkOS"
+        },
+        {
+          "name": "Zack Proser",
+          "affiliation": "WorkOS"
+        }
+      ],
+      "room_id": "sutton-room",
+      "starts_at": "2026-10-12T13:15:00-04:00",
+      "source_recording": "2026-10-12_1315_Beyond-Done",
+      "sections": [
+        "### 00:00:00 — Why 'Done' Is Not Enough for Production Agents",
+        "### 00:08:55 — Designing Deterministic Verification Loops",
+        "### 00:17:28 — Guardrails, Sandboxes & Failure Recovery",
+        "### 00:27:16 — Hands-On Verification Architecture",
+        "### 00:35:55 — Scaling Agent Verification in CI & Production",
+        "### 00:47:08 — Workshop Q&A & Closing Discussion"
+      ],
+      "word_count": 9705,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
+      "slug": "2026-10-13-vault-making-unstructured-data-work-for-investing",
+      "path": "talks/2026-10-13-vault-making-unstructured-data-work-for-investing/transcript.md",
+      "title": "Vault: Making Unstructured Data Work for Investing",
+      "speakers": [
+        {
+          "name": "Aaron Linsky",
+          "affiliation": "Bridgewater"
+        },
+        {
+          "name": "Sam Green",
+          "affiliation": "Bridgewater"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T09:00:00-04:00",
+      "source_recording": "2026-10-13_0904_Blackwater",
+      "sections": [
+        "### 00:00:00 — From Structured Time Series to Unstructured Data at Bridgewater",
+        "### 00:04:53 — Inside Vault: Architecture for Investment Research",
+        "### 00:09:53 — Grounding, Evaluation & Iterative Deployment"
+      ],
+      "word_count": 2448,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "68a1e78b-569e-4314-a56f-f20508123cbe": {
+      "slug": "2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services",
+      "path": "talks/2026-10-13-anthropic-accelerating-frontier-ai-in-financial-services/transcript.md",
+      "title": "Anthropic: Accelerating frontier AI in Financial Services.",
+      "speakers": [
+        {
+          "name": "Belinda Neal",
+          "affiliation": "Anthropic"
+        },
+        {
+          "name": "Keon Shahab",
+          "affiliation": "Anthropic"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T09:18:00-04:00",
+      "source_recording": "2026-10-13_0919_Anthropic",
+      "sections": [
+        "### 00:00:11 — Introduction: Frontier AI in Financial Services",
+        "### 00:06:12 — Enterprise Deployment Patterns & Governance",
+        "### 00:12:09 — Live Financial Workflow Demonstrations & Outlook"
+      ],
+      "word_count": 3136,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
+      "slug": "2026-10-13-balancing-acceleration-and-safety-for-ai-agents",
+      "path": "talks/2026-10-13-balancing-acceleration-and-safety-for-ai-agents/transcript.md",
+      "title": "Balancing Acceleration and Safety for AI Agents",
+      "speakers": [
+        {
+          "name": "John Feminella",
+          "affiliation": "Two Sigma"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T09:36:00-04:00",
+      "source_recording": "2026-10-13_0938_Two-Sigma",
+      "sections": [
+        "### 00:00:00 — Balancing Innovation Speed and Institutional Trust",
+        "### 00:06:21 — Risk Taxonomies & Guardrails for AI Agents",
+        "### 00:12:38 — Production Architecture at Two Sigma"
+      ],
+      "word_count": 3624,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
+      "slug": "2026-10-13-what-does-an-ai-engineer-do",
+      "path": "talks/2026-10-13-what-does-an-ai-engineer-do/transcript.md",
+      "title": "What does an AI engineer do?",
+      "speakers": [
+        {
+          "name": "Aparna Dhinakaran",
+          "affiliation": "Arize AI"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T10:12:00-04:00",
+      "source_recording": "2026-10-13_1015_Arize",
+      "sections": [
+        "### 00:00:00 — The Evolving Role of the AI Engineer",
+        "### 00:04:53 — The Build-Eval-Ship-Monitor Loop",
+        "### 00:09:45 — Continuous Improvement & Agent Observability"
+      ],
+      "word_count": 2502,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
+      "slug": "2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr",
+      "path": "talks/2026-10-13-can-any-model-write-like-me-building-a-benchmark-for-creative-wr/transcript.md",
+      "title": "Can Any Model Write Like Me? Building a Benchmark for Creative Writing",
+      "speakers": [
+        {
+          "name": "Louis-François Bouchard",
+          "affiliation": "Towards AI"
+        }
+      ],
+      "room_id": "turing-room",
+      "starts_at": "2026-10-13T10:40:00-04:00",
+      "source_recording": "2026-10-13_1039_Writing-Slop",
+      "sections": [
+        "### 00:00:00 — Defining AI Writing Slop & Why It Happens",
+        "### 00:06:12 — Constructing a Benchmark for Creative Writing",
+        "### 00:12:33 — Evaluating Style, Voice & Model Findings"
+      ],
+      "word_count": 2845,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
+      "slug": "2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with",
+      "path": "talks/2026-10-13-write-the-answer-first-generating-eval-datasets-for-agents-with/transcript.md",
+      "title": "Write the Answer First: Generating Eval Datasets for Agents With No Benchmark",
+      "speakers": [
+        {
+          "name": "Nathanael Weill",
+          "affiliation": "Air Canada"
+        }
+      ],
+      "room_id": "turing-room",
+      "starts_at": "2026-10-13T11:05:00-04:00",
+      "source_recording": "2026-10-13_1104_Air-Canada",
+      "sections": [
+        "### 00:00:00 — Shipping Enterprise Agents Without Pre-Existing Benchmarks",
+        "### 00:06:29 — Writing the Answer First: Synthetic Eval Dataset Generation",
+        "### 00:12:35 — Production Rollout & Lessons Learned"
+      ],
+      "word_count": 2621,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
+      "slug": "2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot",
+      "path": "talks/2026-10-13-search-the-web-as-it-was-an-introduction-to-exa-snapshot/transcript.md",
+      "title": "Search the Web as It Was: An Introduction to Exa Snapshot",
+      "speakers": [
+        {
+          "name": "Ryan Ahern",
+          "affiliation": "Exa"
+        }
+      ],
+      "room_id": "shannon-room",
+      "starts_at": "2026-10-13T11:30:00-04:00",
+      "source_recording": "2026-10-13_1130_Exa",
+      "sections": [
+        "### 00:00:00 — What Is Exa & Agentic Web Search",
+        "### 00:06:00 — Exa Snapshot & Backtesting Financial Agents Without Lookahead Bias",
+        "### 00:12:22 — Point-in-Time Web Retrieval & Evaluation"
+      ],
+      "word_count": 3828,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
+      "slug": "2026-10-13-inside-the-fable-war-room",
+      "path": "talks/2026-10-13-inside-the-fable-war-room/transcript.md",
+      "title": "Inside the Fable War Room",
+      "speakers": [
+        {
+          "name": "Ford Prior",
+          "affiliation": "GEICO"
+        }
+      ],
+      "room_id": "sutton-room",
+      "starts_at": "2026-10-13T11:55:00-04:00",
+      "source_recording": "2026-10-13_1155_Fable-War-Room",
+      "sections": [
+        "### 00:00:00 — SDLC Velocity vs. Incident Operations at GEICO",
+        "### 00:06:39 — Inside the Fable War Room: Multi-Agent Incident Response",
+        "### 00:12:33 — Production Results & Cultural Takeaways"
+      ],
+      "word_count": 3276,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
+      "slug": "2026-10-13-agents-can-pay-so-why-don-t-they",
+      "path": "talks/2026-10-13-agents-can-pay-so-why-don-t-they/transcript.md",
+      "title": "Agents can pay. So why don’t they?",
+      "speakers": [
+        {
+          "name": "Jan Curn",
+          "affiliation": "Apify"
+        }
+      ],
+      "room_id": "shannon-room",
+      "starts_at": "2026-10-13T12:20:00-04:00",
+      "source_recording": "2026-10-13_1220_apify",
+      "sections": [
+        "### 00:00:00 — Why Agentic Payments Matter for Tool Marketplaces",
+        "### 00:07:30 — Payment Protocols, MCP & x402 Friction",
+        "### 00:13:38 — Real-World Agent Monetization Lessons at Apify"
+      ],
+      "word_count": 3400,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "bdab432a-0538-4431-ad5a-62653affd9da": {
+      "slug": "2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti",
+      "path": "talks/2026-10-13-how-to-build-an-ai-code-review-agent-from-the-creators-of-grepti/transcript.md",
+      "title": "How to build an AI code review agent: from the creators of Greptile",
+      "speakers": [
+        {
+          "name": "Daksh Gupta",
+          "affiliation": "Greptile"
+        }
+      ],
+      "room_id": "shannon-room",
+      "starts_at": "2026-10-13T14:55:00-04:00",
+      "source_recording": "2026-10-13_1455_greptile",
+      "sections": [
+        "### 00:00:00 — Code Review at Scale: Signal vs. Noise",
+        "### 00:05:48 — Iterative Architecture of Greptile's Review Agent",
+        "### 00:11:50 — Sandboxed Execution, Context Indexing & Evaluation"
+      ],
+      "word_count": 3739,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
+      "slug": "2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with",
+      "path": "talks/2026-10-13-from-model-to-metrics-serving-and-benchmarking-any-llm-live-with/transcript.md",
+      "title": "From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod",
+      "speakers": [
+        {
+          "name": "Chris Vela",
+          "affiliation": "Runpod"
+        }
+      ],
+      "room_id": "mccarthy-room",
+      "starts_at": "2026-10-13T15:20:00-04:00",
+      "source_recording": "2026-10-13_1520_bench-marking-llms",
+      "sections": [
+        "### 00:00:00 — Why Live LLM Serving & Benchmarking Is Hard",
+        "### 00:05:15 — Serving Open Models with vLLM on Runpod",
+        "### 00:11:12 — Throughput, Latency & Cost Metrics in Practice"
+      ],
+      "word_count": 2865,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
+      "slug": "2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework",
+      "path": "talks/2026-10-13-give-the-model-a-computer-the-one-thing-every-ai-agent-framework/transcript.md",
+      "title": "Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On",
+      "speakers": [
+        {
+          "name": "Mislav Ivanda",
+          "affiliation": "Daytona"
+        }
+      ],
+      "room_id": "sutton-room",
+      "starts_at": "2026-10-13T15:45:00-04:00",
+      "source_recording": "2026-10-13_1544_give-the-agent-a-computer",
+      "sections": [
+        "### 00:00:05 — Why Every Agent Framework Converges on Sandboxed Computers",
+        "### 00:05:08 — Daytona Runtime Architecture & Isolation Primitives",
+        "### 00:10:20 — Patterns from Integrating Across Agent Harnesses"
+      ],
+      "word_count": 2156,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
+      "slug": "2026-10-13-welcome-back-featured-keynotes",
+      "path": "talks/2026-10-13-welcome-back-featured-keynotes/transcript.md",
+      "title": "Welcome Back - Featured Keynotes",
+      "speakers": [
+        {
+          "name": "Alex Lieberman",
+          "affiliation": "Tenex"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T16:25:00-04:00",
+      "source_recording": "2026-10-13_1625_tenex",
+      "sections": [
+        "### 00:00:00 — Afternoon Keynote Block Welcome & Tenex Reflections"
+      ],
+      "word_count": 774,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
+      "slug": "2026-10-13-a-hedge-fund-as-a-function",
+      "path": "talks/2026-10-13-a-hedge-fund-as-a-function/transcript.md",
+      "title": "A Hedge Fund as a Function",
+      "speakers": [
+        {
+          "name": "Frank Long",
+          "affiliation": "Coatue"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T16:30:00-04:00",
+      "source_recording": "2026-10-13_1630_korean-news",
+      "sections": [
+        "### 00:00:00 — Investment Thesis: Modeling the Hedge Fund as a Function",
+        "### 00:04:30 — Deploying Agents Across Public & Private Market Research",
+        "### 00:09:20 — Compounding Institutional Knowledge at Coatue"
+      ],
+      "word_count": 2283,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
+      "slug": "2026-10-13-frontier-models-for-acting-in-space-and-time",
+      "path": "talks/2026-10-13-frontier-models-for-acting-in-space-and-time/transcript.md",
+      "title": "Frontier Models for Acting in Space and Time",
+      "speakers": [
+        {
+          "name": "Pim de Witte",
+          "affiliation": "General Intuition"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T16:48:00-04:00",
+      "source_recording": "2026-10-13_1645_general-intuition",
+      "sections": [
+        "### 00:00:09 — From Internet Text to Spatiotemporal World Models",
+        "### 00:07:19 — Learning Action Policies from Billions of Gameplay Trajectories",
+        "### 00:13:24 — Transferring Spatial Intelligence to Real-World Control"
+      ],
+      "word_count": 3209,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
+      "slug": "2026-10-13-hermes-gives-you-wings-build-on-open-foundations",
+      "path": "talks/2026-10-13-hermes-gives-you-wings-build-on-open-foundations/transcript.md",
+      "title": "Hermes gives you wings: Build on open foundations.",
+      "speakers": [
+        {
+          "name": "Dillon Rolnick",
+          "affiliation": "Nous Research"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T17:06:00-04:00",
+      "source_recording": "2026-10-13_1704_nous-research",
+      "sections": [
+        "### 00:00:00 — The Economics of Frontier Labs vs. Open Foundations",
+        "### 00:05:13 — Hermes & Owning Your Intelligence Stack",
+        "### 00:10:21 — Training, Steering & Customizing Open Models"
+      ],
+      "word_count": 2172,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
+      "slug": "2026-10-13-closing-remarks",
+      "path": "talks/2026-10-13-closing-remarks/transcript.md",
+      "title": "Closing Remarks",
+      "speakers": [
+        {
+          "name": "Alex Lieberman",
+          "affiliation": "Tenex"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-13T17:25:00-04:00",
+      "source_recording": "2026-10-13_1720_811-7th-Ave",
+      "sections": [
+        "### 00:00:00 — Day 1 Closing Remarks & Keynote Recap"
+      ],
+      "word_count": 173,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "caecd5f6-b352-4868-a995-f0f71679caf0": {
+      "slug": "2026-10-14-chasing-capabilities-while-waiting-for-the-frontier",
+      "path": "talks/2026-10-14-chasing-capabilities-while-waiting-for-the-frontier/transcript.md",
+      "title": "Chasing capabilities while waiting for the frontier",
+      "speakers": [
+        {
+          "name": "Alexander Shevchenko",
+          "affiliation": "Ramp"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T09:00:00-04:00",
+      "source_recording": "2026-10-14_0901_Ramp",
+      "sections": [
+        "### 00:00:00 — Token Economics & Capability Growth at Ramp",
+        "### 00:04:23 — Combining Frontier Orchestrators with Specialized Financial Models",
+        "### 00:08:51 — Lessons from Shipping Production Financial Agents"
+      ],
+      "word_count": 2078,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
+      "slug": "2026-10-14-the-machine-that-changed-the-world-vai",
+      "path": "talks/2026-10-14-the-machine-that-changed-the-world-vai/transcript.md",
+      "title": "The Machine that Changed the World, vAI",
+      "speakers": [
+        {
+          "name": "Tariq Shaukat",
+          "affiliation": "Sonar"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T09:18:00-04:00",
+      "source_recording": "2026-10-14_0915_Sonar",
+      "sections": [
+        "### 00:00:06 — From Lean Manufacturing to Enterprise Software Factories",
+        "### 00:05:31 — Why Unverified AI Code Creates Hidden Debt",
+        "### 00:11:02 — Building Verification and Quality Gates into the Factory"
+      ],
+      "word_count": 2756,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "ee927042-2ba1-44c3-b304-d001ae247839": {
+      "slug": "2026-10-14-trusting-agents-in-policy-driven-workflows",
+      "path": "talks/2026-10-14-trusting-agents-in-policy-driven-workflows/transcript.md",
+      "title": "Trusting Agents in Policy-Driven Workflows",
+      "speakers": [
+        {
+          "name": "Evan Kormos",
+          "affiliation": "Coinbase"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T09:36:00-04:00",
+      "source_recording": "2026-10-14_0932_Coinbase",
+      "sections": [
+        "### 00:00:18 — Policy-Driven Workflows & Deterministic Controls at Coinbase"
+      ],
+      "word_count": 502,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "f7204e6d-a47c-4535-804e-16b4db579b95": {
+      "slug": "2026-10-14-your-job-is-now-agent-manager",
+      "path": "talks/2026-10-14-your-job-is-now-agent-manager/transcript.md",
+      "title": "Your job is now \"agent manager\"",
+      "speakers": [
+        {
+          "name": "Ryan Carson",
+          "affiliation": "Untangle"
+        }
+      ],
+      "room_id": "shannon-room",
+      "starts_at": "2026-10-14T10:40:00-04:00",
+      "source_recording": "2026-10-14_1044_Ryan-Carson",
+      "sections": [
+        "### 00:00:07 — Managing a Fleet of Builder, Reviewer & Manager Agents",
+        "### 00:05:06 — Continuous 15-Minute Heartbeats & Escalation Loops"
+      ],
+      "word_count": 1686,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
+      "slug": "2026-10-14-your-coding-agent-has-a-context-problem",
+      "path": "talks/2026-10-14-your-coding-agent-has-a-context-problem/transcript.md",
+      "title": "Your Coding Agent Has a Context Problem",
+      "speakers": [
+        {
+          "name": "Tom Moor",
+          "affiliation": "Linear"
+        }
+      ],
+      "room_id": "mccarthy-room",
+      "starts_at": "2026-10-14T11:05:00-04:00",
+      "source_recording": "2026-10-14_1104_Linear",
+      "sections": [
+        "### 00:00:00 — Why Coding Agents Fail Without Product & Issue Context",
+        "### 00:06:57 — Structuring Context Graphs & Specs at Linear",
+        "### 00:14:17 — Human-Agent Collaboration in the Issue Tracker"
+      ],
+      "word_count": 3332,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
+      "slug": "2026-10-14-who-verifies-the-software-factory",
+      "path": "talks/2026-10-14-who-verifies-the-software-factory/transcript.md",
+      "title": "Who verifies the software factory?",
+      "speakers": [
+        {
+          "name": "Manish Kapur",
+          "affiliation": "Sonar"
+        },
+        {
+          "name": "Addy Osmani",
+          "affiliation": "Anthropic"
+        }
+      ],
+      "room_id": "sutton-room",
+      "starts_at": "2026-10-14T11:30:00-04:00",
+      "source_recording": "2026-10-14_1130_Software-Factories",
+      "sections": [
+        "### 00:00:00 — The Code Review Bottleneck in AI Software Factories",
+        "### 00:06:32 — Multi-Layered Verification: Static Analysis, Tests & Agent Critics",
+        "### 00:12:37 — Scaling Trusted Autonomy with Sonar & Anthropic"
+      ],
+      "word_count": 3398,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "29083884-87dc-44f8-b412-b494afca8856": {
+      "slug": "2026-10-14-the-model-ate-the-coding-harness-now-what",
+      "path": "talks/2026-10-14-the-model-ate-the-coding-harness-now-what/transcript.md",
+      "title": "The Model Ate the Coding Harness. Now What?",
+      "speakers": [
+        {
+          "name": "Jediah Katz",
+          "affiliation": "SpaceX Super Intelligence"
+        }
+      ],
+      "room_id": "shannon-room",
+      "starts_at": "2026-10-14T11:55:00-04:00",
+      "source_recording": "2026-10-14_1155_SpaceX",
+      "sections": [
+        "### 00:00:00 — Evolution of the Coding Agent Harness",
+        "### 00:06:36 — What Happens as Models Absorb Harness Scaffolding",
+        "### 00:12:13 — Next-Generation Environment & Tool Interfaces"
+      ],
+      "word_count": 2969,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
+      "slug": "2026-10-14-your-agent-needs-a-skill-to-improve-its-skills",
+      "path": "talks/2026-10-14-your-agent-needs-a-skill-to-improve-its-skills/transcript.md",
+      "title": "Your agent needs a skill to improve its skills",
+      "speakers": [
+        {
+          "name": "Ben Holmes",
+          "affiliation": "Warp"
+        }
+      ],
+      "room_id": "turing-room",
+      "starts_at": "2026-10-14T14:30:00-04:00",
+      "source_recording": "2026-10-14_1429_Warp",
+      "sections": [
+        "### 00:00:00 — Why Agents Repeat Mistakes Across Sessions",
+        "### 00:06:36 — A Meta-Skill for Mining Past Runs & Updating Skills",
+        "### 00:12:52 — Evaluating Self-Improving Agent Loops at Warp"
+      ],
+      "word_count": 3864,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
+      "slug": "2026-10-14-welcome-back-featured-keynotes",
+      "path": "talks/2026-10-14-welcome-back-featured-keynotes/transcript.md",
+      "title": "Welcome Back - Featured Keynotes",
+      "speakers": [
+        {
+          "name": "Ksenia Se",
+          "affiliation": "Turing Post"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T16:25:00-04:00",
+      "source_recording": "2026-10-14_1625_Ksenia",
+      "sections": [
+        "### 00:00:07 — Day 2 Afternoon Keynote Block Welcome"
+      ],
+      "word_count": 569,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
+      "slug": "2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach",
+      "path": "talks/2026-10-14-ai-in-practice-an-inside-look-at-apollo-s-approach/transcript.md",
+      "title": "AI in Practice: An Inside Look at Apollo's Approach",
+      "speakers": [
+        {
+          "name": "Michael Manapat",
+          "affiliation": "Rowspace"
+        },
+        {
+          "name": "Jack McDonald",
+          "affiliation": "Apollo Global Management"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T16:30:00-04:00",
+      "source_recording": "2026-10-14_1630_Apollo",
+      "sections": [
+        "### 00:00:00 — Rowspace & Apollo: AI for Institutional Investment Data",
+        "### 00:06:34 — Reconciling Fragmented Deal & Portfolio Data with Agents",
+        "### 00:12:48 — Governance, Auditability & Deployment Lessons at Apollo"
+      ],
+      "word_count": 3207,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
+      "slug": "2026-10-14-process-supervision-for-agents-that-do-long-horizon-work",
+      "path": "talks/2026-10-14-process-supervision-for-agents-that-do-long-horizon-work/transcript.md",
+      "title": "Process Supervision for Agents That Do Long-Horizon Work",
+      "speakers": [
+        {
+          "name": "Mitchell Troyanovsky",
+          "affiliation": "Basis"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T16:48:00-04:00",
+      "source_recording": "2026-10-14_1649_Basis-Mitchell-Troyanovsky",
+      "sections": [
+        "### 00:00:00 — Long-Horizon Accounting Agents at Basis",
+        "### 00:06:54 — Process Supervision vs. Outcome-Only Evaluation",
+        "### 00:13:22 — Scaling Multi-Step Reliability in Production"
+      ],
+      "word_count": 3305,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    },
+    "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
+      "slug": "2026-10-14-everything-will-be-simulated",
+      "path": "talks/2026-10-14-everything-will-be-simulated/transcript.md",
+      "title": "Everything will be Simulated",
+      "speakers": [
+        {
+          "name": "Cristóbal Valenzuela",
+          "affiliation": "Runway"
+        }
+      ],
+      "room_id": "simons-room",
+      "starts_at": "2026-10-14T17:06:00-04:00",
+      "source_recording": "2026-10-14_1709_Runway",
+      "sections": [
+        "### 00:00:00 — Ten Years of Generative Media & World Models at Runway",
+        "### 00:05:41 — From Video Generation to Real-Time World Simulation",
+        "### 00:11:22 — Simulating Environments, Physics & Interactive Worlds"
+      ],
+      "word_count": 3094,
+      "cleaned_at": "2026-11-14T09:52:38-05:00"
+    }
+  },
+  "attachments": []
+}

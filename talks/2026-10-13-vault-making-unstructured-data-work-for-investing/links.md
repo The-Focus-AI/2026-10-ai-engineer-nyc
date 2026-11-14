@@ -9,10 +9,10 @@
 
 - **Aaron Linsky** (Bridgewater) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"For most of Bridgewalk's history, that meant building and overseeing time series models on structured data."*
+  - Evidence: *"For most of Bridgewater's history, that meant building and overseeing time series models on structured data."*
 - **Sam Green** (Bridgewater) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"For most of Bridgewalk's history, that meant building and overseeing time series models on structured data."*
+  - Evidence: *"For most of Bridgewater's history, that meant building and overseeing time series models on structured data."*
 
 ## Companies
 
@@ -22,7 +22,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Vault: Making Unstructured Data Work for Investing](https://ai.engineer/nyc/2026/schedule#session-a84ca3a8-cc2f-4b50-a635-fc380f6f04f6)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Vault: Making Unstructured Data Work for Investing".
-  - Evidence: *"For most of Bridgewalk's history, that meant building and overseeing time series models on structured data."*
+  - Evidence: *"For most of Bridgewater's history, that meant building and overseeing time series models on structured data."*
 
 ## Coverage & Gaps
 

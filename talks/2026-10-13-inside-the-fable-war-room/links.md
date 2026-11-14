@@ -9,7 +9,7 @@
 
 - **Ford Prior** (GEICO) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"And I'm Ford Pryor."*
+  - Evidence: *"And I'm Ford Prior."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Inside the Fable War Room](https://ai.engineer/nyc/2026/schedule#session-6b92fb75-064e-4cb5-8aa3-7c7f211e7420)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Inside the Fable War Room".
-  - Evidence: *"And I'm Ford Pryor."*
+  - Evidence: *"And I'm Ford Prior."*
 
 ## Coverage & Gaps
 

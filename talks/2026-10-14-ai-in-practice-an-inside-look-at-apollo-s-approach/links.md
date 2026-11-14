@@ -9,10 +9,10 @@
 
 - **Jack McDonald** (Apollo Global Management) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"I'm micromane a path. I'm a co-founder of Roast Base. And Roast Base is on a tactical platform that uses AI to help and has to surface partners, like Apollo, deal with messy, fragmented data."*
+  - Evidence: *"I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."*
 - **Michael Manapat** (Rowspace) · status: `found`
   - Profile: https://www.rowspace.ai/
-  - Evidence: *"I'm micromane a path. I'm a co-founder of Roast Base. And Roast Base is on a tactical platform that uses AI to help and has to surface partners, like Apollo, deal with messy, fragmented data."*
+  - Evidence: *"I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."*
 
 ## Companies
 
@@ -23,7 +23,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — AI in Practice: An Inside Look at Apollo's Approach](https://ai.engineer/nyc/2026/schedule#session-44e9d04a-e8b4-418c-8a85-02fbb9263dd0)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "AI in Practice: An Inside Look at Apollo's Approach".
-  - Evidence: *"I'm micromane a path. I'm a co-founder of Roast Base. And Roast Base is on a tactical platform that uses AI to help and has to surface partners, like Apollo, deal with messy, fragmented data."*
+  - Evidence: *"I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."*
 
 ## Coverage & Gaps
 

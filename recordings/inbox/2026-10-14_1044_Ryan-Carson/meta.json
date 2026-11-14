@@ -2,10 +2,22 @@
   "title": "Ryan Carson",
   "recorded_at": "2026-10-14T10:44:48-04:00",
   "duration_seconds": 669,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 1803,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 1693,
+  "transcript_locale": null,
   "source_file": "20261014 104448.m4a",
   "audio_sha256": "cdda247ee01996b6c15e3ecf4691f37a9b985d151230998fb9e9284b634d31ce",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 7,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 1803,
+      "locale": "en_US"
+    }
+  ]
 }

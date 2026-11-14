@@ -9,7 +9,7 @@
 
 - **Jediah Katz** (SpaceX Super Intelligence) · status: `found`
   - Profile: https://cursor.com/home
-  - Evidence: *"And recently, I came along to SpaceX as part of the acquisition preserve. So today I want to talk to you all about how the Asian harness has evolved where we are today."*
+  - Evidence: *"Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — The Model Ate the Coding Harness. Now What?](https://ai.engineer/nyc/2026/schedule#session-29083884-87dc-44f8-b412-b494afca8856)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "The Model Ate the Coding Harness. Now What?".
-  - Evidence: *"And recently, I came along to SpaceX as part of the acquisition preserve. So today I want to talk to you all about how the Asian harness has evolved where we are today."*
+  - Evidence: *"Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"*
 
 ## Coverage & Gaps
 

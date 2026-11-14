@@ -2,10 +2,22 @@
   "title": "Sonar",
   "recorded_at": "2026-10-14T09:15:21-04:00",
   "duration_seconds": 1007.3,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 2736,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 2758,
+  "transcript_locale": null,
   "source_file": "20261014 091521.m4a",
   "audio_sha256": "f57bbbf95a3edda65db0c3e73fd630ad458b8aefd93c0e4bec147b9b3a651a21",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 2736,
+      "locale": "en_US"
+    }
+  ]
 }

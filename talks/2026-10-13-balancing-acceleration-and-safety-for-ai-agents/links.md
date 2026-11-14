@@ -9,7 +9,7 @@
 
 - **John Feminella** (Two Sigma) · status: `found`
   - Profile: https://bsky.app/profile/jxf.me
-  - Evidence: *"Accelerate innovation without compromising trust, please welcome John Feminelli, SVP of architecture at 2 sigma."*
+  - Evidence: *"My name is John Feminella. I work on AI architecture and engineering at Two Sigma."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Balancing Acceleration and Safety for AI Agents](https://ai.engineer/nyc/2026/schedule#session-73badd10-6f8c-4c95-b5e7-55fc3d7bafc1)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Balancing Acceleration and Safety for AI Agents".
-  - Evidence: *"Accelerate innovation without compromising trust, please welcome John Feminelli, SVP of architecture at 2 sigma."*
+  - Evidence: *"My name is John Feminella. I work on AI architecture and engineering at Two Sigma."*
 
 ## Coverage & Gaps
 

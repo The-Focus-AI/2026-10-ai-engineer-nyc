@@ -2,10 +2,22 @@
   "title": "Software Factories",
   "recorded_at": "2026-10-14T11:30:08-04:00",
   "duration_seconds": 1116.3,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3424,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3412,
+  "transcript_locale": null,
   "source_file": "20261014 113008.m4a",
   "audio_sha256": "356cb337529bf8e450bb5ec9f4ac692fa6f1f382bb5a5cf2157e897ce85c8374",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3424,
+      "locale": "en_US"
+    }
+  ]
 }

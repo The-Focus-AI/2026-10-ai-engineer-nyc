@@ -2,10 +2,22 @@
   "title": "Fable War Room",
   "recorded_at": "2026-10-13T11:55:07-04:00",
   "duration_seconds": 1152.5,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3362,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3297,
+  "transcript_locale": null,
   "source_file": "20261013 115507.m4a",
   "audio_sha256": "fba7cdbebfa7a02e7e8bf9daaf6a7c8e59434aea20ce071cb68cbc8a43828f64",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3362,
+      "locale": "en_US"
+    }
+  ]
 }

@@ -9,7 +9,7 @@
 
 - **Ben Holmes** (Warp) · status: `found`
   - Profile: https://ai.engineer/speakers/ben-holmes
-  - Evidence: *"I'm Ben Holmes. I'm a FedEx engineering lead at Warp, and I'm gonna be talking about building self improving agents. Agents that look through their past work and figure out how to improve their own setup."*
+  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Your agent needs a skill to improve its skills](https://ai.engineer/nyc/2026/schedule#session-0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Your agent needs a skill to improve its skills".
-  - Evidence: *"I'm Ben Holmes. I'm a FedEx engineering lead at Warp, and I'm gonna be talking about building self improving agents. Agents that look through their past work and figure out how to improve their own setup."*
+  - Evidence: *"I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."*
 
 ## Coverage & Gaps
 

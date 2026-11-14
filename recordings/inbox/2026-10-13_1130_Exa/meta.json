@@ -2,10 +2,22 @@
   "title": "Exa",
   "recorded_at": "2026-10-13T11:30:17-04:00",
   "duration_seconds": 1132.7,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3870,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3876,
+  "transcript_locale": null,
   "source_file": "20261013 113017.m4a",
   "audio_sha256": "2f380a01e4c48f01e954b68e7e0ff55a24f5efb23bea85dbb93ad8e25ba5a7d7",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3870,
+      "locale": "en_US"
+    }
+  ]
 }

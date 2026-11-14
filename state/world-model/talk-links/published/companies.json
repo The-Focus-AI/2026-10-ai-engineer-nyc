@@ -1,0 +1,328 @@
+{
+  "c901e963-5be9-4a1d-86a3-d9354374bbcd": [
+    {
+      "name": "Featherless",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Eugene Cheah at AI Engineer New York 2026 (The AI Bill Is Too Damn High – Tokenomics 101).",
+      "evidence": [
+        "Yeah. We are going to talk about tokenomics."
+      ]
+    }
+  ],
+  "edb4f982-0cb8-48ee-8bf7-410255a40cb3": [
+    {
+      "name": "WorkOS",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Nick Nisi at AI Engineer New York 2026 (Beyond “Done”: Building Verification Loops for AI Agents).",
+      "evidence": [
+        "So, what we mean by beyond done, just to like jump. Straight into it."
+      ]
+    }
+  ],
+  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": [
+    {
+      "name": "Bridgewater",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Aaron Linsky at AI Engineer New York 2026 (Vault: Making Unstructured Data Work for Investing).",
+      "evidence": [
+        "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+      ]
+    }
+  ],
+  "68a1e78b-569e-4314-a56f-f20508123cbe": [
+    {
+      "name": "Anthropic",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Belinda Neal at AI Engineer New York 2026 (Anthropic: Accelerating frontier AI in Financial Services.).",
+      "evidence": [
+        "I'm Belinda. This is Keon. We're from Anthropic."
+      ]
+    }
+  ],
+  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
+    {
+      "name": "Two Sigma",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by John Feminella at AI Engineer New York 2026 (Balancing Acceleration and Safety for AI Agents).",
+      "evidence": [
+        "My name is John Feminella. I work on AI architecture and engineering at Two Sigma."
+      ]
+    }
+  ],
+  "b2ed4456-5671-4e8e-83fd-684c012fef8c": [
+    {
+      "name": "Arize AI",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Aparna Dhinakaran at AI Engineer New York 2026 (What does an AI engineer do?).",
+      "evidence": [
+        "As an AI engineer, your job is no longer to just write the feature, write a bad feature."
+      ]
+    }
+  ],
+  "736edd83-bb08-49f1-90ed-722b7ed07eb2": [
+    {
+      "name": "Towards AI",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Louis-François Bouchard at AI Engineer New York 2026 (Can Any Model Write Like Me? Building a Benchmark for Creative Writing).",
+      "evidence": [
+        "So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."
+      ]
+    }
+  ],
+  "c4ba0138-6f6d-4780-93a1-4d8f0c478339": [
+    {
+      "name": "Air Canada",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Nathanael Weill at AI Engineer New York 2026 (Write the Answer First: Generating Eval Datasets for Agents With No Benchmark).",
+      "evidence": [
+        "Problem when we tackle some great vision for a task. That is so specific. We don't have any particular benchmark we can rely on"
+      ]
+    }
+  ],
+  "b8bb725d-daf0-4ac0-8095-5737841c89e5": [
+    {
+      "name": "Exa",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Ryan Ahern at AI Engineer New York 2026 (Search the Web as It Was: An Introduction to Exa Snapshot).",
+      "evidence": [
+        "So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
+      ]
+    }
+  ],
+  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": [
+    {
+      "name": "GEICO",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Ford Prior at AI Engineer New York 2026 (Inside the Fable War Room).",
+      "evidence": [
+        "And I'm Ford Prior."
+      ]
+    }
+  ],
+  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": [
+    {
+      "name": "Apify",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Jan Curn at AI Engineer New York 2026 (Agents can pay. So why don’t they?).",
+      "evidence": [
+        "Apify, we're running a marketplace of tools for AI."
+      ]
+    }
+  ],
+  "bdab432a-0538-4431-ad5a-62653affd9da": [
+    {
+      "name": "Greptile",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Daksh Gupta at AI Engineer New York 2026 (How to build an AI code review agent: from the creators of Greptile).",
+      "evidence": [
+        "by reviewing and testing these codebases, we reveal bugs. Logical errors, code quality concerns, primarily from AI-generated code."
+      ]
+    }
+  ],
+  "fca86857-d079-46a6-94a7-62b0bb8e5d31": [
+    {
+      "name": "Runpod",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Chris Vela at AI Engineer New York 2026 (From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod).",
+      "evidence": [
+        "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"
+      ]
+    }
+  ],
+  "8d424512-c7f0-483c-9094-ca899d7bb1fd": [
+    {
+      "name": "Daytona",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Mislav Ivanda at AI Engineer New York 2026 (Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On).",
+      "evidence": [
+        "And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"
+      ]
+    }
+  ],
+  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": [
+    {
+      "name": "Tenex",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Alex Lieberman at AI Engineer New York 2026 (Welcome Back - Featured Keynotes).",
+      "evidence": [
+        "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses."
+      ]
+    }
+  ],
+  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
+    {
+      "name": "Coatue",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Frank Long at AI Engineer New York 2026 (A Hedge Fund as a Function).",
+      "evidence": [
+        "My name is Frank. I work at Coatue, which is a technology investment firm across public and private markets."
+      ]
+    }
+  ],
+  "cada670e-c5ea-4977-b3c2-9a68dda26abb": [
+    {
+      "name": "General Intuition",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Pim de Witte at AI Engineer New York 2026 (Frontier Models for Acting in Space and Time).",
+      "evidence": [
+        "We built the largest video game recorder in the world"
+      ]
+    }
+  ],
+  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": [
+    {
+      "name": "Nous Research",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Dillon Rolnick at AI Engineer New York 2026 (Hermes gives you wings: Build on open foundations.).",
+      "evidence": [
+        "I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."
+      ]
+    }
+  ],
+  "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": [
+    {
+      "name": "Tenex",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Alex Lieberman at AI Engineer New York 2026 (Closing Remarks).",
+      "evidence": [
+        "We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."
+      ]
+    }
+  ],
+  "caecd5f6-b352-4868-a995-f0f71679caf0": [
+    {
+      "name": "Ramp",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Alexander Shevchenko at AI Engineer New York 2026 (Chasing capabilities while waiting for the frontier).",
+      "evidence": [
+        "Well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp. Both inside of the company, but also all of our customers, accounting and finance professionals."
+      ]
+    }
+  ],
+  "4add802c-6a68-4e9c-93fb-9c1e017193bc": [
+    {
+      "name": "Sonar",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Tariq Shaukat at AI Engineer New York 2026 (The Machine that Changed the World, vAI).",
+      "evidence": [
+        "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."
+      ]
+    }
+  ],
+  "ee927042-2ba1-44c3-b304-d001ae247839": [
+    {
+      "name": "Coinbase",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Evan Kormos at AI Engineer New York 2026 (Trusting Agents in Policy-Driven Workflows).",
+      "evidence": [
+        "My name is Evan Kormos. I've been. Delivering, designing, building software for 20 years. The last 15 in enterprise financial services. I am a player coach at Coinbase. And we're here today to talk about trusting agents and policy-driven workflows."
+      ]
+    }
+  ],
+  "f7204e6d-a47c-4535-804e-16b4db579b95": [
+    {
+      "name": "Untangle",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Ryan Carson at AI Engineer New York 2026 (Your job is now \"agent manager\").",
+      "evidence": [
+        "Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."
+      ]
+    }
+  ],
+  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": [
+    {
+      "name": "Linear",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Tom Moor at AI Engineer New York 2026 (Your Coding Agent Has a Context Problem).",
+      "evidence": [
+        "Hey everybody, I'm Tom. I run the engineering team at Linear."
+      ]
+    }
+  ],
+  "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": [
+    {
+      "name": "Anthropic",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Addy Osmani at AI Engineer New York 2026 (Who verifies the software factory?).",
+      "evidence": [
+        "I'm very excited to be here and talk about who verifies the software factory."
+      ]
+    },
+    {
+      "name": "Sonar",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Manish Kapur at AI Engineer New York 2026 (Who verifies the software factory?).",
+      "evidence": [
+        "I'm very excited to be here and talk about who verifies the software factory."
+      ]
+    }
+  ],
+  "29083884-87dc-44f8-b412-b494afca8856": [
+    {
+      "name": "SpaceX Super Intelligence",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Jediah Katz at AI Engineer New York 2026 (The Model Ate the Coding Harness. Now What?).",
+      "evidence": [
+        "Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
+      ]
+    }
+  ],
+  "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": [
+    {
+      "name": "Warp",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Ben Holmes at AI Engineer New York 2026 (Your agent needs a skill to improve its skills).",
+      "evidence": [
+        "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."
+      ]
+    }
+  ],
+  "18628ea8-d66a-4d7b-adbd-730d3a43d92e": [
+    {
+      "name": "Turing Post",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Ksenia Se at AI Engineer New York 2026 (Welcome Back - Featured Keynotes).",
+      "evidence": [
+        "Welcome back, everyone. For those who haven't met me yet. My name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research. And what it means for people to implement it in their business."
+      ]
+    }
+  ],
+  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": [
+    {
+      "name": "Apollo Global Management",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Jack McDonald at AI Engineer New York 2026 (AI in Practice: An Inside Look at Apollo's Approach).",
+      "evidence": [
+        "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+      ]
+    },
+    {
+      "name": "Rowspace",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Michael Manapat at AI Engineer New York 2026 (AI in Practice: An Inside Look at Apollo's Approach).",
+      "evidence": [
+        "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+      ]
+    }
+  ],
+  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": [
+    {
+      "name": "Basis",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Mitchell Troyanovsky at AI Engineer New York 2026 (Process Supervision for Agents That Do Long-Horizon Work).",
+      "evidence": [
+        "Hi Mitch, I'm one of the two co-founders of Basis."
+      ]
+    }
+  ],
+  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": [
+    {
+      "name": "Runway",
+      "url": "https://ai.engineer/nyc/2026/schedule",
+      "what": "Organization represented by Cristóbal Valenzuela at AI Engineer New York 2026 (Everything will be Simulated).",
+      "evidence": [
+        "Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."
+      ]
+    }
+  ]
+}

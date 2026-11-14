@@ -2,10 +2,22 @@
   "title": "Anthropic",
   "recorded_at": "2026-10-13T09:19:23-04:00",
   "duration_seconds": 1125.9,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3194,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3138,
+  "transcript_locale": null,
   "source_file": "20261013 091923.m4a",
   "audio_sha256": "68c9793bfbe07ad3fca54bd5567dea09ec39342efe78993397d3afdc7852677e",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 1,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3194,
+      "locale": "en_US"
+    }
+  ]
 }

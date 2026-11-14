@@ -9,10 +9,10 @@
 
 - **Belinda Neal** (Anthropic) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"Good morning. I'm Belinda. This is Keon. I'm working from Metropic."*
+  - Evidence: *"I'm Belinda. This is Keon. We're from Anthropic."*
 - **Keon Shahab** (Anthropic) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"Good morning. I'm Belinda. This is Keon. I'm working from Metropic."*
+  - Evidence: *"I'm Belinda. This is Keon. We're from Anthropic."*
 
 ## Companies
 
@@ -22,7 +22,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Anthropic: Accelerating frontier AI in Financial Services.](https://ai.engineer/nyc/2026/schedule#session-68a1e78b-569e-4314-a56f-f20508123cbe)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Anthropic: Accelerating frontier AI in Financial Services.".
-  - Evidence: *"Good morning. I'm Belinda. This is Keon. I'm working from Metropic."*
+  - Evidence: *"I'm Belinda. This is Keon. We're from Anthropic."*
 
 ## Coverage & Gaps
 

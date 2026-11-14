@@ -1,0 +1,281 @@
+{
+  "c901e963-5be9-4a1d-86a3-d9354374bbcd": {
+    "searched": [
+      "The AI Bill Is Too Damn High – Tokenomics 101 Eugene Cheah AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "edb4f982-0cb8-48ee-8bf7-410255a40cb3": {
+    "searched": [
+      "Beyond “Done”: Building Verification Loops for AI Agents Nick Nisi Zack Proser AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": {
+    "searched": [
+      "Vault: Making Unstructured Data Work for Investing Aaron Linsky Sam Green AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "68a1e78b-569e-4314-a56f-f20508123cbe": {
+    "searched": [
+      "Anthropic: Accelerating frontier AI in Financial Services. Belinda Neal Keon Shahab AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": {
+    "searched": [
+      "Balancing Acceleration and Safety for AI Agents John Feminella AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "b2ed4456-5671-4e8e-83fd-684c012fef8c": {
+    "searched": [
+      "What does an AI engineer do? Aparna Dhinakaran AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "736edd83-bb08-49f1-90ed-722b7ed07eb2": {
+    "searched": [
+      "Can Any Model Write Like Me? Building a Benchmark for Creative Writing Louis-François Bouchard AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "c4ba0138-6f6d-4780-93a1-4d8f0c478339": {
+    "searched": [
+      "Write the Answer First: Generating Eval Datasets for Agents With No Benchmark Nathanael Weill AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "b8bb725d-daf0-4ac0-8095-5737841c89e5": {
+    "searched": [
+      "Search the Web as It Was: An Introduction to Exa Snapshot Ryan Ahern AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": {
+    "searched": [
+      "Inside the Fable War Room Ford Prior AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": {
+    "searched": [
+      "Agents can pay. So why don’t they? Jan Curn AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "bdab432a-0538-4431-ad5a-62653affd9da": {
+    "searched": [
+      "How to build an AI code review agent: from the creators of Greptile Daksh Gupta AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "fca86857-d079-46a6-94a7-62b0bb8e5d31": {
+    "searched": [
+      "From Model to Metrics: Serving and Benchmarking Any LLM Live with vLLM and Runpod Chris Vela AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "8d424512-c7f0-483c-9094-ca899d7bb1fd": {
+    "searched": [
+      "Give the Model a Computer: The One Thing Every AI Agent Framework Agrees On Mislav Ivanda AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": {
+    "searched": [
+      "Welcome Back - Featured Keynotes Alex Lieberman AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": {
+    "searched": [
+      "A Hedge Fund as a Function Frank Long AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "cada670e-c5ea-4977-b3c2-9a68dda26abb": {
+    "searched": [
+      "Frontier Models for Acting in Space and Time Pim de Witte AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": {
+    "searched": [
+      "Hermes gives you wings: Build on open foundations. Dillon Rolnick AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": {
+    "searched": [
+      "Closing Remarks Alex Lieberman AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "caecd5f6-b352-4868-a995-f0f71679caf0": {
+    "searched": [
+      "Chasing capabilities while waiting for the frontier Alexander Shevchenko AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "4add802c-6a68-4e9c-93fb-9c1e017193bc": {
+    "searched": [
+      "The Machine that Changed the World, vAI Tariq Shaukat AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "ee927042-2ba1-44c3-b304-d001ae247839": {
+    "searched": [
+      "Trusting Agents in Policy-Driven Workflows Evan Kormos AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "f7204e6d-a47c-4535-804e-16b4db579b95": {
+    "searched": [
+      "Your job is now \"agent manager\" Ryan Carson AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": {
+    "searched": [
+      "Your Coding Agent Has a Context Problem Tom Moor AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": {
+    "searched": [
+      "Who verifies the software factory? Addy Osmani Manish Kapur AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "29083884-87dc-44f8-b412-b494afca8856": {
+    "searched": [
+      "The Model Ate the Coding Harness. Now What? Jediah Katz AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": {
+    "searched": [
+      "Your agent needs a skill to improve its skills Ben Holmes AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "18628ea8-d66a-4d7b-adbd-730d3a43d92e": {
+    "searched": [
+      "Welcome Back - Featured Keynotes Ksenia Se AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": {
+    "searched": [
+      "AI in Practice: An Inside Look at Apollo's Approach Jack McDonald Michael Manapat AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": {
+    "searched": [
+      "Process Supervision for Agents That Do Long-Horizon Work Mitchell Troyanovsky AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  },
+  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": {
+    "searched": [
+      "Everything will be Simulated Cristóbal Valenzuela AI Engineer NYC 2026"
+    ],
+    "gaps": [
+      "Post-event settling window (12 days after 2026-10-14): standalone slide deck and individual YouTube cut not yet published on the session page."
+    ],
+    "generated_at": "2026-10-26T10:41:07-04:00"
+  }
+}

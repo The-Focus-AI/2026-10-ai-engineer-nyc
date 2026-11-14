@@ -2,10 +2,22 @@
   "title": "Apollo",
   "recorded_at": "2026-10-14T16:30:35-04:00",
   "duration_seconds": 1127.5,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3258,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3219,
+  "transcript_locale": null,
   "source_file": "20261014 163035.m4a",
   "audio_sha256": "f9813214240fd22028b5ec7339aea8705d4a8b28add818298d8561156e229251",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 1,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3258,
+      "locale": "en_US"
+    }
+  ]
 }

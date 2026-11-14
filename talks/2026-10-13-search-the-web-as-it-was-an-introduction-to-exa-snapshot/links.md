@@ -9,7 +9,7 @@
 
 - **Ryan Ahern** (Exa) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"So the 1st one, I just want to motivate what is XA, what is agentic web search, just because you kind of need to believe in the dream of that, understand why you want to use it to do the 2nd thing I'm going to talk about, which is how to access financial models using that."*
+  - Evidence: *"So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Search the Web as It Was: An Introduction to Exa Snapshot](https://ai.engineer/nyc/2026/schedule#session-b8bb725d-daf0-4ac0-8095-5737841c89e5)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Search the Web as It Was: An Introduction to Exa Snapshot".
-  - Evidence: *"So the 1st one, I just want to motivate what is XA, what is agentic web search, just because you kind of need to believe in the dream of that, understand why you want to use it to do the 2nd thing I'm going to talk about, which is how to access financial models using that."*
+  - Evidence: *"So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."*
 
 ## Coverage & Gaps
 

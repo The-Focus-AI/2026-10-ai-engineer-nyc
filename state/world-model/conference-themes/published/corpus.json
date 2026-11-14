@@ -1,0 +1,17 @@
+{
+  "talk_count": 31,
+  "word_count": 94952,
+  "last_touched": "2026-11-14T10:01:10-05:00",
+  "theme_count": 11,
+  "unassigned": [
+    "2026-10-13-closing-remarks",
+    "2026-10-14-welcome-back-featured-keynotes"
+  ],
+  "thin": [
+    "2026-10-13-closing-remarks",
+    "2026-10-14-trusting-agents-in-policy-driven-workflows",
+    "2026-10-14-welcome-back-featured-keynotes"
+  ],
+  "report_path": "analysis/themes.md",
+  "generated_at": "2026-11-14T10:05:36-05:00"
+}

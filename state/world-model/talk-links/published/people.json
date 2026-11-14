@@ -1,0 +1,640 @@
+{
+  "c901e963-5be9-4a1d-86a3-d9354374bbcd": [
+    {
+      "name": "Eugene Cheah",
+      "role": null,
+      "affiliation": "Featherless",
+      "links": {
+        "site": "https://ai.engineer/speakers/eugene-cheah",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Yeah. We are going to talk about tokenomics."
+      ],
+      "status": "found"
+    }
+  ],
+  "edb4f982-0cb8-48ee-8bf7-410255a40cb3": [
+    {
+      "name": "Nick Nisi",
+      "role": null,
+      "affiliation": "WorkOS",
+      "links": {
+        "site": "https://ai.engineer/speakers/nick-nisi",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "So, what we mean by beyond done, just to like jump. Straight into it."
+      ],
+      "status": "found"
+    },
+    {
+      "name": "Zack Proser",
+      "role": null,
+      "affiliation": "WorkOS",
+      "links": {
+        "site": "https://ai.engineer/speakers/zack-proser",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "So, what we mean by beyond done, just to like jump. Straight into it."
+      ],
+      "status": "found"
+    }
+  ],
+  "a84ca3a8-cc2f-4b50-a635-fc380f6f04f6": [
+    {
+      "name": "Aaron Linsky",
+      "role": null,
+      "affiliation": "Bridgewater",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+      ],
+      "status": "partial"
+    },
+    {
+      "name": "Sam Green",
+      "role": null,
+      "affiliation": "Bridgewater",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "For most of Bridgewater's history, that meant building and overseeing time series models on structured data."
+      ],
+      "status": "partial"
+    }
+  ],
+  "68a1e78b-569e-4314-a56f-f20508123cbe": [
+    {
+      "name": "Belinda Neal",
+      "role": null,
+      "affiliation": "Anthropic",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Belinda. This is Keon. We're from Anthropic."
+      ],
+      "status": "partial"
+    },
+    {
+      "name": "Keon Shahab",
+      "role": null,
+      "affiliation": "Anthropic",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Belinda. This is Keon. We're from Anthropic."
+      ],
+      "status": "partial"
+    }
+  ],
+  "73badd10-6f8c-4c95-b5e7-55fc3d7bafc1": [
+    {
+      "name": "John Feminella",
+      "role": null,
+      "affiliation": "Two Sigma",
+      "links": {
+        "site": "https://bsky.app/profile/jxf.me",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "My name is John Feminella. I work on AI architecture and engineering at Two Sigma."
+      ],
+      "status": "found"
+    }
+  ],
+  "b2ed4456-5671-4e8e-83fd-684c012fef8c": [
+    {
+      "name": "Aparna Dhinakaran",
+      "role": null,
+      "affiliation": "Arize AI",
+      "links": {
+        "site": "https://ai.engineer/speakers/aparna-dhinakaran",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "As an AI engineer, your job is no longer to just write the feature, write a bad feature."
+      ],
+      "status": "found"
+    }
+  ],
+  "736edd83-bb08-49f1-90ed-722b7ed07eb2": [
+    {
+      "name": "Louis-François Bouchard",
+      "role": null,
+      "affiliation": "Towards AI",
+      "links": {
+        "site": "https://ai.engineer/speakers/louis-francois-bouchard",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."
+      ],
+      "status": "found"
+    }
+  ],
+  "c4ba0138-6f6d-4780-93a1-4d8f0c478339": [
+    {
+      "name": "Nathanael Weill",
+      "role": null,
+      "affiliation": "Air Canada",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Problem when we tackle some great vision for a task. That is so specific. We don't have any particular benchmark we can rely on"
+      ],
+      "status": "partial"
+    }
+  ],
+  "b8bb725d-daf0-4ac0-8095-5737841c89e5": [
+    {
+      "name": "Ryan Ahern",
+      "role": null,
+      "affiliation": "Exa",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "So the first one, I just want to motivate. What is Exa? What is Agentic Web Search? Just because you kind of need to believe in the dream of that. Understand why you want to use it to the second thing I'm going to talk about, which is how to backtest financial models using that."
+      ],
+      "status": "partial"
+    }
+  ],
+  "6b92fb75-064e-4cb5-8aa3-7c7f211e7420": [
+    {
+      "name": "Ford Prior",
+      "role": null,
+      "affiliation": "GEICO",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "And I'm Ford Prior."
+      ],
+      "status": "partial"
+    }
+  ],
+  "8d348b6c-25cc-45de-8dc4-aaa3d7130918": [
+    {
+      "name": "Jan Curn",
+      "role": null,
+      "affiliation": "Apify",
+      "links": {
+        "site": "https://ai.engineer/speakers/jan-curn",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Apify, we're running a marketplace of tools for AI."
+      ],
+      "status": "found"
+    }
+  ],
+  "bdab432a-0538-4431-ad5a-62653affd9da": [
+    {
+      "name": "Daksh Gupta",
+      "role": null,
+      "affiliation": "Greptile",
+      "links": {
+        "site": "https://ai.engineer/speakers/daksh-gupta",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "by reviewing and testing these codebases, we reveal bugs. Logical errors, code quality concerns, primarily from AI-generated code."
+      ],
+      "status": "found"
+    }
+  ],
+  "fca86857-d079-46a6-94a7-62b0bb8e5d31": [
+    {
+      "name": "Chris Vela",
+      "role": null,
+      "affiliation": "Runpod",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Actually, so to give you a little more context of like what RunPod does is we're in the cloud. We make it really easy for you. To rent GPUs"
+      ],
+      "status": "partial"
+    }
+  ],
+  "8d424512-c7f0-483c-9094-ca899d7bb1fd": [
+    {
+      "name": "Mislav Ivanda",
+      "role": null,
+      "affiliation": "Daytona",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "And for the last year, my main task and goal there was to integrate Daytona. Basically everywhere where sandbox makes sense, because where they don't have. SaaS provider"
+      ],
+      "status": "partial"
+    }
+  ],
+  "c34c075b-c695-4227-bf8e-3b4eeb3460d9": [
+    {
+      "name": "Alex Lieberman",
+      "role": null,
+      "affiliation": "Tenex",
+      "links": {
+        "site": "https://alexlieberman.com/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Well, welcome back for the closing keynote block here at AI Engineer New York 2026. I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses."
+      ],
+      "status": "found"
+    }
+  ],
+  "9a9dfcd0-459f-43eb-b3f8-004864b4ad2a": [
+    {
+      "name": "Frank Long",
+      "role": null,
+      "affiliation": "Coatue",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "My name is Frank. I work at Coatue, which is a technology investment firm across public and private markets."
+      ],
+      "status": "partial"
+    }
+  ],
+  "cada670e-c5ea-4977-b3c2-9a68dda26abb": [
+    {
+      "name": "Pim de Witte",
+      "role": null,
+      "affiliation": "General Intuition",
+      "links": {
+        "site": "https://generalintuition.com",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "We built the largest video game recorder in the world"
+      ],
+      "status": "found"
+    }
+  ],
+  "871cd5c8-13f4-4fe9-ac49-c8b25d970add": [
+    {
+      "name": "Dillon Rolnick",
+      "role": null,
+      "affiliation": "Nous Research",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Dillon Rolnick. I'm the CEO of Nous Research. And today we're going to talk about building on foundations and platforms that you can actually own."
+      ],
+      "status": "partial"
+    }
+  ],
+  "dd25c0a8-d64f-4d6e-a597-7dd576eabc16": [
+    {
+      "name": "Alex Lieberman",
+      "role": null,
+      "affiliation": "Tenex",
+      "links": {
+        "site": "https://alexlieberman.com/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."
+      ],
+      "status": "found"
+    }
+  ],
+  "caecd5f6-b352-4868-a995-f0f71679caf0": [
+    {
+      "name": "Alexander Shevchenko",
+      "role": null,
+      "affiliation": "Ramp",
+      "links": {
+        "site": "https://ramp.com/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Well, this is a very general-purpose spreadsheet handling agent, and a lot of the work that people do on Ramp. Both inside of the company, but also all of our customers, accounting and finance professionals."
+      ],
+      "status": "found"
+    }
+  ],
+  "4add802c-6a68-4e9c-93fb-9c1e017193bc": [
+    {
+      "name": "Tariq Shaukat",
+      "role": null,
+      "affiliation": "Sonar",
+      "links": {
+        "site": "https://ai.engineer/speakers/tariq-shaukat",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."
+      ],
+      "status": "found"
+    }
+  ],
+  "ee927042-2ba1-44c3-b304-d001ae247839": [
+    {
+      "name": "Evan Kormos",
+      "role": null,
+      "affiliation": "Coinbase",
+      "links": {
+        "site": "https://www.coinbase.com/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "My name is Evan Kormos. I've been. Delivering, designing, building software for 20 years. The last 15 in enterprise financial services. I am a player coach at Coinbase. And we're here today to talk about trusting agents and policy-driven workflows."
+      ],
+      "status": "found"
+    }
+  ],
+  "f7204e6d-a47c-4535-804e-16b4db579b95": [
+    {
+      "name": "Ryan Carson",
+      "role": null,
+      "affiliation": "Untangle",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."
+      ],
+      "status": "partial"
+    }
+  ],
+  "4b33ac12-ed84-4e32-be63-6a4f9f3acb32": [
+    {
+      "name": "Tom Moor",
+      "role": null,
+      "affiliation": "Linear",
+      "links": {
+        "site": "https://ai.engineer/speakers/tom-moor",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Hey everybody, I'm Tom. I run the engineering team at Linear."
+      ],
+      "status": "found"
+    }
+  ],
+  "11b98f47-dcc2-4524-8c06-d1f6c3ff044b": [
+    {
+      "name": "Addy Osmani",
+      "role": null,
+      "affiliation": "Anthropic",
+      "links": {
+        "site": "https://ai.engineer/speakers/addy-osmani",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm very excited to be here and talk about who verifies the software factory."
+      ],
+      "status": "found"
+    },
+    {
+      "name": "Manish Kapur",
+      "role": null,
+      "affiliation": "Sonar",
+      "links": {
+        "site": "https://dev.to/mksonar",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm very excited to be here and talk about who verifies the software factory."
+      ],
+      "status": "found"
+    }
+  ],
+  "29083884-87dc-44f8-b412-b494afca8856": [
+    {
+      "name": "Jediah Katz",
+      "role": null,
+      "affiliation": "SpaceX Super Intelligence",
+      "links": {
+        "site": "https://cursor.com/home",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Recently, I came along to SpaceX as part of the acquisition of Super. So today I want to talk to you all about how the Asian harness has evolved to where we are today"
+      ],
+      "status": "found"
+    }
+  ],
+  "0a0cbd67-23fa-4a3d-a8dc-06e3caa3ab2f": [
+    {
+      "name": "Ben Holmes",
+      "role": null,
+      "affiliation": "Warp",
+      "links": {
+        "site": "https://ai.engineer/speakers/ben-holmes",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Ben Holmes. I'm the DevX Engineering Lead at Warp. And I'm going to be talking about building self-improving agents, agents that look through their Past work and figure out how to improve their own setup."
+      ],
+      "status": "found"
+    }
+  ],
+  "18628ea8-d66a-4d7b-adbd-730d3a43d92e": [
+    {
+      "name": "Ksenia Se",
+      "role": null,
+      "affiliation": "Turing Post",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Welcome back, everyone. For those who haven't met me yet. My name is Ksenia Se. I'm writing to Turing Post, and where we explain AI research. And what it means for people to implement it in their business."
+      ],
+      "status": "partial"
+    }
+  ],
+  "44e9d04a-e8b4-418c-8a85-02fbb9263dd0": [
+    {
+      "name": "Jack McDonald",
+      "role": null,
+      "affiliation": "Apollo Global Management",
+      "links": {
+        "site": "https://ai.engineer/nyc/2026/schedule",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+      ],
+      "status": "partial"
+    },
+    {
+      "name": "Michael Manapat",
+      "role": null,
+      "affiliation": "Rowspace",
+      "links": {
+        "site": "https://www.rowspace.ai/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "I'm Michael Manapat. I'm a co-founder of Rowspace. Rowspace is an adaptive platform that uses. AI to help enterprise service partners like Apollo deal with messy, fragmented data."
+      ],
+      "status": "found"
+    }
+  ],
+  "1cbc625f-7f07-49bb-9c5c-57c95f07ba77": [
+    {
+      "name": "Mitchell Troyanovsky",
+      "role": null,
+      "affiliation": "Basis",
+      "links": {
+        "site": "https://www.getbasis.ai/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Hi Mitch, I'm one of the two co-founders of Basis."
+      ],
+      "status": "found"
+    }
+  ],
+  "af8422e8-d5f8-4dbd-a918-6360f5bfba80": [
+    {
+      "name": "Cristóbal Valenzuela",
+      "role": null,
+      "affiliation": "Runway",
+      "links": {
+        "site": "https://cvalenzuelab.com/",
+        "linkedin": null,
+        "x": null,
+        "github": null,
+        "scholar": null
+      },
+      "evidence": [
+        "Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."
+      ],
+      "status": "found"
+    }
+  ]
+}

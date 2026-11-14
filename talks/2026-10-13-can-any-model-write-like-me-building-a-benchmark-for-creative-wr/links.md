@@ -9,7 +9,7 @@
 
 - **Louis-François Bouchard** (Towards AI) · status: `found`
   - Profile: https://ai.engineer/speakers/louis-francois-bouchard
-  - Evidence: *"So my goal here, today and with this project I've been working on, is to 1st measure this sloppy writing, not just love words."*
+  - Evidence: *"So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Can Any Model Write Like Me? Building a Benchmark for Creative Writing](https://ai.engineer/nyc/2026/schedule#session-736edd83-bb08-49f1-90ed-722b7ed07eb2)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Can Any Model Write Like Me? Building a Benchmark for Creative Writing".
-  - Evidence: *"So my goal here, today and with this project I've been working on, is to 1st measure this sloppy writing, not just love words."*
+  - Evidence: *"So my goal here today, and with this project that I've been working on is to first measure this sloppy writing. Not just love words."*
 
 ## Coverage & Gaps
 

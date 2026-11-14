@@ -9,7 +9,7 @@
 
 - **Tariq Shaukat** (Sonar) · status: `found`
   - Profile: https://ai.engineer/speakers/tariq-shaukat
-  - Evidence: *"Morning, everybody. Uh, my name is Tara Chuck, and I'm just you, as you just heard, and we're here to talk today about how we have been, um, helping companies build software factories that actually work for enterprises."*
+  - Evidence: *"Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — The Machine that Changed the World, vAI](https://ai.engineer/nyc/2026/schedule#session-4add802c-6a68-4e9c-93fb-9c1e017193bc)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "The Machine that Changed the World, vAI".
-  - Evidence: *"Morning, everybody. Uh, my name is Tara Chuck, and I'm just you, as you just heard, and we're here to talk today about how we have been, um, helping companies build software factories that actually work for enterprises."*
+  - Evidence: *"Hi, my name is Tariq Shaukat, and this is Sonar, as you just heard, and we're here to talk today about how we have been helping companies build software factories that actually work."*
 
 ## Coverage & Gaps
 

@@ -2,10 +2,22 @@
   "title": "Beyond Done",
   "recorded_at": "2026-10-12T13:15:29-04:00",
   "duration_seconds": 3407.3,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 10056,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 9768,
+  "transcript_locale": null,
   "source_file": "20261012 131529.m4a",
   "audio_sha256": "49995cbff0f5826c3762c39bf9c79e65075e66839bfaed813e13162d8af9cef3",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 6,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 10056,
+      "locale": "en_US"
+    }
+  ]
 }

@@ -9,7 +9,7 @@
 
 - **Cristóbal Valenzuela** (Runway) · status: `found`
   - Profile: https://cvalenzuelab.com/
-  - Evidence: *"Please welcome Cristobal Valenzuela, co-founder and co-CEO of Runway."*
+  - Evidence: *"Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Everything will be Simulated](https://ai.engineer/nyc/2026/schedule#session-af8422e8-d5f8-4dbd-a918-6360f5bfba80)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Everything will be Simulated".
-  - Evidence: *"Please welcome Cristobal Valenzuela, co-founder and co-CEO of Runway."*
+  - Evidence: *"Please welcome Cristóbal Valenzuela. Co-founder and co-CEO of Runway."*
 
 ## Coverage & Gaps
 

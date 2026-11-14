@@ -9,7 +9,7 @@
 
 - **Ryan Carson** (Untangle) · status: `partial`
   - Profile: https://ai.engineer/nyc/2026/schedule
-  - Evidence: *"Each of these builder agents has a review agent that it calls upon that has those interviews, probably every code nice you have, has those interviews."*
+  - Evidence: *"Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Your job is now "agent manager"](https://ai.engineer/nyc/2026/schedule#session-f7204e6d-a47c-4535-804e-16b4db579b95)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Your job is now "agent manager"".
-  - Evidence: *"Each of these builder agents has a review agent that it calls upon that has those interviews, probably every code nice you have, has those interviews."*
+  - Evidence: *"Each of these builder agents. Has a review agent that it calls upon that has built in reviews probably every. Compound AI, you have has built-in reviewers."*
 
 ## Coverage & Gaps
 

@@ -2,10 +2,22 @@
   "title": "give the agent a computer",
   "recorded_at": "2026-10-13T15:44:32-04:00",
   "duration_seconds": 926.5,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 2233,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 2169,
+  "transcript_locale": null,
   "source_file": "20261013 154432.m4a",
   "audio_sha256": "81331cd4337f3235183c157bc46dd9095543e6c29b28af1e5a1b2666574d1318",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 1,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 2233,
+      "locale": "en_US"
+    }
+  ]
 }

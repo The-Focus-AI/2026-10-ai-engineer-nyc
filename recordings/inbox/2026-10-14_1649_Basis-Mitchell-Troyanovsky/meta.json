@@ -2,10 +2,22 @@
   "title": "Basis (Mitchell Troyanovsky),",
   "recorded_at": "2026-10-14T16:49:40-04:00",
   "duration_seconds": 1173.5,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3273,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3313,
+  "transcript_locale": null,
   "source_file": "20261014 164940.m4a",
   "audio_sha256": "7b827ce3307e7a8b83caad05071bde006a2b54a4128fba1131c568d6bf512b88",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3273,
+      "locale": "en_US"
+    }
+  ]
 }

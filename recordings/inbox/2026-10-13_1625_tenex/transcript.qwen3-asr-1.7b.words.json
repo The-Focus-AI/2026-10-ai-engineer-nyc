@@ -1,0 +1,4242 @@
+{
+ "words": [
+  {
+   "w": "How's",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "it",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "going?",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "How's",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "the",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "energy?",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "w": "Well,",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "welcome",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "back",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "for",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "the",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "closing",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "keynote",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "block",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "here",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "at",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "AI",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "Engineer",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "New",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "York",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "2026.",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "w": "I'm",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "Alex",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "Lieberman,",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "co-founder,",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "co-making",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "partner",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "at",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "Tenex,",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "a",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "Flyte",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "partner",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "for",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "Fortune",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "500",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "businesses.",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "w": "And",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "we",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "are",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "most",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "of",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "the",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "way",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "through",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "the",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "first",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "session",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "today.",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "w": "And",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "hopefully,",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "it's",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "been",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "filled",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "with",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "incredible",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "conversation.",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "w": "Which",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "I'm",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "going",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "to",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "share",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "a",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "little",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "bit",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "about",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "some",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "of",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "the",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "conversations",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "I've",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "had",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "offstage",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "in",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "a",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "minute.",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "w": "But",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "hopefully",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "that",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "the",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "the",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "mix",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "of",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "the",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "programming,",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "the",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "conversation",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "we've",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "had",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "amongst",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "everyone",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "has",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "been",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "really",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "fruitful",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "today.",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "w": "Now,",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "before",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "we",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "hop",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "into",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "the",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "final",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "block",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "of",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "the",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "day.",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "w": "Let's",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "just",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "take",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "a",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "moment",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "again",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "to",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "give",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "a",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "round",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "of",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "applause",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "to",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "our",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "partners.",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "w": "Who",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "made",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "this",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "entire",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "event",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "possible?",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "So",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "let's",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "start",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "with",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "our",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "presenting",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "sponsor,",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "Arize.",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "w": "Let's",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "give",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "a",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "shout",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "out",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "to",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "our",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "guys.",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "Yeah,",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "guys.",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "Next",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "up,",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "we",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "have",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "our",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "platinum",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "sponsors.",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "w": "Oracle",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "w": "Sonar",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "w": "WorkOS",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "w": "and",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "w": "Exa.",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "w": "Let's",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "give",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "a",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "shout",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "out",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "to",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "them,",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "and",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "then",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "two",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "more.",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "We",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "have",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "full",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "sponsors.",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "w": "I",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "love",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "them",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "all.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "They're",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "all",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "my",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "favorite",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "children.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "Can't",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "read",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "them",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "all",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "off",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "right",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "now,",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "but",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "thank",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "you",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "so",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "much.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "w": "Our",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "silver",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "sponsors,",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "and",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "to",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "all",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "of",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "our",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "supporting",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "partners,",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "who",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "make",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "this",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "possible.",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "w": "Thank",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "everyone.",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "Yeah,",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "I",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "don't",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "know",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "if",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "that",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "was",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "the",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "first",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "person",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "who",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "said",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "they",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "have",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "the",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "most",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "energy,",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "but",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "that",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "person",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "has",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "a",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "lot",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "of",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "energy.",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "w": "So",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "before",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "we",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "hop",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "into",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "the",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "next",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "block.",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "w": "One",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "thing",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "that",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "I",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "just",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "wanted",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "to",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "share,",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "and",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "I'm",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "sure",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "a",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "lot",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "of",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "you",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "are",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "already",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "feeling",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "this",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "already.",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "w": "Is",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "not",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "only",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "is",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "the",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "energy",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "palpable",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "across",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "the",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "room.",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "w": "In",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "between",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "all",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "the",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "sessions,",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "but",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "what",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "you",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "realize",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "when",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "you",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "come",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "to",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "AI",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "engineer.",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "w": "Is",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "that",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "the",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "content",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "is",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "incredible?",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "The",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "speakers",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "that",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "are",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "curated.",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "w": "Are",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "incredible.",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "The",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "depth",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "by",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "which",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "they",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "talk",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "about",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "the",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "work",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "they're",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "doing",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "is",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "incredible.",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "w": "But",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "this",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "is",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "also",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "just",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "surface",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "area",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "that",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "acts",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "as",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "a",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "starting",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "point.",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "w": "For",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "conversation",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "amongst",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "everyone",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "in",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "the",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "room,",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "and",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "so.",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "w": "For",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "me,",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "not",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "only",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "has",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "it",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "been",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "incredible",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "to",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "stand",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "in",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "the",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "back",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "of",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "the",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "room",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "at",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "various",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "points",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "of",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "the",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "day",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "and",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "just",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "listen",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "to",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "these.",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "w": "Incredible",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "speakers",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "who",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "are",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "truly",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "living",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "in",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "Edge",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "City.",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "w": "But",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "then",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "to",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "use",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "all",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "of",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "these",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "conversations,",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "all",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "these",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "talks",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "as",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "surface",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "area",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "to",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "have",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "conversations",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "with",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "folks.",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "w": "So,",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "a",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "few",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "conversations",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "that",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "come",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "to",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "mind",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "that",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "I've",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "had",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "throughout",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "the",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "day",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "because",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "of",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "the",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "content.",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "w": "One",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "was",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "a",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "conversation",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "with",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "Switz.",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "w": "One",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "of",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "the",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "people",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "behind",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "this",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "incredible",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "event.",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "We're",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "talking",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "about.",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "w": "Just",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "the",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "diffusion",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "gap",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "that",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "exists",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "in",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "enterprise",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "AI",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "right",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "now.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "Just",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "some",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "fun",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "stats",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "for",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "you",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "all.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "We",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "talked",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "to.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "w": "Hundreds",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "of",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "big",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "enterprises",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "at",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "Tenex",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "across",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "financial",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "services,",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "healthcare,",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "industrials,",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "etc.,",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "and.",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "w": "The",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "way",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "I",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "think",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "about",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "diffusion",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "of",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "AI",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "across",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "these",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "organizations",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "is",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "almost",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "in",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "in",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "milestones",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "of",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "a",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "race.",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "So",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "the.",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "w": "The",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "first",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "big",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "milestone",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "at",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "an",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "enterprise.",
+   "start": 184.55,
+   "end": 187.45
+  },
+  {
+   "w": "Is",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "just",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "adopting",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "a",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "general",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "purpose",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "LLM.",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "Out",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "of",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "curiosity,",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "of",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "the",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "what's",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "called",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "hundred",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "firms",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "we",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "talked",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "to.",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "w": "What",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "percentage",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "of",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "those",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "firms",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "do",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "you",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "think",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "have",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "adopted",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "and",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "rolled",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "out",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "an",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "LLM",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "to",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "all",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "their",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "employees?",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "Someone's",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "screaming",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "out",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "a",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "number.",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "w": "Nine",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "percent.",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "I",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "think",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "I",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "heard.",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "w": "Seventeen",
+   "start": 204.9,
+   "end": 208.15
+  },
+  {
+   "w": "percent.",
+   "start": 204.9,
+   "end": 208.15
+  },
+  {
+   "w": "So",
+   "start": 204.9,
+   "end": 208.15
+  },
+  {
+   "w": "specific.",
+   "start": 204.9,
+   "end": 208.15
+  },
+  {
+   "w": "Uh,",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "ninety",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "percent.",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "So",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "ninety",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "percent",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "of",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "the",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "enterprises",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "we",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "work",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "with",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "have",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "rolled",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "out",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "general-purpose",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "LLM.",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "w": "Under",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "that",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "is",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "people",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "actually",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "getting",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "trained",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "in",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "how",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "to",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "use",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "the",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "technology,",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "how",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "to",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "actually",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "use",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "these",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "surfaces",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "in",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "their",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "work.",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "w": "That's",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "like",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "sixty",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "percent.",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "Next",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "up",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "is",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "coding",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "agents,",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "agents",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "that",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "are",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "actually",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "used",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "within",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "engineering",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "and",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "product",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "workflows.",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "w": "That's",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "around",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "50%",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "of",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "all",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "the",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "enterprises",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "we've",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "been",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "in,",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "and",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "then",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "the",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "final",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "one",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "where",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "we",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "are",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "truly",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "still",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "day",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "one.",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "w": "Is",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "agents",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "actually",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "working",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "in",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "non-engineering",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "workloads",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "in",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "an",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "organization",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "that",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "is",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "around?",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "w": "Five",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "percent",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "right",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "now.",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "So",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "going",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "back",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "to",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "what",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "I",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "said",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "earlier,",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "this",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "community",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "really",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "is",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "at",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "its",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "even",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "the.",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "w": "Topics",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "that",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "are",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "being",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "talked",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "about,",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "we",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "are",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "going",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "to",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "continue",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "to",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "see",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "those",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "play",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "out",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "over",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "the",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "next",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "12,",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "24.",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "w": "36",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "months.",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "I've",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "had",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "a",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "variety",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "of",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "conversations",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "like",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "this",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "throughout",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "the",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "day.",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "To",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "Fusion",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "Gap.",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "w": "Open",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "w": "source",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "w": "versus",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "w": "fine-tuned",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "w": "models.",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "w": "How",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "hard",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "it",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "is",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "to",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "hire",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "great",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "AI",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "engineers",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "at",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "scale.",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "w": "And",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "so,",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "as",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "we",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "go",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "about",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "the",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "rest",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "of",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "today,",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "but",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "also",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "as",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "you",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "think",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "about",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "the",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "conference",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "in",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "general.",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "w": "Use",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "the",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "content",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "as",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "a",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "starting",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "point",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "to",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "have",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "interesting",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "conversations",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "at",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "the",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "edge.",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "w": "With",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "that,",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "I",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "would",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "love",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "to",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "introduce",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "you",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "to",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "our",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "next",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "talk.",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "w": "Which",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "is",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "with",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "Frank",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "Long,",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "the",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "head",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "of",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "AI",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "at",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "Coatue,",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "he's",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "going",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "to",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "be",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "talking",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "about",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "a",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "hedge",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "fund",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "as",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "a",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "function.",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "w": "Let's",
+   "start": 289.25,
+   "end": 293.55
+  },
+  {
+   "w": "welcome",
+   "start": 289.25,
+   "end": 293.55
+  },
+  {
+   "w": "Frank.",
+   "start": 289.25,
+   "end": 293.55
+  }
+ ],
+ "sentences": [
+  {
+   "text": "How's it going?",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "text": "How's the energy?",
+   "start": 0,
+   "end": 7.1
+  },
+  {
+   "text": "Well, welcome back for the closing keynote block here at AI Engineer New York 2026.",
+   "start": 12.7,
+   "end": 19.35
+  },
+  {
+   "text": "I'm Alex Lieberman, co-founder, co-making partner at Tenex, a Flyte partner for Fortune 500 businesses.",
+   "start": 19.35,
+   "end": 26.45
+  },
+  {
+   "text": "And we are most of the way through the first session today.",
+   "start": 26.45,
+   "end": 30.8
+  },
+  {
+   "text": "And hopefully, it's been filled with incredible conversation.",
+   "start": 30.8,
+   "end": 34.15
+  },
+  {
+   "text": "Which I'm going to share a little bit about some of the conversations I've had offstage in a minute.",
+   "start": 34.15,
+   "end": 40.3
+  },
+  {
+   "text": "But hopefully that the the mix of the programming, the conversation we've had amongst everyone has been really fruitful today.",
+   "start": 40.3,
+   "end": 47.4
+  },
+  {
+   "text": "Now, before we hop into the final block of the day.",
+   "start": 47.4,
+   "end": 51.15
+  },
+  {
+   "text": "Let's just take a moment again to give a round of applause to our partners.",
+   "start": 51.15,
+   "end": 55.45
+  },
+  {
+   "text": "Who made this entire event possible?",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "text": "So let's start with our presenting sponsor, Arize.",
+   "start": 55.45,
+   "end": 61.6
+  },
+  {
+   "text": "Let's give a shout out to our guys.",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "text": "Yeah, guys. Next up, we have our platinum sponsors.",
+   "start": 61.6,
+   "end": 68.85
+  },
+  {
+   "text": "Oracle Sonar WorkOS and Exa.",
+   "start": 68.85,
+   "end": 71.5
+  },
+  {
+   "text": "Let's give a shout out to them, and then two more.",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "text": "We have full sponsors.",
+   "start": 71.5,
+   "end": 76.55
+  },
+  {
+   "text": "I love them all.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "text": "They're all my favorite children.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "text": "Can't read them all off right now, but thank you so much.",
+   "start": 76.55,
+   "end": 81.4
+  },
+  {
+   "text": "Our silver sponsors, and to all of our supporting partners, who make this possible.",
+   "start": 81.4,
+   "end": 88.7
+  },
+  {
+   "text": "Thank everyone. Yeah, I don't know if that was the first person who said they have the most energy, but that person has a lot of energy.",
+   "start": 88.7,
+   "end": 95.5
+  },
+  {
+   "text": "So before we hop into the next block.",
+   "start": 95.5,
+   "end": 98.7
+  },
+  {
+   "text": "One thing that I just wanted to share, and I'm sure a lot of you are already feeling this already.",
+   "start": 98.7,
+   "end": 103.8
+  },
+  {
+   "text": "Is not only is the energy palpable across the room.",
+   "start": 103.8,
+   "end": 108.95
+  },
+  {
+   "text": "In between all the sessions, but what you realize when you come to AI engineer.",
+   "start": 108.95,
+   "end": 115.1
+  },
+  {
+   "text": "Is that the content is incredible?",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "text": "The speakers that are curated.",
+   "start": 115.1,
+   "end": 119.15
+  },
+  {
+   "text": "Are incredible. The depth by which they talk about the work they're doing is incredible.",
+   "start": 119.15,
+   "end": 122.8
+  },
+  {
+   "text": "But this is also just surface area that acts as a starting point.",
+   "start": 122.8,
+   "end": 128.2
+  },
+  {
+   "text": "For conversation amongst everyone in the room, and so.",
+   "start": 128.2,
+   "end": 131.1
+  },
+  {
+   "text": "For me, not only has it been incredible to stand in the back of the room at various points of the day and just listen to these.",
+   "start": 131.1,
+   "end": 138.5
+  },
+  {
+   "text": "Incredible speakers who are truly living in Edge City.",
+   "start": 138.5,
+   "end": 142.4
+  },
+  {
+   "text": "But then to use all of these conversations, all these talks as surface area to have conversations with folks.",
+   "start": 142.4,
+   "end": 149.05
+  },
+  {
+   "text": "So, a few conversations that come to mind that I've had throughout the day because of the content.",
+   "start": 149.05,
+   "end": 154.7
+  },
+  {
+   "text": "One was a conversation with Switz.",
+   "start": 154.7,
+   "end": 158.3
+  },
+  {
+   "text": "One of the people behind this incredible event.",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "text": "We're talking about.",
+   "start": 158.3,
+   "end": 162.9
+  },
+  {
+   "text": "Just the diffusion gap that exists in enterprise AI right now.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "text": "Just some fun stats for you all.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "text": "We talked to.",
+   "start": 162.9,
+   "end": 170.05
+  },
+  {
+   "text": "Hundreds of big enterprises at Tenex across financial services, healthcare, industrials, etc., and.",
+   "start": 170.05,
+   "end": 177.2
+  },
+  {
+   "text": "The way I think about diffusion of AI across these organizations is almost in in milestones of a race.",
+   "start": 177.2,
+   "end": 184.55
+  },
+  {
+   "text": "So the. The first big milestone at an enterprise.",
+   "start": 177.2,
+   "end": 187.45
+  },
+  {
+   "text": "Is just adopting a general purpose LLM.",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "text": "Out of curiosity, of the what's called hundred firms we talked to.",
+   "start": 187.45,
+   "end": 194.15
+  },
+  {
+   "text": "What percentage of those firms do you think have adopted and rolled out an LLM to all their employees?",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "text": "Someone's screaming out a number.",
+   "start": 194.15,
+   "end": 201.45
+  },
+  {
+   "text": "Nine percent. I think I heard.",
+   "start": 201.45,
+   "end": 204.9
+  },
+  {
+   "text": "Seventeen percent. So specific.",
+   "start": 204.9,
+   "end": 208.15
+  },
+  {
+   "text": "Uh, ninety percent.",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "text": "So ninety percent of the enterprises we work with have rolled out general-purpose LLM.",
+   "start": 208.15,
+   "end": 214.95
+  },
+  {
+   "text": "Under that is people actually getting trained in how to use the technology, how to actually use these surfaces in their work.",
+   "start": 214.95,
+   "end": 221.6
+  },
+  {
+   "text": "That's like sixty percent.",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "text": "Next up is coding agents, agents that are actually used within engineering and product workflows.",
+   "start": 221.6,
+   "end": 229.05
+  },
+  {
+   "text": "That's around 50% of all the enterprises we've been in, and then the final one where we are truly still day one.",
+   "start": 229.05,
+   "end": 235.45
+  },
+  {
+   "text": "Is agents actually working in non-engineering workloads in an organization that is around?",
+   "start": 235.45,
+   "end": 242.45
+  },
+  {
+   "text": "Five percent right now.",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "text": "So going back to what I said earlier, this community really is at its even the.",
+   "start": 242.45,
+   "end": 249.05
+  },
+  {
+   "text": "Topics that are being talked about, we are going to continue to see those play out over the next 12, 24.",
+   "start": 249.05,
+   "end": 255.3
+  },
+  {
+   "text": "36 months. I've had a variety of conversations like this throughout the day.",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "text": "To Fusion Gap.",
+   "start": 255.3,
+   "end": 261.25
+  },
+  {
+   "text": "Open source versus fine-tuned models.",
+   "start": 261.25,
+   "end": 263.85
+  },
+  {
+   "text": "How hard it is to hire great AI engineers at scale.",
+   "start": 263.85,
+   "end": 268
+  },
+  {
+   "text": "And so, as we go about the rest of today, but also as you think about the conference in general.",
+   "start": 268,
+   "end": 273.5
+  },
+  {
+   "text": "Use the content as a starting point to have interesting conversations at the edge.",
+   "start": 273.5,
+   "end": 278.75
+  },
+  {
+   "text": "With that, I would love to introduce you to our next talk.",
+   "start": 278.75,
+   "end": 282.4
+  },
+  {
+   "text": "Which is with Frank Long, the head of AI at Coatue, he's going to be talking about a hedge fund as a function.",
+   "start": 282.4,
+   "end": 289.25
+  },
+  {
+   "text": "Let's welcome Frank.",
+   "start": 289.25,
+   "end": 293.55
+  }
+ ],
+ "timing": "segment"
+}

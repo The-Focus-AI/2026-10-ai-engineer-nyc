@@ -2,10 +2,22 @@
   "title": "Air Canada",
   "recorded_at": "2026-10-13T11:04:34-04:00",
   "duration_seconds": 1166.3,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 2953,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 2655,
+  "transcript_locale": null,
   "source_file": "20261013 110434.m4a",
   "audio_sha256": "2896ddfea70930f230c672be4e4f7fdf1acc34925c5de324041bd09d01d601b6",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 11,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 2953,
+      "locale": "en_US"
+    }
+  ]
 }

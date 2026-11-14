@@ -2,10 +2,22 @@
   "title": "general intuition",
   "recorded_at": "2026-10-13T16:45:11-04:00",
   "duration_seconds": 1176.2,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 3225,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 3240,
+  "transcript_locale": null,
   "source_file": "20261013 164511.m4a",
   "audio_sha256": "01904bd3d0d29286b8a726c1d10045f0d9561d014e0dff1f0399e16bd985f0d3",
-  "exported_at": "2026-10-26T10:01:45-04:00"
+  "exported_at": "2026-10-26T10:01:45-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 1,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 3225,
+      "locale": "en_US"
+    }
+  ]
 }

@@ -9,7 +9,7 @@
 
 - **Aparna Dhinakaran** (Arize AI) · status: `found`
   - Profile: https://ai.engineer/speakers/aparna-dhinakaran
-  - Evidence: *"As an AI engineer, your job's no longer than just write the feature, write a feature."*
+  - Evidence: *"As an AI engineer, your job is no longer to just write the feature, write a bad feature."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — What does an AI engineer do?](https://ai.engineer/nyc/2026/schedule#session-b2ed4456-5671-4e8e-83fd-684c012fef8c)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "What does an AI engineer do?".
-  - Evidence: *"As an AI engineer, your job's no longer than just write the feature, write a feature."*
+  - Evidence: *"As an AI engineer, your job is no longer to just write the feature, write a bad feature."*
 
 ## Coverage & Gaps
 

@@ -2,10 +2,22 @@
   "title": "Writing Slop",
   "recorded_at": "2026-10-13T10:39:40-04:00",
   "duration_seconds": 1129.3,
-  "transcript": "transcript.txt",
-  "transcript_word_count": 2906,
-  "transcript_locale": "en_US",
+  "transcript": "transcript.qwen3-asr-1.7b.txt",
+  "transcript_word_count": 2877,
+  "transcript_locale": null,
   "source_file": "20261013 103940.m4a",
   "audio_sha256": "3137bdb3b7b99ca77869a61d2f0148cd44a7e4b25e9c45a002af20adce0f0f46",
-  "exported_at": "2026-10-26T10:01:44-04:00"
+  "exported_at": "2026-10-26T10:01:44-04:00",
+  "transcript_source": "qwen3-asr-1.7b",
+  "transcript_timing": "segment",
+  "transcript_echo_segments": 0,
+  "transcript_alternates": [
+    {
+      "file": "transcript.txt",
+      "source": "voice-memos",
+      "timing": "word",
+      "word_count": 2906,
+      "locale": "en_US"
+    }
+  ]
 }

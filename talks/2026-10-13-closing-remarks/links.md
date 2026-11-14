@@ -9,7 +9,7 @@
 
 - **Alex Lieberman** (Tenex) · status: `found`
   - Profile: https://alexlieberman.com/
-  - Evidence: *"We had Dylan talking about building agents on owned versus rented land. And then we have Frank talking about how they think about leoparding implied AI as it relates to making decisions around investments."*
+  - Evidence: *"We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."*
 
 ## Companies
 
@@ -19,7 +19,7 @@
 
 - **[Schedule | AI Engineer NYC 2026 — Closing Remarks](https://ai.engineer/nyc/2026/schedule#session-dd25c0a8-d64f-4d6e-a597-7dd576eabc16)** (`product`, first seen 2026-10-26T10:41:07-04:00, post-event publication — added 12 days after the talk)
   - Why: Official AI Engineer NYC 2026 session entry and abstract for "Closing Remarks".
-  - Evidence: *"We had Dylan talking about building agents on owned versus rented land. And then we have Frank talking about how they think about leoparding implied AI as it relates to making decisions around investments."*
+  - Evidence: *"We had Dillon talking about building agents on owned versus rented land, and then we had Frank. Talking about how they think about leveraging applied AI as it relates to making decisions around investments."*
 
 ## Coverage & Gaps
 

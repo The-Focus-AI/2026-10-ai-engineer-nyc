@@ -1,377 +1,749 @@
 {
-  "generated_at": "2026-10-26T10:01:45-04:00",
+  "generated_at": "2026-11-14T09:47:03-05:00",
   "source": "/Users/wschenk/Library/Group Containers/group.com.apple.VoiceMemos.shared/Recordings",
   "recordings": [
     {
       "title": "TokenCosting",
       "recorded_at": "2026-10-12T11:05:45-04:00",
       "duration_seconds": 3304.4,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 9457,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 9727,
+      "transcript_locale": null,
       "source_file": "20261012 110545.m4a",
       "audio_sha256": "3cdad658e8fc17525f6d0c1a8bb59e073fd726bdc6163827a9e5ca18d61d3f7a",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 9457,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-12_1105_TokenCosting"
     },
     {
       "title": "Beyond Done",
       "recorded_at": "2026-10-12T13:15:29-04:00",
       "duration_seconds": 3407.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 10056,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 9768,
+      "transcript_locale": null,
       "source_file": "20261012 131529.m4a",
       "audio_sha256": "49995cbff0f5826c3762c39bf9c79e65075e66839bfaed813e13162d8af9cef3",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 6,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 10056,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-12_1315_Beyond-Done"
     },
     {
       "title": "Blackwater",
       "recorded_at": "2026-10-13T09:04:13-04:00",
       "duration_seconds": 898,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2454,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2456,
+      "transcript_locale": null,
       "source_file": "20261013 090413.m4a",
       "audio_sha256": "3760d78f8f8b8b90559aa2049522a1417296a4a77ea420d21c88077f3a3f1401",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2454,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_0904_Blackwater"
     },
     {
       "title": "Anthropic",
       "recorded_at": "2026-10-13T09:19:23-04:00",
       "duration_seconds": 1125.9,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3194,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3138,
+      "transcript_locale": null,
       "source_file": "20261013 091923.m4a",
       "audio_sha256": "68c9793bfbe07ad3fca54bd5567dea09ec39342efe78993397d3afdc7852677e",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3194,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_0919_Anthropic"
     },
     {
       "title": "Two Sigma",
       "recorded_at": "2026-10-13T09:38:22-04:00",
       "duration_seconds": 1155.6,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3643,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3629,
+      "transcript_locale": null,
       "source_file": "20261013 093822.m4a",
       "audio_sha256": "990fc26acc02f643f9c98420479c978cc7f4c8b88911ae20ee88a0792bddcb9f",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3643,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_0938_Two-Sigma"
     },
     {
       "title": "Arize",
       "recorded_at": "2026-10-13T10:15:31-04:00",
       "duration_seconds": 899.1,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2544,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2521,
+      "transcript_locale": null,
       "source_file": "20261013 101531.m4a",
       "audio_sha256": "fac12222a12c4c356e0308e0e8e8d9a10353410a7339878d331c87cb17647e3a",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2544,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1015_Arize"
     },
     {
       "title": "Writing Slop",
       "recorded_at": "2026-10-13T10:39:40-04:00",
       "duration_seconds": 1129.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2906,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2877,
+      "transcript_locale": null,
       "source_file": "20261013 103940.m4a",
       "audio_sha256": "3137bdb3b7b99ca77869a61d2f0148cd44a7e4b25e9c45a002af20adce0f0f46",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2906,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1039_Writing-Slop"
     },
     {
       "title": "Air Canada",
       "recorded_at": "2026-10-13T11:04:34-04:00",
       "duration_seconds": 1166.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2953,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2655,
+      "transcript_locale": null,
       "source_file": "20261013 110434.m4a",
       "audio_sha256": "2896ddfea70930f230c672be4e4f7fdf1acc34925c5de324041bd09d01d601b6",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 11,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2953,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1104_Air-Canada"
     },
     {
       "title": "Exa",
       "recorded_at": "2026-10-13T11:30:17-04:00",
       "duration_seconds": 1132.7,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3870,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3876,
+      "transcript_locale": null,
       "source_file": "20261013 113017.m4a",
       "audio_sha256": "2f380a01e4c48f01e954b68e7e0ff55a24f5efb23bea85dbb93ad8e25ba5a7d7",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3870,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1130_Exa"
     },
     {
       "title": "Fable War Room",
       "recorded_at": "2026-10-13T11:55:07-04:00",
       "duration_seconds": 1152.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3362,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3297,
+      "transcript_locale": null,
       "source_file": "20261013 115507.m4a",
       "audio_sha256": "fba7cdbebfa7a02e7e8bf9daaf6a7c8e59434aea20ce071cb68cbc8a43828f64",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3362,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1155_Fable-War-Room"
     },
     {
       "title": "apify",
       "recorded_at": "2026-10-13T12:20:12-04:00",
       "duration_seconds": 1220.9,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3595,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3499,
+      "transcript_locale": null,
       "source_file": "20261013 122012.m4a",
       "audio_sha256": "bde42819e30606d0733f56551e2f545aac505789afcc44c7b4173e37cf61b0a3",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 3,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3595,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1220_apify"
     },
     {
       "title": "greptile",
       "recorded_at": "2026-10-13T14:55:44-04:00",
       "duration_seconds": 1090.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3700,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3745,
+      "transcript_locale": null,
       "source_file": "20261013 145544.m4a",
       "audio_sha256": "bd39bb692e8db3015ad62aa5744741bedee42c6f32d954ea539531268cf84ee6",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3700,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1455_greptile"
     },
     {
       "title": "bench marking llms",
       "recorded_at": "2026-10-13T15:20:10-04:00",
       "duration_seconds": 1049.2,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3112,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2906,
+      "transcript_locale": null,
       "source_file": "20261013 152010.m4a",
       "audio_sha256": "282e2c713f9366cd7e327691934a778d3371cb384cddbf21fa4e945c2afce560",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 3,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3112,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1520_bench-marking-llms"
     },
     {
       "title": "give the agent a computer",
       "recorded_at": "2026-10-13T15:44:32-04:00",
       "duration_seconds": 926.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2233,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2169,
+      "transcript_locale": null,
       "source_file": "20261013 154432.m4a",
       "audio_sha256": "81331cd4337f3235183c157bc46dd9095543e6c29b28af1e5a1b2666574d1318",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2233,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1544_give-the-agent-a-computer"
     },
     {
       "title": "tenex",
       "recorded_at": "2026-10-13T16:25:46-04:00",
       "duration_seconds": 293.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 783,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 778,
+      "transcript_locale": null,
       "source_file": "20261013 162546.m4a",
       "audio_sha256": "502f758c42da9dc1082153664bf3291353f61684d37eed2bbb97185e99c87fb9",
       "exported_at": "2026-10-26T10:01:44-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 783,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1625_tenex"
     },
     {
       "title": "korean news",
       "recorded_at": "2026-10-13T16:30:48-04:00",
       "duration_seconds": 842.4,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2287,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2293,
+      "transcript_locale": null,
       "source_file": "20261013 163048.m4a",
       "audio_sha256": "2f12780d54e8c488c4c5a7e4a29d9e8651f019f77d02a4a54a00f780a6d5b8e9",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2287,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1630_korean-news"
     },
     {
       "title": "general intuition",
       "recorded_at": "2026-10-13T16:45:11-04:00",
       "duration_seconds": 1176.2,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3225,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3240,
+      "transcript_locale": null,
       "source_file": "20261013 164511.m4a",
       "audio_sha256": "01904bd3d0d29286b8a726c1d10045f0d9561d014e0dff1f0399e16bd985f0d3",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3225,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1645_general-intuition"
     },
     {
       "title": "nous research",
       "recorded_at": "2026-10-13T17:04:59-04:00",
       "duration_seconds": 918.6,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2176,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2175,
+      "transcript_locale": null,
       "source_file": "20261013 170459.m4a",
       "audio_sha256": "473754e9475c0a34f735f3a6e0300c9c58cb28acb00a515f93b7a2e14bdca1b0",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2176,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1704_nous-research"
     },
     {
       "title": "811 7th Ave",
       "recorded_at": "2026-10-13T17:20:39-04:00",
       "duration_seconds": 72.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 183,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 173,
+      "transcript_locale": null,
       "source_file": "20261013 172039.m4a",
       "audio_sha256": "d49cd5c7dc35c68c45281a93a916992970f374e82f8117c55c15a6c3a1e03a36",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 183,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-13_1720_811-7th-Ave"
     },
     {
       "title": "Ramp",
       "recorded_at": "2026-10-14T09:01:31-04:00",
       "duration_seconds": 812.6,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2127,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2091,
+      "transcript_locale": null,
       "source_file": "20261014 090131.m4a",
       "audio_sha256": "752d44a3abd29dae5621a3d9786897e83dec07e37f5b3a1dc952d6c802055a02",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2127,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_0901_Ramp"
     },
     {
       "title": "Sonar",
       "recorded_at": "2026-10-14T09:15:21-04:00",
       "duration_seconds": 1007.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2736,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2758,
+      "transcript_locale": null,
       "source_file": "20261014 091521.m4a",
       "audio_sha256": "f57bbbf95a3edda65db0c3e73fd630ad458b8aefd93c0e4bec147b9b3a651a21",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2736,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_0915_Sonar"
     },
     {
       "title": "Coinbase",
       "recorded_at": "2026-10-14T09:32:12-04:00",
       "duration_seconds": 274.7,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 522,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 503,
+      "transcript_locale": null,
       "source_file": "20261014 093212.m4a",
       "audio_sha256": "675639470a590197701e880a5c9b170daee280868e68bd62d8c211eeffef47b8",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 522,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_0932_Coinbase"
     },
     {
       "title": "Ryan Carson",
       "recorded_at": "2026-10-14T10:44:48-04:00",
       "duration_seconds": 669,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 1803,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 1693,
+      "transcript_locale": null,
       "source_file": "20261014 104448.m4a",
       "audio_sha256": "cdda247ee01996b6c15e3ecf4691f37a9b985d151230998fb9e9284b634d31ce",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 7,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 1803,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1044_Ryan-Carson"
     },
     {
       "title": "Linear",
       "recorded_at": "2026-10-14T11:04:32-04:00",
       "duration_seconds": 1313.7,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3422,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3386,
+      "transcript_locale": null,
       "source_file": "20261014 110432.m4a",
       "audio_sha256": "77a49941924965dd78185a10e09cd14c860176c5d3f7525edae90aabf8d71aba",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3422,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1104_Linear"
     },
     {
       "title": "Software Factories",
       "recorded_at": "2026-10-14T11:30:08-04:00",
       "duration_seconds": 1116.3,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3424,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3412,
+      "transcript_locale": null,
       "source_file": "20261014 113008.m4a",
       "audio_sha256": "356cb337529bf8e450bb5ec9f4ac692fa6f1f382bb5a5cf2157e897ce85c8374",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3424,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1130_Software-Factories"
     },
     {
       "title": "SpaceX",
       "recorded_at": "2026-10-14T11:55:32-04:00",
       "duration_seconds": 1081.6,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 2956,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 2977,
+      "transcript_locale": null,
       "source_file": "20261014 115532.m4a",
       "audio_sha256": "b7c4bde873d94e2f5e4d24482f161a61a151d5da27ba831128e6647c735b90ce",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 2956,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1155_SpaceX"
     },
     {
       "title": "Warp",
       "recorded_at": "2026-10-14T14:29:35-04:00",
       "duration_seconds": 1151,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3890,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3865,
+      "transcript_locale": null,
       "source_file": "20261014 142935.m4a",
       "audio_sha256": "ffa16ead18d7a2adf584739db4d1f42dff1583ee80d1f2a99ada852055a837cd",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3890,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1429_Warp"
     },
     {
       "title": "Ksenia",
       "recorded_at": "2026-10-14T16:25:47-04:00",
       "duration_seconds": 283.1,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 584,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 571,
+      "transcript_locale": null,
       "source_file": "20261014 162547.m4a",
       "audio_sha256": "8816ba89725ece17e7fabc662ee0e682f09da1ccbd34e8420b0cc3df854d38fa",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 2,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 584,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1625_Ksenia"
     },
     {
       "title": "Apollo",
       "recorded_at": "2026-10-14T16:30:35-04:00",
       "duration_seconds": 1127.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3258,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3219,
+      "transcript_locale": null,
       "source_file": "20261014 163035.m4a",
       "audio_sha256": "f9813214240fd22028b5ec7339aea8705d4a8b28add818298d8561156e229251",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 1,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3258,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1630_Apollo"
     },
     {
       "title": "Basis (Mitchell Troyanovsky),",
       "recorded_at": "2026-10-14T16:49:40-04:00",
       "duration_seconds": 1173.5,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3273,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3313,
+      "transcript_locale": null,
       "source_file": "20261014 164940.m4a",
       "audio_sha256": "7b827ce3307e7a8b83caad05071bde006a2b54a4128fba1131c568d6bf512b88",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3273,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1649_Basis-Mitchell-Troyanovsky"
     },
     {
       "title": "Runway",
       "recorded_at": "2026-10-14T17:09:22-04:00",
       "duration_seconds": 1024.4,
-      "transcript": "transcript.txt",
-      "transcript_word_count": 3098,
-      "transcript_locale": "en_US",
+      "transcript": "transcript.qwen3-asr-1.7b.txt",
+      "transcript_word_count": 3138,
+      "transcript_locale": null,
       "source_file": "20261014 170922.m4a",
       "audio_sha256": "0a3de3c20b0b2a56d85a69d021fd212b10563e17dc0854114033e16fb042ad34",
       "exported_at": "2026-10-26T10:01:45-04:00",
+      "transcript_source": "qwen3-asr-1.7b",
+      "transcript_timing": "segment",
+      "transcript_echo_segments": 0,
+      "transcript_alternates": [
+        {
+          "file": "transcript.txt",
+          "source": "voice-memos",
+          "timing": "word",
+          "word_count": 3098,
+          "locale": "en_US"
+        }
+      ],
       "folder": "2026-10-14_1709_Runway"
     }
   ]
