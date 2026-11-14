@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The controller is the interface · Pim de Witte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  .photo-card img { flex: 1 1 0; min-height: 0; height: auto; }
+  .still { margin: 1.1rem 0; }
+  .still img { width: 100%; height: auto; display: block; border-radius: .3rem; border: 1px solid var(--rule); }
+  .stills { display: grid; gap: .8rem; margin: 1.1rem 0; }
+  .stills .still { margin: 0; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); max-width: 46rem; }
+  .reading b { color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Tue 13 Oct 2026 · Simons Room</div>
+  <h1>The game controller is the interface to the world</h1>
+  <p class="dek">Pim de Witte's company began by recording people playing video games. It now trains models on those recordings to operate robots. The link between the two is the game controller: people already use one, with their eyes, to play games and to drive machines, so a model that learns to use the controller from what it sees can do both.</p>
+  <div class="talk-meta">Pim de Witte, General Intuition · 20 min keynote · six chapters · <a href="https://www.youtube.com/watch?v=MpkARD5pq-M">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  <div class="reading"><b>A note on sources:</b> He showed no demos. The release videos were held back because the talk was livestreamed, so the capabilities below are his claims.</div>
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual photo-card" data-visual="v1">
+        <img src="medal-growth.jpg" alt="His slide, Medal is currently the fastest growing company in games. A chart of clips uploaded per month from 2022 to 2026 rises steeply to about 195 million a month, with cumulative marks at 500 million, 1 billion, 1.5 billion and 2 billion. A flat line near the bottom is labelled the total amount of data frontier robotics models are trained on today. Caption: Medal is on track to 3 billion uploaded videos per year.">
+        <figcaption>His slide, from the official video</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v2">
+        <img src="controller.jpg" alt="His slide, Humans play video games and operate robots with same primitives. A game controller is linked by dotted lines to a game on a screen, a four-legged robot, a drone and a small wheeled robot. Text: humans play video games and tele-operate robots using the same inputs and outputs, namely vision and controller actions.">
+        <figcaption>His slide, from the official video</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v3">
+        <img src="next-action.jpg" alt="His slide, LLMs predict the next word, our models predict the next action. Language models are pre-trained on trillions of words from the internet, learn to predict the next word, and are now used for writing software, research and agent workflows. Action models, same recipe with different data, are pre-trained on millions of hours of action-labelled gameplay, learn to predict the next keyboard strokes and mouse movements, and are used for playing video games and operating robots in real time.">
+        <figcaption>His slide, from the official video</figcaption>
+      </figure>
+      <figure class="talk-visual quote-card" data-visual="v4">
+        <blockquote>“it&#x27;s constantly observing as it is acting”</blockquote>
+        <cite>Pim de Witte · 00:00:09</cite>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v5">
+        <img src="new-class.jpg" alt="His slide, A new class of foundation model emerges. Our action models: capable of handling robust autonomy, from pixels to action, across a broad range of embodiments, across a broad range of environments, in real time, in games and in the real world. A video placeholder sits beside the list, with the words More soon.">
+        <figcaption>His slide, from the official video</figcaption>
+      </figure>
+      <figure class="talk-visual photo-card" data-visual="v6">
+        <img src="frontier-lab.jpg" alt="His opening slide, The frontier lab for acting in space and time. Truly intelligent machines must move from words to worlds, and acquire the capacity to perceive, anticipate, and improvise. We raised over $650M in the past year to build a new class of models that can perceive, predict, and act in virtual and physical environments. A strip of game footage runs along the bottom.">
+        <figcaption>His slide, from the official video</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="it-started-with-recording-video-games" data-visual="v1" data-caption="A recorder for every game">
+      <div class="chapter">Chapter 1</div>
+      <h2>It started with recording video games</h2>
+      <p>General Intuition grew out of Medal, which de Witte describes as the largest video game recorder in the world. People use it to record themselves playing tens of thousands of different games. He asks the audience to think of that the way they think of the internet: a very large body of human activity that a model can be trained on.</p>
+      <p>What makes the recordings useful is that each one ties the frames on screen to the inputs the player made. The actions are labelled, so the meaning of each action is known, not just the button.</p>
+      <p>The scale is the argument. Medal sees about a billion videos uploaded a year and is on track for three billion, which comes to more than a trillion and a half actions a month. His comparison: the total data frontier labs use today to train robotics models, Medal collects in half a day.</p>
+      <blockquote>“We built the largest video game recorder in the world”<span class="cite">00:00:09</span></blockquote>
+      <ul class="keypoints">
+        <li>Medal records gameplay across tens of thousands of games.</li>
+        <li>Each recording pairs what was on screen with what the player pressed.</li>
+        <li>By his numbers it produces a robotics lab's whole dataset every half day.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+    </section>
+
+    <section data-chapter="the-controller-is-already-how-people-dri" data-visual="v2" data-caption="One controller, many machines">
+      <div class="chapter">Chapter 2</div>
+      <h2>The controller is already how people drive machines</h2>
+      <p>The step from games to robots rests on one observation. A person can teleoperate a robot with the same brain they use to play a video game, and in many cases with the same controller. So the action space of games and the action space of real-world operation are often the same thing.</p>
+      <p>He says this is already how the industry works: robots below a certain number of degrees of freedom ship with a game controller, and most of the supply chain is set up that way.</p>
+      <p>The controller also hides the hard part. People do not know how to predict motor torque or what value to set on a machine; the controller does that translation for them. Most robotics companies, he says, try to solve the problem end to end, predicting exact poses or motor values. His company's approach is to use the device every robotics company has already built to make up for how little physics people can compute in their heads.</p>
+      <blockquote>“And so every single robot built below certain degrees of freedom shifts with the game controller.”<span class="cite">00:00:09</span></blockquote>
+      <ul class="keypoints">
+        <li>Games and teleoperated robots share inputs and outputs: vision in, controller actions out.</li>
+        <li>Many robots already ship with a game controller.</li>
+        <li>The controller absorbs the low-level control that people, and models, would otherwise have to predict.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09 · <a href="https://www.youtube.com/watch?v=MpkARD5pq-M&t=320s">watch from the controller slide</a></p>
+    </section>
+
+    <section data-chapter="so-train-a-model-to-use-the-controller" data-visual="v3" data-caption="Frames in, actions out">
+      <div class="chapter">Chapter 3</div>
+      <h2>So train a model to use the controller</h2>
+      <p>Put the two together and the model is simple to describe. It is given a set of available keys, frames as input, and optionally a text prompt. If someone waves and the instruction is to wave back, the model sees that a greet action is available and outputs it. His slide sets it beside a language model: same recipe, different data. A language model is trained on text and predicts the next word. This one is trained on action-labelled gameplay and predicts the next keyboard, mouse or controller action.</p>
+      <p>He calls people pixels-to-action converters with some extra sensors, many of which can be turned into pixels too. The API reflects that. It is close to a computer-use model with more actions in its output.</p>
+      <p>The model knows the meaning of the key it predicts, not only the key, which he says matters for interpretability. World models have a supporting role here: they generate further environments for the action model to learn in.</p>
+      <div class="stills"><figure class="still"><img src="wave-back.jpg" alt="His slide, Our action models see the world, and predict actions. A camera view of a person waving, labelled Someone waves, goes through the Action API and comes out as a view labelled Wave back."></figure></div>
+      <blockquote>“So you send frames and you get actions.”<span class="cite">00:00:09</span></blockquote>
+      <ul class="keypoints">
+        <li>Frames in, controller and keyboard actions out, with an optional text instruction.</li>
+        <li>The training recipe mirrors a language model's, on action data.</li>
+        <li>World models generate environments; the action model is the product.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+    </section>
+
+    <section data-chapter="why-a-language-model-is-the-wrong-tool-f" data-visual="v4" data-caption="Observing while acting">
+      <div class="chapter">Chapter 4</div>
+      <h2>Why a language model is the wrong tool for this</h2>
+      <p>De Witte's picture for the difference is Olaf, the snowman in Frozen, rolling down a mountain, coming apart and putting himself back together. Olaf can do that because he observes while he acts. A language model does not. It predicts tokens in turns: you say something, it does something, you say something again.</p>
+      <p>That suits work like writing code, where the future is not unfolding while the model is predicting. It generalizes poorly to environments with space and time in them. His models receive frames continuously and treat everything as if it were a video game.</p>
+      <p>He does not expect them to replace language models. The intended setup has an orchestrator model doing long-term planning, with the action model plugged in underneath. He compares the bet to Anthropic's on coding: scale one space, here pixels, and expect people to bring more problems into it.</p>
+      <blockquote>“it&#x27;s constantly observing as it is acting”<span class="cite">00:00:09</span></blockquote>
+      <ul class="keypoints">
+        <li>Language models work in turns; physical tasks do not wait.</li>
+        <li>The action model observes continuously as it acts.</li>
+        <li>A language model still plans on top; the action model executes.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:09, 00:07:19</p>
+    </section>
+
+    <section data-chapter="from-games-to-robots" data-visual="v5" data-caption="Start with games">
+      <div class="chapter">Chapter 5</div>
+      <h2>From games to robots</h2>
+      <p>Gameplay is useful for robotics because it is dense with actions. Players press several things at once and make constant small corrections, and that density carries over to hard control problems. His example is a drone that needs many small adjustments. Teleoperation data is the worse starting point, because a human teleoperator takes far fewer actions and so the data holds less information.</p>
+      <p>The claim he makes for the result: one model that plays video games at the highest level and controls over a thousand robots with the same primitives, pixels in and actions out, in real time. He says some customers are already using it privately.</p>
+      <p>In the Q&amp;A he is asked how this differs from JEPA. JEPA does not train on action labels and bets on inferring actions from video. He thinks that may be the more correct approach in the limit, but it is less practical now. Some actions cannot be read from frames at all: his example is moving the rudder at the back of a plane.</p>
+      <blockquote>“You really, really, really want to start with games.”<span class="cite">00:07:19</span></blockquote>
+      <ul class="keypoints">
+        <li>Action-dense gameplay transfers to control tasks that need many small corrections.</li>
+        <li>He claims one model for top-level play and over 1,000 robots; none of it was shown.</li>
+        <li>Recorded action labels, not inferred ones, are what set the approach apart from JEPA.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:19, 00:13:24</p>
+    </section>
+
+    <section data-chapter="what-a-controller-using-model-could-be-u" data-visual="v6" data-caption="A new primitive to play with">
+      <div class="chapter">Chapter 6</div>
+      <h2>What a controller-using model could be used for</h2>
+      <p>The uses he is most interested in are not all robots. Because the model acts on an interface as a person would, it can explore one: point it at a new design to learn whether the interface is intuitive. It can explore generated simulation environments so that a person does not have to. And it can share a controller with someone. For a player who can use only one arm, the person moves the mouse and the model predicts the keyboard, leaving alone the inputs the person is already making.</p>
+      <p>He expects it to feel like the early days of language models, a new primitive people have to play with to find out what it does. The models were due in late November or early December, with early access through a waitlist and hackathons in New York and London. The opening slide says the company raised over $650 million in the past year.</p>
+      <div class="stills"><figure class="still"><img src="early-access.jpg" alt="His slide, Get Early Access, with a QR code and the General Intuition logo on a dark background."></figure></div>
+      <blockquote>“This is going to be the most interesting toy that comes out this year.”<span class="cite">00:13:24</span></blockquote>
+      <ul class="keypoints">
+        <li>Testing whether an interface is intuitive, by having the model use it.</li>
+        <li>Exploring simulated environments without a person at the controls.</li>
+        <li>Accessibility: the model plays the inputs a person cannot.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:07:19, 00:13:24</p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a>, which draws on <a href="../transcript.md">the transcript</a> (Qwen3-ASR, recorded in the room) and on his slides, taken as stills from the <a href="https://www.youtube.com/watch?v=MpkARD5pq-M">official video</a>. Quotes are verbatim from the transcript. No demos were shown, so what the models can do is his account. No notes were taken on this one. More on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>

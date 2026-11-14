@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The interface is a video · Cristóbal Valenzuela</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../../stories/runtime/talk.css">
+<style>
+  /* A sequence card: up to four stills from one demo, read left to right, top to bottom. */
+  .seq-card .seq { flex: 1 1 0; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: .45rem; }
+  .seq-card .seq div { position: relative; min-height: 0; overflow: hidden; border-radius: .25rem; background: #000; }
+  .seq-card .seq img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .seq-card .seq span { position: absolute; left: .35rem; top: .35rem; z-index: 1; font: 700 .62rem/1 var(--mono); letter-spacing: .08em; padding: .2rem .38rem; border-radius: 999px; background: rgba(0,0,0,.72); color: #fff; }
+  .inline-visual.seq-card .seq { flex: none; grid-auto-rows: auto; }
+  .inline-visual.seq-card .seq div { aspect-ratio: 16 / 9; }
+  .inline-visual.seq-card .seq img { position: absolute !important; height: 100% !important; max-height: none; object-fit: cover; }
+  .more-stills { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .6rem; margin: 1.1rem 0; }
+  .more-stills figure { margin: 0; }
+  .more-stills img { width: 100%; height: auto; display: block; border-radius: .25rem; border: 1px solid var(--rule); }
+  .more-stills figcaption { font: .72rem/1.4 var(--sans); color: var(--muted); margin-top: .3rem; }
+  .keypoints { margin: 1rem 0; padding-left: 1.1rem; font: .95rem/1.55 var(--sans); }
+  .keypoints li { margin: .25rem 0; }
+  .reading { margin: 1.2rem 0; padding: .7rem .9rem; background: var(--panel); border-radius: .3rem; font: .92rem/1.55 var(--sans); }
+  .reading b { color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="talk-masthead">
+  <div class="talk-kicker">AI Engineer New York · Wed 14 Oct 2026 · Simons Room</div>
+  <h1>The interface is a video you can click</h1>
+  <p class="dek">Cristóbal Valenzuela closed the main stage with a claim about screens. A video model that predicts the next frame fast enough stops being a way to make films. It draws the interface, answers your clicks, and invents a new interface for whatever you are trying to do. Runway calls the far end of that idea Continuum, and showed it running.</p>
+  <div class="talk-meta">Cristóbal Valenzuela, Runway · 17 min keynote · seven chapters · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ">Watch the talk</a> · <a href="../links.md">Links and further reading</a></div>
+  <div class="talk-controls"><button type="button" data-talk-collapse aria-pressed="false">Hide visuals</button></div>
+</header>
+
+<div class="talk-layout">
+  <aside class="talk-rail" aria-label="Visuals">
+    <div class="talk-visuals">
+
+      <figure class="talk-visual seq-card" data-visual="v1">
+        <div class="seq">
+          <div><span>1</span><img src="car-day.jpg" alt="A red SUV parked in a brick alley in daylight, seen from the front corner."></div>
+          <div><span>2</span><img src="car-lights.jpg" alt="The same car, now turned to face the other way, in a darker alley with its headlights on."></div>
+          <div><span>3</span><img src="car-hood.jpg" alt="The car seen head-on at night with the hood open and the engine visible."></div>
+          <div><span>4</span><img src="car-engine.jpg" alt="A close view of the engine bay with orange cables and a label reading High-Voltage Cabling."></div>
+        </div>
+        <figcaption>One image of a car, driven as an application. Stills from the official video, 08:42–09:15</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v2">
+        <div class="seq">
+          <div><span>2019</span><img src="orange-2019.jpg" alt="A low-resolution frame of an orange in mid-air above grass, from Runway's first AI film."></div>
+          <div><span>2026</span><img src="generated-people.jpg" alt="A sharp, photorealistic generated shot of a man and a woman at a corner-store counter."></div>
+          <div><span>3</span><img src="camel.jpg" alt="A generated studio shot of a camel standing on a round pedestal with objects stacked on its back."></div>
+          <div><span>4</span><img src="compute-scaling.jpg" alt="His slide, Compute is scaling up to simulate everything: two rising curves from 2023 to 2030, compute reaching about 240 times and power about 160 gigawatts."></div>
+        </div>
+        <figcaption>From the 2019 orange to today, and what scale buys. Stills from the official video, 01:47–05:08</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v3">
+        <div class="seq">
+          <div><span>1</span><img src="room-before.jpg" alt="A warm living room with a rust-orange sofa, a round coffee table, a lamp, a plant and a small piece of wall art."></div>
+          <div><span>2</span><img src="room-picker.jpg" alt="The same room with a circular colour picker floating above the sofa; the wall art is now much larger."></div>
+          <div><span>3</span><img src="room-after.jpg" alt="The same room with the sofa turned blue, the colour picker still open."></div>
+          <div><span>4</span><img src="office-walk.jpg" alt="A game-like view from behind a person walking through an office, with a small map in the corner."></div>
+        </div>
+        <figcaption>A room edited by touching it, and a world you can walk through. Stills from the official video, 06:32–09:55</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v4">
+        <div class="seq">
+          <div><span>1</span><img src="continuum.jpg" alt="A title slide reading Continuum, with a small generated cloud scene blurring over the first letters."></div>
+          <div><span>2</span><img src="fog-source-page.jpg" alt="The Continuum screen showing a NASA web page titled Another Foggy Day in San Francisco, with a satellite image."></div>
+          <div><span>3</span><img src="fog-portal.jpg" alt="The article text with a soft-edged generated view of the Golden Gate Bridge in fog opening beside it."></div>
+          <div><span>4</span><img src="fog-portal-2.jpg" alt="The same portal now showing a hillside of houses under fog, beside the article text."></div>
+        </div>
+        <figcaption>A web page about fog becomes a portal. Stills from the official video, 10:55–11:50</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v5">
+        <div class="seq">
+          <div><span>1</span><img src="battery-portal.jpg" alt="A search results page about batteries with a generated illustration of battery internals opening over the text."></div>
+          <div><span>2</span><img src="leaf-portal.jpg" alt="An illustrated cross-section of a leaf with sun rays and hand-lettered labels for chloroplast, stoma, CO2 in and O2 out."></div>
+          <div><span>3</span><img src="leaf-inside.jpg" alt="After resizing, the view is inside the leaf: green structures with blue spheres moving between them."></div>
+          <div><span>4</span><img src="leaf-popup.jpg" alt="A panel titled Inside a Leaf over the illustration, showing the text description that generates it, beginning An airbrushed biology-textbook cutaway interface."></div>
+        </div>
+        <figcaption>Portals answer clicks, resizing, and edits to their own description. Stills from the official video, 12:32–13:30</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v6">
+        <div class="seq">
+          <div><span>1</span><img src="bike-prompt.jpg" alt="An empty Continuum screen with a prompt being typed: create a 3d model I can print for a mount for my b…"></div>
+          <div><span>2</span><img src="bike-mount.jpg" alt="A soft-edged render of a white bracket-like part with a hinged arm."></div>
+          <div><span>3</span><img src="bike-mount-2.jpg" alt="A different candidate part: a flat arm with triangular truss cut-outs."></div>
+          <div><span>4</span><img src="bike-chat.jpg" alt="The agent's reply in a chat view, beginning I'd go with the truss arm."></div>
+        </div>
+        <figcaption>A coding agent thinks about a bike mount in pictures. Stills from the official video, 13:50–14:20</figcaption>
+      </figure>
+
+      <figure class="talk-visual seq-card" data-visual="v7">
+        <div class="seq">
+          <div><span>1</span><img src="mars-search.jpg" alt="A search results page for Mars 2030 inside Continuum, with small images of the planet's surface."></div>
+          <div><span>2</span><img src="mars-outpost.jpg" alt="A soft-edged portal titled Mars Outpost showing a rover and structures on a red plain at sunset."></div>
+          <div><span>3</span><img src="mars-plain.jpg" alt="The Mars scene filling the window, with a rover in the foreground."></div>
+          <div><span>4</span><img src="mars-dome.jpg" alt="A glass geodesic dome with plants growing inside and solar panels in front, on the Martian surface."></div>
+        </div>
+        <figcaption>A search for Mars becomes a place to walk around. Stills from the official video, 15:20–16:00</figcaption>
+      </figure>
+
+    </div>
+    <p class="talk-rail-caption" aria-live="polite"></p>
+    <div class="talk-rail-progress" aria-hidden="true"><span></span></div>
+  </aside>
+
+  <main class="talk-copy">
+
+    <section data-chapter="any-pixel" data-visual="v1" data-caption="One image, driven like an app">
+      <div class="chapter">Chapter 1</div>
+      <h2>Any pixel on a screen can be a model</h2>
+      <p>The demo that sets up the rest of the talk is a red car in an alley. It could be a photo. Valenzuela runs one of Runway's video models over it in real time and treats it as an application: turn on the lights, turn the car around, open the hood and look inside. In the video the engine bay comes up with a label on the high-voltage cabling.</p>
+      <p>Nothing behind it is a 3D scene. There is no model of the car and no game engine, only a video model trained to understand actions and clicks in an interface. He fumbles the name on stage and settles on “world interface model”: an interface that is also a world model.</p>
+      <p>This is the use he says goes beyond the two obvious ones, video and robotics. Any pixel on a screen can be generated by the model, in response to what you just did.</p>
+      <blockquote>“There's no Unity. There's no Unreal. There's no Blender.”<span class="cite">00:05:41</span></blockquote>
+      <ul class="keypoints">
+        <li>A still image becomes an application once a real-time video model answers clicks on it.</li>
+        <li>There is no 3D representation underneath.</li>
+        <li>Runway's name for this is a world interface model.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=520s">watch the car demo</a></p>
+    </section>
+
+    <section data-chapter="why-it-works" data-visual="v2" data-caption="Predicting frames taught it the world">
+      <div class="chapter">Chapter 2</div>
+      <h2>Why it works: predicting frames taught the model the world</h2>
+      <p>The interface demos rest on one old idea. Cinema found 120 years ago that frames shown fast enough create the illusion of movement, and Runway's models predict the next frame from the previous ones. In 2019 that produced a 128-pixel film of an orange rolling through the world. Today it produces people and places that Valenzuela, after ten years of this, says he cannot tell from real footage.</p>
+      <p>The side effect is the important part. To keep a scene consistent the model has to pick up physics, object permanence, gravity and occlusion, all from video alone. His example is a camel on a pedestal with objects stacked on its back: the model needs to know what each thing is and how they relate to make the shot hold together. Runway is scaling the compute behind this; the slide projects roughly 240 times the 2023 level by 2030.</p>
+      <blockquote>“You're learning about physics. You're learning about object permanence.”<span class="cite">00:00:00</span></blockquote>
+      <ul class="keypoints">
+        <li>Next-frame prediction is the whole mechanism, scaled up.</li>
+        <li>Consistent video forces the model to learn how objects behave.</li>
+        <li>That learned behaviour is what the interfaces later draw on.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:00:00</p>
+    </section>
+
+    <section data-chapter="real-time" data-visual="v3" data-caption="Act mid-prediction">
+      <div class="chapter">Chapter 3</div>
+      <h2>Real time is what turns a video into something you can act on</h2>
+      <p>Everything in the first half of the talk took seconds or minutes to generate. The shift he cares about for the next three or four years is making the models interactive as well as bigger. Predict a frame, then the next, but let someone act at any point in the sequence, and the model can play out any divergence in that world.</p>
+      <p>Put that in a game-like setting and it starts to look like a physics engine in which nobody wrote the physics. The video shows a blocky street and then a person steering a character through an office. The same models are becoming the brains of robots: half of Runway's New York office looks like a Hollywood studio and the other half is robots moving around.</p>
+      <div class="more-stills">
+        <figure><img src="world-street.jpg" alt="A blocky, game-like street with low-polygon trees and buildings."><figcaption>A generated street, 06:20</figcaption></figure>
+        <figure><img src="robot-hands.jpg" alt="A first-person view of two black robot hands over a table with a wooden tray and a coloured cube, in a lab."><figcaption>The robotics lab, 08:16</figcaption></figure>
+      </div>
+      <p>Then comes the room. From a single image of a living room, he moves objects around and they behave as if he were there. In the video a colour picker appears over the sofa and the sofa turns from rust to blue, with the wall art and the plant changing too.</p>
+      <blockquote>“The video model has been trained to understand actions and clicks in an interface.”<span class="cite">00:05:41</span></blockquote>
+      <ul class="keypoints">
+        <li>Earlier video models were not real time; the next ones are interactive.</li>
+        <li>Acting mid-prediction lets the model simulate the consequences.</li>
+        <li>The same capability drives game-like worlds, robots and editable rooms.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=568s">watch the room demo</a></p>
+    </section>
+
+    <section data-chapter="continuum" data-visual="v4" data-caption="An operating system from a model">
+      <div class="chapter">Chapter 4</div>
+      <h2>Continuum: the operating system is streamed from a model</h2>
+      <p>Valenzuela says extrapolating may be one of the most important skills in AI right now, and Continuum is Runway extrapolating: what if the model becomes a universal simulator that can predict anything on a screen? The answer he shows is an operating system. You open your computer and what streams to the screen comes from a model. He calls it very early research.</p>
+      <div class="more-stills">
+        <figure><img src="continuum-desktop.jpg" alt="A nearly empty pale screen with a prompt bar at the bottom and a small stack of thumbnails on the right edge."><figcaption>The Continuum desktop, 11:20</figcaption></figure>
+      </div>
+      <p>The first demo starts from an ordinary web page, a NASA article about fog in San Francisco. He selects part of the content and turns it into what Runway calls a portal: a real-time, fully interactive video generated from the text he was reading. In the video a soft-edged view of the Golden Gate in fog opens inside the article. He is candid about why: it is too much text, so make it a video.</p>
+      <blockquote>“We call this a portal, and the portal is a real-time video.”<span class="cite">00:11:22</span></blockquote>
+      <ul class="keypoints">
+        <li>Continuum is an operating system whose screen is generated.</li>
+        <li>A portal turns any selected content into a live, interactive video.</li>
+        <li>The source is real structured content: a website, a search result.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41, 00:11:22 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=655s">watch from the Continuum title</a></p>
+    </section>
+
+    <section data-chapter="answers-everything" data-visual="v5" data-caption="Clicks, resizing, the prompt itself">
+      <div class="chapter">Chapter 5</div>
+      <h2>The interface answers everything you do to it</h2>
+      <p>Portals stack up. Down the right edge of the screen sits everything he has opened before, which he describes as a memory of the visualizations he has seen. He goes back to one about batteries, opened from a search result, moves it around, and asks it questions; the content changes with the interaction.</p>
+      <div class="more-stills">
+        <figure><img src="battery-search.jpg" alt="A search results page about how batteries work inside the Continuum window."><figcaption>The search page it starts from, 12:25</figcaption></figure>
+        <figure><img src="portal-memory.jpg" alt="Zoomed article text with a column of small generated thumbnails down the right edge."><figcaption>Past portals stacked on the right, 12:10</figcaption></figure>
+        <figure><img src="leaf-resized.jpg" alt="The leaf portal resized to a tall, narrow window showing a close view of leaf cells."><figcaption>The leaf portal, resized, 12:55</figcaption></figure>
+      </div>
+      <p>Because the portal is a live video, any input can change it, not only clicks. He is learning about photosynthesis, and resizing the window gives a different experience: the leaf cross-section becomes a view inside the cell. He can also change what is generating the portal in the first place. In the video a panel opens over the leaf showing the text behind it, a description of a textbook cutaway with its labels.</p>
+      <p>He admits he does not have a word for this, and thinks naming it is collective work still to do.</p>
+      <blockquote>“It doesn't feel like a visualization. It doesn't feel like a video. It doesn't feel like a game.”<span class="cite">00:11:22</span></blockquote>
+      <ul class="keypoints">
+        <li>Past portals are kept and can be reopened and questioned.</li>
+        <li>Resizing a window is an input that changes what is shown.</li>
+        <li>The description that generates a portal can be opened and edited.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:22 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=775s">watch the leaf demo</a></p>
+    </section>
+
+    <section data-chapter="visual-thinking" data-visual="v6" data-caption="An agent that thinks in pictures">
+      <div class="chapter">Chapter 6</div>
+      <h2>Visual thinking: an agent that works a problem out in pictures</h2>
+      <p>The demo Valenzuela calls the most underexplored connects Continuum to a coding agent. Asked for a 3D model for a bike, the agent does not only reason in code. It spins up a Continuum view and thinks through the problem visually. In the video the request is for a printable bike mount; candidate parts appear as renders, and the agent's reply recommends a truss arm.</p>
+      <p>The view is shared. The agent can interact with what it imagined, and so can the person, which lets them steer the agent in ways text alone would not. He compares it to people who think through ideas visually first, and calls it a new paradigm.</p>
+      <blockquote>“Agents have the ability to do visual thinking.”<span class="cite">00:11:22</span></blockquote>
+      <ul class="keypoints">
+        <li>A coding agent can open a generated view to reason about a physical object.</li>
+        <li>The person sees and touches the same view the agent is using.</li>
+        <li>Steering by pointing at a picture is richer than steering by text.</li>
+      </ul>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:11:22 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=828s">watch the bike demo</a></p>
+    </section>
+
+    <section data-chapter="designed-on-the-spot" data-visual="v7" data-caption="An interface made for this search">
+      <div class="chapter">Chapter 7</div>
+      <h2>Interfaces designed on the spot, for the thing you are doing</h2>
+      <p>The last demo is the furthest out. He searches for Mars, and Continuum reads the intent and suggests an interface built in real time for that search: a Mars outpost. He says it should be accurate to data about the robots on Mars now, or those projected for 2030, and he can move through it the way he would in a 3D system. In the video the search results give way to a rover on a red plain and then a glass dome with plants inside.</p>
+      <p>That is what the title means. If the model can simulate anything on a screen, a lot of what looks new today will look obvious in a few years. He ends with a date: Runway plans to release most of what he showed over the next eight to twelve months.</p>
+      <blockquote>“We make them universal simulation systems that can predict anything on a screen.”<span class="cite">00:05:41</span></blockquote>
+      <ul class="keypoints">
+        <li>The system proposes an interface from what you are searching for.</li>
+        <li>The generated world is meant to reflect real data, and you can walk around in it.</li>
+        <li>Runway says most of this ships within eight to twelve months.</li>
+      </ul>
+      <div class="reading"><b>A note on the transcript:</b> the speech recognition hears “Continuum” as “Conde” and “continuing” in places, and “world model” as “wall model” once. The quotes here avoid those passages; the transcript keeps them as heard.</div>
+      <p class="watch">Evidence: <a href="../transcript.md">transcript</a> 00:05:41, 00:11:22 · <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ&t=915s">watch the Mars demo</a></p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="talk-foot">
+  Built from <a href="../story.md">the story</a>, which draws on <a href="../transcript.md">the transcript</a> (Qwen3-ASR, recorded in the room) and on the <a href="https://www.youtube.com/watch?v=q4ITwvlFplQ">official video</a>; no notes were taken on this one. Quotes are verbatim from the transcript. The images are stills from the official video, cropped to the slide area, and their times are video times, which run about twenty seconds ahead of the transcript's. Where the text says “in the video”, the detail was seen on screen rather than spoken. More on the <a href="../links.md">links page</a>.
+</footer>
+
+<script src="../../../stories/runtime/talk.js"></script>
+</body>
+</html>
