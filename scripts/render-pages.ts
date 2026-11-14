@@ -49,7 +49,7 @@ const wm = JSON.parse(read("state/world-model/conference-schedule/published/worl
   event: { name: string; timezone?: string; starts_on?: string; ends_on?: string };
   program: { sessions: Session[]; days: Array<{ date: string; label: string | null }> };
   speakers: Record<string, Speaker>;
-  venue: { rooms: Array<{ room_id: string; name: string }> };
+  venue: { city?: string; rooms: Array<{ room_id: string; name: string }> };
 };
 // The event's own timezone: every clock and day label on the site is local to it.
 const TZ: string = wm.event.timezone ?? "UTC";
@@ -112,7 +112,33 @@ const intake = exists(intakePath)
   ? (JSON.parse(read(intakePath)) as { matches: Record<string, { session_id: string | null; status: string }>; talks: Record<string, { slug: string }> })
   : { matches: {}, talks: {} };
 const photosPath = "state/world-model/talk-photos/published/world-model.json";
-const photoPlacements = (exists(photosPath) ? (JSON.parse(read(photosPath)) as { placements?: Record<string, { dir: string }> }).placements : undefined) ?? {};
+const photoPlacements = (exists(photosPath) ? (JSON.parse(read(photosPath)) as { placements?: Record<string, { dir: string; photos?: string[] }> }).placements : undefined) ?? {};
+
+// Raw audio and full-size room photos are gitignored and omitted on GitHub Pages.
+// Check git check-ignore once so hubs never emit broken <img> or <audio> URLs.
+const ignoredMedia = (() => {
+  const candidates: string[] = [];
+  for (const d of list("talks")) {
+    if (!isDir(`talks/${d}`)) continue;
+    for (const f of list(`talks/${d}/photos`)) candidates.push(`talks/${d}/photos/${f}`);
+  }
+  for (const d of list("recordings/inbox")) {
+    if (!isDir(`recordings/inbox/${d}`)) continue;
+    for (const f of list(`recordings/inbox/${d}`)) if (/^audio\.(m4a|mp3|wav|aac)$/.test(f)) candidates.push(`recordings/inbox/${d}/${f}`);
+  }
+  if (!candidates.length) return new Set<string>();
+  const r = Bun.spawnSync({ cmd: ["git", "check-ignore", "--stdin"], cwd: root, stdin: Buffer.from(candidates.join("\n") + "\n"), stdout: "pipe" });
+  return new Set(r.stdout.toString().split("\n").map((s) => s.trim()).filter(Boolean));
+})();
+const publishedPhotosFor = (slug: string): string[] =>
+  list(`talks/${slug}/photos`).filter((f) => /\.(jpe?g|png|webp|heic)$/i.test(f) && !ignoredMedia.has(`talks/${slug}/photos/${f}`));
+const placedPhotoCountFor = (slug: string): number => {
+  const pub = publishedPhotosFor(slug).length;
+  if (pub) return pub;
+  const fromWm = Object.values(photoPlacements).find((v) => v.dir === `talks/${slug}/photos`)?.photos?.length ?? 0;
+  if (fromWm) return fromWm;
+  return list(`talks/${slug}/photos`).filter((f) => /\.(jpe?g|png|webp|heic)$/i.test(f)).length;
+};
 const sessionForSlug = (slug: string): Session | null => {
   const fromIntake = Object.entries(intake.talks).find(([, t]) => t.slug === slug)?.[0];
   const fromFiles = ["transcript.md", "links.md", "story.md"].map((f) => `talks/${slug}/${f}`).filter(exists)
@@ -160,9 +186,10 @@ for (const d of list("recordings/inbox")) {
   }
   if (!slug) continue;
   const audio = list(`recordings/inbox/${d}`).find((f) => /^audio\.(m4a|mp3|wav|aac)$/.test(f));
+  const audioRel = audio ? `recordings/inbox/${d}/${audio}` : null;
   talk(slug).recordings.push({
     folder: d, minutes: meta.duration_seconds ? Math.round(meta.duration_seconds / 60) : 0,
-    source: meta.transcript_source ?? "no transcript yet", audio: audio ? `recordings/inbox/${d}/${audio}` : null,
+    source: meta.transcript_source ?? "no transcript yet", audio: audioRel && !ignoredMedia.has(audioRel) ? audioRel : null,
   });
 }
 const captured = [...talks.values()].sort((a, b) => (a.session?.starts_at ?? "9999").localeCompare(b.session?.starts_at ?? "9999"));
@@ -402,7 +429,7 @@ const extraPages = (slug: string): { href: string; title: string }[] =>
     .map((f) => ({ href: f, title: (read(f).match(/<title>([^<]*)<\/title>/)?.[1] ?? f).split(" · ")[0]!.trim() }));
 const artifacts = (t: Talk): Artifact[] => {
   const p = `talks/${t.slug}`;
-  const photos = list(`${p}/photos`).length;
+  const photos = placedPhotoCountFor(t.slug);
   const story = exists(`${p}/story.md`) ? read(`${p}/story.md`) : "";
   const transcript = exists(`${p}/transcript.md`) ? read(`${p}/transcript.md`) : "";
   return [
@@ -432,6 +459,8 @@ for (const t of captured) {
 }
 const handleFor = (id: string): string | null => xHandle(wm.speakers[id]?.links ?? []) ?? dossierHandles.get(id) ?? null;
 
+const extUrl = (u: string): string => (/^https?:\/\//i.test(u) ? u : `https://${u}`);
+
 const personCard = (id: string, up: string, heard: Session | null): string => {
   const p = wm.speakers[id]!;
   const h = handleFor(id);
@@ -451,7 +480,7 @@ const personCard = (id: string, up: string, heard: Session | null): string => {
     <div class="who"><b>${esc(p.name)}</b>${p.affiliation ? ` <span class="minor">${esc(p.affiliation)}</span>` : ""}<div class="talkline">${talkLine}</div></div>
     <div class="acts">${h
       ? `<a class="btn" href="${followHref(h)}" target="_blank" rel="noopener">Follow @${esc(h)}</a><a class="btn ghost" href="${writeHref(h, heard ? heard.title : null)}" target="_blank" rel="noopener">Write</a><label class="done"><input type="checkbox" data-handle="${esc(h)}"> followed</label>`
-      : `<span class="minor">no X handle found</span>`}${others.map((l) => `<a class="ext" href="${esc(l)}" target="_blank" rel="noopener">${esc(linkLabel(l))}</a>`).join("")}</div>
+      : `<span class="minor">no X handle found</span>`}${others.map((l) => `<a class="ext" href="${esc(extUrl(l))}" target="_blank" rel="noopener">${esc(linkLabel(l))}</a>`).join("")}</div>
   </div>`;
 };
 
@@ -535,7 +564,6 @@ for (const q of contestedList) {
     related: RelatedTalk[];
   }> = {};
   for (const t of captured) {
-    const p = `talks/${t.slug}`;
     xrefTalks[t.slug] = {
       slug: t.slug,
       title: t.title,
@@ -547,7 +575,7 @@ for (const q of contestedList) {
       themeIds: themesForSlug(t.slug).map((th) => th.id),
       leadImage: leadSlideImage(t.slug),
       minutes: t.recordings.reduce((n, r) => n + r.minutes, 0),
-      photoCount: list(`${p}/photos`).filter((f) => /\.(jpe?g|png|webp|heic)$/i.test(f)).length,
+      photoCount: placedPhotoCountFor(t.slug),
       noteCount: t.notes.length,
       builtCount: builtCount(t),
       contested: talkContestedMap.get(t.slug) ?? [],
@@ -622,7 +650,8 @@ for (let ti = 0; ti < captured.length; ti++) {
   const p = `talks/${t.slug}`;
   const s = t.session;
   const page = pagePath(t.slug);
-  const photos = list(`${p}/photos`).filter((f) => /\.(jpe?g|png|webp|heic)$/i.test(f));
+  const photos = publishedPhotosFor(t.slug);
+  const placedPhotos = placedPhotoCountFor(t.slug);
   const storyMd = exists(`${p}/story.md`) ? read(`${p}/story.md`) : "";
   const transcriptMd = exists(`${p}/transcript.md`) ? read(`${p}/transcript.md`) : "";
   const linksMd = exists(`${p}/links.md`) ? stripFront(read(`${p}/links.md`)).replace(/^# .*\n/m, "") : "";
@@ -651,7 +680,7 @@ for (let ti = 0; ti < captured.length; ti++) {
       `<li><span class="mono">${esc(noteTime(n))} · ${esc(n.kind)}</span><div class="prose">${md(n.body)}</div></li>`).join("")}</ol>` : ""}
   </section>
 
-  <section class="view" id="photos"><div class="view-head"><h2>Photos</h2><p class="lede">${photos.length ? `${photos.length} filed.` : "None filed."}</p></div>
+  <section class="view" id="photos"><div class="view-head"><h2>Photos</h2><p class="lede">${photos.length ? `${photos.length} filed.` : placedPhotos ? `${placedPhotos} room photo${placedPhotos === 1 ? "" : "s"} recorded in manifest (raw camera files omitted from public archive${page ? `; stage slides included in <a href="${up}${page}">the talk story</a>` : ""}).` : "None filed."}</p></div>
     ${photos.length ? `<div class="photos">${photos.map((f) => `<a href="${up}${p}/photos/${esc(f)}"><img loading="lazy" src="${up}${p}/photos/${esc(f)}" alt="Photo taken during the talk, ${esc(f)}"></a>`).join("")}</div>` : ""}
   </section>
 
@@ -675,7 +704,7 @@ for (let ti = 0; ti < captured.length; ti++) {
     </div>
   </section>
 
-  ${linksMd ? `<section class="view" id="links"><div class="view-head"><h2>Links and resources</h2></div><div class="prose">${md(linksMd)}</div></section>` : `<section class="view" id="links"><div class="view-head"><h2>Links</h2><p class="lede">No dossier yet.</p></div></section>`}
+  ${linksMd ? `<section class="view" id="links"><div class="view-head"><h2>Links and resources</h2></div><div class="prose">${md(linksMd).replace(/href="transcript\.md(?:#[^"]*)?"/g, 'href="#transcript"')}</div></section>` : `<section class="view" id="links"><div class="view-head"><h2>Links</h2><p class="lede">No dossier yet.</p></div></section>`}
 
   <section class="view" id="transcript"><div class="view-head"><h2>Transcript</h2><p class="lede">${transcriptMd ? `Machine transcript (${esc(front(transcriptMd, "source") ?? "ASR")}). Garbled words are kept as heard.` : "Not transcribed yet."}</p></div>
     ${transcriptMd ? `<details><summary>Read the transcript</summary><div class="prose transcript">${md(stripFront(transcriptMd))}</div></details>` : ""}
@@ -874,7 +903,7 @@ function renderThemesExplorer(up: string): string {
     ].filter(Boolean).join(" ");
 
     return `<article class="stage-panel" data-panel="${th.id}"${th.id === defaultLayerId ? "" : " hidden"}>
-      ${primarySrc ? `<div class="stage-media" ${mediaAttrs}><img src="${primarySrc}" alt="${esc(primaryAlt)}" width="1280" height="720" loading="lazy" decoding="async"><div class="stage-media-cap"><span class="sm-caption">${esc(primaryCap)}</span>${slide ? `<div class="stage-view-switch" role="group" aria-label="Stage visual mode"><button type="button" data-stage-mode="clay" aria-pressed="true">Clay model</button><button type="button" data-stage-mode="slide" aria-pressed="false">Room slide</button><a class="sm-talk-link" href="${talkHref(slide.slug, up)}?from=${encodeURIComponent(th.id)}">Open talk →</a></div>` : ""}</div></div>` : ""}
+      ${primarySrc ? `<div class="stage-media" ${mediaAttrs}><img src="${primarySrc}" alt="${esc(primaryAlt)}" width="1280" height="720" loading="lazy" decoding="async"><div class="stage-media-cap"><span class="sm-caption">${esc(primaryCap)}</span>${slide ? `<div class="stage-view-switch" role="group" aria-label="Stage visual mode">${clay ? `<button type="button" data-stage-mode="clay" aria-pressed="true">Clay model</button><button type="button" data-stage-mode="slide" aria-pressed="false">Room slide</button>` : ""}<a class="sm-talk-link" href="${talkHref(slide.slug, up)}?from=${encodeURIComponent(th.id)}">Open talk →</a></div>` : ""}</div></div>` : ""}
       <div class="stage-body">
         <div class="stage-kicker"><span class="mono">${esc(STACK.unit)} ${th.num} of ${String(themes.length).padStart(2, "0")} · ${th.slugs.size} talks · ${th.claims.length} claims</span><span class="pill ${th.counters.length ? "call-maybe" : "call-go"}">${esc(statusLabel)}</span></div>
         <h3>${esc(th.name)}</h3>
@@ -958,7 +987,7 @@ function renderThemesExplorer(up: string): string {
       <p class="lede">Filter by theme below, or expand any section to inspect the full verbatim quotes linked to every talk story and transcript.</p>
     </div>
     <div class="evidence-filter" id="evidence-filter" role="group" aria-label="Filter evidence by theme">
-      <button type="button" data-ev-theme="all" aria-pressed="true">All 6 themes</button>
+      <button type="button" data-ev-theme="all" aria-pressed="true">All ${themes.length} themes</button>
       ${themes.map((th) => `<button type="button" data-ev-theme="${th.id}" aria-pressed="false">${th.num} · ${esc(th.name)}</button>`).join("")}
     </div>
   </section>`;
@@ -1108,7 +1137,7 @@ const speakerLinkLabel = (u: string): string => {
   return /(^|\.)x\.com$|twitter\.com$/.test(h) ? "X" : /linkedin\.com$/.test(h) ? "LinkedIn" : /github\.com$/.test(h) ? "GitHub" : h;
 };
 const speakerMeta = (s: Session): string => s.speaker_ids.map((id) => wm.speakers[id]).filter(Boolean).map((p) => {
-  const links = (p!.links ?? []).map((u) => `<a href="${esc(u)}" rel="noopener">${esc(speakerLinkLabel(u))}</a>`).join(" · ");
+  const links = (p!.links ?? []).map((u) => `<a href="${esc(extUrl(u))}" rel="noopener">${esc(speakerLinkLabel(extUrl(u)))}</a>`).join(" · ");
   const bio = (p as { bio?: string }).bio;
   return `<div class="tt-speaker"><p><b>${esc(p!.name)}</b>${p!.affiliation ? `, ${esc(p!.affiliation)}` : ""}${links ? ` <span class="mono">${links}</span>` : ""}</p>${bio ? `<p class="minor">${esc(bio)}</p>` : ""}</div>`;
 }).join("");
@@ -1233,7 +1262,10 @@ for (const [out, up] of (NAV.phase === "archive" ? [["site/today.html", "../"]] 
     return `<div class="receipt"><span>${node}<span class="minor"> · ${esc(firstLine(r?.semantic_diff?.summary ?? "", 90))}</span></span><span class="mono">${r ? `${esc(r.status)} · ${clock(new Date(r.at))}` : "never run"}</span></div>`;
   }).join("");
   const git = Bun.spawnSync({ cmd: ["git", "status", "--porcelain"], cwd: root, stdout: "pipe" }).stdout.toString().split("\n").filter(Boolean).length;
-  const data = JSON.stringify({ plan, allDay, days, tz: TZ }).replace(/</g, "\\u003c");
+  const data = JSON.stringify({ plan, allDay, days, tz: TZ, city: wm.venue.city ?? "" }).replace(/</g, "\\u003c");
+  const pipelineSummary = NAV.phase === "archive"
+    ? `Pipeline · ${manifest.topology.nodes.length} world-model nodes · archived ${esc(generatedAt)}`
+    : `Pipeline · ${git} files uncommitted · updated ${esc(generatedAt)}`;
   const body = `
   <header class="masthead"><p class="mono agency">${esc(wm.event.name)}${dateRange() ? ` · ${esc(dateRange())}` : ""}</p><h1 id="today-title">Today</h1><p class="sub" id="today-sub">Where the day stands.</p></header>
   <div class="marginalia mono"><span id="dayswitch"></span><a href="${up}site/schedule.html">Full schedule →</a></div>
@@ -1244,7 +1276,7 @@ for (const [out, up] of (NAV.phase === "archive" ? [["site/today.html", "../"]] 
     <ol class="plan" id="plan"></ol></section>
   <section class="view"><div class="view-head"><h2>Captured so far</h2><p class="lede"><a href="${up}site/talks/index.html">${captured.length} talks</a> · ${notes.length} notes · <a href="${up}${NAV.phase === "archive" ? "index.html" : "site/themes.html"}">${themes.length} themes</a></p></div><div>${recent}</div></section>
   <section class="view"><div class="view-head"><h2>Latest notes</h2></div><div>${latest}</div></section>
-  <section class="view"><details><summary class="mono">Pipeline · ${git} files uncommitted · updated ${esc(generatedAt)}</summary><div>${pipeline}</div></details></section>`;
+  <section class="view"><details><summary class="mono">${pipelineSummary}</summary><div>${pipeline}</div></details></section>`;
   const script = `var D=${data};
 (function(){
   var fmt=function(iso){return new Date(iso).toLocaleTimeString('en-US',{timeZone:D.tz,hour:'numeric',minute:'2-digit'})};
@@ -1258,7 +1290,7 @@ for (const [out, up] of (NAV.phase === "archive" ? [["site/today.html", "../"]] 
     var now=Date.now(), live=date===today;
     var lab=D.days.find(function(d){return d.date===date});
     document.getElementById('today-title').textContent=live?'Today':(lab?lab.label:date);
-    document.getElementById('today-sub').textContent=new Date(date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})+(live?' · '+new Date().toLocaleTimeString('en-US',{timeZone:D.tz,hour:'numeric',minute:'2-digit'})+' in San Francisco':'');
+    document.getElementById('today-sub').textContent=new Date(date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})+(live?' · '+new Date().toLocaleTimeString('en-US',{timeZone:D.tz,hour:'numeric',minute:'2-digit'})+(D.city?' in '+D.city:''):'');
     var rows=D.plan.filter(function(p){return p.day===date&&(room==='all'||p.main||p.call==='break')});
     var inProg=live?rows.filter(function(p){return Date.parse(p.start)<=now&&now<Date.parse(p.end)}):[];
     var talksNow=inProg.filter(function(p){return p.call!=='break'});var nowRows=talksNow.length?talksNow:inProg;

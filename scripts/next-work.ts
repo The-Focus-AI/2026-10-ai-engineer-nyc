@@ -68,9 +68,9 @@ function readThemes(): Theme[] {
   const text = read(themesPath);
   if (!text) return [];
   const themes: Theme[] = [];
-  const parts = text.split(/\n(?=## )/);
+  const parts = text.split(/\n(?=### )/);
   for (const part of parts) {
-    const head = part.match(/^## (\d+)\.\s+(.+)$/m);
+    const head = part.match(/^### (\d+)\.\s+(.+)$/m);
     if (!head) continue;
     const talks = [...part.matchAll(/\.\.\/talks\/([^/]+)\/transcript\.md/g)].map((m) => m[1]!);
     themes.push({
@@ -179,15 +179,17 @@ function atlases(): { slug: string; title: string }[] {
   const dir = join(root, "atlases");
   if (!existsSync(dir)) return [];
   return readdirSync(dir)
-    .filter((slug) => statSync(join(dir, slug)).isDirectory())
-    .filter((slug) => existsSync(join(dir, slug, "atlas.json")))
+    .filter((slug) => slug !== "runtime" && statSync(join(dir, slug)).isDirectory())
+    .filter((slug) => existsSync(join(dir, slug, "atlas.json")) || existsSync(join(dir, slug, "page.html")))
     .map((slug) => {
-      const data = read(join(dir, slug, "atlas.json"));
       let title = slug;
-      try {
-        title = (JSON.parse(data) as { title?: string }).title ?? slug;
-      } catch (_) {
-        /* keep slug */
+      if (existsSync(join(dir, slug, "atlas.json"))) {
+        try {
+          title = (JSON.parse(read(join(dir, slug, "atlas.json"))) as { title?: string }).title ?? slug;
+        } catch (_) {}
+      } else if (existsSync(join(dir, slug, "page.html"))) {
+        const m = read(join(dir, slug, "page.html")).match(/<title>([^<]+)<\/title>/);
+        if (m) title = m[1]!.split(" · ")[0]!.trim();
       }
       return { slug, title };
     });

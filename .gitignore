@@ -4,6 +4,7 @@ deps/
 runs/
 .env
 .DS_Store
+__pycache__/
 
 # large media: the manifest, sidecars, and transcripts are the record
 recordings/**/*.m4a

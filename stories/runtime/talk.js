@@ -182,7 +182,7 @@
         const top = el("div");
         const kick = el("div", "xc-kicker");
         kick.appendChild(el("span", "", "Overview"));
-        kick.appendChild(el("span", "", "6 themes · 33 talks"));
+        kick.appendChild(el("span", "", `${themes.length} themes · ${Object.keys(xref.talks || {}).length} talks`));
         top.appendChild(kick);
         const h3 = el("h3", "xc-title");
         const ta = el("a", "", xref.masterPresentation.title);
@@ -368,7 +368,7 @@
           "",
           atlasSlug === "conference-themes"
             ? "Open any theme deep-dive presentation"
-            : "All 6 conference themes"
+            : `All ${themes.length} conference themes`
         )
       );
       const sub = el("span", "xref-sub");

@@ -32,7 +32,6 @@ const ARCHIVE: Array<[Section, string, string]> = [
   ["people", "People", "site/people.html"],
   ["schedule", "Schedule", "site/schedule.html"],
   ["today", "Daily log", "site/today.html"],
-  ["followups", "Follow-ups", "site/followups.html"],
 ];
 
 // Brand: presentation.json `brand`, else the event name from the schedule truth.

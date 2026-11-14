@@ -337,17 +337,18 @@
       addSep();
 
       // Z3 Talk Story
+      var totalTalksCount = Object.keys(talks).length;
       if (loc.altitude === 1) {
         makeStep({
           tag: "Z3",
-          label: "34 talks",
+          label: totalTalksCount + " talks",
           href: up + "site/talks/index.html",
           muted: true,
         });
       } else if (loc.mode === "talks-directory") {
         makeStep({
           tag: "Z3",
-          label: "All 34 Talks",
+          label: "All " + totalTalksCount + " Talks",
           here: true,
         });
       } else if (loc.altitude === 2) {
