@@ -1,6 +1,7 @@
 [tools]
 bun = "latest"
 claude = "latest"
+yt-dlp = { version = "latest", rename_exe = "yt-dlp" }
 
 # The Bun side is deliberately dumb: move bytes, write down what they are.
 # Identification, matching, and filing are the Prose program's job
